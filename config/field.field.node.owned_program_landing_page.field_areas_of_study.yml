@@ -1,0 +1,29 @@
+uuid: f5c83257-50ab-4396-9841-2d945a5f5299
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_areas_of_study
+    - node.type.owned_program_landing_page
+    - taxonomy.vocabulary.area_of_interest
+id: node.owned_program_landing_page.field_areas_of_study
+field_name: field_areas_of_study
+entity_type: node
+bundle: owned_program_landing_page
+label: 'Area of Study'
+description: 'Add the associated area(s) of study.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_of_interest: area_of_interest
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

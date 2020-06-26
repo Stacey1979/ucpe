@@ -1,0 +1,27 @@
+uuid: 24726cff-a7b7-4e99-bca5-ad5ff9c0bb80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_video_description
+    - media.type.embedded_video
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: media.embedded_video.field_video_description
+field_name: field_video_description
+entity_type: media
+bundle: embedded_video
+label: 'Video Description'
+description: 'Add a description if needed. You may want to add the transcript here for instance. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

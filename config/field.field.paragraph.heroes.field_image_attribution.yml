@@ -9,7 +9,7 @@ id: paragraph.heroes.field_image_attribution
 field_name: field_image_attribution
 entity_type: paragraph
 bundle: heroes
-label: Attribution
+label: 'Image Attribution'
 description: 'Add the name of where the item should be accredited. '
 required: false
 translatable: true

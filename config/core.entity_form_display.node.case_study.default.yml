@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
+    - field.field.node.case_study.field_of_interest
     - field.field.node.case_study.field_partnership_logos
     - field.field.node.case_study.field_related_program_tag
     - field.field.node.case_study.field_results
@@ -74,7 +75,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 12
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -87,7 +88,7 @@ content:
     type: text_textarea
     region: content
   field_areas_of_study:
-    weight: 9
+    weight: 10
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -166,6 +167,18 @@ content:
     third_party_settings: {  }
     type: text_textfield
     region: content
+  field_of_interest:
+    type: entity_reference_paragraphs
+    weight: 9
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_partnership_logos:
     type: media_library_widget
     weight: 10
@@ -174,7 +187,7 @@ content:
     third_party_settings: {  }
     region: content
   field_related_program_tag:
-    weight: 10
+    weight: 11
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -201,7 +214,7 @@ content:
     region: content
   path:
     type: path
-    weight: 15
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -209,21 +222,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 14
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 17
+    weight: 18
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 15
     region: content
     third_party_settings: {  }
   title:
@@ -236,7 +249,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 11
+    weight: 12
     settings:
       match_operator: CONTAINS
       size: 60
@@ -245,7 +258,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 16
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }

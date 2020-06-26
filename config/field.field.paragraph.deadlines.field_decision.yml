@@ -13,7 +13,7 @@ entity_type: paragraph
 bundle: deadlines
 label: Decision
 description: 'Month and year.'
-required: true
+required: false
 translatable: false
 default_value:
   -

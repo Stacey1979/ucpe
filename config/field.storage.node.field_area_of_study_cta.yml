@@ -1,0 +1,19 @@
+uuid: e7b0f41f-355d-4366-bdc6-48c67eac284c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_area_of_study_cta
+field_name: field_area_of_study_cta
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_deadlines
     - node.type.owned_program_landing_page
-    - paragraphs.paragraphs_type.deadlines_combo
+    - paragraphs.paragraphs_type.deadlines
   module:
     - entity_reference_revisions
 id: node.owned_program_landing_page.field_deadlines
@@ -23,7 +23,7 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      deadlines_combo: deadlines_combo
+      deadlines: deadlines
     target_bundles_drag_drop:
       about_person:
         weight: 35
@@ -50,11 +50,11 @@ settings:
         weight: 42
         enabled: false
       deadlines:
-        weight: 43
-        enabled: false
-      deadlines_combo:
         enabled: true
+        weight: 43
+      deadlines_combo:
         weight: 44
+        enabled: false
       designed_for:
         weight: 45
         enabled: false

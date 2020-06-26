@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
+    - field.field.node.case_study.field_of_interest
     - field.field.node.case_study.field_partnership_logos
     - field.field.node.case_study.field_related_program_tag
     - field.field.node.case_study.field_results
@@ -60,6 +61,7 @@ third_party_settings:
         - field_about_partnership
         - field_cta
         - field_partnership_logos
+        - field_of_interest
     fields:
       node_title:
         plugin_id: node_title
@@ -176,6 +178,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: ds_content
+  field_of_interest:
+    type: entity_reference_revisions_entity_view
+    weight: 11
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: ds_content
   field_partnership_logos:
     type: media_thumbnail

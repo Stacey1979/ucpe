@@ -1,0 +1,22 @@
+uuid: f7d829fd-f611-4022-8565-7758b32c5ce5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: owned_program
+label: 'Owned Program'
+type: 'canonical_entities:node'
+pattern: '/find-your-fit/[node:field_program_type]/[node:field_related_program_tag]/[node:title]'
+selection_criteria:
+  f96a9009-272a-4198-acf9-6745aa8677ec:
+    id: node_type
+    bundles:
+      owned_program_landing_page: owned_program_landing_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f96a9009-272a-4198-acf9-6745aa8677ec
+selection_logic: and
+weight: -5
+relationships: {  }

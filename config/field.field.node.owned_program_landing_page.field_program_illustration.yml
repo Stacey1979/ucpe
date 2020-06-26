@@ -1,0 +1,29 @@
+uuid: 958f6786-5ab1-43fd-916e-97af3cbe4100
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program_illustration
+    - media.type.image
+    - node.type.owned_program_landing_page
+id: node.owned_program_landing_page.field_program_illustration
+field_name: field_program_illustration
+entity_type: node
+bundle: owned_program_landing_page
+label: 'Program Illustration'
+description: 'Add the illustration that accompanies this program in SVG format. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

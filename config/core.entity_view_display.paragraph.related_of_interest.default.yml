@@ -1,0 +1,61 @@
+uuid: f41c4dca-8829-4fe1-9a01-3bb3da349860
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_of_interest.field_other_related_content
+    - field.field.paragraph.related_of_interest.field_related_program
+    - paragraphs.paragraphs_type.related_of_interest
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          left: {  }
+          right: {  }
+    regions:
+      left:
+        - field_related_program
+      right:
+        - field_other_related_content
+id: paragraph.related_of_interest.default
+targetEntityType: paragraph
+bundle: related_of_interest
+mode: default
+content:
+  field_other_related_content:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: of_interest
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
+    region: right
+  field_related_program:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: of_interest
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: left
+hidden: {  }

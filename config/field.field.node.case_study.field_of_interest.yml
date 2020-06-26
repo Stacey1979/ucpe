@@ -1,0 +1,130 @@
+uuid: d41bbbd6-180b-4e4c-9ddb-72639cbcd319
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_of_interest
+    - node.type.case_study
+    - paragraphs.paragraphs_type.related_of_interest
+  module:
+    - entity_reference_revisions
+id: node.case_study.field_of_interest
+field_name: field_of_interest
+entity_type: node
+bundle: case_study
+label: 'Of Interest'
+description: 'Add pieces of content to relate to this case study. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      related_of_interest: related_of_interest
+    target_bundles_drag_drop:
+      about_person:
+        weight: 35
+        enabled: false
+      about_student:
+        weight: 36
+        enabled: false
+      at_a_glance:
+        weight: 37
+        enabled: false
+      blockquote:
+        weight: 38
+        enabled: false
+      blockquotes:
+        weight: 39
+        enabled: false
+      button_set:
+        weight: 40
+        enabled: false
+      content_sections:
+        weight: 41
+        enabled: false
+      cta:
+        weight: 42
+        enabled: false
+      deadlines:
+        weight: 43
+        enabled: false
+      designed_for:
+        weight: 44
+        enabled: false
+      duration:
+        weight: 45
+        enabled: false
+      full_width_content:
+        weight: 46
+        enabled: false
+      header_s_:
+        weight: 47
+        enabled: false
+      heroes:
+        weight: 48
+        enabled: false
+      horizontal_rule:
+        weight: 49
+        enabled: false
+      image_carousel:
+        weight: 50
+        enabled: false
+      image_carousel_combo:
+        weight: 51
+        enabled: false
+      in_brief:
+        weight: 55
+        enabled: false
+      instructor_program_and_courses:
+        weight: 52
+        enabled: false
+      instructor_program_courses_combo:
+        weight: 53
+        enabled: false
+      intro_paragraph:
+        weight: 54
+        enabled: false
+      large_image_with_caption_left_or:
+        weight: 56
+        enabled: false
+      related_instructors:
+        weight: 57
+        enabled: false
+      related_of_interest:
+        enabled: true
+        weight: 58
+      related_program_block:
+        weight: 59
+        enabled: false
+      statistics:
+        weight: 60
+        enabled: false
+      story_about_combo:
+        weight: 61
+        enabled: false
+      story_programs:
+        weight: 62
+        enabled: false
+      text_one_two_third:
+        weight: 63
+        enabled: false
+      text_two_one_third:
+        weight: 64
+        enabled: false
+      three_up_illust_img_combo:
+        weight: 65
+        enabled: false
+      three_up_image_and_text:
+        weight: 66
+        enabled: false
+      three_up_statistic:
+        weight: 67
+        enabled: false
+      three_up_statistics_combo:
+        weight: 68
+        enabled: false
+field_type: entity_reference_revisions

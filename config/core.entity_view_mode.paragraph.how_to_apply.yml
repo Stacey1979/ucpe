@@ -1,0 +1,10 @@
+uuid: e0a5f01a-405b-4a05-b92f-76d78126a368
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.how_to_apply
+label: 'How to Apply'
+targetEntityType: paragraph
+cache: true

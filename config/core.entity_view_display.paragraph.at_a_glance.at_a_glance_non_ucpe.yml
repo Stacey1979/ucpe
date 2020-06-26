@@ -18,33 +18,6 @@ dependencies:
     - field_group
     - link
 third_party_settings:
-  field_group:
-    group_type:
-      children:
-        - field_program_type
-        - field_confers_alumni_status
-      parent_name: ''
-      weight: 0
-      format_type: fieldset
-      region: ds_content
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-      label: Type
-    group_cost:
-      children:
-        - field_cost
-        - field_link_to_financial_aid
-      parent_name: ''
-      weight: 4
-      format_type: fieldset
-      region: ds_content
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-      label: Cost
   ds:
     layout:
       id: ds_1col
@@ -66,20 +39,59 @@ third_party_settings:
       ds_content:
         - group_type
         - field_program_type
-        - field_confers_alumni_status
         - field_enrollment
+        - field_confers_alumni_status
         - field_duration
         - field_format
-        - field_cost
         - group_cost
+        - field_cost
         - field_link_to_financial_aid
+  field_group:
+    group_type:
+      children:
+        - field_program_type
+        - field_confers_alumni_status
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Type
+    group_cost:
+      children:
+        - field_cost
+        - field_link_to_financial_aid
+      parent_name: ''
+      weight: 4
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Cost
 id: paragraph.at_a_glance.at_a_glance_non_ucpe
 targetEntityType: paragraph
 bundle: at_a_glance
 mode: at_a_glance_non_ucpe
 content:
   field_confers_alumni_status:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link: false
@@ -87,8 +99,8 @@ content:
     type: entity_reference_label
     region: ds_content
   field_cost:
-    weight: 3
-    label: inline
+    weight: 5
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -126,7 +138,7 @@ content:
     type: entity_reference_label
     region: ds_content
   field_link_to_financial_aid:
-    weight: 4
+    weight: 6
     label: hidden
     settings:
       trim_length: 80
@@ -138,8 +150,8 @@ content:
     type: link
     region: ds_content
   field_program_type:
-    weight: 0
-    label: inline
+    weight: 1
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }

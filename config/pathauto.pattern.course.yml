@@ -7,16 +7,16 @@ dependencies:
 id: course
 label: Course
 type: 'canonical_entities:node'
-pattern: 'course/[node:field_course_code]-[node:title]'
+pattern: '/course/[node:field_course_code]-[node:title]'
 selection_criteria:
-  7ab15a7b-66b7-450b-a266-2a634c8598d6:
+  9937dbec-3206-4866-87d9-d3122bcd7e2f:
     id: node_type
     bundles:
       course: course
     negate: false
     context_mapping:
       node: node
-    uuid: 7ab15a7b-66b7-450b-a266-2a634c8598d6
+    uuid: 9937dbec-3206-4866-87d9-d3122bcd7e2f
 selection_logic: and
 weight: -5
 relationships: {  }

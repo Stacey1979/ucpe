@@ -1,0 +1,73 @@
+uuid: 4fcbad57-c286-4035-957c-8374256aae95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.embedded_video.field_media_video_embed_field
+    - field.field.media.embedded_video.field_video_description
+    - field.field.media.embedded_video.field_video_id
+    - field.field.media.embedded_video.field_video_source
+    - media.type.embedded_video
+  module:
+    - path
+    - text
+    - video_embed_field
+id: media.embedded_video.default
+targetEntityType: media
+bundle: embedded_video
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_video_embed_field:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+  field_video_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_video_id: true
+  field_video_source: true

@@ -1,0 +1,10 @@
+uuid: b35eed21-a99c-4824-8162-86ae200897ee
+langcode: en
+status: true
+dependencies: {  }
+id: related_of_interest
+label: 'Related/Of Interest'
+icon_uuid: null
+icon_default: null
+description: 'Surfaces related content on the bottom of a program landing page or case study. '
+behavior_plugins: {  }
