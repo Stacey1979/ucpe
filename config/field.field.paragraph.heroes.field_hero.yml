@@ -4,14 +4,14 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_hero
+    - media.type.embedded_video
     - media.type.image
-    - media.type.remote_video
     - paragraphs.paragraphs_type.heroes
 id: paragraph.heroes.field_hero
 field_name: field_hero
 entity_type: paragraph
 bundle: heroes
-label: Hero
+label: 'Hero Image'
 description: 'Add the hero'
 required: true
 translatable: false
@@ -21,8 +21,8 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
+      embedded_video: embedded_video
       image: image
-      remote_video: remote_video
     sort:
       field: name
       direction: ASC

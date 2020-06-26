@@ -26,7 +26,7 @@ content:
     type: options_select
     region: content
   field_cost:
-    weight: 6
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -34,8 +34,8 @@ content:
     type: string_textfield
     region: content
   field_duration:
-    type: entity_reference_paragraphs
-    weight: 2
+    type: paragraphs
+    weight: 3
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -43,22 +43,28 @@ content:
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
     region: content
   field_enrollment:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   field_format:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   field_link_to_financial_aid:
-    weight: 7
+    weight: 6
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -66,7 +72,7 @@ content:
     type: link_default
     region: content
   field_program_type:
-    weight: 1
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     type: options_select

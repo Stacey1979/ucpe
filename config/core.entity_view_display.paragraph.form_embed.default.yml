@@ -1,0 +1,31 @@
+uuid: d0e7ccbe-4055-4446-9b98-7bacfe4d1348
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.form_embed.field_form_code
+    - field.field.paragraph.form_embed.field_form_title
+    - paragraphs.paragraphs_type.form_embed
+  module:
+    - text
+id: paragraph.form_embed.default
+targetEntityType: paragraph
+bundle: form_embed
+mode: default
+content:
+  field_form_code:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_form_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

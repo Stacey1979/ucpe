@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_video
+    - media.type.embedded_video
     - media.type.remote_video
     - node.type.owned_program_landing_page
 id: node.owned_program_landing_page.field_video
@@ -20,10 +21,11 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
+      embedded_video: embedded_video
       remote_video: remote_video
     sort:
       field: name
       direction: ASC
     auto_create: true
-    auto_create_bundle: ''
+    auto_create_bundle: embedded_video
 field_type: entity_reference

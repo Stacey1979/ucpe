@@ -1,0 +1,18 @@
+uuid: 16a86c35-6815-4bd9-a519-db3d258df131
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Non-Owned Program Landing Page'
+type: non_owned_program_landing_page
+description: 'Used for non-UCPE owned program landing pages. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,29 @@
+uuid: 9436bc5c-8a88-4011-b68d-92ced13674a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_related_program
+    - node.type.owned_program_landing_page
+    - paragraphs.paragraphs_type.related_of_interest
+id: paragraph.related_of_interest.field_related_program
+field_name: field_related_program
+entity_type: paragraph
+bundle: related_of_interest
+label: 'Related Program'
+description: 'Choose which related program you would like to show.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      owned_program_landing_page: owned_program_landing_page
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

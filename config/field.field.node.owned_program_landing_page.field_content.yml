@@ -13,7 +13,7 @@ field_name: field_content
 entity_type: node
 bundle: owned_program_landing_page
 label: Content
-description: 'Add a paragraph if needed here. '
+description: 'Add a full-width paragraph if needed here. '
 required: false
 translatable: true
 default_value: {  }
@@ -51,6 +51,9 @@ settings:
         enabled: false
       deadlines:
         weight: 43
+        enabled: false
+      deadlines_combo:
+        weight: 44
         enabled: false
       designed_for:
         weight: 44
@@ -90,9 +93,6 @@ settings:
         enabled: false
       large_image_with_caption_left_or:
         weight: 56
-        enabled: false
-      offered_by:
-        weight: 57
         enabled: false
       related_instructors:
         weight: 58

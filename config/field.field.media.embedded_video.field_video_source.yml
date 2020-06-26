@@ -1,0 +1,19 @@
+uuid: 5678f391-aa0e-4860-b59e-0f170ca07b1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_video_source
+    - media.type.embedded_video
+id: media.embedded_video.field_video_source
+field_name: field_video_source
+entity_type: media
+bundle: embedded_video
+label: 'Video Source'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,38 @@
+uuid: e3a3811d-dcdd-41a6-8560-08b5229124fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - node
+    - system
+  theme:
+    - ucpe_theme
+id: mainnavigation
+theme: ucpe_theme
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Learn more about the [current-page:title]'
+  provider: system
+  label_display: visible
+  level: 4
+  depth: 1
+  expand_all_items: false
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      owned_program_landing_page: owned_program_landing_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/find-your-fit/*/*'
+    negate: false
+    context_mapping: {  }

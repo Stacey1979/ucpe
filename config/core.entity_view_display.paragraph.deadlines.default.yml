@@ -8,7 +8,32 @@ dependencies:
     - field.field.paragraph.deadlines.field_round
     - paragraphs.paragraphs_type.deadlines
   module:
+    - addtocal
     - datetime
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_round
+        - field_deadline
+        - field_decision
 id: paragraph.deadlines.default
 targetEntityType: paragraph
 bundle: deadlines
@@ -18,20 +43,28 @@ content:
     weight: 1
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      date_format: 'M. d, Y'
+      location:
+        value: '0'
+        tokenized: ''
+      description:
+        value: '0'
+        tokenized: 'UChicago Application Deadline'
+      past_events: 0
+      separator: '-'
     third_party_settings: {  }
-    type: datetime_default
-    region: content
+    type: addtocal_view
+    region: ds_content
   field_decision:
     weight: 2
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: month_year
     third_party_settings: {  }
     type: datetime_default
-    region: content
+    region: ds_content
   field_round:
     weight: 0
     label: above
@@ -39,5 +72,5 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: ds_content
 hidden: {  }

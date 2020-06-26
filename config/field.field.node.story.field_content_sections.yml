@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.horizontal_rule
     - paragraphs.paragraphs_type.image_carousel_combo
     - paragraphs.paragraphs_type.large_image_with_caption_left_or
+    - paragraphs.paragraphs_type.related_program_block
     - paragraphs.paragraphs_type.statistics
     - paragraphs.paragraphs_type.three_up_illust_img_combo
     - paragraphs.paragraphs_type.three_up_statistics_combo
@@ -42,12 +43,16 @@ settings:
       statistics: statistics
       three_up_illust_img_combo: three_up_illust_img_combo
       three_up_statistics_combo: three_up_statistics_combo
+      related_program_block: related_program_block
     target_bundles_drag_drop:
       about_person:
         weight: -50
         enabled: false
       about_student:
         weight: -47
+        enabled: false
+      at_a_glance:
+        weight: 37
         enabled: false
       blockquote:
         weight: -51
@@ -64,6 +69,18 @@ settings:
       cta:
         enabled: true
         weight: -44
+      deadlines:
+        weight: 43
+        enabled: false
+      deadlines_combo:
+        weight: 44
+        enabled: false
+      designed_for:
+        weight: 45
+        enabled: false
+      duration:
+        weight: 46
+        enabled: false
       full_width_content:
         enabled: true
         weight: -45
@@ -85,12 +102,24 @@ settings:
       in_brief:
         weight: -38
         enabled: false
+      instructor_program_and_courses:
+        weight: 54
+        enabled: false
+      instructor_program_courses_combo:
+        weight: 55
+        enabled: false
       intro_paragraph:
         weight: -37
         enabled: false
       large_image_with_caption_left_or:
         enabled: true
         weight: -36
+      related_instructors:
+        weight: 58
+        enabled: false
+      related_program_block:
+        enabled: true
+        weight: 59
       statistics:
         enabled: true
         weight: -35

@@ -1,0 +1,49 @@
+uuid: 1d95a827-9df7-4ee9-b42e-161e54861149
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.non_owned_program_landing_page.field_areas_of_study
+    - field.field.node.non_owned_program_landing_page.field_at_a_glance
+    - field.field.node.non_owned_program_landing_page.field_content
+    - field.field.node.non_owned_program_landing_page.field_designed_for
+    - field.field.node.non_owned_program_landing_page.field_focus_areas
+    - field.field.node.non_owned_program_landing_page.field_form
+    - field.field.node.non_owned_program_landing_page.field_hero
+    - field.field.node.non_owned_program_landing_page.field_lede
+    - field.field.node.non_owned_program_landing_page.field_link_to_main_page
+    - field.field.node.non_owned_program_landing_page.field_of_interest
+    - field.field.node.non_owned_program_landing_page.field_offered_by
+    - field.field.node.non_owned_program_landing_page.field_program_illustration
+    - field.field.node.non_owned_program_landing_page.field_program_type
+    - field.field.node.non_owned_program_landing_page.field_video
+    - node.type.non_owned_program_landing_page
+  module:
+    - user
+id: node.non_owned_program_landing_page.teaser
+targetEntityType: node
+bundle: non_owned_program_landing_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_areas_of_study: true
+  field_at_a_glance: true
+  field_content: true
+  field_designed_for: true
+  field_focus_areas: true
+  field_form: true
+  field_hero: true
+  field_lede: true
+  field_link_to_main_page: true
+  field_of_interest: true
+  field_offered_by: true
+  field_program_illustration: true
+  field_program_type: true
+  field_video: true

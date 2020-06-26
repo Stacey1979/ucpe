@@ -4,25 +4,29 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.of_interest
+    - field.field.node.owned_program_landing_page.field_area_of_study_cta
+    - field.field.node.owned_program_landing_page.field_areas_of_study
     - field.field.node.owned_program_landing_page.field_at_a_glance
     - field.field.node.owned_program_landing_page.field_button_
+    - field.field.node.owned_program_landing_page.field_conferred_by
     - field.field.node.owned_program_landing_page.field_content
     - field.field.node.owned_program_landing_page.field_content_sections
     - field.field.node.owned_program_landing_page.field_deadlines
+    - field.field.node.owned_program_landing_page.field_deadlines_block
     - field.field.node.owned_program_landing_page.field_designed_for
     - field.field.node.owned_program_landing_page.field_hero
     - field.field.node.owned_program_landing_page.field_hero_cta_button
     - field.field.node.owned_program_landing_page.field_intro_paragraph
     - field.field.node.owned_program_landing_page.field_lede
+    - field.field.node.owned_program_landing_page.field_of_interest
     - field.field.node.owned_program_landing_page.field_offered_by
+    - field.field.node.owned_program_landing_page.field_program_illustration
     - field.field.node.owned_program_landing_page.field_program_type
     - field.field.node.owned_program_landing_page.field_video
     - node.type.owned_program_landing_page
   module:
     - ds
     - entity_reference_revisions
-    - link
-    - text
     - user
 third_party_settings:
   ds:
@@ -37,7 +41,7 @@ third_party_settings:
           ds_content: div
         outer_wrapper: div
         attributes: ''
-        link_attribute: ''
+        link_attribute: content
         link_custom: ''
         classes:
           layout_class: {  }
@@ -45,22 +49,9 @@ third_party_settings:
     regions:
       ds_content:
         - links
-        - field_program_type
-        - field_areas_of_study
-        - node_title
-        - field_lede
-        - field_hero_cta_button
-        - field_hero
+        - field_program_illustration
         - field_at_a_glance
-        - field_deadlines
-        - field_video
-        - field_intro_paragraph
-        - field_content
-        - field_designed_for
-        - field_content_sections
-        - field_offered_by
-        - field_conferred_by
-        - field_button_
+        - node_title
     fields:
       node_title:
         plugin_id: node_title
@@ -68,7 +59,7 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          wrapper: h1
+          wrapper: h3
           class: ''
           link: false
 id: node.owned_program_landing_page.of_interest
@@ -77,120 +68,23 @@ bundle: owned_program_landing_page
 mode: of_interest
 content:
   field_at_a_glance:
-    weight: 7
-    label: above
-    settings:
-      view_mode: at_a_glance_ucpe
-      link: ''
-    third_party_settings: {  }
     type: entity_reference_revisions_entity_view
+    weight: 2
     region: ds_content
-  field_button_:
-    weight: 16
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
-  field_content:
-    weight: 11
     label: hidden
     settings:
-      view_mode: default
+      view_mode: of_in
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
-  field_content_sections:
-    weight: 13
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
-  field_deadlines:
-    type: entity_reference_revisions_entity_view
-    weight: 8
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
-  field_designed_for:
-    weight: 12
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
-  field_hero:
-    weight: 6
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
-  field_hero_cta_button:
-    weight: 5
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: ds_content
-  field_intro_paragraph:
-    weight: 10
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
-  field_lede:
-    weight: 4
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: ds_content
-  field_offered_by:
-    weight: 14
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: ds_content
-  field_program_type:
+  field_program_illustration:
+    type: entity_reference_entity_view
     weight: 1
+    region: ds_content
     label: hidden
     settings:
-      link: true
+      view_mode: of_interest
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
-    region: ds_content
-  field_video:
-    weight: 9
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: ds_content
   links:
     weight: 0
     region: ds_content
@@ -198,3 +92,20 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_area_of_study_cta: true
+  field_areas_of_study: true
+  field_button_: true
+  field_conferred_by: true
+  field_content: true
+  field_content_sections: true
+  field_deadlines: true
+  field_deadlines_block: true
+  field_designed_for: true
+  field_hero: true
+  field_hero_cta_button: true
+  field_intro_paragraph: true
+  field_lede: true
+  field_of_interest: true
+  field_offered_by: true
+  field_program_type: true
+  field_video: true

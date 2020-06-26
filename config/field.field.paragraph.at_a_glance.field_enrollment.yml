@@ -11,7 +11,7 @@ field_name: field_enrollment
 entity_type: paragraph
 bundle: at_a_glance
 label: Enrollment
-description: 'Choose the type of enrollment'
+description: 'Choose the type(s) of enrollment.'
 required: true
 translatable: false
 default_value: {  }

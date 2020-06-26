@@ -4,17 +4,23 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.owned_program_landing_page.field_area_of_study_cta
+    - field.field.node.owned_program_landing_page.field_areas_of_study
     - field.field.node.owned_program_landing_page.field_at_a_glance
     - field.field.node.owned_program_landing_page.field_button_
+    - field.field.node.owned_program_landing_page.field_conferred_by
     - field.field.node.owned_program_landing_page.field_content
     - field.field.node.owned_program_landing_page.field_content_sections
     - field.field.node.owned_program_landing_page.field_deadlines
+    - field.field.node.owned_program_landing_page.field_deadlines_block
     - field.field.node.owned_program_landing_page.field_designed_for
     - field.field.node.owned_program_landing_page.field_hero
     - field.field.node.owned_program_landing_page.field_hero_cta_button
     - field.field.node.owned_program_landing_page.field_intro_paragraph
     - field.field.node.owned_program_landing_page.field_lede
+    - field.field.node.owned_program_landing_page.field_of_interest
     - field.field.node.owned_program_landing_page.field_offered_by
+    - field.field.node.owned_program_landing_page.field_program_illustration
     - field.field.node.owned_program_landing_page.field_program_type
     - field.field.node.owned_program_landing_page.field_video
     - node.type.owned_program_landing_page
@@ -32,16 +38,22 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_area_of_study_cta: true
+  field_areas_of_study: true
   field_at_a_glance: true
   field_button_: true
+  field_conferred_by: true
   field_content: true
   field_content_sections: true
   field_deadlines: true
+  field_deadlines_block: true
   field_designed_for: true
   field_hero: true
   field_hero_cta_button: true
   field_intro_paragraph: true
   field_lede: true
+  field_of_interest: true
   field_offered_by: true
+  field_program_illustration: true
   field_program_type: true
   field_video: true

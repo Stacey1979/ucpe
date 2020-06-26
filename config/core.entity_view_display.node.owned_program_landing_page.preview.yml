@@ -4,17 +4,23 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.preview
+    - field.field.node.owned_program_landing_page.field_area_of_study_cta
+    - field.field.node.owned_program_landing_page.field_areas_of_study
     - field.field.node.owned_program_landing_page.field_at_a_glance
     - field.field.node.owned_program_landing_page.field_button_
+    - field.field.node.owned_program_landing_page.field_conferred_by
     - field.field.node.owned_program_landing_page.field_content
     - field.field.node.owned_program_landing_page.field_content_sections
     - field.field.node.owned_program_landing_page.field_deadlines
+    - field.field.node.owned_program_landing_page.field_deadlines_block
     - field.field.node.owned_program_landing_page.field_designed_for
     - field.field.node.owned_program_landing_page.field_hero
     - field.field.node.owned_program_landing_page.field_hero_cta_button
     - field.field.node.owned_program_landing_page.field_intro_paragraph
     - field.field.node.owned_program_landing_page.field_lede
+    - field.field.node.owned_program_landing_page.field_of_interest
     - field.field.node.owned_program_landing_page.field_offered_by
+    - field.field.node.owned_program_landing_page.field_program_illustration
     - field.field.node.owned_program_landing_page.field_program_type
     - field.field.node.owned_program_landing_page.field_video
     - node.type.owned_program_landing_page
@@ -22,6 +28,7 @@ dependencies:
     - ds
     - entity_reference_revisions
     - link
+    - paragraphs
     - text
     - user
 third_party_settings:
@@ -47,10 +54,10 @@ third_party_settings:
         - links
         - field_program_type
         - field_areas_of_study
+        - field_hero
         - node_title
         - field_lede
         - field_hero_cta_button
-        - field_hero
         - field_at_a_glance
         - field_deadlines
         - field_video
@@ -61,10 +68,11 @@ third_party_settings:
         - field_offered_by
         - field_conferred_by
         - field_button_
+        - field_program_illustration
     fields:
       node_title:
         plugin_id: node_title
-        weight: 3
+        weight: 4
         label: hidden
         formatter: default
         settings:
@@ -76,71 +84,75 @@ targetEntityType: node
 bundle: owned_program_landing_page
 mode: preview
 content:
+  field_areas_of_study:
+    type: entity_reference_label
+    weight: 2
+    region: ds_content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
   field_at_a_glance:
     weight: 7
     label: above
-    settings:
-      view_mode: at_a_glance_ucpe
-      link: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    type: paragraph_summary
     region: ds_content
   field_button_:
     weight: 16
     label: above
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    type: paragraph_summary
     region: ds_content
+  field_conferred_by:
+    type: entity_reference_label
+    weight: 15
+    region: ds_content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_content:
     weight: 11
     label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    type: paragraph_summary
     region: ds_content
   field_content_sections:
     weight: 13
     label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    type: paragraph_summary
     region: ds_content
   field_deadlines:
-    type: entity_reference_revisions_entity_view
+    type: paragraph_summary
     weight: 8
     label: above
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
     region: ds_content
   field_designed_for:
     weight: 12
     label: above
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    type: paragraph_summary
     region: ds_content
   field_hero:
-    weight: 6
+    weight: 3
     label: hidden
     settings:
-      view_mode: default
+      view_mode: preview
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_hero_cta_button:
-    weight: 5
+    weight: 6
     label: hidden
     settings:
       trim_length: 80
@@ -154,14 +166,12 @@ content:
   field_intro_paragraph:
     weight: 10
     label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    type: paragraph_summary
     region: ds_content
   field_lede:
-    weight: 4
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -175,6 +185,15 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
+  field_program_illustration:
+    type: entity_reference_entity_view
+    weight: 17
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: of_interest
+      link: false
+    third_party_settings: {  }
   field_program_type:
     weight: 1
     label: hidden
@@ -198,3 +217,6 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_area_of_study_cta: true
+  field_deadlines_block: true
+  field_of_interest: true

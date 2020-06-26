@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
+    - field.field.node.case_study.field_of_interest
     - field.field.node.case_study.field_partnership_logos
     - field.field.node.case_study.field_related_program_tag
     - field.field.node.case_study.field_results
@@ -38,7 +39,7 @@ third_party_settings:
           right: div
         outer_wrapper: div
         attributes: ''
-        link_attribute: ''
+        link_attribute: content
         link_custom: ''
         classes:
           layout_class: {  }
@@ -137,6 +138,7 @@ hidden:
   field_cta: true
   field_intro_paragraph: true
   field_lede: true
+  field_of_interest: true
   field_partnership_logos: true
   field_related_program_tag: true
   field_results: true

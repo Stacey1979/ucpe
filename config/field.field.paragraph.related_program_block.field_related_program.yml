@@ -4,14 +4,14 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_related_program
-    - node.type.page
+    - node.type.owned_program_landing_page
     - paragraphs.paragraphs_type.related_program_block
 id: paragraph.related_program_block.field_related_program
 field_name: field_related_program
 entity_type: paragraph
 bundle: related_program_block
 label: 'Related Program'
-description: ''
+description: 'Add a related program block. '
 required: false
 translatable: false
 default_value: {  }
@@ -20,9 +20,9 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      page: page
+      owned_program_landing_page: owned_program_landing_page
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: page
 field_type: entity_reference
