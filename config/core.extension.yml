@@ -1,6 +1,5 @@
 module:
   addtoany: 0
-  addtocal: 0
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
@@ -80,7 +79,6 @@ module:
   update: 0
   user: 0
   views_ui: 0
-  viewsreference: 0
   ds: 1
   menu_link_content: 1
   pathauto: 1

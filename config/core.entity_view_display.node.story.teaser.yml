@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
     - field.field.node.story.field_lede
-    - field.field.node.story.field_related_program_tag
     - field.field.node.story.field_written_by
     - node.type.story
   module:
@@ -49,5 +48,4 @@ hidden:
   field_hero: true
   field_intro_paragraph: true
   field_lede: true
-  field_related_program_tag: true
   field_written_by: true

@@ -26,10 +26,10 @@ footer.footer {
     @include make-md-column(3);
 
     img {
-      max-width: 300px;
+      max-width: 350px;
       margin-bottom: $baseline * 2;
+      width: 80%;
       @include screen("tablet-wide") {
-        max-width: 80%;
         margin-bottom: $baseline * 4;
       }
     }
@@ -60,10 +60,12 @@ footer.footer {
     flex-wrap: wrap;
 
     .col {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 100%;
-      flex: 1;
+      @include screen("desktop") {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+      }
     }
 
     .fyf_item {
@@ -101,6 +103,10 @@ footer.footer {
 
     .lm {
       @include listreset();
+
+      .col {
+        width: 50%;
+      }
 
       li {
         padding: 0 $baseline 0 0;

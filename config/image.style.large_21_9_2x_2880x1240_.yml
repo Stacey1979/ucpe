@@ -1,0 +1,15 @@
+uuid: 52460fc2-2f4e-40bc-94da-e3da13d78a5d
+langcode: en
+status: true
+dependencies: {  }
+name: large_21_9_2x_2880x1240_
+label: 'Large 21:9 2x (2880x1240)'
+effects:
+  2f7382fd-691d-40c1-884a-423555688016:
+    uuid: 2f7382fd-691d-40c1-884a-423555688016
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2880
+      height: 1240
+      anchor: center-center

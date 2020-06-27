@@ -1,0 +1,24 @@
+uuid: 02ae7ebd-2f4a-435a-9c2b-2e127882ec7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.extra_small_1_1_180x180_
+    - image.style.small_1_1_360x360_
+  theme:
+    - ucpe_theme
+id: headshot
+label: Headshot
+image_style_mappings:
+  -
+    breakpoint_id: ucpe.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: extra_small_1_1_180x180_
+  -
+    breakpoint_id: ucpe.screen-xs-max
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: small_1_1_360x360_
+breakpoint_group: ucpe_theme
+fallback_image_style: extra_small_1_1_180x180_

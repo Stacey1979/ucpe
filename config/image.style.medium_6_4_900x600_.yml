@@ -1,0 +1,15 @@
+uuid: 0b7e9fa3-579d-4a4d-8382-34cf444e3411
+langcode: en
+status: true
+dependencies: {  }
+name: medium_6_4_900x600_
+label: 'Medium 6:4 (900x600)'
+effects:
+  a29d8222-ccc4-40ef-87bb-8386f0dee698:
+    uuid: a29d8222-ccc4-40ef-87bb-8386f0dee698
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 900
+      height: 600
+      anchor: center-center

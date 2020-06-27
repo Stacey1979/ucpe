@@ -1,0 +1,27 @@
+uuid: 5bd08322-6c82-49ee-b435-b84222c8ae34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.person
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: node.person.field_name
+field_name: field_name
+entity_type: node
+bundle: person
+label: Name
+description: 'Enter the person''s name and credentials. (Willow Rosenberg, PhD) No periods'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
