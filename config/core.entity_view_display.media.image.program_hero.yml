@@ -1,6 +1,6 @@
 uuid: 696b8a7a-5595-4324-b3b3-0fcde66b613e
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.media.program_hero

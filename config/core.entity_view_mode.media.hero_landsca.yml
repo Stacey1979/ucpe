@@ -1,0 +1,10 @@
+uuid: 48ee406c-c8e4-4baf-a22f-8230afbc832e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.hero_landsca
+label: 'Hero - Landscape'
+targetEntityType: media
+cache: true

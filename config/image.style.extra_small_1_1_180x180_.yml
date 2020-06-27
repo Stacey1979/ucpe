@@ -1,0 +1,15 @@
+uuid: 323cbfd3-e251-4cd1-9bce-af8a9a187f1a
+langcode: en
+status: true
+dependencies: {  }
+name: extra_small_1_1_180x180_
+label: 'Extra Small 1:1 (180x180)'
+effects:
+  24686fc7-7f70-46a8-92b0-b22a7d6f42d2:
+    uuid: 24686fc7-7f70-46a8-92b0-b22a7d6f42d2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 180
+      anchor: center-center

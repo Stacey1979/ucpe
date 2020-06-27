@@ -1,0 +1,15 @@
+uuid: 29f7a433-da53-4a2f-885a-59c443cc59a5
+langcode: en
+status: true
+dependencies: {  }
+name: large_3_4_675x900_
+label: 'Large 3:4 (675x900)'
+effects:
+  a430e616-cc6c-4b9e-8e5b-e628723cb9ba:
+    uuid: a430e616-cc6c-4b9e-8e5b-e628723cb9ba
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 675
+      height: 900
+      anchor: center-center

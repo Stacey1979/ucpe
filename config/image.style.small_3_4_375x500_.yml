@@ -1,0 +1,15 @@
+uuid: d2522221-a593-4496-aeca-3d83ff7f530d
+langcode: en
+status: true
+dependencies: {  }
+name: small_3_4_375x500_
+label: 'Small 3:4 (375x500)'
+effects:
+  92d0ba6b-8c3d-4020-9f52-121c3265ec04:
+    uuid: 92d0ba6b-8c3d-4020-9f52-121c3265ec04
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 375
+      height: 500
+      anchor: center-center

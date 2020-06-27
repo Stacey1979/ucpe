@@ -1,0 +1,46 @@
+uuid: 0a5e8efc-36ef-494a-a756-defbb89312fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large_3_4_2x_1200x1600_
+    - image.style.large_3_4_675x900_
+    - image.style.medium_3_4_480x640_
+    - image.style.small_3_4_375x500_
+  theme:
+    - ucpe_theme
+id: hero_portrait
+label: 'Hero - Portrait'
+image_style_mappings:
+  -
+    breakpoint_id: ucpe.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_3_4_675x900_
+  -
+    breakpoint_id: ucpe.screen-lg-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: large_3_4_2x_1200x1600_
+  -
+    breakpoint_id: ucpe.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium_3_4_480x640_
+  -
+    breakpoint_id: ucpe.screen-md-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: large_3_4_675x900_
+  -
+    breakpoint_id: ucpe.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: small_3_4_375x500_
+  -
+    breakpoint_id: ucpe.screen-sm-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: medium_3_4_480x640_
+breakpoint_group: ucpe_theme
+fallback_image_style: small_3_4_375x500_

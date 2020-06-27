@@ -4,9 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.extra_small_1_1_180x180_
   module:
-    - image
+    - path
+    - svg_image
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -37,7 +38,7 @@ content:
     type: image_image
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: extra_small_1_1_180x180_
     third_party_settings: {  }
     weight: -1
     region: content
