@@ -1,0 +1,10 @@
+uuid: 675b5103-c2ac-4005-b9de-913f0b38e43c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.content_image_r
+label: 'Content Image - Full'
+targetEntityType: media
+cache: true

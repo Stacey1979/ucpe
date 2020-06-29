@@ -1,0 +1,46 @@
+uuid: 11476a78-0e1a-494c-8382-ef6d1f57aa1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large_1_1_2x_1800x1800_
+    - image.style.large_1_1_900x900_
+    - image.style.medium_1_1_600x600_
+    - image.style.small_1_1_360x360_
+  theme:
+    - ucpe_theme
+id: hero_square
+label: 'Hero - Square'
+image_style_mappings:
+  -
+    breakpoint_id: ucpe.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_1_1_900x900_
+  -
+    breakpoint_id: ucpe.screen-lg-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: large_1_1_2x_1800x1800_
+  -
+    breakpoint_id: ucpe.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium_1_1_600x600_
+  -
+    breakpoint_id: ucpe.screen-md-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: large_1_1_900x900_
+  -
+    breakpoint_id: ucpe.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: small_1_1_360x360_
+  -
+    breakpoint_id: ucpe.screen-sm-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: medium_1_1_600x600_
+breakpoint_group: ucpe_theme
+fallback_image_style: small_1_1_360x360_

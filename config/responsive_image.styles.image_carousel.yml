@@ -1,0 +1,46 @@
+uuid: d469f648-ca60-460c-ae2c-40bd550bad10
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large_6_4_1200x800_
+    - image.style.large_6_4_2x_2400x1600_
+    - image.style.medium_6_4_900x600_
+    - image.style.small_6_4_480x320_
+  theme:
+    - ucpe_theme
+id: image_carousel
+label: 'Image Carousel'
+image_style_mappings:
+  -
+    breakpoint_id: ucpe.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_6_4_1200x800_
+  -
+    breakpoint_id: ucpe.screen-lg-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: large_6_4_2x_2400x1600_
+  -
+    breakpoint_id: ucpe.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium_6_4_900x600_
+  -
+    breakpoint_id: ucpe.screen-md-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: large_6_4_1200x800_
+  -
+    breakpoint_id: ucpe.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: small_6_4_480x320_
+  -
+    breakpoint_id: ucpe.screen-sm-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: medium_6_4_900x600_
+breakpoint_group: ucpe_theme
+fallback_image_style: small_6_4_480x320_

@@ -49,6 +49,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  body: true
   field_bio: true
   field_conta: true
   field_contact_email: true

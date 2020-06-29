@@ -86,6 +86,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  body: true
   field_conta: true
   field_contact_email: true
   field_contact_first_name_link: true
