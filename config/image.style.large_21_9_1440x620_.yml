@@ -1,0 +1,15 @@
+uuid: 6295c251-ff22-4583-90df-a66dfb9d351e
+langcode: en
+status: true
+dependencies: {  }
+name: large_21_9_1440x620_
+label: 'Large 21:9 (1440x620)'
+effects:
+  238d4843-1aee-4c2a-b247-6e63185f064c:
+    uuid: 238d4843-1aee-4c2a-b247-6e63185f064c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 620
+      anchor: center-center

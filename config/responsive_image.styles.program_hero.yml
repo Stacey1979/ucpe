@@ -1,0 +1,46 @@
+uuid: 75aa5a4f-5c73-4308-abfc-66443b35d48b
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large_1_1_2x_1800x1800_
+    - image.style.large_1_1_900x900_
+    - image.style.medium_1_1_600x600_
+    - image.style.small_1_1_360x360_
+  theme:
+    - ucpe_theme
+id: program_hero
+label: 'Program Hero'
+image_style_mappings:
+  -
+    breakpoint_id: ucpe.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_1_1_900x900_
+  -
+    breakpoint_id: ucpe.screen-lg-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: large_1_1_2x_1800x1800_
+  -
+    breakpoint_id: ucpe.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium_1_1_600x600_
+  -
+    breakpoint_id: ucpe.screen-md-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: large_1_1_900x900_
+  -
+    breakpoint_id: ucpe.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: small_1_1_360x360_
+  -
+    breakpoint_id: ucpe.screen-sm-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: medium_1_1_600x600_
+breakpoint_group: ucpe_theme
+fallback_image_style: small_1_1_360x360_

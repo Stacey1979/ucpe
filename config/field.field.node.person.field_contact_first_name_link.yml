@@ -1,0 +1,25 @@
+uuid: d6ccaeec-a6ab-4639-b14a-44de61108021
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_first_name_link
+    - node.type.person
+id: node.person.field_contact_first_name_link
+field_name: field_contact_first_name_link
+entity_type: node
+bundle: person
+label: 'Contact {{first_name}} link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: email_output_text
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

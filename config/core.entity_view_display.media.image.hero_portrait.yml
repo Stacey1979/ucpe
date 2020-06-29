@@ -1,0 +1,54 @@
+uuid: 86fe09a4-6d15-48e0-854f-a08ad243f9bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.hero_portrait
+    - field.field.media.image.field_image_attribution_wysiwyg
+    - field.field.media.image.field_image_caption
+    - field.field.media.image.field_media_image
+    - image.style.large
+    - media.type.image
+  module:
+    - svg_image
+    - text
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.hero_portrait
+targetEntityType: media
+bundle: image
+mode: hero_portrait
+content:
+  field_image_attribution_wysiwyg:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image_caption:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: large
+      image_link: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    type: image
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

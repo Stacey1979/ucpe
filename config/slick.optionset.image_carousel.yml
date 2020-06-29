@@ -11,7 +11,7 @@ skin: ''
 breakpoints: 0
 optimized: true
 options:
-  options__active_tab: edit-options-responsives
+  options__active_tab: edit-options-settings
   settings:
     centerMode: true
     dots: true

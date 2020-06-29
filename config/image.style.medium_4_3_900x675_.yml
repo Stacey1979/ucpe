@@ -1,0 +1,15 @@
+uuid: 4b2e2320-4a00-4331-9e73-8a1f34750f18
+langcode: en
+status: true
+dependencies: {  }
+name: medium_4_3_900x675_
+label: 'Medium 4:3 (900x675)'
+effects:
+  1ea6929c-de69-48f3-9b9c-d641aea0b720:
+    uuid: 1ea6929c-de69-48f3-9b9c-d641aea0b720
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 900
+      height: 675
+      anchor: center-center
