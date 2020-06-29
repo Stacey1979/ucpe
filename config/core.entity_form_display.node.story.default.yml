@@ -99,6 +99,12 @@ content:
     third_party_settings: {  }
     type: text_textfield
     region: content
+  field_related_program_tag:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_written_by:
     weight: 4
     settings:

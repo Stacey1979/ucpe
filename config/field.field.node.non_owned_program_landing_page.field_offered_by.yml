@@ -1,0 +1,29 @@
+uuid: 9c421015-e1e3-4670-b613-d9f505796c58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_offered_by
+    - node.type.non_owned_program_landing_page
+    - taxonomy.vocabulary.program_owner
+id: node.non_owned_program_landing_page.field_offered_by
+field_name: field_offered_by
+entity_type: node
+bundle: non_owned_program_landing_page
+label: 'Offered By'
+description: 'Choose which school offers this program.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      program_owner: program_owner
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

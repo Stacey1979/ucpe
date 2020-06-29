@@ -1,0 +1,418 @@
+uuid: efbbbea8-27ef-4049-9346-b8c3ce6b1354
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.at_a_glance_ucpe
+    - node.type.owned_program_landing_page
+  module:
+    - datetime
+    - node
+    - paragraphs
+    - user
+id: deadlines
+label: Deadlines
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: some
+        options:
+          items_per_page: 3
+          offset: 0
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+      fields:
+        rendered_entity:
+          id: rendered_entity
+          table: paragraphs_item
+          field: rendered_entity
+          relationship: field_deadlines
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: at_a_glance_ucpe
+          entity_type: paragraph
+          plugin_id: rendered_entity
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            owned_program_landing_page: owned_program_landing_page
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_deadline_value:
+          id: field_deadline_value
+          table: paragraph__field_deadline
+          field: field_deadline_value
+          relationship: field_deadlines
+          group_type: group
+          admin_label: ''
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: '+1 second'
+            type: date
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+      title: Deadlines
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships:
+        field_deadlines:
+          id: field_deadlines
+          table: node__field_deadlines
+          field: field_deadlines
+          relationship: none
+          group_type: group
+          admin_label: 'field_deadlines: Paragraph'
+          required: true
+          plugin_id: standard
+      arguments:
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: node
+          default_argument_options: {  }
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            items_per_page: 25
+            override: false
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+          entity_type: node
+          entity_field: nid
+          plugin_id: node_nid
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.paragraph.at_a_glance.at_a_glance_ucpe'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.default'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.of_in'
+        - 'config:core.entity_view_display.paragraph.deadlines.at_a_glance_ucpe'
+        - 'config:core.entity_view_display.paragraph.deadlines.default'
+        - 'config:core.entity_view_display.paragraph.designed_for.default'
+        - 'config:core.entity_view_display.paragraph.duration.default'
+        - 'config:core.entity_view_display.paragraph.full_width_content.default'
+        - 'config:core.entity_view_display.paragraph.heroes.area_of_study_hero'
+        - 'config:core.entity_view_display.paragraph.heroes.default'
+        - 'config:core.entity_view_display.paragraph.heroes.of_in'
+        - 'config:core.entity_view_display.paragraph.heroes.program_hero'
+        - 'config:core.entity_view_display.paragraph.intro_paragraph.default'
+        - 'config:core.entity_view_display.paragraph.related_of_interest.default'
+        - 'config:core.entity_view_display.paragraph.about_person.default'
+        - 'config:core.entity_view_display.paragraph.about_student.default'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.at_a_glance_non_ucpe'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.related_program'
+        - 'config:core.entity_view_display.paragraph.blockquote.default'
+        - 'config:core.entity_view_display.paragraph.blockquotes.blockquotes'
+        - 'config:core.entity_view_display.paragraph.blockquotes.default'
+        - 'config:core.entity_view_display.paragraph.blockquotes.preview'
+        - 'config:core.entity_view_display.paragraph.button_set.default'
+        - 'config:core.entity_view_display.paragraph.button_set.preview'
+        - 'config:core.entity_view_display.paragraph.content_sections.default'
+        - 'config:core.entity_view_display.paragraph.cta.default'
+        - 'config:core.entity_view_display.paragraph.cta.preview'
+        - 'config:core.entity_view_display.paragraph.deadlines.how_to_apply'
+        - 'config:core.entity_view_display.paragraph.full_width_content.person_trimmed_bio'
+        - 'config:core.entity_view_display.paragraph.full_width_content.preview'
+        - 'config:core.entity_view_display.paragraph.header_s_.default'
+        - 'config:core.entity_view_display.paragraph.header_s_.preview'
+        - 'config:core.entity_view_display.paragraph.heroes.perspectives_case_study_hero_para'
+        - 'config:core.entity_view_display.paragraph.heroes.preview'
+        - 'config:core.entity_view_display.paragraph.heroes.related_story_hero'
+        - 'config:core.entity_view_display.paragraph.heroes.related_three_up'
+        - 'config:core.entity_view_display.paragraph.heroes.story_hero'
+        - 'config:core.entity_view_display.paragraph.horizontal_rule.default'
+        - 'config:core.entity_view_display.paragraph.horizontal_rule.preview'
+        - 'config:core.entity_view_display.paragraph.image_carousel.default'
+        - 'config:core.entity_view_display.paragraph.image_carousel.preview'
+        - 'config:core.entity_view_display.paragraph.image_carousel_combo.default'
+        - 'config:core.entity_view_display.paragraph.image_carousel_combo.preview'
+        - 'config:core.entity_view_display.paragraph.in_brief.default'
+        - 'config:core.entity_view_display.paragraph.instructor_program_and_courses.default'
+        - 'config:core.entity_view_display.paragraph.instructor_program_courses_combo.default'
+        - 'config:core.entity_view_display.paragraph.instructor_program_courses_combo.preview'
+        - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.default'
+        - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.preview'
+        - 'config:core.entity_view_display.paragraph.related_instructors.default'
+        - 'config:core.entity_view_display.paragraph.related_instructors.preview'
+        - 'config:core.entity_view_display.paragraph.related_program_block.default'
+        - 'config:core.entity_view_display.paragraph.statistics.default'
+        - 'config:core.entity_view_display.paragraph.statistics.preview'
+        - 'config:core.entity_view_display.paragraph.story_about_combo.default'
+        - 'config:core.entity_view_display.paragraph.story_about_combo.preview'
+        - 'config:core.entity_view_display.paragraph.story_programs.default'
+        - 'config:core.entity_view_display.paragraph.text_one_two_third.default'
+        - 'config:core.entity_view_display.paragraph.text_one_two_third.preview'
+        - 'config:core.entity_view_display.paragraph.text_two_one_third.default'
+        - 'config:core.entity_view_display.paragraph.text_two_one_third.preview'
+        - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.default'
+        - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.preview'
+        - 'config:core.entity_view_display.paragraph.three_up_image_and_text.default'
+        - 'config:core.entity_view_display.paragraph.three_up_image_and_text.preview'
+        - 'config:core.entity_view_display.paragraph.three_up_statistic.default'
+        - 'config:core.entity_view_display.paragraph.three_up_statistic.preview'
+        - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.default'
+        - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.preview'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: 'UCPE Owned Program Landing Page Deadlines'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      block_description: 'UCPE Owned Program Deadlines Block'
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.paragraph.about_person.default'
+        - 'config:core.entity_view_display.paragraph.about_student.default'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.at_a_glance_non_ucpe'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.at_a_glance_ucpe'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.default'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.of_in'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.related_program'
+        - 'config:core.entity_view_display.paragraph.blockquote.default'
+        - 'config:core.entity_view_display.paragraph.blockquotes.blockquotes'
+        - 'config:core.entity_view_display.paragraph.blockquotes.default'
+        - 'config:core.entity_view_display.paragraph.blockquotes.preview'
+        - 'config:core.entity_view_display.paragraph.button_set.default'
+        - 'config:core.entity_view_display.paragraph.button_set.preview'
+        - 'config:core.entity_view_display.paragraph.content_sections.default'
+        - 'config:core.entity_view_display.paragraph.cta.default'
+        - 'config:core.entity_view_display.paragraph.cta.preview'
+        - 'config:core.entity_view_display.paragraph.deadlines.at_a_glance_ucpe'
+        - 'config:core.entity_view_display.paragraph.deadlines.default'
+        - 'config:core.entity_view_display.paragraph.deadlines.how_to_apply'
+        - 'config:core.entity_view_display.paragraph.designed_for.default'
+        - 'config:core.entity_view_display.paragraph.duration.default'
+        - 'config:core.entity_view_display.paragraph.full_width_content.default'
+        - 'config:core.entity_view_display.paragraph.full_width_content.person_trimmed_bio'
+        - 'config:core.entity_view_display.paragraph.full_width_content.preview'
+        - 'config:core.entity_view_display.paragraph.header_s_.default'
+        - 'config:core.entity_view_display.paragraph.header_s_.preview'
+        - 'config:core.entity_view_display.paragraph.heroes.area_of_study_hero'
+        - 'config:core.entity_view_display.paragraph.heroes.default'
+        - 'config:core.entity_view_display.paragraph.heroes.of_in'
+        - 'config:core.entity_view_display.paragraph.heroes.perspectives_case_study_hero_para'
+        - 'config:core.entity_view_display.paragraph.heroes.preview'
+        - 'config:core.entity_view_display.paragraph.heroes.program_hero'
+        - 'config:core.entity_view_display.paragraph.heroes.related_story_hero'
+        - 'config:core.entity_view_display.paragraph.heroes.related_three_up'
+        - 'config:core.entity_view_display.paragraph.heroes.story_hero'
+        - 'config:core.entity_view_display.paragraph.horizontal_rule.default'
+        - 'config:core.entity_view_display.paragraph.horizontal_rule.preview'
+        - 'config:core.entity_view_display.paragraph.image_carousel.default'
+        - 'config:core.entity_view_display.paragraph.image_carousel.preview'
+        - 'config:core.entity_view_display.paragraph.image_carousel_combo.default'
+        - 'config:core.entity_view_display.paragraph.image_carousel_combo.preview'
+        - 'config:core.entity_view_display.paragraph.instructor_program_and_courses.default'
+        - 'config:core.entity_view_display.paragraph.instructor_program_courses_combo.default'
+        - 'config:core.entity_view_display.paragraph.instructor_program_courses_combo.preview'
+        - 'config:core.entity_view_display.paragraph.intro_paragraph.default'
+        - 'config:core.entity_view_display.paragraph.in_brief.default'
+        - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.default'
+        - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.preview'
+        - 'config:core.entity_view_display.paragraph.related_instructors.default'
+        - 'config:core.entity_view_display.paragraph.related_instructors.preview'
+        - 'config:core.entity_view_display.paragraph.related_of_interest.default'
+        - 'config:core.entity_view_display.paragraph.related_program_block.default'
+        - 'config:core.entity_view_display.paragraph.statistics.default'
+        - 'config:core.entity_view_display.paragraph.statistics.preview'
+        - 'config:core.entity_view_display.paragraph.story_about_combo.default'
+        - 'config:core.entity_view_display.paragraph.story_about_combo.preview'
+        - 'config:core.entity_view_display.paragraph.story_programs.default'
+        - 'config:core.entity_view_display.paragraph.text_one_two_third.default'
+        - 'config:core.entity_view_display.paragraph.text_one_two_third.preview'
+        - 'config:core.entity_view_display.paragraph.text_two_one_third.default'
+        - 'config:core.entity_view_display.paragraph.text_two_one_third.preview'
+        - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.default'
+        - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.preview'
+        - 'config:core.entity_view_display.paragraph.three_up_image_and_text.default'
+        - 'config:core.entity_view_display.paragraph.three_up_image_and_text.preview'
+        - 'config:core.entity_view_display.paragraph.three_up_statistic.default'
+        - 'config:core.entity_view_display.paragraph.three_up_statistic.preview'
+        - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.default'
+        - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.preview'

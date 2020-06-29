@@ -33,8 +33,8 @@ widgets:
   19b9b517-2dad-45ad-83f9-a6edfbe8d987:
     settings:
       entity_type: media
-      bundle: remote_video
-      form_mode: default
+      bundle: embedded_video
+      form_mode: media_library
       submit_text: 'Add Video'
     uuid: 19b9b517-2dad-45ad-83f9-a6edfbe8d987
     weight: 2

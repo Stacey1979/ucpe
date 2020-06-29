@@ -1,0 +1,10 @@
+uuid: 7f27d778-1cf7-4fd3-8136-7bd182c1590c
+langcode: en
+status: true
+dependencies: {  }
+id: form_embed
+label: 'Form Embed'
+icon_uuid: null
+icon_default: null
+description: 'For form embeds and optional title. '
+behavior_plugins: {  }

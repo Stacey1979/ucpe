@@ -1,0 +1,21 @@
+uuid: 4c3076d2-87bc-4acc-becb-39b93b2262af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_round
+    - paragraphs.paragraphs_type.deadlines
+id: paragraph.deadlines.field_round
+field_name: field_round
+entity_type: paragraph
+bundle: deadlines
+label: Round
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Round 1: Autumn 2020'
+default_value_callback: ''
+settings: {  }
+field_type: string

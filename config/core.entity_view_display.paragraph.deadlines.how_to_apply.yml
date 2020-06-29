@@ -1,0 +1,77 @@
+uuid: 6a46a8fb-25dd-40fe-b906-33db4df8b0d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.how_to_apply
+    - field.field.paragraph.deadlines.field_deadline
+    - field.field.paragraph.deadlines.field_decision
+    - field.field.paragraph.deadlines.field_round
+    - paragraphs.paragraphs_type.deadlines
+  module:
+    - addtocal
+    - datetime
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_round
+        - field_deadline
+        - field_decision
+id: paragraph.deadlines.how_to_apply
+targetEntityType: paragraph
+bundle: deadlines
+mode: how_to_apply
+content:
+  field_deadline:
+    weight: 1
+    label: above
+    settings:
+      timezone_override: ''
+      location:
+        value: false
+        tokenized: ''
+      description:
+        value: false
+        tokenized: ''
+      past_events: false
+      separator: '-'
+      date_format: 'Y-m-d\TH:i:s'
+    third_party_settings: {  }
+    type: addtocal_view
+    region: ds_content
+  field_decision:
+    weight: 2
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: month_year
+    third_party_settings: {  }
+    type: datetime_default
+    region: ds_content
+  field_round:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+hidden: {  }

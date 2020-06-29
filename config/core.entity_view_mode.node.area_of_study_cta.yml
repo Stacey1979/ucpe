@@ -1,0 +1,10 @@
+uuid: 8635c6cb-5424-42ca-a79b-c5e74f833341
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.area_of_study_cta
+label: 'Area of Study CTA'
+targetEntityType: node
+cache: true

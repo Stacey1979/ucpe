@@ -1,0 +1,76 @@
+uuid: 299e0e11-7e42-47e8-a111-fdc24811b30a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.deadlines.field_deadline
+    - field.field.paragraph.deadlines.field_decision
+    - field.field.paragraph.deadlines.field_round
+    - paragraphs.paragraphs_type.deadlines
+  module:
+    - addtocal
+    - datetime
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_round
+        - field_deadline
+        - field_decision
+id: paragraph.deadlines.default
+targetEntityType: paragraph
+bundle: deadlines
+mode: default
+content:
+  field_deadline:
+    weight: 1
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: 'M. d, Y'
+      location:
+        value: '0'
+        tokenized: ''
+      description:
+        value: '0'
+        tokenized: 'UChicago Application Deadline'
+      past_events: 0
+      separator: '-'
+    third_party_settings: {  }
+    type: addtocal_view
+    region: ds_content
+  field_decision:
+    weight: 2
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: month_year
+    third_party_settings: {  }
+    type: datetime_default
+    region: ds_content
+  field_round:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+hidden: {  }

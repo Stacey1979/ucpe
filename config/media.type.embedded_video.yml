@@ -1,0 +1,15 @@
+uuid: d6d4fc58-4cfd-4ec9-aecb-48534e61add9
+langcode: en
+status: true
+dependencies:
+  module:
+    - video_embed_media
+id: embedded_video
+label: 'Embedded Video'
+description: 'Use Video for embedding videos hosted by YouTube, Vimeo, or some other provider.'
+source: video_embed_field
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_video_embed_field
+field_map: {  }

@@ -1,0 +1,21 @@
+uuid: 78df31ba-e8c3-4a32-adbd-35413bb4a473
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_form_title
+    - paragraphs.paragraphs_type.form_embed
+id: paragraph.form_embed.field_form_title
+field_name: field_form_title
+entity_type: paragraph
+bundle: form_embed
+label: 'Form Title'
+description: 'Enter a form title, or leave the default title. '
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Request for Information'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: a3fe730a-c215-4b3a-9d14-fec58fcddd37
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.related_program
+label: 'Related Program'
+targetEntityType: paragraph
+cache: true

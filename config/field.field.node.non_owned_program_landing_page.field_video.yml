@@ -1,0 +1,29 @@
+uuid: b25c51e5-3faf-4cb9-90bf-25caa0ccea26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - media.type.embedded_video
+    - node.type.non_owned_program_landing_page
+id: node.non_owned_program_landing_page.field_video
+field_name: field_video
+entity_type: node
+bundle: non_owned_program_landing_page
+label: Video
+description: 'Add a related program video.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      embedded_video: embedded_video
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

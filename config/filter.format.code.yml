@@ -1,0 +1,19 @@
+uuid: cdda4e51-3e3c-4035-94ab-25fc161c13fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+name: Code
+format: code
+weight: 0
+filters:
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }

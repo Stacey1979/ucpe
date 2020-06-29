@@ -1,0 +1,28 @@
+uuid: 1ebbeddb-7b57-442b-b56f-2e655d85bb05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_form_code
+    - paragraphs.paragraphs_type.form_embed
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    code: code
+    full_html: '0'
+    basic_html: '0'
+    plain_text: '0'
+id: paragraph.form_embed.field_form_code
+field_name: field_form_code
+entity_type: paragraph
+bundle: form_embed
+label: 'Form Code'
+description: 'Enter the embed code for the form.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

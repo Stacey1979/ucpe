@@ -1,0 +1,22 @@
+uuid: 370cc05f-7bd8-4e39-9865-dce9aa0a538b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: case_study
+label: 'Case Study'
+type: 'canonical_entities:node'
+pattern: '/partnerships/[node:field_case_study_type:value]/[node:title]'
+selection_criteria:
+  37f0ee66-8219-4fd6-a4b3-434cbc65e2e6:
+    id: node_type
+    bundles:
+      case_study: case_study
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 37f0ee66-8219-4fd6-a4b3-434cbc65e2e6
+selection_logic: and
+weight: -5
+relationships: {  }
