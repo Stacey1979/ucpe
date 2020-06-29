@@ -1,0 +1,10 @@
+uuid: a0a1763d-972b-46a2-9e63-8ef0ecc95b7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.of_interest
+label: 'Of Interest'
+targetEntityType: node
+cache: true

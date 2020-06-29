@@ -1,0 +1,27 @@
+uuid: 4b1b2ba9-0431-4256-8c15-0d4ca2509244
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_challenge
+    - node.type.case_study
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: node.case_study.field_challenge
+field_name: field_challenge
+entity_type: node
+bundle: case_study
+label: Challenge
+description: 'Add the short challenge sentence.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,19 @@
+uuid: 8d48f2d5-aa76-4803-97b5-db17376ab134
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_about_partnership
+field_name: field_about_partnership
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -125,9 +125,11 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_bio: true
   field_conta: true
   field_contact_email: true
   field_contact_first_name_link: true
   field_contact_x: true
+  field_course_s_: true
   field_name: true
   field_title: true

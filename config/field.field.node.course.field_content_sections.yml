@@ -1,0 +1,120 @@
+uuid: a753a54e-e141-4ec9-9950-4350af90f52e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_sections
+    - node.type.course
+    - paragraphs.paragraphs_type.blockquotes
+    - paragraphs.paragraphs_type.button_set
+    - paragraphs.paragraphs_type.full_width_content
+    - paragraphs.paragraphs_type.header_s_
+    - paragraphs.paragraphs_type.horizontal_rule
+    - paragraphs.paragraphs_type.statistics
+    - paragraphs.paragraphs_type.three_up_illust_img_combo
+    - paragraphs.paragraphs_type.three_up_statistics_combo
+  module:
+    - entity_reference_revisions
+id: node.course.field_content_sections
+field_name: field_content_sections
+entity_type: node
+bundle: course
+label: 'Content Sections'
+description: 'Add different content formats to complete the page. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      blockquotes: blockquotes
+      button_set: button_set
+      full_width_content: full_width_content
+      header_s_: header_s_
+      horizontal_rule: horizontal_rule
+      statistics: statistics
+      three_up_illust_img_combo: three_up_illust_img_combo
+      three_up_statistics_combo: three_up_statistics_combo
+    target_bundles_drag_drop:
+      about_person:
+        weight: 27
+        enabled: false
+      about_student:
+        weight: 28
+        enabled: false
+      blockquote:
+        weight: 29
+        enabled: false
+      blockquotes:
+        enabled: true
+        weight: 30
+      button_set:
+        enabled: true
+        weight: 31
+      content_sections:
+        weight: 32
+        enabled: false
+      cta:
+        weight: 33
+        enabled: false
+      full_width_content:
+        enabled: true
+        weight: 34
+      header_s_:
+        enabled: true
+        weight: 35
+      heroes:
+        weight: 36
+        enabled: false
+      horizontal_rule:
+        enabled: true
+        weight: 37
+      image_carousel:
+        weight: 38
+        enabled: false
+      image_carousel_combo:
+        weight: 39
+        enabled: false
+      in_brief:
+        weight: 41
+        enabled: false
+      intro_paragraph:
+        weight: 40
+        enabled: false
+      large_image_with_caption_left_or:
+        weight: 42
+        enabled: false
+      related_program_block:
+        weight: 43
+        enabled: false
+      statistics:
+        enabled: true
+        weight: 44
+      story_about_combo:
+        weight: 45
+        enabled: false
+      story_programs:
+        weight: 46
+        enabled: false
+      text_one_two_third:
+        weight: 47
+        enabled: false
+      text_two_one_third:
+        weight: 48
+        enabled: false
+      three_up_illust_img_combo:
+        enabled: true
+        weight: 49
+      three_up_image_and_text:
+        weight: 50
+        enabled: false
+      three_up_statistic:
+        weight: 51
+        enabled: false
+      three_up_statistics_combo:
+        enabled: true
+        weight: 52
+field_type: entity_reference_revisions

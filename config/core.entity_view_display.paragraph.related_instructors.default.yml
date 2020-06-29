@@ -1,0 +1,47 @@
+uuid: 60dc9903-a678-475e-96c9-15aa530b568b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_instructors.field_add_instructors
+    - paragraphs.paragraphs_type.related_instructors
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_add_instructors
+id: paragraph.related_instructors.default
+targetEntityType: paragraph
+bundle: related_instructors
+mode: default
+content:
+  field_add_instructors:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: instructor_pages
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
+    region: ds_content
+hidden: {  }

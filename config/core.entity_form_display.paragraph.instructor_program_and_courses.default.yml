@@ -1,0 +1,32 @@
+uuid: aab59469-bae2-47bd-8154-aeed89f825f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.instructor_program_and_courses.field_course
+    - field.field.paragraph.instructor_program_and_courses.field_program
+    - paragraphs.paragraphs_type.instructor_program_and_courses
+id: paragraph.instructor_program_and_courses.default
+targetEntityType: paragraph
+bundle: instructor_program_and_courses
+mode: default
+content:
+  field_course:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_program:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

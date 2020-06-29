@@ -1,0 +1,29 @@
+uuid: f0735f4f-6eb1-4cf9-ab79-5e6c11e86871
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_program_duration
+    - paragraphs.paragraphs_type.duration
+    - taxonomy.vocabulary.duration
+id: paragraph.duration.field_program_duration
+field_name: field_program_duration
+entity_type: paragraph
+bundle: duration
+label: 'Duration Filter'
+description: 'Add duration search filter for program'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      duration: duration
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

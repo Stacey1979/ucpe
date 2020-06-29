@@ -1,0 +1,23 @@
+uuid: 4aafc180-57b8-461f-8a8f-ed26e085d3fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_to_financial_aid
+    - paragraphs.paragraphs_type.at_a_glance
+  module:
+    - link
+id: paragraph.at_a_glance.field_link_to_financial_aid
+field_name: field_link_to_financial_aid
+entity_type: paragraph
+bundle: at_a_glance
+label: 'Link to Financial Aid'
+description: 'Add a link to financial aid information if relevant. If relevant, add "Financial aid information" as the link text. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

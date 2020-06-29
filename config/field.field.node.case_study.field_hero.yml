@@ -1,0 +1,106 @@
+uuid: afe29bd1-9202-4afd-bdfb-448e3f72de13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero
+    - node.type.case_study
+    - paragraphs.paragraphs_type.heroes
+  module:
+    - entity_reference_revisions
+id: node.case_study.field_hero
+field_name: field_hero
+entity_type: node
+bundle: case_study
+label: Hero
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      heroes: heroes
+    target_bundles_drag_drop:
+      about_person:
+        weight: 27
+        enabled: false
+      about_student:
+        weight: 28
+        enabled: false
+      blockquote:
+        weight: 29
+        enabled: false
+      blockquotes:
+        weight: 30
+        enabled: false
+      button_set:
+        weight: 31
+        enabled: false
+      content_sections:
+        weight: 32
+        enabled: false
+      cta:
+        weight: 33
+        enabled: false
+      full_width_content:
+        weight: 34
+        enabled: false
+      header_s_:
+        weight: 35
+        enabled: false
+      heroes:
+        enabled: true
+        weight: 36
+      horizontal_rule:
+        weight: 37
+        enabled: false
+      image_carousel:
+        weight: 38
+        enabled: false
+      image_carousel_combo:
+        weight: 39
+        enabled: false
+      in_brief:
+        weight: 41
+        enabled: false
+      intro_paragraph:
+        weight: 40
+        enabled: false
+      large_image_with_caption_left_or:
+        weight: 42
+        enabled: false
+      related_program_block:
+        weight: 43
+        enabled: false
+      statistics:
+        weight: 44
+        enabled: false
+      story_about_combo:
+        weight: 45
+        enabled: false
+      story_programs:
+        weight: 46
+        enabled: false
+      text_one_two_third:
+        weight: 47
+        enabled: false
+      text_two_one_third:
+        weight: 48
+        enabled: false
+      three_up_illust_img_combo:
+        weight: 49
+        enabled: false
+      three_up_image_and_text:
+        weight: 50
+        enabled: false
+      three_up_statistic:
+        weight: 51
+        enabled: false
+      three_up_statistics_combo:
+        weight: 52
+        enabled: false
+field_type: entity_reference_revisions

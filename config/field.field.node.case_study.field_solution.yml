@@ -1,0 +1,27 @@
+uuid: bd90a261-eb31-4287-9164-34f3849fa2eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_solution
+    - node.type.case_study
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: node.case_study.field_solution
+field_name: field_solution
+entity_type: node
+bundle: case_study
+label: Solution
+description: 'Add the short solution sentence. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

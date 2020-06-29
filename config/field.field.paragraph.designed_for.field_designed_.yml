@@ -1,0 +1,27 @@
+uuid: 02179baf-0d6b-47f1-80ef-bd9d1654cc67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_designed_
+    - paragraphs.paragraphs_type.designed_for
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: paragraph.designed_for.field_designed_
+field_name: field_designed_
+entity_type: paragraph
+bundle: designed_for
+label: 'Designed For'
+description: 'A short explanation about who the program is designed for. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -138,3 +138,4 @@ content:
 hidden:
   body: true
   field_date_and_lede: true
+  field_related_program_tag: true

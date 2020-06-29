@@ -1,0 +1,8 @@
+uuid: 80b99adb-292f-44cc-a9ad-563ca9cbbbe4
+langcode: en
+status: true
+dependencies: {  }
+id: abbreviated_date
+label: 'Abbreviated Date'
+locked: false
+pattern: 'M. d, Y'

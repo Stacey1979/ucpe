@@ -1,0 +1,18 @@
+uuid: e661ba2b-f5e0-4da1-82e4-8a098cb8ab99
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:menu_link_content:12a51918-680e-46b7-af09-af549de88c04'
+name: 'Owned Program Landing Page'
+type: owned_program_landing_page
+description: 'UCPE Owned program landing page. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

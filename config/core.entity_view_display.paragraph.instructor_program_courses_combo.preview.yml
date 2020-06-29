@@ -1,0 +1,28 @@
+uuid: 69c6481a-27c2-4094-b085-6829d5406ba2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.instructor_program_courses_combo.field_course_s_
+    - paragraphs.paragraphs_type.instructor_program_courses_combo
+  module:
+    - ds
+    - entity_reference_revisions
+id: paragraph.instructor_program_courses_combo.preview
+targetEntityType: paragraph
+bundle: instructor_program_courses_combo
+mode: preview
+content:
+  field_course_s_:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: content
+hidden: {  }

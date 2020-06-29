@@ -1,0 +1,127 @@
+uuid: 2e58d7ac-c194-4884-a088-0afeb450a413
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_duration
+    - paragraphs.paragraphs_type.at_a_glance
+    - paragraphs.paragraphs_type.duration
+  module:
+    - entity_reference_revisions
+id: paragraph.at_a_glance.field_duration
+field_name: field_duration
+entity_type: paragraph
+bundle: at_a_glance
+label: Duration
+description: 'Add the duration and associated enrollment option.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      duration: duration
+    target_bundles_drag_drop:
+      about_person:
+        weight: 34
+        enabled: false
+      about_student:
+        weight: 35
+        enabled: false
+      at_a_glance:
+        weight: 36
+        enabled: false
+      blockquote:
+        weight: 37
+        enabled: false
+      blockquotes:
+        weight: 38
+        enabled: false
+      button_set:
+        weight: 39
+        enabled: false
+      content_sections:
+        weight: 40
+        enabled: false
+      cta:
+        weight: 41
+        enabled: false
+      designed_for:
+        weight: 42
+        enabled: false
+      duration:
+        enabled: true
+        weight: 43
+      full_width_content:
+        weight: 44
+        enabled: false
+      header_s_:
+        weight: 45
+        enabled: false
+      heroes:
+        weight: 46
+        enabled: false
+      horizontal_rule:
+        weight: 47
+        enabled: false
+      image_carousel:
+        weight: 48
+        enabled: false
+      image_carousel_combo:
+        weight: 49
+        enabled: false
+      in_brief:
+        weight: 53
+        enabled: false
+      instructor_program_and_courses:
+        weight: 50
+        enabled: false
+      instructor_program_courses_combo:
+        weight: 51
+        enabled: false
+      intro_paragraph:
+        weight: 52
+        enabled: false
+      large_image_with_caption_left_or:
+        weight: 54
+        enabled: false
+      offered_by:
+        weight: 55
+        enabled: false
+      related_instructors:
+        weight: 56
+        enabled: false
+      related_program_block:
+        weight: 57
+        enabled: false
+      statistics:
+        weight: 58
+        enabled: false
+      story_about_combo:
+        weight: 59
+        enabled: false
+      story_programs:
+        weight: 60
+        enabled: false
+      text_one_two_third:
+        weight: 61
+        enabled: false
+      text_two_one_third:
+        weight: 62
+        enabled: false
+      three_up_illust_img_combo:
+        weight: 63
+        enabled: false
+      three_up_image_and_text:
+        weight: 64
+        enabled: false
+      three_up_statistic:
+        weight: 65
+        enabled: false
+      three_up_statistics_combo:
+        weight: 66
+        enabled: false
+field_type: entity_reference_revisions

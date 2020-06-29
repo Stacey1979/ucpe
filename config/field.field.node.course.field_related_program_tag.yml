@@ -1,0 +1,29 @@
+uuid: 71ed8c00-32fa-4d6a-bb58-85614dddb086
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_program_tag
+    - node.type.course
+    - taxonomy.vocabulary.program
+id: node.course.field_related_program_tag
+field_name: field_related_program_tag
+entity_type: node
+bundle: course
+label: Program
+description: 'Add the related program.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      program: program
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
