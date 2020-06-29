@@ -4,80 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.image_carousel_combo.field_image_carousel_items
-    - image.style.image_carousel
     - paragraphs.paragraphs_type.image_carousel_combo
-  module:
-    - ds
-    - slick_paragraphs
 id: paragraph.image_carousel_combo.default
 targetEntityType: paragraph
 bundle: image_carousel_combo
 mode: default
-content:
-  field_image_carousel_items:
-    type: slick_paragraphs_media
-    weight: 0
-    label: hidden
-    settings:
-      style: ''
-      optionset: image_carousel
-      optionset_thumbnail: ''
-      skin: ''
-      skin_thumbnail: ''
-      image_style: image_carousel
-      responsive_image_style: ''
-      thumbnail_effect: ''
-      thumbnail_position: ''
-      media_switch: ''
-      thumbnail_style: ''
-      ratio: ''
-      view_mode: default
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
-      visible_items: ''
-      image: field_image_ref_image
-      overlay: ''
-      title: ''
-      link: ''
-      layout: below
-      thumbnail_caption: ''
-      class: ''
-      caption:
-        field_image_caption: field_image_caption
-        field_carousel_media_image: 0
-        field_image_ref_image: 0
-      cache: '0'
-      override: '1'
-      overridables:
-        arrows: arrows
-        dots: dots
-        infinite: infinite
-        autoplay: 0
-        draggable: 0
-        mouseWheel: 0
-        randomize: 0
-        variableWidth: 0
-      current_view_mode: default
-      vanilla: 0
-      background: 0
-      preserve_keys: 0
-      thumbnail: ''
-      skin_arrows: ''
-      skin_dots: ''
-      fx: ''
-      icon: ''
-      box_caption: ''
-      box_caption_custom: ''
-      box_media_style: ''
-      box_style: ''
-      _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
-      id: ''
-    third_party_settings:
-      ds:
-        ds_limit: ''
-    region: content
-hidden: {  }
+content: {  }
+hidden:
+  field_image_carousel_items: true

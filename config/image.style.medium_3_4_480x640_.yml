@@ -1,0 +1,15 @@
+uuid: f551298d-62dc-46c1-a564-22ddd956f33b
+langcode: en
+status: true
+dependencies: {  }
+name: medium_3_4_480x640_
+label: 'Medium 3:4 (480x640)'
+effects:
+  0a8870f6-2ec2-4393-bb01-c3f9d67dc65d:
+    uuid: 0a8870f6-2ec2-4393-bb01-c3f9d67dc65d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 640
+      anchor: center-center

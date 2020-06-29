@@ -5,10 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.video.field_media_video_file
-    - image.style.thumbnail
+    - image.style.extra_small_1_1_180x180_
     - media.type.video
   module:
-    - image
+    - svg_image
 _core:
   default_config_hash: PDQo9eqAz3D8g87S89zPgXsm7Xy-dYMdEgwKBahFdy0
 id: media.video.media_library
@@ -22,8 +22,12 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: extra_small_1_1_180x180_
       image_link: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
     third_party_settings: {  }
 hidden:
   created: true
