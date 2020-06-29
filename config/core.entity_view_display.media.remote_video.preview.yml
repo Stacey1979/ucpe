@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.media.preview
     - field.field.media.remote_video.field_media_oembed_video
-    - image.style.thumbnail
+    - image.style.extra_small_1_1_180x180_
     - media.type.remote_video
   module:
     - svg_image
@@ -22,7 +22,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: extra_small_1_1_180x180_
       image_link: ''
       svg_render_as_image: true
       svg_attributes:

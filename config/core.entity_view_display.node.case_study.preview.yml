@@ -18,7 +18,7 @@ dependencies:
     - field.field.node.case_study.field_related_program_tag
     - field.field.node.case_study.field_results
     - field.field.node.case_study.field_solution
-    - image.style.thumbnail
+    - image.style.extra_small_1_1_180x180_
     - node.type.case_study
   module:
     - ds
@@ -188,7 +188,7 @@ content:
     weight: 10
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: extra_small_1_1_180x180_
       image_link: ''
     third_party_settings:
       ds:
