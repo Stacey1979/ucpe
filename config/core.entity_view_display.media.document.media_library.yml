@@ -5,10 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.document.field_media_document
-    - image.style.extra_small_1_1_180x180_
+    - image.style.thumbnail
     - media.type.document
   module:
-    - svg_image
+    - image
 _core:
   default_config_hash: WA5PBCSll9OeXbS16GbGz8jNgz7vkUAmC_72nn0yyBo
 id: media.document.media_library
@@ -22,12 +22,8 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: extra_small_1_1_180x180_
+      image_style: thumbnail
       image_link: ''
-      svg_attributes:
-        width: null
-        height: null
-      svg_render_as_image: true
     third_party_settings: {  }
 hidden:
   created: true

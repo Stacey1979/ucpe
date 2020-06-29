@@ -7,7 +7,26 @@ dependencies:
     - field.field.paragraph.full_width_content.field_full_width_content
     - paragraphs.paragraphs_type.full_width_content
   module:
+    - ds
     - smart_trim
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - field_full_width_content
 id: paragraph.full_width_content.preview
 targetEntityType: paragraph
 bundle: full_width_content

@@ -1,0 +1,19 @@
+uuid: 3ce18741-fd1a-46ba-a584-e58071cc7153
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_code
+    - node.type.course
+id: node.course.field_course_code
+field_name: field_course_code
+entity_type: node
+bundle: course
+label: 'Course Code'
+description: 'Add the course code. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,57 @@
+uuid: dd4744ce-2236-4023-9022-7df7353f1113
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.instructor_program_and_courses.field_course
+    - field.field.paragraph.instructor_program_and_courses.field_program
+    - paragraphs.paragraphs_type.instructor_program_and_courses
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_program
+        - field_course
+id: paragraph.instructor_program_and_courses.default
+targetEntityType: paragraph
+bundle: instructor_program_and_courses
+mode: default
+content:
+  field_course:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: instructor_courses
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
+    region: ds_content
+  field_program:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+hidden: {  }

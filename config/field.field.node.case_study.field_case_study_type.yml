@@ -1,0 +1,21 @@
+uuid: 230a6a4e-6084-45f0-82fd-38a8690933ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_study_type
+    - node.type.case_study
+  module:
+    - options
+id: node.case_study.field_case_study_type
+field_name: field_case_study_type
+entity_type: node
+bundle: case_study
+label: 'Case Study Type'
+description: 'Choose which type of case study.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

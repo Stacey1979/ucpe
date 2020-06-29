@@ -1,0 +1,31 @@
+uuid: b898289d-e5a1-4673-8ebd-c23e2ea4e3c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.course.field_areas_of_study
+    - field.field.node.course.field_content_sections
+    - field.field.node.course.field_course_code
+    - field.field.node.course.field_related_program_tag
+    - field.field.node.course.field_topics
+    - node.type.course
+  module:
+    - user
+id: node.course.teaser
+targetEntityType: node
+bundle: course
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_areas_of_study: true
+  field_content_sections: true
+  field_course_code: true
+  field_related_program_tag: true
+  field_topics: true

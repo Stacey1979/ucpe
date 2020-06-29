@@ -1,0 +1,10 @@
+uuid: 260e75dd-ff2b-479a-ae61-9a0cd52b1e87
+langcode: en
+status: true
+dependencies: {  }
+id: related_instructors
+label: 'Related Instructors'
+icon_uuid: null
+icon_default: null
+description: 'Add related instructors to your page. '
+behavior_plugins: {  }

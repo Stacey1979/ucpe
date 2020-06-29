@@ -1,0 +1,87 @@
+uuid: 59b9643f-8367-4930-91e3-b91642939bb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.course.field_areas_of_study
+    - field.field.node.course.field_content_sections
+    - field.field.node.course.field_course_code
+    - field.field.node.course.field_related_program_tag
+    - field.field.node.course.field_topics
+    - node.type.course
+  module:
+    - ds
+    - entity_reference_revisions
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - links
+        - node_title
+        - field_course_code
+        - field_related_program_tag
+        - field_content_sections
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+id: node.course.default
+targetEntityType: node
+bundle: course
+mode: default
+content:
+  field_content_sections:
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_course_code:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_related_program_tag:
+    weight: 3
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
+    region: ds_content
+  links:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_areas_of_study: true
+  field_topics: true

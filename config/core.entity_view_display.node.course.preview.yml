@@ -1,0 +1,95 @@
+uuid: b07fe407-788e-453e-b395-c622fdb9d116
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.preview
+    - field.field.node.course.field_areas_of_study
+    - field.field.node.course.field_content_sections
+    - field.field.node.course.field_course_code
+    - field.field.node.course.field_related_program_tag
+    - field.field.node.course.field_topics
+    - node.type.course
+  module:
+    - ds
+    - entity_reference_revisions
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_areas_of_study
+        - field_topics
+        - links
+        - field_related_program_tag
+        - field_content_sections
+id: node.course.preview
+targetEntityType: node
+bundle: course
+mode: preview
+content:
+  field_areas_of_study:
+    type: entity_reference_label
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  field_content_sections:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_related_program_tag:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
+    region: ds_content
+  field_topics:
+    type: entity_reference_label
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  links:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_course_code: true

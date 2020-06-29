@@ -6,6 +6,7 @@ dependencies:
     - views.view.related_three_ups
   module:
     - ctools
+    - node
     - views
   theme:
     - ucpe_theme
@@ -26,6 +27,13 @@ settings:
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
     bundles:
       article: article
     negate: false

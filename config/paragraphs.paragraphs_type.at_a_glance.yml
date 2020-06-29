@@ -1,0 +1,10 @@
+uuid: 2d444043-a002-455a-b1c9-35a536fb4b43
+langcode: en
+status: true
+dependencies: {  }
+id: at_a_glance
+label: 'At a Glance'
+icon_uuid: null
+icon_default: null
+description: 'At a glance section on program landing pages. '
+behavior_plugins: {  }

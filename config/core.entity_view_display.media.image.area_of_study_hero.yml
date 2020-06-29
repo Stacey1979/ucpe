@@ -1,6 +1,6 @@
 uuid: 32446242-531e-4143-a8c6-6a0a8f2827e7
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.media.area_of_study_hero

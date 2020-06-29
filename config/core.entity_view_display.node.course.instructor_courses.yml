@@ -1,0 +1,72 @@
+uuid: cbe707bb-cd56-403b-9855-ca87f9def5f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.instructor_courses
+    - field.field.node.course.field_areas_of_study
+    - field.field.node.course.field_content_sections
+    - field.field.node.course.field_course_code
+    - field.field.node.course.field_related_program_tag
+    - field.field.node.course.field_topics
+    - node.type.course
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - links
+        - node_title
+        - field_course_code
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.course.instructor_courses
+targetEntityType: node
+bundle: course
+mode: instructor_courses
+content:
+  field_course_code:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  links:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_areas_of_study: true
+  field_content_sections: true
+  field_related_program_tag: true
+  field_topics: true

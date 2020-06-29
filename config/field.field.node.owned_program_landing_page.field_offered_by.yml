@@ -1,0 +1,29 @@
+uuid: c7ee16fd-2768-4383-a854-6a7859537db7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_offered_by
+    - node.type.owned_program_landing_page
+    - taxonomy.vocabulary.program_owner
+id: node.owned_program_landing_page.field_offered_by
+field_name: field_offered_by
+entity_type: node
+bundle: owned_program_landing_page
+label: 'Offered By'
+description: 'Who offers this program?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      program_owner: program_owner
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

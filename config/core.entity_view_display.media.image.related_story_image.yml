@@ -7,7 +7,7 @@ dependencies:
     - field.field.media.image.field_image_attribution_wysiwyg
     - field.field.media.image.field_image_caption
     - field.field.media.image.field_media_image
-    - image.style.small_4_3_480x360_
+    - image.style.related_story_image
     - media.type.image
   module:
     - svg_image
@@ -21,7 +21,7 @@ content:
   field_media_image:
     label: visually_hidden
     settings:
-      image_style: small_4_3_480x360_
+      image_style: related_story_image
       image_link: ''
       svg_render_as_image: true
       svg_attributes:

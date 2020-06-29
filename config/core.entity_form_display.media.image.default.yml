@@ -6,7 +6,7 @@ dependencies:
     - field.field.media.image.field_image_attribution_wysiwyg
     - field.field.media.image.field_image_caption
     - field.field.media.image.field_media_image
-    - image.style.extra_small_1_1_180x180_
+    - image.style.thumbnail
     - media.type.image
   module:
     - path
@@ -43,7 +43,7 @@ content:
     region: content
   field_media_image:
     settings:
-      preview_image_style: extra_small_1_1_180x180_
+      preview_image_style: thumbnail
       progress_indicator: throbber
     third_party_settings: {  }
     type: image_image

@@ -1,0 +1,10 @@
+uuid: f87348a9-d529-449f-947b-9b42c40dcd89
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.at_a_glance_non_ucpe
+label: 'At a Glance Non-UCPE'
+targetEntityType: paragraph
+cache: true

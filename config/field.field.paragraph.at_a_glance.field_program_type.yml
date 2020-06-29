@@ -1,0 +1,29 @@
+uuid: fdbf4571-f980-4e53-9442-eeb418449d6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_program_type
+    - paragraphs.paragraphs_type.at_a_glance
+    - taxonomy.vocabulary.program_type
+id: paragraph.at_a_glance.field_program_type
+field_name: field_program_type
+entity_type: paragraph
+bundle: at_a_glance
+label: Type
+description: 'Add the type of program'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      program_type: program_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

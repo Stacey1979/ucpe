@@ -1,0 +1,29 @@
+uuid: 005b79c4-fccf-4cdc-b1e2-55b433a9733d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_areas_of_study
+    - node.type.case_study
+    - taxonomy.vocabulary.area_of_interest
+id: node.case_study.field_areas_of_study
+field_name: field_areas_of_study
+entity_type: node
+bundle: case_study
+label: 'Area of Study'
+description: 'Add the related area(s) of study.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_of_interest: area_of_interest
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

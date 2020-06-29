@@ -1,0 +1,37 @@
+uuid: 7bf118d0-6218-414f-ab7c-350753263cab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.duration.field_duration_actual
+    - field.field.paragraph.duration.field_duration_enrollment
+    - field.field.paragraph.duration.field_program_duration
+    - paragraphs.paragraphs_type.duration
+id: paragraph.duration.default
+targetEntityType: paragraph
+bundle: duration
+mode: default
+content:
+  field_duration_actual:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_duration_enrollment:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_program_duration:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

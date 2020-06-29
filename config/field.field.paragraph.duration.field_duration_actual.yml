@@ -1,0 +1,19 @@
+uuid: 01224bc3-e6f2-4913-afd1-a1e5cd4799d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_duration_actual
+    - paragraphs.paragraphs_type.duration
+id: paragraph.duration.field_duration_actual
+field_name: field_duration_actual
+entity_type: paragraph
+bundle: duration
+label: 'Duration Actual'
+description: 'The actual length of time the program takes. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

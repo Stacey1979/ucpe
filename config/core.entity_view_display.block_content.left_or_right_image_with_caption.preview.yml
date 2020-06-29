@@ -5,12 +5,11 @@ dependencies:
   config:
     - block_content.type.left_or_right_image_with_caption
     - core.entity_view_mode.block_content.preview
-    - field.field.block_content.left_or_right_image_with_caption.body
     - field.field.block_content.left_or_right_image_with_caption.field_align
     - field.field.block_content.left_or_right_image_with_caption.field_caption
     - field.field.block_content.left_or_right_image_with_caption.field_image_attribution_2
     - field.field.block_content.left_or_right_image_with_caption.field_image_l_r_caption
-    - image.style.extra_small_1_1_180x180_
+    - image.style.thumbnail
   module:
     - media
     - smart_trim
@@ -51,7 +50,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: extra_small_1_1_180x180_
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     region: content

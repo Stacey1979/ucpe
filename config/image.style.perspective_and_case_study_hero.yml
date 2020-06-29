@@ -1,0 +1,23 @@
+uuid: 1598a8f4-3dfe-4b27-b6cb-ba69490d50f8
+langcode: en
+status: true
+dependencies: {  }
+name: perspective_and_case_study_hero
+label: 'Perspective and Case Study Hero'
+effects:
+  9fbbd456-0baa-4cb8-bee5-8774e3ad73eb:
+    uuid: 9fbbd456-0baa-4cb8-bee5-8774e3ad73eb
+    id: image_scale
+    weight: 1
+    data:
+      width: 1400
+      height: null
+      upscale: true
+  7d821a8c-e6fd-4cbb-93c8-b4423f83beec:
+    uuid: 7d821a8c-e6fd-4cbb-93c8-b4423f83beec
+    id: image_crop
+    weight: 2
+    data:
+      width: 1400
+      height: 600
+      anchor: center-center

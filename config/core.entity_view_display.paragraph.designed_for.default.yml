@@ -1,0 +1,44 @@
+uuid: 4a46ebf3-5cf5-4818-80ba-89c8c4d759df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.designed_for.field_designed_
+    - paragraphs.paragraphs_type.designed_for
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_designed_
+id: paragraph.designed_for.default
+targetEntityType: paragraph
+bundle: designed_for
+mode: default
+content:
+  field_designed_:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+hidden: {  }

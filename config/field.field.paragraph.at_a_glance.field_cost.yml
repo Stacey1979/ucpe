@@ -1,0 +1,19 @@
+uuid: 7c84ac1d-37e2-438f-a588-86742aafa2bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cost
+    - paragraphs.paragraphs_type.at_a_glance
+id: paragraph.at_a_glance.field_cost
+field_name: field_cost
+entity_type: paragraph
+bundle: at_a_glance
+label: Cost
+description: 'Enter the total tuition before fees'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

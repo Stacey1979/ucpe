@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
     - field.field.node.story.field_lede
+    - field.field.node.story.field_related_program_tag
     - field.field.node.story.field_written_by
     - node.type.story
   module:
@@ -138,3 +139,4 @@ content:
 hidden:
   body: true
   field_date_and_lede: true
+  field_related_program_tag: true

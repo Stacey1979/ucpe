@@ -1,0 +1,10 @@
+uuid: 391d7936-7d94-4415-96af-de29fa9c20a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.instructor_pages
+label: 'Instructor Pages'
+targetEntityType: node
+cache: true

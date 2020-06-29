@@ -1,0 +1,25 @@
+uuid: ca4a2f65-bc05-484d-9321-df6c6b126901
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.utility-menu
+  module:
+    - system
+  theme:
+    - ucpe_theme
+id: utilitymenu
+theme: ucpe_theme
+region: navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:utility-menu'
+settings:
+  id: 'system_menu_block:utility-menu'
+  label: 'Utility Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

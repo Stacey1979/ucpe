@@ -9,7 +9,7 @@ dependencies:
     - field.field.block_content.cta_full_width.field_cta_button
     - field.field.block_content.cta_full_width.field_cta_image
     - field.field.block_content.cta_full_width.field_cta_title
-    - image.style.extra_small_1_1_180x180_
+    - image.style.thumbnail
   module:
     - ds
     - link
@@ -83,7 +83,7 @@ content:
     weight: 3
     label: visually_hidden
     settings:
-      image_style: extra_small_1_1_180x180_
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     region: right

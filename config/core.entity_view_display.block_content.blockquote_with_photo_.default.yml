@@ -55,7 +55,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: headshot
+      view_mode: blockquote_image
       link: false
     third_party_settings: {  }
     region: left

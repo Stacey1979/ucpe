@@ -1,0 +1,27 @@
+uuid: dde1caaf-1f5e-41a6-b3b8-683f9708384f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_results
+    - node.type.case_study
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: node.case_study.field_results
+field_name: field_results
+entity_type: node
+bundle: case_study
+label: Results
+description: 'Add the short results sentence.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

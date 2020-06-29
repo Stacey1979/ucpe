@@ -1,0 +1,29 @@
+uuid: b09e1e5f-d3ee-4abe-b653-c6831dc77951
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_course
+    - node.type.course
+    - paragraphs.paragraphs_type.instructor_program_and_courses
+id: paragraph.instructor_program_and_courses.field_course
+field_name: field_course
+entity_type: paragraph
+bundle: instructor_program_and_courses
+label: Course(s)
+description: 'Add courses in this program this instructor teaches.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      course: course
+    sort:
+      field: field_title.value
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

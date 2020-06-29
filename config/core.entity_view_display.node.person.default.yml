@@ -3,28 +3,68 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.person.body
+    - field.field.node.person.field_bio
+    - field.field.node.person.field_course_s_
     - field.field.node.person.field_email
     - field.field.node.person.field_first_name
     - field.field.node.person.field_headshot
     - field.field.node.person.field_job_title
     - field.field.node.person.field_last_name
+    - field.field.node.person.field_title
     - node.type.person
   module:
+    - ds
+    - entity_reference_revisions
+    - smart_trim
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - links
+        - field_headshot
+        - field_title
+        - field_job_title
+        - field_bio
+        - field_course_s_
 id: node.person.default
 targetEntityType: node
 bundle: person
 mode: default
 content:
-  body:
+  field_bio:
+    weight: 4
     label: hidden
-    type: text_default
-    weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
+    type: text_default
+    region: ds_content
+  field_course_s_:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
   field_headshot:
     type: entity_reference_entity_view
     weight: 1
@@ -33,17 +73,34 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    region: content
+    region: ds_content
   field_job_title:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: ds_content
+  field_title:
+    type: smart_trim
+    weight: 2
+    region: ds_content
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options: {  }
+    third_party_settings: {  }
   links:
     weight: 0
-    region: content
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
@@ -56,4 +113,3 @@ hidden:
   field_first_name: true
   field_last_name: true
   field_name: true
-  field_title: true

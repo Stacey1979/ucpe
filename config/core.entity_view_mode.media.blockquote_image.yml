@@ -1,0 +1,10 @@
+uuid: 10ac5af6-27f2-4925-90cb-4d4325758057
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.blockquote_image
+label: 'Blockquote Image'
+targetEntityType: media
+cache: true

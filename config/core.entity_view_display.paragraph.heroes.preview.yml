@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.heroes.field_hero
     - field.field.paragraph.heroes.field_image_attribution
-    - image.style.extra_small_1_1_180x180_
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.heroes
   module:
     - media
@@ -20,7 +20,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: extra_small_1_1_180x180_
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     region: content

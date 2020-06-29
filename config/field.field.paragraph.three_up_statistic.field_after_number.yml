@@ -10,9 +10,9 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    full_html: full_html
+    plain_text: plain_text
+    full_html: '0'
     basic_html: '0'
-    plain_text: '0'
 id: paragraph.three_up_statistic.field_after_number
 field_name: field_after_number
 entity_type: paragraph
