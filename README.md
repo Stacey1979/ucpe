@@ -159,3 +159,4 @@ const pathsToTest = {
 ```
 
 You can also alter which screen sizes you take comparisons at by changing the `viewports` configuration.
+
