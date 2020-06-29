@@ -17,12 +17,13 @@
       {{ title_suffix }}
       <div class="col">
         <div class="top">
-          {{ content.top }}
+          <div class="stat_number">
+            {% if content.top.field_before_number|field_value is not empty  %}<span class="pre">{{ content.top.field_before_number|field_value }}</span>{% endif %}<span class="num">{{ content.top.field_number|field_value }}</span><span class="post">{{ content.top.field_after_number|field_value }}</span>
+          </div>
 				</div>
 				<div class="bottom">
-          <h3>{{ content.bottom.field_three_up_title|field_value }}</h3>
 					<div class="blurb">
-						{{ content.bottom.field_three_up_short_description|field_value }}
+						{{ content.bottom }}
 					</div>
 				</div>
 			</div>
