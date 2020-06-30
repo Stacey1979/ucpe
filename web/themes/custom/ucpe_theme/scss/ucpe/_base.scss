@@ -4,3 +4,32 @@
 img {
   max-width: 100%;
 }
+
+// PAGE STRUCTURE
+
+//Header
+header {
+  width: 100%;
+  margin: 0 auto;
+  @include screen("desktop-wide") {
+    max-width: 1600px;
+  }
+
+  .header {
+    // .region is some Drupal BS
+    .region {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .brand {
+        width: 25%;
+      }
+      // this might need to change as we develop the templates for the header
+      #block-horizontalmenu {
+        flex: 1;
+      }
+    }
+  }
+}
