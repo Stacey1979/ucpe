@@ -1,0 +1,111 @@
+// Perspectives
+.article {
+  @include make-container();
+
+  .content {
+    background-color: $white;
+    @include make-sm-column(10);
+    @include make-sm-column-push(1);
+    @include screen("desktop-wide") {
+      @include make-sm-column(8);
+      @include make-sm-column-push(2);
+    }
+  }
+
+  .article_top {
+    padding: $baseline * 5 $baseline * 5 0;
+
+    .meta {
+      text-align: center;
+      margin-bottom: $baseline * 2;
+    }
+
+    h1 {
+      @include heading_XL($black);
+      margin-bottom: $baseline * 2;
+      text-align: center;
+    }
+    .lede {
+      p {
+        @include bodycopy_L($black);
+        margin-bottom: $baseline * 2;
+      }
+    }
+    .written_by {
+      p {
+        @include bodycopy_S($black);
+        margin-bottom: $baseline * 4;
+      }
+    }
+    .topics {
+      @include make-sm-column(6);
+
+      ul {
+        @include listreset();
+
+        li {
+          @include bodycopy_S($plum, $bold: true);
+          display: inline;
+          padding-left: calc($baseline+2px);
+          padding-right: $baseline;
+          margin: 0;
+
+          &:before {
+            background-color: silver;
+            content: "";
+            display: block;
+            height: 100%;
+            top: 0;
+            width: 2px;
+          }
+
+          &:first-child {
+            padding-left: 0;
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .share {
+      @include make-sm-column(6);
+      .addtoany_list {
+        line-height: 24px;
+        float: right;
+        width: 100%;
+        text-align: right;
+
+        .share_title {
+          margin-right: $baseline;
+          @include utility_M($black_03);
+        }
+      }
+    }
+    .in_brief {
+      background-color: $bg_02;
+      margin: $baseline * 5 0;
+      padding: $baseline * 2.5 $baseline * 5;
+      text-align: left;
+
+      h3 {
+        @include utility_M($black_02);
+      }
+      ol li {
+        margin-bottom: $baseline * 2;
+        @include bodycopy_S($black);
+        &:before {
+          font-size: 0.875rem;
+        }
+      }
+    }
+
+    .intro p {
+      @include heading_S($black);
+    }
+  }
+
+  .article_bottom {
+    padding: 0 $baseline * 5 $baseline * 8 $baseline * 8;
+  }
+}

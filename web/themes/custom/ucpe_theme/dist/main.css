@@ -6589,6 +6589,27 @@ hr {
     height: 2px;
     width: 25%; }
 
+.meta .type {
+  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  color: #800000;
+  font-weight: 500;
+  line-height: 1.8rem;
+  text-transform: uppercase; }
+
+.meta .divider {
+  color: #dcdcdc;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+  font-size: 1.2rem; }
+
+.meta .date {
+  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  color: #110f0f;
+  line-height: 1.4rem;
+  font-weight: 400; }
+
 #toolbar-administration {
   font-size: 12px !important; }
 
@@ -6833,7 +6854,7 @@ nav.tabs ul.nav-tabs li {
         width: 25%; } }
     .stat .stat_number span {
       color: #800000; }
-  .stat .content {
+  .stat .stat_content {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -6845,10 +6866,10 @@ nav.tabs ul.nav-tabs li {
     font-weight: 400;
     font-style: italic; }
     @media (min-width: 992px) {
-      .stat .content {
+      .stat .stat_content {
         float: left;
         width: 75%; } }
-    .stat .content p {
+    .stat .stat_content p {
       margin-bottom: 0; }
 
 .three-up-promo {
@@ -6913,21 +6934,21 @@ nav.tabs ul.nav-tabs li {
       .cta .wrapper {
         float: left;
         width: 66.66667%; } }
-  .cta .content {
+  .cta .cta_content {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px; }
     @media (min-width: 768px) {
-      .cta .content {
+      .cta .cta_content {
         float: left;
         width: 66.66667%; } }
-    .cta .content h3 {
+    .cta .cta_content h3 {
       font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
       font-size: 1.25rem;
       color: #110f0f;
       font-weight: 900;
-      line-height: 1.5rem; }
+      line-height: 1.75rem; }
   .cta figure.cta_photo {
     position: relative;
     min-height: 1px;
@@ -6959,17 +6980,17 @@ nav.tabs ul.nav-tabs li {
     @media only screen and (min-width: 1440px) {
       .cta_full .wrapper {
         max-width: 1440px; } }
-    .cta_full .wrapper .content {
+    .cta_full .wrapper .cta_content {
       position: relative;
       min-height: 1px;
       padding-right: 15px;
       padding-left: 15px; }
       @media (min-width: 768px) {
-        .cta_full .wrapper .content {
+        .cta_full .wrapper .cta_content {
           float: left;
           width: 41.66667%; } }
       @media (min-width: 768px) {
-        .cta_full .wrapper .content {
+        .cta_full .wrapper .cta_content {
           right: 8.33333%; } }
     .cta_full .wrapper figure.cta_photo {
       position: relative;
@@ -7322,7 +7343,7 @@ nav.tabs ul.nav-tabs li {
     font-size: 1.25rem;
     color: #110f0f;
     font-weight: 900;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
     margin-bottom: 1rem; }
 
 .related_content_grid {
@@ -7453,36 +7474,48 @@ nav.tabs ul.nav-tabs li {
           .related_content_grid .secondary_content .secondary_editorial .content {
             float: left;
             width: 66.66667%; } }
-      .related_content_grid .secondary_content .secondary_editorial .meta .type {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-        font-size: 0.875rem;
-        color: #800000;
-        font-weight: 500;
-        line-height: 1.8rem;
-        text-transform: uppercase; }
-      .related_content_grid .secondary_content .secondary_editorial .meta .divider {
-        color: #dcdcdc;
-        margin: 0 0.5rem;
-        vertical-align: middle;
-        font-size: 1.2rem; }
-      .related_content_grid .secondary_content .secondary_editorial .meta .date {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-        font-size: 0.875rem;
-        color: #110f0f;
-        line-height: 1.4rem;
-        font-weight: 400; }
       .related_content_grid .secondary_content .secondary_editorial h4 {
         font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
         font-size: 1.25rem;
         color: #110f0f;
         font-weight: 900;
-        line-height: 1.5rem; }
+        line-height: 1.75rem; }
       .related_content_grid .secondary_content .secondary_editorial .program_name {
         font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
         font-size: 0.875rem;
         color: #110f0f;
         line-height: 1.4rem;
         font-weight: 500; }
+
+.related_content_list_wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .related_content_list_wrapper {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .related_content_list_wrapper {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .related_content_list_wrapper {
+      max-width: 1440px; } }
+  .related_content_list_wrapper .related_content_list {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .related_content_list_wrapper .related_content_list {
+        float: left;
+        width: 100%; } }
+  .related_content_list_wrapper h2 {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #800000;
+    line-height: 2rem;
+    font-weight: 500; }
 
 .headshot {
   display: block;
@@ -7665,6 +7698,28 @@ header {
     header .header .region #block-horizontalmenu {
       flex: 1; }
 
+.body {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  .body .hero_wrapper {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .body .hero_wrapper:before, .body .hero_wrapper:after {
+      display: table;
+      content: " "; }
+    .body .hero_wrapper:after {
+      clear: both; }
+  .body .content_wrapper {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .body .content_wrapper:before, .body .content_wrapper:after {
+      display: table;
+      content: " "; }
+    .body .content_wrapper:after {
+      clear: both; }
+
 .top_bar .navbar-default {
   background-color: transparent;
   border: 0; }
@@ -7750,6 +7805,159 @@ header {
           color: #800000; }
     #block-horizontalmenu ul.horizontal-menu li:before {
       display: none; }
+
+.article {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .article {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .article {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .article {
+      max-width: 1440px; } }
+  .article .content {
+    background-color: #ffffff;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .article .content {
+        float: left;
+        width: 83.33333%; } }
+    @media (min-width: 768px) {
+      .article .content {
+        left: 8.33333%; } }
+    @media only screen and (min-width: 1440px) {
+      .article .content {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; } }
+  @media only screen and (min-width: 1440px) and (min-width: 768px) {
+    .article .content {
+      float: left;
+      width: 66.66667%; } }
+  @media only screen and (min-width: 1440px) and (min-width: 768px) {
+    .article .content {
+      left: 16.66667%; } }
+  .article .article_top {
+    padding: 5rem 5rem 0; }
+    .article .article_top .meta {
+      text-align: center;
+      margin-bottom: 2rem; }
+    .article .article_top h1 {
+      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-size: 3.5rem;
+      color: #110f0f;
+      font-weight: 900;
+      line-height: 3.75rem;
+      margin-bottom: 2rem;
+      text-align: center; }
+    .article .article_top .lede p {
+      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-size: 1.125rem;
+      color: #110f0f;
+      line-height: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 2rem; }
+    .article .article_top .written_by p {
+      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-size: 0.875rem;
+      color: #110f0f;
+      line-height: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 4rem; }
+    .article .article_top .topics {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .article .article_top .topics {
+          float: left;
+          width: 50%; } }
+      .article .article_top .topics ul {
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+        .article .article_top .topics ul li {
+          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-size: 0.875rem;
+          color: #350e20;
+          line-height: 1.4rem;
+          font-weight: 500;
+          display: inline;
+          padding-left: calc($baseline+2px);
+          padding-right: 1rem;
+          margin: 0; }
+          .article .article_top .topics ul li:before {
+            background-color: silver;
+            content: "";
+            display: block;
+            height: 100%;
+            top: 0;
+            width: 2px; }
+          .article .article_top .topics ul li:first-child {
+            padding-left: 0; }
+            .article .article_top .topics ul li:first-child:before {
+              display: none; }
+    .article .article_top .share {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .article .article_top .share {
+          float: left;
+          width: 50%; } }
+      .article .article_top .share .addtoany_list {
+        line-height: 24px;
+        float: right;
+        width: 100%;
+        text-align: right; }
+        .article .article_top .share .addtoany_list .share_title {
+          margin-right: 1rem;
+          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-size: 0.875rem;
+          color: #767676;
+          font-weight: 500;
+          line-height: 1.8rem;
+          text-transform: uppercase; }
+    .article .article_top .in_brief {
+      background-color: #f3f3f3;
+      margin: 5rem 0;
+      padding: 2.5rem 5rem;
+      text-align: left; }
+      .article .article_top .in_brief h3 {
+        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        color: #585858;
+        font-weight: 500;
+        line-height: 1.8rem;
+        text-transform: uppercase; }
+      .article .article_top .in_brief ol li {
+        margin-bottom: 2rem;
+        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        color: #110f0f;
+        line-height: 1.4rem;
+        font-weight: 400; }
+        .article .article_top .in_brief ol li:before {
+          font-size: 0.875rem; }
+    .article .article_top .intro p {
+      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-size: 1.5rem;
+      color: #110f0f;
+      font-weight: 900;
+      line-height: 2rem; }
+  .article .article_bottom {
+    padding: 0 5rem 8rem 8rem; }
 
 footer.footer {
   background-color: #f3f3f3;
@@ -7877,7 +8085,7 @@ footer.footer {
         font-size: 1.25rem;
         color: #110f0f;
         font-weight: 900;
-        line-height: 1.5rem;
+        line-height: 1.75rem;
         border-bottom: solid 2px #800000;
         display: inline-block;
         line-height: 1.5rem;
