@@ -6613,10 +6613,10 @@ hr {
 
 .meta .cs_title {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: #350e20;
-  font-weight: 500;
-  line-height: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4rem;
   text-transform: uppercase; }
 
 #toolbar-administration {
@@ -7815,52 +7815,71 @@ header {
     #block-horizontalmenu ul.horizontal-menu li:before {
       display: none; }
 
-.article, .casestudy {
+.article,
+.casestudy {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media only screen and (min-width: 960px) {
-    .article, .casestudy {
+    .article,
+    .casestudy {
       max-width: 960px; } }
   @media only screen and (min-width: 1200px) {
-    .article, .casestudy {
+    .article,
+    .casestudy {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
-    .article, .casestudy {
+    .article,
+    .casestudy {
       max-width: 1440px; } }
-  .article .content, .casestudy .content {
+  .article .content,
+  .casestudy .content {
     background-color: #ffffff;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px; }
     @media (min-width: 768px) {
-      .article .content, .casestudy .content {
+      .article .content,
+      .casestudy .content {
         float: left;
         width: 83.33333%; } }
     @media (min-width: 768px) {
-      .article .content, .casestudy .content {
+      .article .content,
+      .casestudy .content {
         left: 8.33333%; } }
     @media only screen and (min-width: 1440px) {
-      .article .content, .casestudy .content {
+      .article .content,
+      .casestudy .content {
         position: relative;
         min-height: 1px;
         padding-right: 15px;
         padding-left: 15px; } }
   @media only screen and (min-width: 1440px) and (min-width: 768px) {
-    .article .content, .casestudy .content {
+    .article .content,
+    .casestudy .content {
       float: left;
       width: 66.66667%; } }
   @media only screen and (min-width: 1440px) and (min-width: 768px) {
-    .article .content, .casestudy .content {
+    .article .content,
+    .casestudy .content {
       left: 16.66667%; } }
-  .article .article_top, .article .casestudy_top, .casestudy .article_top, .casestudy .casestudy_top {
+  .article .article_top,
+  .article .casestudy_top,
+  .casestudy .article_top,
+  .casestudy .casestudy_top {
     padding: 5rem 5rem 0; }
-    .article .article_top .meta, .article .casestudy_top .meta, .casestudy .article_top .meta, .casestudy .casestudy_top .meta {
+    .article .article_top .meta,
+    .article .casestudy_top .meta,
+    .casestudy .article_top .meta,
+    .casestudy .casestudy_top .meta {
       text-align: center;
       margin-bottom: 2rem; }
-    .article .article_top h1, .article .casestudy_top h1, .casestudy .article_top h1, .casestudy .casestudy_top h1 {
+    .article .article_top h1,
+    .article .casestudy_top h1,
+    .casestudy .article_top h1,
+    .casestudy .casestudy_top h1 {
       font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
       font-size: 3.5rem;
       color: #110f0f;
@@ -7868,14 +7887,20 @@ header {
       line-height: 3.75rem;
       margin-bottom: 2rem;
       text-align: center; }
-    .article .article_top .lede p, .article .casestudy_top .lede p, .casestudy .article_top .lede p, .casestudy .casestudy_top .lede p {
+    .article .article_top .lede p,
+    .article .casestudy_top .lede p,
+    .casestudy .article_top .lede p,
+    .casestudy .casestudy_top .lede p {
       font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
       font-size: 1.125rem;
       color: #110f0f;
       line-height: 1.8rem;
       font-weight: 400;
       margin-bottom: 2rem; }
-    .article .article_top .share .addtoany_list .share_title, .article .casestudy_top .share .addtoany_list .share_title, .casestudy .article_top .share .addtoany_list .share_title, .casestudy .casestudy_top .share .addtoany_list .share_title {
+    .article .article_top .share .addtoany_list .share_title,
+    .article .casestudy_top .share .addtoany_list .share_title,
+    .casestudy .article_top .share .addtoany_list .share_title,
+    .casestudy .casestudy_top .share .addtoany_list .share_title {
       margin-right: 1rem;
       font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
       font-size: 0.875rem;
@@ -7883,7 +7908,10 @@ header {
       font-weight: 500;
       line-height: 1.8rem;
       text-transform: uppercase; }
-  .article .article_bottom, .article .casestudy_bottom, .casestudy .article_bottom, .casestudy .casestudy_bottom {
+  .article .article_bottom,
+  .article .casestudy_bottom,
+  .casestudy .article_bottom,
+  .casestudy .casestudy_bottom {
     padding: 0 5rem 8rem 8rem; }
 
 .article .article_top .written_by p {
@@ -8009,7 +8037,7 @@ header {
       line-height: 1.8rem;
       text-transform: uppercase;
       border-bottom: solid 1px #dcdcdc;
-      margin-bottom: .75rem;
+      margin-bottom: 0.75rem;
       line-height: 2.75rem; }
     .casestudy .summary .col p {
       font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;

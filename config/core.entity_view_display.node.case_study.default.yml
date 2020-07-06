@@ -22,7 +22,6 @@ dependencies:
   module:
     - ds
     - entity_reference_revisions
-    - field_group
     - media
     - options
     - text
@@ -74,46 +73,6 @@ third_party_settings:
           wrapper: h1
           class: ''
           link: false
-  field_group:
-    group_case_study_summary:
-      children:
-        - field_challenge
-        - field_solution
-        - field_results
-      parent_name: ''
-      weight: 5
-      format_type: html_element
-      region: ds_content
-      format_settings:
-        id: ''
-        classes: ''
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-      label: Summary
-    group_about_this_partnership:
-      children:
-        - field_about_partnership
-        - field_partnership_logos
-      parent_name: ''
-      weight: 8
-      format_type: html_element
-      region: ds_content
-      format_settings:
-        id: ''
-        classes: ''
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-      label: 'About this Partnership'
 id: node.case_study.default
 targetEntityType: node
 bundle: case_study
