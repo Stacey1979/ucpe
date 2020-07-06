@@ -1,0 +1,26 @@
+uuid: 3753f5f5-71a7-4523-820b-c6cdca8f55d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_x
+    - node.type.person
+    - views.view.email_output_text
+id: node.person.field_contact_x
+field_name: field_contact_x
+entity_type: node
+bundle: person
+label: 'Contact X'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 2c955d75-68e8-4ca1-a82c-fae9f3c9c623
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

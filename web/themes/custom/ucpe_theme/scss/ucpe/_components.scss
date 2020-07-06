@@ -277,14 +277,17 @@
     .top {
       text-align: center;
 
-      .stat:after {
-        @include dash($maroon, 8px, $baseline * 3, $position: true);
-        bottom: -$baseline;
+      .stat_number {
+        position: relative;
+        &:after {
+          @include dash($maroon, 8px, $baseline * 3, $position: true);
+          bottom: -$baseline * 1.5;
+        }
       }
     }
 
     .bottom {
-      padding: $baseline * 2 $baseline * 2 $baseline * 3;
+      padding: $baseline * 3 $baseline * 2;
 
       h3 {
         @include heading_S($maroon);

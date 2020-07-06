@@ -146,6 +146,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   field_conta: true
   field_contact_email: true
   field_contact_first_name_link: true

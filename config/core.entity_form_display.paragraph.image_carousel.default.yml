@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.image_carousel.field_image_caption
     - field.field.paragraph.image_carousel.field_image_ref_image
-    - image.style.thumbnail
+    - image.style.extra_small_1_1_180x180_
     - paragraphs.paragraphs_type.image_carousel
   module:
     - svg_image
@@ -26,7 +26,7 @@ content:
     weight: 0
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: extra_small_1_1_180x180_
     third_party_settings: {  }
     type: image_image
     region: content

@@ -12,7 +12,7 @@ entity_type: paragraph
 bundle: related_of_interest
 label: 'Related Program'
 description: 'Choose which related program you would like to show.'
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
