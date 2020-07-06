@@ -24,6 +24,7 @@ dependencies:
     - entity_reference_revisions
     - field_group
     - media
+    - options
     - text
     - user
 third_party_settings:
@@ -47,6 +48,7 @@ third_party_settings:
     regions:
       ds_content:
         - links
+        - field_case_study_type
         - field_hero
         - node_title
         - field_lede
@@ -129,6 +131,13 @@ content:
     third_party_settings: {  }
     type: text_default
     region: ds_content
+  field_case_study_type:
+    type: list_default
+    weight: 0
+    region: ds_content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_challenge:
     weight: 6
     label: above
@@ -220,5 +229,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_areas_of_study: true
-  field_case_study_type: true
   field_related_program_tag: true

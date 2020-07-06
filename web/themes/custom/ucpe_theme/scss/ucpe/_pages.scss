@@ -1,5 +1,6 @@
-// Perspectives
-.article {
+// Perspectives & Case Studies
+.article,
+.casestudy {
   @include make-container();
 
   .content {
@@ -12,7 +13,8 @@
     }
   }
 
-  .article_top {
+  .article_top,
+  .casestudy_top {
     padding: $baseline * 5 $baseline * 5 0;
 
     .meta {
@@ -31,6 +33,24 @@
         margin-bottom: $baseline * 2;
       }
     }
+
+    .share {
+      .addtoany_list {
+        .share_title {
+          margin-right: $baseline;
+          @include utility_M($black_03);
+        }
+      }
+    }
+  }
+
+  .article_bottom,
+  .casestudy_bottom {
+    padding: 0 $baseline * 5 $baseline * 8 $baseline * 8;
+  }
+}
+.article {
+  .article_top {
     .written_by {
       p {
         @include bodycopy_S($black);
@@ -71,15 +91,8 @@
     .share {
       @include make-sm-column(6);
       .addtoany_list {
-        line-height: 24px;
         float: right;
-        width: 100%;
         text-align: right;
-
-        .share_title {
-          margin-right: $baseline;
-          @include utility_M($black_03);
-        }
       }
     }
     .in_brief {
@@ -104,8 +117,63 @@
       @include heading_S($black);
     }
   }
+}
 
-  .article_bottom {
-    padding: 0 $baseline * 5 $baseline * 8 $baseline * 8;
+.casestudy {
+  .share {
+    @include make-sm-column(12);
+    .addtoany_list {
+      display: block;
+      text-align: center;
+    }
+  }
+  .summary {
+    background-color: $bg_02;
+    float: left;
+    margin-top: $baseline * 5;
+    margin-left: -$baseline * 6;
+    margin-right: -$baseline * 6;
+    margin-bottom: $baseline * 5;
+    padding: $baseline * 2 $baseline * 4;
+
+    .col {
+      @include make-sm-column(4);
+      h3 {
+        @include utility_M($black_02);
+        border-bottom: solid 1px $divider-gray;
+        margin-bottom: 0.75rem;
+        line-height: $baseline * 2.75;
+      }
+      p {
+        @include bodycopy_S($black_02);
+      }
+    }
+  }
+  .partnership {
+    hr:before {
+      border-top-color: $divider-gray;
+      width: 100%;
+    }
+    .partnership_content {
+      padding: $baseline * 2 $baseline * 5 $baseline * 8 $baseline * 8;
+      h3 {
+        @include utility_S($black_02);
+        margin-bottom: $baseline * 2;
+      }
+      .description {
+        margin-bottom: $baseline * 3;
+      }
+      .sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: center;
+
+        .sponsor_img {
+          width: 50%;
+          text-align: center;
+        }
+      }
+    }
   }
 }

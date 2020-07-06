@@ -212,6 +212,7 @@ hr {
 .meta {
   .type {
     @include utility_M($maroon);
+    letter-spacing: 1px;
   }
   .divider {
     color: $divider-gray;
@@ -220,7 +221,10 @@ hr {
     font-size: $baseline * 1.2;
   }
   .date {
-    @include bodycopy_S($black);
+    @include bodycopy_S($plum);
+  }
+  .cs_title {
+    @include utility_M($plum);
   }
 }
 

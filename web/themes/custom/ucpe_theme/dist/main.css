@@ -6595,7 +6595,8 @@ hr {
   color: #800000;
   font-weight: 500;
   line-height: 1.8rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 .meta .divider {
   color: #dcdcdc;
@@ -6606,9 +6607,17 @@ hr {
 .meta .date {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
-  color: #110f0f;
+  color: #350e20;
   line-height: 1.4rem;
   font-weight: 400; }
+
+.meta .cs_title {
+  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  color: #350e20;
+  font-weight: 500;
+  line-height: 1.8rem;
+  text-transform: uppercase; }
 
 #toolbar-administration {
   font-size: 12px !important; }
@@ -7806,52 +7815,52 @@ header {
     #block-horizontalmenu ul.horizontal-menu li:before {
       display: none; }
 
-.article {
+.article, .casestudy {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media only screen and (min-width: 960px) {
-    .article {
+    .article, .casestudy {
       max-width: 960px; } }
   @media only screen and (min-width: 1200px) {
-    .article {
+    .article, .casestudy {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
-    .article {
+    .article, .casestudy {
       max-width: 1440px; } }
-  .article .content {
+  .article .content, .casestudy .content {
     background-color: #ffffff;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px; }
     @media (min-width: 768px) {
-      .article .content {
+      .article .content, .casestudy .content {
         float: left;
         width: 83.33333%; } }
     @media (min-width: 768px) {
-      .article .content {
+      .article .content, .casestudy .content {
         left: 8.33333%; } }
     @media only screen and (min-width: 1440px) {
-      .article .content {
+      .article .content, .casestudy .content {
         position: relative;
         min-height: 1px;
         padding-right: 15px;
         padding-left: 15px; } }
   @media only screen and (min-width: 1440px) and (min-width: 768px) {
-    .article .content {
+    .article .content, .casestudy .content {
       float: left;
       width: 66.66667%; } }
   @media only screen and (min-width: 1440px) and (min-width: 768px) {
-    .article .content {
+    .article .content, .casestudy .content {
       left: 16.66667%; } }
-  .article .article_top {
+  .article .article_top, .article .casestudy_top, .casestudy .article_top, .casestudy .casestudy_top {
     padding: 5rem 5rem 0; }
-    .article .article_top .meta {
+    .article .article_top .meta, .article .casestudy_top .meta, .casestudy .article_top .meta, .casestudy .casestudy_top .meta {
       text-align: center;
       margin-bottom: 2rem; }
-    .article .article_top h1 {
+    .article .article_top h1, .article .casestudy_top h1, .casestudy .article_top h1, .casestudy .casestudy_top h1 {
       font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
       font-size: 3.5rem;
       color: #110f0f;
@@ -7859,105 +7868,180 @@ header {
       line-height: 3.75rem;
       margin-bottom: 2rem;
       text-align: center; }
-    .article .article_top .lede p {
+    .article .article_top .lede p, .article .casestudy_top .lede p, .casestudy .article_top .lede p, .casestudy .casestudy_top .lede p {
       font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
       font-size: 1.125rem;
       color: #110f0f;
       line-height: 1.8rem;
       font-weight: 400;
       margin-bottom: 2rem; }
-    .article .article_top .written_by p {
+    .article .article_top .share .addtoany_list .share_title, .article .casestudy_top .share .addtoany_list .share_title, .casestudy .article_top .share .addtoany_list .share_title, .casestudy .casestudy_top .share .addtoany_list .share_title {
+      margin-right: 1rem;
       font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
       font-size: 0.875rem;
-      color: #110f0f;
-      line-height: 1.4rem;
-      font-weight: 400;
-      margin-bottom: 4rem; }
-    .article .article_top .topics {
-      position: relative;
-      min-height: 1px;
-      padding-right: 15px;
-      padding-left: 15px; }
-      @media (min-width: 768px) {
-        .article .article_top .topics {
-          float: left;
-          width: 50%; } }
-      .article .article_top .topics ul {
-        list-style: none;
-        padding: 0;
-        margin: 0; }
-        .article .article_top .topics ul li {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-          font-size: 0.875rem;
-          color: #350e20;
-          line-height: 1.4rem;
-          font-weight: 500;
-          display: inline;
-          padding-left: calc($baseline+2px);
-          padding-right: 1rem;
-          margin: 0; }
-          .article .article_top .topics ul li:before {
-            background-color: silver;
-            content: "";
-            display: block;
-            height: 100%;
-            top: 0;
-            width: 2px; }
-          .article .article_top .topics ul li:first-child {
-            padding-left: 0; }
-            .article .article_top .topics ul li:first-child:before {
-              display: none; }
-    .article .article_top .share {
-      position: relative;
-      min-height: 1px;
-      padding-right: 15px;
-      padding-left: 15px; }
-      @media (min-width: 768px) {
-        .article .article_top .share {
-          float: left;
-          width: 50%; } }
-      .article .article_top .share .addtoany_list {
-        line-height: 24px;
-        float: right;
-        width: 100%;
-        text-align: right; }
-        .article .article_top .share .addtoany_list .share_title {
-          margin-right: 1rem;
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-          font-size: 0.875rem;
-          color: #767676;
-          font-weight: 500;
-          line-height: 1.8rem;
-          text-transform: uppercase; }
-    .article .article_top .in_brief {
-      background-color: #f3f3f3;
-      margin: 5rem 0;
-      padding: 2.5rem 5rem;
-      text-align: left; }
-      .article .article_top .in_brief h3 {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-        font-size: 0.875rem;
-        color: #585858;
-        font-weight: 500;
-        line-height: 1.8rem;
-        text-transform: uppercase; }
-      .article .article_top .in_brief ol li {
-        margin-bottom: 2rem;
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-        font-size: 0.875rem;
-        color: #110f0f;
-        line-height: 1.4rem;
-        font-weight: 400; }
-        .article .article_top .in_brief ol li:before {
-          font-size: 0.875rem; }
-    .article .article_top .intro p {
-      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-      font-size: 1.5rem;
-      color: #110f0f;
-      font-weight: 900;
-      line-height: 2rem; }
-  .article .article_bottom {
+      color: #767676;
+      font-weight: 500;
+      line-height: 1.8rem;
+      text-transform: uppercase; }
+  .article .article_bottom, .article .casestudy_bottom, .casestudy .article_bottom, .casestudy .casestudy_bottom {
     padding: 0 5rem 8rem 8rem; }
+
+.article .article_top .written_by p {
+  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  color: #110f0f;
+  line-height: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 4rem; }
+
+.article .article_top .topics {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 768px) {
+    .article .article_top .topics {
+      float: left;
+      width: 50%; } }
+  .article .article_top .topics ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .article .article_top .topics ul li {
+      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-size: 0.875rem;
+      color: #350e20;
+      line-height: 1.4rem;
+      font-weight: 500;
+      display: inline;
+      padding-left: calc($baseline+2px);
+      padding-right: 1rem;
+      margin: 0; }
+      .article .article_top .topics ul li:before {
+        background-color: silver;
+        content: "";
+        display: block;
+        height: 100%;
+        top: 0;
+        width: 2px; }
+      .article .article_top .topics ul li:first-child {
+        padding-left: 0; }
+        .article .article_top .topics ul li:first-child:before {
+          display: none; }
+
+.article .article_top .share {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 768px) {
+    .article .article_top .share {
+      float: left;
+      width: 50%; } }
+  .article .article_top .share .addtoany_list {
+    float: right;
+    text-align: right; }
+
+.article .article_top .in_brief {
+  background-color: #f3f3f3;
+  margin: 5rem 0;
+  padding: 2.5rem 5rem;
+  text-align: left; }
+  .article .article_top .in_brief h3 {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    color: #585858;
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-transform: uppercase; }
+  .article .article_top .in_brief ol li {
+    margin-bottom: 2rem;
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    color: #110f0f;
+    line-height: 1.4rem;
+    font-weight: 400; }
+    .article .article_top .in_brief ol li:before {
+      font-size: 0.875rem; }
+
+.article .article_top .intro p {
+  font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  color: #110f0f;
+  font-weight: 900;
+  line-height: 2rem; }
+
+.casestudy .share {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 768px) {
+    .casestudy .share {
+      float: left;
+      width: 100%; } }
+  .casestudy .share .addtoany_list {
+    display: block;
+    text-align: center; }
+
+.casestudy .summary {
+  background-color: #f3f3f3;
+  float: left;
+  margin-top: 5rem;
+  margin-left: -6rem;
+  margin-right: -6rem;
+  margin-bottom: 5rem;
+  padding: 2rem 4rem; }
+  .casestudy .summary .col {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .casestudy .summary .col {
+        float: left;
+        width: 33.33333%; } }
+    .casestudy .summary .col h3 {
+      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-size: 0.875rem;
+      color: #585858;
+      font-weight: 500;
+      line-height: 1.8rem;
+      text-transform: uppercase;
+      border-bottom: solid 1px #dcdcdc;
+      margin-bottom: .75rem;
+      line-height: 2.75rem; }
+    .casestudy .summary .col p {
+      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-size: 0.875rem;
+      color: #585858;
+      line-height: 1.4rem;
+      font-weight: 400; }
+
+.casestudy .partnership hr:before {
+  border-top-color: #dcdcdc;
+  width: 100%; }
+
+.casestudy .partnership .partnership_content {
+  padding: 2rem 5rem 8rem 8rem; }
+  .casestudy .partnership .partnership_content h3 {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 0.8125rem;
+    color: #585858;
+    font-weight: 400;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem; }
+  .casestudy .partnership .partnership_content .description {
+    margin-bottom: 3rem; }
+  .casestudy .partnership .partnership_content .sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center; }
+    .casestudy .partnership .partnership_content .sponsors .sponsor_img {
+      width: 50%;
+      text-align: center; }
 
 footer.footer {
   background-color: #f3f3f3;
