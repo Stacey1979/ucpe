@@ -59,6 +59,7 @@ module:
   redis: 0
   responsive_image: 0
   responsive_menu: 0
+  responsive_tables_filter: 0
   search: 0
   simple_sitemap: 0
   slick: 0
