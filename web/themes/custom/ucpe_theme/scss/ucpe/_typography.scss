@@ -207,6 +207,27 @@ hr {
   }
 }
 
+// META Content-Type
+
+.meta {
+  .type {
+    @include utility_M($maroon);
+    letter-spacing: 1px;
+  }
+  .divider {
+    color: $divider-gray;
+    margin: 0 $baseline/2;
+    vertical-align: middle;
+    font-size: $baseline * 1.2;
+  }
+  .date {
+    @include bodycopy_S($plum);
+  }
+  .cs_title {
+    @include utility_S($plum);
+  }
+}
+
 // OFFSET ANY STYLES THAT AFFECT THE MENU background
 #toolbar-administration {
   font-size: 12px !important;

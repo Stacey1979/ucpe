@@ -1,10 +1,10 @@
-buttons_size: 36
-additional_html: "<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n<a class=\"a2a_button_email\"></a>\r\n"
+buttons_size: 24
+additional_html: "<span class=\"share_title\">Share</span>\r\n<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n<a class=\"a2a_button_email\"></a>\r\n"
 additional_css: ''
 additional_js: ''
 universal_button: default
 custom_universal_button: ''
-universal_button_placement: before
+universal_button_placement: after
 no_3p: false
 entities:
   media: 0

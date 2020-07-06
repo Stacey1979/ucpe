@@ -22,8 +22,8 @@ dependencies:
   module:
     - ds
     - entity_reference_revisions
-    - field_group
     - media
+    - options
     - text
     - user
 third_party_settings:
@@ -47,6 +47,7 @@ third_party_settings:
     regions:
       ds_content:
         - links
+        - field_case_study_type
         - field_hero
         - node_title
         - field_lede
@@ -72,46 +73,6 @@ third_party_settings:
           wrapper: h1
           class: ''
           link: false
-  field_group:
-    group_case_study_summary:
-      children:
-        - field_challenge
-        - field_solution
-        - field_results
-      parent_name: ''
-      weight: 5
-      format_type: html_element
-      region: ds_content
-      format_settings:
-        id: ''
-        classes: ''
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-      label: Summary
-    group_about_this_partnership:
-      children:
-        - field_about_partnership
-        - field_partnership_logos
-      parent_name: ''
-      weight: 8
-      format_type: html_element
-      region: ds_content
-      format_settings:
-        id: ''
-        classes: ''
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-      label: 'About this Partnership'
 id: node.case_study.default
 targetEntityType: node
 bundle: case_study
@@ -129,6 +90,13 @@ content:
     third_party_settings: {  }
     type: text_default
     region: ds_content
+  field_case_study_type:
+    type: list_default
+    weight: 0
+    region: ds_content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_challenge:
     weight: 6
     label: above
@@ -220,5 +188,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_areas_of_study: true
-  field_case_study_type: true
   field_related_program_tag: true

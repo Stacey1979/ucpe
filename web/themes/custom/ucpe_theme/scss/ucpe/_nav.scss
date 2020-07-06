@@ -1,0 +1,99 @@
+// Main navigation
+
+.top_bar {
+  //offset the standard bootstrap style
+  .navbar-default {
+    background-color: transparent;
+    border: 0;
+  }
+  .navbar {
+    nav ul.menu--utility-menu {
+      float: right;
+
+      li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        &:before {
+          display: none;
+        }
+
+        a {
+          @include bodycopy_XS($black_02);
+          text-decoration: none;
+          transition: color 0.5s;
+          &:hover {
+            background-color: transparent;
+            color: $maroon;
+          }
+        }
+      }
+    }
+  }
+}
+
+#block-horizontalmenu {
+  ul.horizontal-menu {
+    @include listreset();
+    padding-left: 10%;
+    display: flex;
+
+    li {
+      padding: 0;
+      margin: 0;
+      display: flex;
+
+      a {
+        @include bodycopy_S($black);
+        display: flex;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.5s;
+
+        &:hover {
+          color: $maroon;
+        }
+      }
+
+      &#get_in_touch {
+        margin-left: auto;
+        padding: 0.3em 1em 0.35em 1em;
+
+        a {
+          border-bottom: solid 2px $maroon;
+          @include bodycopy_S($plum, $bold: true);
+          padding: 0;
+          text-transform: none;
+          transition: color 0.5s;
+
+          &:hover {
+            color: $maroon;
+          }
+        }
+      }
+
+      &#search-trigger {
+        vertical-align: text-bottom;
+
+        a {
+          @include iconfont($black, "\73");
+          font-size: $baseline * 1.25;
+          padding-bottom: 0;
+          transition: color 0.5s;
+          span {
+            visibility: hidden;
+            display: none;
+          }
+          &:hover {
+            color: $maroon;
+          }
+        }
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

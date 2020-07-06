@@ -244,7 +244,7 @@
     }
   }
 
-  .content {
+  .stat_content {
     @include make-md-column(9);
     @include bodycopy_M($black, $bold: false);
     font-style: italic;
@@ -323,7 +323,7 @@
     padding: $baseline * 1.5 0;
   }
 
-  .content {
+  .cta_content {
     @include make-sm-column(8);
     h3 {
       @include heading_XS($black);
@@ -348,7 +348,7 @@
   .wrapper {
     @include make-container();
 
-    .content {
+    .cta_content {
       @include make-sm-column(5);
       @include make-sm-column-pull(1);
     }
@@ -689,20 +689,7 @@
       .content {
         @include make-sm-column(8);
       }
-      .meta {
-        .type {
-          @include utility_M($maroon);
-        }
-        .divider {
-          color: $divider-gray;
-          margin: 0 $baseline/2;
-          vertical-align: middle;
-          font-size: $baseline * 1.2;
-        }
-        .date {
-          @include bodycopy_S($black);
-        }
-      }
+
       h4 {
         @include heading_XS($black);
       }
@@ -710,5 +697,15 @@
         @include bodycopy_S($black, $bold: true);
       }
     }
+  }
+}
+
+.related_content_list_wrapper {
+  @include make-container();
+  .related_content_list {
+    @include make-sm-column(12);
+  }
+  h2 {
+    @include bodycopy_XL($maroon, $bold: true);
   }
 }
