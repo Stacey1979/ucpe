@@ -1,0 +1,28 @@
+uuid: 441864bc-28d3-4ebe-a744-c588415ab189
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_column_1
+    - paragraphs.paragraphs_type.text_with_media_1_3_2_3_
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+    code: '0'
+id: paragraph.text_with_media_1_3_2_3_.field_content_column_1
+field_name: field_content_column_1
+entity_type: paragraph
+bundle: text_with_media_1_3_2_3_
+label: 'Content Column 1'
+description: 'Enter a small paragraph of text to accompany the image or video to the left. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

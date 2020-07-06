@@ -1,0 +1,10 @@
+uuid: dddb5e5a-9d00-4e30-999c-8a0de576a009
+langcode: en
+status: true
+dependencies: {  }
+id: content_with_image_50_50_
+label: 'Content with Image (50/50)'
+icon_uuid: null
+icon_default: null
+description: 'Add text with an image. '
+behavior_plugins: {  }

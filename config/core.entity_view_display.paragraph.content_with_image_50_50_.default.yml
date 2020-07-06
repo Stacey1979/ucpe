@@ -1,12 +1,12 @@
-uuid: 4c94e7fc-a8b0-4d83-8b08-80120ce80154
+uuid: 9476b0cf-f37a-4ca6-92c5-57c9905adcd5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text_two_one_third.field_content_column_1
-    - field.field.paragraph.text_two_one_third.field_content_column_2
-    - field.field.paragraph.text_two_one_third.field_optional_title
-    - paragraphs.paragraphs_type.text_two_one_third
+    - field.field.paragraph.content_with_image_50_50_.field_content_column_1
+    - field.field.paragraph.content_with_image_50_50_.field_image
+    - field.field.paragraph.content_with_image_50_50_.field_optional_title
+    - paragraphs.paragraphs_type.content_with_image_50_50_
   module:
     - ds
     - text
@@ -35,10 +35,10 @@ third_party_settings:
         - field_optional_title
         - field_content_column_1
       right:
-        - field_content_column_2
-id: paragraph.text_two_one_third.default
+        - field_image
+id: paragraph.content_with_image_50_50_.default
 targetEntityType: paragraph
-bundle: text_two_one_third
+bundle: content_with_image_50_50_
 mode: default
 content:
   field_content_column_1:
@@ -48,12 +48,14 @@ content:
     third_party_settings: {  }
     type: text_default
     region: left
-  field_content_column_2:
+  field_image:
+    type: entity_reference_entity_view
     weight: 2
     label: hidden
-    settings: {  }
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: text_default
     region: right
   field_optional_title:
     weight: 0

@@ -1,0 +1,29 @@
+uuid: 2f9d6eb8-8cb4-4175-a31e-03fef4e05c71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program_type
+    - node.type.find_your_fit
+    - taxonomy.vocabulary.program_type
+id: node.find_your_fit.field_program_type
+field_name: field_program_type
+entity_type: node
+bundle: find_your_fit
+label: 'Program Type'
+description: 'Select the tag for the program type that corresponds to this find your fit page. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      program_type: program_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

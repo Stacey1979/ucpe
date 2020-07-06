@@ -1,0 +1,136 @@
+uuid: 0eed22f4-0498-4102-8995-3a7cb1f29317
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_and_media_1_3_2_3
+    - node.type.find_your_fit
+    - paragraphs.paragraphs_type.text_with_media_1_3_2_3_
+  module:
+    - entity_reference_revisions
+id: node.find_your_fit.field_text_and_media_1_3_2_3
+field_name: field_text_and_media_1_3_2_3
+entity_type: node
+bundle: find_your_fit
+label: 'Text and Media (⅓ + ⅔)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text_with_media_1_3_2_3_: text_with_media_1_3_2_3_
+    target_bundles_drag_drop:
+      about_person:
+        weight: 37
+        enabled: false
+      about_student:
+        weight: 38
+        enabled: false
+      at_a_glance:
+        weight: 39
+        enabled: false
+      blockquote:
+        weight: 40
+        enabled: false
+      blockquotes:
+        weight: 41
+        enabled: false
+      button_set:
+        weight: 42
+        enabled: false
+      content_sections:
+        weight: 43
+        enabled: false
+      cta:
+        weight: 44
+        enabled: false
+      deadlines:
+        weight: 45
+        enabled: false
+      designed_for:
+        weight: 46
+        enabled: false
+      duration:
+        weight: 47
+        enabled: false
+      form_embed:
+        weight: 48
+        enabled: false
+      full_width_content:
+        weight: 49
+        enabled: false
+      header_s_:
+        weight: 50
+        enabled: false
+      heroes:
+        weight: 51
+        enabled: false
+      horizontal_rule:
+        weight: 52
+        enabled: false
+      image_carousel:
+        weight: 53
+        enabled: false
+      image_carousel_combo:
+        weight: 54
+        enabled: false
+      in_brief:
+        weight: 58
+        enabled: false
+      instructor_program_and_courses:
+        weight: 55
+        enabled: false
+      instructor_program_courses_combo:
+        weight: 56
+        enabled: false
+      intro_paragraph:
+        weight: 57
+        enabled: false
+      large_image_with_caption_left_or:
+        weight: 59
+        enabled: false
+      related_instructors:
+        weight: 60
+        enabled: false
+      related_of_interest:
+        weight: 61
+        enabled: false
+      related_program_block:
+        weight: 62
+        enabled: false
+      statistics:
+        weight: 63
+        enabled: false
+      story_about_combo:
+        weight: 64
+        enabled: false
+      story_programs:
+        weight: 65
+        enabled: false
+      text_one_two_third:
+        weight: 66
+        enabled: false
+      text_two_one_third:
+        weight: 67
+        enabled: false
+      text_with_media_1_3_2_3_:
+        enabled: true
+        weight: 68
+      three_up_illust_img_combo:
+        weight: 69
+        enabled: false
+      three_up_image_and_text:
+        weight: 70
+        enabled: false
+      three_up_statistic:
+        weight: 71
+        enabled: false
+      three_up_statistics_combo:
+        weight: 72
+        enabled: false
+field_type: entity_reference_revisions

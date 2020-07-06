@@ -1,0 +1,10 @@
+uuid: de38a730-c02e-49a8-8849-a6b96ea83780
+langcode: en
+status: true
+dependencies: {  }
+id: text_with_media_1_3_2_3_
+label: 'Content with Media (⅓ + ⅔)'
+icon_uuid: null
+icon_default: null
+description: 'For text with media (video or image) on Find your Fit pages. '
+behavior_plugins: {  }

@@ -1,0 +1,59 @@
+uuid: d331de34-cf25-426d-8c6a-cff055079a5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.find_your_fit.field_content_sections
+    - field.field.node.find_your_fit.field_lede
+    - field.field.node.find_your_fit.field_program_type
+    - field.field.node.find_your_fit.field_text_and_media_1_3_2_3
+    - node.type.find_your_fit
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.find_your_fit.default
+targetEntityType: node
+bundle: find_your_fit
+mode: default
+content:
+  field_content_sections:
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_lede:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_program_type:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_text_and_media_1_3_2_3:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
