@@ -1,12 +1,11 @@
-uuid: 4c94e7fc-a8b0-4d83-8b08-80120ce80154
+uuid: 6d45b8da-dd92-4c0c-ba88-d5a22f114439
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text_two_one_third.field_content_column_1
-    - field.field.paragraph.text_two_one_third.field_content_column_2
-    - field.field.paragraph.text_two_one_third.field_optional_title
-    - paragraphs.paragraphs_type.text_two_one_third
+    - field.field.paragraph.text_with_media_1_3_2_3_.field_content_column_1
+    - field.field.paragraph.text_with_media_1_3_2_3_.field_media
+    - paragraphs.paragraphs_type.text_with_media_1_3_2_3_
   module:
     - ds
     - text
@@ -32,35 +31,28 @@ third_party_settings:
           right: {  }
     regions:
       left:
-        - field_optional_title
         - field_content_column_1
       right:
-        - field_content_column_2
-id: paragraph.text_two_one_third.default
+        - field_media
+id: paragraph.text_with_media_1_3_2_3_.default
 targetEntityType: paragraph
-bundle: text_two_one_third
+bundle: text_with_media_1_3_2_3_
 mode: default
 content:
   field_content_column_1:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: left
-  field_content_column_2:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: right
-  field_optional_title:
     weight: 0
     label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: text_default
     region: left
+  field_media:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: right
 hidden: {  }

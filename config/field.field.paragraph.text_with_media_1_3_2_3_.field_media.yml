@@ -1,0 +1,31 @@
+uuid: 8c729549-f025-474d-a254-8fc03fd25c61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.embedded_video
+    - media.type.image
+    - paragraphs.paragraphs_type.text_with_media_1_3_2_3_
+id: paragraph.text_with_media_1_3_2_3_.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: text_with_media_1_3_2_3_
+label: Media
+description: 'Add an image or video. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      embedded_video: embedded_video
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: embedded_video
+field_type: entity_reference

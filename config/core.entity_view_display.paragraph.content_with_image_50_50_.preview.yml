@@ -1,16 +1,19 @@
-uuid: 0a35e709-200b-45a6-9f4a-cd206b4b955e
+uuid: d6b70b56-0534-4e94-9173-9251b2c659a4
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
-    - field.field.paragraph.text_two_one_third.field_content_column_1
-    - field.field.paragraph.text_two_one_third.field_content_column_2
-    - field.field.paragraph.text_two_one_third.field_optional_title
-    - paragraphs.paragraphs_type.text_two_one_third
+    - field.field.paragraph.content_with_image_50_50_.field_content_column_1
+    - field.field.paragraph.content_with_image_50_50_.field_image
+    - field.field.paragraph.content_with_image_50_50_.field_optional_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.content_with_image_50_50_
   module:
     - ds
+    - media
     - smart_trim
+    - text
 third_party_settings:
   ds:
     layout:
@@ -36,49 +39,27 @@ third_party_settings:
         - field_optional_title
         - field_content_column_1
       right:
-        - field_content_column_2
-id: paragraph.text_two_one_third.preview
+        - field_image
+id: paragraph.content_with_image_50_50_.preview
 targetEntityType: paragraph
-bundle: text_two_one_third
+bundle: content_with_image_50_50_
 mode: preview
 content:
   field_content_column_1:
     weight: 1
     label: hidden
-    settings:
-      trim_length: 200
-      trim_type: chars
-      trim_suffix: ''
-      wrap_class: trimmed
-      more_text: More
-      more_class: more-link
-      trim_options:
-        text: true
-        trim_zero: false
-      wrap_output: false
-      more_link: false
-      summary_handler: full
+    settings: {  }
     third_party_settings: {  }
-    type: smart_trim
+    type: text_default
     region: left
-  field_content_column_2:
+  field_image:
+    type: media_thumbnail
     weight: 2
     label: hidden
     settings:
-      trim_length: 200
-      trim_type: chars
-      trim_suffix: ''
-      wrap_class: trimmed
-      more_text: More
-      more_class: more-link
-      trim_options:
-        text: true
-        trim_zero: false
-      wrap_output: false
-      more_link: false
-      summary_handler: full
+      image_style: thumbnail
+      image_link: ''
     third_party_settings: {  }
-    type: smart_trim
     region: right
   field_optional_title:
     type: smart_trim

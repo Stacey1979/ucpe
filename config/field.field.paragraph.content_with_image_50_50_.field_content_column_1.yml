@@ -1,0 +1,28 @@
+uuid: c373d932-d062-46c5-9b70-298cd2614acb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_column_1
+    - paragraphs.paragraphs_type.content_with_image_50_50_
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+    code: '0'
+id: paragraph.content_with_image_50_50_.field_content_column_1
+field_name: field_content_column_1
+entity_type: paragraph
+bundle: content_with_image_50_50_
+label: 'Content Column 1'
+description: 'Add Text. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

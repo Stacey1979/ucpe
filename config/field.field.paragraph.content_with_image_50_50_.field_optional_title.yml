@@ -1,0 +1,19 @@
+uuid: 5e6dfbb0-1d11-499f-a031-a61a7dc2b27d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_optional_title
+    - paragraphs.paragraphs_type.content_with_image_50_50_
+id: paragraph.content_with_image_50_50_.field_optional_title
+field_name: field_optional_title
+entity_type: paragraph
+bundle: content_with_image_50_50_
+label: Title
+description: 'Add a title for this section'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

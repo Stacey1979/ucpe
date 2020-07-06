@@ -72,14 +72,14 @@ settings:
       deadlines:
         weight: 43
         enabled: false
-      deadlines_combo:
-        weight: 44
-        enabled: false
       designed_for:
         weight: 45
         enabled: false
       duration:
         weight: 46
+        enabled: false
+      form_embed:
+        weight: 47
         enabled: false
       full_width_content:
         enabled: true
@@ -116,6 +116,9 @@ settings:
         weight: -36
       related_instructors:
         weight: 58
+        enabled: false
+      related_of_interest:
+        weight: 60
         enabled: false
       related_program_block:
         enabled: true

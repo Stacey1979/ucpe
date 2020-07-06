@@ -1,0 +1,22 @@
+uuid: 00543699-b207-4c66-94ab-e90d2b5cd931
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.find_your_fit
+id: node.find_your_fit.promote
+field_name: promote
+entity_type: node
+bundle: find_your_fit
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
