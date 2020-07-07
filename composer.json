@@ -45,6 +45,7 @@
         "drupal/redirect": "^1.5",
         "drupal/redis": "^1.4",
         "drupal/responsive_menu": "^4.0",
+        "drupal/responsive_tables_filter": "^1.5",
         "drupal/schema_metatag": "^1.4",
         "drupal/simple_sitemap": "^3.6",
         "drupal/slick": "^2.2",
