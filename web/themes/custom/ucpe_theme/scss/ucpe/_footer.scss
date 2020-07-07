@@ -25,7 +25,8 @@ footer.footer {
     @include make-sm-column(12);
     @include make-md-column(3);
 
-    img {
+    svg {
+      height: auto;
       max-width: 350px;
       margin-bottom: $baseline * 2;
       width: 80%;

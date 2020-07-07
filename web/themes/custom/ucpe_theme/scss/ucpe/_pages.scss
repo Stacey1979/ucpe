@@ -15,7 +15,10 @@
 
   .article_top,
   .casestudy_top {
-    padding: $baseline * 5 $baseline * 5 0;
+    padding: $baseline * 2 $baseline 0;
+    @include screen("tablet-wide") {
+      padding: $baseline * 5 $baseline * 5 0;
+    }
 
     .meta {
       text-align: center;
@@ -42,11 +45,6 @@
         }
       }
     }
-  }
-
-  .article_bottom,
-  .casestudy_bottom {
-    padding: 0 $baseline * 5 $baseline * 8 $baseline * 8;
   }
 }
 .article {
@@ -117,24 +115,48 @@
       @include heading_S($black);
     }
   }
+  .article_bottom {
+    padding: 0 $baseline * 5 $baseline * 8 $baseline * 8;
+  }
 }
 
 .casestudy {
   .share {
     @include make-sm-column(12);
+    // this takes away the padding created by the include above on screens smaller than 559px, so it lines up to the left
+    @include screen("phablet", $type: max) {
+      padding-left: 0;
+    }
     .addtoany_list {
       display: block;
-      text-align: center;
+      @include screen("tablet-wide") {
+        text-align: center;
+      }
     }
   }
   .summary {
     background-color: $bg_02;
     float: left;
-    margin-top: $baseline * 5;
-    margin-left: -$baseline * 6;
-    margin-right: -$baseline * 6;
-    margin-bottom: $baseline * 5;
-    padding: $baseline * 2 $baseline * 4;
+    padding: $baseline $baseline * 2;
+    margin-top: $baseline * 3;
+    margin-left: -$baseline;
+    margin-right: -$baseline;
+    margin-bottom: $baseline * 3;
+
+    @include screen("tablet") {
+      padding: $baseline $baseline * 2;
+      margin-top: $baseline * 3;
+      margin-left: -$baseline * 2;
+      margin-right: -$baseline * 2;
+      margin-bottom: $baseline * 3;
+    }
+    @include screen("desktop") {
+      margin-top: $baseline * 5;
+      margin-left: -$baseline * 6;
+      margin-right: -$baseline * 6;
+      margin-bottom: $baseline * 5;
+      padding: $baseline * 2 $baseline * 4;
+    }
 
     .col {
       @include make-sm-column(4);
@@ -149,13 +171,33 @@
       }
     }
   }
+
+  .intro {
+    margin-bottom: $baseline * 3;
+    p {
+      @include heading_S($black);
+      margin-bottom: 0;
+    }
+  }
+  .casestudy_bottom {
+    padding: 0 $baseline * 2 $baseline * 2;
+    @include screen("tablet-wide") {
+      padding: 0 $baseline * 5 $baseline * 5 $baseline * 8;
+    }
+  }
   .partnership {
-    hr:before {
-      border-top-color: $divider-gray;
-      width: 100%;
+    hr {
+      margin-top: 0;
+      &:before {
+        border-top-color: $divider-gray;
+        width: 100%;
+      }
     }
     .partnership_content {
-      padding: $baseline * 2 $baseline * 5 $baseline * 8 $baseline * 8;
+      padding: $baseline * 2;
+      @include screen("tablet-wide") {
+        padding: $baseline * 2 $baseline * 5 $baseline * 8 $baseline * 8;
+      }
       h3 {
         @include utility_S($black_02);
         margin-bottom: $baseline * 2;
@@ -164,14 +206,18 @@
         margin-bottom: $baseline * 3;
       }
       .sponsors {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        align-items: center;
+        @include screen("tablet") {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          align-items: center;
+        }
 
         .sponsor_img {
-          width: 50%;
-          text-align: center;
+          @include screen("tablet") {
+            width: 50%;
+            text-align: center;
+          }
         }
       }
     }

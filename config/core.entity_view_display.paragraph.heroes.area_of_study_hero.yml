@@ -17,7 +17,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: area_of_study_hero
+      view_mode: hero_portrait
       link: false
     third_party_settings: {  }
     region: content

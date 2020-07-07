@@ -6471,7 +6471,7 @@ p:last-of-type {
   font-size: 1rem;
   color: #110f0f;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2rem;
   margin-bottom: 1.5rem; }
 
 ol,
@@ -7869,7 +7869,13 @@ header {
   .article .casestudy_top,
   .casestudy .article_top,
   .casestudy .casestudy_top {
-    padding: 5rem 5rem 0; }
+    padding: 2rem 1rem 0; }
+    @media only screen and (min-width: 960px) {
+      .article .article_top,
+      .article .casestudy_top,
+      .casestudy .article_top,
+      .casestudy .casestudy_top {
+        padding: 5rem 5rem 0; } }
     .article .article_top .meta,
     .article .casestudy_top .meta,
     .casestudy .article_top .meta,
@@ -7908,11 +7914,6 @@ header {
       font-weight: 500;
       line-height: 1.8rem;
       text-transform: uppercase; }
-  .article .article_bottom,
-  .article .casestudy_bottom,
-  .casestudy .article_bottom,
-  .casestudy .casestudy_bottom {
-    padding: 0 5rem 8rem 8rem; }
 
 .article .article_top .written_by p {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -7999,6 +8000,9 @@ header {
   font-weight: 900;
   line-height: 2rem; }
 
+.article .article_bottom {
+  padding: 0 5rem 8rem 8rem; }
+
 .casestudy .share {
   position: relative;
   min-height: 1px;
@@ -8008,18 +8012,37 @@ header {
     .casestudy .share {
       float: left;
       width: 100%; } }
+  @media only screen and (max-width: 559px) {
+    .casestudy .share {
+      padding-left: 0; } }
   .casestudy .share .addtoany_list {
-    display: block;
-    text-align: center; }
+    display: block; }
+    @media only screen and (min-width: 960px) {
+      .casestudy .share .addtoany_list {
+        text-align: center; } }
 
 .casestudy .summary {
   background-color: #f3f3f3;
   float: left;
-  margin-top: 5rem;
-  margin-left: -6rem;
-  margin-right: -6rem;
-  margin-bottom: 5rem;
-  padding: 2rem 4rem; }
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-bottom: 3rem; }
+  @media only screen and (min-width: 768px) {
+    .casestudy .summary {
+      padding: 1rem 2rem;
+      margin-top: 3rem;
+      margin-left: -2rem;
+      margin-right: -2rem;
+      margin-bottom: 3rem; } }
+  @media only screen and (min-width: 1200px) {
+    .casestudy .summary {
+      margin-top: 5rem;
+      margin-left: -6rem;
+      margin-right: -6rem;
+      margin-bottom: 5rem;
+      padding: 2rem 4rem; } }
   .casestudy .summary .col {
     position: relative;
     min-height: 1px;
@@ -8046,12 +8069,33 @@ header {
       line-height: 1.4rem;
       font-weight: 400; }
 
-.casestudy .partnership hr:before {
-  border-top-color: #dcdcdc;
-  width: 100%; }
+.casestudy .intro {
+  margin-bottom: 3rem; }
+  .casestudy .intro p {
+    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-size: 1.5rem;
+    color: #110f0f;
+    font-weight: 900;
+    line-height: 2rem;
+    margin-bottom: 0; }
+
+.casestudy .casestudy_bottom {
+  padding: 0 2rem 2rem; }
+  @media only screen and (min-width: 960px) {
+    .casestudy .casestudy_bottom {
+      padding: 0 5rem 5rem 8rem; } }
+
+.casestudy .partnership hr {
+  margin-top: 0; }
+  .casestudy .partnership hr:before {
+    border-top-color: #dcdcdc;
+    width: 100%; }
 
 .casestudy .partnership .partnership_content {
-  padding: 2rem 5rem 8rem 8rem; }
+  padding: 2rem; }
+  @media only screen and (min-width: 960px) {
+    .casestudy .partnership .partnership_content {
+      padding: 2rem 5rem 8rem 8rem; } }
   .casestudy .partnership .partnership_content h3 {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 0.8125rem;
@@ -8062,14 +8106,16 @@ header {
     margin-bottom: 2rem; }
   .casestudy .partnership .partnership_content .description {
     margin-bottom: 3rem; }
-  .casestudy .partnership .partnership_content .sponsors {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: center; }
+  @media only screen and (min-width: 768px) {
+    .casestudy .partnership .partnership_content .sponsors {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      align-items: center; } }
+  @media only screen and (min-width: 768px) {
     .casestudy .partnership .partnership_content .sponsors .sponsor_img {
       width: 50%;
-      text-align: center; }
+      text-align: center; } }
 
 footer.footer {
   background-color: #f3f3f3;
@@ -8128,12 +8174,13 @@ footer.footer {
       footer.footer .brand {
         float: left;
         width: 25%; } }
-    footer.footer .brand img {
+    footer.footer .brand svg {
+      height: auto;
       max-width: 350px;
       margin-bottom: 2rem;
       width: 80%; }
       @media only screen and (min-width: 960px) {
-        footer.footer .brand img {
+        footer.footer .brand svg {
           margin-bottom: 4rem; } }
     footer.footer .brand address {
       font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
