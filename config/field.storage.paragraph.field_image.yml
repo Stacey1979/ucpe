@@ -1,16 +1,16 @@
-uuid: 9d20dd95-6bb7-463b-895d-a2ca8ca4b857
+uuid: dacf506d-51c6-46a6-bc3d-713f6216ea80
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-    - views
-id: node.field_contact_x
-field_name: field_contact_x
-entity_type: node
+    - media
+    - paragraphs
+id: paragraph.field_image
+field_name: field_image
+entity_type: paragraph
 type: entity_reference
 settings:
-  target_type: view
+  target_type: media
 module: core
 locked: false
 cardinality: 1

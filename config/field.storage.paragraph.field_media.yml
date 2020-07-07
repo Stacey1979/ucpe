@@ -1,16 +1,16 @@
-uuid: abfedc65-a349-4f97-8835-4e5236c9836a
+uuid: 50239327-ff5b-4ab2-b2d7-26d51816655b
 langcode: en
 status: true
 dependencies:
   module:
-    - block
-    - node
-id: node.field_conta
-field_name: field_conta
-entity_type: node
+    - media
+    - paragraphs
+id: paragraph.field_media
+field_name: field_media
+entity_type: paragraph
 type: entity_reference
 settings:
-  target_type: block
+  target_type: media
 module: core
 locked: false
 cardinality: 1

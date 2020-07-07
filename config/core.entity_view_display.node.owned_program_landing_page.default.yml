@@ -67,8 +67,8 @@ third_party_settings:
         - field_offered_by
         - field_conferred_by
         - field_button_
-        - field_of_interest
         - field_area_of_study_cta
+        - field_of_interest
     fields:
       node_title:
         plugin_id: node_title
@@ -85,7 +85,7 @@ bundle: owned_program_landing_page
 mode: default
 content:
   field_area_of_study_cta:
-    weight: 18
+    weight: 17
     label: hidden
     settings:
       view_mode: area_of_study_cta
@@ -206,7 +206,7 @@ content:
     type: text_default
     region: ds_content
   field_of_interest:
-    weight: 17
+    weight: 18
     label: above
     settings:
       view_mode: default

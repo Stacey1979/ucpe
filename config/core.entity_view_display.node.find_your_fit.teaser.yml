@@ -1,0 +1,29 @@
+uuid: 9979c042-e8a0-4029-8842-96a1663a0be1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.find_your_fit.field_content_sections
+    - field.field.node.find_your_fit.field_lede
+    - field.field.node.find_your_fit.field_program_type
+    - field.field.node.find_your_fit.field_text_and_media_1_3_2_3
+    - node.type.find_your_fit
+  module:
+    - user
+id: node.find_your_fit.teaser
+targetEntityType: node
+bundle: find_your_fit
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_content_sections: true
+  field_lede: true
+  field_program_type: true
+  field_text_and_media_1_3_2_3: true
