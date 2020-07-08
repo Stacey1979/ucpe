@@ -5,55 +5,93 @@ dependencies:
   config:
     - field.field.node.find_your_fit.field_content_sections
     - field.field.node.find_your_fit.field_lede
+    - field.field.node.find_your_fit.field_metatags
     - field.field.node.find_your_fit.field_program_type
     - field.field.node.find_your_fit.field_text_and_media_1_3_2_3
     - node.type.find_your_fit
   module:
+    - ds
     - entity_reference_revisions
+    - metatag
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - links
+        - node_title
+        - field_lede
+        - field_text_and_media_1_3_2_3
+        - field_content_sections
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h1
+          class: ''
+          link: false
 id: node.find_your_fit.default
 targetEntityType: node
 bundle: find_your_fit
 mode: default
 content:
   field_content_sections:
-    weight: 104
-    label: above
+    weight: 4
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
-    region: content
+    region: ds_content
   field_lede:
-    weight: 102
-    label: above
+    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_program_type:
-    weight: 101
+    region: ds_content
+  field_metatags:
+    weight: 5
     label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: metatag_empty_formatter
     region: content
   field_text_and_media_1_3_2_3:
     type: entity_reference_revisions_entity_view
-    weight: 103
-    label: above
+    weight: 3
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
+    region: ds_content
   links:
-    weight: 100
+    weight: 0
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   addtoany: true
+  field_program_type: true

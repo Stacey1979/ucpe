@@ -12,7 +12,7 @@ dependencies:
 id: views_block__related_three_ups_block_2
 theme: ucpe_theme
 region: content
-weight: -1
+weight: -2
 provider: null
 plugin: 'views_block:related_three_ups-block_2'
 settings:

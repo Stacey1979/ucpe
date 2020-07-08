@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_content_sections
     - node.type.course
     - paragraphs.paragraphs_type.blockquotes
-    - paragraphs.paragraphs_type.button_set
     - paragraphs.paragraphs_type.full_width_content
     - paragraphs.paragraphs_type.header_s_
     - paragraphs.paragraphs_type.horizontal_rule
@@ -31,7 +30,6 @@ settings:
     negate: 0
     target_bundles:
       blockquotes: blockquotes
-      button_set: button_set
       full_width_content: full_width_content
       header_s_: header_s_
       horizontal_rule: horizontal_rule
@@ -45,6 +43,9 @@ settings:
       about_student:
         weight: 28
         enabled: false
+      at_a_glance:
+        weight: 41
+        enabled: false
       blockquote:
         weight: 29
         enabled: false
@@ -52,13 +53,28 @@ settings:
         enabled: true
         weight: 30
       button_set:
-        enabled: true
         weight: 31
+        enabled: false
       content_sections:
         weight: 32
         enabled: false
+      content_with_image_50_50_:
+        weight: 46
+        enabled: false
       cta:
         weight: 33
+        enabled: false
+      deadlines:
+        weight: 48
+        enabled: false
+      designed_for:
+        weight: 49
+        enabled: false
+      duration:
+        weight: 50
+        enabled: false
+      form_embed:
+        weight: 51
         enabled: false
       full_width_content:
         enabled: true
@@ -81,11 +97,26 @@ settings:
       in_brief:
         weight: 41
         enabled: false
+      instructor_program_and_courses:
+        weight: 58
+        enabled: false
+      instructor_program_courses_combo:
+        weight: 59
+        enabled: false
       intro_paragraph:
         weight: 40
         enabled: false
       large_image_with_caption_left_or:
         weight: 42
+        enabled: false
+      related_courses:
+        weight: 63
+        enabled: false
+      related_instructors:
+        weight: 64
+        enabled: false
+      related_of_interest:
+        weight: 65
         enabled: false
       related_program_block:
         weight: 43
@@ -104,6 +135,9 @@ settings:
         enabled: false
       text_two_one_third:
         weight: 48
+        enabled: false
+      text_with_media_1_3_2_3_:
+        weight: 72
         enabled: false
       three_up_illust_img_combo:
         enabled: true

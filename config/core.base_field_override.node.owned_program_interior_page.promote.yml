@@ -1,0 +1,22 @@
+uuid: d046aae7-0b4c-4e38-8e52-f6be22d11d1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.owned_program_interior_page
+id: node.owned_program_interior_page.promote
+field_name: promote
+entity_type: node
+bundle: owned_program_interior_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.find_your_fit.field_content_sections
     - field.field.node.find_your_fit.field_lede
+    - field.field.node.find_your_fit.field_metatags
     - field.field.node.find_your_fit.field_program_type
     - field.field.node.find_your_fit.field_text_and_media_1_3_2_3
     - node.type.find_your_fit
@@ -25,5 +26,6 @@ hidden:
   addtoany: true
   field_content_sections: true
   field_lede: true
+  field_metatags: true
   field_program_type: true
   field_text_and_media_1_3_2_3: true

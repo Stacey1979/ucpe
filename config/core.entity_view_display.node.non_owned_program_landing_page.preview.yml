@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.non_owned_program_landing_page.field_hero
     - field.field.node.non_owned_program_landing_page.field_lede
     - field.field.node.non_owned_program_landing_page.field_link_to_main_page
+    - field.field.node.non_owned_program_landing_page.field_metatags
     - field.field.node.non_owned_program_landing_page.field_of_interest
     - field.field.node.non_owned_program_landing_page.field_offered_by
     - field.field.node.non_owned_program_landing_page.field_program_illustration
@@ -195,4 +196,5 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_metatags: true
   field_program_illustration: true

@@ -12,7 +12,7 @@ dependencies:
 id: mainnavigation
 theme: ucpe_theme
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: 'system_menu_block:main'
 settings:

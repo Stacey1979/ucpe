@@ -1,0 +1,21 @@
+uuid: 0907932c-254e-4f92-a262-3ec0353c2a08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.non_owned_program_landing_page
+  module:
+    - metatag
+id: node.non_owned_program_landing_page.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: non_owned_program_landing_page
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag
