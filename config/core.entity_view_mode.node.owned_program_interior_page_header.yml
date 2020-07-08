@@ -1,0 +1,10 @@
+uuid: b3cd03a1-b5f7-42d6-bab6-c95b761479b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.owned_program_interior_page_header
+label: 'Owned Program Interior Page Header'
+targetEntityType: node
+cache: true

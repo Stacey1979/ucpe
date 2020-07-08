@@ -11,8 +11,8 @@ field_name: field_based_on
 entity_type: node
 bundle: article
 label: 'Based on the work of'
-description: 'Who''s work was this article based on?'
-required: true
+description: 'Add the person who''s work this article is based on if relevant. If none, leave empty.'
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

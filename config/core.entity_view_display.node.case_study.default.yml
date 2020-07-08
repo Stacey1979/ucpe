@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
+    - field.field.node.case_study.field_metatags
     - field.field.node.case_study.field_of_interest
     - field.field.node.case_study.field_partnership_logos
     - field.field.node.case_study.field_related_program_tag
@@ -23,6 +24,7 @@ dependencies:
     - ds
     - entity_reference_revisions
     - media
+    - metatag
     - options
     - text
     - user
@@ -147,6 +149,13 @@ content:
     third_party_settings: {  }
     type: text_default
     region: ds_content
+  field_metatags:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_of_interest:
     type: entity_reference_revisions_entity_view
     weight: 11

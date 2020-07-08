@@ -1,0 +1,30 @@
+uuid: c057d856-2ae7-4091-883c-f763bf19465a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.program.field_program_detail_page
+    - taxonomy.vocabulary.program
+  module:
+    - text
+id: taxonomy_term.program.default
+targetEntityType: taxonomy_term
+bundle: program
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_program_detail_page:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

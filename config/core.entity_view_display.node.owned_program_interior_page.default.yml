@@ -1,0 +1,80 @@
+uuid: 03fedf43-f672-4f1f-91a3-15bedcd75702
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.owned_program_interior_page.field_content_sections
+    - field.field.node.owned_program_interior_page.field_metatags
+    - field.field.node.owned_program_interior_page.field_program
+    - node.type.owned_program_interior_page
+  module:
+    - ds
+    - entity_reference_revisions
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - links
+        - field_program
+        - node_title
+        - field_content_sections
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h1
+          class: ''
+          link: false
+id: node.owned_program_interior_page.default
+targetEntityType: node
+bundle: owned_program_interior_page
+mode: default
+content:
+  field_content_sections:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_program:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: owned_program_interior_page_header
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: ds_content
+  links:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_metatags: true

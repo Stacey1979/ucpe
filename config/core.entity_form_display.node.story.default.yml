@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
     - field.field.node.story.field_lede
+    - field.field.node.story.field_metatags
     - field.field.node.story.field_related_program_tag
     - field.field.node.story.field_written_by
     - node.type.story
@@ -17,6 +18,7 @@ dependencies:
     - datetime
     - entity_browser_entity_form
     - inline_entity_form
+    - metatag
     - paragraphs
     - path
     - text
@@ -99,6 +101,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_related_program_tag:
     weight: 8

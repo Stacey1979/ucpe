@@ -1,0 +1,21 @@
+uuid: c3856872-1c69-44f9-a340-f49c6c97a242
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.find_your_fit
+  module:
+    - metatag
+id: node.find_your_fit.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: find_your_fit
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.article.field_in_brief_perspective
     - field.field.node.article.field_intro_paragraph
     - field.field.node.article.field_lede
+    - field.field.node.article.field_metatags
     - field.field.node.article.field_related_programs
     - field.field.node.article.field_topics
     - node.type.article
@@ -109,6 +110,7 @@ hidden:
   field_in_brief_perspective: true
   field_intro_paragraph: true
   field_lede: true
+  field_metatags: true
   field_perspectives_hero: true
   field_perspectives_label: true
   field_read_time: true

@@ -1,0 +1,8 @@
+uuid: a7890218-c0e1-45bd-ba83-9649085d66dd
+langcode: en
+status: true
+dependencies: {  }
+id: video
+label: Video
+revision: 0
+description: ''

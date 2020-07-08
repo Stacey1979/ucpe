@@ -1,0 +1,10 @@
+uuid: 1eb7f350-16f0-4a8f-996c-c4236db215ca
+langcode: en
+status: true
+dependencies: {  }
+id: related_courses
+label: 'Related Courses'
+icon_uuid: null
+icon_default: null
+description: 'Add related courses to your content. '
+behavior_plugins: {  }

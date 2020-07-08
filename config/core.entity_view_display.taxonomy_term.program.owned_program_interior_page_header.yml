@@ -1,0 +1,47 @@
+uuid: d9a5a94b-9161-4868-ab83-9282ffc1ecda
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.owned_program_interior_page_header
+    - field.field.taxonomy_term.program.field_program_detail_page
+    - taxonomy.vocabulary.program
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_program_detail_page
+id: taxonomy_term.program.owned_program_interior_page_header
+targetEntityType: taxonomy_term
+bundle: program
+mode: owned_program_interior_page_header
+content:
+  field_program_detail_page:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: owned_program_interior_page_header
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: ds_content
+hidden:
+  description: true

@@ -10,12 +10,14 @@ dependencies:
     - field.field.node.person.field_headshot
     - field.field.node.person.field_job_title
     - field.field.node.person.field_last_name
+    - field.field.node.person.field_metatags
     - field.field.node.person.field_title
     - node.type.person
   module:
     - entity_browser_entity_form
     - inline_entity_form
     - media_library
+    - metatag
     - path
     - text
 id: node.person.default
@@ -94,6 +96,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   path:
     type: path

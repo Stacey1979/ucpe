@@ -1,0 +1,29 @@
+uuid: 1776dc4c-2c49-4222-99bb-9d38ecdd253e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program
+    - node.type.owned_program_interior_page
+    - taxonomy.vocabulary.program
+id: node.owned_program_interior_page.field_program
+field_name: field_program
+entity_type: node
+bundle: owned_program_interior_page
+label: Program
+description: 'Enter the program this page belongs to.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      program: program
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -7,8 +7,11 @@ dependencies:
     - field.field.node.course.field_areas_of_study
     - field.field.node.course.field_content_sections
     - field.field.node.course.field_course_code
+    - field.field.node.course.field_course_summary
+    - field.field.node.course.field_metatags
     - field.field.node.course.field_related_program_tag
     - field.field.node.course.field_topics
+    - field.field.node.course.field_view_upcoming_courses
     - node.type.course
   module:
     - user
@@ -27,5 +30,8 @@ hidden:
   field_areas_of_study: true
   field_content_sections: true
   field_course_code: true
+  field_course_summary: true
+  field_metatags: true
   field_related_program_tag: true
   field_topics: true
+  field_view_upcoming_courses: true

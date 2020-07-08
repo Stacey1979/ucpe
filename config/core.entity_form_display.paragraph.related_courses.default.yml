@@ -1,0 +1,25 @@
+uuid: 61236246-2520-4d27-9748-cb4f5692290e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_courses.field_course
+    - paragraphs.paragraphs_type.related_courses
+id: paragraph.related_courses.default
+targetEntityType: paragraph
+bundle: related_courses
+mode: default
+content:
+  field_course:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

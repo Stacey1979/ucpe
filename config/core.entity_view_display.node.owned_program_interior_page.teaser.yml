@@ -1,0 +1,27 @@
+uuid: 6cc1ac2f-786d-42ee-8f3d-3209bdf3cc55
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.owned_program_interior_page.field_content_sections
+    - field.field.node.owned_program_interior_page.field_metatags
+    - field.field.node.owned_program_interior_page.field_program
+    - node.type.owned_program_interior_page
+  module:
+    - user
+id: node.owned_program_interior_page.teaser
+targetEntityType: node
+bundle: owned_program_interior_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_content_sections: true
+  field_metatags: true
+  field_program: true

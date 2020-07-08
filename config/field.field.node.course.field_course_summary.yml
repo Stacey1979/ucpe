@@ -1,0 +1,19 @@
+uuid: 56fa5323-e2d9-4bbf-8a6b-cbd16032b012
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_summary
+    - node.type.course
+id: node.course.field_course_summary
+field_name: field_course_summary
+entity_type: node
+bundle: course
+label: 'Course Summary'
+description: 'Enter a short description for the course that will appear on the curriculum page. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
