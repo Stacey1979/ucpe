@@ -6970,7 +6970,22 @@ nav.tabs ul.nav-tabs li {
 
 .cta_full {
   background-color: #eaeaea;
-  padding: 3rem 0; }
+  padding: 3rem 0;
+  margin: 5rem 0; }
+  .cta_full:before, .cta_full:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1; }
+  .cta_full:before {
+    background-color: #eaeaea;
+    left: -100%; }
+  .cta_full:after {
+    background-color: #eaeaea;
+    right: -100%; }
   @media only screen and (min-width: 768px) {
     .cta_full .row {
       display: flex;
@@ -7833,37 +7848,49 @@ header {
     .article,
     .casestudy {
       max-width: 1440px; } }
-  .article .content,
-  .casestudy .content {
+  .article > .content,
+  .casestudy > .content {
     background-color: #ffffff;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px; }
     @media (min-width: 768px) {
-      .article .content,
-      .casestudy .content {
+      .article > .content,
+      .casestudy > .content {
         float: left;
-        width: 83.33333%; } }
-    @media (min-width: 768px) {
-      .article .content,
-      .casestudy .content {
-        left: 8.33333%; } }
+        width: 100%; } }
+    @media only screen and (min-width: 960px) {
+      .article > .content,
+      .casestudy > .content {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; } }
+  @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .article > .content,
+    .casestudy > .content {
+      float: left;
+      width: 83.33333%; } }
+  @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .article > .content,
+    .casestudy > .content {
+      left: 8.33333%; } }
     @media only screen and (min-width: 1440px) {
-      .article .content,
-      .casestudy .content {
+      .article > .content,
+      .casestudy > .content {
         position: relative;
         min-height: 1px;
         padding-right: 15px;
         padding-left: 15px; } }
   @media only screen and (min-width: 1440px) and (min-width: 768px) {
-    .article .content,
-    .casestudy .content {
+    .article > .content,
+    .casestudy > .content {
       float: left;
       width: 66.66667%; } }
   @media only screen and (min-width: 1440px) and (min-width: 768px) {
-    .article .content,
-    .casestudy .content {
+    .article > .content,
+    .casestudy > .content {
       left: 16.66667%; } }
   .article .article_top,
   .article .casestudy_top,
@@ -7973,9 +8000,26 @@ header {
 
 .article .article_top .in_brief {
   background-color: #f3f3f3;
-  margin: 5rem 0;
-  padding: 2.5rem 5rem;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-bottom: 3rem;
   text-align: left; }
+  @media only screen and (min-width: 768px) {
+    .article .article_top .in_brief {
+      padding: 1rem 2rem;
+      margin-top: 3rem;
+      margin-left: -2rem;
+      margin-right: -2rem;
+      margin-bottom: 3rem; } }
+  @media only screen and (min-width: 1200px) {
+    .article .article_top .in_brief {
+      margin-top: 5rem;
+      margin-left: -6rem;
+      margin-right: -6rem;
+      margin-bottom: 5rem;
+      padding: 2rem 4rem; } }
   .article .article_top .in_brief h3 {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 0.875rem;
@@ -8085,37 +8129,90 @@ header {
     .casestudy .casestudy_bottom {
       padding: 0 5rem 5rem 8rem; } }
 
-.casestudy .partnership hr {
-  margin-top: 0; }
-  .casestudy .partnership hr:before {
-    border-top-color: #dcdcdc;
-    width: 100%; }
+.casestudy .partnership {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 768px) {
+    .casestudy .partnership {
+      float: left;
+      width: 100%; } }
+  .casestudy .partnership hr {
+    margin-top: 0; }
+    .casestudy .partnership hr:before {
+      border-top-color: #dcdcdc;
+      width: 100%; }
+  .casestudy .partnership .content {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .casestudy .partnership .content {
+        float: left;
+        width: 100%; } }
+    @media only screen and (min-width: 960px) {
+      .casestudy .partnership .content {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; } }
+  @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .casestudy .partnership .content {
+      float: left;
+      width: 83.33333%; } }
+  @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .casestudy .partnership .content {
+      left: 8.33333%; } }
+    @media only screen and (min-width: 1440px) {
+      .casestudy .partnership .content {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; } }
+  @media only screen and (min-width: 1440px) and (min-width: 768px) {
+    .casestudy .partnership .content {
+      float: left;
+      width: 66.66667%; } }
+  @media only screen and (min-width: 1440px) and (min-width: 768px) {
+    .casestudy .partnership .content {
+      left: 16.66667%; } }
+    .casestudy .partnership .content .partnership_content {
+      padding: 2rem; }
+      @media only screen and (min-width: 960px) {
+        .casestudy .partnership .content .partnership_content {
+          padding: 2rem 5rem 1rem 8rem; } }
+      .casestudy .partnership .content .partnership_content h3 {
+        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-size: 0.8125rem;
+        color: #585858;
+        font-weight: 400;
+        line-height: 1.4rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem; }
+      .casestudy .partnership .content .partnership_content .description {
+        margin-bottom: 3rem; }
+      @media only screen and (min-width: 768px) {
+        .casestudy .partnership .content .partnership_content .sponsors {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          align-items: center; } }
+      @media only screen and (min-width: 768px) {
+        .casestudy .partnership .content .partnership_content .sponsors .sponsor_img {
+          width: 50%;
+          text-align: center; } }
 
-.casestudy .partnership .partnership_content {
-  padding: 2rem; }
-  @media only screen and (min-width: 960px) {
-    .casestudy .partnership .partnership_content {
-      padding: 2rem 5rem 8rem 8rem; } }
-  .casestudy .partnership .partnership_content h3 {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-    font-size: 0.8125rem;
-    color: #585858;
-    font-weight: 400;
-    line-height: 1.4rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem; }
-  .casestudy .partnership .partnership_content .description {
-    margin-bottom: 3rem; }
-  @media only screen and (min-width: 768px) {
-    .casestudy .partnership .partnership_content .sponsors {
-      display: flex;
-      flex-wrap: wrap;
-      align-content: flex-start;
-      align-items: center; } }
-  @media only screen and (min-width: 768px) {
-    .casestudy .partnership .partnership_content .sponsors .sponsor_img {
-      width: 50%;
-      text-align: center; } }
+.casestudy .cta_full, .casestudy .of_interest {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 768px) {
+    .casestudy .cta_full, .casestudy .of_interest {
+      float: left;
+      width: 100%; } }
 
 footer.footer {
   background-color: #f3f3f3;

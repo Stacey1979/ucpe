@@ -47,10 +47,12 @@
           </div>
         </div>
         <div class="casestudy_bottom">
-        {{ ds_content|without('field_hero','field_case_study_type','field_lede','addtoany','field_challenge','field_solution','field_results','field_intro_paragraph','field_partnership_logos','field_about_partnership') }}
+        {{ ds_content|without('field_hero','field_case_study_type','field_lede','addtoany','field_challenge','field_solution','field_results','field_intro_paragraph','field_partnership_logos','field_about_partnership','field_of_interest','field_cta') }}
         </div>
-        <div class="partnership">
-          <hr/>
+      </div><!-- end .content  -->
+      <div class="partnership">
+        <hr/>
+        <div class="content">
           <div class="partnership_content">
             <h3>{{ ds_content.field_about_partnership|field_label }}</h3>
             <div class="description">
@@ -62,6 +64,15 @@
                 {% endfor %}
             </div>
           </div>
+        </div>
+      </div>
+      {% if ds_content.field_cta %}
+        {{ ds_content.field_cta|field_value }}
+      {% endif %}
+      <div class="of_interest">
+        <div class="content">
+        <h1>How Do I Edit This Field?!</h1>
+        {{ ds_content.field_of_interest }}
         </div>
       </div>
     </div>

@@ -337,6 +337,26 @@
 .cta_full {
   background-color: $bg_03;
   padding: $baseline * 3 0;
+  margin: $baseline * 5 0;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+  }
+  &:before {
+    background-color: $bg_03;
+    left: -100%;
+  }
+  &:after {
+    background-color: $bg_03;
+    right: -100%;
+  }
 
   .row {
     @include screen("tablet") {

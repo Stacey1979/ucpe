@@ -3,10 +3,13 @@
 .casestudy {
   @include make-container();
 
-  .content {
+  > .content {
     background-color: $white;
-    @include make-sm-column(10);
-    @include make-sm-column-push(1);
+    @include make-sm-column(12);
+    @include screen("tablet-wide") {
+      @include make-sm-column(10);
+      @include make-sm-column-push(1);
+    }
     @include screen("desktop-wide") {
       @include make-sm-column(8);
       @include make-sm-column-push(2);
@@ -95,9 +98,28 @@
     }
     .in_brief {
       background-color: $bg_02;
-      margin: $baseline * 5 0;
-      padding: $baseline * 2.5 $baseline * 5;
+      padding: $baseline $baseline * 2;
+      margin-top: $baseline * 3;
+      margin-left: -$baseline;
+      margin-right: -$baseline;
+      margin-bottom: $baseline * 3;
       text-align: left;
+
+      @include screen("tablet") {
+        padding: $baseline $baseline * 2;
+        margin-top: $baseline * 3;
+        margin-left: -$baseline * 2;
+        margin-right: -$baseline * 2;
+        margin-bottom: $baseline * 3;
+      }
+
+      @include screen("desktop") {
+        margin-top: $baseline * 5;
+        margin-left: -$baseline * 6;
+        margin-right: -$baseline * 6;
+        margin-bottom: $baseline * 5;
+        padding: $baseline * 2 $baseline * 4;
+      }
 
       h3 {
         @include utility_M($black_02);
@@ -186,6 +208,7 @@
     }
   }
   .partnership {
+    @include make-sm-column(12);
     hr {
       margin-top: 0;
       &:before {
@@ -193,33 +216,50 @@
         width: 100%;
       }
     }
-    .partnership_content {
-      padding: $baseline * 2;
+    .content {
+      @include make-sm-column(12);
       @include screen("tablet-wide") {
-        padding: $baseline * 2 $baseline * 5 $baseline * 8 $baseline * 8;
+        @include make-sm-column(10);
+        @include make-sm-column-push(1);
       }
-      h3 {
-        @include utility_S($black_02);
-        margin-bottom: $baseline * 2;
+      @include screen("desktop-wide") {
+        @include make-sm-column(8);
+        @include make-sm-column-push(2);
       }
-      .description {
-        margin-bottom: $baseline * 3;
-      }
-      .sponsors {
-        @include screen("tablet") {
-          display: flex;
-          flex-wrap: wrap;
-          align-content: flex-start;
-          align-items: center;
+
+      .partnership_content {
+        padding: $baseline * 2;
+        @include screen("tablet-wide") {
+          padding: $baseline * 2 $baseline * 5 $baseline $baseline * 8;
         }
 
-        .sponsor_img {
+        h3 {
+          @include utility_S($black_02);
+          margin-bottom: $baseline * 2;
+        }
+        .description {
+          margin-bottom: $baseline * 3;
+        }
+        .sponsors {
           @include screen("tablet") {
-            width: 50%;
-            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            align-items: center;
+          }
+
+          .sponsor_img {
+            @include screen("tablet") {
+              width: 50%;
+              text-align: center;
+            }
           }
         }
       }
     }
+  }
+  .cta_full,
+  .of_interest {
+    @include make-sm-column(12);
   }
 }
