@@ -1,0 +1,21 @@
+uuid: 6b720ecc-5375-4900-be65-09323c337260
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.owned_program_interior_page
+  module:
+    - metatag
+id: node.owned_program_interior_page.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: owned_program_interior_page
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

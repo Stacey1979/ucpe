@@ -1,0 +1,10 @@
+uuid: 944f7350-b5ca-440a-bb8d-6d059f3817b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.curriculum_page_courses
+label: 'Curriculum Page Courses'
+targetEntityType: node
+cache: true

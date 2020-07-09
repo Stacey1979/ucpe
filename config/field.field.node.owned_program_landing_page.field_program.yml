@@ -1,0 +1,29 @@
+uuid: 66a1bc61-9083-4de3-b309-e006e02b5e01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program
+    - node.type.owned_program_landing_page
+    - taxonomy.vocabulary.program
+id: node.owned_program_landing_page.field_program
+field_name: field_program
+entity_type: node
+bundle: owned_program_landing_page
+label: Program
+description: 'Choose which program this landing page is for. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      program: program
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

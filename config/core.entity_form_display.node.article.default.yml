@@ -14,16 +14,68 @@ dependencies:
     - field.field.node.article.field_in_brief_perspective
     - field.field.node.article.field_intro_paragraph
     - field.field.node.article.field_lede
+    - field.field.node.article.field_metatags
     - field.field.node.article.field_related_programs
     - field.field.node.article.field_topics
     - node.type.article
   module:
     - datetime
     - entity_browser_entity_form
+    - field_group
     - inline_entity_form
+    - metatag
     - paragraphs
     - path
     - text
+third_party_settings:
+  field_group:
+    group_hero_section:
+      children:
+        - field_hero
+        - field_date_written
+        - title
+        - field_lede
+        - field_based_on
+        - field_topics
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: 'Hero Section'
+    group_content:
+      children:
+        - field_intro_paragraph
+        - field_content_sections
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Content
+    group_administrative:
+      children:
+        - field_author
+        - field_related_programs
+        - field_areas_of_study
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Administrative
 _core:
   default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU
 id: node.article.default
@@ -45,7 +97,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_buttons
     region: content
   field_author:
     weight: 8
@@ -97,12 +149,12 @@ content:
     region: content
   field_date_written:
     type: datetime_default
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_hero:
-    weight: 0
+    weight: 1
     settings:
       form_mode: default
       label_singular: ''
@@ -152,6 +204,13 @@ content:
     third_party_settings: {  }
     type: text_textfield
     region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   field_related_programs:
     type: entity_reference_autocomplete
     weight: 9
@@ -166,7 +225,7 @@ content:
     weight: 4
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   path:
     type: path

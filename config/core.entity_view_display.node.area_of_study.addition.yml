@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.area_of_study.field_hero
     - field.field.node.area_of_study.field_intro_area_study_text
     - field.field.node.area_of_study.field_lede
+    - field.field.node.area_of_study.field_metatags
     - field.field.node.area_of_study.field_tagline
     - field.field.node.area_of_study.field_view_programs_cta
     - node.type.area_of_study
@@ -56,6 +57,7 @@ hidden:
   field_hero: true
   field_intro_area_study_text: true
   field_lede: true
+  field_metatags: true
   field_tagline: true
   field_view_programs_cta: true
   links: true

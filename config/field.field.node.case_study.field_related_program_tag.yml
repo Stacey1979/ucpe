@@ -11,7 +11,7 @@ field_name: field_related_program_tag
 entity_type: node
 bundle: case_study
 label: Program
-description: 'Add the related program(s).'
+description: 'Add the related program(s). Start typing to choose program(s). If you wish to enter multiple programs, separate with a comma. '
 required: true
 translatable: false
 default_value: {  }

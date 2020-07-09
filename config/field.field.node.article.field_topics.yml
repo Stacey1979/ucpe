@@ -11,7 +11,7 @@ field_name: field_topics
 entity_type: node
 bundle: article
 label: Topics
-description: 'Add multiple topic tags by using a comma (max 3).'
+description: 'Add as many as 3 topic tags.'
 required: true
 translatable: false
 default_value: {  }

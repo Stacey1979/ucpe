@@ -1,0 +1,26 @@
+uuid: 01d92bcb-5c15-49d0-8db1-dade2543c4b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_courses.field_course
+    - paragraphs.paragraphs_type.related_courses
+  module:
+    - ds
+id: paragraph.related_courses.default
+targetEntityType: paragraph
+bundle: related_courses
+mode: default
+content:
+  field_course:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

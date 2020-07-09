@@ -5,17 +5,25 @@ dependencies:
   config:
     - field.storage.node.field_related_programs
     - node.type.article
+    - taxonomy.vocabulary.program
 id: node.article.field_related_programs
 field_name: field_related_programs
 entity_type: node
 bundle: article
 label: 'Related Programs'
-description: ''
-required: false
+description: 'Choose which program(s) this article is related to. Start typing the name of the program to choose. To add more than one program, separate with commas.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
-  handler_settings: {  }
+  handler_settings:
+    target_bundles:
+      program: program
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

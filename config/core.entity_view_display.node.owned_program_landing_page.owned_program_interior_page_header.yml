@@ -1,0 +1,112 @@
+uuid: c36aa515-e147-4599-b919-c0699caf2967
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.owned_program_interior_page_header
+    - field.field.node.owned_program_landing_page.field_area_of_study_cta
+    - field.field.node.owned_program_landing_page.field_areas_of_study
+    - field.field.node.owned_program_landing_page.field_at_a_glance
+    - field.field.node.owned_program_landing_page.field_button_
+    - field.field.node.owned_program_landing_page.field_conferred_by
+    - field.field.node.owned_program_landing_page.field_content
+    - field.field.node.owned_program_landing_page.field_content_sections
+    - field.field.node.owned_program_landing_page.field_deadlines
+    - field.field.node.owned_program_landing_page.field_deadlines_block
+    - field.field.node.owned_program_landing_page.field_designed_for
+    - field.field.node.owned_program_landing_page.field_hero
+    - field.field.node.owned_program_landing_page.field_hero_cta_button
+    - field.field.node.owned_program_landing_page.field_intro_paragraph
+    - field.field.node.owned_program_landing_page.field_lede
+    - field.field.node.owned_program_landing_page.field_metatags
+    - field.field.node.owned_program_landing_page.field_of_interest
+    - field.field.node.owned_program_landing_page.field_offered_by
+    - field.field.node.owned_program_landing_page.field_program
+    - field.field.node.owned_program_landing_page.field_program_illustration
+    - field.field.node.owned_program_landing_page.field_program_type
+    - field.field.node.owned_program_landing_page.field_video
+    - node.type.owned_program_landing_page
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - links
+        - field_program_type
+        - field_areas_of_study
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h2
+          class: ''
+          link: false
+id: node.owned_program_landing_page.owned_program_interior_page_header
+targetEntityType: node
+bundle: owned_program_landing_page
+mode: owned_program_interior_page_header
+content:
+  field_areas_of_study:
+    type: entity_reference_label
+    weight: 2
+    region: ds_content
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_program_type:
+    type: entity_reference_label
+    weight: 1
+    region: ds_content
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_area_of_study_cta: true
+  field_at_a_glance: true
+  field_button_: true
+  field_conferred_by: true
+  field_content: true
+  field_content_sections: true
+  field_deadlines: true
+  field_deadlines_block: true
+  field_designed_for: true
+  field_hero: true
+  field_hero_cta_button: true
+  field_intro_paragraph: true
+  field_lede: true
+  field_metatags: true
+  field_of_interest: true
+  field_offered_by: true
+  field_program: true
+  field_program_illustration: true
+  field_video: true

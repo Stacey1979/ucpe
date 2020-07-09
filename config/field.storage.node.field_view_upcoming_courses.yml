@@ -1,0 +1,19 @@
+uuid: 48851683-66ef-4a8a-b792-ec30d00bd831
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_view_upcoming_courses
+field_name: field_view_upcoming_courses
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.non_owned_program_landing_page.field_hero
     - field.field.node.non_owned_program_landing_page.field_lede
     - field.field.node.non_owned_program_landing_page.field_link_to_main_page
+    - field.field.node.non_owned_program_landing_page.field_metatags
     - field.field.node.non_owned_program_landing_page.field_of_interest
     - field.field.node.non_owned_program_landing_page.field_offered_by
     - field.field.node.non_owned_program_landing_page.field_program_illustration
@@ -22,6 +23,7 @@ dependencies:
     - ds
     - entity_reference_revisions
     - link
+    - metatag
     - text
     - user
 third_party_settings:
@@ -158,6 +160,13 @@ content:
     third_party_settings: {  }
     type: link
     region: ds_content
+  field_metatags:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_of_interest:
     weight: 14
     label: above

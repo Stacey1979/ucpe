@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.article.field_in_brief_perspective
     - field.field.node.article.field_intro_paragraph
     - field.field.node.article.field_lede
+    - field.field.node.article.field_metatags
     - field.field.node.article.field_related_programs
     - field.field.node.article.field_topics
     - node.type.article
@@ -21,6 +22,7 @@ dependencies:
     - datetime
     - ds
     - entity_reference_revisions
+    - metatag
     - text
     - user
 third_party_settings:
@@ -136,6 +138,13 @@ content:
     third_party_settings: {  }
     type: text_default
     region: ds_content
+  field_metatags:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_topics:
     weight: 5
     label: hidden

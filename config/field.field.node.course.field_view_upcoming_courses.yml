@@ -1,0 +1,23 @@
+uuid: 10d0d135-e67a-4d33-b91a-781cc461024f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_view_upcoming_courses
+    - node.type.course
+  module:
+    - link
+id: node.course.field_view_upcoming_courses
+field_name: field_view_upcoming_courses
+entity_type: node
+bundle: course
+label: 'View Upcoming Courses'
+description: 'Enter the link to Destiny or other system to view upcoming course offerings. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

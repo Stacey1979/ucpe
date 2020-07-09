@@ -6,12 +6,17 @@ dependencies:
     - field.field.node.course.field_areas_of_study
     - field.field.node.course.field_content_sections
     - field.field.node.course.field_course_code
+    - field.field.node.course.field_course_summary
+    - field.field.node.course.field_metatags
     - field.field.node.course.field_related_program_tag
     - field.field.node.course.field_topics
+    - field.field.node.course.field_view_upcoming_courses
     - node.type.course
   module:
     - ds
     - entity_reference_revisions
+    - link
+    - metatag
     - user
 third_party_settings:
   ds:
@@ -38,6 +43,8 @@ third_party_settings:
         - field_course_code
         - field_related_program_tag
         - field_content_sections
+        - field_metatags
+        - field_view_upcoming_courses
     fields:
       node_title:
         plugin_id: node_title
@@ -66,6 +73,20 @@ content:
     third_party_settings: {  }
     type: string
     region: ds_content
+  field_course_summary:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_metatags:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: ds_content
   field_related_program_tag:
     weight: 3
     label: hidden
@@ -75,6 +96,18 @@ content:
       ds:
         ds_limit: ''
     type: entity_reference_label
+    region: ds_content
+  field_view_upcoming_courses:
+    weight: 6
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: ds_content
   links:
     weight: 0

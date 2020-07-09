@@ -1,0 +1,31 @@
+uuid: b22e6e91-57ba-4b23-9998-1ffe69d07780
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_program_detail_page
+    - node.type.non_owned_program_landing_page
+    - node.type.owned_program_landing_page
+    - taxonomy.vocabulary.program
+id: taxonomy_term.program.field_program_detail_page
+field_name: field_program_detail_page
+entity_type: taxonomy_term
+bundle: program
+label: 'Program Detail Page'
+description: 'Select the Program landing page this term is associated with. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      non_owned_program_landing_page: non_owned_program_landing_page
+      owned_program_landing_page: owned_program_landing_page
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: non_owned_program_landing_page
+field_type: entity_reference

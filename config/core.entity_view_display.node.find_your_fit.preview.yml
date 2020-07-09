@@ -1,0 +1,91 @@
+uuid: e57efec5-fc64-4beb-bf7b-f49e1dd85e13
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.preview
+    - field.field.node.find_your_fit.field_content_sections
+    - field.field.node.find_your_fit.field_lede
+    - field.field.node.find_your_fit.field_metatags
+    - field.field.node.find_your_fit.field_program_type
+    - field.field.node.find_your_fit.field_text_and_media_1_3_2_3
+    - node.type.find_your_fit
+  module:
+    - ds
+    - paragraphs
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - links
+        - node_title
+        - field_program_type
+        - field_lede
+        - field_text_and_media_1_3_2_3
+        - field_content_sections
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+id: node.find_your_fit.preview
+targetEntityType: node
+bundle: find_your_fit
+mode: preview
+content:
+  field_content_sections:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: paragraph_summary
+    region: ds_content
+  field_lede:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_program_type:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  field_text_and_media_1_3_2_3:
+    type: paragraph_summary
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: ds_content
+  links:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_metatags: true

@@ -1,0 +1,11 @@
+uuid: a246cb4f-4ab5-4911-b92c-dabf30e67137
+langcode: en
+status: true
+dependencies: {  }
+id: node__course
+label: 'Content: Course'
+tags:
+  title: '[node:title]'
+  content_language: en
+  og_type: course
+  og_title: '[node:title]'
