@@ -1,0 +1,29 @@
+uuid: 36e88063-b8e7-4631-bd6b-20406fc8ef2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.person
+    - node.type.story
+id: node.story.field_author
+field_name: field_author
+entity_type: node
+bundle: story
+label: 'Written by'
+description: 'Enter the author.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: title
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.read_their_story
     - field.field.node.story.body
     - field.field.node.story.field_about_block
+    - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
     - field.field.node.story.field_hero
@@ -13,7 +14,6 @@ dependencies:
     - field.field.node.story.field_lede
     - field.field.node.story.field_metatags
     - field.field.node.story.field_related_program_tag
-    - field.field.node.story.field_written_by
     - node.type.story
   module:
     - user
@@ -36,6 +36,7 @@ hidden:
   addtoany: true
   body: true
   field_about_block: true
+  field_author: true
   field_content_sections: true
   field_date_and_lede: true
   field_date_written: true
@@ -44,4 +45,3 @@ hidden:
   field_lede: true
   field_metatags: true
   field_related_program_tag: true
-  field_written_by: true
