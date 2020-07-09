@@ -12,7 +12,7 @@ field_name: field_deadlines_block
 entity_type: node
 bundle: owned_program_landing_page
 label: 'Deadlines Block'
-description: ''
+description: 'If this program has deadlines, choose "Deadlines" from the dropdown. DO NOT edit the Display ID field. '
 required: false
 translatable: false
 default_value: {  }

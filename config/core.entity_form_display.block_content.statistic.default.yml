@@ -9,6 +9,7 @@ dependencies:
     - field.field.block_content.statistic.field_post_number
     - field.field.block_content.statistic.field_pre_number
   module:
+    - allowed_formats
     - text
 id: block_content.statistic.default
 targetEntityType: block_content
@@ -20,10 +21,13 @@ content:
     weight: 4
     settings:
       rows: 9
-      summary_rows: 3
       placeholder: ''
+      summary_rows: 3
       show_summary: false
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '0'
+        hide_guidelines: '0'
     region: content
   field_number:
     weight: 2
@@ -38,7 +42,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   field_pre_number:
@@ -46,7 +53,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   info:

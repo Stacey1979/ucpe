@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.story.body
     - field.field.node.story.field_about_block
+    - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
     - field.field.node.story.field_hero
@@ -12,7 +13,6 @@ dependencies:
     - field.field.node.story.field_lede
     - field.field.node.story.field_metatags
     - field.field.node.story.field_related_program_tag
-    - field.field.node.story.field_written_by
     - node.type.story
   module:
     - datetime
@@ -46,12 +46,13 @@ third_party_settings:
         - node_title
         - field_lede
         - reading_time
-        - field_written_by
+        - field_author
         - addtoany
         - field_intro_paragraph
         - field_about_block
         - field_content_sections
         - links
+        - field_metatags
     fields:
       node_title:
         plugin_id: node_title
@@ -76,6 +77,14 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: ds_content
+  field_author:
+    weight: 5
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: ds_content
   field_content_sections:
     weight: 9
@@ -126,14 +135,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
-    region: content
-  field_written_by:
-    weight: 5
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: ds_content
   links:
     weight: 10
