@@ -335,6 +335,7 @@
 }
 
 .cta_full {
+  @include make-sm-column(12);
   background-color: $bg_03;
   padding: $baseline * 3 0;
   margin: $baseline * 5 0;
@@ -371,6 +372,10 @@
     .cta_content {
       @include make-sm-column(5);
       @include make-sm-column-pull(1);
+
+      h3 {
+        @include heading_S($black);
+      }
     }
 
     figure.cta_photo {

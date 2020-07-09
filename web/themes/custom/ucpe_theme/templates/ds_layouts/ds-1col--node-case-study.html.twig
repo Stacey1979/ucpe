@@ -69,11 +69,13 @@
       {% if ds_content.field_cta %}
         {{ ds_content.field_cta|field_value }}
       {% endif %}
+      {% if ds_content.field_of_interest %}
       <div class="of_interest">
         <div class="content">
         <h1>How Do I Edit This Field?!</h1>
         {{ ds_content.field_of_interest }}
         </div>
       </div>
+      {% endif %}
     </div>
 </div>

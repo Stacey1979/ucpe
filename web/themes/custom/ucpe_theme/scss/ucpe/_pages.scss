@@ -5,6 +5,7 @@
 
   > .content {
     background-color: $white;
+    margin-top: -$baseline * 10;
     @include make-sm-column(12);
     @include screen("tablet-wide") {
       @include make-sm-column(10);
@@ -49,6 +50,39 @@
       }
     }
   }
+
+  .article_bottom,
+  .casestudy_bottom {
+    padding: 0 $baseline * 2 $baseline * 2;
+    @include screen("tablet-wide") {
+      padding: 0 $baseline * 5 $baseline * 5 $baseline * 8;
+    }
+
+    .cta {
+      .wrapper {
+        @include make-sm-column(12);
+      }
+    }
+
+    .cta_full {
+      margin-left: calc(-2rem + -16px);
+      width: calc(100% + 4rem + 31px);
+
+      @include screen("tablet-wide") {
+        margin-left: calc(-8rem + -16px);
+        width: calc(100% + 13rem + 31px);
+      }
+    }
+    // replace this class later
+    .paragraph--type--image-carousel-combo {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+  }
 }
 .article {
   .article_top {
@@ -72,7 +106,7 @@
           margin: 0;
 
           &:before {
-            background-color: silver;
+            background-color: $bg-02;
             content: "";
             display: block;
             height: 100%;
@@ -137,9 +171,6 @@
       @include heading_S($black);
     }
   }
-  .article_bottom {
-    padding: 0 $baseline * 5 $baseline * 8 $baseline * 8;
-  }
 }
 
 .casestudy {
@@ -201,12 +232,7 @@
       margin-bottom: 0;
     }
   }
-  .casestudy_bottom {
-    padding: 0 $baseline * 2 $baseline * 2;
-    @include screen("tablet-wide") {
-      padding: 0 $baseline * 5 $baseline * 5 $baseline * 8;
-    }
-  }
+
   .partnership {
     @include make-sm-column(12);
     hr {
@@ -258,7 +284,6 @@
       }
     }
   }
-  .cta_full,
   .of_interest {
     @include make-sm-column(12);
   }

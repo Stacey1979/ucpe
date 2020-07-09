@@ -6969,11 +6969,19 @@ nav.tabs ul.nav-tabs li {
         width: 33.33333%; } }
 
 .cta_full {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
   background-color: #eaeaea;
   padding: 3rem 0;
   margin: 5rem 0; }
+  @media (min-width: 768px) {
+    .cta_full {
+      float: left;
+      width: 100%; } }
   .cta_full:before, .cta_full:after {
-    content: '';
+    content: "";
     display: block;
     height: 100%;
     position: absolute;
@@ -7016,6 +7024,12 @@ nav.tabs ul.nav-tabs li {
       @media (min-width: 768px) {
         .cta_full .wrapper .cta_content {
           right: 8.33333%; } }
+      .cta_full .wrapper .cta_content h3 {
+        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 1.5rem;
+        color: #110f0f;
+        font-weight: 900;
+        line-height: 2rem; }
     .cta_full .wrapper figure.cta_photo {
       position: relative;
       min-height: 1px;
@@ -7851,6 +7865,7 @@ header {
   .article > .content,
   .casestudy > .content {
     background-color: #ffffff;
+    margin-top: -10rem;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -7941,6 +7956,48 @@ header {
       font-weight: 500;
       line-height: 1.8rem;
       text-transform: uppercase; }
+  .article .article_bottom, .article .casestudy_bottom,
+  .casestudy .article_bottom,
+  .casestudy .casestudy_bottom {
+    padding: 0 2rem 2rem; }
+    @media only screen and (min-width: 960px) {
+      .article .article_bottom, .article .casestudy_bottom,
+      .casestudy .article_bottom,
+      .casestudy .casestudy_bottom {
+        padding: 0 5rem 5rem 8rem; } }
+    .article .article_bottom .cta .wrapper, .article .casestudy_bottom .cta .wrapper,
+    .casestudy .article_bottom .cta .wrapper,
+    .casestudy .casestudy_bottom .cta .wrapper {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .article .article_bottom .cta .wrapper, .article .casestudy_bottom .cta .wrapper,
+        .casestudy .article_bottom .cta .wrapper,
+        .casestudy .casestudy_bottom .cta .wrapper {
+          float: left;
+          width: 100%; } }
+    .article .article_bottom .cta_full, .article .casestudy_bottom .cta_full,
+    .casestudy .article_bottom .cta_full,
+    .casestudy .casestudy_bottom .cta_full {
+      margin-left: calc(-2rem + -16px);
+      width: calc(100% + 4rem + 31px); }
+      @media only screen and (min-width: 960px) {
+        .article .article_bottom .cta_full, .article .casestudy_bottom .cta_full,
+        .casestudy .article_bottom .cta_full,
+        .casestudy .casestudy_bottom .cta_full {
+          margin-left: calc(-8rem + -16px);
+          width: calc(100% + 13rem + 31px); } }
+    .article .article_bottom .paragraph--type--image-carousel-combo, .article .casestudy_bottom .paragraph--type--image-carousel-combo,
+    .casestudy .article_bottom .paragraph--type--image-carousel-combo,
+    .casestudy .casestudy_bottom .paragraph--type--image-carousel-combo {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw; }
 
 .article .article_top .written_by p {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -7974,7 +8031,7 @@ header {
       padding-right: 1rem;
       margin: 0; }
       .article .article_top .topics ul li:before {
-        background-color: silver;
+        background-color: #f3f3f3;
         content: "";
         display: block;
         height: 100%;
@@ -8043,9 +8100,6 @@ header {
   color: #110f0f;
   font-weight: 900;
   line-height: 2rem; }
-
-.article .article_bottom {
-  padding: 0 5rem 8rem 8rem; }
 
 .casestudy .share {
   position: relative;
@@ -8123,12 +8177,6 @@ header {
     line-height: 2rem;
     margin-bottom: 0; }
 
-.casestudy .casestudy_bottom {
-  padding: 0 2rem 2rem; }
-  @media only screen and (min-width: 960px) {
-    .casestudy .casestudy_bottom {
-      padding: 0 5rem 5rem 8rem; } }
-
 .casestudy .partnership {
   position: relative;
   min-height: 1px;
@@ -8204,13 +8252,13 @@ header {
           width: 50%;
           text-align: center; } }
 
-.casestudy .cta_full, .casestudy .of_interest {
+.casestudy .of_interest {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
   @media (min-width: 768px) {
-    .casestudy .cta_full, .casestudy .of_interest {
+    .casestudy .of_interest {
       float: left;
       width: 100%; } }
 
@@ -8506,6 +8554,44 @@ footer.footer {
             footer.footer .lm_social .social ul li a:visited:hover:before,
             footer.footer .lm_social .social ul li a:focus:hover:before {
               color: #4d0000; }
+
+.hero_wrapper {
+  position: relative; }
+  .hero_wrapper .field--name-field-image-attribution {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    color: #767676;
+    line-height: 1.4rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: -25px;
+    right: 15px; }
+    @media only screen and (min-width: 1800px) {
+      .hero_wrapper .field--name-field-image-attribution {
+        right: calc((100vw - 1800px)/2); } }
+    .hero_wrapper .field--name-field-image-attribution:before {
+      font-family: "ucpe_icons" !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      text-transform: none !important;
+      speak: none;
+      line-height: 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #767676;
+      content: "c";
+      font-size: 1.5rem;
+      vertical-align: text-bottom; }
+  .hero_wrapper.hero_full picture {
+    margin: 0 auto; }
+    .hero_wrapper.hero_full picture img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+      max-width: 1800px;
+      margin: 0 auto;
+      text-align: center; }
 
 /**
  * jQuery UI autocomplete widget style overrides.
