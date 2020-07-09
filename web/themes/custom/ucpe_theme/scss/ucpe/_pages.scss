@@ -3,10 +3,14 @@
 .casestudy {
   @include make-container();
 
-  .content {
+  > .content {
     background-color: $white;
-    @include make-sm-column(10);
-    @include make-sm-column-push(1);
+    margin-top: -$baseline * 10;
+    @include make-sm-column(12);
+    @include screen("tablet-wide") {
+      @include make-sm-column(10);
+      @include make-sm-column-push(1);
+    }
     @include screen("desktop-wide") {
       @include make-sm-column(8);
       @include make-sm-column-push(2);
@@ -15,7 +19,10 @@
 
   .article_top,
   .casestudy_top {
-    padding: $baseline * 5 $baseline * 5 0;
+    padding: $baseline * 2 $baseline 0;
+    @include screen("tablet-wide") {
+      padding: $baseline * 5 $baseline * 5 0;
+    }
 
     .meta {
       text-align: center;
@@ -46,7 +53,35 @@
 
   .article_bottom,
   .casestudy_bottom {
-    padding: 0 $baseline * 5 $baseline * 8 $baseline * 8;
+    padding: 0 $baseline * 2 $baseline * 2;
+    @include screen("tablet-wide") {
+      padding: 0 $baseline * 5 $baseline * 5 $baseline * 8;
+    }
+
+    .cta {
+      .wrapper {
+        @include make-sm-column(12);
+      }
+    }
+
+    .cta_full {
+      margin-left: calc(-2rem + -16px);
+      width: calc(100% + 4rem + 31px);
+
+      @include screen("tablet-wide") {
+        margin-left: calc(-8rem + -16px);
+        width: calc(100% + 13rem + 31px);
+      }
+    }
+    // replace this class later
+    .paragraph--type--image-carousel-combo {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
   }
 }
 .article {
@@ -71,7 +106,7 @@
           margin: 0;
 
           &:before {
-            background-color: silver;
+            background-color: $bg-02;
             content: "";
             display: block;
             height: 100%;
@@ -97,9 +132,28 @@
     }
     .in_brief {
       background-color: $bg_02;
-      margin: $baseline * 5 0;
-      padding: $baseline * 2.5 $baseline * 5;
+      padding: $baseline $baseline * 2;
+      margin-top: $baseline * 3;
+      margin-left: -$baseline;
+      margin-right: -$baseline;
+      margin-bottom: $baseline * 3;
       text-align: left;
+
+      @include screen("tablet") {
+        padding: $baseline $baseline * 2;
+        margin-top: $baseline * 3;
+        margin-left: -$baseline * 2;
+        margin-right: -$baseline * 2;
+        margin-bottom: $baseline * 3;
+      }
+
+      @include screen("desktop") {
+        margin-top: $baseline * 5;
+        margin-left: -$baseline * 6;
+        margin-right: -$baseline * 6;
+        margin-bottom: $baseline * 5;
+        padding: $baseline * 2 $baseline * 4;
+      }
 
       h3 {
         @include utility_M($black_02);
@@ -122,19 +176,40 @@
 .casestudy {
   .share {
     @include make-sm-column(12);
+    // this takes away the padding created by the include above on screens smaller than 559px, so it lines up to the left
+    @include screen("phablet", $type: max) {
+      padding-left: 0;
+    }
     .addtoany_list {
       display: block;
-      text-align: center;
+      @include screen("tablet-wide") {
+        text-align: center;
+      }
     }
   }
   .summary {
     background-color: $bg_02;
     float: left;
-    margin-top: $baseline * 5;
-    margin-left: -$baseline * 6;
-    margin-right: -$baseline * 6;
-    margin-bottom: $baseline * 5;
-    padding: $baseline * 2 $baseline * 4;
+    padding: $baseline $baseline * 2;
+    margin-top: $baseline * 3;
+    margin-left: -$baseline;
+    margin-right: -$baseline;
+    margin-bottom: $baseline * 3;
+
+    @include screen("tablet") {
+      padding: $baseline $baseline * 2;
+      margin-top: $baseline * 3;
+      margin-left: -$baseline * 2;
+      margin-right: -$baseline * 2;
+      margin-bottom: $baseline * 3;
+    }
+    @include screen("desktop") {
+      margin-top: $baseline * 5;
+      margin-left: -$baseline * 6;
+      margin-right: -$baseline * 6;
+      margin-bottom: $baseline * 5;
+      padding: $baseline * 2 $baseline * 4;
+    }
 
     .col {
       @include make-sm-column(4);
@@ -149,31 +224,67 @@
       }
     }
   }
-  .partnership {
-    hr:before {
-      border-top-color: $divider-gray;
-      width: 100%;
-    }
-    .partnership_content {
-      padding: $baseline * 2 $baseline * 5 $baseline * 8 $baseline * 8;
-      h3 {
-        @include utility_S($black_02);
-        margin-bottom: $baseline * 2;
-      }
-      .description {
-        margin-bottom: $baseline * 3;
-      }
-      .sponsors {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        align-items: center;
 
-        .sponsor_img {
-          width: 50%;
-          text-align: center;
+  .intro {
+    margin-bottom: $baseline * 3;
+    p {
+      @include heading_S($black);
+      margin-bottom: 0;
+    }
+  }
+
+  .partnership {
+    @include make-sm-column(12);
+    hr {
+      margin-top: 0;
+      &:before {
+        border-top-color: $divider-gray;
+        width: 100%;
+      }
+    }
+    .content {
+      @include make-sm-column(12);
+      @include screen("tablet-wide") {
+        @include make-sm-column(10);
+        @include make-sm-column-push(1);
+      }
+      @include screen("desktop-wide") {
+        @include make-sm-column(8);
+        @include make-sm-column-push(2);
+      }
+
+      .partnership_content {
+        padding: $baseline * 2;
+        @include screen("tablet-wide") {
+          padding: $baseline * 2 $baseline * 5 $baseline $baseline * 8;
+        }
+
+        h3 {
+          @include utility_S($black_02);
+          margin-bottom: $baseline * 2;
+        }
+        .description {
+          margin-bottom: $baseline * 3;
+        }
+        .sponsors {
+          @include screen("tablet") {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            align-items: center;
+          }
+
+          .sponsor_img {
+            @include screen("tablet") {
+              width: 50%;
+              text-align: center;
+            }
+          }
         }
       }
     }
+  }
+  .of_interest {
+    @include make-sm-column(12);
   }
 }

@@ -11,7 +11,7 @@
 #}
 
 
-<div class="hero_wrapper">
+<div class="hero_wrapper hero_full">
   {{ ds_content.field_hero}}
 </div>
 <div class="content_wrapper">
@@ -26,7 +26,8 @@
             <p>{{  ds_content.field_lede|field_value }}</p>
           </div>
           <div class="written_by">
-            <p>Based on the work of [[ based on ]], written by [[ author name ]]</br>
+            <p>Based on the work of {{ ds_content.field_based_on|field_value }}. Written by {{ ds_content.field_author[0]['#title'] }}.
+</br>
             {{ reading_time }}
             </p>
           </div>

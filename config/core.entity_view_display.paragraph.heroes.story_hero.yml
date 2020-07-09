@@ -17,7 +17,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: story_hero
+      view_mode: hero_full
       link: false
     third_party_settings: {  }
     region: content

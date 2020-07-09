@@ -85,18 +85,22 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   field_areas_of_study:
-    weight: 6
-    settings: {  }
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_author:
-    weight: 4
+    weight: 8
     settings:
       form_mode: default
       label_singular: ''
@@ -113,7 +117,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_based_on:
-    weight: 5
+    weight: 3
     settings:
       form_mode: default
       revision: true
@@ -133,7 +137,7 @@ content:
     region: content
   field_content_sections:
     type: entity_reference_paragraphs
-    weight: 4
+    weight: 7
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -170,7 +174,7 @@ content:
     region: content
   field_in_brief_perspective:
     type: entity_reference_paragraphs
-    weight: 1
+    weight: 5
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -182,7 +186,7 @@ content:
     region: content
   field_intro_paragraph:
     type: entity_reference_paragraphs
-    weight: 3
+    weight: 6
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -193,7 +197,7 @@ content:
     third_party_settings: {  }
     region: content
   field_lede:
-    weight: 4
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -209,7 +213,7 @@ content:
     region: content
   field_related_programs:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
@@ -218,14 +222,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_topics:
-    weight: 6
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   path:
     type: path
-    weight: 10
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -233,27 +237,19 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 13
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 16
     region: content
-    third_party_settings: {  }
-  title:
-    type: string_textfield
-    weight: 3
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 11
     region: content
     settings:
       match_operator: CONTAINS
@@ -262,7 +258,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 11
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -276,3 +272,4 @@ hidden:
   field_perspectives_label: true
   field_read_time: true
   sticky: true
+  title: true

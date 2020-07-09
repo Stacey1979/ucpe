@@ -11,7 +11,7 @@
 #}
 
 
-<div class="hero_wrapper">
+<div class="hero_wrapper hero_full">
   {{ ds_content.field_hero}}
 </div>
 <div class="content_wrapper">
@@ -30,19 +30,16 @@
           </div>
           <div class="summary">
             <div class="challenge col">
-              <h3>Challenge</h3>
-              <p>Help teams rethink their approach to product innovation within a longstanding financial services institution.</p>
-              {{ ds_content.summary.field_challenge|field_value }}
+              <h3>{{ ds_content.field_challenge|field_label }}</h3>
+              <p>{{ ds_content.field_challenge|field_value }}</p>
             </div>
             <div class="solution col">
-              <h3>Solutions</h3>
-              <p>A five-week course focused on innovation, service delivery, agile project management, and lean development</p>
-              {{ ds_content.field_solution|field_value }}
+              <h3>{{ ds_content.field_solution|field_label }}</h3>
+              <p>{{ ds_content.field_solution|field_value }}</p>
             </div>
             <div class="result col">
-              <h3>Results</h3>
-              <p>Product teams have a stronger theoretical and practical basis for implementing change in Capital One's product suite.</p>
-              {{ ds_content.field_results|field_value }}
+              <h3>{{ ds_content.field_results|field_label }}</h3>
+              <p>{{ ds_content.field_results|field_value }}</p>
             </div>
           </div>
           <div class="intro">
@@ -50,33 +47,35 @@
           </div>
         </div>
         <div class="casestudy_bottom">
-        {{ ds_content }}
+        {{ ds_content|without('field_hero','field_case_study_type','field_lede','addtoany','field_challenge','field_solution','field_results','field_intro_paragraph','field_partnership_logos','field_about_partnership','field_of_interest','field_cta') }}
         </div>
-        <div class="partnership">
-          <hr/>
+      </div><!-- end .content  -->
+      <div class="partnership">
+        <hr/>
+        <div class="content">
           <div class="partnership_content">
-            <h3>About This Partnership</h3>
+            <h3>{{ ds_content.field_about_partnership|field_label }}</h3>
             <div class="description">
-              <p>Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor.</p>
+              <p>{{ ds_content.field_challenge|field_value }}</p>
             </div>
             <div class="sponsors">
-              <div class="sponsor_img">
-                <img src="/sites/default/files/styles/media_library/public/images/2020-06/Screen%20Shot%202020-06-16%20at%208.28.18%20PM.png?itok=Z3txFz1l" width="220" height="97" alt="capital one logo" typeof="foaf:Image" >
-              </div>
-              <div class="sponsor_img">
-                <img src="/sites/default/files/styles/media_library/public/images/2020-06/Screen%20Shot%202020-06-16%20at%208.28.31%20PM.png?itok=Gg8Nh9jH" width="220" height="38" alt="ucpe logo" typeof="foaf:Image" >
-              </div>
-              <div class="sponsor_img">
-                <img src="/sites/default/files/styles/media_library/public/images/2020-06/Screen%20Shot%202020-06-16%20at%208.28.18%20PM.png?itok=Z3txFz1l" width="220" height="97" alt="capital one logo" typeof="foaf:Image" >
-              </div>
-              <div class="sponsor_img">
-                <img src="/sites/default/files/styles/media_library/public/images/2020-06/Screen%20Shot%202020-06-16%20at%208.28.31%20PM.png?itok=Gg8Nh9jH" width="220" height="38" alt="ucpe logo" typeof="foaf:Image" >
-              </div>
+                {% for key, item in ds_content.field_partnership_logos|children %}
+                  <div class="sponsor_img">{{ item }}</div>
+                {% endfor %}
             </div>
           </div>
         </div>
-
-
       </div>
+      {% if ds_content.field_cta %}
+        {{ ds_content.field_cta|field_value }}
+      {% endif %}
+      {% if ds_content.field_of_interest %}
+      <div class="of_interest">
+        <div class="content">
+        <h1>How Do I Edit This Field?!</h1>
+        {{ ds_content.field_of_interest }}
+        </div>
+      </div>
+      {% endif %}
     </div>
 </div>

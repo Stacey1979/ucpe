@@ -1,0 +1,35 @@
+.hero_wrapper {
+  //background-color: $bg-06;
+  position: relative;
+
+  // photo attribute
+  .field--name-field-image-attribution {
+    @include bodycopy_S($black_03);
+    position: absolute;
+    bottom: -25px;
+    right: 15px;
+    @media only screen and (min-width: 1800px) {
+      right: calc((100vw - 1800px) / 2);
+    }
+
+    &:before {
+      @include iconfont($black_03, "\63");
+      font-size: 1.5rem;
+      vertical-align: text-bottom;
+    }
+  }
+
+  &.hero_full {
+    picture {
+      margin: 0 auto;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        max-width: 1800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
+}

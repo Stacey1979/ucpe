@@ -35,7 +35,6 @@ header {
 }
 //body
 .body {
-  //background-color: rgba(0,0,0,.1);
   @include make-container-fluid;
   .hero_wrapper {
     @include make-row();
