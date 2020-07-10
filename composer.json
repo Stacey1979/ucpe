@@ -131,11 +131,11 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "refresh-pantheon-backup": [
-            "terminus backup:create ucpe.dev --element=db"
+            "terminus backup:create ucpe.live --element=db"
         ],
         "db-install": [
             "rm -f /app/database.sql.gz",
-            "terminus backup:get ucpe.dev --element=db --to=/app/database.sql.gz",
+            "terminus backup:get ucpe.live --element=db --to=/app/database.sql.gz",
             "drush sql:drop -y",
             "zcat database.sql.gz | drush sqlc",
             "drush updb -y",
@@ -143,7 +143,7 @@
             "git checkout local_config"
         ],
         "pull-pantheon-config": [
-            "terminus backup:create ucpe.dev --element=db",
+            "terminus backup:create ucpe.live --element=db",
             "rm -f /app/database.sql.gz",
             "terminus backup:get ucpe.dev --element=db --to=/app/database.sql.gz",
             "drush sql:drop -y",
