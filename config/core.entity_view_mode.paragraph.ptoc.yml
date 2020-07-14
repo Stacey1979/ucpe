@@ -1,0 +1,12 @@
+uuid: bf5d03bc-2d5e-4013-a56d-3044fcc6168b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: o8pWXe3YaKIuuPJzzBkTvOMKLLVaKekVZGifkqm1DaY
+id: paragraph.ptoc
+label: 'Table of contents'
+targetEntityType: paragraph
+cache: true

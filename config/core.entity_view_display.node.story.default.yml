@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.story.body
-    - field.field.node.story.field_about_block
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
@@ -49,7 +48,6 @@ third_party_settings:
         - field_author
         - addtoany
         - field_intro_paragraph
-        - field_about_block
         - field_content_sections
         - links
         - field_metatags
@@ -69,15 +67,6 @@ content:
     region: ds_content
     settings: {  }
     third_party_settings: {  }
-  field_about_block:
-    type: entity_reference_revisions_entity_view
-    weight: 8
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
   field_author:
     weight: 5
     label: hidden

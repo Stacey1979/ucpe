@@ -1,0 +1,12 @@
+uuid: 79135d4e-e4b1-4aa9-8c75-9830e3e3e65e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SXuOe99tCsBBE1EEIpdll-eOcwRT1wZW-11eUjLyeHk
+id: ptoc_links
+label: Links
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

@@ -42,6 +42,7 @@
         "drupal/node_read_time": "^1.0",
         "drupal/paragraphs": "^1.11",
         "drupal/pathauto": "^1.6",
+        "drupal/ptoc": "1.x-dev",
         "drupal/redirect": "^1.5",
         "drupal/redis": "^1.4",
         "drupal/responsive_menu": "^4.0",

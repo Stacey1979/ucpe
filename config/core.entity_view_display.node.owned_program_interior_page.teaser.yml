@@ -5,8 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.owned_program_interior_page.field_content_sections
+    - field.field.node.owned_program_interior_page.field_deadlines_block
     - field.field.node.owned_program_interior_page.field_metatags
     - field.field.node.owned_program_interior_page.field_program
+    - field.field.node.owned_program_interior_page.field_tab
     - node.type.owned_program_interior_page
   module:
     - user
@@ -23,5 +25,7 @@ content:
 hidden:
   addtoany: true
   field_content_sections: true
+  field_deadlines_block: true
   field_metatags: true
   field_program: true
+  field_tab: true

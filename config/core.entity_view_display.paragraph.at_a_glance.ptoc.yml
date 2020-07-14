@@ -1,0 +1,146 @@
+uuid: 58a792d1-35d0-4eee-a891-adc61a418697
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.ptoc
+    - field.field.paragraph.at_a_glance.field_confers_alumni_status
+    - field.field.paragraph.at_a_glance.field_cost
+    - field.field.paragraph.at_a_glance.field_duration
+    - field.field.paragraph.at_a_glance.field_enrollment
+    - field.field.paragraph.at_a_glance.field_format
+    - field.field.paragraph.at_a_glance.field_link_to_financial_aid
+    - field.field.paragraph.at_a_glance.field_program_type
+    - paragraphs.paragraphs_type.at_a_glance
+  module:
+    - ds
+    - entity_reference_revisions
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_type:
+      children:
+        - field_program_type
+        - field_confers_alumni_status
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: Type
+    group_cost:
+      children:
+        - field_cost
+        - field_link_to_financial_aid
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: Cost
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - group_type
+        - field_program_type
+        - field_confers_alumni_status
+        - field_enrollment
+        - field_duration
+        - field_format
+        - field_cost
+        - group_cost
+        - field_link_to_financial_aid
+id: paragraph.at_a_glance.ptoc
+targetEntityType: paragraph
+bundle: at_a_glance
+mode: ptoc
+content:
+  field_confers_alumni_status:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  field_cost:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_duration:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: inline
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
+  field_enrollment:
+    weight: 1
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
+    region: ds_content
+  field_format:
+    weight: 3
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
+    region: ds_content
+  field_link_to_financial_aid:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  field_program_type:
+    weight: 0
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+hidden: {  }

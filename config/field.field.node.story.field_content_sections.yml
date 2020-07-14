@@ -14,6 +14,7 @@ dependencies:
     - paragraphs.paragraphs_type.large_image_with_caption_left_or
     - paragraphs.paragraphs_type.related_program_block
     - paragraphs.paragraphs_type.statistics
+    - paragraphs.paragraphs_type.story_about_combo
     - paragraphs.paragraphs_type.three_up_illust_img_combo
     - paragraphs.paragraphs_type.three_up_statistics_combo
   module:
@@ -41,6 +42,7 @@ settings:
       image_carousel_combo: image_carousel_combo
       large_image_with_caption_left_or: large_image_with_caption_left_or
       statistics: statistics
+      story_about_combo: story_about_combo
       three_up_illust_img_combo: three_up_illust_img_combo
       three_up_statistics_combo: three_up_statistics_combo
       related_program_block: related_program_block
@@ -65,6 +67,9 @@ settings:
         enabled: false
       content_sections:
         weight: -46
+        enabled: false
+      content_with_image_50_50_:
+        weight: 51
         enabled: false
       cta:
         enabled: true
@@ -114,6 +119,21 @@ settings:
       large_image_with_caption_left_or:
         enabled: true
         weight: -36
+      ptoc_container:
+        weight: 68
+        enabled: false
+      ptoc_image:
+        weight: 69
+        enabled: false
+      ptoc_links:
+        weight: 70
+        enabled: false
+      ptoc_text:
+        weight: 71
+        enabled: false
+      related_courses:
+        weight: 72
+        enabled: false
       related_instructors:
         weight: 58
         enabled: false
@@ -127,8 +147,8 @@ settings:
         enabled: true
         weight: -35
       story_about_combo:
+        enabled: true
         weight: -33
-        enabled: false
       story_programs:
         weight: -31
         enabled: false
@@ -137,6 +157,9 @@ settings:
         enabled: false
       text_two_one_third:
         weight: -32
+        enabled: false
+      text_with_media_1_3_2_3_:
+        weight: 81
         enabled: false
       three_up_illust_img_combo:
         enabled: true
@@ -150,4 +173,7 @@ settings:
       three_up_statistics_combo:
         enabled: true
         weight: -27
+      video:
+        weight: 86
+        enabled: false
 field_type: entity_reference_revisions
