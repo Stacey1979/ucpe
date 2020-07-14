@@ -326,6 +326,68 @@
     }
   }
 }
+.aos_additional {
+  @include make-container();
+  h2 {
+    @include bodycopy_XL($maroon, $bold: true);
+    margin-bottom: $baseline * 3;
+  }
+
+  .aos_additional_block_wrapper {
+    @include make-row();
+
+    .aos_additional_block {
+      background-color: $bg-02;
+      margin: 0 3%;
+      min-height: 275px;
+      padding: $baseline * 2;
+      position: relative;
+
+      &:hover {
+        transition: all 0.2s;
+        .aos_a_block_content h3,
+        .aos_a_block_content a,
+        .aos_a_block_content a:after {
+          color: $white;
+        }
+
+        #bar {
+          height: 100%;
+          transition: all 0.2s ease-in;
+        }
+
+        .aos_a_block_content a:hover,
+        .aos_a_block_content a:hover:after {
+          color: $mustard;
+        }
+      }
+
+      #bar {
+        background-color: $maroon;
+        display: block;
+        height: 5px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+        transition: all 0.2s ease-out;
+      }
+
+      .aos_a_block_content {
+        bottom: $baseline * 2;
+        position: absolute;
+        width: calc(100% - 4rem);
+        z-index: 5;
+        h3 {
+          @include heading_S($plum);
+        }
+        .learnmore {
+        }
+      }
+    }
+  }
+}
 
 // PROGRAM DETAIL PAGE
 

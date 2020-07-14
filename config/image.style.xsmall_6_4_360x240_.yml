@@ -1,0 +1,15 @@
+uuid: b03ac79f-13a5-473e-a809-8899e5b95c2f
+langcode: en
+status: true
+dependencies: {  }
+name: xsmall_6_4_360x240_
+label: 'XSmall 6:4 (360x240)'
+effects:
+  b2865eac-0539-4d66-a7c6-0632edfd04d4:
+    uuid: b2865eac-0539-4d66-a7c6-0632edfd04d4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 240
+      anchor: center-center
