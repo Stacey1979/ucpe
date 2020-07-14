@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+<div class="related_program">
+  <div class="img">
+    {{ ds_content.field_program_illustration }}
+    {{ ds_content.field_at_a_glance }}
+    {{ ds_content.links }}
+  </div>
+  <div class="content">
+    <h4>{{ title|field_value }}</h4>
+  </div>
+</div>

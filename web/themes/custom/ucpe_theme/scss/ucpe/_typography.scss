@@ -64,6 +64,26 @@ p:last-of-type {
   margin-bottom: $baseline * 1.5;
 }
 
+.offered,
+.conferred {
+  p {
+    @include heading_XS($plum);
+    font-style: italic;
+    letter-spacing: 1px;
+    a {
+      border-bottom: solid 2px $maroon;
+      @include heading_XS($plum);
+      text-decoration: none;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      &:hover {
+        color: $maroon;
+      }
+    }
+  }
+}
+
 ol,
 ul {
   margin: $baseline 0;

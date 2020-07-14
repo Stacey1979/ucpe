@@ -6474,6 +6474,26 @@ p:last-of-type {
   line-height: 2rem;
   margin-bottom: 1.5rem; }
 
+.offered p, .conferred p {
+  font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  color: #350e20;
+  font-weight: 900;
+  line-height: 1.75rem;
+  font-style: italic;
+  letter-spacing: 1px; }
+  .offered p a, .conferred p a {
+    border-bottom: solid 2px #800000;
+    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-size: 1.25rem;
+    color: #350e20;
+    font-weight: 900;
+    line-height: 1.75rem;
+    text-decoration: none;
+    transition: all 0.3s; }
+    .offered p a:hover, .conferred p a:hover {
+      color: #800000; }
+
 ol,
 ul {
   margin: 1rem 0;
@@ -6938,11 +6958,11 @@ nav.tabs ul.nav-tabs li {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    padding: 1.5rem 0; }
+    padding: 1.5rem; }
     @media (min-width: 768px) {
       .cta .wrapper {
         float: left;
-        width: 66.66667%; } }
+        width: 100%; } }
   .cta .cta_content {
     position: relative;
     min-height: 1px;
@@ -6957,8 +6977,10 @@ nav.tabs ul.nav-tabs li {
       font-size: 1.25rem;
       color: #110f0f;
       font-weight: 900;
-      line-height: 1.75rem; }
+      line-height: 1.75rem;
+      margin-top: 0; }
   .cta figure.cta_photo {
+    text-align: center;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -7044,9 +7066,16 @@ nav.tabs ul.nav-tabs li {
           left: 58.33333%; } }
 
 .cta_aos {
+  margin-right: -15px;
+  margin-left: -15px;
   background-color: #800000;
   padding: 2rem 0;
   overflow: hidden; }
+  .cta_aos:before, .cta_aos:after {
+    display: table;
+    content: " "; }
+  .cta_aos:after {
+    clear: both; }
   .cta_aos:before, .cta_aos:after {
     display: table;
     content: " "; }
@@ -7064,9 +7093,18 @@ nav.tabs ul.nav-tabs li {
   @media only screen and (min-width: 1440px) {
     .cta_aos {
       padding: 5rem 0 0; } }
-  @media only screen and (min-width: 1440px) {
-    .cta_aos {
-      padding: 5rem 0 0; } }
+  .cta_aos .content {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .cta_aos .content {
+        float: left;
+        width: 83.33333%; } }
+    @media (min-width: 768px) {
+      .cta_aos .content {
+        left: 8.33333%; } }
   .cta_aos .wrapper {
     padding-right: 15px;
     padding-left: 15px;
@@ -7098,7 +7136,7 @@ nav.tabs ul.nav-tabs li {
         .cta_aos .wrapper figure {
           float: left;
           width: 33.33333%; } }
-    .cta_aos .wrapper .content {
+    .cta_aos .wrapper .cta_content {
       position: relative;
       min-height: 1px;
       padding-right: 15px;
@@ -7111,31 +7149,31 @@ nav.tabs ul.nav-tabs li {
       padding: 2rem 1rem 1rem;
       margin-top: -1rem; }
       @media (min-width: 768px) {
-        .cta_aos .wrapper .content {
+        .cta_aos .wrapper .cta_content {
           float: left;
           width: 50%; } }
       @media (min-width: 1200px) {
-        .cta_aos .wrapper .content {
+        .cta_aos .wrapper .cta_content {
           float: left;
           width: 66.66667%; } }
       @media only screen and (min-width: 768px) {
-        .cta_aos .wrapper .content {
+        .cta_aos .wrapper .cta_content {
           margin-top: -2rem;
           padding: 3rem 2rem 2rem; } }
       @media only screen and (min-width: 960px) {
-        .cta_aos .wrapper .content {
+        .cta_aos .wrapper .cta_content {
           margin-top: -3rem;
           padding: 4rem 3rem 3rem; } }
       @media only screen and (min-width: 1200px) {
-        .cta_aos .wrapper .content {
+        .cta_aos .wrapper .cta_content {
           margin-top: -4rem;
           padding: 5rem 4rem 4rem; } }
       @media only screen and (min-width: 1440px) {
-        .cta_aos .wrapper .content {
+        .cta_aos .wrapper .cta_content {
           margin-top: -5rem;
           padding: 6rem 4rem 4rem; } }
       @media only screen and (min-width: 768px) {
-        .cta_aos .wrapper .content:before {
+        .cta_aos .wrapper .cta_content:before {
           background-color: #800000;
           content: "";
           height: calc(100% + 1rem);
@@ -7145,13 +7183,13 @@ nav.tabs ul.nav-tabs li {
           top: 0;
           z-index: -1; } }
       @media only screen and (min-width: 1200px) {
-        .cta_aos .wrapper .content:before {
+        .cta_aos .wrapper .cta_content:before {
           height: calc(100% + 2rem); } }
       @media only screen and (min-width: 1440px) {
-        .cta_aos .wrapper .content:before {
+        .cta_aos .wrapper .cta_content:before {
           height: calc(100% + 4rem); } }
       @media only screen and (min-width: 768px) {
-        .cta_aos .wrapper .content:after {
+        .cta_aos .wrapper .cta_content:after {
           background-color: #eae5e1;
           content: "";
           position: absolute;
@@ -7160,17 +7198,16 @@ nav.tabs ul.nav-tabs li {
           bottom: -100%;
           width: 1000rem;
           z-index: -5; } }
-      .cta_aos .wrapper .content h3,
-      .cta_aos .wrapper .content p {
+      .cta_aos .wrapper .cta_content h3, .cta_aos .wrapper .cta_content p {
         color: #ffffff; }
-      .cta_aos .wrapper .content h3 {
+      .cta_aos .wrapper .cta_content h3 {
         font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
         font-size: 1.5rem;
         color: #ffffff;
         line-height: 2rem;
         font-weight: 500;
         margin-bottom: 1.5rem; }
-      .cta_aos .wrapper .content a.learnmore {
+      .cta_aos .wrapper .cta_content a.learnmore, .cta_aos .wrapper .cta_content a.learnmore:after {
         color: #ffe264; }
 
 .bio .bio_headshot {
@@ -7303,11 +7340,11 @@ nav.tabs ul.nav-tabs li {
   @media (min-width: 768px) {
     .related_program {
       float: left;
-      width: 58.33333%; } }
+      width: 50%; } }
   @media (min-width: 992px) {
     .related_program {
       float: left;
-      width: 50%; } }
+      width: 41.66667%; } }
   .related_program.right {
     float: right; }
     @media only screen and (min-width: 768px) {
@@ -7359,6 +7396,8 @@ nav.tabs ul.nav-tabs li {
         position: relative;
         padding: 2px;
         top: -12px; }
+        .related_program .img .category .category_name > div {
+          display: inline-block; }
       .related_program .img .category .meta {
         font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
         font-size: 0.75rem;
@@ -7865,7 +7904,7 @@ header {
   .article > .content,
   .casestudy > .content {
     background-color: #ffffff;
-    margin-top: -10rem;
+    margin-top: -10%;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -7967,21 +8006,6 @@ header {
       .casestudy .article_bottom,
       .casestudy .casestudy_bottom {
         padding: 0 5rem 5rem 8rem; } }
-    .article .article_bottom .cta .wrapper,
-    .article .casestudy_bottom .cta .wrapper,
-    .casestudy .article_bottom .cta .wrapper,
-    .casestudy .casestudy_bottom .cta .wrapper {
-      position: relative;
-      min-height: 1px;
-      padding-right: 15px;
-      padding-left: 15px; }
-      @media (min-width: 768px) {
-        .article .article_bottom .cta .wrapper,
-        .article .casestudy_bottom .cta .wrapper,
-        .casestudy .article_bottom .cta .wrapper,
-        .casestudy .casestudy_bottom .cta .wrapper {
-          float: left;
-          width: 100%; } }
     .article .article_bottom .cta_full,
     .article .casestudy_bottom .cta_full,
     .casestudy .article_bottom .cta_full,
@@ -8268,6 +8292,158 @@ header {
     .casestudy .of_interest {
       float: left;
       width: 100%; } }
+
+.story {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .story {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .story {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .story {
+      max-width: 1440px; } }
+  .story > .content {
+    background-color: #ffffff;
+    margin-top: -10rem;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .story > .content {
+        float: left;
+        width: 100%; } }
+    @media only screen and (min-width: 960px) {
+      .story > .content {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; } }
+  @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .story > .content {
+      float: left;
+      width: 83.33333%; } }
+  @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .story > .content {
+      left: 8.33333%; } }
+    @media only screen and (min-width: 1440px) {
+      .story > .content {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; } }
+  @media only screen and (min-width: 1440px) and (min-width: 768px) {
+    .story > .content {
+      float: left;
+      width: 66.66667%; } }
+  @media only screen and (min-width: 1440px) and (min-width: 768px) {
+    .story > .content {
+      left: 16.66667%; } }
+
+.area_of_study {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .area_of_study {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .area_of_study {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .area_of_study {
+      max-width: 1440px; } }
+  .area_of_study .content {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .area_of_study .content {
+        float: left;
+        width: 100%; } }
+    .area_of_study .content .intro {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .area_of_study .content .intro {
+          float: left;
+          width: 41.66667%; } }
+      .area_of_study .content .intro p {
+        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 1.5rem;
+        color: #110f0f;
+        font-weight: 900;
+        line-height: 2rem; }
+    .area_of_study .content .description {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .area_of_study .content .description {
+          float: left;
+          width: 58.33333%; } }
+
+.program_detail {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .program_detail {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .program_detail {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .program_detail {
+      max-width: 1440px; } }
+  .program_detail > .content {
+    background-color: #ffffff;
+    margin-top: -10rem;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .program_detail > .content {
+        float: left;
+        width: 100%; } }
+    @media only screen and (min-width: 960px) {
+      .program_detail > .content {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; } }
+  @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .program_detail > .content {
+      float: left;
+      width: 83.33333%; } }
+  @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .program_detail > .content {
+      left: 8.33333%; } }
+    @media only screen and (min-width: 1440px) {
+      .program_detail > .content {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; } }
+  @media only screen and (min-width: 1440px) and (min-width: 768px) {
+    .program_detail > .content {
+      float: left;
+      width: 66.66667%; } }
+  @media only screen and (min-width: 1440px) and (min-width: 768px) {
+    .program_detail > .content {
+      left: 16.66667%; } }
 
 footer.footer {
   background-color: #f3f3f3;
@@ -8590,15 +8766,20 @@ footer.footer {
       content: "c";
       font-size: 1.5rem;
       vertical-align: text-bottom; }
-  .hero_wrapper.hero_full picture {
-    margin: 0 auto; }
-    .hero_wrapper.hero_full picture img {
-      -o-object-fit: cover;
-         object-fit: cover;
-      width: 100%;
-      max-width: 1800px;
-      margin: 0 auto;
-      text-align: center; }
+  .hero_wrapper.hero_full {
+    background-color: #eaeaea;
+    background-image: url("../ucpe/i/pattern_01.svg");
+    background-repeat: repeat;
+    background-size: 15%; }
+    .hero_wrapper.hero_full picture {
+      margin: 0 auto; }
+      .hero_wrapper.hero_full picture img {
+        -o-object-fit: cover;
+           object-fit: cover;
+        width: 100%;
+        max-width: 1800px;
+        margin: 0 auto;
+        text-align: center; }
 
 /**
  * jQuery UI autocomplete widget style overrides.

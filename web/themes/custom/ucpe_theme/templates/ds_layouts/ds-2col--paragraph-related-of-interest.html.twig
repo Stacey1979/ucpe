@@ -14,14 +14,10 @@
  * - right: content of right region
  */
 #}
-
-  <div class="cta">
-    <div class="wrapper">
-    <figure class="cta_photo">{{ left.field_cta_image|field_value }}</figure>
-    <div class="cta_content">
-      <h3>{{ right.field_cta_title|field_value  }}</h3>
-      {{ right.body|field_value }}
-      <a class="learnmore" href="{{ right.field_cta_button[0]['#url'] }}">{{ right.field_cta_button[0]['#title'] }}</a>
-    </div>
+<div class="related_content_grid">
+  <h2>Of Interest</h2>
+    {{ left }}
+	<div class="secondary_content">
+    {{ right }}
   </div>
 </div>

@@ -319,17 +319,19 @@
 
   .wrapper {
     background-color: $bg_03;
-    @include make-sm-column(8);
-    padding: $baseline * 1.5 0;
+    @include make-sm-column(12);
+    padding: $baseline * 1.5;
   }
 
   .cta_content {
     @include make-sm-column(8);
     h3 {
       @include heading_XS($black);
+      margin-top: 0;
     }
   }
   figure.cta_photo {
+    text-align: center;
     @include make-sm-column(4);
   }
 }
@@ -385,6 +387,7 @@
   }
 }
 .cta_aos {
+  @include make-row();
   background-color: $maroon;
   @include clearfix();
   padding: $baseline * 2 0;
@@ -402,8 +405,10 @@
   @include screen("desktop-wide") {
     padding: $baseline * 5 0 0;
   }
-  @include screen("desktop-wide") {
-    padding: $baseline * 5 0 0;
+
+  .content {
+    @include make-sm-column(10);
+    @include make-sm-column-push(1);
   }
 
   .wrapper {
@@ -415,7 +420,7 @@
       //margin-right: $baseline*4;
     }
 
-    .content {
+    .cta_content {
       @include make-sm-column(6);
       @include make-lg-column(8);
       background-color: $maroon;
@@ -477,7 +482,8 @@
         @include bodycopy_XL($white, $bold: true);
         margin-bottom: $baseline * 1.5;
       }
-      a.learnmore {
+      a.learnmore,
+      a.learnmore:after {
         color: $mustard;
       }
     }
@@ -574,8 +580,8 @@
 
 .related_program {
   @include make-row();
-  @include make-sm-column(7);
-  @include make-md-column(6);
+  @include make-sm-column(6);
+  @include make-md-column(5);
   margin-bottom: $baseline * 2;
 
   &.right {
@@ -633,6 +639,10 @@
         position: relative;
         padding: 2px;
         top: -12px;
+
+        > div {
+          display: inline-block;
+        }
       }
 
       .meta {

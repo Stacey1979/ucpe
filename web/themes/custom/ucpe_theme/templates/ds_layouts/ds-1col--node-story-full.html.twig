@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+
+
+<div class="hero_wrapper hero_square">
+  <div class="hero">
+    <div class="hero_content">
+      <div class="meta">
+        <p><span class="type">Story</span><span class="divider">|</span><span class="date">{{ ds_content.field_date_written|field_value }}</span></p>
+      </div>
+      <h1>{{ title|field_value }}</h1>
+      <div class="hero_intro">{{ ds_content.field_lede }}</div>
+      <div class="hero_author_share">
+        <div class="author">{{ ds_content.field_written_by}}</div>
+        <div class="share">{{ ds_content.addtoany }}</div>
+      </div>
+    </div>
+    <div class="hero_img">
+      {{ ds_content.field_hero }}
+      {{ ds_content.field_image_attribution }}
+    </div>
+    
+</div>
+
+<div class="content_wrapper">
+    <div class="story">
+      <div class="content">
+        <div class="intro">{{ ds_content.field_intro_paragraph }}</div>
+        <div class="about">{{	ds_content.field_about_block }}</div>
+        {{ ds_content|without('field_image_attribution','field_hero','field_date_written','field_lede','field_written_by','field_related_program_tag','field_about_block','addtoany','reading_time') }}
+      </div>
+    </div>
+</div>
