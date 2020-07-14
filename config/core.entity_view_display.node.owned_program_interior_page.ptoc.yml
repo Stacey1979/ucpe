@@ -1,0 +1,60 @@
+uuid: e7277637-f035-4cbb-9a27-05f87d6fa52c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.ptoc
+    - field.field.node.owned_program_interior_page.field_content_sections
+    - field.field.node.owned_program_interior_page.field_deadlines_block
+    - field.field.node.owned_program_interior_page.field_metatags
+    - field.field.node.owned_program_interior_page.field_program
+    - field.field.node.owned_program_interior_page.field_tab
+    - node.type.owned_program_interior_page
+  module:
+    - ds
+    - entity_reference_revisions
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_content_sections
+id: node.owned_program_interior_page.ptoc
+targetEntityType: node
+bundle: owned_program_interior_page
+mode: ptoc
+content:
+  field_content_sections:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: ptoc
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+hidden:
+  addtoany: true
+  field_deadlines_block: true
+  field_metatags: true
+  field_program: true
+  field_tab: true
+  links: true

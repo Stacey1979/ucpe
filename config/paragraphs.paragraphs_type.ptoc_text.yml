@@ -1,0 +1,12 @@
+uuid: e4beaf4b-2f80-46e7-9833-f7fbf1672fed
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-HBI0Z6Pt5U2hGB_jSpzGzOgnNyPSuv1OMe6fDPWBLU'
+id: ptoc_text
+label: Text
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

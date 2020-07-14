@@ -1,0 +1,33 @@
+uuid: 4545866b-ffe2-4555-9de5-ffd59721247e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ptoc_page.body
+    - field.field.node.ptoc_page.field_ptoc_sections
+    - node.type.ptoc_page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: nfzicziAtxFfCozgR6F-ZJNYUsUQXZ3_k0myVadFIwc
+id: node.ptoc_page.teaser
+targetEntityType: node
+bundle: ptoc_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_ptoc_sections: true

@@ -1,0 +1,24 @@
+uuid: 70864b36-e6cc-4520-a2f2-f0dba8505f77
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.ptoc
+    - field.field.paragraph.header_s_.field_content_section_header
+    - field.field.paragraph.header_s_.field_header_type
+    - paragraphs.paragraphs_type.header_s_
+id: paragraph.header_s_.ptoc
+targetEntityType: paragraph
+bundle: header_s_
+mode: ptoc
+content:
+  field_content_section_header:
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    weight: 0
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_header_type: true

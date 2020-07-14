@@ -1,20 +1,21 @@
-uuid: 19c9a422-c84a-49d4-8e6e-b2c4b9822108
+uuid: 609265a8-0b8e-47d2-b79f-fba6bba73602
 langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
-    - node
     - paragraphs
-id: node.field_about_block
-field_name: field_about_block
-entity_type: node
+_core:
+  default_config_hash: 6PvtU_ZVcbeYnwwVlAqmpaA3Ix-cBFTlbhzkdeDpEsM
+id: paragraph.field_ptoc_sections
+field_name: field_ptoc_sections
+entity_type: paragraph
 type: entity_reference_revisions
 settings:
   target_type: paragraph
 module: entity_reference_revisions
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

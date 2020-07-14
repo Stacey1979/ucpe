@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.case_study.field_challenge
     - field.field.node.case_study.field_content_sections
     - field.field.node.case_study.field_cta
+    - field.field.node.case_study.field_date_written
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
@@ -21,6 +22,7 @@ dependencies:
     - field.field.node.case_study.field_solution
     - node.type.case_study
   module:
+    - datetime
     - ds
     - entity_reference_revisions
     - field_group
@@ -51,15 +53,10 @@ third_party_settings:
         - links
         - field_hero
       right:
-        - node_post_date
+        - field_date_written
         - node_title
         - field_case_study_type
     fields:
-      node_post_date:
-        plugin_id: node_post_date
-        weight: 2
-        label: hidden
-        formatter: ds_post_date_abbreviated_date
       node_title:
         plugin_id: node_title
         weight: 3
@@ -73,7 +70,7 @@ third_party_settings:
     group_case_study_summary:
       children: {  }
       parent_name: ''
-      weight: 24
+      weight: 27
       format_type: html_element
       region: hidden
       format_settings:
@@ -90,7 +87,7 @@ third_party_settings:
     group_about_this_partnership:
       children: {  }
       parent_name: ''
-      weight: 25
+      weight: 28
       format_type: html_element
       region: hidden
       format_settings:
@@ -115,6 +112,15 @@ content:
     region: right
     label: hidden
     settings: {  }
+    third_party_settings: {  }
+  field_date_written:
+    type: datetime_default
+    weight: 2
+    region: right
+    label: hidden
+    settings:
+      timezone_override: America/Chicago
+      format_type: abbreviated_date
     third_party_settings: {  }
   field_hero:
     weight: 1

@@ -1,0 +1,23 @@
+uuid: a3d4cf46-5940-41f5-a99d-d349d210555e
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+_core:
+  default_config_hash: 2Ws12muTx2rBnpCifrGmpumWPMVD4oQHqrJZUaIv-XU
+id: node.field_ptoc_sections
+field_name: field_ptoc_sections
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
