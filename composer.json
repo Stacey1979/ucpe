@@ -146,7 +146,7 @@
         "pull-pantheon-config": [
             "terminus backup:create ucpe.live --element=db",
             "rm -f /app/database.sql.gz",
-            "terminus backup:get ucpe.dev --element=db --to=/app/database.sql.gz",
+            "terminus backup:get ucpe.live --element=db --to=/app/database.sql.gz",
             "drush sql:drop -y",
             "zcat /app/database.sql.gz | drush sqlc",
             "drush updb -y",
