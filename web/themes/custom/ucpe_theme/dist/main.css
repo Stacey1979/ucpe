@@ -6474,7 +6474,8 @@ p:last-of-type {
   line-height: 2rem;
   margin-bottom: 1.5rem; }
 
-.offered p, .conferred p {
+.offered p,
+.conferred p {
   font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
   font-size: 1.25rem;
   color: #350e20;
@@ -6482,7 +6483,8 @@ p:last-of-type {
   line-height: 1.75rem;
   font-style: italic;
   letter-spacing: 1px; }
-  .offered p a, .conferred p a {
+  .offered p a,
+  .conferred p a {
     border-bottom: solid 2px #800000;
     font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
     font-size: 1.25rem;
@@ -6491,7 +6493,8 @@ p:last-of-type {
     line-height: 1.75rem;
     text-decoration: none;
     transition: all 0.3s; }
-    .offered p a:hover, .conferred p a:hover {
+    .offered p a:hover,
+    .conferred p a:hover {
       color: #800000; }
 
 ol,
@@ -7198,7 +7201,8 @@ nav.tabs ul.nav-tabs li {
           bottom: -100%;
           width: 1000rem;
           z-index: -5; } }
-      .cta_aos .wrapper .cta_content h3, .cta_aos .wrapper .cta_content p {
+      .cta_aos .wrapper .cta_content h3,
+      .cta_aos .wrapper .cta_content p {
         color: #ffffff; }
       .cta_aos .wrapper .cta_content h3 {
         font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -7207,7 +7211,8 @@ nav.tabs ul.nav-tabs li {
         line-height: 2rem;
         font-weight: 500;
         margin-bottom: 1.5rem; }
-      .cta_aos .wrapper .cta_content a.learnmore, .cta_aos .wrapper .cta_content a.learnmore:after {
+      .cta_aos .wrapper .cta_content a.learnmore,
+      .cta_aos .wrapper .cta_content a.learnmore:after {
         color: #ffe264; }
 
 .bio .bio_headshot {
