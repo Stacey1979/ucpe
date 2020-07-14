@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.case_study.field_challenge
     - field.field.node.case_study.field_content_sections
     - field.field.node.case_study.field_cta
+    - field.field.node.case_study.field_date_written
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
@@ -20,6 +21,7 @@ dependencies:
     - field.field.node.case_study.field_solution
     - node.type.case_study
   module:
+    - datetime
     - ds
     - entity_reference_revisions
     - field_group
@@ -120,6 +122,15 @@ content:
     region: right
     label: hidden
     settings: {  }
+    third_party_settings: {  }
+  field_date_written:
+    type: datetime_default
+    weight: 2
+    region: right
+    label: hidden
+    settings:
+      timezone_override: America/Chicago
+      format_type: abbreviated_date
     third_party_settings: {  }
   field_hero:
     weight: 1

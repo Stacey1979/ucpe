@@ -4,13 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.owned_program_interior_page.field_content_sections
+    - field.field.node.owned_program_interior_page.field_deadlines_block
     - field.field.node.owned_program_interior_page.field_metatags
     - field.field.node.owned_program_interior_page.field_program
+    - field.field.node.owned_program_interior_page.field_tab
     - node.type.owned_program_interior_page
   module:
     - metatag
     - paragraphs
     - path
+    - viewsreference
 id: node.owned_program_interior_page.default
 targetEntityType: node
 bundle: owned_program_interior_page
@@ -40,6 +43,12 @@ content:
     third_party_settings: {  }
     type: paragraphs
     region: content
+  field_deadlines_block:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
   field_metatags:
     weight: 10
     settings:
@@ -52,6 +61,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_tab:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
     region: content
   path:
     type: path

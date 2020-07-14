@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.three_up_image_and_text.field_three_up_title
     - paragraphs.paragraphs_type.three_up_image_and_text
   module:
+    - allowed_formats
     - media_library
     - text
 id: paragraph.three_up_image_and_text.default
@@ -34,7 +35,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   field_three_up_title:

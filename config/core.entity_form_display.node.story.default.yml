@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.story.body
-    - field.field.node.story.field_about_block
+    - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
     - field.field.node.story.field_hero
@@ -12,16 +12,63 @@ dependencies:
     - field.field.node.story.field_lede
     - field.field.node.story.field_metatags
     - field.field.node.story.field_related_program_tag
-    - field.field.node.story.field_written_by
     - node.type.story
   module:
     - datetime
     - entity_browser_entity_form
+    - field_group
     - inline_entity_form
     - metatag
     - paragraphs
     - path
     - text
+third_party_settings:
+  field_group:
+    group_hero_section:
+      children:
+        - field_hero
+        - field_date_written
+        - title
+        - field_lede
+        - field_author
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: 'Hero Section'
+    group_content:
+      children:
+        - field_intro_paragraph
+        - field_about_block
+        - field_content_sections
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Content
+    group_administrative:
+      children:
+        - field_related_program_tag
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Administrative
 id: node.story.default
 targetEntityType: node
 bundle: story
@@ -29,24 +76,31 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_about_block:
-    type: entity_reference_paragraphs
-    weight: 6
+  field_author:
+    weight: 5
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
     region: content
   field_content_sections:
-    weight: 7
+    weight: 4
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -58,14 +112,14 @@ content:
     type: entity_reference_paragraphs
     region: content
   field_date_written:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_hero:
     type: inline_entity_form_complex
-    weight: 0
+    weight: 1
     settings:
       form_mode: default
       label_singular: ''
@@ -83,7 +137,7 @@ content:
         entity_browser_id: media_embed
     region: content
   field_intro_paragraph:
-    weight: 5
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -95,7 +149,7 @@ content:
     type: entity_reference_paragraphs
     region: content
   field_lede:
-    weight: 3
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -103,29 +157,21 @@ content:
     type: text_textfield
     region: content
   field_metatags:
-    weight: 26
+    weight: 11
     settings:
       sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_related_program_tag:
-    weight: 8
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_written_by:
-    weight: 4
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   path:
     type: path
-    weight: 13
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -133,26 +179,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 6
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 10
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 2
+    weight: 3
     region: content
     settings:
       size: 60
@@ -160,7 +206,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60
@@ -169,7 +215,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 14
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }

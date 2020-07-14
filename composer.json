@@ -42,6 +42,7 @@
         "drupal/node_read_time": "^1.0",
         "drupal/paragraphs": "^1.11",
         "drupal/pathauto": "^1.6",
+        "drupal/ptoc": "1.x-dev",
         "drupal/redirect": "^1.5",
         "drupal/redis": "^1.4",
         "drupal/responsive_menu": "^4.0",
@@ -131,11 +132,11 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "refresh-pantheon-backup": [
-            "terminus backup:create ucpe.dev --element=db"
+            "terminus backup:create ucpe.live --element=db"
         ],
         "db-install": [
             "rm -f /app/database.sql.gz",
-            "terminus backup:get ucpe.dev --element=db --to=/app/database.sql.gz",
+            "terminus backup:get ucpe.live --element=db --to=/app/database.sql.gz",
             "drush sql:drop -y",
             "zcat database.sql.gz | drush sqlc",
             "drush updb -y",
@@ -143,7 +144,7 @@
             "git checkout local_config"
         ],
         "pull-pantheon-config": [
-            "terminus backup:create ucpe.dev --element=db",
+            "terminus backup:create ucpe.live --element=db",
             "rm -f /app/database.sql.gz",
             "terminus backup:get ucpe.dev --element=db --to=/app/database.sql.gz",
             "drush sql:drop -y",

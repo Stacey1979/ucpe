@@ -9,7 +9,7 @@ dependencies:
 id: horizontalmenu
 theme: ucpe_theme
 region: header
-weight: -6
+weight: -10
 provider: null
 plugin: responsive_menu_horizontal_menu
 settings:

@@ -15,11 +15,33 @@ dependencies:
     - node.type.person
   module:
     - entity_browser_entity_form
-    - inline_entity_form
+    - field_group
     - media_library
     - metatag
+    - paragraphs
     - path
     - text
+third_party_settings:
+  field_group:
+    group_optional_courses:
+      children:
+        - field_course_s_
+      parent_name: ''
+      weight: 7
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Add courses if this person is an instructor:'
 id: node.person.default
 targetEntityType: node
 bundle: person
@@ -27,7 +49,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -40,20 +62,21 @@ content:
     type: text_textarea
     region: content
   field_course_s_:
-    type: inline_entity_form_complex
-    weight: 7
+    type: paragraphs
+    weight: 8
     settings:
-      form_mode: default
-      revision: true
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      override_labels: false
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
@@ -98,7 +121,7 @@ content:
     type: text_textfield
     region: content
   field_metatags:
-    weight: 26
+    weight: 16
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -106,7 +129,7 @@ content:
     region: content
   path:
     type: path
-    weight: 12
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -114,21 +137,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 11
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 15
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 12
     region: content
     third_party_settings: {  }
   title:
@@ -137,11 +160,11 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Buffy Summers, PhD'
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 60
@@ -150,7 +173,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }

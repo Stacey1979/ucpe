@@ -6,6 +6,8 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\views\ViewExecutable;
+use Drupal\node\NodeInterface;
 
 /**
  * Implements hook_help().
@@ -21,4 +23,37 @@ function ucpe_common_help($route_name, RouteMatchInterface $route_match) {
 
     default:
   }
+}
+
+/**
+ * Implements hook_views_pre_view().
+ */
+function ucpe_common_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
+  if ($view->id() === 'deadlines') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node instanceof Drupal\node\Entity\Node && in_array($node->bundle(), ['owned_program_landing_page', 'owned_program_interior_page'])) {
+      $program = _ucpe_common_get_program_node_from_node($node);
+      if ($program) {
+        $args[0] = $program->id();
+      }
+    }
+  }
+}
+
+/**
+ * Get the program node for a given node.
+ */
+function _ucpe_common_get_program_node_from_node($node) {
+  if($node instanceof NodeInterface) {
+    if($node->bundle() === 'owned_program_landing_page') {
+      return $node;
+    }
+    elseif (isset($node->field_program)) {
+      $parent_term = $node->field_program->referencedEntities();
+      if (isset($parent_term[0]) && isset($parent_term[0]->field_program_detail_page)) {
+        return $parent_term[0]->field_program_detail_page->entity;
+      }
+    }
+  }
+  return null;
 }

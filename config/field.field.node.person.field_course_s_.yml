@@ -13,7 +13,7 @@ field_name: field_course_s_
 entity_type: node
 bundle: person
 label: Course(s)
-description: 'If this person is an instructor, add the courses and associated program'
+description: 'To add additional programs, click the "Add Instructor: Program and Courses" button. This allows you to separate courses taught by program. '
 required: false
 translatable: false
 default_value: {  }
@@ -31,6 +31,9 @@ settings:
       about_student:
         weight: 30
         enabled: false
+      at_a_glance:
+        weight: 42
+        enabled: false
       blockquote:
         weight: 31
         enabled: false
@@ -43,8 +46,23 @@ settings:
       content_sections:
         weight: 34
         enabled: false
+      content_with_image_50_50_:
+        weight: 47
+        enabled: false
       cta:
         weight: 35
+        enabled: false
+      deadlines:
+        weight: 49
+        enabled: false
+      designed_for:
+        weight: 50
+        enabled: false
+      duration:
+        weight: 51
+        enabled: false
+      form_embed:
+        weight: 52
         enabled: false
       full_width_content:
         weight: 36
@@ -79,6 +97,15 @@ settings:
       large_image_with_caption_left_or:
         weight: 46
         enabled: false
+      related_courses:
+        weight: 64
+        enabled: false
+      related_instructors:
+        weight: 65
+        enabled: false
+      related_of_interest:
+        weight: 66
+        enabled: false
       related_program_block:
         weight: 47
         enabled: false
@@ -97,6 +124,9 @@ settings:
       text_two_one_third:
         weight: 52
         enabled: false
+      text_with_media_1_3_2_3_:
+        weight: 73
+        enabled: false
       three_up_illust_img_combo:
         weight: 53
         enabled: false
@@ -108,5 +138,8 @@ settings:
         enabled: false
       three_up_statistics_combo:
         weight: 56
+        enabled: false
+      video:
+        weight: 78
         enabled: false
 field_type: entity_reference_revisions

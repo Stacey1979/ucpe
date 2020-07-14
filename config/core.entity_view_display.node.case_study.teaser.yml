@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.case_study.field_challenge
     - field.field.node.case_study.field_content_sections
     - field.field.node.case_study.field_cta
+    - field.field.node.case_study.field_date_written
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
@@ -40,6 +41,7 @@ hidden:
   field_challenge: true
   field_content_sections: true
   field_cta: true
+  field_date_written: true
   field_hero: true
   field_intro_paragraph: true
   field_lede: true

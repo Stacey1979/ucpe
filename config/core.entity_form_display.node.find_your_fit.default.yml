@@ -10,10 +10,54 @@ dependencies:
     - field.field.node.find_your_fit.field_text_and_media_1_3_2_3
     - node.type.find_your_fit
   module:
+    - field_group
     - metatag
     - paragraphs
     - path
     - text
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - field_content_sections
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Content
+    group_hero_section:
+      children:
+        - title
+        - field_lede
+        - field_text_and_media_1_3_2_3
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: 'Hero Section'
+    group_administrative:
+      children:
+        - field_program_type
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Administrative
 id: node.find_your_fit.default
 targetEntityType: node
 bundle: find_your_fit
@@ -21,12 +65,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_content_sections:
-    weight: 4
+    weight: 5
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -38,7 +82,7 @@ content:
     type: entity_reference_paragraphs
     region: content
   field_lede:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -46,14 +90,14 @@ content:
     type: text_textfield
     region: content
   field_metatags:
-    weight: 26
+    weight: 11
     settings:
       sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_program_type:
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -72,7 +116,7 @@ content:
     region: content
   path:
     type: path
-    weight: 9
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -80,26 +124,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 6
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 10
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
@@ -107,7 +151,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60
@@ -116,7 +160,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 10
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }

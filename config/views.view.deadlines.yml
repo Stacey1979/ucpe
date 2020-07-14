@@ -1,4 +1,4 @@
-uuid: efbbbea8-27ef-4049-9346-b8c3ce6b1354
+uuid: 048d8129-b9ef-4794-b8ce-0a9fde707e79
 langcode: en
 status: true
 dependencies:
@@ -50,16 +50,12 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: some
+        type: none
         options:
-          items_per_page: 3
+          items_per_page: null
           offset: 0
       style:
         type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
       row:
         type: fields
       fields:
@@ -261,23 +257,13 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.paragraph.at_a_glance.at_a_glance_ucpe'
-        - 'config:core.entity_view_display.paragraph.at_a_glance.default'
-        - 'config:core.entity_view_display.paragraph.at_a_glance.of_in'
-        - 'config:core.entity_view_display.paragraph.deadlines.at_a_glance_ucpe'
-        - 'config:core.entity_view_display.paragraph.deadlines.default'
-        - 'config:core.entity_view_display.paragraph.designed_for.default'
-        - 'config:core.entity_view_display.paragraph.duration.default'
-        - 'config:core.entity_view_display.paragraph.full_width_content.default'
-        - 'config:core.entity_view_display.paragraph.heroes.area_of_study_hero'
-        - 'config:core.entity_view_display.paragraph.heroes.default'
-        - 'config:core.entity_view_display.paragraph.heroes.of_in'
-        - 'config:core.entity_view_display.paragraph.heroes.program_hero'
-        - 'config:core.entity_view_display.paragraph.intro_paragraph.default'
-        - 'config:core.entity_view_display.paragraph.related_of_interest.default'
         - 'config:core.entity_view_display.paragraph.about_person.default'
         - 'config:core.entity_view_display.paragraph.about_student.default'
         - 'config:core.entity_view_display.paragraph.at_a_glance.at_a_glance_non_ucpe'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.at_a_glance_ucpe'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.default'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.of_in'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.ptoc'
         - 'config:core.entity_view_display.paragraph.at_a_glance.related_program'
         - 'config:core.entity_view_display.paragraph.blockquote.default'
         - 'config:core.entity_view_display.paragraph.blockquotes.blockquotes'
@@ -286,15 +272,28 @@ display:
         - 'config:core.entity_view_display.paragraph.button_set.default'
         - 'config:core.entity_view_display.paragraph.button_set.preview'
         - 'config:core.entity_view_display.paragraph.content_sections.default'
+        - 'config:core.entity_view_display.paragraph.content_with_image_50_50_.default'
+        - 'config:core.entity_view_display.paragraph.content_with_image_50_50_.preview'
         - 'config:core.entity_view_display.paragraph.cta.default'
         - 'config:core.entity_view_display.paragraph.cta.preview'
+        - 'config:core.entity_view_display.paragraph.deadlines.at_a_glance_ucpe'
+        - 'config:core.entity_view_display.paragraph.deadlines.default'
         - 'config:core.entity_view_display.paragraph.deadlines.how_to_apply'
+        - 'config:core.entity_view_display.paragraph.designed_for.default'
+        - 'config:core.entity_view_display.paragraph.duration.default'
+        - 'config:core.entity_view_display.paragraph.form_embed.default'
+        - 'config:core.entity_view_display.paragraph.full_width_content.default'
         - 'config:core.entity_view_display.paragraph.full_width_content.person_trimmed_bio'
         - 'config:core.entity_view_display.paragraph.full_width_content.preview'
         - 'config:core.entity_view_display.paragraph.header_s_.default'
         - 'config:core.entity_view_display.paragraph.header_s_.preview'
+        - 'config:core.entity_view_display.paragraph.header_s_.ptoc'
+        - 'config:core.entity_view_display.paragraph.heroes.area_of_study_hero'
+        - 'config:core.entity_view_display.paragraph.heroes.default'
+        - 'config:core.entity_view_display.paragraph.heroes.of_in'
         - 'config:core.entity_view_display.paragraph.heroes.perspectives_case_study_hero_para'
         - 'config:core.entity_view_display.paragraph.heroes.preview'
+        - 'config:core.entity_view_display.paragraph.heroes.program_hero'
         - 'config:core.entity_view_display.paragraph.heroes.related_story_hero'
         - 'config:core.entity_view_display.paragraph.heroes.related_three_up'
         - 'config:core.entity_view_display.paragraph.heroes.story_hero'
@@ -308,10 +307,25 @@ display:
         - 'config:core.entity_view_display.paragraph.instructor_program_and_courses.default'
         - 'config:core.entity_view_display.paragraph.instructor_program_courses_combo.default'
         - 'config:core.entity_view_display.paragraph.instructor_program_courses_combo.preview'
+        - 'config:core.entity_view_display.paragraph.intro_paragraph.default'
         - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.default'
         - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.preview'
+        - 'config:core.entity_view_display.paragraph.ptoc_container.default'
+        - 'config:core.entity_view_display.paragraph.ptoc_container.preview'
+        - 'config:core.entity_view_display.paragraph.ptoc_container.ptoc'
+        - 'config:core.entity_view_display.paragraph.ptoc_image.default'
+        - 'config:core.entity_view_display.paragraph.ptoc_image.preview'
+        - 'config:core.entity_view_display.paragraph.ptoc_image.ptoc'
+        - 'config:core.entity_view_display.paragraph.ptoc_links.default'
+        - 'config:core.entity_view_display.paragraph.ptoc_links.preview'
+        - 'config:core.entity_view_display.paragraph.ptoc_links.ptoc'
+        - 'config:core.entity_view_display.paragraph.ptoc_text.default'
+        - 'config:core.entity_view_display.paragraph.ptoc_text.preview'
+        - 'config:core.entity_view_display.paragraph.ptoc_text.ptoc'
+        - 'config:core.entity_view_display.paragraph.related_courses.default'
         - 'config:core.entity_view_display.paragraph.related_instructors.default'
         - 'config:core.entity_view_display.paragraph.related_instructors.preview'
+        - 'config:core.entity_view_display.paragraph.related_of_interest.default'
         - 'config:core.entity_view_display.paragraph.related_program_block.default'
         - 'config:core.entity_view_display.paragraph.statistics.default'
         - 'config:core.entity_view_display.paragraph.statistics.preview'
@@ -322,6 +336,8 @@ display:
         - 'config:core.entity_view_display.paragraph.text_one_two_third.preview'
         - 'config:core.entity_view_display.paragraph.text_two_one_third.default'
         - 'config:core.entity_view_display.paragraph.text_two_one_third.preview'
+        - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.default'
+        - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.preview'
         - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.default'
         - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.preview'
         - 'config:core.entity_view_display.paragraph.three_up_image_and_text.default'
@@ -330,6 +346,7 @@ display:
         - 'config:core.entity_view_display.paragraph.three_up_statistic.preview'
         - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.default'
         - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.preview'
+        - 'config:core.entity_view_display.paragraph.video.default'
   block_1:
     display_plugin: block
     id: block_1
@@ -337,7 +354,6 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'UCPE Owned Program Deadlines Block'
       display_description: ''
     cache_metadata:
       max-age: -1
@@ -353,6 +369,7 @@ display:
         - 'config:core.entity_view_display.paragraph.at_a_glance.at_a_glance_ucpe'
         - 'config:core.entity_view_display.paragraph.at_a_glance.default'
         - 'config:core.entity_view_display.paragraph.at_a_glance.of_in'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.ptoc'
         - 'config:core.entity_view_display.paragraph.at_a_glance.related_program'
         - 'config:core.entity_view_display.paragraph.blockquote.default'
         - 'config:core.entity_view_display.paragraph.blockquotes.blockquotes'
@@ -361,6 +378,8 @@ display:
         - 'config:core.entity_view_display.paragraph.button_set.default'
         - 'config:core.entity_view_display.paragraph.button_set.preview'
         - 'config:core.entity_view_display.paragraph.content_sections.default'
+        - 'config:core.entity_view_display.paragraph.content_with_image_50_50_.default'
+        - 'config:core.entity_view_display.paragraph.content_with_image_50_50_.preview'
         - 'config:core.entity_view_display.paragraph.cta.default'
         - 'config:core.entity_view_display.paragraph.cta.preview'
         - 'config:core.entity_view_display.paragraph.deadlines.at_a_glance_ucpe'
@@ -368,11 +387,13 @@ display:
         - 'config:core.entity_view_display.paragraph.deadlines.how_to_apply'
         - 'config:core.entity_view_display.paragraph.designed_for.default'
         - 'config:core.entity_view_display.paragraph.duration.default'
+        - 'config:core.entity_view_display.paragraph.form_embed.default'
         - 'config:core.entity_view_display.paragraph.full_width_content.default'
         - 'config:core.entity_view_display.paragraph.full_width_content.person_trimmed_bio'
         - 'config:core.entity_view_display.paragraph.full_width_content.preview'
         - 'config:core.entity_view_display.paragraph.header_s_.default'
         - 'config:core.entity_view_display.paragraph.header_s_.preview'
+        - 'config:core.entity_view_display.paragraph.header_s_.ptoc'
         - 'config:core.entity_view_display.paragraph.heroes.area_of_study_hero'
         - 'config:core.entity_view_display.paragraph.heroes.default'
         - 'config:core.entity_view_display.paragraph.heroes.of_in'
@@ -395,6 +416,19 @@ display:
         - 'config:core.entity_view_display.paragraph.in_brief.default'
         - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.default'
         - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.preview'
+        - 'config:core.entity_view_display.paragraph.ptoc_container.default'
+        - 'config:core.entity_view_display.paragraph.ptoc_container.preview'
+        - 'config:core.entity_view_display.paragraph.ptoc_container.ptoc'
+        - 'config:core.entity_view_display.paragraph.ptoc_image.default'
+        - 'config:core.entity_view_display.paragraph.ptoc_image.preview'
+        - 'config:core.entity_view_display.paragraph.ptoc_image.ptoc'
+        - 'config:core.entity_view_display.paragraph.ptoc_links.default'
+        - 'config:core.entity_view_display.paragraph.ptoc_links.preview'
+        - 'config:core.entity_view_display.paragraph.ptoc_links.ptoc'
+        - 'config:core.entity_view_display.paragraph.ptoc_text.default'
+        - 'config:core.entity_view_display.paragraph.ptoc_text.preview'
+        - 'config:core.entity_view_display.paragraph.ptoc_text.ptoc'
+        - 'config:core.entity_view_display.paragraph.related_courses.default'
         - 'config:core.entity_view_display.paragraph.related_instructors.default'
         - 'config:core.entity_view_display.paragraph.related_instructors.preview'
         - 'config:core.entity_view_display.paragraph.related_of_interest.default'
@@ -408,6 +442,8 @@ display:
         - 'config:core.entity_view_display.paragraph.text_one_two_third.preview'
         - 'config:core.entity_view_display.paragraph.text_two_one_third.default'
         - 'config:core.entity_view_display.paragraph.text_two_one_third.preview'
+        - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.default'
+        - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.preview'
         - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.default'
         - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.preview'
         - 'config:core.entity_view_display.paragraph.three_up_image_and_text.default'
@@ -416,3 +452,4 @@ display:
         - 'config:core.entity_view_display.paragraph.three_up_statistic.preview'
         - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.default'
         - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.preview'
+        - 'config:core.entity_view_display.paragraph.video.default'

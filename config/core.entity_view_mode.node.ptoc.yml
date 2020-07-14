@@ -1,0 +1,12 @@
+uuid: c9cc201c-40af-41e5-b78d-9b0129e866ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: vqZu1jVbK8R0SlmeJ_e9gXrZLvix3_qtkfB0AfOpPQM
+id: node.ptoc
+label: 'Table of contents'
+targetEntityType: node
+cache: true

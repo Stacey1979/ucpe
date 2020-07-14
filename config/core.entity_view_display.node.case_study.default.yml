@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.case_study.field_challenge
     - field.field.node.case_study.field_content_sections
     - field.field.node.case_study.field_cta
+    - field.field.node.case_study.field_date_written
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
@@ -58,6 +59,7 @@ third_party_settings:
         - field_results
         - field_about_partnership
         - field_cta
+        - field_metatags
         - field_partnership_logos
         - field_of_interest
 id: node.case_study.default
@@ -145,7 +147,7 @@ content:
     region: ds_content
   field_partnership_logos:
     type: media_thumbnail
-    weight: 12
+    weight: 13
     label: hidden
     settings:
       image_style: media_library
@@ -175,4 +177,5 @@ content:
     third_party_settings: {  }
 hidden:
   field_areas_of_study: true
+  field_date_written: true
   field_related_program_tag: true

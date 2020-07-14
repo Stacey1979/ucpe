@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e9331c3a770276a6eef6970f1b747fa",
+    "content-hash": "fbcd78e7890f33f4783e1730d8f11880",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3707,6 +3707,50 @@
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
             }
+        },
+        {
+            "name": "drupal/ptoc",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ptoc.git",
+                "reference": "6f49778fbf899640bad4ee21c6a7994e341f8558"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/entity_reference_revisions": "*",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc2+3-dev",
+                    "datestamp": "1592238377",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "benjifisher",
+                    "homepage": "https://www.drupal.org/user/683300"
+                }
+            ],
+            "description": "Construct pages with nested paragraphs and get an automatically generated table of contents.",
+            "homepage": "https://www.drupal.org/project/ptoc",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ptoc"
+            },
+            "time": "2020-06-07T22:48:57+00:00"
         },
         {
             "name": "drupal/redirect",
@@ -11307,6 +11351,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/ptoc": 20,
         "drupal/video_embed_wistia": 5
     },
     "prefer-stable": true,

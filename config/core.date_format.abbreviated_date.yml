@@ -5,4 +5,4 @@ dependencies: {  }
 id: abbreviated_date
 label: 'Abbreviated Date'
 locked: false
-pattern: 'M. d, Y'
+pattern: 'M d, Y'

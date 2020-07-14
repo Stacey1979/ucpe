@@ -4,14 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.story.body
-    - field.field.node.story.field_about_block
+    - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
     - field.field.node.story.field_lede
     - field.field.node.story.field_related_program_tag
-    - field.field.node.story.field_written_by
     - node.type.story
   module:
     - datetime
@@ -43,10 +42,9 @@ third_party_settings:
         - field_date_written
         - field_lede
         - reading_time
-        - field_written_by
+        - field_author
         - addtoany
         - field_intro_paragraph
-        - field_about_block
         - field_content_sections
         - links
 id: node.story.default
@@ -64,9 +62,9 @@ content:
     weight: 7
     label: hidden
     settings:
-      view_mode: default
-      link: ''
+      link: true
     third_party_settings: {  }
+    type: entity_reference_label
     region: ds_content
   field_content_sections:
     weight: 8

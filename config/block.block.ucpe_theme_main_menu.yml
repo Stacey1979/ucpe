@@ -1,6 +1,6 @@
 uuid: 52232f57-dd27-4c02-941f-7b05a34f9d99
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -12,16 +12,21 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: ucpe_theme_main_menu
 theme: ucpe_theme
-region: header
-weight: -3
+region: sidebar_second
+weight: -10
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
   label: 'Main navigation'
   provider: system
-  label_display: '0'
-  level: 1
-  depth: 1
+  label_display: visible
+  level: 3
+  depth: 2
   expand_all_items: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/find-your-fit/*/*\r\n/find-your-fit/*/*/*\r\n/find-your-fit/*/*/*/*"
+    negate: false
+    context_mapping: {  }
