@@ -19,7 +19,7 @@
   <div class="img"><a title="Link to: {{ title|field_value }}" href="{{ path('entity.node.canonical', {'node': content['#node'].id()  }) }}">{{ left.field_hero|field_value }}</a></div>
   <div class="content">
     <div class="meta"><span class="type">{{ content['bundle_field:node']|field_value }}</span><span class="divider">|</span><span class="date">{{ right.field_date_written|field_value }}{{ right.node_post_date|field_value }}</span></div>
-    <h4><a title="Link to: {{ title|field_value }}" href="{{ path('entity.node.canonical', {'node': content['#node'].id()  }) }}">{{ title }}</a></h4>
+    <h4><a title="Link to: {{ title|field_value }}" href="{{ path('entity.node.canonical', {'node': content['#node'].id()  }) }}">{{ title|field_value }}</a></h4>
     <span class="program_name">{{ right.field_related_program_tag }}{{ right.field_topics }}{{ right.field_case_study_type }}</span>
   </div>
 </div>
