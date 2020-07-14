@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+    <dl>
+      <dt>Type</dt>
+      <dd>
+        <span class="program_type">{{ ds_content.group_type.field_program_type|field_value }}</span>
+        {% if paragraph.field_confers_alumni_status.entity.label == "Confers alumni status" %}
+          <span class="confers">Confers Alumni Status</span>
+        {% endif %}
+      </dd>
+      <dt>Enrollment</dt>
+      <dd>{{ ds_content.field_enrollment|field_value }}</dd>
+      <dt>Duration</dt>
+      <dd>{{ ds_content.field_duration|field_value }}</dd>
+      <dt>Format</dt>
+      <dd>{{ ds_content.field_format|field_value }}</dd>
+      <dt>Cost</dt>
+      <dd>
+        <span class="cost"><sup>$</sup>{{ ds_content.group_cost.field_cost|field_value }}</span>
+        <span class="fin_aid">{{ ds_content.group_cost.field_link_to_financial_aid }}</span>
+      </dd>
+    </dl>

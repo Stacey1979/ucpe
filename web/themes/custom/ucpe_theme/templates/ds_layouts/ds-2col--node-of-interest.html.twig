@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Display Suite 2 column template.
+ *
+ * Available variables:
+ * - outer_wrapper: outer wrapper element
+ * - left_wrapper: wrapper element around left region
+ * - right_wrapper: wrapper element around right region
+ * - attributes: layout attributes
+ * - left_attributes: attributes for left region
+ * - right_attributes: attributes for right region
+ * - left: content of left region
+ * - right: content of right region
+ */|date('F j, Y')
+#}
+
+<div class="secondary_editorial">
+  <div class="img"><a title="Link to: {{ title|field_value }}" href="{{ path('entity.node.canonical', {'node': content['#node'].id()  }) }}">{{ left.field_hero|field_value }}</a></div>
+  <div class="content">
+    <div class="meta"><span class="type">{{ content['bundle_field:node']|field_value }}</span><span class="divider">|</span><span class="date">{{ right.field_date_written|field_value }}{{ right.node_post_date|field_value }}</span></div>
+    <h4><a title="Link to: {{ title|field_value }}" href="{{ path('entity.node.canonical', {'node': content['#node'].id()  }) }}">{{ title }}</a></h4>
+    <span class="program_name">{{ right.field_related_program_tag }}{{ right.field_topics }}{{ right.field_case_study_type }}</span>
+  </div>
+</div>

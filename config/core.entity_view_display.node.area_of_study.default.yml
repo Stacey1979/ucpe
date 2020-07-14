@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.area_of_study.field_hero
     - field.field.node.area_of_study.field_intro_area_study_text
     - field.field.node.area_of_study.field_lede
-    - field.field.node.area_of_study.field_metatags
     - field.field.node.area_of_study.field_tagline
     - field.field.node.area_of_study.field_view_programs_cta
     - node.type.area_of_study
@@ -15,7 +14,6 @@ dependencies:
     - ds
     - entity_reference_revisions
     - link
-    - metatag
     - text
     - user
 third_party_settings:
@@ -38,22 +36,18 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - node_title
+        - 'bundle_field:node'
         - field_lede
         - field_hero
         - field_view_programs_cta
         - field_intro_area_study_text
         - links
     fields:
-      node_title:
-        plugin_id: node_title
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
         weight: 0
         label: hidden
         formatter: default
-        settings:
-          wrapper: h1
-          class: ''
-          link: false
 id: node.area_of_study.default
 targetEntityType: node
 bundle: area_of_study
@@ -84,13 +78,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: ds_content
-  field_metatags:
-    weight: 6
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_empty_formatter
-    region: content
   field_view_programs_cta:
     weight: 3
     label: above

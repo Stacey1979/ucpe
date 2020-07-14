@@ -1,5 +1,4 @@
 .hero_wrapper {
-  //background-color: $bg-06;
   position: relative;
 
   // photo attribute
@@ -20,6 +19,11 @@
   }
 
   &.hero_full {
+    background-color: $bg-03;
+    background-image: url("#{$image-path}/pattern_01.svg");
+    background-repeat: repeat;
+    background-size: 15%;
+
     picture {
       margin: 0 auto;
 

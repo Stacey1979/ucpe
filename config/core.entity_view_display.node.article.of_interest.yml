@@ -15,7 +15,6 @@ dependencies:
     - field.field.node.article.field_in_brief_perspective
     - field.field.node.article.field_intro_paragraph
     - field.field.node.article.field_lede
-    - field.field.node.article.field_metatags
     - field.field.node.article.field_related_programs
     - field.field.node.article.field_topics
     - node.type.article
@@ -48,13 +47,19 @@ third_party_settings:
       left:
         - field_hero
       right:
+        - 'bundle_field:node'
         - field_date_written
         - node_title
         - field_topics
     fields:
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 1
+        label: hidden
+        formatter: default
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 3
         label: hidden
         formatter: default
         settings:
@@ -70,7 +75,7 @@ mode: of_interest
 content:
   field_date_written:
     type: datetime_default
-    weight: 1
+    weight: 2
     region: right
     label: hidden
     settings:
@@ -88,7 +93,7 @@ content:
     region: left
   field_topics:
     type: entity_reference_label
-    weight: 3
+    weight: 4
     region: right
     label: hidden
     settings:
@@ -110,7 +115,6 @@ hidden:
   field_in_brief_perspective: true
   field_intro_paragraph: true
   field_lede: true
-  field_metatags: true
   field_perspectives_hero: true
   field_perspectives_label: true
   field_read_time: true

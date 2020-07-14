@@ -10,14 +10,12 @@ dependencies:
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
     - field.field.node.story.field_lede
-    - field.field.node.story.field_metatags
     - field.field.node.story.field_related_program_tag
     - node.type.story
   module:
     - datetime
     - ds
     - entity_reference_revisions
-    - metatag
     - text
     - user
 third_party_settings:
@@ -42,7 +40,6 @@ third_party_settings:
       ds_content:
         - field_hero
         - field_date_written
-        - node_title
         - field_lede
         - reading_time
         - field_author
@@ -50,25 +47,19 @@ third_party_settings:
         - field_intro_paragraph
         - field_content_sections
         - links
-        - field_metatags
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 2
-        label: hidden
-        formatter: default
 id: node.story.default
 targetEntityType: node
 bundle: story
 mode: default
 content:
   addtoany:
-    weight: 6
+    weight: 5
     region: ds_content
     settings: {  }
     third_party_settings: {  }
-  field_author:
-    weight: 5
+  field_about_block:
+    type: entity_reference_revisions_entity_view
+    weight: 7
     label: hidden
     settings:
       link: true
@@ -76,7 +67,7 @@ content:
     type: entity_reference_label
     region: ds_content
   field_content_sections:
-    weight: 9
+    weight: 8
     label: hidden
     settings:
       view_mode: default
@@ -98,12 +89,12 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: default
+      view_mode: story_hero
       link: ''
     third_party_settings: {  }
     region: ds_content
   field_intro_paragraph:
-    weight: 7
+    weight: 6
     label: hidden
     settings:
       view_mode: default
@@ -112,26 +103,27 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_lede:
-    weight: 3
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: ds_content
-  field_metatags:
-    weight: 11
-    label: above
-    settings: {  }
+  field_written_by:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: metatag_empty_formatter
+    type: string
     region: ds_content
   links:
-    weight: 10
+    weight: 9
     region: ds_content
     settings: {  }
     third_party_settings: {  }
   reading_time:
-    weight: 4
+    weight: 3
     region: ds_content
     settings: {  }
     third_party_settings: {  }
