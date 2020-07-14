@@ -206,7 +206,7 @@ $italic: italic;
     #{$baseline * 1.25},
     $color,
     $serif-bold,
-    #{$baseline * 1.75}
+    #{$baseline * 1.65}
   );
 }
 
@@ -308,7 +308,7 @@ $italic: italic;
     $sans-serif-font,
     #{$baseline * 0.875},
     $color,
-    $sans-serif-semibold,
+    $sans-serif-regular,
     #{$baseline * 1.8}
   );
   text-transform: uppercase;
