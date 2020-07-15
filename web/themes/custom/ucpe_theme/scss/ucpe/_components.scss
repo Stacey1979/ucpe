@@ -407,8 +407,8 @@
   }
 
   .content {
-    @include make-sm-column(10);
-    @include make-sm-column-push(1);
+    @include make-sm-column(9);
+    @include make-sm-column-push(2);
   }
 
   .wrapper {
