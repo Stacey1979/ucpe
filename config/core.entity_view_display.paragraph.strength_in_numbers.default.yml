@@ -1,13 +1,12 @@
-uuid: 4c94e7fc-a8b0-4d83-8b08-80120ce80154
+uuid: ff9b9bdb-6f61-4dfe-9aca-5ecbcf70b6d9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text_two_one_third.field_button_set
-    - field.field.paragraph.text_two_one_third.field_content_column_1
-    - field.field.paragraph.text_two_one_third.field_content_column_2
-    - field.field.paragraph.text_two_one_third.field_optional_title
-    - paragraphs.paragraphs_type.text_two_one_third
+    - field.field.paragraph.strength_in_numbers.field_content_column_1
+    - field.field.paragraph.strength_in_numbers.field_optional_title
+    - field.field.paragraph.strength_in_numbers.field_three_up_statistics
+    - paragraphs.paragraphs_type.strength_in_numbers
   module:
     - ds
     - entity_reference_revisions
@@ -36,23 +35,13 @@ third_party_settings:
       left:
         - field_optional_title
         - field_content_column_1
-        - field_button_set
       right:
-        - field_content_column_2
-id: paragraph.text_two_one_third.default
+        - field_three_up_statistics
+id: paragraph.strength_in_numbers.default
 targetEntityType: paragraph
-bundle: text_two_one_third
+bundle: strength_in_numbers
 mode: default
 content:
-  field_button_set:
-    type: entity_reference_revisions_entity_view
-    weight: 3
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: left
   field_content_column_1:
     weight: 1
     label: hidden
@@ -60,13 +49,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: left
-  field_content_column_2:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: right
   field_optional_title:
     weight: 0
     label: hidden
@@ -75,4 +57,13 @@ content:
     third_party_settings: {  }
     type: string
     region: left
+  field_three_up_statistics:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: right
 hidden: {  }

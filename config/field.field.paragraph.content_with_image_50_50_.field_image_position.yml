@@ -1,0 +1,21 @@
+uuid: 934bcb15-4e37-460b-b5d9-17a26ef29cd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_position
+    - paragraphs.paragraphs_type.content_with_image_50_50_
+  module:
+    - options
+id: paragraph.content_with_image_50_50_.field_image_position
+field_name: field_image_position
+entity_type: paragraph
+bundle: content_with_image_50_50_
+label: 'Image position'
+description: 'Choose whether you want the image on the left or right. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

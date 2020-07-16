@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_content
     - field.field.node.page.field_content_sections
+    - field.field.node.page.field_hero
     - node.type.page
   module:
     - user
@@ -25,4 +27,6 @@ content:
     region: content
 hidden:
   body: true
+  field_content: true
   field_content_sections: true
+  field_hero: true

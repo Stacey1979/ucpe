@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.text_two_one_third.field_button_set
     - field.field.paragraph.text_two_one_third.field_content_column_1
     - field.field.paragraph.text_two_one_third.field_content_column_2
     - field.field.paragraph.text_two_one_third.field_optional_title
@@ -97,4 +98,5 @@ content:
       summary_handler: full
       trim_options: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_button_set: true
