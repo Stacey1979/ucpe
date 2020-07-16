@@ -8446,14 +8446,14 @@ header {
       padding: 2rem;
       position: relative; }
       .aos_additional .aos_additional_block_wrapper .aos_additional_block:hover {
-        transition: all .2s; }
+        transition: all 0.2s; }
         .aos_additional .aos_additional_block_wrapper .aos_additional_block:hover .aos_a_block_content h3,
         .aos_additional .aos_additional_block_wrapper .aos_additional_block:hover .aos_a_block_content a,
         .aos_additional .aos_additional_block_wrapper .aos_additional_block:hover .aos_a_block_content a:after {
           color: #ffffff; }
         .aos_additional .aos_additional_block_wrapper .aos_additional_block:hover #bar {
           height: 100%;
-          transition: all .2s ease-in; }
+          transition: all 0.2s ease-in; }
         .aos_additional .aos_additional_block_wrapper .aos_additional_block:hover .aos_a_block_content a:hover,
         .aos_additional .aos_additional_block_wrapper .aos_additional_block:hover .aos_a_block_content a:hover:after {
           color: #ffe264; }
@@ -8466,7 +8466,7 @@ header {
         top: 0;
         width: 100%;
         z-index: 0;
-        transition: all .2s ease-out; }
+        transition: all 0.2s ease-out; }
       .aos_additional .aos_additional_block_wrapper .aos_additional_block .aos_a_block_content {
         bottom: 2rem;
         position: absolute;
