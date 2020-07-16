@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.area_of_study.field_areas_of_study
+    - field.field.node.area_of_study.field_featured_programs
     - field.field.node.area_of_study.field_hero
     - field.field.node.area_of_study.field_intro_area_study_text
     - field.field.node.area_of_study.field_lede
+    - field.field.node.area_of_study.field_metatags
     - field.field.node.area_of_study.field_tagline
     - field.field.node.area_of_study.field_view_programs_cta
     - node.type.area_of_study
@@ -41,6 +43,7 @@ third_party_settings:
         - field_hero
         - field_view_programs_cta
         - field_intro_area_study_text
+        - field_featured_programs
         - links
     fields:
       'bundle_field:node':
@@ -53,6 +56,15 @@ targetEntityType: node
 bundle: area_of_study
 mode: default
 content:
+  field_featured_programs:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
   field_hero:
     weight: 2
     label: hidden
@@ -91,7 +103,7 @@ content:
     type: link
     region: ds_content
   links:
-    weight: 5
+    weight: 6
     region: ds_content
     settings: {  }
     third_party_settings: {  }

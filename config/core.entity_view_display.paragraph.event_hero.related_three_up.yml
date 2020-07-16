@@ -1,0 +1,36 @@
+uuid: 65d4e4a4-0bdc-4ff7-9a03-1c6f32ad244d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.related_three_up
+    - field.field.paragraph.event_hero.field_large_hero
+    - field.field.paragraph.event_hero.field_small_hero
+    - image.style.media_library
+    - paragraphs.paragraphs_type.event_hero
+  module:
+    - media
+id: paragraph.event_hero.related_three_up
+targetEntityType: paragraph
+bundle: event_hero
+mode: related_three_up
+content:
+  field_large_hero:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: media_library
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_small_hero:
+    type: media_thumbnail
+    weight: 1
+    label: hidden
+    settings:
+      image_style: media_library
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

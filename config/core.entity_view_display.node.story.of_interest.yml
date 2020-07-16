@@ -97,6 +97,7 @@ content:
 hidden:
   addtoany: true
   body: true
+  field_about_block: true
   field_author: true
   field_content_sections: true
   field_date_and_lede: true

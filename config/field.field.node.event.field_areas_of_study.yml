@@ -1,0 +1,29 @@
+uuid: c6622df0-9855-4409-baaf-772db092bf90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_areas_of_study
+    - node.type.event
+    - taxonomy.vocabulary.area_of_interest
+id: node.event.field_areas_of_study
+field_name: field_areas_of_study
+entity_type: node
+bundle: event
+label: 'Areas of Study'
+description: 'Choose the area(s) of study related to this event. To enter more than one area of study, separate with a comma. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_of_interest: area_of_interest
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
