@@ -1,0 +1,96 @@
+uuid: e3e2ce9c-b1af-4208-840c-2f2698971a76
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.masonry
+    - field.field.node.event.field_areas_of_study
+    - field.field.node.event.field_author
+    - field.field.node.event.field_content
+    - field.field.node.event.field_date_and_time
+    - field.field.node.event.field_event_hero
+    - field.field.node.event.field_form
+    - field.field.node.event.field_format
+    - field.field.node.event.field_lede
+    - field.field.node.event.field_location
+    - field.field.node.event.field_program
+    - node.type.event
+  module:
+    - ds
+    - entity_reference_revisions
+    - smart_date
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - links
+        - field_event_hero
+        - field_date_and_time
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h3
+          class: ''
+          link: false
+id: node.event.masonry
+targetEntityType: node
+bundle: event
+mode: masonry
+content:
+  field_date_and_time:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      format: month_day
+      force_chronological: false
+      format_type: medium
+    third_party_settings: {  }
+    type: smartdate_default
+    region: ds_content
+  field_event_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
+  links:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_areas_of_study: true
+  field_author: true
+  field_content: true
+  field_form: true
+  field_format: true
+  field_lede: true
+  field_location: true
+  field_program: true

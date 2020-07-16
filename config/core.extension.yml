@@ -1,4 +1,6 @@
 module:
+  address: 0
+  address_map_link: 0
   addtoany: 0
   addtocal: 0
   admin_toolbar: 0
@@ -67,6 +69,7 @@ module:
   slick_paragraphs: 0
   slick_ui: 0
   slick_views: 0
+  smart_date: 0
   smart_trim: 0
   svg_image: 0
   svg_image_responsive: 0

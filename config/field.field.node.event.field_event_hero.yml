@@ -1,0 +1,160 @@
+uuid: ba18f950-7c8c-47a7-b0fd-5c15286bbd00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_hero
+    - node.type.event
+    - paragraphs.paragraphs_type.event_hero
+  module:
+    - entity_reference_revisions
+id: node.event.field_event_hero
+field_name: field_event_hero
+entity_type: node
+bundle: event
+label: Hero
+description: 'Add either a large landscape image or a small square image to the hero. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      event_hero: event_hero
+    target_bundles_drag_drop:
+      about_person:
+        weight: 45
+        enabled: false
+      about_student:
+        weight: 46
+        enabled: false
+      at_a_glance:
+        weight: 47
+        enabled: false
+      blockquote:
+        weight: 48
+        enabled: false
+      blockquotes:
+        weight: 49
+        enabled: false
+      button_set:
+        weight: 50
+        enabled: false
+      content_sections:
+        weight: 51
+        enabled: false
+      content_with_image_50_50_:
+        weight: 52
+        enabled: false
+      cta:
+        weight: 53
+        enabled: false
+      deadlines:
+        weight: 54
+        enabled: false
+      designed_for:
+        weight: 55
+        enabled: false
+      duration:
+        weight: 56
+        enabled: false
+      event_hero:
+        enabled: true
+        weight: 57
+      form_embed:
+        weight: 58
+        enabled: false
+      full_width_content:
+        weight: 59
+        enabled: false
+      header_s_:
+        weight: 60
+        enabled: false
+      heroes:
+        weight: 61
+        enabled: false
+      horizontal_rule:
+        weight: 62
+        enabled: false
+      image_carousel:
+        weight: 63
+        enabled: false
+      image_carousel_combo:
+        weight: 64
+        enabled: false
+      in_brief:
+        weight: 68
+        enabled: false
+      instructor_program_and_courses:
+        weight: 65
+        enabled: false
+      instructor_program_courses_combo:
+        weight: 66
+        enabled: false
+      intro_paragraph:
+        weight: 67
+        enabled: false
+      large_image_with_caption_left_or:
+        weight: 69
+        enabled: false
+      ptoc_container:
+        weight: 70
+        enabled: false
+      ptoc_image:
+        weight: 71
+        enabled: false
+      ptoc_links:
+        weight: 72
+        enabled: false
+      ptoc_text:
+        weight: 73
+        enabled: false
+      related_courses:
+        weight: 74
+        enabled: false
+      related_instructors:
+        weight: 75
+        enabled: false
+      related_of_interest:
+        weight: 76
+        enabled: false
+      related_program_block:
+        weight: 77
+        enabled: false
+      statistics:
+        weight: 78
+        enabled: false
+      story_about_combo:
+        weight: 79
+        enabled: false
+      story_programs:
+        weight: 80
+        enabled: false
+      text_one_two_third:
+        weight: 81
+        enabled: false
+      text_two_one_third:
+        weight: 82
+        enabled: false
+      text_with_media_1_3_2_3_:
+        weight: 83
+        enabled: false
+      three_up_illust_img_combo:
+        weight: 84
+        enabled: false
+      three_up_image_and_text:
+        weight: 85
+        enabled: false
+      three_up_statistic:
+        weight: 86
+        enabled: false
+      three_up_statistics_combo:
+        weight: 87
+        enabled: false
+      video:
+        weight: 88
+        enabled: false
+field_type: entity_reference_revisions

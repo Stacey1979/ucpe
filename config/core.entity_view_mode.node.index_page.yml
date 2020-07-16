@@ -1,0 +1,10 @@
+uuid: 8e953495-938b-493a-b7ff-13c463c5f604
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.index_page
+label: 'Index Page'
+targetEntityType: node
+cache: true

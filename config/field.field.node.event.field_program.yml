@@ -1,0 +1,29 @@
+uuid: d57f3417-55e1-452d-a578-151fb94f7da5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program
+    - node.type.event
+    - taxonomy.vocabulary.program
+id: node.event.field_program
+field_name: field_program
+entity_type: node
+bundle: event
+label: 'Related Program(s)'
+description: 'Choose which program(s) this event relates to. To enter more than one program, separate with a comma. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      program: program
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

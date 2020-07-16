@@ -12,7 +12,7 @@ dependencies:
 id: mainnavigation
 theme: ucpe_theme
 region: content
-weight: -3
+weight: -1
 provider: null
 plugin: 'system_menu_block:main'
 settings:
@@ -20,7 +20,7 @@ settings:
   label: 'Learn more about the [current-page:title]'
   provider: system
   label_display: visible
-  level: 4
+  level: 3
   depth: 1
   expand_all_items: false
 visibility:

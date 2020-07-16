@@ -1,0 +1,120 @@
+uuid: 09c65b11-0478-419a-acae-95ad88d36ccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.index_page
+    - field.field.node.case_study.field_about_partnership
+    - field.field.node.case_study.field_areas_of_study
+    - field.field.node.case_study.field_case_study_type
+    - field.field.node.case_study.field_challenge
+    - field.field.node.case_study.field_content_sections
+    - field.field.node.case_study.field_cta
+    - field.field.node.case_study.field_date_written
+    - field.field.node.case_study.field_hero
+    - field.field.node.case_study.field_intro_paragraph
+    - field.field.node.case_study.field_lede
+    - field.field.node.case_study.field_metatags
+    - field.field.node.case_study.field_of_interest
+    - field.field.node.case_study.field_partnership_logos
+    - field.field.node.case_study.field_related_program_tag
+    - field.field.node.case_study.field_results
+    - field.field.node.case_study.field_solution
+    - node.type.case_study
+  module:
+    - ds
+    - entity_reference_revisions
+    - metatag
+    - options
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_hero
+        - node_title
+        - field_lede
+        - field_metatags
+        - field_case_study_type
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h3
+          class: ''
+          link: false
+id: node.case_study.index_page
+targetEntityType: node
+bundle: case_study
+mode: index_page
+content:
+  field_case_study_type:
+    type: list_default
+    weight: 4
+    region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_hero:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_lede:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_metatags:
+    type: metatag_empty_formatter
+    weight: 3
+    region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 5
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_about_partnership: true
+  field_areas_of_study: true
+  field_challenge: true
+  field_content_sections: true
+  field_cta: true
+  field_date_written: true
+  field_intro_paragraph: true
+  field_of_interest: true
+  field_partnership_logos: true
+  field_related_program_tag: true
+  field_results: true
+  field_solution: true

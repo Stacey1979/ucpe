@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.addition
     - field.field.node.area_of_study.field_areas_of_study
+    - field.field.node.area_of_study.field_featured_programs
     - field.field.node.area_of_study.field_hero
     - field.field.node.area_of_study.field_intro_area_study_text
     - field.field.node.area_of_study.field_lede
@@ -54,6 +55,7 @@ content: {  }
 hidden:
   addtoany: true
   field_areas_of_study: true
+  field_featured_programs: true
   field_hero: true
   field_intro_area_study_text: true
   field_lede: true

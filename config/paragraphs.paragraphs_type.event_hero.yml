@@ -1,0 +1,10 @@
+uuid: 766c4edd-d21c-404b-9711-1acef672bba0
+langcode: en
+status: true
+dependencies: {  }
+id: event_hero
+label: 'Large or Small Event Hero'
+icon_uuid: null
+icon_default: null
+description: 'Add either a large or small hero'
+behavior_plugins: {  }

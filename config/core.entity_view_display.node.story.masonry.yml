@@ -1,0 +1,110 @@
+uuid: 8542fdcc-362c-48c2-ac72-4177840e37d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.masonry
+    - field.field.node.story.body
+    - field.field.node.story.field_author
+    - field.field.node.story.field_content_sections
+    - field.field.node.story.field_date_written
+    - field.field.node.story.field_hero
+    - field.field.node.story.field_intro_paragraph
+    - field.field.node.story.field_lede
+    - field.field.node.story.field_metatags
+    - field.field.node.story.field_related_program_tag
+    - node.type.story
+  module:
+    - datetime
+    - ds
+    - entity_reference_revisions
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_hero
+        - field_date_written
+        - node_title
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h3
+          class: ''
+          link: false
+id: node.story.masonry
+targetEntityType: node
+bundle: story
+mode: masonry
+content:
+  field_about_block:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: hidden
+    settings:
+      link: '1'
+    third_party_settings: {  }
+    region: ds_content
+  field_date_written:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: abbreviated_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: ds_content
+  field_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
+  field_written_by:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  links:
+    weight: 3
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_author: true
+  field_content_sections: true
+  field_date_and_lede: true
+  field_intro_paragraph: true
+  field_lede: true
+  field_metatags: true
+  field_related_program_tag: true
+  reading_time: true
