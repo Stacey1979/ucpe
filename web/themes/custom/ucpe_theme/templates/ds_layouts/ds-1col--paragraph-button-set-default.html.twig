@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+
+<div class="btn-group" >
+  {% set linkAttributes = create_attribute(ds_content.field_primary_button.0['#url'].options.attributes) %}
+  <a {{ linkAttributes.addClass('btn') }} href="{{ ds_content.field_primary_button[0]['#url'] }}">{{ ds_content.field_primary_button[0]['#title'] }}</a>
+
+  {% set linkAttributes = create_attribute(ds_content.field_secondary_button.0['#url'].options.attributes) %}
+  <a {{ linkAttributes.addClass('btn secondary') }} href="{{ ds_content.field_secondary_button[0]['#url'] }}">{{ ds_content.field_secondary_button[0]['#title'] }}</a>
+
+  {% set linkAttributes = create_attribute(ds_content.field_tertiary_button.0['#url'].options.attributes) %}
+  <a {{ linkAttributes.addClass('btn primary') }} href="{{ ds_content.field_tertiary_button[0]['#url'] }}">{{ ds_content.field_tertiary_button[0]['#title'] }}</a>
+</div>

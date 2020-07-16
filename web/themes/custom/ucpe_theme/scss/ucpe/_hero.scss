@@ -1,23 +1,20 @@
 .hero_wrapper {
   position: relative;
 
-  // photo attribute
-  .field--name-field-image-attribution {
-    @include bodycopy_S($black_03);
-    position: absolute;
-    bottom: -25px;
-    right: 15px;
-    @media only screen and (min-width: 1800px) {
-      right: calc((100vw - 1800px) / 2);
-    }
-
-    &:before {
-      @include iconfont($black_03, "\63");
-      font-size: 1.5rem;
-      vertical-align: text-bottom;
+  .hero_content {
+    h1 {
+      @include heading_M($black);
+      margin: $baseline * 2 0;
+      @include screen("desktop") {
+        @include heading_L($black);
+        margin: $baseline * 3 0;
+      }
+      @include screen("desktop-wide") {
+        @include heading_XL($black);
+      }
     }
   }
-
+  // HERO FULL
   &.hero_full {
     background-color: $bg-03;
     background-image: url("#{$image-path}/pattern_01.svg");
@@ -35,5 +32,81 @@
         text-align: center;
       }
     }
+
+    // photo attribute
+    .field--name-field-image-attribution {
+      @include bodycopy_S($black_03);
+      position: absolute;
+      bottom: -25px;
+      right: 15px;
+      @media only screen and (min-width: 1800px) {
+        right: calc((100vw - 1800px) / 2);
+      }
+
+      &:before {
+        @include iconfont($black_03, "\63");
+        font-size: 1.5rem;
+        vertical-align: text-bottom;
+      }
+    }
   }
+
+  // END -- HERO FULL
+
+  // HERO PROGRAM DETAIL
+  &.hero_program_detail {
+    padding: $baseline * 4 0;
+    margin-bottom: $baseline * 5;
+
+    .hero {
+      @include make-container();
+
+      &:before {
+        background-color: $bg_02;
+        content: "";
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 0;
+        height: 100%;
+        z-index: -1;
+        @include screen("tablet-wide") {
+          right: calc(50% + -30rem);
+        }
+      }
+
+      .hero_content {
+        @include make-sm-column(7);
+        opacity: 0;
+        animation: opacity_animation 1.5s 1 0.5s ease;
+        animation-fill-mode: forwards;
+
+        .program_meta .category .category_name {
+          background-color: $bg_02;
+        }
+
+        p {
+          @include bodycopy_L($black);
+          margin-bottom: $baseline * 3;
+        }
+      }
+      .hero_img {
+        @include make-sm-column(5);
+        @include make-lg-column(4);
+        @include make-lg-column-push(1);
+        margin-top: $baseline * 3;
+
+        @include screen("tablet") {
+          margin-top: 0;
+        }
+
+        img {
+          animation: hero_image_slideIn 1s 1 0s ease;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+
+  // END -- HERO PROGRAM DETAIL
 }
