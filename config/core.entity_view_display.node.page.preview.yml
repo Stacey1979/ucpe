@@ -1,8 +1,9 @@
-uuid: 0a752632-86aa-451e-b8e7-a2de5903eef1
+uuid: 893935a5-4598-4c25-bd7e-39dabe2fcb0a
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.preview
     - field.field.node.page.field_content
     - field.field.node.page.field_content_sections
     - field.field.node.page.field_hero
@@ -19,16 +20,13 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
-          ds_content: {  }
     regions:
       ds_content:
         - links
@@ -37,41 +35,41 @@ third_party_settings:
         - field_content_sections
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
-id: node.page.default
+id: node.page.preview
 targetEntityType: node
 bundle: page
-mode: default
+mode: preview
 content:
   field_content:
     weight: 2
-    label: hidden
+    label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
-    region: ds_content
+    region: content
   field_content_sections:
     weight: 3
-    label: hidden
+    label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
-    region: ds_content
+    region: content
   field_hero:
     weight: 1
-    label: hidden
+    label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
-    region: ds_content
+    region: content
   links:
     weight: 0
-    region: ds_content
+    region: content
     settings: {  }
     third_party_settings: {  }
 hidden:

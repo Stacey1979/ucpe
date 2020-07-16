@@ -1,0 +1,21 @@
+uuid: dec62e3e-d0de-4140-b343-22d9b2b8f047
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_optional_title
+    - paragraphs.paragraphs_type.strength_in_numbers
+id: paragraph.strength_in_numbers.field_optional_title
+field_name: field_optional_title
+entity_type: paragraph
+bundle: strength_in_numbers
+label: Header
+description: 'The title of the Strength in Numbers section'
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Strength by Numbers'
+default_value_callback: ''
+settings: {  }
+field_type: string

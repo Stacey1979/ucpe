@@ -1,0 +1,29 @@
+uuid: 814cbffa-c422-48eb-9525-f4f9cd1ed7d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_portrait_image
+    - media.type.image
+    - paragraphs.paragraphs_type.large_image_with_header_and_cont
+id: paragraph.large_image_with_header_and_cont.field_portrait_image
+field_name: field_portrait_image
+entity_type: paragraph
+bundle: large_image_with_header_and_cont
+label: 'Portrait Image'
+description: 'Choose a portrait style image.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

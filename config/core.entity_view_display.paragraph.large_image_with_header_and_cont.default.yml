@@ -1,16 +1,14 @@
-uuid: 4c94e7fc-a8b0-4d83-8b08-80120ce80154
+uuid: 89863a5b-4e61-464d-8880-8fac7b9b4b1c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text_two_one_third.field_button_set
-    - field.field.paragraph.text_two_one_third.field_content_column_1
-    - field.field.paragraph.text_two_one_third.field_content_column_2
-    - field.field.paragraph.text_two_one_third.field_optional_title
-    - paragraphs.paragraphs_type.text_two_one_third
+    - field.field.paragraph.large_image_with_header_and_cont.field_content_column_2
+    - field.field.paragraph.large_image_with_header_and_cont.field_optional_title
+    - field.field.paragraph.large_image_with_header_and_cont.field_portrait_image
+    - paragraphs.paragraphs_type.large_image_with_header_and_cont
   module:
     - ds
-    - entity_reference_revisions
     - text
 third_party_settings:
   ds:
@@ -34,32 +32,15 @@ third_party_settings:
           right: {  }
     regions:
       left:
-        - field_optional_title
-        - field_content_column_1
-        - field_button_set
+        - field_portrait_image
       right:
+        - field_optional_title
         - field_content_column_2
-id: paragraph.text_two_one_third.default
+id: paragraph.large_image_with_header_and_cont.default
 targetEntityType: paragraph
-bundle: text_two_one_third
+bundle: large_image_with_header_and_cont
 mode: default
 content:
-  field_button_set:
-    type: entity_reference_revisions_entity_view
-    weight: 3
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: left
-  field_content_column_1:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: left
   field_content_column_2:
     weight: 2
     label: hidden
@@ -68,11 +49,20 @@ content:
     type: text_default
     region: right
   field_optional_title:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: right
+  field_portrait_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: left
 hidden: {  }
