@@ -5,18 +5,19 @@ dependencies:
   module:
     - node
 id: owned_program
-label: 'Owned Program'
+label: 'Program Landing Pages'
 type: 'canonical_entities:node'
-pattern: '/find-your-fit/[node:field_program_type]/[node:field_related_program_tag]/[node:title]'
+pattern: '/find-your-fit/[node:field_program_type]/[node:field_program]'
 selection_criteria:
-  f96a9009-272a-4198-acf9-6745aa8677ec:
+  949ba211-ec29-4242-b99b-93bfefb1dd1f:
     id: node_type
     bundles:
+      non_owned_program_landing_page: non_owned_program_landing_page
       owned_program_landing_page: owned_program_landing_page
     negate: false
     context_mapping:
       node: node
-    uuid: f96a9009-272a-4198-acf9-6745aa8677ec
+    uuid: 949ba211-ec29-4242-b99b-93bfefb1dd1f
 selection_logic: and
 weight: -5
 relationships: {  }

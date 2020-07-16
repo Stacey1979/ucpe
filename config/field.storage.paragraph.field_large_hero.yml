@@ -1,0 +1,20 @@
+uuid: dac1cd23-47b8-4200-ba2d-b4a248161cb0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_large_hero
+field_name: field_large_hero
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

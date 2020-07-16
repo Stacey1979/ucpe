@@ -1,0 +1,47 @@
+uuid: 828ffdce-4d11-477c-967e-3ec7a03a3f0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_programs_for_area_of_stu.field_related_programs
+    - paragraphs.paragraphs_type.related_programs_for_area_of_stu
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_related_programs
+id: paragraph.related_programs_for_area_of_stu.default
+targetEntityType: paragraph
+bundle: related_programs_for_area_of_stu
+mode: default
+content:
+  field_related_programs:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
+    region: ds_content
+hidden: {  }
