@@ -97,12 +97,13 @@ content:
 hidden:
   addtoany: true
   body: true
+  field_about_block: true
   field_author: true
   field_content_sections: true
   field_date_and_lede: true
   field_intro_paragraph: true
   field_lede: true
-  field_written_by: true
   field_metatags: true
+  field_written_by: true
   links: true
   reading_time: true

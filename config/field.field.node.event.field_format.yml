@@ -1,0 +1,21 @@
+uuid: d90fe45e-f99d-4028-a23b-8095bb4334ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format
+    - node.type.event
+  module:
+    - options
+id: node.event.field_format
+field_name: field_format
+entity_type: node
+bundle: event
+label: Format
+description: 'Choose how the event is offered. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

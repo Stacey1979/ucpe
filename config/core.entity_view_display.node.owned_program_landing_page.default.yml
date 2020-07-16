@@ -236,4 +236,6 @@ content:
 hidden:
   addtoany: true
   field_deadlines: true
+  field_metatags: true
+  field_program: true
   field_program_illustration: true

@@ -1,0 +1,16 @@
+uuid: 5746822c-edf3-4a42-9eb3-08a13b6c82e9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HAQ6FMGj93La_53FLVk4SlAxCwTQPijwqTynbu-5mMk
+id: compact
+label: Compact
+date_format: 'M j Y'
+time_format: 'g:ia'
+time_hour_format: 'g:ia'
+allday_label: ''
+separator: ' - '
+join: ' | '
+ampm_reduce: '1'
+date_first: '1'

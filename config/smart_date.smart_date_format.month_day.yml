@@ -1,0 +1,14 @@
+uuid: 83267227-3c75-46cb-be18-49619ada8799
+langcode: en
+status: true
+dependencies: {  }
+id: month_day
+label: Month/Day
+date_format: 'M d'
+time_format: ''
+time_hour_format: ''
+allday_label: 'All day'
+separator: ' - '
+join: ', '
+ampm_reduce: '1'
+date_first: '1'

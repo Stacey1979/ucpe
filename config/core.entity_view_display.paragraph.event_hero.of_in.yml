@@ -1,0 +1,33 @@
+uuid: 84e200d6-26a1-46a8-8e90-4d5d17d74659
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.of_in
+    - field.field.paragraph.event_hero.field_large_hero
+    - field.field.paragraph.event_hero.field_small_hero
+    - paragraphs.paragraphs_type.event_hero
+id: paragraph.event_hero.of_in
+targetEntityType: paragraph
+bundle: event_hero
+mode: of_in
+content:
+  field_large_hero:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: of_interest
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_small_hero:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: of_interest
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

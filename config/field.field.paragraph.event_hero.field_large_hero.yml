@@ -1,0 +1,29 @@
+uuid: f9441210-09bf-4761-8e39-39bfe8a3db54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_large_hero
+    - media.type.image
+    - paragraphs.paragraphs_type.event_hero
+id: paragraph.event_hero.field_large_hero
+field_name: field_large_hero
+entity_type: paragraph
+bundle: event_hero
+label: 'Large Hero'
+description: 'Add a large hero image to the event.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

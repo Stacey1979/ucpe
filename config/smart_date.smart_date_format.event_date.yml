@@ -1,0 +1,14 @@
+uuid: b9a9403f-8650-4eeb-bfec-f2d0b0df3f70
+langcode: en
+status: true
+dependencies: {  }
+id: event_date
+label: 'Event Date'
+date_format: 'F j, Y'
+time_format: 'g:i a'
+time_hour_format: ''
+allday_label: 'All day'
+separator: ' - '
+join: ' | '
+ampm_reduce: '1'
+date_first: '1'

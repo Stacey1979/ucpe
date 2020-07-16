@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
+    - field.field.node.case_study.field_metatags
     - field.field.node.case_study.field_of_interest
     - field.field.node.case_study.field_partnership_logos
     - field.field.node.case_study.field_related_program_tag
@@ -24,6 +25,7 @@ dependencies:
     - ds
     - entity_reference_revisions
     - media
+    - metatag
     - options
     - text
     - user
@@ -47,6 +49,7 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
+        - field_metatags
         - field_case_study_type
         - links
         - field_hero
@@ -59,7 +62,6 @@ third_party_settings:
         - field_results
         - field_about_partnership
         - field_cta
-        - field_metatags
         - field_partnership_logos
         - field_of_interest
 id: node.case_study.default
@@ -136,6 +138,13 @@ content:
     third_party_settings: {  }
     type: text_default
     region: ds_content
+  field_metatags:
+    type: metatag_empty_formatter
+    weight: 0
+    region: ds_content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_of_interest:
     type: entity_reference_revisions_entity_view
     weight: 13
@@ -178,4 +187,5 @@ content:
 hidden:
   field_areas_of_study: true
   field_date_written: true
+  field_metatags: true
   field_related_program_tag: true

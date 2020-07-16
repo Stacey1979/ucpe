@@ -1,0 +1,41 @@
+uuid: 056bc492-cc3f-45d9-bf08-c481f1db78d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.field_areas_of_study
+    - field.field.node.event.field_author
+    - field.field.node.event.field_content
+    - field.field.node.event.field_date_and_time
+    - field.field.node.event.field_event_hero
+    - field.field.node.event.field_form
+    - field.field.node.event.field_format
+    - field.field.node.event.field_lede
+    - field.field.node.event.field_location
+    - field.field.node.event.field_program
+    - node.type.event
+  module:
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_areas_of_study: true
+  field_author: true
+  field_content: true
+  field_date_and_time: true
+  field_event_hero: true
+  field_form: true
+  field_format: true
+  field_lede: true
+  field_location: true
+  field_program: true

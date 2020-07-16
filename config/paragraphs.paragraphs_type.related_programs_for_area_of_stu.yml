@@ -1,0 +1,10 @@
+uuid: 001ce7e4-097f-4d79-9f81-c7118b9d5148
+langcode: en
+status: true
+dependencies: {  }
+id: related_programs_for_area_of_stu
+label: 'Related Programs for Area of Study'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,32 @@
+uuid: a392d54d-ef40-43db-a53f-92f108f90ad7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.event_hero.field_large_hero
+    - field.field.paragraph.event_hero.field_small_hero
+    - paragraphs.paragraphs_type.event_hero
+  module:
+    - media_library
+id: paragraph.event_hero.default
+targetEntityType: paragraph
+bundle: event_hero
+mode: default
+content:
+  field_large_hero:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_small_hero:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

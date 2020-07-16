@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
     - field.field.node.story.field_lede
+    - field.field.node.story.field_metatags
     - field.field.node.story.field_related_program_tag
     - node.type.story
   module:
@@ -38,11 +39,11 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
+        - field_author
         - field_hero
         - field_date_written
         - field_lede
         - reading_time
-        - field_author
         - addtoany
         - field_intro_paragraph
         - field_content_sections
@@ -62,10 +63,13 @@ content:
     weight: 7
     label: hidden
     settings:
+      link: '1'
+    third_party_settings: {  }
+    region: ds_content
+    label: above
+    settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-    region: ds_content
   field_content_sections:
     weight: 8
     label: hidden
@@ -129,5 +133,7 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_author: true
   field_date_and_lede: true
+  field_metatags: true
   field_related_program_tag: true
