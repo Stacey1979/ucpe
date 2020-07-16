@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+
+<div class="btn-group" >
+  <a href="{{ ds_content.field_primary_button[0]['#url'] }}" class="btn">{{ ds_content.field_primary_button[0]['#title'] }}</a>
+  <a href="{{ ds_content.field_secondary_button[0]['#url'] }}" class="btn secondary">{{ ds_content.field_secondary_button[0]['#title'] }}</a>
+  <a href="{{ ds_content.field_tertiary_button[0]['#url'] }}" class="btn primary">{{ ds_content.field_tertiary_button[0]['#title'] }}</a>
+</div>

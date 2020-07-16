@@ -201,6 +201,73 @@
   }
 }
 
+// VIDEO EMBEDS
+
+.video-embed-field-responsive-video {
+  margin-bottom: $baseline * 5 !important;
+  iframe {
+  }
+}
+
+// PROGRAM META INFORMATION (SHEILD STYLES)
+.program_meta {
+  svg {
+    fill: currentColor;
+    color: $maroon;
+  }
+
+  .category {
+    display: inline-block;
+
+    .category_name {
+      background-color: white;
+      @include utility_XS($black);
+      left: -24px;
+      position: relative;
+      padding: 2px;
+      top: -13px;
+
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+
+      > div {
+        display: inline-block;
+      }
+    }
+
+    .meta {
+      @include bodycopy_XS($black, $bold: false);
+      display: block;
+      @include screen("desktop") {
+        display: inline;
+        position: relative;
+        top: -13px;
+      }
+
+      a {
+        @include bodycopy_S($black, $bold: true);
+        border-bottom: solid 2px $maroon;
+        text-decoration: none;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+          color: $maroon;
+          transition: all 0.2s ease-in;
+        }
+      }
+
+      .divider {
+        color: $divider-gray;
+        margin: 0 $baseline/2;
+        vertical-align: bottom;
+        font-size: $baseline * 1.2;
+      }
+    }
+  }
+}
+
 // STATS
 
 .stat_number {
@@ -387,9 +454,9 @@
   }
 }
 .cta_aos {
+  @include make-container();
   @include make-row();
   background-color: $maroon;
-  @include clearfix();
   padding: $baseline * 2 0;
   overflow: hidden;
 
@@ -398,6 +465,7 @@
   }
   @include screen("tablet-wide") {
     padding: $baseline * 3 0 0;
+    overflow: visible;
   }
   @include screen("desktop") {
     padding: $baseline * 4 0 0;
@@ -407,85 +475,84 @@
   }
 
   .content {
-    @include make-sm-column(9);
-    @include make-sm-column-push(2);
+    @include make-sm-column(12);
+    @include make-lg-column(9);
+    @include make-lg-column-push(2);
   }
-
-  .wrapper {
-    @include make-container();
-
+  .cta_photo {
     figure {
       @include make-sm-column(6);
       @include make-lg-column(4);
       //margin-right: $baseline*4;
+
+      .field--name-field-image-attribution {
+        display: none;
+      }
+    }
+    &:after {
+      @include screen("tablet") {
+        background-color: $bg-05;
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: $baseline * 2;
+        bottom: 0;
+        width: 100vw;
+        z-index: -5;
+      }
+    }
+  }
+
+  .cta_content {
+    @include make-sm-column(6);
+    @include make-lg-column(8);
+    background-color: $maroon;
+    padding: $baseline * 2 $baseline $baseline;
+    margin-top: -$baseline;
+
+    @include screen("tablet") {
+      margin-top: -$baseline * 2;
+      padding: $baseline * 3 $baseline * 2 $baseline * 2;
     }
 
-    .cta_content {
-      @include make-sm-column(6);
-      @include make-lg-column(8);
-      background-color: $maroon;
-      padding: $baseline * 2 $baseline $baseline;
-      margin-top: -$baseline;
+    @include screen("tablet-wide") {
+      margin-top: -$baseline * 3;
+      padding: $baseline * 4 $baseline * 3 $baseline * 3;
+    }
+
+    @include screen("desktop") {
+      margin-top: -$baseline * 4;
+      padding: $baseline * 5 $baseline * 4 $baseline * 4;
+    }
+
+    @include screen("desktop-wide") {
+      margin-top: -$baseline * 5;
+      padding: $baseline * 6 $baseline * 4 $baseline * 4;
+    }
+    &:before {
       @include screen("tablet") {
-        margin-top: -$baseline * 2;
-        padding: $baseline * 3 $baseline * 2 $baseline * 2;
+        background-color: $maroon;
+        content: "";
+        height: 100%;
+        position: absolute;
+        right: 0;
+        width: 100vw;
+        top: 0;
+        z-index: -1;
       }
-      @include screen("tablet-wide") {
-        margin-top: -$baseline * 3;
-        padding: $baseline * 4 $baseline * 3 $baseline * 3;
-      }
-      @include screen("desktop") {
-        margin-top: -$baseline * 4;
-        padding: $baseline * 5 $baseline * 4 $baseline * 4;
-      }
-      @include screen("desktop-wide") {
-        margin-top: -$baseline * 5;
-        padding: $baseline * 6 $baseline * 4 $baseline * 4;
-      }
-      &:before {
-        @include screen("tablet") {
-          background-color: $maroon;
-          content: "";
-          height: calc(100% + 1rem);
-          position: absolute;
-          right: 0;
-          width: $baseline * 1000;
-          top: 0;
-          z-index: -1;
-        }
-        @include screen("desktop") {
-          height: calc(100% + 2rem);
-        }
-        @include screen("desktop-wide") {
-          height: calc(100% + 4rem);
-        }
-      }
+    }
 
-      &:after {
-        @include screen("tablet") {
-          background-color: $bg-05;
-          content: "";
-          position: absolute;
-          height: 150%;
-          left: -15px;
-          bottom: -100%;
-          width: $baseline * 1000;
-          z-index: -5;
-        }
-      }
-
-      h3,
-      p {
-        color: $white;
-      }
-      h3 {
-        @include bodycopy_XL($white, $bold: true);
-        margin-bottom: $baseline * 1.5;
-      }
-      a.learnmore,
-      a.learnmore:after {
-        color: $mustard;
-      }
+    h3,
+    p {
+      color: $white;
+    }
+    h3 {
+      @include bodycopy_XL($white, $bold: true);
+      margin-bottom: $baseline * 1.5;
+    }
+    a.learnmore,
+    a.learnmore:after {
+      color: $mustard;
     }
   }
 }
@@ -619,48 +686,6 @@
     padding: $baseline;
     position: relative;
     text-align: center;
-    // this might not be needed - unless we want to make the icon editable via css
-    svg {
-      fill: currentColor;
-      color: $maroon;
-    }
-
-    .category {
-      background-color: $white;
-      bottom: -40px;
-      padding: $baseline;
-      position: absolute;
-      left: 0;
-
-      .category_name {
-        background-color: white;
-        @include utility_XS($black);
-        left: -24px;
-        position: relative;
-        padding: 2px;
-        top: -12px;
-
-        > div {
-          display: inline-block;
-        }
-      }
-
-      .meta {
-        @include bodycopy_XS($black, $bold: false);
-        display: block;
-        @include screen("tablet-wide") {
-          display: inline;
-          position: relative;
-          top: -12px;
-        }
-        .divider {
-          color: $divider-gray;
-          margin: 0 $baseline/2;
-          vertical-align: bottom;
-          font-size: $baseline * 1.2;
-        }
-      }
-    }
   }
   .content {
     h4 {
@@ -685,13 +710,25 @@
     .img {
       @include make-sm-column(6);
       @include make-lg-column(12);
+      margin-bottom: 0;
+
+      .program_meta {
+        background-color: $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: $baseline $baseline/2 0;
+      }
     }
     .content {
       @include make-sm-column(6);
       @include make-lg-column(12);
 
+      h4,
       h4 a {
         @include heading_S($plum);
+      }
+      h4 a {
         text-decoration: none;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -735,8 +772,12 @@
         @include make-sm-column(8);
       }
 
+      h4,
       h4 a {
         @include heading_XS($plum);
+      }
+      h4 a {
+        margin: $baseline * 0.625 0;
         text-decoration: none;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -762,5 +803,84 @@
   }
   h2 {
     @include bodycopy_XL($maroon, $bold: true);
+  }
+}
+
+// DESIGNED FOR
+
+.designed_for {
+  border-top: solid 1px $divider-gray;
+  border-bottom: solid 1px $divider-gray;
+  margin: $baseline * 2 0 $baseline * 3;
+
+  @include screen("tablet-wide") {
+    display: flex;
+    align-items: center;
+    margin: $baseline * 3 0 $baseline * 5;
+  }
+
+  .df_graphic {
+    position: relative;
+    svg {
+      color: $maroon;
+      display: block;
+      fill: currentColor;
+      margin: 0 auto;
+      padding: $baseline * 2.5;
+      width: 150px;
+
+      @include screen("tablet-wide") {
+      }
+    }
+
+    h4 {
+      @include utility_XS($black);
+      letter-spacing: 1px;
+      position: absolute;
+      top: calc(50% - 18px);
+      text-align: center;
+      width: 100%;
+      background-color: white;
+      margin: 0;
+      padding: 5px 0;
+
+      @include screen("tablet-wide") {
+      }
+    }
+  }
+  .df_description {
+    padding: 0 $baseline * 2 $baseline * 2;
+
+    @include screen("tablet-wide") {
+      padding: $baseline * 2;
+      flex: 1 0 0%;
+      border-left: solid 1px $divider-gray;
+    }
+
+    p {
+      font-family: $serif-font;
+      font-weight: $serif-regular;
+      font-size: 1.1rem;
+      font-style: italic;
+      margin: 0;
+      text-align: center;
+
+      @include screen("tablet-wide") {
+        text-align: left;
+      }
+    }
+  }
+}
+
+// NEXT STEPS BUTTON SET
+
+.next_steps {
+  border-top: solid 1px $divider-gray;
+  border-bottom: solid 1px $divider-gray;
+  margin: $baseline * 2 0 $baseline * 3;
+  padding: $baseline * 3 0;
+
+  h4 {
+    @include heading_XS($black);
   }
 }
