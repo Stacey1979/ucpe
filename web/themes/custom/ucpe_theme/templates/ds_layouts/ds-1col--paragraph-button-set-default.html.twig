@@ -11,7 +11,12 @@
 #}
 
 <div class="btn-group" >
-  <a href="{{ ds_content.field_primary_button[0]['#url'] }}" class="btn">{{ ds_content.field_primary_button[0]['#title'] }}</a>
-  <a href="{{ ds_content.field_secondary_button[0]['#url'] }}" class="btn secondary">{{ ds_content.field_secondary_button[0]['#title'] }}</a>
-  <a href="{{ ds_content.field_tertiary_button[0]['#url'] }}" class="btn primary">{{ ds_content.field_tertiary_button[0]['#title'] }}</a>
+  {% set linkAttributes = create_attribute(ds_content.field_primary_button.0['#url'].options.attributes) %}
+  <a {{ linkAttributes.addClass('btn') }} href="{{ ds_content.field_primary_button[0]['#url'] }}">{{ ds_content.field_primary_button[0]['#title'] }}</a>
+
+  {% set linkAttributes = create_attribute(ds_content.field_secondary_button.0['#url'].options.attributes) %}
+  <a {{ linkAttributes.addClass('btn secondary') }} href="{{ ds_content.field_secondary_button[0]['#url'] }}">{{ ds_content.field_secondary_button[0]['#title'] }}</a>
+
+  {% set linkAttributes = create_attribute(ds_content.field_tertiary_button.0['#url'].options.attributes) %}
+  <a {{ linkAttributes.addClass('btn primary') }} href="{{ ds_content.field_tertiary_button[0]['#url'] }}">{{ ds_content.field_tertiary_button[0]['#title'] }}</a>
 </div>
