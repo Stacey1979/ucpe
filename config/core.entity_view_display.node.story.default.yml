@@ -62,9 +62,8 @@ content:
     weight: 7
     label: hidden
     settings:
-      link: true
+      link: '1'
     third_party_settings: {  }
-    type: entity_reference_label
     region: ds_content
   field_content_sections:
     weight: 8
@@ -129,5 +128,7 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_author: true
   field_date_and_lede: true
+  field_metatags: true
   field_related_program_tag: true

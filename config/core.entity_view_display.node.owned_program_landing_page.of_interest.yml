@@ -94,7 +94,9 @@ hidden:
   field_hero_cta_button: true
   field_intro_paragraph: true
   field_lede: true
+  field_metatags: true
   field_of_interest: true
   field_offered_by: true
+  field_program: true
   field_program_type: true
   field_video: true

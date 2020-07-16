@@ -155,6 +155,7 @@ hidden:
   field_cta: true
   field_intro_paragraph: true
   field_lede: true
+  field_metatags: true
   field_of_interest: true
   field_partnership_logos: true
   field_related_program_tag: true

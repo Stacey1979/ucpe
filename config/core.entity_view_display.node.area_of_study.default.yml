@@ -98,4 +98,5 @@ content:
 hidden:
   addtoany: true
   field_areas_of_study: true
+  field_metatags: true
   field_tagline: true

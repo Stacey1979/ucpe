@@ -178,4 +178,5 @@ content:
 hidden:
   field_areas_of_study: true
   field_date_written: true
+  field_metatags: true
   field_related_program_tag: true
