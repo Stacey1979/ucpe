@@ -12,20 +12,20 @@
     <dl>
       <dt>Type</dt>
       <dd>
-        <span class="program_type">{{ ds_content.group_type.field_program_type|field_value }}</span>
+        {{ ds_content.group_type.field_program_type|field_value }}
         {% if paragraph.field_confers_alumni_status.entity.label == "Confers alumni status" %}
           <span class="confers">Confers Alumni Status</span>
         {% endif %}
       </dd>
       <dt>Enrollment</dt>
-      <dd>{{ ds_content.field_enrollment|field_value }}</dd>
+      <dd>{{ ds_content.field_enrollment|field_value|safe_join(', ') }}</dd>
       <dt>Duration</dt>
       <dd>{{ ds_content.field_duration|field_value }}</dd>
       <dt>Format</dt>
-      <dd>{{ ds_content.field_format|field_value }}</dd>
+      <dd>{{ ds_content.field_format|field_value|safe_join(', ')  }}</dd>
       <dt>Cost</dt>
       <dd>
-        <span class="cost"><sup>$</sup>{{ ds_content.group_cost.field_cost|field_value }}</span>
-        <span class="fin_aid">{{ ds_content.group_cost.field_link_to_financial_aid }}</span>
+        <span class="cost"><sup>$</sup>{{ ds_content.group_cost.field_cost|field_value }} <em>tuition before fees</em></span>
+        <span class="fin_aid">{{ ds_content.group_cost.field_link_to_financial_aid|field_value }}</span>
       </dd>
     </dl>

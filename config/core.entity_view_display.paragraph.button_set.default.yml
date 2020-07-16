@@ -8,7 +8,28 @@ dependencies:
     - field.field.paragraph.button_set.field_tertiary_button
     - paragraphs.paragraphs_type.button_set
   module:
+    - ds
     - link
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - field_primary_button
+        - field_secondary_button
+        - field_tertiary_button
 id: paragraph.button_set.default
 targetEntityType: paragraph
 bundle: button_set
@@ -21,8 +42,8 @@ content:
       trim_length: 80
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
+      rel: '0'
+      target: '0'
     third_party_settings: {  }
     type: link
     region: content

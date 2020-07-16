@@ -396,15 +396,96 @@
 
   > .content {
     background-color: $white;
-    margin-top: -$baseline * 10;
+
     @include make-sm-column(12);
     @include screen("tablet-wide") {
       @include make-sm-column(10);
-      @include make-sm-column-push(1);
     }
     @include screen("desktop-wide") {
       @include make-sm-column(8);
-      @include make-sm-column-push(2);
     }
+  }
+
+  .program_preview {
+    border-bottom: solid 2px $divider-gray;
+
+    @include screen("phablet") {
+      display: flex;
+      margin-bottom: $baseline * 5;
+      padding-bottom: $baseline * 5;
+    }
+
+    .col {
+      padding-right: $baseline;
+      @include screen("phablet") {
+        flex: 1;
+      }
+
+      h3 {
+        @include utility_M($black_02);
+      }
+
+      dl {
+        dt,
+        dd {
+          @include screen("desktop") {
+            float: left;
+          }
+        }
+        dt {
+          @include bodycopy_M($black);
+          @include screen("desktop") {
+            width: 25%;
+            clear: left;
+          }
+        }
+        dd {
+          @include bodycopy_M($black, $bold: true);
+          margin-bottom: $baseline;
+          @include screen("desktop") {
+            width: 75%;
+          }
+
+          .confers {
+            display: block;
+            &:before {
+            }
+          }
+          .cost em {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 90%;
+          }
+          .fin_aid {
+            display: block;
+            > a {
+              border-bottom: solid 2px $maroon;
+              color: $plum;
+              padding: 0 0 2px;
+              margin: 0.75rem 0;
+              transition: all 0.2s ease-out;
+              text-decoration: none;
+
+              &:hover {
+                color: $maroon;
+                transition: all 0.2s ease-in;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .intro {
+    p {
+      @include heading_S($maroon);
+      margin-bottom: $baseline * 4;
+    }
+  }
+
+  .cta_aos {
+    clear: both;
+    width: 100%;
   }
 }

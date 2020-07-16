@@ -7,6 +7,28 @@ dependencies:
     - field.field.paragraph.duration.field_duration_enrollment
     - field.field.paragraph.duration.field_program_duration
     - paragraphs.paragraphs_type.duration
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - field_duration_actual
+        - field_program_duration
+        - field_duration_enrollment
 id: paragraph.duration.default
 targetEntityType: paragraph
 bundle: duration
