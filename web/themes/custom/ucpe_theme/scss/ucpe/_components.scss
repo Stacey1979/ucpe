@@ -257,13 +257,6 @@
           transition: all 0.2s ease-in;
         }
       }
-
-      .divider {
-        color: $divider-gray;
-        margin: 0 $baseline/2;
-        vertical-align: bottom;
-        font-size: $baseline * 1.2;
-      }
     }
   }
 }
@@ -393,13 +386,21 @@
   .cta_content {
     @include make-sm-column(8);
     h3 {
-      @include heading_XS($black);
-      margin-top: 0;
+      @include heading_S($black);
+      margin: $baseline * 2 0 $baseline/2;
+      @include screen("tablet") {
+        margin: 0 0 $baseline;
+      }
     }
   }
   figure.cta_photo {
-    text-align: center;
     @include make-sm-column(4);
+    text-align: center;
+    margin-bottom: $baseline;
+
+    @include screen("tablet") {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -581,12 +582,51 @@
   }
 }
 
+//DEF LISTS FOR STORY PROFILE, PROGRAM PREVIEW
+.program_preview,
+.story_profile {
+  dl {
+    margin-bottom: 0;
+
+    @include screen("desktop") {
+      dt,
+      dd {
+        float: left;
+      }
+    }
+
+    dt {
+      @include bodycopy_M($black, $bold: true);
+      clear: left;
+      font-weight: bold;
+
+      @include screen("desktop") {
+        margin-bottom: $baseline;
+        margin-right: 5%;
+        width: 25%;
+        clear: left;
+      }
+    }
+    dd {
+      @include bodycopy_M($black, $bold: false);
+      margin-bottom: $baseline;
+      @include screen("desktop") {
+        width: 70%;
+      }
+      p {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
 // Student Profile
 
 .story_profile {
   @include make-sm-column(12);
-  @include make-md-column(8);
-  @include make-lg-column(6);
+  @include screen("tablet-wide") {
+    @include make-sm-column(7);
+  }
   background-color: $bg_02;
   margin-bottom: 2rem;
   padding: $baseline * 2;
@@ -605,41 +645,9 @@
     }
   }
 
-  h3 {
+  h4 {
     @include heading_S($black);
     margin: 0 0 $baseline * 2;
-  }
-
-  dl {
-    margin-bottom: 0;
-
-    @include screen("tablet") {
-      dt,
-      dd {
-        float: left;
-      }
-    }
-
-    dt {
-      @include bodycopy_M($black, $bold: true);
-      clear: left;
-      font-weight: bold;
-      margin-bottom: $baseline;
-
-      @include screen("tablet") {
-        margin-right: 5%;
-        width: 30%;
-      }
-    }
-
-    dd {
-      @include bodycopy_M($black, $bold: false);
-      margin-bottom: $baseline;
-      width: 65%;
-      p {
-        margin-bottom: 0 !important;
-      }
-    }
   }
 }
 
@@ -648,20 +656,27 @@
 .related_program {
   @include make-row();
   @include make-sm-column(6);
-  @include make-md-column(5);
+  @include screen("tablet-wide") {
+    @include make-md-column(5);
+  }
   margin-bottom: $baseline * 2;
 
   &.right {
     float: right;
     @include screen("tablet") {
-      margin-left: $baseline;
-      padding-left: $baseline;
+      border-left: solid 1px $divider-gray;
+      margin-left: $baseline * 1.5;
+      padding-left: $baseline * 1.5;
     }
     @include screen("tablet-wide") {
-      border-left: solid 1px $divider-gray;
-      margin-right: -16.66667%;
-      margin-left: $baseline * 2;
-      padding-left: $baseline * 2;
+      margin-left: $baseline * 3;
+      padding-left: $baseline * 3;
+    }
+    @include screen("desktop") {
+      margin-right: -8.3%;
+    }
+    @include screen("desktop-wide") {
+      margin-right: -16.6666667%;
     }
   }
 
@@ -669,15 +684,20 @@
     float: left;
 
     @include screen("tablet") {
-      margin-right: $baseline;
-      padding-right: $baseline;
+      border-right: solid 1px $divider-gray;
+      margin-right: $baseline * 1.5;
+      padding-right: $baseline * 1.5;
     }
 
     @include screen("tablet-wide") {
-      border-right: solid 1px $divider-gray;
-      margin-left: -16.6667%;
-      margin-right: $baseline * 2;
-      padding-right: $baseline * 2;
+      margin-right: $baseline * 3;
+      padding-right: $baseline * 3;
+    }
+    @include screen("desktop") {
+      margin-left: -8.3%;
+    }
+    @include screen("desktop-wide") {
+      margin-left: -16.6666667%;
     }
   }
   .img {
@@ -686,6 +706,14 @@
     padding: $baseline;
     position: relative;
     text-align: center;
+
+    .program_meta {
+      background-color: $white;
+      bottom: 0;
+      left: 0;
+      padding: $baseline/2 $baseline/2 0;
+      position: absolute;
+    }
   }
   .content {
     h4 {
@@ -775,9 +803,9 @@
       h4,
       h4 a {
         @include heading_XS($plum);
+        margin: $baseline 0;
       }
       h4 a {
-        margin: $baseline * 0.625 0;
         text-decoration: none;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -883,4 +911,18 @@
   h4 {
     @include heading_XS($black);
   }
+}
+
+// ABOUT STUDENT / PROFESSOR  From STORY PAGES
+
+.about {
+  @include make-sm-column(12);
+  margin: $baseline * 4 0;
+  @include screen("tablet-wide") {
+    float: right;
+    margin-right: -50%;
+    width: 50%;
+  }
+  background-color: $bg-02;
+  padding: $baseline * 3 !important;
 }

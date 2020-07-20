@@ -222,12 +222,24 @@ h6 {
       figure {
         margin-left: auto;
         margin-right: auto;
+
+        img {
+          margin: 0 auto;
+        }
+        figcaption {
+          @include bodycopy_S($black, $bold: false);
+          margin-top: $baseline;
+          text-align: center;
+          p {
+            text-align: center;
+          }
+        }
       }
 
       @include screen("phablet") {
         display: flex;
         figure {
-          flex: 0 0 $baseline * 5;
+          flex: 0 0 $baseline * 10;
         }
       }
 
@@ -241,9 +253,6 @@ h6 {
     }
 
     &.link {
-      .headshot {
-        margin-bottom: $baseline * 4;
-      }
       a {
         font-style: normal;
         display: block;
@@ -282,28 +291,45 @@ h6 {
       width: 25%;
     }
   }
+} //ALL WITHIN THE .CONTENT DIV
 
-  // META Content-Type
+// META Content-Type
 
-  .meta {
-    .type {
-      @include utility_M($maroon);
-      letter-spacing: 1px;
-    }
-    .divider {
-      color: $divider-gray;
-      margin: 0 $baseline/2;
-      vertical-align: middle;
-      font-size: $baseline * 1.2;
-    }
-    .date {
-      @include bodycopy_S($plum);
-    }
-    .cs_title {
-      @include utility_S($plum);
+.divider {
+  color: $divider-gray;
+  margin: 0 $baseline/2;
+  vertical-align: bottom;
+  font-size: $baseline * 1.2;
+}
+
+.meta {
+  .type {
+    @include utility_M($maroon);
+    letter-spacing: 1px;
+  }
+  .divider {
+    color: $divider-gray;
+    margin: 0 $baseline/2;
+    vertical-align: middle;
+    font-size: $baseline * 1.2;
+  }
+  .date {
+    @include bodycopy_S($plum);
+  }
+  .cs_title {
+    @include utility_S($plum);
+  }
+}
+
+// Share
+.share {
+  .addtoany_list {
+    .share_title {
+      margin-right: $baseline;
+      @include utility_M($black_03);
     }
   }
-} //ALL WITHIN THE .CONTENT DIV
+}
 
 // OFFSET ANY STYLES THAT AFFECT THE MENU background
 #toolbar-administration {
