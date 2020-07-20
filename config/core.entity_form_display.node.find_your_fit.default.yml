@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.find_your_fit.field_content_sections
+    - field.field.node.find_your_fit.field_format_tag
     - field.field.node.find_your_fit.field_lede
     - field.field.node.find_your_fit.field_metatags
     - field.field.node.find_your_fit.field_program_type
     - field.field.node.find_your_fit.field_text_and_media_1_3_2_3
     - node.type.find_your_fit
   module:
+    - allowed_formats
     - field_group
     - metatag
     - paragraphs
@@ -47,6 +49,7 @@ third_party_settings:
       label: 'Hero Section'
     group_administrative:
       children:
+        - field_format_tag
         - field_program_type
       parent_name: ''
       weight: 2
@@ -65,7 +68,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -81,12 +84,25 @@ content:
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
+  field_format_tag:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_lede:
     weight: 2
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   field_metatags:
@@ -97,7 +113,7 @@ content:
     type: metatag_firehose
     region: content
   field_program_type:
-    weight: 3
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -151,7 +167,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60

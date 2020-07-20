@@ -1,0 +1,23 @@
+uuid: 78059ae0-96a6-4e7d-9835-0ec8ebc1eada
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_to_more_info
+    - paragraphs.paragraphs_type.discover_the_uchicago_difference
+  module:
+    - link
+id: paragraph.discover_the_uchicago_difference.field_link_to_more_info
+field_name: field_link_to_more_info
+entity_type: paragraph
+bundle: discover_the_uchicago_difference
+label: 'Link to more info'
+description: 'Add a link to more information.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

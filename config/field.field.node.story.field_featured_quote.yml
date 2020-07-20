@@ -1,0 +1,19 @@
+uuid: 6e9cdbe1-dfbe-45f0-8b47-eaa1bd3fbe33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_quote
+    - node.type.story
+id: node.story.field_featured_quote
+field_name: field_featured_quote
+entity_type: node
+bundle: story
+label: 'Featured Quote'
+description: 'Choose a quote to feature from the story.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

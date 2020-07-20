@@ -11,8 +11,8 @@ field_name: field_program_type
 entity_type: node
 bundle: find_your_fit
 label: 'Program Type'
-description: 'Select the tag for the program type that corresponds to this find your fit page. '
-required: true
+description: 'Select the tag for the program type (if a program type page) that corresponds to this find your fit page. '
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''

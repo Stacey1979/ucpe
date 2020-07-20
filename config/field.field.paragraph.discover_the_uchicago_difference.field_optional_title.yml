@@ -1,0 +1,19 @@
+uuid: 027eaa45-f164-4622-bc58-181fe5324835
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_optional_title
+    - paragraphs.paragraphs_type.discover_the_uchicago_difference
+id: paragraph.discover_the_uchicago_difference.field_optional_title
+field_name: field_optional_title
+entity_type: paragraph
+bundle: discover_the_uchicago_difference
+label: Title
+description: 'Enter the title for this slide. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

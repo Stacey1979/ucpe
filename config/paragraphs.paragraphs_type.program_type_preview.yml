@@ -1,0 +1,10 @@
+uuid: 97c1bbcb-7be1-47d6-beef-2ea130eeb4c7
+langcode: en
+status: true
+dependencies: {  }
+id: program_type_preview
+label: 'Program Type Preview'
+icon_uuid: null
+icon_default: null
+description: 'Home page. '
+behavior_plugins: {  }

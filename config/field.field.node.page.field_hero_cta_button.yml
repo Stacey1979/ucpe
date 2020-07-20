@@ -1,0 +1,23 @@
+uuid: f2ea6ee5-19ba-487a-8b4b-befca481738a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_cta_button
+    - node.type.page
+  module:
+    - link
+id: node.page.field_hero_cta_button
+field_name: field_hero_cta_button
+entity_type: node
+bundle: page
+label: 'Hero CTA Button'
+description: 'CTA button under the lede.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

@@ -1,0 +1,28 @@
+uuid: e67e09c9-1209-4b85-be43-e55278a814d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youvisit_embed
+    - node.type.page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    code: code
+    full_html: '0'
+    basic_html: '0'
+    plain_text: '0'
+id: node.page.field_youvisit_embed
+field_name: field_youvisit_embed
+entity_type: node
+bundle: page
+label: 'YouVisit Embed'
+description: 'Enter the code for YouVisit'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
