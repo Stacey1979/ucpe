@@ -1,0 +1,28 @@
+uuid: 8c85ca49-ee17-4fd9-954e-106d311b1478
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_column_1
+    - paragraphs.paragraphs_type.strength_in_numbers
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+    code: '0'
+id: paragraph.strength_in_numbers.field_content_column_1
+field_name: field_content_column_1
+entity_type: paragraph
+bundle: strength_in_numbers
+label: 'Content Column 1'
+description: 'Add a short paragraph to describe the information presented in the statistics.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

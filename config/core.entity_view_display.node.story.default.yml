@@ -66,10 +66,6 @@ content:
       link: '1'
     third_party_settings: {  }
     region: ds_content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_content_sections:
     weight: 8
     label: hidden
