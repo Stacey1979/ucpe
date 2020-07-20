@@ -7430,12 +7430,17 @@ nav.tabs ul.nav-tabs li {
       font-weight: 400;
       display: block; }
 
-.program_preview dl, .story_profile dl {
+.program_preview dl,
+.story_profile dl {
   margin-bottom: 0; }
   @media only screen and (min-width: 1200px) {
-    .program_preview dl dt, .program_preview dl dd, .story_profile dl dt, .story_profile dl dd {
+    .program_preview dl dt,
+    .program_preview dl dd,
+    .story_profile dl dt,
+    .story_profile dl dd {
       float: left; } }
-  .program_preview dl dt, .story_profile dl dt {
+  .program_preview dl dt,
+  .story_profile dl dt {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     color: #110f0f;
@@ -7444,12 +7449,14 @@ nav.tabs ul.nav-tabs li {
     clear: left;
     font-weight: bold; }
     @media only screen and (min-width: 1200px) {
-      .program_preview dl dt, .story_profile dl dt {
+      .program_preview dl dt,
+      .story_profile dl dt {
         margin-bottom: 1rem;
         margin-right: 5%;
         width: 25%;
         clear: left; } }
-  .program_preview dl dd, .story_profile dl dd {
+  .program_preview dl dd,
+  .story_profile dl dd {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     color: #110f0f;
@@ -7457,9 +7464,11 @@ nav.tabs ul.nav-tabs li {
     font-weight: 400;
     margin-bottom: 1rem; }
     @media only screen and (min-width: 1200px) {
-      .program_preview dl dd, .story_profile dl dd {
+      .program_preview dl dd,
+      .story_profile dl dd {
         width: 70%; } }
-    .program_preview dl dd p, .story_profile dl dd p {
+    .program_preview dl dd p,
+    .story_profile dl dd p {
       margin-bottom: 0 !important; }
 
 .story_profile {
