@@ -10,16 +10,21 @@ entity_type_groups:
       advanced: advanced
       open_graph: open_graph
       facebook: facebook
+      twitter_cards: twitter_cards
     case_study:
       basic: basic
       advanced: advanced
       open_graph: open_graph
       facebook: facebook
+      twitter_cards: twitter_cards
     course:
       basic: basic
       advanced: advanced
       open_graph: open_graph
       facebook: facebook
+      twitter_cards: twitter_cards
+    event:
+      twitter_cards: twitter_cards
     find_your_fit:
       basic: basic
       advanced: advanced
@@ -30,6 +35,7 @@ entity_type_groups:
       advanced: advanced
       open_graph: open_graph
       facebook: facebook
+      twitter_cards: twitter_cards
     owned_program_interior_page:
       basic: basic
       advanced: advanced
@@ -40,6 +46,13 @@ entity_type_groups:
       advanced: advanced
       open_graph: open_graph
       facebook: facebook
+      twitter_cards: twitter_cards
+    page:
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      facebook: facebook
+      twitter_cards: twitter_cards
     person:
       basic: basic
       advanced: advanced
@@ -48,3 +61,4 @@ entity_type_groups:
       advanced: advanced
       open_graph: open_graph
       facebook: facebook
+      twitter_cards: twitter_cards

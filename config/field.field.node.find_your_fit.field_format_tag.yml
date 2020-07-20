@@ -1,26 +1,26 @@
-uuid: 2f9d6eb8-8cb4-4175-a31e-03fef4e05c71
+uuid: 82c2e128-ac4b-4ff3-a8b6-528a7b14acb4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_program_type
+    - field.storage.node.field_format_tag
     - node.type.find_your_fit
-    - taxonomy.vocabulary.program_type
-id: node.find_your_fit.field_program_type
-field_name: field_program_type
+    - taxonomy.vocabulary.format_options
+id: node.find_your_fit.field_format_tag
+field_name: field_format_tag
 entity_type: node
 bundle: find_your_fit
-label: 'Program Type'
-description: 'Select the tag for the program type (if a program type page) that corresponds to this find your fit page. '
+label: Format
+description: 'Select the tag for the format type (if a format type page) that corresponds to this find your fit page. '
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      program_type: program_type
+      format_options: format_options
     sort:
       field: name
       direction: asc
