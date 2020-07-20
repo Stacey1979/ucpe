@@ -1,0 +1,10 @@
+uuid: 94b2c7de-58d1-479f-8e09-0b6e9850daef
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.featured_story
+label: 'Featured Story: Home'
+targetEntityType: paragraph
+cache: true

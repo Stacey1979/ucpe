@@ -8,11 +8,13 @@ dependencies:
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
+    - field.field.node.story.field_featured_quote
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
     - field.field.node.story.field_lede
     - field.field.node.story.field_metatags
     - field.field.node.story.field_related_program_tag
+    - field.field.node.story.field_story_subject_name
     - node.type.story
   module:
     - ds
@@ -107,6 +109,8 @@ hidden:
   field_content_sections: true
   field_date_and_lede: true
   field_date_written: true
+  field_featured_quote: true
   field_intro_paragraph: true
   field_metatags: true
+  field_story_subject_name: true
   reading_time: true

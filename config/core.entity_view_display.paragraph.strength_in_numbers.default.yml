@@ -1,0 +1,69 @@
+uuid: ff9b9bdb-6f61-4dfe-9aca-5ecbcf70b6d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.strength_in_numbers.field_content_column_1
+    - field.field.paragraph.strength_in_numbers.field_optional_title
+    - field.field.paragraph.strength_in_numbers.field_three_up_statistics
+    - paragraphs.paragraphs_type.strength_in_numbers
+  module:
+    - ds
+    - entity_reference_revisions
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          left: {  }
+          right: {  }
+    regions:
+      left:
+        - field_optional_title
+        - field_content_column_1
+      right:
+        - field_three_up_statistics
+id: paragraph.strength_in_numbers.default
+targetEntityType: paragraph
+bundle: strength_in_numbers
+mode: default
+content:
+  field_content_column_1:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: left
+  field_optional_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: left
+  field_three_up_statistics:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: right
+hidden: {  }

@@ -1,0 +1,172 @@
+uuid: 16a663f2-e3fe-4ec0-8afd-2189a445813c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_set
+    - paragraphs.paragraphs_type.button_set
+    - paragraphs.paragraphs_type.text_two_one_third
+  module:
+    - entity_reference_revisions
+id: paragraph.text_two_one_third.field_button_set
+field_name: field_button_set
+entity_type: paragraph
+bundle: text_two_one_third
+label: 'Button Set'
+description: 'Add buttons if needed. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      button_set: button_set
+    target_bundles_drag_drop:
+      about_person:
+        weight: 49
+        enabled: false
+      about_student:
+        weight: 50
+        enabled: false
+      at_a_glance:
+        weight: 51
+        enabled: false
+      blockquote:
+        weight: 52
+        enabled: false
+      blockquotes:
+        weight: 53
+        enabled: false
+      button_set:
+        enabled: true
+        weight: 54
+      content_sections:
+        weight: 55
+        enabled: false
+      content_with_image_50_50_:
+        weight: 56
+        enabled: false
+      cta:
+        weight: 57
+        enabled: false
+      deadlines:
+        weight: 58
+        enabled: false
+      designed_for:
+        weight: 59
+        enabled: false
+      duration:
+        weight: 60
+        enabled: false
+      event_hero:
+        weight: 61
+        enabled: false
+      form_embed:
+        weight: 62
+        enabled: false
+      full_width_content:
+        weight: 63
+        enabled: false
+      header_s_:
+        weight: 64
+        enabled: false
+      heroes:
+        weight: 65
+        enabled: false
+      horizontal_rule:
+        weight: 66
+        enabled: false
+      image_carousel:
+        weight: 67
+        enabled: false
+      image_carousel_combo:
+        weight: 68
+        enabled: false
+      in_brief:
+        weight: 69
+        enabled: false
+      instructor_program_and_courses:
+        weight: 70
+        enabled: false
+      instructor_program_courses_combo:
+        weight: 71
+        enabled: false
+      intro_paragraph:
+        weight: 72
+        enabled: false
+      large_image_with_caption_left_or:
+        weight: 73
+        enabled: false
+      large_image_with_header_and_cont:
+        weight: 74
+        enabled: false
+      ptoc_container:
+        weight: 75
+        enabled: false
+      ptoc_image:
+        weight: 76
+        enabled: false
+      ptoc_links:
+        weight: 77
+        enabled: false
+      ptoc_text:
+        weight: 78
+        enabled: false
+      related_courses:
+        weight: 79
+        enabled: false
+      related_instructors:
+        weight: 80
+        enabled: false
+      related_of_interest:
+        weight: 81
+        enabled: false
+      related_program_block:
+        weight: 82
+        enabled: false
+      related_program_combo:
+        weight: 83
+        enabled: false
+      related_programs_for_area_of_stu:
+        weight: 84
+        enabled: false
+      statistics:
+        weight: 85
+        enabled: false
+      story_about_combo:
+        weight: 86
+        enabled: false
+      story_programs:
+        weight: 87
+        enabled: false
+      strength_in_numbers:
+        weight: 88
+        enabled: false
+      text_one_two_third:
+        weight: 89
+        enabled: false
+      text_two_one_third:
+        weight: 90
+        enabled: false
+      text_with_media_1_3_2_3_:
+        weight: 91
+        enabled: false
+      three_up_illust_img_combo:
+        weight: 92
+        enabled: false
+      three_up_image_and_text:
+        weight: 93
+        enabled: false
+      three_up_statistic:
+        weight: 94
+        enabled: false
+      three_up_statistics_combo:
+        weight: 95
+        enabled: false
+      video:
+        weight: 96
+        enabled: false
+field_type: entity_reference_revisions

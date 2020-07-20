@@ -179,7 +179,7 @@ $italic: italic;
     #{$baseline * 3},
     $color,
     $serif-bold,
-    #{$baseline * 3.25}
+    #{$baseline * 3.5}
   );
 }
 @mixin heading_M($color) {
@@ -188,7 +188,7 @@ $italic: italic;
     #{$baseline * 2},
     $color,
     $serif-bold,
-    #{$baseline * 2.25}
+    #{$baseline * 2.75}
   );
 }
 @mixin heading_S($color) {
@@ -197,7 +197,7 @@ $italic: italic;
     #{$baseline * 1.5},
     $color,
     $serif-bold,
-    #{$baseline * 2}
+    #{$baseline * 2.25}
   );
 }
 @mixin heading_XS($color) {

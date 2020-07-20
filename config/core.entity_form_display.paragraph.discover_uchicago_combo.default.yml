@@ -1,0 +1,29 @@
+uuid: 26415ebf-c6c8-442b-9f2f-0facdddd87c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.discover_uchicago_combo.field_add_a_slide
+    - paragraphs.paragraphs_type.discover_uchicago_combo
+  module:
+    - paragraphs
+id: paragraph.discover_uchicago_combo.default
+targetEntityType: paragraph
+bundle: discover_uchicago_combo
+mode: default
+content:
+  field_add_a_slide:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

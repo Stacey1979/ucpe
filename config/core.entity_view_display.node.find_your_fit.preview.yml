@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.preview
     - field.field.node.find_your_fit.field_content_sections
+    - field.field.node.find_your_fit.field_format_tag
     - field.field.node.find_your_fit.field_lede
     - field.field.node.find_your_fit.field_metatags
     - field.field.node.find_your_fit.field_program_type
@@ -88,4 +89,5 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_format_tag: true
   field_metatags: true

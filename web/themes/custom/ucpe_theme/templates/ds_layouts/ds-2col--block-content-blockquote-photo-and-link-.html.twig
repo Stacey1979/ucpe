@@ -15,8 +15,8 @@
  */
 #}
 <blockquote class="w_hs link">
-  <figure class="headshot">
-  	{{ left.field_blockquote_image }}
+  <figure>
+    <div class="headshot">{{ left.field_blockquote_image|field_value }}</div>
   	<figcaption>{{ left.field_quote_attribute|field_value }}</figcaption>
   </figure>
   <div class="q">

@@ -1,0 +1,29 @@
+uuid: 2f43789c-5412-4110-ad3f-323a578d24fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_taxonomy_image
+    - media.type.image
+    - taxonomy.vocabulary.program_type
+id: taxonomy_term.program_type.field_taxonomy_image
+field_name: field_taxonomy_image
+entity_type: taxonomy_term
+bundle: program_type
+label: 'Taxonomy image'
+description: 'Image that accompanies the program type.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: 05e0aacf-5df9-4128-924b-130d6b818995
+langcode: en
+status: true
+dependencies: {  }
+id: discover_the_uchicago_difference
+label: 'Discover the UChicago Difference'
+icon_uuid: null
+icon_default: null
+description: 'The carousel of text/images on the homepage. '
+behavior_plugins: {  }

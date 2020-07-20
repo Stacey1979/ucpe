@@ -1,0 +1,42 @@
+uuid: b66b0a2f-5105-42a5-8bb8-479143da657c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program_types_preview
+    - node.type.page
+    - taxonomy.vocabulary.program_type
+  content:
+    - 'taxonomy_term:program_type:6007f0cc-1f2c-4c10-8a2c-7a6f483bfd41'
+    - 'taxonomy_term:program_type:6a744ed6-0a3f-4184-b06e-5fdeaf5eab3c'
+    - 'taxonomy_term:program_type:90d98c8b-72f7-4adb-94ad-d3b89e002145'
+    - 'taxonomy_term:program_type:db29bf93-afbe-40de-9b5f-e3cc50940e6e'
+id: node.page.field_program_types_preview
+field_name: field_program_types_preview
+entity_type: node
+bundle: page
+label: 'Program Types Preview'
+description: 'Bring in the program types (taxonomy terms) to display. '
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 6a744ed6-0a3f-4184-b06e-5fdeaf5eab3c
+  -
+    target_uuid: 90d98c8b-72f7-4adb-94ad-d3b89e002145
+  -
+    target_uuid: db29bf93-afbe-40de-9b5f-e3cc50940e6e
+  -
+    target_uuid: 6007f0cc-1f2c-4c10-8a2c-7a6f483bfd41
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      program_type: program_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

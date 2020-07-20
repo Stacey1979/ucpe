@@ -40,15 +40,6 @@
         margin-bottom: $baseline * 2;
       }
     }
-
-    .share {
-      .addtoany_list {
-        .share_title {
-          margin-right: $baseline;
-          @include utility_M($black_03);
-        }
-      }
-    }
   }
 
   .article_bottom,
@@ -295,7 +286,6 @@
 
   > .content {
     background-color: $white;
-    margin-top: -$baseline * 10;
     @include make-sm-column(12);
     @include screen("tablet-wide") {
       @include make-sm-column(10);
@@ -304,6 +294,17 @@
     @include screen("desktop-wide") {
       @include make-sm-column(8);
       @include make-sm-column-push(2);
+    }
+
+    .story_profile {
+      margin: $baseline * 2.5 0;
+      @include screen("tablet-wide") {
+        float: right;
+        margin: $baseline * 2.5 0 $baseline * 2.5 $baseline * 2.5;
+      }
+      @include screen("desktop") {
+        margin-right: -16.6667%;
+      }
     }
   }
 }
@@ -396,15 +397,82 @@
 
   > .content {
     background-color: $white;
-    margin-top: -$baseline * 10;
+
     @include make-sm-column(12);
     @include screen("tablet-wide") {
       @include make-sm-column(10);
-      @include make-sm-column-push(1);
     }
     @include screen("desktop-wide") {
       @include make-sm-column(8);
-      @include make-sm-column-push(2);
     }
+  }
+
+  .program_preview {
+    border-bottom: solid 2px $divider-gray;
+
+    @include screen("phablet") {
+      display: flex;
+      margin-bottom: $baseline * 5;
+      padding-bottom: $baseline * 5;
+    }
+
+    .col {
+      padding-right: $baseline;
+      @include screen("phablet") {
+        flex: 1;
+      }
+
+      h3 {
+        @include utility_M($black_02);
+      }
+
+      dl {
+        dt {
+          @include bodycopy_M($black);
+        }
+        dd {
+          @include bodycopy_M($black, $bold: true);
+
+          .confers {
+            display: block;
+            &:before {
+            }
+          }
+          .cost em {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 90%;
+          }
+          .fin_aid {
+            display: block;
+            > a {
+              border-bottom: solid 2px $maroon;
+              color: $plum;
+              padding: 0 0 2px;
+              margin: 0.75rem 0;
+              transition: all 0.2s ease-out;
+              text-decoration: none;
+
+              &:hover {
+                color: $maroon;
+                transition: all 0.2s ease-in;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .intro {
+    p {
+      @include heading_S($maroon);
+      margin-bottom: $baseline * 4;
+    }
+  }
+
+  .cta_aos {
+    clear: both;
+    width: 100%;
   }
 }

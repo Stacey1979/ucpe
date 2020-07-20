@@ -1,0 +1,29 @@
+uuid: 82c2e128-ac4b-4ff3-a8b6-528a7b14acb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format_tag
+    - node.type.find_your_fit
+    - taxonomy.vocabulary.format_options
+id: node.find_your_fit.field_format_tag
+field_name: field_format_tag
+entity_type: node
+bundle: find_your_fit
+label: Format
+description: 'Select the tag for the format type (if a format type page) that corresponds to this find your fit page. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      format_options: format_options
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

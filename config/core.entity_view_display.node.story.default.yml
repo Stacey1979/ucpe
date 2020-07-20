@@ -7,11 +7,13 @@ dependencies:
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
+    - field.field.node.story.field_featured_quote
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
     - field.field.node.story.field_lede
     - field.field.node.story.field_metatags
     - field.field.node.story.field_related_program_tag
+    - field.field.node.story.field_story_subject_name
     - node.type.story
   module:
     - datetime
@@ -67,7 +69,7 @@ content:
     third_party_settings: {  }
     region: ds_content
   field_content_sections:
-    weight: 8
+    weight: 7
     label: hidden
     settings:
       view_mode: default
@@ -76,7 +78,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_date_written:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       timezone_override: ''
@@ -86,7 +88,7 @@ content:
     region: ds_content
   field_hero:
     type: entity_reference_revisions_entity_view
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       view_mode: story_hero
@@ -103,7 +105,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_lede:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -118,18 +120,19 @@ content:
     type: string
     region: ds_content
   links:
-    weight: 9
+    weight: 8
     region: ds_content
     settings: {  }
     third_party_settings: {  }
   reading_time:
-    weight: 3
+    weight: 4
     region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
   body: true
-  field_author: true
   field_date_and_lede: true
+  field_featured_quote: true
   field_metatags: true
   field_related_program_tag: true
+  field_story_subject_name: true

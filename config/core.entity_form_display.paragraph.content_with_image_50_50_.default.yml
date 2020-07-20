@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.content_with_image_50_50_.field_content_column_1
     - field.field.paragraph.content_with_image_50_50_.field_image
+    - field.field.paragraph.content_with_image_50_50_.field_image_position
     - field.field.paragraph.content_with_image_50_50_.field_optional_title
     - paragraphs.paragraphs_type.content_with_image_50_50_
   module:
@@ -29,6 +30,12 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
+    region: content
+  field_image_position:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_optional_title:
     weight: 0

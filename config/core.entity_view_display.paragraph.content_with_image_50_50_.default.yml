@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.content_with_image_50_50_.field_content_column_1
     - field.field.paragraph.content_with_image_50_50_.field_image
+    - field.field.paragraph.content_with_image_50_50_.field_image_position
     - field.field.paragraph.content_with_image_50_50_.field_optional_title
     - paragraphs.paragraphs_type.content_with_image_50_50_
   module:
@@ -13,56 +14,54 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: ds_2col
-      library: ds/ds_2col
+      id: ds_1col
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings:
         label: ''
         wrappers:
-          left: div
-          right: div
+          ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
         classes:
           layout_class: {  }
-          left: {  }
-          right: {  }
+          ds_content: {  }
     regions:
-      left:
+      ds_content:
+        - field_image
         - field_optional_title
         - field_content_column_1
-      right:
-        - field_image
 id: paragraph.content_with_image_50_50_.default
 targetEntityType: paragraph
 bundle: content_with_image_50_50_
 mode: default
 content:
   field_content_column_1:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: left
+    region: ds_content
   field_image:
     type: entity_reference_entity_view
-    weight: 2
+    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-    region: right
+    region: ds_content
   field_optional_title:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: left
-hidden: {  }
+    region: ds_content
+hidden:
+  field_image_position: true
