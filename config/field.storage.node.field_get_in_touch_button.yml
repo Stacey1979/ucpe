@@ -1,0 +1,19 @@
+uuid: be60d5a0-c451-458d-bf36-f876d640e6f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_get_in_touch_button
+field_name: field_get_in_touch_button
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

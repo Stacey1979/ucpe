@@ -129,3 +129,4 @@ permissions:
   - 'view page revisions'
   - 'view person revisions'
   - 'view story revisions'
+  - 'view the administration theme'

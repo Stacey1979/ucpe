@@ -1,0 +1,12 @@
+uuid: 605f399c-587d-4d05-a931-a68752f36b0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.program_type_preview
+id: paragraph.program_type_preview.default
+targetEntityType: paragraph
+bundle: program_type_preview
+mode: default
+content: {  }
+hidden: {  }

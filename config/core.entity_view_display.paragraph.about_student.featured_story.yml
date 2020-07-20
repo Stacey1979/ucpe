@@ -1,0 +1,61 @@
+uuid: a624823c-f813-4021-af2a-cc16723f67bb
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.featured_story
+    - field.field.paragraph.about_student.field_about
+    - field.field.paragraph.about_student.field_hobbies
+    - field.field.paragraph.about_student.field_hometown
+    - field.field.paragraph.about_student.field_position
+    - field.field.paragraph.about_student.field_programs
+    - paragraphs.paragraphs_type.about_student
+  module:
+    - entity_reference_revisions
+id: paragraph.about_student.featured_story
+targetEntityType: paragraph
+bundle: about_student
+mode: featured_story
+content:
+  field_about:
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_hobbies:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_hometown:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_position:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_programs:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: inline
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

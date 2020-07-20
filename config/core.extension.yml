@@ -7,6 +7,7 @@ module:
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   allowed_formats: 0
+  better_exposed_filters: 0
   blazy: 0
   blazy_ui: 0
   block: 0
@@ -23,6 +24,7 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   editor_advanced_link: 0
@@ -40,9 +42,15 @@ module:
   help: 0
   image: 0
   inline_entity_form: 0
+  jquery_ui: 0
+  jquery_ui_datepicker: 0
+  jquery_ui_slider: 0
+  jquery_ui_touch_punch: 0
   layout_discovery: 0
   link: 0
   link_attributes: 0
+  masonry: 0
+  masonry_views: 0
   media: 0
   media_library: 0
   menu_ui: 0

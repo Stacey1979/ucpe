@@ -1,0 +1,14 @@
+uuid: 662ce2e9-467b-4343-876b-48b8fd139b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.program_type_preview
+id: paragraph.program_type_preview.default
+targetEntityType: paragraph
+bundle: program_type_preview
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,29 @@
+uuid: 9469ab2e-6857-43f5-9608-df3e349dec2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_home_page_hero
+    - media.type.embedded_video
+    - node.type.page
+id: node.page.field_video_home_page_hero
+field_name: field_video_home_page_hero
+entity_type: node
+bundle: page
+label: 'Video Home Page Hero'
+description: 'Add the video you want to use as the banner video. <strong>Used on Home page only.</strong>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      embedded_video: embedded_video
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
