@@ -1,5 +1,22 @@
 .hero_wrapper {
   position: relative;
+  .hero {
+    @include make-container();
+  }
+
+  .hero_img {
+    .field--name-field-image-attribution {
+      position: absolute;
+      @include bodycopy_S($black_03);
+
+      &:before {
+        font-size: $baseline * 1.75;
+        margin-right: $baseline * 0.25;
+        text-decoration: none;
+        vertical-align: text-bottom;
+      }
+    }
+  }
 
   .hero_content {
     h1 {
@@ -35,8 +52,6 @@
 
     // photo attribute
     .field--name-field-image-attribution {
-      @include bodycopy_S($black_03);
-      position: absolute;
       bottom: -25px;
       right: 15px;
       @media only screen and (min-width: 1800px) {
@@ -59,8 +74,6 @@
     margin-bottom: $baseline * 5;
 
     .hero {
-      @include make-container();
-
       &:before {
         background-color: $bg_02;
         content: "";
@@ -103,6 +116,142 @@
         img {
           animation: hero_image_slideIn 1s 1 0s ease;
           animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+
+  // HERO STORY
+  &.hero_story {
+    margin-bottom: $baseline * 3;
+    @include screen("tablet-wide") {
+      margin-bottom: $baseline * 6;
+    }
+    @include screen("desktop-wide") {
+      margin-bottom: $baseline * 9;
+    }
+
+    .hero {
+      &:before {
+        background-color: $bg_02;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+      }
+      .hero_img {
+        @include screen("phablet, $type: max") {
+          @include make-xs-column(12);
+        }
+        @include make-sm-column(4);
+        @include make-sm-column-pull(8);
+        margin-top: $baseline * 2;
+        @include screen("tablet-wide") {
+          @include make-md-column(5);
+          @include make-md-column-pull(7);
+          margin-top: 0;
+        }
+
+        .field--name-field-image-attribution {
+          &:before {
+            @include iconfont($white, "\63");
+          }
+          right: $baseline * 2;
+          bottom: $baseline;
+          color: $white;
+          @include screen("tablet") {
+            bottom: -$baseline * 2.5;
+          }
+          @include screen("tablet-wide") {
+            right: $baseline;
+          }
+        }
+
+        &:after {
+          background-color: $maroon;
+          content: "";
+          position: absolute;
+          width: calc(100% - 30px);
+          height: 100%;
+          top: 0;
+          z-index: -1;
+          @include screen("tablet") {
+            height: 25%;
+            top: auto;
+          }
+          @include screen("tablet-wide") {
+            bottom: -$baseline * 4;
+            right: -$baseline;
+          }
+        }
+      }
+
+      .hero_content {
+        padding-top: $baseline * 2;
+        @include screen("phablet, $type: max") {
+          @include make-xs-column(12);
+        }
+        @include make-sm-column(8);
+        @include make-sm-column-push(4);
+        @include screen("tablet") {
+          padding: $baseline * 2 0 $baseline $baseline * 3;
+        }
+        @include screen("tablet-wide") {
+          @include make-md-column(7);
+          @include make-md-column-push(5);
+        }
+        @include screen("tablet-wide") {
+          padding: $baseline * 2 0 $baseline $baseline * 3;
+        }
+        @include screen("desktop") {
+          padding: $baseline * 2.5 0 $baseline $baseline * 3;
+        }
+        @include screen("desktop-wide") {
+          padding: $baseline * 6 0 $baseline * 3 $baseline * 3;
+        }
+
+        .meta {
+          .type {
+            @include utility_L($maroon);
+          }
+          .date {
+            @include bodycopy_S($plum);
+          }
+        }
+
+        h1 {
+          margin: $baseline * 1.5 0;
+          @include screen("desktop") {
+            margin: $baseline * 2 0;
+          }
+        }
+        .hero_intro {
+          @include bodycopy_M($black);
+          margin-bottom: 0;
+          @include screen("desktop") {
+            @include bodycopy_L($black);
+          }
+        }
+
+        .hero_author_share {
+          margin: $baseline * 2 0;
+          @include screen("desktop") {
+            margin: $baseline * 3 0;
+          }
+          .author {
+            @include bodycopy_S($black_02);
+            @include screen("tablet-wide") {
+              float: left;
+            }
+          }
+          .share {
+            @include screen("tablet-wide") {
+              float: right;
+            }
+          }
         }
       }
     }
