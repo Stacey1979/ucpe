@@ -7606,7 +7606,9 @@ nav.tabs ul.nav-tabs li {
     color: #800000;
     line-height: 2rem;
     font-weight: 500;
-    margin: 4rem 0; }
+    border-bottom: solid 1px #dcdcdc;
+    margin: 4rem 0 3rem;
+    padding: 0 0 1.75rem; }
   .related_content_grid .related_program {
     position: relative;
     min-height: 1px;
@@ -7649,6 +7651,8 @@ nav.tabs ul.nav-tabs li {
         left: 0;
         padding: 1rem 0.5rem 0; }
     .related_content_grid .related_program .content {
+      margin-right: -15px;
+      margin-left: -15px;
       position: relative;
       min-height: 1px;
       padding-right: 15px;
@@ -7657,6 +7661,11 @@ nav.tabs ul.nav-tabs li {
       min-height: 1px;
       padding-right: 15px;
       padding-left: 15px; }
+      .related_content_grid .related_program .content:before, .related_content_grid .related_program .content:after {
+        display: table;
+        content: " "; }
+      .related_content_grid .related_program .content:after {
+        clear: both; }
       @media (min-width: 768px) {
         .related_content_grid .related_program .content {
           float: left;
@@ -7671,7 +7680,8 @@ nav.tabs ul.nav-tabs li {
         font-size: 1.5rem;
         color: #350e20;
         font-weight: 900;
-        line-height: 2.25rem; }
+        line-height: 2.25rem;
+        margin: 2rem 0; }
       .related_content_grid .related_program .content h4 a {
         text-decoration: none;
         transition: all 0.3s; }
