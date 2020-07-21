@@ -1,0 +1,28 @@
+uuid: 5c7f187d-946b-42c9-8794-7c4716b0c500
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lede
+    - node.type.page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+    code: '0'
+id: node.page.field_lede
+field_name: field_lede
+entity_type: node
+bundle: page
+label: Lede
+description: 'Short sentences under the title of the page. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

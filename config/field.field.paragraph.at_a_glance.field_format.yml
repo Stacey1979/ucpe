@@ -11,7 +11,7 @@ field_name: field_format
 entity_type: paragraph
 bundle: at_a_glance
 label: Format
-description: 'Choose the format of the program'
+description: 'Choose the format of the program. If this is a Hybrid program, choose all three options so that a user will get it in the search results even if they just choose in-person or online.'
 required: true
 translatable: false
 default_value: {  }

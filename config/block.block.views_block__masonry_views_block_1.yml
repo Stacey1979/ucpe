@@ -1,0 +1,30 @@
+uuid: f6aee936-5d26-42f5-ad59-1ec735148bf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.masonry_views
+  module:
+    - system
+    - views
+  theme:
+    - ucpe_theme
+id: views_block__masonry_views_block_1
+theme: ucpe_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:masonry_views-block_1'
+settings:
+  id: 'views_block:masonry_views-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /learning-without-limits
+    negate: false
+    context_mapping: {  }

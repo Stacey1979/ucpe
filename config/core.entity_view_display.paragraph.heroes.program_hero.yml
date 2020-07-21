@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.program_hero
     - field.field.paragraph.heroes.field_hero
-    - field.field.paragraph.heroes.field_image_attribution
     - paragraphs.paragraphs_type.heroes
 id: paragraph.heroes.program_hero
 targetEntityType: paragraph
@@ -20,13 +19,5 @@ content:
       view_mode: hero_s
       link: false
     third_party_settings: {  }
-    region: content
-  field_image_attribution:
-    weight: 1
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
 hidden: {  }

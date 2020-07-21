@@ -1,0 +1,10 @@
+uuid: ba4b348e-0630-482c-b706-e8010c299137
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.featured_story
+label: 'Featured Story: Home Page'
+targetEntityType: node
+cache: true

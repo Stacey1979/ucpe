@@ -1,16 +1,14 @@
-uuid: 4c5fcb24-a971-41b6-84b8-ff333cc41f0e
+uuid: d38727aa-3c16-44d5-a839-1b5a0c10786c
 langcode: en
 status: true
 dependencies:
   module:
-    - paragraphs
-id: paragraph.field_image_attribution
-field_name: field_image_attribution
-entity_type: paragraph
-type: string
+    - node
+id: node.field_featured_quote
+field_name: field_featured_quote
+entity_type: node
+type: string_long
 settings:
-  max_length: 255
-  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

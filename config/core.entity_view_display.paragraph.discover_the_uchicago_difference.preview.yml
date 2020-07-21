@@ -1,0 +1,57 @@
+uuid: 61baa009-1117-46da-985e-983ac9bde074
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.discover_the_uchicago_difference.field_link_to_more_info
+    - field.field.paragraph.discover_the_uchicago_difference.field_optional_title
+    - field.field.paragraph.discover_the_uchicago_difference.field_short_description
+    - field.field.paragraph.discover_the_uchicago_difference.field_slide_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.discover_the_uchicago_difference
+  module:
+    - link
+    - media
+id: paragraph.discover_the_uchicago_difference.preview
+targetEntityType: paragraph
+bundle: discover_the_uchicago_difference
+mode: preview
+content:
+  field_link_to_more_info:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_optional_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_short_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_slide_image:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }
