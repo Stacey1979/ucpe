@@ -11,12 +11,16 @@
 #}
 
 <div class="btn-group" >
+{% if ds_content.field_primary_button|field_value %}
   {% set linkAttributes = create_attribute(ds_content.field_primary_button.0['#url'].options.attributes) %}
   <a {{ linkAttributes.addClass('btn') }} href="{{ ds_content.field_primary_button[0]['#url'] }}">{{ ds_content.field_primary_button[0]['#title'] }}</a>
-
+{% endif %}
+{% if ds_content.field_secondary_button|field_value %}
   {% set linkAttributes = create_attribute(ds_content.field_secondary_button.0['#url'].options.attributes) %}
   <a {{ linkAttributes.addClass('btn secondary') }} href="{{ ds_content.field_secondary_button[0]['#url'] }}">{{ ds_content.field_secondary_button[0]['#title'] }}</a>
-
+{% endif %}
+{% if ds_content.field_tertiary_button|field_value %}
   {% set linkAttributes = create_attribute(ds_content.field_tertiary_button.0['#url'].options.attributes) %}
   <a {{ linkAttributes.addClass('btn primary') }} href="{{ ds_content.field_tertiary_button[0]['#url'] }}">{{ ds_content.field_tertiary_button[0]['#title'] }}</a>
+  {% endif %}
 </div>
