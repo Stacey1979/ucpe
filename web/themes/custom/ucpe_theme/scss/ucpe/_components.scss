@@ -728,7 +728,9 @@
 
   h2 {
     @include bodycopy_XL($maroon, $bold: true);
-    margin: $baseline * 4 0;
+    border-bottom: solid 1px $divider-gray;
+    margin: $baseline * 4 0 $baseline * 3;
+    padding: 0 0 $baseline * 1.75;
   }
 
   .related_program {
@@ -749,12 +751,14 @@
       }
     }
     .content {
+      @include make-row();
       @include make-sm-column(6);
       @include make-lg-column(12);
 
       h4,
       h4 a {
         @include heading_S($plum);
+        margin: $baseline * 2 0;
       }
       h4 a {
         text-decoration: none;
