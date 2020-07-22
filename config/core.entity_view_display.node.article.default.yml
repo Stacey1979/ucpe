@@ -57,6 +57,7 @@ third_party_settings:
         - field_content_sections
         - links
         - field_author
+        - field_metatags
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.default
@@ -144,7 +145,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
-    region: content
+    region: ds_content
   field_topics:
     weight: 5
     label: hidden

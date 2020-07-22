@@ -1,0 +1,10 @@
+uuid: e3459215-b1a3-459a-bb4e-f062ee1f465d
+langcode: en
+status: true
+dependencies: {  }
+id: large_image_with_header_and_cont
+label: 'Large Image with Header and Content'
+icon_uuid: null
+icon_default: null
+description: 'Large image to the left and header and paragraph to the right. '
+behavior_plugins: {  }

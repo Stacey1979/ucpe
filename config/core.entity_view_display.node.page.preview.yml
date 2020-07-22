@@ -1,0 +1,81 @@
+uuid: 893935a5-4598-4c25-bd7e-39dabe2fcb0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.preview
+    - field.field.node.page.field_content
+    - field.field.node.page.field_content_sections
+    - field.field.node.page.field_discover_the_uchicago_diff
+    - field.field.node.page.field_get_in_touch_button
+    - field.field.node.page.field_header_h2_
+    - field.field.node.page.field_hero_cta_button
+    - field.field.node.page.field_large_image_left
+    - field.field.node.page.field_large_landscape_hero
+    - field.field.node.page.field_lede
+    - field.field.node.page.field_program_types_preview
+    - field.field.node.page.field_related_story
+    - field.field.node.page.field_video_home_page_hero
+    - field.field.node.page.field_youvisit_embed
+    - node.type.page
+  module:
+    - ds
+    - entity_reference_revisions
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - links
+        - field_hero
+        - field_content
+        - field_content_sections
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.preview
+targetEntityType: node
+bundle: page
+mode: preview
+content:
+  field_content_sections:
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_content: true
+  field_discover_the_uchicago_diff: true
+  field_get_in_touch_button: true
+  field_header_h2_: true
+  field_hero_cta_button: true
+  field_large_image_left: true
+  field_large_landscape_hero: true
+  field_lede: true
+  field_program_types_preview: true
+  field_related_story: true
+  field_video_home_page_hero: true
+  field_youvisit_embed: true

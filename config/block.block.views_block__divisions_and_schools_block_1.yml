@@ -1,0 +1,46 @@
+uuid: f3026d8f-6b0c-4797-a57e-15f9158d8a91
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.divisions_and_schools
+  module:
+    - ctools
+    - node
+    - system
+    - views
+  theme:
+    - ucpe_theme
+id: views_block__divisions_and_schools_block_1
+theme: ucpe_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:divisions_and_schools-block_1'
+settings:
+  id: 'views_block:divisions_and_schools-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }

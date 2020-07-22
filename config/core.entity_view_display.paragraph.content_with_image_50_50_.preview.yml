@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.content_with_image_50_50_.field_content_column_1
     - field.field.paragraph.content_with_image_50_50_.field_image
+    - field.field.paragraph.content_with_image_50_50_.field_image_position
     - field.field.paragraph.content_with_image_50_50_.field_optional_title
     - image.style.thumbnail
     - paragraphs.paragraphs_type.content_with_image_50_50_
@@ -78,4 +79,5 @@ content:
       summary_handler: full
       trim_options: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_image_position: true

@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.heroes.field_hero
-    - field.field.paragraph.heroes.field_image_attribution
     - paragraphs.paragraphs_type.heroes
   module:
     - media_library
@@ -21,14 +20,6 @@ content:
         - image
         - remote_video
     third_party_settings: {  }
-    region: content
-  field_image_attribution:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
 hidden:
   created: true

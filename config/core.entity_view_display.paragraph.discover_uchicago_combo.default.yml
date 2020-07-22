@@ -1,0 +1,44 @@
+uuid: 634612a7-ed53-4de9-94f3-f0d4b81e11ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.discover_uchicago_combo.field_add_a_slide
+    - paragraphs.paragraphs_type.discover_uchicago_combo
+  module:
+    - ds
+    - slick_paragraphs
+id: paragraph.discover_uchicago_combo.default
+targetEntityType: paragraph
+bundle: discover_uchicago_combo
+mode: default
+content:
+  field_add_a_slide:
+    type: slick_paragraphs_vanilla
+    weight: 0
+    label: hidden
+    settings:
+      optionset: home_page_carousel
+      skin: ''
+      view_mode: default
+      cache: 0
+      current_view_mode: default
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      skin_arrows: ''
+      skin_dots: ''
+      fx: ''
+      style: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: content
+hidden: {  }

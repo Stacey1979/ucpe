@@ -196,7 +196,7 @@ content:
     region: ds_content
   field_of_interest:
     weight: 17
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -236,4 +236,6 @@ content:
 hidden:
   addtoany: true
   field_deadlines: true
+  field_metatags: true
+  field_program: true
   field_program_illustration: true

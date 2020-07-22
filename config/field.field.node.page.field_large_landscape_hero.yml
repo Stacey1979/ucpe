@@ -1,0 +1,29 @@
+uuid: 99044e79-30d8-4744-a1ad-87a896cd34bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_large_landscape_hero
+    - media.type.image
+    - node.type.page
+id: node.page.field_large_landscape_hero
+field_name: field_large_landscape_hero
+entity_type: node
+bundle: page
+label: 'Large Landscape Hero'
+description: 'Upload a large hero image that spans the top of the page. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -10,10 +10,54 @@ dependencies:
     - field.field.node.owned_program_interior_page.field_tab
     - node.type.owned_program_interior_page
   module:
+    - field_group
     - metatag
     - paragraphs
     - path
     - viewsreference
+third_party_settings:
+  field_group:
+    group_hero_section:
+      children:
+        - title
+        - field_program
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: 'Hero Section'
+    group_content:
+      children:
+        - field_content_sections
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Content
+    group_how_to_apply_page_only:
+      children:
+        - field_tab
+        - field_deadlines_block
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: 'How to Apply Page Only'
 id: node.owned_program_interior_page.default
 targetEntityType: node
 bundle: owned_program_interior_page
@@ -26,7 +70,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_content_sections:
-    weight: 2
+    weight: 13
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -44,7 +88,7 @@ content:
     type: paragraphs
     region: content
   field_deadlines_block:
-    weight: 27
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: viewsreference_select
@@ -57,13 +101,13 @@ content:
     type: metatag_firehose
     region: content
   field_program:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_tab:
-    weight: 26
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: viewsreference_select
@@ -97,7 +141,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60

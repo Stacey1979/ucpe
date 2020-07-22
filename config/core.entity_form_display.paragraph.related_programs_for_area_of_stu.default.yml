@@ -1,0 +1,25 @@
+uuid: 3a1a14bd-4c5f-4cc7-88b3-dbc3ca46cec6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_programs_for_area_of_stu.field_related_programs
+    - paragraphs.paragraphs_type.related_programs_for_area_of_stu
+id: paragraph.related_programs_for_area_of_stu.default
+targetEntityType: paragraph
+bundle: related_programs_for_area_of_stu
+mode: default
+content:
+  field_related_programs:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

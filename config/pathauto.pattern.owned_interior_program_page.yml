@@ -1,0 +1,22 @@
+uuid: 2547cc3d-d25a-4b45-8857-a1ba0de2aa90
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: owned_interior_program_page
+label: 'Owned Interior Program Page'
+type: 'canonical_entities:node'
+pattern: '/find-your-fit/[node:field_program_type]/[node:field_program]/[node:title]'
+selection_criteria:
+  ddd5b0b6-f655-44ae-855d-3e5b569f54a2:
+    id: node_type
+    bundles:
+      owned_program_interior_page: owned_program_interior_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ddd5b0b6-f655-44ae-855d-3e5b569f54a2
+selection_logic: and
+weight: -5
+relationships: {  }

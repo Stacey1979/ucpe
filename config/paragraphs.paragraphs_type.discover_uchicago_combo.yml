@@ -1,0 +1,10 @@
+uuid: dcf484b1-04b7-45d3-883b-fe073a7b567e
+langcode: en
+status: true
+dependencies: {  }
+id: discover_uchicago_combo
+label: 'Discover the UChicago Difference Combo'
+icon_uuid: null
+icon_default: null
+description: 'Places the slides in a carousel. '
+behavior_plugins: {  }

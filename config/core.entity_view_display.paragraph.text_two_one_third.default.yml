@@ -3,12 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.text_two_one_third.field_button_set
     - field.field.paragraph.text_two_one_third.field_content_column_1
     - field.field.paragraph.text_two_one_third.field_content_column_2
     - field.field.paragraph.text_two_one_third.field_optional_title
     - paragraphs.paragraphs_type.text_two_one_third
   module:
     - ds
+    - entity_reference_revisions
     - text
 third_party_settings:
   ds:
@@ -34,6 +36,7 @@ third_party_settings:
       left:
         - field_optional_title
         - field_content_column_1
+        - field_button_set
       right:
         - field_content_column_2
 id: paragraph.text_two_one_third.default
@@ -41,6 +44,15 @@ targetEntityType: paragraph
 bundle: text_two_one_third
 mode: default
 content:
+  field_button_set:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: left
   field_content_column_1:
     weight: 1
     label: hidden

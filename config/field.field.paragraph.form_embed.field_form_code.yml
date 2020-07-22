@@ -20,7 +20,7 @@ entity_type: paragraph
 bundle: form_embed
 label: 'Form Code'
 description: 'Enter the embed code for the form.'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

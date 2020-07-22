@@ -12,7 +12,7 @@ field_name: field_deadlines_block
 entity_type: node
 bundle: owned_program_interior_page
 label: 'Deadlines Block'
-description: 'How to Apply page deadlines. '
+description: '<strong>Used on the How to Apply page only</strong>. Choose "deadlines" in the dropdown and don''t edit the block ID field. '
 required: false
 translatable: true
 default_value: {  }

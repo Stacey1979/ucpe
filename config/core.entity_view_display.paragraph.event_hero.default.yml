@@ -1,0 +1,32 @@
+uuid: 61a76683-b711-4014-948f-43dedce393a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.event_hero.field_large_hero
+    - field.field.paragraph.event_hero.field_small_hero
+    - paragraphs.paragraphs_type.event_hero
+id: paragraph.event_hero.default
+targetEntityType: paragraph
+bundle: event_hero
+mode: default
+content:
+  field_large_hero:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: hero_landsca
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_small_hero:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: hero_s
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

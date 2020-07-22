@@ -1,0 +1,10 @@
+uuid: 8705142b-7b57-44c6-98d7-f5bb7e3a9991
+langcode: en
+status: true
+dependencies: {  }
+id: strength_in_numbers
+label: 'Strength in Numbers'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

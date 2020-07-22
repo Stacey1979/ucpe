@@ -1,0 +1,15 @@
+uuid: 93e4869c-ec3b-43dd-a4bf-8f3eee4247ab
+langcode: en
+status: true
+dependencies: {  }
+name: xsmall_1_1_180x180_
+label: 'XSmall 1:1 (180x180)'
+effects:
+  a4d95068-9596-4bb1-bbc0-ff1efd29fdda:
+    uuid: a4d95068-9596-4bb1-bbc0-ff1efd29fdda
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 180
+      anchor: center-center

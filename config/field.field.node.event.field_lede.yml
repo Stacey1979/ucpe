@@ -1,0 +1,28 @@
+uuid: 69defa0d-9b5d-4fb5-b450-cc3d69a6fee1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lede
+    - node.type.event
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+    code: '0'
+id: node.event.field_lede
+field_name: field_lede
+entity_type: node
+bundle: event
+label: Lede
+description: 'Add a short sentence under the title. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

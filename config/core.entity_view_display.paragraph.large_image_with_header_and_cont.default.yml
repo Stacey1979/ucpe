@@ -1,0 +1,68 @@
+uuid: 89863a5b-4e61-464d-8880-8fac7b9b4b1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.large_image_with_header_and_cont.field_content_column_2
+    - field.field.paragraph.large_image_with_header_and_cont.field_optional_title
+    - field.field.paragraph.large_image_with_header_and_cont.field_portrait_image
+    - paragraphs.paragraphs_type.large_image_with_header_and_cont
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          left: {  }
+          right: {  }
+    regions:
+      left:
+        - field_portrait_image
+      right:
+        - field_optional_title
+        - field_content_column_2
+id: paragraph.large_image_with_header_and_cont.default
+targetEntityType: paragraph
+bundle: large_image_with_header_and_cont
+mode: default
+content:
+  field_content_column_2:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: right
+  field_optional_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: right
+  field_portrait_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: left
+hidden: {  }

@@ -13,9 +13,10 @@ dependencies:
     - paragraphs.paragraphs_type.horizontal_rule
     - paragraphs.paragraphs_type.image_carousel_combo
     - paragraphs.paragraphs_type.large_image_with_caption_left_or
+    - paragraphs.paragraphs_type.large_image_with_header_and_cont
     - paragraphs.paragraphs_type.related_instructors
     - paragraphs.paragraphs_type.statistics
-    - paragraphs.paragraphs_type.text_one_two_third
+    - paragraphs.paragraphs_type.strength_in_numbers
     - paragraphs.paragraphs_type.text_two_one_third
     - paragraphs.paragraphs_type.three_up_illust_img_combo
     - paragraphs.paragraphs_type.three_up_statistics_combo
@@ -26,7 +27,7 @@ field_name: field_content_sections
 entity_type: node
 bundle: page
 label: 'Content Sections'
-description: ''
+description: 'Use various formats to build your page. '
 required: false
 translatable: true
 default_value: {  }
@@ -46,16 +47,20 @@ settings:
       large_image_with_caption_left_or: large_image_with_caption_left_or
       related_instructors: related_instructors
       statistics: statistics
-      text_one_two_third: text_one_two_third
       text_two_one_third: text_two_one_third
       three_up_illust_img_combo: three_up_illust_img_combo
       three_up_statistics_combo: three_up_statistics_combo
+      large_image_with_header_and_cont: large_image_with_header_and_cont
+      strength_in_numbers: strength_in_numbers
     target_bundles_drag_drop:
       about_person:
         weight: 30
         enabled: false
       about_student:
         weight: 31
+        enabled: false
+      at_a_glance:
+        weight: 49
         enabled: false
       blockquote:
         weight: 32
@@ -69,9 +74,27 @@ settings:
       content_sections:
         weight: 35
         enabled: false
+      content_with_image_50_50_:
+        weight: 54
+        enabled: false
       cta:
         enabled: true
         weight: 36
+      deadlines:
+        weight: 56
+        enabled: false
+      designed_for:
+        weight: 57
+        enabled: false
+      duration:
+        weight: 58
+        enabled: false
+      event_hero:
+        weight: 59
+        enabled: false
+      form_embed:
+        weight: 60
+        enabled: false
       full_width_content:
         enabled: true
         weight: 37
@@ -105,11 +128,38 @@ settings:
       large_image_with_caption_left_or:
         enabled: true
         weight: 47
+      large_image_with_header_and_cont:
+        enabled: true
+        weight: 73
+      ptoc_container:
+        weight: 72
+        enabled: false
+      ptoc_image:
+        weight: 73
+        enabled: false
+      ptoc_links:
+        weight: 74
+        enabled: false
+      ptoc_text:
+        weight: 75
+        enabled: false
+      related_courses:
+        weight: 76
+        enabled: false
       related_instructors:
         enabled: true
         weight: 48
+      related_of_interest:
+        weight: 78
+        enabled: false
       related_program_block:
         weight: 49
+        enabled: false
+      related_program_combo:
+        weight: 81
+        enabled: false
+      related_programs_for_area_of_stu:
+        weight: 79
         enabled: false
       statistics:
         enabled: true
@@ -120,12 +170,18 @@ settings:
       story_programs:
         weight: 52
         enabled: false
-      text_one_two_third:
+      strength_in_numbers:
         enabled: true
+        weight: 88
+      text_one_two_third:
         weight: 53
+        enabled: false
       text_two_one_third:
         enabled: true
         weight: 54
+      text_with_media_1_3_2_3_:
+        weight: 87
+        enabled: false
       three_up_illust_img_combo:
         enabled: true
         weight: 55
@@ -138,4 +194,7 @@ settings:
       three_up_statistics_combo:
         enabled: true
         weight: 58
+      video:
+        weight: 92
+        enabled: false
 field_type: entity_reference_revisions

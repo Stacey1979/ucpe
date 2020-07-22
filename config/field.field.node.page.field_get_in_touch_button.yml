@@ -1,0 +1,23 @@
+uuid: 43ce05e3-479a-40f6-90df-dc1cf7668975
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_get_in_touch_button
+    - node.type.page
+  module:
+    - link
+id: node.page.field_get_in_touch_button
+field_name: field_get_in_touch_button
+entity_type: node
+bundle: page
+label: 'Get in Touch Button'
+description: 'add a link to the contact page. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link
