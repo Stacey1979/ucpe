@@ -1,0 +1,214 @@
+//THREE UP CONTENT
+
+.three-up {
+  display: block;
+  @include screen("tablet") {
+    display: flex;
+  }
+
+  .col {
+    margin-bottom: $baseline * 3;
+    @include screen("tablet") {
+      flex: 1;
+    }
+  }
+}
+
+// VIDEO EMBEDS
+
+.video-embed-field-responsive-video {
+  margin-bottom: $baseline * 5 !important;
+  iframe {
+  }
+}
+
+// PROGRAM META INFORMATION (SHEILD STYLES)
+.program_meta {
+  svg {
+    fill: currentColor;
+    color: $maroon;
+  }
+
+  .category {
+    display: inline-block;
+
+    .category_name {
+      background-color: white;
+      @include utility_XS($black);
+      left: -24px;
+      position: relative;
+      padding: 2px;
+      top: -13px;
+
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+
+      > div {
+        display: inline-block;
+      }
+    }
+
+    .meta {
+      @include bodycopy_XS($black, $bold: false);
+      display: block;
+      @include screen("desktop") {
+        display: inline;
+        position: relative;
+        top: -13px;
+      }
+
+      a {
+        @include bodycopy_S($black, $bold: true);
+        border-bottom: solid 2px $maroon;
+        text-decoration: none;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+          color: $maroon;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+  }
+}
+
+//DEF LISTS FOR STORY PROFILE, PROGRAM PREVIEW
+.program_preview,
+.story_profile {
+  dl {
+    margin-bottom: 0;
+
+    @include screen("desktop") {
+      dt,
+      dd {
+        float: left;
+      }
+    }
+
+    dt {
+      @include bodycopy_M($black, $bold: true);
+      clear: left;
+      font-weight: bold;
+
+      @include screen("desktop") {
+        margin-bottom: $baseline;
+        margin-right: 5%;
+        width: 25%;
+        clear: left;
+      }
+    }
+    dd {
+      @include bodycopy_M($black, $bold: false);
+      margin-bottom: $baseline;
+      @include screen("desktop") {
+        width: 70%;
+      }
+      p {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+// DESIGNED FOR
+
+.designed_for {
+  border-top: solid 1px $divider-gray;
+  border-bottom: solid 1px $divider-gray;
+  margin: $baseline * 2 0 $baseline * 3;
+
+  @include screen("tablet-wide") {
+    display: flex;
+    align-items: center;
+    margin: $baseline * 3 0 $baseline * 5;
+  }
+
+  .df_graphic {
+    position: relative;
+    svg {
+      color: $maroon;
+      display: block;
+      fill: currentColor;
+      margin: 0 auto;
+      padding: $baseline * 2.5;
+      width: 150px;
+
+      @include screen("tablet-wide") {
+      }
+    }
+
+    h4 {
+      @include utility_XS($black);
+      letter-spacing: 1px;
+      position: absolute;
+      top: calc(50% - 18px);
+      text-align: center;
+      width: 100%;
+      background-color: white;
+      margin: 0;
+      padding: 5px 0;
+
+      @include screen("tablet-wide") {
+      }
+    }
+  }
+  .df_description {
+    padding: 0 $baseline * 2 $baseline * 2;
+
+    @include screen("tablet-wide") {
+      padding: $baseline * 2;
+      flex: 1 0 0%;
+      border-left: solid 1px $divider-gray;
+    }
+
+    p {
+      font-family: $serif-font;
+      font-weight: $serif-regular;
+      font-size: 1.1rem;
+      font-style: italic;
+      margin: 0;
+      text-align: center;
+
+      @include screen("tablet-wide") {
+        text-align: left;
+      }
+    }
+  }
+}
+
+// NEXT STEPS BUTTON SET
+
+.next_steps {
+  border-top: solid 1px $divider-gray;
+  border-bottom: solid 1px $divider-gray;
+  margin: $baseline * 2 0 $baseline * 3;
+  padding: $baseline * 3 0;
+
+  h4 {
+    @include heading_XS($black);
+  }
+}
+
+// RELATED BLOCKS
+
+.related {
+  border: solid 2px $divider-gray;
+  padding: $baseline * 2;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    left: -2px;
+    height: 5px;
+    position: absolute;
+    top: -2px;
+    width: calc(100% + 4px);
+  }
+
+  &.related_story:before {
+    background-color: $salmon;
+  }
+}
