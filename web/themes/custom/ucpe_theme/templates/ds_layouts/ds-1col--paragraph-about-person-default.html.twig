@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+<div class="story_profile">
+  <h4>About {{ ds_content.field_about|field_value }}</h4>
+  <dl>
+    {% if ds_content.field_position %}
+      <dt>{{ ds_content.field_position|field_label }}</dt>
+      <dd>{{ ds_content.field_position|field_value }}</dd>
+    {% endif %}
+    {% if ds_content.field_courses %}
+      <dt>{{ ds_content.field_courses|field_label }}</dt>
+      <dd>{{ ds_content.field_courses|field_value }}</dd>
+    {% endif %}
+    {% if ds_content.field_division %}
+      <dt>{{ ds_content.field_division|field_label }}</dt>
+      <dd>{{ ds_content.field_division|field_value }}</dd>
+    {% endif %}
+    {% if ds_content.field_program %}
+      <dt>{{ ds_content.field_program|field_label }}</dt>
+      <dd>{{ ds_content.field_program|field_value }}</dd>
+    {% endif %}
+  </dl>
+</div>

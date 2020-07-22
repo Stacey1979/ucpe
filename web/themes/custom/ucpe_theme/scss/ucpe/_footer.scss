@@ -70,7 +70,7 @@ footer.footer {
     }
 
     .fyf_item {
-      padding-right: $baseline;
+      padding: 0 $baseline $baseline 0;
 
       a,
       a:active,
@@ -111,6 +111,7 @@ footer.footer {
 
       li {
         padding: 0 $baseline 0 0;
+        margin-bottom: $baseline/2;
 
         a,
         a:active,
