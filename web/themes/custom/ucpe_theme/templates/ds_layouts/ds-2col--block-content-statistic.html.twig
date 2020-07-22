@@ -16,7 +16,7 @@
 #}
 <div class="stat">
   <div class="stat_number">
-{% if left.field_image_attribution_2 is not empty  %}<span class="pre">{{ left.field_pre_number|field_value }}{% endif %}<span class="num">{{ left.field_number|field_value }}</span>{% if left.field_post_number is not empty  %}<span class="post">{{ left.field_post_number|field_value }}</span>{% endif %}
+    {% if left.field_image_attribution_2 is not empty  %}<span class="pre">{{ left.field_pre_number|field_value }}{% endif %}<span class="num">{{ left.field_number|field_value }}</span>{% if left.field_post_number is not empty  %}<span class="post">{{ left.field_post_number|field_value }}</span>{% endif %}
   </div>
   <div class="stat_content">
     {{ right.body|field_value }}
