@@ -1,0 +1,55 @@
+uuid: c3ff58ff-0908-4f38-bf68-1648ef1039bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.area_of_interest.field_program_detail_page
+    - taxonomy.vocabulary.area_of_interest
+  module:
+    - path
+    - text
+id: taxonomy_term.area_of_interest.default
+targetEntityType: taxonomy_term
+bundle: area_of_interest
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_program_detail_page:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+hidden: {  }
