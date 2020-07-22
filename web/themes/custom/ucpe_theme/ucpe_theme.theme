@@ -6,3 +6,9 @@
  *
  * Place your custom PHP code in this file.
  */
+function ucpe_theme_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
+  $current_view = $variables['view']->current_display;
+  $current_id = $variables['view']->id();
+  $suggestions[] = 'views_view__' . $current_id;
+  $suggestions[] = 'views_view__' . $current_id . '__' . $current_view;
+}
