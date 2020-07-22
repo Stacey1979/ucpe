@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+<div class="hero_wrapper hero_aos">
+  <div class="hero">
+    <div class="hero_content_wrapper">
+      <div class="hero_content">
+        <p class="meta">{{ content['bundle_field:node']|field_value }}</p>
+        <h1>{{ title|field_value }}</h1>
+        <p class="lede">{{ ds_content.field_lede|field_value }}</p>
+      </div>
+      <div class="hero_cta">
+        <p>Learn more about the UChicago difference</p>
+        <a class="btn secondary" href="{{ ds_content.field_view_programs_cta[0]['#url'] }}">{{ ds_content.field_view_programs_cta[0]['#title'] }}</a>
+      </div>
+    </div>
+    <div class="hero_img">
+      {{ ds_content.field_hero|field_value }}
+    </div>
+  </div>
+</div><!--end hero_wrapper-->
+<div class="content_wrapper">
+  <div class="area_of_study">
+      {{ ds_content|without('field_bundle','title','field_lede','field_view_programs_cta','field_hero') }}
+  </div>
+</div>

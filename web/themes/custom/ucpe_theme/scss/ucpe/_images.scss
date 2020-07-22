@@ -5,37 +5,44 @@
 .headshot {
   display: block;
   border-radius: 50%;
-  width: $baseline * 5;
-  height: $baseline * 5;
+  width: $baseline * 7;
+  height: $baseline * 7;
   position: relative;
-  margin-bottom: $baseline * 2;
-  @include screen("tablet") {
-    margin-bottom: $baseline * 4;
-  }
+  margin: 0 auto $baseline * 2;
 
   img {
     border-radius: 50%;
     max-width: 100%;
+    z-index: 5;
+    position: relative;
   }
 
-  &:before {
+  &:after {
     content: "";
     position: absolute;
-    z-index: -1;
-    background-color: $gold;
+    background-color: #ffb547;
     display: block;
-    top: -$baseline/4;
-    left: -$baseline/4;
-    border-top-left-radius: $baseline * 5 + $baseline/2;
-    border-bottom-left-radius: $baseline * 5 + $baseline/2;
-    width: $baseline * 2.875;
-    height: $baseline * 5 + $baseline/2;
+    top: -5px;
+    left: -5px;
+    border-top-left-radius: calc(3.5rem + 5px);
+    border-bottom-left-radius: calc(3.5rem + 5px);
+    width: calc(3.5rem + 5px);
+    height: calc(7rem + 10px);
+    z-index: 1;
   }
 
-  figcaption {
-    @include bodycopy_S($black, $bold: false);
-    margin-top: $baseline;
-    text-align: center;
+  &.small {
+    width: $baseline * 3.5;
+    height: $baseline * 3.5;
+
+    &:after {
+      top: -3px;
+      left: -3px;
+      border-top-left-radius: calc(1.75rem + 3px);
+      border-bottom-left-radius: calc(1.75rem + 3px);
+      width: calc(1.75rem + 3px);
+      height: calc(3.5rem + 6px);
+    }
   }
 }
 

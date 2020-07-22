@@ -15,16 +15,16 @@
  */
 #}
 <div class="cta_aos">
-	<div class="wrapper">
     <div class="content">
-			<figure class="cta_photo">
-				{{ left.field_hero }}
-			</figure>
+			<div class="cta_photo">
+				<figure>
+					{{ left.field_hero|field_value }}
+				</figure>
+			</div>
 			<div class="cta_content">
 				<h3>{{ title }}</h3>
 				<p>{{ right.field_lede|field_value }}</p>
         <a class="learnmore" href="{{ path('entity.node.canonical', {'node': content['#node'].id() }) }}">Learn more about {{ title }}</a>
       </div>
     </div>
-	</div>
 </div>
