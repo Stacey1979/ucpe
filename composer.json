@@ -179,11 +179,6 @@
             ],
             "export-configuration": "drush config-export --yes"
         },
-        "patches": {
-            "drupal/core": {
-                "allow exposed filters to be available as tokens": "https://www.drupal.org/files/issues/2020-03-02/exposed_filter_tokens-2761273-21.patch"     
-            }
-        },
         "drupal-scaffold": {
             "allowed-packages": [
                 "pantheon-systems/drupal-integrations"

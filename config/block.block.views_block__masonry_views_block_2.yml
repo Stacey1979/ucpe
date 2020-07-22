@@ -1,0 +1,41 @@
+uuid: 1e443a75-f769-4722-afc7-ea237bbc08d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.masonry_views
+  module:
+    - ctools
+    - node
+    - views
+  theme:
+    - ucpe_theme
+id: views_block__masonry_views_block_2
+theme: ucpe_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:masonry_views-block_2'
+settings:
+  id: 'views_block:masonry_views-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      area_of_study: area_of_study
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      area_of_study: area_of_study
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
