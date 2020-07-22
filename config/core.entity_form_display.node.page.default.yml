@@ -19,7 +19,6 @@ dependencies:
     - node.type.page
   module:
     - field_group
-    - link
     - link_attributes
     - media_library
     - paragraphs
@@ -37,7 +36,7 @@ third_party_settings:
       format_type: fieldset
       region: content
       format_settings:
-        description: 'These fields are required on the About Page. '
+        description: ''
         id: ''
         classes: ''
         required_fields: false
@@ -83,17 +82,10 @@ third_party_settings:
       format_type: fieldset
       region: content
       format_settings:
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        effect: none
-        speed: fast
-        attributes: ''
-        classes: ''
-        id: ''
-        required_fields: true
         description: ''
+        id: ''
+        classes: ''
+        required_fields: false
       label: 'Intro to UCPE'
 _core:
   default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
@@ -179,8 +171,17 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      enabled_attributes:
+        target: true
+        aria-label: true
+        id: false
+        name: false
+        rel: false
+        class: false
+        accesskey: false
+        title: false
     third_party_settings: {  }
-    type: link_default
+    type: link_attributes
     region: content
   field_large_image_left:
     type: media_library_widget

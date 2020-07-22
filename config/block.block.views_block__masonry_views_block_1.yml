@@ -19,12 +19,12 @@ settings:
   id: 'views_block:masonry_views-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /learning-without-limits
+    pages: /index
     negate: false
     context_mapping: {  }
