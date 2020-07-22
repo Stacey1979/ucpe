@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.program_type.field_program_detail_page
     - field.field.taxonomy_term.program_type.field_taxonomy_image
     - taxonomy.vocabulary.program_type
   module:
@@ -30,8 +29,18 @@ third_party_settings:
     regions:
       ds_content:
         - field_taxonomy_image
-        - field_program_detail_page
+        - taxonomy_term_title
         - description
+    fields:
+      taxonomy_term_title:
+        plugin_id: taxonomy_term_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
 id: taxonomy_term.program_type.default
 targetEntityType: taxonomy_term
 bundle: program_type
@@ -43,14 +52,6 @@ content:
     weight: 2
     region: ds_content
     settings: {  }
-    third_party_settings: {  }
-  field_program_detail_page:
-    type: entity_reference_label
-    weight: 1
-    region: ds_content
-    label: hidden
-    settings:
-      link: true
     third_party_settings: {  }
   field_taxonomy_image:
     type: entity_reference_entity_view
