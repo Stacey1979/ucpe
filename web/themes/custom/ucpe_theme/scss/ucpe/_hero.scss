@@ -5,7 +5,7 @@
   }
 
   .hero_img {
-    .field--name-field-image-attribution {
+    .field--name-field-image-attribution-wysiwyg {
       position: absolute;
       @include bodycopy_S($black_03);
 
@@ -51,7 +51,7 @@
     }
 
     // photo attribute
-    .field--name-field-image-attribution {
+    .field--name-field-image-attribution-wysiwyg {
       bottom: -25px;
       right: 15px;
       @media only screen and (min-width: 1800px) {
@@ -135,12 +135,16 @@
       &:before {
         background-color: $bg_02;
         content: "";
-        height: 100%;
+        height: calc(100% + 1.5rem);
         left: 0;
         position: absolute;
         top: 0;
         width: 100%;
         z-index: -1;
+        max-width: 99vw;
+        @include screen("desktop") {
+          max-width: 95vw;
+        }
       }
       .hero_img {
         @include screen("phablet, $type: max") {
@@ -155,7 +159,7 @@
           margin-top: 0;
         }
 
-        .field--name-field-image-attribution {
+        .field--name-field-image-attribution-wysiwyg {
           &:before {
             @include iconfont($white, "\63");
           }
@@ -207,10 +211,10 @@
           padding: $baseline * 2 0 $baseline $baseline * 3;
         }
         @include screen("desktop") {
-          padding: $baseline * 2.5 0 $baseline $baseline * 3;
+          padding: $baseline * 2.5 $baseline * 3 $baseline $baseline * 3;
         }
         @include screen("desktop-wide") {
-          padding: $baseline * 6 0 $baseline * 3 $baseline * 3;
+          padding: $baseline * 6 $baseline * 3 $baseline * 3 $baseline * 3;
         }
 
         .meta {
