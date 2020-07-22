@@ -131,6 +131,7 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_author: true
   field_date_and_lede: true
   field_featured_quote: true
   field_metatags: true
