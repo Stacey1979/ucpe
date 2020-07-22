@@ -1,0 +1,23 @@
+uuid: 55d9b292-35db-4aa8-a527-e3f7c20c6f39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.area_of_interest.field_program_detail_page
+    - taxonomy.vocabulary.area_of_interest
+  module:
+    - text
+id: taxonomy_term.area_of_interest.default
+targetEntityType: taxonomy_term
+bundle: area_of_interest
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_program_detail_page: true

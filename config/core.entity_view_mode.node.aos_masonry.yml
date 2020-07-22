@@ -1,0 +1,10 @@
+uuid: 24b1284b-e80a-4787-82ad-1ef22176b6e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.aos_masonry
+label: 'AOS Masonry'
+targetEntityType: node
+cache: true
