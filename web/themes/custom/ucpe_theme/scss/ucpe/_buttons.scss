@@ -1,0 +1,202 @@
+//Buttons
+
+.learnmore {
+  @include bodycopy_M($plum, $bold: true);
+  text-decoration: none;
+
+  &:after {
+    @include iconfont(inherit, "\3e");
+    color: $maroon;
+    font-size: 1.25rem;
+    vertical-align: -5px;
+    position: relative;
+    right: -5px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  &:hover {
+    text-decoration: none;
+    &:after {
+      transform: translate(3px, 0);
+    }
+  }
+}
+
+.btn-group {
+  .btn {
+    margin-right: 1em;
+  }
+}
+
+.btn {
+  background-color: $maroon;
+  border: solid 2px $maroon;
+  border-radius: 0;
+  color: $white;
+  @include font($sans-serif-font, 1rem, $white, $sans-serif-semibold, 1rem);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+  transition-property: color, transform, background-color;
+  //transition-delay: 0s, 0s, 0.3s;
+
+  &:hover {
+    background-color: $white;
+    color: $plum;
+  }
+
+  //this applies to all icons
+  &:after,
+  &:before {
+    font-size: 1.25rem;
+    vertical-align: -5px;
+    position: relative;
+    right: 0;
+    display: inline-block;
+    transition: 0.1s;
+  }
+
+  &.external:after,
+  &.arrow-right:after,
+  &.arrow-down:after {
+    margin-left: 10px;
+  }
+
+  &.external {
+    &:after {
+      @include iconfont(inherit, "\77");
+    }
+    &:hover:after {
+      transform: translate(2px, -2px);
+    }
+  }
+
+  &.arrow-right {
+    &:after {
+      @include iconfont(inherit, "\3e");
+    }
+    &:hover:after {
+      transform: translate(3px, 0);
+    }
+  }
+
+  &.arrow-down {
+    &:after {
+      @include iconfont(inherit, "\67");
+    }
+    &:hover:after {
+      transform: translate(0, 3px);
+    }
+  }
+
+  &.arrow-left {
+    &:before {
+      font-size: 1.25rem;
+      @include iconfont(inherit, "\3c");
+      margin-right: 10px;
+    }
+    &:hover:before {
+      transform: translate(-3px, 0);
+    }
+  }
+
+  &.secondary {
+    background-color: $gold;
+    border-color: $gold;
+    color: $plum;
+
+    &:hover {
+      border-color: $maroon;
+      background-color: $white;
+    }
+  }
+
+  &.tertiary {
+    background-color: $white;
+    border-color: $plum;
+    color: $plum;
+
+    &:after {
+      color: $maroon;
+    }
+
+    &:hover {
+      border-color: $black;
+      background-color: lighten($black, 85%);
+    }
+  }
+
+  &.quaternary {
+    background-color: $white;
+    border-color: $divider-gray;
+    color: $plum;
+
+    &:after {
+      color: $maroon;
+    }
+    &:hover {
+      border-color: $maroon;
+    }
+  }
+
+  &.text {
+    border: 0;
+    background-color: transparent;
+    color: $plum;
+    position: relative;
+    padding-left: 0;
+
+    &:hover {
+      color: $maroon;
+    }
+  }
+
+  &.primary {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 2px $maroon;
+    color: $plum;
+    padding: 0 0 2px;
+    margin: 0.75rem 0;
+    transition-duration: 0.2s;
+
+    &:hover {
+      border-color: $black;
+      color: $black;
+      transform: scale(1.05);
+    }
+  }
+}
+
+// LINK LIST
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 0 !important;
+    a {
+      border-bottom: solid 2px $maroon;
+      display: inline-block;
+      @include font($serif-font, 1rem, $black, $serif-regular, 1rem);
+      padding-bottom: 2px;
+      text-decoration: none;
+      margin: $baseline/2 0;
+
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+
+      &:hover {
+        border-color: $black;
+      }
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+}
