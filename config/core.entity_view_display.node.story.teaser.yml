@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.story.body
-    - field.field.node.story.field_areas_of_study
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
@@ -97,8 +96,11 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+<<<<<<< HEAD
   body: true
   field_areas_of_study: true
+=======
+>>>>>>> master
   field_author: true
   field_content_sections: true
   field_date_and_lede: true

@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.story.body
-    - field.field.node.story.field_areas_of_study
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
@@ -74,7 +73,11 @@ content:
     type: entity_reference_label
     weight: 0
     region: ds_content
+<<<<<<< HEAD
     label: above
+=======
+    label: hidden
+>>>>>>> master
     settings:
       link: true
     third_party_settings: {  }
@@ -141,7 +144,10 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+<<<<<<< HEAD
   field_areas_of_study: true
+=======
+>>>>>>> master
   field_date_and_lede: true
   field_featured: true
   field_featured_quote: true
