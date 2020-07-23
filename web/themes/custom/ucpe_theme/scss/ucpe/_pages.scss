@@ -233,7 +233,7 @@
         width: 100%;
       }
     }
-    .content {
+    > .content {
       @include make-sm-column(12);
       @include screen("tablet-wide") {
         @include make-sm-column(10);
@@ -317,8 +317,9 @@
 
 .area_of_study {
   @include make-container();
-  .content {
+  > .content {
     @include make-sm-column(12);
+    margin-bottom: $baseline * 5;
 
     .intro {
       @include make-sm-column(5);
@@ -343,7 +344,7 @@
 
     .aos_additional_block {
       background-color: $bg-02;
-      margin: 0 3%;
+      margin: 0 3% $baseline * 2;
       min-height: 275px;
       padding: $baseline * 2;
       position: relative;
