@@ -1,0 +1,21 @@
+uuid: fba411bb-e2be-4399-b0c7-d9beca9c4ce0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured
+    - node.type.article
+  module:
+    - options
+id: node.article.field_featured
+field_name: field_featured
+entity_type: node
+bundle: article
+label: Featured
+description: 'Choose this option if you want to feature this piece of content on the perspectives index page. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

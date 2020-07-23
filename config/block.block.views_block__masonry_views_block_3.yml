@@ -1,0 +1,30 @@
+uuid: 16855071-e346-4e6d-8ed7-1992f96114db
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.masonry_views
+  module:
+    - system
+    - views
+  theme:
+    - ucpe_theme
+id: views_block__masonry_views_block_3
+theme: ucpe_theme
+region: content
+weight: 2
+provider: null
+plugin: 'views_block:masonry_views-block_3'
+settings:
+  id: 'views_block:masonry_views-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /stories
+    negate: false
+    context_mapping: {  }

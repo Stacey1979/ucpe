@@ -1,6 +1,6 @@
 uuid: 833c55bf-2f9f-4d79-9c95-c0f7549b9009
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
+    - field.field.node.story.field_featured
     - field.field.node.story.field_featured_quote
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
@@ -18,42 +19,94 @@ dependencies:
     - field.field.node.story.field_story_subject_name
     - node.type.story
   module:
-    - text
+    - ds
+    - smart_trim
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - node_title
+        - field_lede
+        - field_related_program_tag
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h3
+          class: ''
+          link: false
 id: node.story.teaser
 targetEntityType: node
 bundle: story
 mode: teaser
 content:
-  body:
+  field_lede:
+    type: smart_trim
+    weight: 1
+    region: ds_content
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
     settings:
-      trim_length: 600
+      trim_length: 25
+      trim_type: words
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      wrap_output: false
+      more_link: false
+      trim_options:
+        text: false
+        trim_zero: false
+      summary_handler: full
     third_party_settings: {  }
-    region: content
+  field_related_program_tag:
+    type: entity_reference_label
+    weight: 2
+    region: ds_content
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: '2'
   links:
-    weight: 100
+    weight: 3
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
-    region: content
-  reading_time:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden:
   addtoany: true
+  body: true
   field_areas_of_study: true
   field_author: true
   field_content_sections: true
   field_date_and_lede: true
   field_date_written: true
+  field_featured: true
   field_featured_quote: true
   field_hero: true
   field_intro_paragraph: true
-  field_lede: true
   field_metatags: true
-  field_related_program_tag: true
   field_story_subject_name: true
+  reading_time: true

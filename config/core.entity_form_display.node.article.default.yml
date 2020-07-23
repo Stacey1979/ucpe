@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.article.field_based_on
     - field.field.node.article.field_content_sections
     - field.field.node.article.field_date_written
+    - field.field.node.article.field_featured
     - field.field.node.article.field_hero
     - field.field.node.article.field_image
     - field.field.node.article.field_in_brief_perspective
@@ -33,10 +34,10 @@ third_party_settings:
       children:
         - field_hero
         - field_date_written
-        - title
         - field_lede
         - field_based_on
         - field_topics
+        - title
       parent_name: ''
       weight: 0
       format_type: fieldset
@@ -66,6 +67,7 @@ third_party_settings:
         - field_author
         - field_related_programs
         - field_areas_of_study
+        - field_featured
       parent_name: ''
       weight: 3
       format_type: fieldset
@@ -91,11 +93,7 @@ content:
     third_party_settings: {  }
   field_areas_of_study:
     weight: 10
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
@@ -153,6 +151,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_featured:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_hero:
     weight: 1
     settings:

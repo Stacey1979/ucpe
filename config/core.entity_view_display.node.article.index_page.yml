@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_based_on
     - field.field.node.article.field_content_sections
     - field.field.node.article.field_date_written
+    - field.field.node.article.field_featured
     - field.field.node.article.field_hero
     - field.field.node.article.field_image
     - field.field.node.article.field_in_brief_perspective
@@ -89,6 +90,7 @@ hidden:
   field_content_sections: true
   field_date_and_lede: true
   field_date_written: true
+  field_featured: true
   field_image: true
   field_in_brief_perspective: true
   field_intro_paragraph: true

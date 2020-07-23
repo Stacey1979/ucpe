@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
+    - field.field.node.story.field_featured
     - field.field.node.story.field_featured_quote
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
@@ -68,6 +69,10 @@ content:
     settings:
       link: '1'
     third_party_settings: {  }
+    region: ds_content
+  field_author:
+    type: entity_reference_label
+    weight: 0
     region: ds_content
     label: above
     settings:
@@ -136,8 +141,9 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  field_author: true
+  field_areas_of_study: true
   field_date_and_lede: true
+  field_featured: true
   field_featured_quote: true
   field_metatags: true
   field_related_program_tag: true

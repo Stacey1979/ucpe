@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
+    - field.field.node.story.field_featured
     - field.field.node.story.field_featured_quote
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
@@ -60,10 +61,11 @@ third_party_settings:
       label: Content
     group_administrative:
       children:
-        - field_areas_of_study
-        - field_related_program_tag
         - field_story_subject_name
         - field_featured_quote
+        - field_areas_of_study
+        - field_related_program_tag
+        - field_featured
       parent_name: ''
       weight: 2
       format_type: fieldset
@@ -131,6 +133,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_featured:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_featured_quote:
     weight: 5
