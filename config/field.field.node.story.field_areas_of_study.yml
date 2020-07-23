@@ -1,0 +1,29 @@
+uuid: 5dfa162f-a9f3-4ca4-9233-5eb2cd613bb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_areas_of_study
+    - node.type.story
+    - taxonomy.vocabulary.area_of_interest
+id: node.story.field_areas_of_study
+field_name: field_areas_of_study
+entity_type: node
+bundle: story
+label: 'Area of Study'
+description: 'Choose which Area(s) of study this content is associated with.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      area_of_interest: area_of_interest
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
