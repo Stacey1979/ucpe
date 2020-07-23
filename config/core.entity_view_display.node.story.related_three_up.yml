@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.related_three_up
     - field.field.node.story.body
-    - field.field.node.story.field_areas_of_study
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
@@ -46,7 +45,13 @@ third_party_settings:
         - field_date_written
         - node_title
         - links
+        - 'bundle_field:node'
     fields:
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 4
+        label: hidden
+        formatter: default
       node_title:
         plugin_id: node_title
         weight: 2
@@ -87,7 +92,6 @@ content:
 hidden:
   addtoany: true
   body: true
-  field_areas_of_study: true
   field_author: true
   field_content_sections: true
   field_date_and_lede: true

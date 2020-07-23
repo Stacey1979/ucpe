@@ -22,8 +22,6 @@ dependencies:
     - node.type.non_owned_program_landing_page
   module:
     - ds
-    - entity_reference_revisions
-    - text
     - user
 third_party_settings:
   ds:
@@ -47,13 +45,11 @@ third_party_settings:
       ds_content:
         - links
         - field_program_illustration
-        - field_at_a_glance
         - node_title
-        - field_lede
     fields:
       node_title:
         plugin_id: node_title
-        weight: 3
+        weight: 2
         label: hidden
         formatter: default
         settings:
@@ -65,22 +61,6 @@ targetEntityType: node
 bundle: non_owned_program_landing_page
 mode: related_program
 content:
-  field_at_a_glance:
-    weight: 2
-    label: hidden
-    settings:
-      view_mode: related_program
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
-  field_lede:
-    weight: 4
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: ds_content
   field_program_illustration:
     type: entity_reference_entity_view
     weight: 1
@@ -98,11 +78,13 @@ content:
 hidden:
   addtoany: true
   field_areas_of_study: true
+  field_at_a_glance: true
   field_content: true
   field_designed_for: true
   field_focus_areas: true
   field_form: true
   field_hero: true
+  field_lede: true
   field_link_to_main_page: true
   field_metatags: true
   field_of_interest: true

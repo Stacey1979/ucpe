@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.read_their_story
     - field.field.node.story.body
-    - field.field.node.story.field_areas_of_study
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
@@ -37,7 +36,6 @@ content:
 hidden:
   addtoany: true
   body: true
-  field_areas_of_study: true
   field_author: true
   field_content_sections: true
   field_date_and_lede: true

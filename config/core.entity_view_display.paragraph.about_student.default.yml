@@ -81,6 +81,8 @@ content:
     settings:
       view_mode: default
       link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
     region: ds_content
 hidden: {  }
