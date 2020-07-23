@@ -300,11 +300,15 @@
       margin: $baseline * 2.5 0;
       @include screen("tablet-wide") {
         float: right;
-        margin: $baseline * 2.5 0 $baseline * 2.5 $baseline * 2.5;
+        margin: 0 0 $baseline * 2.5 $baseline * 2.5;
       }
       @include screen("desktop") {
         margin-right: -16.6667%;
       }
+    }
+
+    .intro p {
+      @include heading_S($black);
     }
   }
 }

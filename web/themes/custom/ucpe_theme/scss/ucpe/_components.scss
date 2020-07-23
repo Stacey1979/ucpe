@@ -1,266 +1,3 @@
-//Buttons
-
-.learnmore {
-  @include bodycopy_M($plum, $bold: true);
-  text-decoration: none;
-
-  &:after {
-    @include iconfont(inherit, "\3e");
-    color: $maroon;
-    font-size: 1.25rem;
-    vertical-align: -5px;
-    position: relative;
-    right: -5px;
-    display: inline-block;
-    transition: 0.3s;
-  }
-  &:hover {
-    text-decoration: none;
-    &:after {
-      transform: translate(3px, 0);
-    }
-  }
-}
-
-.btn-group {
-  .btn {
-    margin-right: 1em;
-  }
-}
-
-.btn {
-  background-color: $maroon;
-  border: solid 2px $maroon;
-  border-radius: 0;
-  color: $white;
-  @include font($sans-serif-font, 1rem, $white, $sans-serif-semibold, 1rem);
-  padding: 0.75rem 1rem;
-  text-decoration: none;
-  transition-timing-function: linear;
-  transition-duration: 0.3s;
-  transition-property: color, transform, background-color;
-  //transition-delay: 0s, 0s, 0.3s;
-
-  &:hover {
-    background-color: $white;
-    color: $plum;
-  }
-
-  //this applies to all icons
-  &:after,
-  &:before {
-    font-size: 1.25rem;
-    vertical-align: -5px;
-    position: relative;
-    right: 0;
-    display: inline-block;
-    transition: 0.1s;
-  }
-
-  &.external:after,
-  &.arrow-right:after,
-  &.arrow-down:after {
-    margin-left: 10px;
-  }
-
-  &.external {
-    &:after {
-      @include iconfont(inherit, "\77");
-    }
-    &:hover:after {
-      transform: translate(2px, -2px);
-    }
-  }
-
-  &.arrow-right {
-    &:after {
-      @include iconfont(inherit, "\3e");
-    }
-    &:hover:after {
-      transform: translate(3px, 0);
-    }
-  }
-
-  &.arrow-down {
-    &:after {
-      @include iconfont(inherit, "\67");
-    }
-    &:hover:after {
-      transform: translate(0, 3px);
-    }
-  }
-
-  &.arrow-left {
-    &:before {
-      font-size: 1.25rem;
-      @include iconfont(inherit, "\3c");
-      margin-right: 10px;
-    }
-    &:hover:before {
-      transform: translate(-3px, 0);
-    }
-  }
-
-  &.secondary {
-    background-color: $gold;
-    border-color: $gold;
-    color: $plum;
-
-    &:hover {
-      border-color: $maroon;
-      background-color: $white;
-    }
-  }
-
-  &.tertiary {
-    background-color: $white;
-    border-color: $plum;
-    color: $plum;
-
-    &:after {
-      color: $maroon;
-    }
-
-    &:hover {
-      border-color: $black;
-      background-color: lighten($black, 85%);
-    }
-  }
-
-  &.quaternary {
-    background-color: $white;
-    border-color: $divider-gray;
-    color: $plum;
-
-    &:after {
-      color: $maroon;
-    }
-    &:hover {
-      border-color: $maroon;
-    }
-  }
-
-  &.text {
-    border: 0;
-    background-color: transparent;
-    color: $plum;
-    position: relative;
-    padding-left: 0;
-
-    &:hover {
-      color: $maroon;
-    }
-  }
-
-  &.primary {
-    background-color: transparent;
-    border: 0;
-    border-bottom: solid 2px $maroon;
-    color: $plum;
-    padding: 0 0 2px;
-    margin: 0.75rem 0;
-    transition-duration: 0.2s;
-
-    &:hover {
-      border-color: $black;
-      color: $black;
-      transform: scale(1.05);
-    }
-  }
-}
-
-// LINK LIST
-
-.link-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  li {
-    padding: 0 !important;
-    a {
-      border-bottom: solid 2px $maroon;
-      display: inline-block;
-      @include font($serif-font, 1rem, $black, $serif-regular, 1rem);
-      padding-bottom: 2px;
-      text-decoration: none;
-      margin: $baseline/2 0;
-
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-
-      &:hover {
-        border-color: $black;
-      }
-    }
-
-    &:before {
-      display: none;
-    }
-  }
-}
-
-// VIDEO EMBEDS
-
-.video-embed-field-responsive-video {
-  margin-bottom: $baseline * 5 !important;
-  iframe {
-  }
-}
-
-// PROGRAM META INFORMATION (SHEILD STYLES)
-.program_meta {
-  svg {
-    fill: currentColor;
-    color: $maroon;
-  }
-
-  .category {
-    display: inline-block;
-
-    .category_name {
-      background-color: white;
-      @include utility_XS($black);
-      left: -24px;
-      position: relative;
-      padding: 2px;
-      top: -13px;
-
-      a {
-        color: $black;
-        text-decoration: none;
-      }
-
-      > div {
-        display: inline-block;
-      }
-    }
-
-    .meta {
-      @include bodycopy_XS($black, $bold: false);
-      display: block;
-      @include screen("desktop") {
-        display: inline;
-        position: relative;
-        top: -13px;
-      }
-
-      a {
-        @include bodycopy_S($black, $bold: true);
-        border-bottom: solid 2px $maroon;
-        text-decoration: none;
-        transition: all 0.2s ease-out;
-
-        &:hover {
-          color: $maroon;
-          transition: all 0.2s ease-in;
-        }
-      }
-    }
-  }
-}
-
 // STATS
 
 .stat_number {
@@ -318,17 +55,8 @@
 // THREE UP PROMO
 
 .three-up-promo {
-  display: block;
-
-  @include screen("tablet") {
-    display: flex;
-  }
-
   .col {
-    margin-bottom: $baseline * 3;
-
     @include screen("tablet") {
-      flex: 1;
       .bottom {
         text-align: center;
       }
@@ -408,7 +136,8 @@
   @include make-sm-column(12);
   background-color: $bg_03;
   padding: $baseline * 3 0;
-  margin: $baseline * 5 0;
+  margin: $baseline * 5 0 $baseline * 5 -15px;
+  width: calc(100% + 30px) !important;
 
   &:before,
   &:after {
@@ -437,7 +166,7 @@
   }
 
   .wrapper {
-    @include make-container();
+    //@include make-container();
 
     .cta_content {
       @include make-sm-column(5);
@@ -582,44 +311,6 @@
   }
 }
 
-//DEF LISTS FOR STORY PROFILE, PROGRAM PREVIEW
-.program_preview,
-.story_profile {
-  dl {
-    margin-bottom: 0;
-
-    @include screen("desktop") {
-      dt,
-      dd {
-        float: left;
-      }
-    }
-
-    dt {
-      @include bodycopy_M($black, $bold: true);
-      clear: left;
-      font-weight: bold;
-
-      @include screen("desktop") {
-        margin-bottom: $baseline;
-        margin-right: 5%;
-        width: 25%;
-        clear: left;
-      }
-    }
-    dd {
-      @include bodycopy_M($black, $bold: false);
-      margin-bottom: $baseline;
-      @include screen("desktop") {
-        width: 70%;
-      }
-      p {
-        margin-bottom: 0 !important;
-      }
-    }
-  }
-}
-
 // Student Profile
 
 .story_profile {
@@ -629,7 +320,7 @@
   }
   background-color: $bg_02;
   margin-bottom: 2rem;
-  padding: $baseline * 2;
+  padding: $baseline * 3 !important;
 
   @include screen("tablet") {
     &.sp_right {
@@ -840,95 +531,102 @@
   }
 }
 
-// DESIGNED FOR
+.related_stories_wrapper {
+  @include make-container();
 
-.designed_for {
-  border-top: solid 1px $divider-gray;
-  border-bottom: solid 1px $divider-gray;
-  margin: $baseline * 2 0 $baseline * 3;
-
-  @include screen("tablet-wide") {
-    display: flex;
-    align-items: center;
-    margin: $baseline * 3 0 $baseline * 5;
+  h2 {
+    @include bodycopy_XL($maroon, $bold: true);
   }
 
-  .df_graphic {
-    position: relative;
-    svg {
-      color: $maroon;
-      display: block;
-      fill: currentColor;
-      margin: 0 auto;
-      padding: $baseline * 2.5;
-      width: 150px;
+  .related_stories_content {
+    .form-group {
+      min-width: 100%;
+    }
+    .view-header a {
+      @include bodycopy_M($plum, $bold: true);
+      text-decoration: none;
+
+      &:after {
+        @include iconfont(inherit, "\3e");
+        color: $maroon;
+        font-size: 1.25rem;
+        vertical-align: -5px;
+        position: relative;
+        right: -5px;
+        display: inline-block;
+        transition: 0.3s;
+      }
+      &:hover {
+        text-decoration: none;
+        &:after {
+          transform: translate(3px, 0);
+        }
+      }
 
       @include screen("tablet-wide") {
+        position: absolute;
+        top: -55px;
+        right: 0;
+      }
+    }
+    .views-row {
+      //  @include make-row();
+      display: flex;
+      flex-wrap: wrap;
+      @include screen("tablet", $type: max) {
+        flex-direction: column;
+      }
+    }
+    .views-col {
+      margin: 0 $baseline $baseline * 3;
+      flex: 1;
+      display: flex;
+      width: auto !important;
+
+      &.col-1 {
+        margin-left: 0;
+      }
+      &.col-3 {
+        margin-right: 0;
+      }
+      @include screen("tablet", $type: max) {
+        margin-left: 0;
+        margin-right: 0;
       }
     }
 
-    h4 {
-      @include utility_XS($black);
-      letter-spacing: 1px;
-      position: absolute;
-      top: calc(50% - 18px);
-      text-align: center;
+    .related {
+      float: left;
+      padding-left: calc(2rem - 15px);
+      padding-right: calc(2rem - 15px);
       width: 100%;
-      background-color: white;
-      margin: 0;
-      padding: 5px 0;
 
-      @include screen("tablet-wide") {
+      .top,
+      .bottom {
+        @include make-sm-column(12);
+        clear: both;
+      }
+      .top {
+        margin: 0 0 $baseline * 2;
+        .meta {
+          @include utility_M($black_02);
+          float: left;
+        }
+        .headshot {
+          float: right;
+        }
+      }
+      .bottom {
+        .date {
+          @include bodycopy_S($black_02);
+        }
+        h4,
+        h4 a {
+          @include heading_XS($black);
+          text-decoration: none;
+          margin-bottom: 0;
+        }
       }
     }
   }
-  .df_description {
-    padding: 0 $baseline * 2 $baseline * 2;
-
-    @include screen("tablet-wide") {
-      padding: $baseline * 2;
-      flex: 1 0 0%;
-      border-left: solid 1px $divider-gray;
-    }
-
-    p {
-      font-family: $serif-font;
-      font-weight: $serif-regular;
-      font-size: 1.1rem;
-      font-style: italic;
-      margin: 0;
-      text-align: center;
-
-      @include screen("tablet-wide") {
-        text-align: left;
-      }
-    }
-  }
-}
-
-// NEXT STEPS BUTTON SET
-
-.next_steps {
-  border-top: solid 1px $divider-gray;
-  border-bottom: solid 1px $divider-gray;
-  margin: $baseline * 2 0 $baseline * 3;
-  padding: $baseline * 3 0;
-
-  h4 {
-    @include heading_XS($black);
-  }
-}
-
-// ABOUT STUDENT / PROFESSOR  From STORY PAGES
-
-.about {
-  @include make-sm-column(12);
-  margin: $baseline * 4 0;
-  @include screen("tablet-wide") {
-    float: right;
-    margin-right: -50%;
-    width: 50%;
-  }
-  background-color: $bg-02;
-  padding: $baseline * 3 !important;
 }
