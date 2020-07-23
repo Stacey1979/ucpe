@@ -660,7 +660,9 @@
     @include make-md-column(5);
   }
   margin-bottom: $baseline * 2;
-
+  &.col {
+    @include make-sm-column(12);
+  }
   &.right {
     float: right;
     @include screen("tablet") {
