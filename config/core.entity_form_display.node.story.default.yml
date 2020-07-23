@@ -60,6 +60,10 @@ third_party_settings:
       label: Content
     group_administrative:
       children:
+<<<<<<< HEAD
+=======
+        - field_related_program_tag
+>>>>>>> master
         - field_story_subject_name
         - field_featured_quote
         - field_areas_of_study
