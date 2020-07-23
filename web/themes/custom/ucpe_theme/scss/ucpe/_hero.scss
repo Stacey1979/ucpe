@@ -1,17 +1,15 @@
 .hero_wrapper {
   position: relative;
-  overflow-x: hidden;
   .hero {
     @include make-container();
   }
 
   .hero_img {
-    .field--name-field-image-attribution-wysiwyg {
+    .field--name-field-image-attribution {
       position: absolute;
       @include bodycopy_S($black_03);
 
       &:before {
-        @include iconfont($black_03, "\63");
         font-size: $baseline * 1.75;
         margin-right: $baseline * 0.25;
         text-decoration: none;
@@ -53,7 +51,7 @@
     }
 
     // photo attribute
-    .field--name-field-image-attribution-wysiwyg {
+    .field--name-field-image-attribution {
       bottom: -25px;
       right: 15px;
       @media only screen and (min-width: 1800px) {
@@ -61,6 +59,7 @@
       }
 
       &:before {
+        @include iconfont($black_03, "\63");
         font-size: 1.5rem;
         vertical-align: text-bottom;
       }
@@ -136,16 +135,12 @@
       &:before {
         background-color: $bg_02;
         content: "";
-        height: calc(100% + 1.5rem);
+        height: 100%;
         left: 0;
         position: absolute;
         top: 0;
         width: 100%;
         z-index: -1;
-        max-width: 99vw;
-        @include screen("desktop") {
-          max-width: 95vw;
-        }
       }
       .hero_img {
         @include screen("phablet, $type: max") {
@@ -160,9 +155,9 @@
           margin-top: 0;
         }
 
-        .field--name-field-image-attribution-wysiwyg {
+        .field--name-field-image-attribution {
           &:before {
-            color: $white;
+            @include iconfont($white, "\63");
           }
           right: $baseline * 2;
           bottom: $baseline;
@@ -212,10 +207,10 @@
           padding: $baseline * 2 0 $baseline $baseline * 3;
         }
         @include screen("desktop") {
-          padding: $baseline * 2.5 $baseline * 3 $baseline $baseline * 3;
+          padding: $baseline * 2.5 0 $baseline $baseline * 3;
         }
         @include screen("desktop-wide") {
-          padding: $baseline * 6 $baseline * 3 $baseline * 3 $baseline * 3;
+          padding: $baseline * 6 0 $baseline * 3 $baseline * 3;
         }
 
         .meta {
@@ -265,9 +260,7 @@
   // HERO AOS
 
   &.hero_aos {
-    padding: $baseline * 3 0 $baseline * 3;
-    margin-bottom: $baseline * 5;
-
+    padding: $baseline * 5.5 0 $baseline * 3;
     .hero {
       &:before {
         background-color: $bg_02;
@@ -283,21 +276,15 @@
         }
       }
       .hero_content_wrapper {
-        @include make-sm-column(8);
-        @include screen("tablet-wide") {
-        }
-        @include screen("desktop") {
-          @include make-sm-column(7);
-        }
+        @include make-sm-column(7);
       }
       .hero_content {
         @include make-sm-column(12);
         background-color: $maroon;
-        padding: $baseline * 2.5;
+        padding: $baseline * 5;
 
-        @include screen("desktop-wide") {
-          //min-height: 475px;
-          padding: $baseline * 5;
+        @include screen("desktop") {
+          min-height: 475px;
         }
 
         &:after {
@@ -325,10 +312,8 @@
       }
       .hero_cta {
         @include make-sm-column(12);
-        padding: $baseline * 2.5;
-        @include screen("desktop-wide") {
-          padding: $baseline * 2.5 $baseline * 5;
-        }
+        padding: $baseline * 2.5 $baseline * 5;
+
         p {
           @include bodycopy_M($black);
           margin-bottom: $baseline * 1.25;
@@ -336,17 +321,7 @@
       }
       .hero_img {
         @include make-sm-column(4);
-        @include screen("desktop") {
-          @include make-sm-column-push(1);
-        }
-
-        .field--name-field-image-attribution-wysiwyg,
-        .field--name-field-image-attribution-wysiwyg:before {
-          top: calc(100% + 5px);
-          @include screen("desktop", $type: max) {
-            color: $white;
-          }
-        }
+        @include make-sm-column-push(1);
 
         img {
           margin-top: $baseline * 2;

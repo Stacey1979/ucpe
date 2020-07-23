@@ -8,7 +8,7 @@ dependencies:
     - field.field.media.image.field_image_caption
     - field.field.media.image.field_media_image
     - media.type.image
-    - responsive_image.styles.headshot
+    - responsive_image.styles.content_image_4_3_left_or_right
   module:
     - svg_image_responsive
 _core:
@@ -21,7 +21,7 @@ content:
   field_media_image:
     label: visually_hidden
     settings:
-      responsive_image_style: headshot
+      responsive_image_style: content_image_4_3_left_or_right
       image_link: ''
       svg_render_as_image: '1'
       svg_attributes:

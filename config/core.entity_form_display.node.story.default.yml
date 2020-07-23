@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.story.body
+    - field.field.node.story.field_areas_of_study
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
@@ -60,10 +61,6 @@ third_party_settings:
       label: Content
     group_administrative:
       children:
-<<<<<<< HEAD
-=======
-        - field_related_program_tag
->>>>>>> master
         - field_story_subject_name
         - field_featured_quote
         - field_areas_of_study
@@ -90,6 +87,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_areas_of_study:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_author:
     weight: 5
     settings:
@@ -188,7 +195,7 @@ content:
     type: metatag_firehose
     region: content
   field_related_program_tag:
-    weight: 3
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select

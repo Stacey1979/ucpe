@@ -15,12 +15,7 @@ label: 'Get in Touch Button'
 description: 'add a link to the contact page. '
 required: false
 translatable: false
-default_value:
-  -
-    attributes: {  }
-    uri: 'internal:/contact'
-    title: 'Get in Touch'
-    options: {  }
+default_value: {  }
 default_value_callback: ''
 settings:
   link_type: 1
