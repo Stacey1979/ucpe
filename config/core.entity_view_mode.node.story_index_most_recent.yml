@@ -1,0 +1,10 @@
+uuid: 232b4478-c27a-4a1e-85c5-8488a04774ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.story_index_most_recent
+label: 'Story Index Most Recent'
+targetEntityType: node
+cache: true

@@ -11,9 +11,11 @@ dependencies:
     - field.field.node.case_study.field_content_sections
     - field.field.node.case_study.field_cta
     - field.field.node.case_study.field_date_written
+    - field.field.node.case_study.field_featured
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
+    - field.field.node.case_study.field_metatags
     - field.field.node.case_study.field_of_interest
     - field.field.node.case_study.field_partnership_logos
     - field.field.node.case_study.field_related_program_tag
@@ -153,6 +155,7 @@ hidden:
   field_challenge: true
   field_content_sections: true
   field_cta: true
+  field_featured: true
   field_intro_paragraph: true
   field_lede: true
   field_metatags: true

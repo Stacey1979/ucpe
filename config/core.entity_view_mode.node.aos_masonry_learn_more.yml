@@ -1,0 +1,10 @@
+uuid: b2598c99-1f7e-4ab5-a409-f9da66d0aade
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.aos_masonry_learn_more
+label: 'AOS Masonry Learn more'
+targetEntityType: node
+cache: true

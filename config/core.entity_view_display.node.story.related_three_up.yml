@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.story.field_author
     - field.field.node.story.field_content_sections
     - field.field.node.story.field_date_written
+    - field.field.node.story.field_featured
     - field.field.node.story.field_featured_quote
     - field.field.node.story.field_hero
     - field.field.node.story.field_intro_paragraph
@@ -97,6 +98,7 @@ hidden:
   field_author: true
   field_content_sections: true
   field_date_and_lede: true
+  field_featured: true
   field_featured_quote: true
   field_intro_paragraph: true
   field_lede: true

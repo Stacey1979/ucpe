@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.page.field_get_in_touch_button
     - field.field.node.page.field_header_h2_
     - field.field.node.page.field_hero_cta_button
+    - field.field.node.page.field_intro
     - field.field.node.page.field_large_image_left
     - field.field.node.page.field_large_landscape_hero
     - field.field.node.page.field_lede
@@ -48,6 +49,7 @@ third_party_settings:
         - field_video_home_page_hero
         - field_large_landscape_hero
         - node_title
+        - field_intro
         - field_lede
         - field_hero_cta_button
         - field_large_image_left
@@ -74,7 +76,7 @@ mode: default
 content:
   field_content:
     type: entity_reference_revisions_entity_view
-    weight: 8
+    weight: 9
     region: ds_content
     label: hidden
     settings:
@@ -82,7 +84,7 @@ content:
       link: ''
     third_party_settings: {  }
   field_content_sections:
-    weight: 14
+    weight: 15
     label: hidden
     settings:
       view_mode: default
@@ -92,7 +94,7 @@ content:
     region: ds_content
   field_discover_the_uchicago_diff:
     type: entity_reference_revisions_entity_view
-    weight: 13
+    weight: 14
     label: hidden
     settings:
       view_mode: default
@@ -100,7 +102,7 @@ content:
     third_party_settings: {  }
     region: ds_content
   field_get_in_touch_button:
-    weight: 9
+    weight: 10
     label: hidden
     settings:
       trim_length: 80
@@ -113,7 +115,7 @@ content:
     region: ds_content
   field_header_h2_:
     type: smart_trim
-    weight: 7
+    weight: 8
     region: ds_content
     label: hidden
     settings:
@@ -130,7 +132,7 @@ content:
     third_party_settings: {  }
   field_hero_cta_button:
     type: link
-    weight: 5
+    weight: 6
     region: ds_content
     label: hidden
     settings:
@@ -140,9 +142,16 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+  field_intro:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
   field_large_image_left:
     type: entity_reference_entity_view
-    weight: 6
+    weight: 7
     region: ds_content
     label: hidden
     settings:
@@ -160,14 +169,14 @@ content:
     third_party_settings: {  }
   field_lede:
     type: text_default
-    weight: 4
+    weight: 5
     region: ds_content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_program_types_preview:
     type: entity_reference_entity_view
-    weight: 10
+    weight: 11
     region: ds_content
     label: hidden
     settings:
@@ -175,7 +184,7 @@ content:
       link: false
     third_party_settings: {  }
   field_related_story:
-    weight: 12
+    weight: 13
     label: hidden
     settings:
       view_mode: featured_story
@@ -193,7 +202,7 @@ content:
       view_mode: default
     third_party_settings: {  }
   field_youvisit_embed:
-    weight: 11
+    weight: 12
     label: hidden
     settings: {  }
     third_party_settings: {  }

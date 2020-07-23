@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_content
     - field.field.node.event.field_date_and_time
     - field.field.node.event.field_event_hero
+    - field.field.node.event.field_featured
     - field.field.node.event.field_form
     - field.field.node.event.field_format
     - field.field.node.event.field_lede
@@ -89,6 +90,7 @@ hidden:
   field_areas_of_study: true
   field_author: true
   field_content: true
+  field_featured: true
   field_form: true
   field_format: true
   field_lede: true
