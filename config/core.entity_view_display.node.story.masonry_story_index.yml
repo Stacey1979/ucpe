@@ -1,0 +1,121 @@
+uuid: 88ee9690-4a88-4adc-9376-bdfa08cb7ca8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.masonry_story_index
+    - field.field.node.story.body
+    - field.field.node.story.field_areas_of_study
+    - field.field.node.story.field_author
+    - field.field.node.story.field_content_sections
+    - field.field.node.story.field_date_written
+    - field.field.node.story.field_featured
+    - field.field.node.story.field_featured_quote
+    - field.field.node.story.field_hero
+    - field.field.node.story.field_intro_paragraph
+    - field.field.node.story.field_lede
+    - field.field.node.story.field_metatags
+    - field.field.node.story.field_related_program_tag
+    - field.field.node.story.field_story_subject_name
+    - node.type.story
+  module:
+    - ds
+    - entity_reference_revisions
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_hero
+        - node_title
+        - field_lede
+        - field_related_program_tag
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h3
+          class: ''
+          link: false
+id: node.story.masonry_story_index
+targetEntityType: node
+bundle: story
+mode: masonry_story_index
+content:
+  field_about_block:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: hidden
+    settings:
+      link: '1'
+    third_party_settings: {  }
+    region: ds_content
+  field_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: related_story_hero
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
+  field_lede:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_related_program_tag:
+    type: entity_reference_label
+    weight: 3
+    region: ds_content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  field_written_by:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+hidden:
+  addtoany: true
+  body: true
+  field_areas_of_study: true
+  field_author: true
+  field_content_sections: true
+  field_date_and_lede: true
+  field_date_written: true
+  field_featured: true
+  field_featured_quote: true
+  field_intro_paragraph: true
+  field_metatags: true
+  field_story_subject_name: true
+  links: true
+  reading_time: true

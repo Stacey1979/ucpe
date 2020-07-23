@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.page.field_get_in_touch_button
     - field.field.node.page.field_header_h2_
     - field.field.node.page.field_hero_cta_button
+    - field.field.node.page.field_intro
     - field.field.node.page.field_large_image_left
     - field.field.node.page.field_large_landscape_hero
     - field.field.node.page.field_lede
@@ -34,27 +35,29 @@ third_party_settings:
         - field_hero_cta_button
       parent_name: ''
       weight: 1
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
         description: 'These fields are required on the About Page. '
         id: ''
         classes: ''
         required_fields: false
+        open: false
       label: 'Home Page'
     group_about_page:
       children:
         - field_large_landscape_hero
       parent_name: ''
-      weight: 4
-      format_type: fieldset
+      weight: 3
+      format_type: details
       region: content
       format_settings:
         description: ''
         id: ''
         classes: ''
         required_fields: false
-      label: 'Other Pages'
+        open: false
+      label: 'About Page Hero'
     group_content:
       children:
         - field_content_sections
@@ -80,21 +83,29 @@ third_party_settings:
         - field_discover_the_uchicago_diff
       parent_name: ''
       weight: 2
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        effect: none
-        speed: fast
-        attributes: ''
-        classes: ''
-        id: ''
-        required_fields: true
         description: ''
-      label: 'Intro to UCPE'
+        id: ''
+        classes: ''
+        required_fields: false
+        open: false
+      label: 'Intro to UCPE (Home Page only)'
+    group_case_study_event_perspecti:
+      children:
+        - field_intro
+      parent_name: ''
+      weight: 4
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: 'Case Study, Event, Perspective, and Story Index'
 _core:
   default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
 id: node.page.default
@@ -181,6 +192,17 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_intro:
+    weight: 39
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+    type: text_textarea
     region: content
   field_large_image_left:
     type: media_library_widget

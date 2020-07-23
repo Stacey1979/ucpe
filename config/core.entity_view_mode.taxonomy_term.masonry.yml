@@ -1,0 +1,10 @@
+uuid: df149ae0-4df7-4e4b-85dd-49cf9c3b83c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.masonry
+label: Masonry
+targetEntityType: taxonomy_term
+cache: true

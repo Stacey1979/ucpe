@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.case_study.field_content_sections
     - field.field.node.case_study.field_cta
     - field.field.node.case_study.field_date_written
+    - field.field.node.case_study.field_featured
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
@@ -111,6 +112,7 @@ third_party_settings:
         - field_areas_of_study
         - field_related_program_tag
         - field_date_written
+        - field_featured
       parent_name: ''
       weight: 4
       format_type: fieldset
@@ -192,6 +194,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_featured:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_hero:
     weight: 2

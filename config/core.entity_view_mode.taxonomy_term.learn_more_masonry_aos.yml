@@ -1,0 +1,10 @@
+uuid: bd99fe05-b0ac-4a2c-9d8e-72dc40d41ae5
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.learn_more_masonry_aos
+label: 'Learn More Masonry AOS'
+targetEntityType: taxonomy_term
+cache: true

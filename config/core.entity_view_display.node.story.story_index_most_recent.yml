@@ -1,0 +1,116 @@
+uuid: 3c44037e-23b3-4a7f-adc2-1b74d58152c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.story_index_most_recent
+    - field.field.node.story.body
+    - field.field.node.story.field_areas_of_study
+    - field.field.node.story.field_author
+    - field.field.node.story.field_content_sections
+    - field.field.node.story.field_date_written
+    - field.field.node.story.field_featured
+    - field.field.node.story.field_featured_quote
+    - field.field.node.story.field_hero
+    - field.field.node.story.field_intro_paragraph
+    - field.field.node.story.field_lede
+    - field.field.node.story.field_metatags
+    - field.field.node.story.field_related_program_tag
+    - field.field.node.story.field_story_subject_name
+    - node.type.story
+  module:
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: content
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - node_title
+        - field_lede
+        - field_related_program_tag
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h3
+          class: ''
+          link: false
+id: node.story.story_index_most_recent
+targetEntityType: node
+bundle: story
+mode: story_index_most_recent
+content:
+  field_about_block:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: hidden
+    settings:
+      link: '1'
+    third_party_settings: {  }
+    region: ds_content
+  field_lede:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_related_program_tag:
+    type: entity_reference_label
+    weight: 2
+    region: ds_content
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: '2'
+  field_written_by:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  links:
+    weight: 3
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_areas_of_study: true
+  field_author: true
+  field_content_sections: true
+  field_date_and_lede: true
+  field_date_written: true
+  field_featured: true
+  field_featured_quote: true
+  field_hero: true
+  field_intro_paragraph: true
+  field_metatags: true
+  field_story_subject_name: true
+  reading_time: true

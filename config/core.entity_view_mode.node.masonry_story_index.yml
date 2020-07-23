@@ -1,0 +1,10 @@
+uuid: 585b3275-ce86-4077-95d6-8fb66da43e76
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.masonry_story_index
+label: 'Masonry: Story Index Featured'
+targetEntityType: node
+cache: true

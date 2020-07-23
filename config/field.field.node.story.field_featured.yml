@@ -1,0 +1,21 @@
+uuid: 62c3a8e8-099c-4e46-8448-b6fed30c8ac7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured
+    - node.type.story
+  module:
+    - options
+id: node.story.field_featured
+field_name: field_featured
+entity_type: node
+bundle: story
+label: Featured
+description: 'Choose this option if you want to feature this piece of content on the story index page. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
