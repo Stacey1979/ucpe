@@ -96,11 +96,8 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
-<<<<<<< HEAD
   body: true
   field_areas_of_study: true
-=======
->>>>>>> master
   field_author: true
   field_content_sections: true
   field_date_and_lede: true
