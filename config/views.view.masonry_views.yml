@@ -1947,56 +1947,6 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        field_areas_of_study_target_id:
-          id: field_areas_of_study_target_id
-          table: node__field_areas_of_study
-          field: field_areas_of_study_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            3: 3
-            4: 4
-            5: 5
-            6: 6
-            7: 7
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: true
-          type: select
-          limit: true
-          vid: area_of_interest
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
@@ -2076,7 +2026,7 @@ display:
         type: show_more
         options:
           items_per_page: 8
-          offset: 0
+          offset: 3
           id: 0
           total_pages: null
           tags:
@@ -2093,7 +2043,7 @@ display:
           result_display_method: append
           show_more_text: 'Show more'
           show_more_empty_text: ''
-          initial: '4'
+          initial: '12'
           effects:
             type: scroll_fade
             speed_type: slow
@@ -2129,7 +2079,6 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

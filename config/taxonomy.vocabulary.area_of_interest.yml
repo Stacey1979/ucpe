@@ -2,7 +2,7 @@ uuid: 2eae35ef-e668-422f-9e87-eecdc05113e9
 langcode: en
 status: true
 dependencies: {  }
-name: 'Area of Interest'
+name: 'Area of Study'
 vid: area_of_interest
-description: 'Areas of interest for programs'
+description: 'Areas of study for programs'
 weight: 0
