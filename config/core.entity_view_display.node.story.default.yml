@@ -69,10 +69,6 @@ content:
       link: '1'
     third_party_settings: {  }
     region: ds_content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_content_sections:
     weight: 7
     label: hidden
@@ -136,6 +132,7 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_areas_of_study: true
   field_author: true
   field_date_and_lede: true
   field_featured_quote: true
