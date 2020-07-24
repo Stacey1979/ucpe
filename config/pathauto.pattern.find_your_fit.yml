@@ -7,16 +7,16 @@ dependencies:
 id: find_your_fit
 label: 'Find Your Fit'
 type: 'canonical_entities:node'
-pattern: '/find-your-fit/[node:field_program_type]'
+pattern: '/find-your-fit/[node:field_program_type][node:field_format_tag]'
 selection_criteria:
-  6c1aca59-f029-4e9d-a173-d838532626d1:
+  f388624b-9478-4a59-a4b6-f10d2d57fdb1:
     id: node_type
     bundles:
       find_your_fit: find_your_fit
     negate: false
     context_mapping:
       node: node
-    uuid: 6c1aca59-f029-4e9d-a173-d838532626d1
+    uuid: f388624b-9478-4a59-a4b6-f10d2d57fdb1
 selection_logic: and
 weight: -5
 relationships: {  }
