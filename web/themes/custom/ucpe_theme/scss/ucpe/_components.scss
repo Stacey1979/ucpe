@@ -136,7 +136,8 @@
   @include make-sm-column(12);
   background-color: $bg_03;
   padding: $baseline * 3 0;
-  margin: $baseline * 5 0;
+  margin: $baseline * 5 0 $baseline * 5 -15px;
+  width: calc(100% + 30px) !important;
 
   &:before,
   &:after {
@@ -165,7 +166,7 @@
   }
 
   .wrapper {
-    @include make-container();
+    //@include make-container();
 
     .cta_content {
       @include make-sm-column(5);
@@ -350,7 +351,9 @@
     @include make-md-column(5);
   }
   margin-bottom: $baseline * 2;
-
+  &.col {
+    @include make-sm-column(12);
+  }
   &.right {
     float: right;
     @include screen("tablet") {

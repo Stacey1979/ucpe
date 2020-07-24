@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_content
     - field.field.node.event.field_date_and_time
     - field.field.node.event.field_event_hero
+    - field.field.node.event.field_featured
     - field.field.node.event.field_form
     - field.field.node.event.field_format
     - field.field.node.event.field_lede
@@ -61,6 +62,19 @@ third_party_settings:
         description: ''
         required_fields: false
       label: Content
+    group_administrative:
+      children:
+        - field_featured
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Administrative
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -68,7 +82,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 11
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -138,6 +152,12 @@ content:
         duplicate: duplicate
     third_party_settings: {  }
     region: content
+  field_featured:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_form:
     weight: 3
     settings:
@@ -185,7 +205,7 @@ content:
     region: content
   path:
     type: path
-    weight: 14
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -193,21 +213,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -220,7 +240,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -229,7 +249,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 15
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }

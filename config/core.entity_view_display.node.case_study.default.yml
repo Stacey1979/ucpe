@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.case_study.field_content_sections
     - field.field.node.case_study.field_cta
     - field.field.node.case_study.field_date_written
+    - field.field.node.case_study.field_featured
     - field.field.node.case_study.field_hero
     - field.field.node.case_study.field_intro_paragraph
     - field.field.node.case_study.field_lede
@@ -49,8 +50,8 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - field_metatags
         - field_case_study_type
+        - field_metatags
         - links
         - field_hero
         - field_lede
@@ -62,20 +63,20 @@ third_party_settings:
         - field_results
         - field_about_partnership
         - field_cta
-        - field_partnership_logos
         - field_of_interest
+        - field_partnership_logos
 id: node.case_study.default
 targetEntityType: node
 bundle: case_study
 mode: default
 content:
   addtoany:
-    weight: 4
+    weight: 5
     region: ds_content
     settings: {  }
     third_party_settings: {  }
   field_about_partnership:
-    weight: 10
+    weight: 11
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -89,14 +90,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_challenge:
-    weight: 5
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: ds_content
   field_content_sections:
-    weight: 7
+    weight: 8
     label: hidden
     settings:
       view_mode: default
@@ -106,7 +107,7 @@ content:
     region: ds_content
   field_cta:
     type: entity_reference_revisions_entity_view
-    weight: 11
+    weight: 12
     label: hidden
     settings:
       view_mode: default
@@ -114,7 +115,7 @@ content:
     third_party_settings: {  }
     region: ds_content
   field_hero:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       view_mode: perspectives_case_study_hero_para
@@ -123,7 +124,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_intro_paragraph:
-    weight: 6
+    weight: 7
     label: hidden
     settings:
       view_mode: default
@@ -132,7 +133,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_lede:
-    weight: 3
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -140,7 +141,7 @@ content:
     region: ds_content
   field_metatags:
     type: metatag_empty_formatter
-    weight: 0
+    weight: 1
     region: ds_content
     label: above
     settings: {  }
@@ -156,7 +157,7 @@ content:
     region: ds_content
   field_partnership_logos:
     type: media_thumbnail
-    weight: 13
+    weight: 14
     label: hidden
     settings:
       image_style: media_library
@@ -166,26 +167,26 @@ content:
         ds_limit: ''
     region: ds_content
   field_results:
-    weight: 9
+    weight: 10
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: ds_content
   field_solution:
-    weight: 8
+    weight: 9
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: ds_content
   links:
-    weight: 1
+    weight: 2
     region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_areas_of_study: true
   field_date_written: true
-  field_metatags: true
+  field_featured: true
   field_related_program_tag: true

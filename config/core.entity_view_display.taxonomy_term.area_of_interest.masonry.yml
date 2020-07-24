@@ -1,0 +1,47 @@
+uuid: 96e6295d-9fc7-426e-89de-e8a3afbc61b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.masonry
+    - field.field.taxonomy_term.area_of_interest.field_program_detail_page
+    - taxonomy.vocabulary.area_of_interest
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_program_detail_page
+id: taxonomy_term.area_of_interest.masonry
+targetEntityType: taxonomy_term
+bundle: area_of_interest
+mode: masonry
+content:
+  field_program_detail_page:
+    type: entity_reference_entity_view
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: aos_masonry
+      link: false
+    third_party_settings: {  }
+hidden:
+  description: true

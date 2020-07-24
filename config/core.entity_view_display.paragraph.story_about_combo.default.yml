@@ -6,7 +6,26 @@ dependencies:
     - field.field.paragraph.story_about_combo.field_add_about_section
     - paragraphs.paragraphs_type.story_about_combo
   module:
+    - ds
     - entity_reference_revisions
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - field_add_about_section
 id: paragraph.story_about_combo.default
 targetEntityType: paragraph
 bundle: story_about_combo
