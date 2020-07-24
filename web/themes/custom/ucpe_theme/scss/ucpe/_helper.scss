@@ -105,6 +105,23 @@
       @include screen("desktop") {
         width: 70%;
       }
+
+      .classof p {
+        @include bodycopy_S($black_02);
+        margin-bottom: $baseline !important;
+
+        &:before {
+          @include iconfont(inherit, "\65");
+          color: $black_02;
+          font-size: 1.25rem;
+          vertical-align: middle;
+          position: relative;
+          left: 0;
+          display: inline-block;
+          margin-right: 3px;
+        }
+      }
+
       p {
         margin-bottom: 0 !important;
       }

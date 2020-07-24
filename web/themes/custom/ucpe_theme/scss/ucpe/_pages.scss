@@ -317,7 +317,7 @@
 
 .area_of_study {
   @include make-container();
-  > .content {
+  .content {
     @include make-sm-column(12);
     margin-bottom: $baseline * 5;
 

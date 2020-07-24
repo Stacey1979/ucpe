@@ -9,7 +9,7 @@
  * - ds_content: content region
  */
 #}
-<div class="related_program col">
+<div class="related_program">
   <div class="img">
     {{ ds_content.field_program_illustration|field_value }}
     <div class="program_meta">
@@ -20,6 +20,6 @@
     </div>
   </div>
   <div class="content">
-    <h4>{{ title|field_value }}</h4>
+    <h4><a href="{{ path('entity.node.canonical', {'node': content['#node'].id()  }) }}">{{ title|field_value }}</a></h4>
   </div>
 </div>
