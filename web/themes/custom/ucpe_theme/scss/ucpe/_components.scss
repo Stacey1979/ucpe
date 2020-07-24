@@ -351,9 +351,7 @@
     @include make-md-column(5);
   }
   margin-bottom: $baseline * 2;
-  &.col {
-    @include make-sm-column(12);
-  }
+
   &.right {
     float: right;
     @include screen("tablet") {
@@ -402,7 +400,7 @@
 
     .program_meta {
       background-color: $white;
-      bottom: 0;
+      bottom: -5px;
       left: 0;
       padding: $baseline/2 $baseline/2 0;
       position: absolute;
@@ -412,10 +410,40 @@
     h4 {
       @include heading_XS($black);
       margin-bottom: $baseline;
+
+      a {
+        @include heading_XS($black);
+        text-decoration: none;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $maroon;
+          border-bottom: solid 3px $maroon;
+          transition: all 0.3s;
+        }
+      }
     }
   }
 }
 
+// RELATED PROGRAMS - AREA OF STUDY PAGE
+.featured_programs {
+  .fp_wrap {
+    @include make-row();
+
+    .related_program {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+
+      .program_meta .category .category_name {
+        left: -20px;
+      }
+    }
+  }
+}
+
+// RELATED CONTENT GRID - BOTTOM OF PAGE
 .related_content_grid {
   @include make-sm-column(12);
 
