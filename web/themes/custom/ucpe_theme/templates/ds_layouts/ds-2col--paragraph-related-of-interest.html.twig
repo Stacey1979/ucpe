@@ -14,10 +14,14 @@
  * - right: content of right region
  */
 #}
-<div class="related_content_grid">
-  <h2>Of Interest</h2>
-    {{ left }}
-	<div class="secondary_content">
-    {{ right }}
-  </div>
+<div class="mixed_content_grid">
+    <div class="hdr">
+      <h2>Of Interest</h2>
+    </div>
+    <div class="content">
+      {{ left }}
+    	<div class="secondary_content">
+        {{ right }}
+      </div>
+    </div>
 </div>

@@ -9,15 +9,15 @@
  * - ds_content: content region
  */
 #}
-<div class="related related_story">
-  <div class="related_content">
+<div class="card card_story">
+  <div class="card_story_content">
     <div class="top">
       <p class="meta">{{ content['bundle_field:node']|field_value }}</p>
       <div class="headshot small">{{ ds_content.field_hero|field_value }}</div>
     </div>
     <div class="bottom">
       <p class="date">{{ ds_content.field_date_written|field_value }}</p>
-      <h4><a href="{{ path('entity.node.canonical', {'node': content['#node'].id() }) }}">{{ title|field_value }}</a></h4>
+      <h3><a href="{{ path('entity.node.canonical', {'node': content['#node'].id() }) }}">{{ title|field_value }}</a></h3>
     </div>
   </div>
 </div>

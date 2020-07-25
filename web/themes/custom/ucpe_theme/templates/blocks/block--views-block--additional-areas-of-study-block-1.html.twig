@@ -45,14 +45,15 @@
  * @see template_process()
  */
 #}
-
-<section class="aos_additional">
-  {% if label %}
-    <h2>{{ label }}</h2>
-  {% endif %}
-  {% block content %}
-    <div class="aos_additional_block_wrapper">
-      {{ content }}
-    </div>
-  {% endblock %}
-</section>
+<div class="area_of_study">
+  <section class="card_grid">
+    {% if label %}
+      <h2>{{ label }}</h2>
+    {% endif %}
+    {% block content %}
+      <div class="cg_wrapper">
+        {{ content }}
+      </div>
+    {% endblock %}
+  </section>
+</div>  
