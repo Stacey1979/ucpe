@@ -2114,7 +2114,6 @@ display:
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
         - 'config:core.entity_view_display.node.area_of_study.default'
-<<<<<<< HEAD
         - 'config:core.entity_view_display.node.event.featured'
         - 'config:core.entity_view_display.node.event.index_page'
         - 'config:core.entity_view_display.node.event.masonry'
@@ -2122,8 +2121,6 @@ display:
         - 'config:core.entity_view_display.node.event.preview'
         - 'config:core.entity_view_display.node.event.related_three_up'
         - 'config:core.entity_view_display.node.event.teaser'
-=======
->>>>>>> master
         - 'config:core.entity_view_display.node.area_of_study.addition'
         - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
         - 'config:core.entity_view_display.node.area_of_study.masonry'
