@@ -99,6 +99,9 @@
 .cta {
   @include clearfix();
   margin: $baseline * 3 0;
+  @include screen("tablet-wide", $type: max) {
+    overflow: hidden;
+  }
 
   @include screen("tablet") {
     display: flex;
@@ -137,7 +140,13 @@
   background-color: $bg_03;
   padding: $baseline * 3 0;
   margin: $baseline * 5 0 $baseline * 5 -15px;
-  width: calc(100% + 30px) !important;
+  width: calc(100% + 30px);
+  @include screen("tablet-wide", $type: max) {
+    overflow: hidden;
+  }
+  @include screen("desktop") {
+    width: calc(100% + 30px);
+  }
 
   &:before,
   &:after {
@@ -344,87 +353,87 @@
 
 // Related Content Block
 
-.related_program {
-  @include make-row();
-  @include make-sm-column(6);
-  @include screen("tablet-wide") {
-    @include make-md-column(5);
-  }
-  margin-bottom: $baseline * 2;
-
-  &.right {
-    float: right;
-    @include screen("tablet") {
-      border-left: solid 1px $divider-gray;
-      margin-left: $baseline * 1.5;
-      padding-left: $baseline * 1.5;
-    }
-    @include screen("tablet-wide") {
-      margin-left: $baseline * 3;
-      padding-left: $baseline * 3;
-    }
-    @include screen("desktop") {
-      margin-right: -8.3%;
-    }
-    @include screen("desktop-wide") {
-      margin-right: -16.6666667%;
-    }
-  }
-
-  &.left {
-    float: left;
-
-    @include screen("tablet") {
-      border-right: solid 1px $divider-gray;
-      margin-right: $baseline * 1.5;
-      padding-right: $baseline * 1.5;
-    }
-
-    @include screen("tablet-wide") {
-      margin-right: $baseline * 3;
-      padding-right: $baseline * 3;
-    }
-    @include screen("desktop") {
-      margin-left: -8.3%;
-    }
-    @include screen("desktop-wide") {
-      margin-left: -16.6666667%;
-    }
-  }
-  .img {
-    background-color: $bg-02;
-    margin-bottom: $baseline * 2;
-    padding: $baseline;
-    position: relative;
-    text-align: center;
-
-    .program_meta {
-      background-color: $white;
-      bottom: -5px;
-      left: 0;
-      padding: $baseline/2 $baseline/2 0;
-      position: absolute;
-    }
-  }
-  .content {
-    h4 {
-      @include heading_XS($black);
-      margin-bottom: $baseline;
-
-      a {
-        @include heading_XS($black);
-        text-decoration: none;
-        transition: all 0.3s;
-
-        &:hover {
-          color: $maroon;
-          border-bottom: solid 3px $maroon;
-          transition: all 0.3s;
-        }
-      }
-    }
-  }
-}
+// .related_program {
+//   @include make-row();
+//   @include make-sm-column(6);
+//   @include screen("tablet-wide") {
+//     @include make-md-column(5);
+//   }
+//   margin-bottom: $baseline * 2;
+//
+//   &.right {
+//     float: right;
+//     @include screen("tablet") {
+//       border-left: solid 1px $divider-gray;
+//       margin-left: $baseline * 1.5;
+//       padding-left: $baseline * 1.5;
+//     }
+//     @include screen("tablet-wide") {
+//       margin-left: $baseline * 3;
+//       padding-left: $baseline * 3;
+//     }
+//     @include screen("desktop") {
+//       margin-right: -8.3%;
+//     }
+//     @include screen("desktop-wide") {
+//       margin-right: -16.6666667%;
+//     }
+//   }
+//
+//   &.left {
+//     float: left;
+//
+//     @include screen("tablet") {
+//       border-right: solid 1px $divider-gray;
+//       margin-right: $baseline * 1.5;
+//       padding-right: $baseline * 1.5;
+//     }
+//
+//     @include screen("tablet-wide") {
+//       margin-right: $baseline * 3;
+//       padding-right: $baseline * 3;
+//     }
+//     @include screen("desktop") {
+//       margin-left: -8.3%;
+//     }
+//     @include screen("desktop-wide") {
+//       margin-left: -16.6666667%;
+//     }
+//   }
+//   .img {
+//     background-color: $bg-02;
+//     margin-bottom: $baseline * 2;
+//     padding: $baseline;
+//     position: relative;
+//     text-align: center;
+//
+//     .program_meta {
+//       background-color: $white;
+//       bottom: -5px;
+//       left: 0;
+//       padding: $baseline/2 $baseline/2 0;
+//       position: absolute;
+//     }
+//   }
+//   .content {
+//     h4 {
+//       @include heading_XS($black);
+//       margin-bottom: $baseline;
+//
+//       a {
+//         @include heading_XS($black);
+//         text-decoration: none;
+//         transition: all 0.3s;
+//
+//         &:hover {
+//           color: $maroon;
+//           border-bottom: solid 3px $maroon;
+//           transition: all 0.3s;
+//         }
+//       }
+//     }
+//   }
+// }
 
 // RELATED PROGRAMS - AREA OF STUDY PAGE
 .featured_programs {
@@ -443,64 +452,47 @@
   }
 }
 
-// RELATED CONTENT GRID - BOTTOM OF PAGE
-.related_content_grid {
-  @include make-sm-column(12);
-
-  h2 {
-    @include bodycopy_XL($maroon, $bold: true);
-    border-bottom: solid 1px $divider-gray;
-    margin: $baseline * 4 0 $baseline * 3;
-    padding: 0 0 $baseline * 1.75;
-  }
-
-  .related_program {
+// MIXED CONTENT GRID - BOTTOM OF PAGE
+.mixed_content_grid {
+  @include make-container();
+  .hdr {
     @include make-sm-column(12);
-    @include make-lg-column(5);
 
-    .img {
-      @include make-sm-column(6);
-      @include make-lg-column(12);
-      margin-bottom: 0;
-
-      .program_meta {
-        background-color: $white;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        padding: $baseline $baseline/2 0;
-      }
+    h2 {
+      @include bodycopy_XL($maroon, $bold: true);
+      border-bottom: solid 1px $divider-gray;
+      margin: $baseline * 4 0 $baseline * 3;
+      padding: 0 0 $baseline * 1.75;
     }
-    .content {
-      @include make-row();
-      @include make-sm-column(6);
-      @include make-lg-column(12);
+  }
+  .content {
+  }
+  .program_card {
+    @include make-sm-column(12);
+    @include screen("desktop") {
+      @include make-sm-column(5);
+    }
 
-      h4,
-      h4 a {
-        @include heading_S($plum);
-        margin: $baseline * 2 0;
+    @include screen("desktop", $type: max) {
+      margin-bottom: $baseline * 2;
+      .pc_img,
+      .pc_content {
+        @include make-sm-column(6);
       }
-      h4 a {
-        text-decoration: none;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-
-        &:hover {
-          color: $maroon;
-          border-bottom: solid 3px $maroon;
-          transition: all 0.3s;
-        }
+      .pc_img .program_meta {
+        top: auto;
+        bottom: -16px;
       }
     }
   }
 
   .secondary_content {
     @include make-sm-column(12);
-    @include make-lg-column(5);
-    @include make-lg-column-push(1);
-    @include screen("tablet", $type: max) {
+    @include screen("desktop") {
+      @include make-lg-column(6);
+      @include make-lg-column-push(1);
+    }
+    @include screen("desktop", $type: max) {
       margin-left: -15px !important;
       margin-right: -15px !important;
     }
@@ -510,27 +502,19 @@
       margin-bottom: $baseline * 2;
       width: 100%;
 
-      @include screen("tablet", $type: max) {
-        .img,
-        .content {
-          padding: 0 !important;
-          margin: $baseline 0 !important;
-        }
-      }
-
       .img {
-        @include make-sm-column(4);
+        @include make-xs-column(4);
       }
       .content {
-        @include make-sm-column(8);
+        @include make-xs-column(8);
       }
 
-      h4,
-      h4 a {
+      h4 {
         @include heading_XS($plum);
         margin: $baseline 0;
       }
       h4 a {
+        @include heading_XS($plum);
         text-decoration: none;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -549,112 +533,161 @@
   }
 }
 
-.related_content_list_wrapper {
-  @include make-container();
-  .related_content_list {
-    @include make-sm-column(12);
-  }
-  h2 {
-    @include bodycopy_XL($maroon, $bold: true);
-  }
-}
-
-.related_stories_wrapper {
+// CARD GRID
+.card_grid {
+  clear: both;
   @include make-container();
 
   h2 {
     @include bodycopy_XL($maroon, $bold: true);
+    margin-bottom: $baseline * 2;
+  }
+  .cg_wrapper {
+    @include make-row();
+    .cg_content {
+      @include make-sm-column(12);
+    }
   }
 
-  .related_stories_content {
-    .form-group {
-      min-width: 100%;
-    }
-    .view-header a {
-      @include bodycopy_M($plum, $bold: true);
-      text-decoration: none;
-
-      &:after {
-        @include iconfont(inherit, "\3e");
-        color: $maroon;
-        font-size: 1.25rem;
-        vertical-align: -5px;
-        position: relative;
-        right: -5px;
-        display: inline-block;
-        transition: 0.3s;
-      }
-      &:hover {
-        text-decoration: none;
-        &:after {
-          transform: translate(3px, 0);
-        }
-      }
-
-      @include screen("tablet-wide") {
-        position: absolute;
-        top: -55px;
-        right: 0;
-      }
-    }
-    .views-row {
-      //  @include make-row();
+  // SLICK SLIDER
+  .slick-track {
+    @include screen("tablet") {
       display: flex;
       flex-wrap: wrap;
-      @include screen("tablet", $type: max) {
-        flex-direction: column;
+    }
+
+    .slick-slide {
+      width: auto;
+      @include screen("tablet") {
+        width: 50% !important;
+      }
+      @include screen("desktop") {
+        width: 25% !important;
+      }
+
+      // the margins set below offset the flex grid's lack of spacing
+      .program_card {
+        .pc_img,
+        .pc_content {
+          margin-left: 3%;
+          margin-right: 3%;
+        }
       }
     }
+  }
+
+  // VIEWS
+  .form-group {
+    min-width: 100%;
+  }
+
+  // VIEW ALL LINK
+  .view-header a {
+    @include bodycopy_M($plum, $bold: true);
+    text-decoration: none;
+
+    &:after {
+      @include iconfont(inherit, "\3e");
+      color: $maroon;
+      font-size: 1.25rem;
+      vertical-align: -5px;
+      position: relative;
+      right: -5px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    &:hover {
+      text-decoration: none;
+      &:after {
+        transform: translate(3px, 0);
+      }
+    }
+
+    @include screen("tablet-wide") {
+      position: absolute;
+      top: -55px;
+      right: 15px;
+    }
+  }
+  .views-row {
+    display: flex;
+    flex-wrap: wrap;
+    @include screen("tablet", $type: max) {
+      flex-direction: column;
+    }
+
     .views-col {
       margin: 0 $baseline $baseline * 3;
       flex: 1;
       display: flex;
       width: auto !important;
 
-      &.col-1 {
-        margin-left: 0;
-      }
-      &.col-3 {
-        margin-right: 0;
-      }
       @include screen("tablet", $type: max) {
         margin-left: 0;
         margin-right: 0;
       }
     }
+  }
+}
 
-    .related {
-      float: left;
-      padding-left: calc(2rem - 15px);
-      padding-right: calc(2rem - 15px);
-      width: 100%;
+// CARD SETS
 
-      .top,
-      .bottom {
-        @include make-sm-column(12);
-        clear: both;
+// AREA OF STUDY - CARD
+.card_aos {
+  background-color: $bg-02;
+  margin: 0 3% $baseline * 2;
+  min-height: 275px;
+  padding: $baseline * 2;
+  position: relative;
+
+  .card_aos_content {
+    bottom: $baseline * 2;
+    position: absolute;
+    width: calc(100% - 4rem);
+    z-index: 5;
+  }
+  &:before {
+    background-color: $maroon;
+    transition: all 0.2s ease-out;
+  }
+  &:hover {
+    transition: all 0.2s ease-out;
+
+    .card_aos_content h3,
+    .card_aos_content a,
+    .card_aos_content a:after {
+      color: $white;
+    }
+    .card_aos_content a:hover,
+    .card_aos_content a:hover:after {
+      color: $mustard;
+    }
+
+    &:before {
+      height: calc(100% + 4px);
+      transition: all 0.2s ease-in;
+    }
+  }
+}
+
+// STORY CARDS
+.card_story {
+  float: left;
+  padding-left: calc(2rem - 15px);
+  padding-right: calc(2rem - 15px);
+  width: 100%;
+
+  .card_story_content {
+    .top {
+      margin-bottom: $baseline * 2;
+      .meta {
+        float: left;
       }
-      .top {
-        margin: 0 0 $baseline * 2;
-        .meta {
-          @include utility_M($black_02);
-          float: left;
-        }
-        .headshot {
-          float: right;
-        }
+      .headshot {
+        float: right;
       }
-      .bottom {
-        .date {
-          @include bodycopy_S($black_02);
-        }
-        h4,
-        h4 a {
-          @include heading_XS($black);
-          text-decoration: none;
-          margin-bottom: 0;
-        }
-      }
+    }
+    .bottom {
     }
   }
 }

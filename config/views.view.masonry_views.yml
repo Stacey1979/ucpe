@@ -989,6 +989,35 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: true
+          content:
+            value: '<p>We’ve designed our Areas of Study around the University of Chicago''s specialities. Whichever path you choose, you can be confident of world-class instruction focused on fundamentals.</p>'
+            format: full_html
+          plugin_id: text
+        area_1:
+          id: area_1
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          content:
+            value: '{{ field_areas_of_study }}'
+            format: full_html
+          plugin_id: text
+      defaults:
+        header: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -2085,6 +2114,7 @@ display:
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
         - 'config:core.entity_view_display.node.area_of_study.default'
+<<<<<<< HEAD
         - 'config:core.entity_view_display.node.event.featured'
         - 'config:core.entity_view_display.node.event.index_page'
         - 'config:core.entity_view_display.node.event.masonry'
@@ -2092,6 +2122,8 @@ display:
         - 'config:core.entity_view_display.node.event.preview'
         - 'config:core.entity_view_display.node.event.related_three_up'
         - 'config:core.entity_view_display.node.event.teaser'
+=======
+>>>>>>> master
         - 'config:core.entity_view_display.node.area_of_study.addition'
         - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
         - 'config:core.entity_view_display.node.area_of_study.masonry'
