@@ -9,13 +9,12 @@
  * - ds_content: content region
  */
 #}
-<div class="related_program">
-  <div class="img">
-    {{ ds_content.field_program_illustration }}
-    {{ ds_content.field_at_a_glance }}
-
+<div class="program_card">
+  <div class="pc_img">
+    {{ ds_content.field_program_illustration|field_value }}
+    {{ ds_content.field_at_a_glance|field_value }}
   </div>
-  <div class="content">
-    <h4><a title="Link to: {{ title|field_value }}" href="{{ path('entity.node.canonical', {'node': content['#node'].id()  }) }}">{{ title|field_value }}</a></h4>
+  <div class="pc_content">
+    <h3><a title="Link to: {{ title|field_value }}" href="{{ path('entity.node.canonical', {'node': content['#node'].id()  }) }}">{{ title|field_value }}</a></h3>
   </div>
 </div>

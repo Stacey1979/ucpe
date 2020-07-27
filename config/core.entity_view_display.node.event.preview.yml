@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.event.field_format
     - field.field.node.event.field_lede
     - field.field.node.event.field_location
+    - field.field.node.event.field_location_filter
     - field.field.node.event.field_program
     - node.type.event
   module:
@@ -156,3 +157,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_featured: true
+  field_location_filter: true

@@ -1,6 +1,8 @@
 .hero_wrapper {
   position: relative;
-  overflow-x: hidden;
+  @include screen("tablet-wide", $type: max) {
+    overflow: hidden;
+  }
   .hero {
     @include make-container();
   }

@@ -1,0 +1,55 @@
+uuid: 08ef8674-1bf0-4c67-ad8e-f91ff5288b77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_upcoming_events
+    - node.type.owned_program_landing_page
+  module:
+    - viewsreference
+id: node.owned_program_landing_page.field_upcoming_events
+field_name: field_upcoming_events
+entity_type: node
+bundle: owned_program_landing_page
+label: 'Upcoming Events'
+description: 'Choose "Upcoming Events" if you want this to show on the landing page. Do not edit the Block ID field'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    entity_reference: 0
+    feed: 0
+    entity_browser: 0
+  preselect_views:
+    upcoming_events: upcoming_events
+    additional_areas_of_study: 0
+    block_content: 0
+    content: 0
+    content_recent: 0
+    deadlines: 0
+    divisions_and_schools: 0
+    email_output_text: 0
+    event_date: 0
+    featured: 0
+    files: 0
+    frontpage: 0
+    masonry_views: 0
+    media: 0
+    media_library: 0
+    ptoc: 0
+    redirect: 0
+    related_three_ups: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+field_type: viewsreference

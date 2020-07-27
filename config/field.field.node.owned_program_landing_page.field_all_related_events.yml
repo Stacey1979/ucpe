@@ -1,0 +1,23 @@
+uuid: d2fd4a8f-1703-461c-af18-7c49ad0752b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_all_related_events
+    - node.type.owned_program_landing_page
+  module:
+    - link
+id: node.owned_program_landing_page.field_all_related_events
+field_name: field_all_related_events
+entity_type: node
+bundle: owned_program_landing_page
+label: 'All related events'
+description: "<p>Enter the link to the events index with the appropriate filter selected. For example, Master's of Science in Analytics would be: /events?field_date_and_time_value=All&mast%5B84%5D=84. This part needs changed based on the program \"&<strong>mast</strong>%5B<strong>84</strong>%5D=<strong>84</strong>\" This takes the format of:</p>\r\n<ul><li>&mast = master's</li>\r\n<li>&cert = certificate</li>\r\n<li>&exec-ed = executive education</li>\r\n<li>&pers = personalized</li>\r\n</ul>\r\n<p>The next part \"%5B84%5D=84\" is html code for brackets and then the program term ID number, so \"[84]=84.\" You need to grab the term ID number from the <a href=\"/admin/structure/taxonomy/manage/program/overview\" target=\"_blank\">taxonomy page</a>. Click edit on the term you want and the term ID will show in your browser address bar. </p>\r\n<p>Set to open in new tab and add Aria label to be \"All related [program name] events.\""
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link
