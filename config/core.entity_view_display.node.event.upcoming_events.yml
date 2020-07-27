@@ -1,9 +1,9 @@
-uuid: eb6e0d80-f56a-471d-a39f-6c243b45ad79
+uuid: a220301d-f02b-4e84-8c7c-d1800edbb38e
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.featured
+    - core.entity_view_mode.node.upcoming_events
     - field.field.node.event.field_areas_of_study
     - field.field.node.event.field_author
     - field.field.node.event.field_content
@@ -19,10 +19,8 @@ dependencies:
     - node.type.event
   module:
     - ds
-    - entity_reference_revisions
     - options
     - smart_date
-    - text
     - user
 third_party_settings:
   ds:
@@ -37,7 +35,7 @@ third_party_settings:
           ds_content: div
         outer_wrapper: div
         attributes: ''
-        link_attribute: content
+        link_attribute: ''
         link_custom: ''
         classes:
           layout_class: {  }
@@ -45,56 +43,38 @@ third_party_settings:
     regions:
       ds_content:
         - links
-        - field_event_hero
         - node_title
-        - field_lede
         - field_date_and_time
         - field_location_filter
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 1
         label: hidden
         formatter: default
         settings:
           link: true
-          wrapper: h2
+          wrapper: h4
           class: ''
-id: node.event.featured
+id: node.event.upcoming_events
 targetEntityType: node
 bundle: event
-mode: featured
+mode: upcoming_events
 content:
   field_date_and_time:
-    weight: 4
-    label: above
+    type: smartdate_default
+    weight: 2
+    region: ds_content
+    label: visually_hidden
     settings:
       timezone_override: ''
-      format: event_date
+      format: compact_date_only
       force_chronological: false
       format_type: medium
     third_party_settings: {  }
-    type: smartdate_default
-    region: ds_content
-  field_event_hero:
-    type: entity_reference_revisions_entity_view
-    weight: 1
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
-  field_lede:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: ds_content
   field_location_filter:
     type: list_default
-    weight: 5
+    weight: 3
     region: ds_content
     label: hidden
     settings: {  }
@@ -109,8 +89,10 @@ hidden:
   field_areas_of_study: true
   field_author: true
   field_content: true
+  field_event_hero: true
   field_featured: true
   field_form: true
   field_format: true
+  field_lede: true
   field_location: true
   field_program: true

@@ -1,0 +1,21 @@
+uuid: 206318a1-3b47-4b7a-948c-562a86e76dda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_filter
+    - node.type.event
+  module:
+    - options
+id: node.event.field_location_filter
+field_name: field_location_filter
+entity_type: node
+bundle: event
+label: 'Location Filter'
+description: 'Enter the location for filtering on the event index page'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

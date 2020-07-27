@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.article.field_topics
     - node.type.article
   module:
+    - allowed_formats
     - datetime
     - entity_browser_entity_form
     - field_group
@@ -34,10 +35,10 @@ third_party_settings:
       children:
         - field_hero
         - field_date_written
+        - title
         - field_lede
         - field_based_on
         - field_topics
-        - title
       parent_name: ''
       weight: 0
       format_type: fieldset
@@ -50,6 +51,7 @@ third_party_settings:
       label: 'Hero Section'
     group_content:
       children:
+        - field_in_brief_perspective
         - field_intro_paragraph
         - field_content_sections
       parent_name: ''
@@ -87,7 +89,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 12
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -115,7 +117,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_based_on:
-    weight: 3
+    weight: 5
     settings:
       form_mode: default
       revision: true
@@ -135,7 +137,7 @@ content:
     region: content
   field_content_sections:
     type: entity_reference_paragraphs
-    weight: 7
+    weight: 14
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -152,10 +154,10 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_featured:
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   field_hero:
     weight: 1
@@ -178,7 +180,7 @@ content:
     region: content
   field_in_brief_perspective:
     type: entity_reference_paragraphs
-    weight: 5
+    weight: 12
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -190,7 +192,7 @@ content:
     region: content
   field_intro_paragraph:
     type: entity_reference_paragraphs
-    weight: 6
+    weight: 13
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -201,15 +203,18 @@ content:
     third_party_settings: {  }
     region: content
   field_lede:
-    weight: 2
+    weight: 4
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   field_metatags:
-    weight: 26
+    weight: 10
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -226,14 +231,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_topics:
-    weight: 4
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   path:
     type: path
-    weight: 14
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -241,19 +246,27 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 6
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 9
     region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 11
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
@@ -262,7 +275,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 15
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -276,4 +289,3 @@ hidden:
   field_perspectives_label: true
   field_read_time: true
   sticky: true
-  title: true

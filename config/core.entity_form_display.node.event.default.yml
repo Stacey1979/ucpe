@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.event.field_format
     - field.field.node.event.field_lede
     - field.field.node.event.field_location
+    - field.field.node.event.field_location_filter
     - field.field.node.event.field_program
     - node.type.event
   module:
@@ -65,6 +66,7 @@ third_party_settings:
     group_administrative:
       children:
         - field_featured
+        - field_location_filter
       parent_name: ''
       weight: 2
       format_type: fieldset
@@ -192,6 +194,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: address_default
+    region: content
+  field_location_filter:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_program:
     weight: 7
