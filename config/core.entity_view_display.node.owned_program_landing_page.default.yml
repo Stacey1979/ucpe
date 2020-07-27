@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.owned_program_landing_page.field_all_related_events
     - field.field.node.owned_program_landing_page.field_area_of_study_cta
     - field.field.node.owned_program_landing_page.field_areas_of_study
     - field.field.node.owned_program_landing_page.field_at_a_glance
@@ -17,10 +18,13 @@ dependencies:
     - field.field.node.owned_program_landing_page.field_hero_cta_button
     - field.field.node.owned_program_landing_page.field_intro_paragraph
     - field.field.node.owned_program_landing_page.field_lede
+    - field.field.node.owned_program_landing_page.field_metatags
     - field.field.node.owned_program_landing_page.field_of_interest
     - field.field.node.owned_program_landing_page.field_offered_by
+    - field.field.node.owned_program_landing_page.field_program
     - field.field.node.owned_program_landing_page.field_program_illustration
     - field.field.node.owned_program_landing_page.field_program_type
+    - field.field.node.owned_program_landing_page.field_upcoming_events
     - field.field.node.owned_program_landing_page.field_video
     - node.type.owned_program_landing_page
   module:
@@ -58,6 +62,8 @@ third_party_settings:
         - field_hero
         - field_at_a_glance
         - field_deadlines_block
+        - field_upcoming_events
+        - field_all_related_events
         - field_video
         - field_intro_paragraph
         - field_content
@@ -73,8 +79,20 @@ targetEntityType: node
 bundle: owned_program_landing_page
 mode: default
 content:
+  field_all_related_events:
+    weight: 9
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
   field_area_of_study_cta:
-    weight: 16
+    weight: 18
     label: hidden
     settings:
       view_mode: area_of_study_cta
@@ -100,7 +118,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_button_:
-    weight: 15
+    weight: 17
     label: above
     settings:
       view_mode: default
@@ -109,7 +127,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_conferred_by:
-    weight: 14
+    weight: 16
     label: hidden
     settings:
       link: true
@@ -117,7 +135,7 @@ content:
     type: entity_reference_label
     region: ds_content
   field_content:
-    weight: 10
+    weight: 12
     label: hidden
     settings:
       view_mode: default
@@ -126,7 +144,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_content_sections:
-    weight: 12
+    weight: 14
     label: hidden
     settings:
       view_mode: default
@@ -149,7 +167,7 @@ content:
     type: viewsreference_formatter
     region: ds_content
   field_designed_for:
-    weight: 11
+    weight: 13
     label: hidden
     settings:
       view_mode: default
@@ -179,7 +197,7 @@ content:
     type: link
     region: ds_content
   field_intro_paragraph:
-    weight: 9
+    weight: 11
     label: hidden
     settings:
       view_mode: default
@@ -195,7 +213,7 @@ content:
     type: text_default
     region: ds_content
   field_of_interest:
-    weight: 17
+    weight: 19
     label: hidden
     settings:
       view_mode: default
@@ -204,7 +222,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_offered_by:
-    weight: 13
+    weight: 15
     label: hidden
     settings:
       link: true
@@ -219,8 +237,17 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-  field_video:
+  field_upcoming_events:
     weight: 8
+    label: above
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: ds_content
+  field_video:
+    weight: 10
     label: hidden
     settings:
       view_mode: default

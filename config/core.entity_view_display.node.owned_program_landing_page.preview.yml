@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.preview
+    - field.field.node.owned_program_landing_page.field_all_related_events
     - field.field.node.owned_program_landing_page.field_area_of_study_cta
     - field.field.node.owned_program_landing_page.field_areas_of_study
     - field.field.node.owned_program_landing_page.field_at_a_glance
@@ -24,6 +25,7 @@ dependencies:
     - field.field.node.owned_program_landing_page.field_program
     - field.field.node.owned_program_landing_page.field_program_illustration
     - field.field.node.owned_program_landing_page.field_program_type
+    - field.field.node.owned_program_landing_page.field_upcoming_events
     - field.field.node.owned_program_landing_page.field_video
     - node.type.owned_program_landing_page
   module:
@@ -219,8 +221,10 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_all_related_events: true
   field_area_of_study_cta: true
   field_deadlines_block: true
   field_metatags: true
   field_of_interest: true
   field_program: true
+  field_upcoming_events: true
