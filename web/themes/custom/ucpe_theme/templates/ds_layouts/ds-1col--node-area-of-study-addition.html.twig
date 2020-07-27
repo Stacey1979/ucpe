@@ -11,9 +11,8 @@
 #}
 
 
-<div class="aos_additional_block">
-  <div id="bar"></div>
-  <div class="aos_a_block_content">
+<div class="card card_aos">
+  <div class="card_aos_content">
     <h3>{{ title|field_value }}</a></h3>
     <a class="learnmore" title="Learn more about {{ title|field_value }}" href="{{ path('entity.node.canonical', {'node': content['#node'].id()  }) }}">Learn More</a>
   </div>

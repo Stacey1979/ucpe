@@ -24,51 +24,41 @@
 
 // PROGRAM META INFORMATION (SHEILD STYLES)
 .program_meta {
-  svg {
-    fill: currentColor;
-    color: $maroon;
+  background-image: url("#{$image-path}/uc_shield_outline_maroon.svg");
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: 10px bottom;
+  float: left;
+  padding: 14px 20px 6px 20px;
+
+  .category_name {
+    background-color: white;
+    @include utility_XS($black);
+
+    a {
+      color: $black;
+      text-decoration: none;
+    }
   }
 
-  .category {
-    display: inline-block;
-
-    .category_name {
-      background-color: white;
-      @include utility_XS($black);
-      left: -24px;
+  .meta {
+    @include bodycopy_XS($black, $bold: false);
+    display: block;
+    @include screen("desktop") {
+      display: inline;
       position: relative;
-      padding: 2px;
       top: -13px;
-
-      a {
-        color: $black;
-        text-decoration: none;
-      }
-
-      > div {
-        display: inline-block;
-      }
     }
 
-    .meta {
-      @include bodycopy_XS($black, $bold: false);
-      display: block;
-      @include screen("desktop") {
-        display: inline;
-        position: relative;
-        top: -13px;
-      }
+    a {
+      @include bodycopy_S($black, $bold: true);
+      border-bottom: solid 2px $maroon;
+      text-decoration: none;
+      transition: all 0.2s ease-out;
 
-      a {
-        @include bodycopy_S($black, $bold: true);
-        border-bottom: solid 2px $maroon;
-        text-decoration: none;
-        transition: all 0.2s ease-out;
-
-        &:hover {
-          color: $maroon;
-          transition: all 0.2s ease-in;
-        }
+      &:hover {
+        color: $maroon;
+        transition: all 0.2s ease-in;
       }
     }
   }
@@ -208,9 +198,8 @@
   }
 }
 
-// RELATED BLOCKS
-
-.related {
+// CARDS
+.card {
   border: solid 2px $divider-gray;
   padding: $baseline * 2;
   position: relative;
@@ -225,7 +214,82 @@
     width: calc(100% + 4px);
   }
 
-  &.related_story:before {
+  .top,
+  .bottom {
+    @include make-sm-column(12);
+    clear: both;
+  }
+
+  h3 {
+    @include heading_XS($plum);
+    margin: $baseline 0;
+  }
+  h3 a {
+    @include heading_XS($plum);
+    margin-bottom: 0;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $maroon;
+      border-bottom: solid 3px $maroon;
+      transition: all 0.3s;
+    }
+  }
+
+  .meta {
+    @include utility_M($black_02);
+  }
+  .date {
+    @include bodycopy_S($black_02);
+  }
+
+  &.card_story:before {
     background-color: $salmon;
+  }
+  &.card_event:before {
+    background-color: $emerald;
+  }
+  &.card_article:before {
+    background-color: $cerulean;
+  }
+  &.card_casestudy:before {
+    background-color: $magenta;
+  }
+}
+
+// PROGRAM CARDS
+.program_card {
+  .pc_img {
+    background-color: $bg-02;
+    margin-bottom: $baseline * 2;
+    padding: $baseline;
+    position: relative;
+    text-align: center;
+
+    .program_meta {
+      background-color: $white;
+      position: relative;
+      left: -16px;
+      top: -12px;
+    }
+  }
+  .pc_content {
+    h3 {
+      @include heading_S($plum);
+      padding-left: 10px;
+    }
+    h3 a {
+      @include heading_S($plum);
+      margin-bottom: 0;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $maroon;
+        border-bottom: solid 3px $maroon;
+        transition: all 0.3s;
+      }
+    }
   }
 }
