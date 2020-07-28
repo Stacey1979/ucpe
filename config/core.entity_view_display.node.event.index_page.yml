@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.event.field_format
     - field.field.node.event.field_lede
     - field.field.node.event.field_location
+    - field.field.node.event.field_location_filter
     - field.field.node.event.field_program
     - node.type.event
   module:
@@ -36,7 +37,7 @@ third_party_settings:
           ds_content: div
         outer_wrapper: div
         attributes: ''
-        link_attribute: ''
+        link_attribute: content
         link_custom: ''
         classes:
           layout_class: {  }
@@ -48,7 +49,7 @@ third_party_settings:
         - node_title
         - field_lede
         - field_date_and_time
-        - field_format
+        - field_location_filter
         - field_areas_of_study
     fields:
       node_title:
@@ -56,6 +57,10 @@ third_party_settings:
         weight: 2
         label: hidden
         formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
 id: node.event.index_page
 targetEntityType: node
 bundle: event
@@ -91,13 +96,6 @@ content:
       link: ''
     third_party_settings: {  }
     region: ds_content
-  field_format:
-    weight: 5
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: ds_content
   field_lede:
     weight: 3
     label: hidden
@@ -105,6 +103,13 @@ content:
     third_party_settings: {  }
     type: text_default
     region: ds_content
+  field_location_filter:
+    type: list_default
+    weight: 5
+    region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   links:
     weight: 0
     region: ds_content
@@ -116,5 +121,6 @@ hidden:
   field_content: true
   field_featured: true
   field_form: true
+  field_format: true
   field_location: true
   field_program: true

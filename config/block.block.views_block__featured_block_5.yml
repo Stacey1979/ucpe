@@ -1,4 +1,4 @@
-uuid: d902e18f-3e7d-46fe-96cb-813a0bb6b3fd
+uuid: 9a367336-7b07-45e4-a1dc-685c8585bf9d
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - ucpe_theme
-id: views_block__featured_block_2
+id: views_block__featured_block_5
 theme: ucpe_theme
 region: content
-weight: -7
+weight: 0
 provider: null
-plugin: 'views_block:featured-block_2'
+plugin: 'views_block:featured-block_5'
 settings:
-  id: 'views_block:featured-block_2'
+  id: 'views_block:featured-block_5'
   label: ''
   provider: views
   label_display: '0'
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /stories
+    pages: /events
     negate: false
     context_mapping: {  }

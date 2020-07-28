@@ -1,30 +1,31 @@
-uuid: d902e18f-3e7d-46fe-96cb-813a0bb6b3fd
+uuid: fe74388d-e25b-48a3-a2b6-4cea6804729d
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.featured
+    - views.view.upcoming_events
   module:
     - system
     - views
   theme:
     - ucpe_theme
-id: views_block__featured_block_2
+id: views_block__upcoming_events_block_1
 theme: ucpe_theme
 region: content
-weight: -7
+weight: 0
 provider: null
-plugin: 'views_block:featured-block_2'
+plugin: 'views_block:upcoming_events-block_1'
 settings:
-  id: 'views_block:featured-block_2'
+  id: 'views_block:upcoming_events-block_1'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: /stories
+    pages: /node/15
     negate: false
     context_mapping: {  }

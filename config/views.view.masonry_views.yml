@@ -36,7 +36,7 @@ dependencies:
     - user
     - views_show_more
 id: masonry_views
-label: 'Masonry Views'
+label: 'Masonry and Grid Views'
 module: views
 description: ''
 tag: ''
@@ -2114,6 +2114,13 @@ display:
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
         - 'config:core.entity_view_display.node.area_of_study.default'
+        - 'config:core.entity_view_display.node.event.featured'
+        - 'config:core.entity_view_display.node.event.index_page'
+        - 'config:core.entity_view_display.node.event.masonry'
+        - 'config:core.entity_view_display.node.event.of_interest'
+        - 'config:core.entity_view_display.node.event.preview'
+        - 'config:core.entity_view_display.node.event.related_three_up'
+        - 'config:core.entity_view_display.node.event.teaser'
         - 'config:core.entity_view_display.node.area_of_study.addition'
         - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
         - 'config:core.entity_view_display.node.area_of_study.masonry'
@@ -2141,13 +2148,6 @@ display:
         - 'config:core.entity_view_display.node.course.preview'
         - 'config:core.entity_view_display.node.course.teaser'
         - 'config:core.entity_view_display.node.event.default'
-        - 'config:core.entity_view_display.node.event.featured'
-        - 'config:core.entity_view_display.node.event.index_page'
-        - 'config:core.entity_view_display.node.event.masonry'
-        - 'config:core.entity_view_display.node.event.of_interest'
-        - 'config:core.entity_view_display.node.event.preview'
-        - 'config:core.entity_view_display.node.event.related_three_up'
-        - 'config:core.entity_view_display.node.event.teaser'
         - 'config:core.entity_view_display.node.find_your_fit.default'
         - 'config:core.entity_view_display.node.find_your_fit.preview'
         - 'config:core.entity_view_display.node.find_your_fit.teaser'

@@ -4,12 +4,72 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.featured
+    - core.entity_view_mode.node.index_page
     - core.entity_view_mode.node.story_index_most_recent
+    - field.storage.node.field_location_filter
+    - field.storage.node.field_program
+    - node.type.article
+    - node.type.event
     - node.type.story
+    - taxonomy.vocabulary.program
+  content:
+    - 'taxonomy_term:program:01cb904e-ef1c-4a3b-8f0b-0dc4e22c25b3'
+    - 'taxonomy_term:program:024653ef-1ba0-458a-a358-1efd13d21a64'
+    - 'taxonomy_term:program:0e5dc192-9215-4b70-a643-5a6c07e5eb43'
+    - 'taxonomy_term:program:0f0eadb8-a961-400f-a2c7-2ce9edcafcf7'
+    - 'taxonomy_term:program:12f49f58-4691-4f0b-96fe-e9c244317ca4'
+    - 'taxonomy_term:program:192b5020-b0be-4915-8c54-4ba48e2ebea9'
+    - 'taxonomy_term:program:1b196f3f-6645-41de-851f-8cc47f1c3fbf'
+    - 'taxonomy_term:program:24c1d21d-eacb-4847-bbe1-3876cf3c8ad8'
+    - 'taxonomy_term:program:2506d2c1-6db0-4fa9-9851-cb22a7e2a6c3'
+    - 'taxonomy_term:program:2f2855cb-0a88-4601-8b1a-57d6489f22bb'
+    - 'taxonomy_term:program:377ce196-aecf-4d68-9437-c54b9e528863'
+    - 'taxonomy_term:program:3baba09c-9533-4ac3-a073-380719f32deb'
+    - 'taxonomy_term:program:52be85b6-e94f-48ff-b5b2-59415e7b43a1'
+    - 'taxonomy_term:program:56077d99-f16a-49d4-898d-50d7c39d3bba'
+    - 'taxonomy_term:program:5ba69fbb-9902-46c0-86bb-6e4f1b9c3007'
+    - 'taxonomy_term:program:5d83ef4e-2cf6-4895-b53e-39dec4b743cd'
+    - 'taxonomy_term:program:63a186aa-6836-4b66-9902-4ac870cc11d3'
+    - 'taxonomy_term:program:66e85940-2e7c-4f93-b435-fb75b718a4c1'
+    - 'taxonomy_term:program:68804c2c-06c8-4362-98ee-960d98da0423'
+    - 'taxonomy_term:program:6aeb1186-e802-45b9-8ad6-f378f86e23fd'
+    - 'taxonomy_term:program:72dec7cc-9ccc-4f56-a612-4a214337d950'
+    - 'taxonomy_term:program:76485456-1135-4be0-8c08-693885de60a8'
+    - 'taxonomy_term:program:7a4fd7b0-11a2-4c41-963b-1b63ccc9b21a'
+    - 'taxonomy_term:program:7b0c7033-2cee-43e4-aeca-c7bbd5a535a4'
+    - 'taxonomy_term:program:7b84d66b-c2e7-458a-afd0-5f32743f6754'
+    - 'taxonomy_term:program:89aa41b5-40a7-4014-af5a-9cf6363423e7'
+    - 'taxonomy_term:program:8fb2b19b-1c56-4cd2-aafe-514680a8d7d2'
+    - 'taxonomy_term:program:92a40261-2bc5-4f4d-b29b-81be97f0c492'
+    - 'taxonomy_term:program:934cf8a4-fc01-4bdd-8539-5246eee8a84a'
+    - 'taxonomy_term:program:94243d9a-e7b7-42fc-8916-ac71637381b2'
+    - 'taxonomy_term:program:99567807-dca9-4282-8de5-bbef1f23afac'
+    - 'taxonomy_term:program:9ba3253c-2ee5-4998-87c7-f08f65f09f47'
+    - 'taxonomy_term:program:9e44f2db-cbe0-4a7c-86ff-4e48a78bcf71'
+    - 'taxonomy_term:program:9e52f6b2-f7e5-47c4-9537-5e3f28f0834c'
+    - 'taxonomy_term:program:a2f806c1-81ae-4e5f-9825-337419760bb7'
+    - 'taxonomy_term:program:a37563c3-805c-4f56-bb94-dc1cc40ba8df'
+    - 'taxonomy_term:program:a58fc8a0-c77c-4b9e-b18c-3cb9fdfa634b'
+    - 'taxonomy_term:program:a5bbcb31-93cd-4a5f-bd16-7e3a5b5d1a81'
+    - 'taxonomy_term:program:ac1c27da-384e-454b-a93f-14cbedd945b6'
+    - 'taxonomy_term:program:b0c408c4-dbb9-479d-a95f-648e8625aa42'
+    - 'taxonomy_term:program:b0e56108-ff2b-402d-9ce0-2d347e4f87fe'
+    - 'taxonomy_term:program:b324acd3-f7e4-47ab-8f36-3858f911bf5c'
+    - 'taxonomy_term:program:b3b81b54-8072-4e9d-b0ee-6331f8f5c0a8'
+    - 'taxonomy_term:program:c463ce0b-8299-4ee2-b644-b78c84af5395'
+    - 'taxonomy_term:program:c679dd7b-0d63-4e0d-9b96-d3a0a47ab8b5'
+    - 'taxonomy_term:program:c6f66709-5661-43a1-a11c-f5d87139449d'
+    - 'taxonomy_term:program:c9b58ee8-7fcf-402f-9dcb-5a2ee555baae'
+    - 'taxonomy_term:program:d88b7f79-c262-45d2-9dae-47275f031a64'
+    - 'taxonomy_term:program:e9aad07d-c665-41bf-be04-100aebd8d753'
+    - 'taxonomy_term:program:ec17af4e-037f-434c-a0a9-e99742216405'
+    - 'taxonomy_term:program:ef4ffe13-0472-4a52-9e41-b0c7c531e7a6'
   module:
+    - better_exposed_filters
     - datetime
     - node
     - options
+    - taxonomy
     - user
 id: featured
 label: Featured
@@ -302,8 +362,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.story.default'
-        - 'config:core.entity_view_display.node.story.featured'
+        - 'config:core.entity_view_display.node.event.default'
+        - 'config:core.entity_view_display.node.event.index_page'
         - 'config:core.entity_view_display.node.area_of_study.addition'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
@@ -333,14 +393,13 @@ display:
         - 'config:core.entity_view_display.node.course.instructor_courses'
         - 'config:core.entity_view_display.node.course.preview'
         - 'config:core.entity_view_display.node.course.teaser'
-        - 'config:core.entity_view_display.node.event.default'
         - 'config:core.entity_view_display.node.event.featured'
-        - 'config:core.entity_view_display.node.event.index_page'
         - 'config:core.entity_view_display.node.event.masonry'
         - 'config:core.entity_view_display.node.event.of_interest'
         - 'config:core.entity_view_display.node.event.preview'
         - 'config:core.entity_view_display.node.event.related_three_up'
         - 'config:core.entity_view_display.node.event.teaser'
+        - 'config:core.entity_view_display.node.event.upcoming_events'
         - 'config:core.entity_view_display.node.find_your_fit.default'
         - 'config:core.entity_view_display.node.find_your_fit.preview'
         - 'config:core.entity_view_display.node.find_your_fit.teaser'
@@ -370,6 +429,8 @@ display:
         - 'config:core.entity_view_display.node.ptoc_page.default'
         - 'config:core.entity_view_display.node.ptoc_page.ptoc'
         - 'config:core.entity_view_display.node.ptoc_page.teaser'
+        - 'config:core.entity_view_display.node.story.default'
+        - 'config:core.entity_view_display.node.story.featured'
         - 'config:core.entity_view_display.node.story.featured_story'
         - 'config:core.entity_view_display.node.story.index_page'
         - 'config:core.entity_view_display.node.story.masonry'
@@ -444,6 +505,7 @@ display:
         - 'config:core.entity_view_display.node.event.preview'
         - 'config:core.entity_view_display.node.event.related_three_up'
         - 'config:core.entity_view_display.node.event.teaser'
+        - 'config:core.entity_view_display.node.event.upcoming_events'
         - 'config:core.entity_view_display.node.find_your_fit.default'
         - 'config:core.entity_view_display.node.find_your_fit.preview'
         - 'config:core.entity_view_display.node.find_your_fit.teaser'
@@ -776,6 +838,7 @@ display:
         - 'config:core.entity_view_display.node.event.preview'
         - 'config:core.entity_view_display.node.event.related_three_up'
         - 'config:core.entity_view_display.node.event.teaser'
+        - 'config:core.entity_view_display.node.event.upcoming_events'
         - 'config:core.entity_view_display.node.find_your_fit.default'
         - 'config:core.entity_view_display.node.find_your_fit.preview'
         - 'config:core.entity_view_display.node.find_your_fit.teaser'
@@ -816,3 +879,1382 @@ display:
         - 'config:core.entity_view_display.node.story.related_three_up'
         - 'config:core.entity_view_display.node.story.story_index_most_recent'
         - 'config:core.entity_view_display.node.story.teaser'
+  block_3:
+    display_plugin: block
+    id: block_3
+    display_title: 'Event Index Main Feature'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      defaults:
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+      row:
+        type: fields
+        options: {  }
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            event: event
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_featured_value:
+          id: field_featured_value
+          table: node__field_featured
+          field: field_featured_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            'yes': 'yes'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.area_of_study.addition'
+        - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
+        - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
+        - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
+        - 'config:core.entity_view_display.node.area_of_study.default'
+        - 'config:core.entity_view_display.node.area_of_study.masonry'
+        - 'config:core.entity_view_display.node.area_of_study.preview'
+        - 'config:core.entity_view_display.node.area_of_study.teaser'
+        - 'config:core.entity_view_display.node.article.default'
+        - 'config:core.entity_view_display.node.article.featured'
+        - 'config:core.entity_view_display.node.article.index_page'
+        - 'config:core.entity_view_display.node.article.masonry'
+        - 'config:core.entity_view_display.node.article.of_interest'
+        - 'config:core.entity_view_display.node.article.preview'
+        - 'config:core.entity_view_display.node.article.related_three_up'
+        - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.teaser'
+        - 'config:core.entity_view_display.node.case_study.default'
+        - 'config:core.entity_view_display.node.case_study.featured'
+        - 'config:core.entity_view_display.node.case_study.index_page'
+        - 'config:core.entity_view_display.node.case_study.masonry'
+        - 'config:core.entity_view_display.node.case_study.of_interest'
+        - 'config:core.entity_view_display.node.case_study.preview'
+        - 'config:core.entity_view_display.node.case_study.teaser'
+        - 'config:core.entity_view_display.node.course.curriculum_page_courses'
+        - 'config:core.entity_view_display.node.course.default'
+        - 'config:core.entity_view_display.node.course.instructor_courses'
+        - 'config:core.entity_view_display.node.course.preview'
+        - 'config:core.entity_view_display.node.course.teaser'
+        - 'config:core.entity_view_display.node.event.default'
+        - 'config:core.entity_view_display.node.event.featured'
+        - 'config:core.entity_view_display.node.event.index_page'
+        - 'config:core.entity_view_display.node.event.masonry'
+        - 'config:core.entity_view_display.node.event.of_interest'
+        - 'config:core.entity_view_display.node.event.preview'
+        - 'config:core.entity_view_display.node.event.related_three_up'
+        - 'config:core.entity_view_display.node.event.teaser'
+        - 'config:core.entity_view_display.node.event.upcoming_events'
+        - 'config:core.entity_view_display.node.find_your_fit.default'
+        - 'config:core.entity_view_display.node.find_your_fit.preview'
+        - 'config:core.entity_view_display.node.find_your_fit.teaser'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.default'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.of_interest'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.preview'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.related_program'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.teaser'
+        - 'config:core.entity_view_display.node.owned_program_interior_page.default'
+        - 'config:core.entity_view_display.node.owned_program_interior_page.ptoc'
+        - 'config:core.entity_view_display.node.owned_program_interior_page.teaser'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.default'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.of_interest'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.owned_program_interior_page_header'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.preview'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.related_program'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.preview'
+        - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.person.bio_without_email'
+        - 'config:core.entity_view_display.node.person.bio_with_email'
+        - 'config:core.entity_view_display.node.person.default'
+        - 'config:core.entity_view_display.node.person.instructor_pages'
+        - 'config:core.entity_view_display.node.person.preview'
+        - 'config:core.entity_view_display.node.person.teaser'
+        - 'config:core.entity_view_display.node.ptoc_page.default'
+        - 'config:core.entity_view_display.node.ptoc_page.ptoc'
+        - 'config:core.entity_view_display.node.ptoc_page.teaser'
+        - 'config:core.entity_view_display.node.story.default'
+        - 'config:core.entity_view_display.node.story.featured'
+        - 'config:core.entity_view_display.node.story.featured_story'
+        - 'config:core.entity_view_display.node.story.index_page'
+        - 'config:core.entity_view_display.node.story.masonry'
+        - 'config:core.entity_view_display.node.story.masonry_story_index'
+        - 'config:core.entity_view_display.node.story.of_interest'
+        - 'config:core.entity_view_display.node.story.read_their_story'
+        - 'config:core.entity_view_display.node.story.related_three_up'
+        - 'config:core.entity_view_display.node.story.story_index_most_recent'
+        - 'config:core.entity_view_display.node.story.teaser'
+  block_4:
+    display_plugin: block
+    id: block_4
+    display_title: 'Perspectives Index Main Feature'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      defaults:
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+      row:
+        type: fields
+        options: {  }
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            article: article
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_featured_value:
+          id: field_featured_value
+          table: node__field_featured
+          field: field_featured_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            'yes': 'yes'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.area_of_study.addition'
+        - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
+        - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
+        - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
+        - 'config:core.entity_view_display.node.area_of_study.default'
+        - 'config:core.entity_view_display.node.area_of_study.masonry'
+        - 'config:core.entity_view_display.node.area_of_study.preview'
+        - 'config:core.entity_view_display.node.area_of_study.teaser'
+        - 'config:core.entity_view_display.node.article.default'
+        - 'config:core.entity_view_display.node.article.featured'
+        - 'config:core.entity_view_display.node.article.index_page'
+        - 'config:core.entity_view_display.node.article.masonry'
+        - 'config:core.entity_view_display.node.article.of_interest'
+        - 'config:core.entity_view_display.node.article.preview'
+        - 'config:core.entity_view_display.node.article.related_three_up'
+        - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.teaser'
+        - 'config:core.entity_view_display.node.case_study.default'
+        - 'config:core.entity_view_display.node.case_study.featured'
+        - 'config:core.entity_view_display.node.case_study.index_page'
+        - 'config:core.entity_view_display.node.case_study.masonry'
+        - 'config:core.entity_view_display.node.case_study.of_interest'
+        - 'config:core.entity_view_display.node.case_study.preview'
+        - 'config:core.entity_view_display.node.case_study.teaser'
+        - 'config:core.entity_view_display.node.course.curriculum_page_courses'
+        - 'config:core.entity_view_display.node.course.default'
+        - 'config:core.entity_view_display.node.course.instructor_courses'
+        - 'config:core.entity_view_display.node.course.preview'
+        - 'config:core.entity_view_display.node.course.teaser'
+        - 'config:core.entity_view_display.node.event.default'
+        - 'config:core.entity_view_display.node.event.featured'
+        - 'config:core.entity_view_display.node.event.index_page'
+        - 'config:core.entity_view_display.node.event.masonry'
+        - 'config:core.entity_view_display.node.event.of_interest'
+        - 'config:core.entity_view_display.node.event.preview'
+        - 'config:core.entity_view_display.node.event.related_three_up'
+        - 'config:core.entity_view_display.node.event.teaser'
+        - 'config:core.entity_view_display.node.event.upcoming_events'
+        - 'config:core.entity_view_display.node.find_your_fit.default'
+        - 'config:core.entity_view_display.node.find_your_fit.preview'
+        - 'config:core.entity_view_display.node.find_your_fit.teaser'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.default'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.of_interest'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.preview'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.related_program'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.teaser'
+        - 'config:core.entity_view_display.node.owned_program_interior_page.default'
+        - 'config:core.entity_view_display.node.owned_program_interior_page.ptoc'
+        - 'config:core.entity_view_display.node.owned_program_interior_page.teaser'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.default'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.of_interest'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.owned_program_interior_page_header'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.preview'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.related_program'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.preview'
+        - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.person.bio_without_email'
+        - 'config:core.entity_view_display.node.person.bio_with_email'
+        - 'config:core.entity_view_display.node.person.default'
+        - 'config:core.entity_view_display.node.person.instructor_pages'
+        - 'config:core.entity_view_display.node.person.preview'
+        - 'config:core.entity_view_display.node.person.teaser'
+        - 'config:core.entity_view_display.node.ptoc_page.default'
+        - 'config:core.entity_view_display.node.ptoc_page.ptoc'
+        - 'config:core.entity_view_display.node.ptoc_page.teaser'
+        - 'config:core.entity_view_display.node.story.default'
+        - 'config:core.entity_view_display.node.story.featured'
+        - 'config:core.entity_view_display.node.story.featured_story'
+        - 'config:core.entity_view_display.node.story.index_page'
+        - 'config:core.entity_view_display.node.story.masonry'
+        - 'config:core.entity_view_display.node.story.masonry_story_index'
+        - 'config:core.entity_view_display.node.story.of_interest'
+        - 'config:core.entity_view_display.node.story.read_their_story'
+        - 'config:core.entity_view_display.node.story.related_three_up'
+        - 'config:core.entity_view_display.node.story.story_index_most_recent'
+        - 'config:core.entity_view_display.node.story.teaser'
+  block_5:
+    display_plugin: block
+    id: block_5
+    display_title: 'Event Index List'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      defaults:
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+        pager: false
+        fields: false
+        exposed_form: false
+        sorts: false
+        use_ajax: false
+        cache: false
+      row:
+        type: fields
+        options: {  }
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            event: event
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_date_and_time_value:
+          id: field_date_and_time_value
+          table: node__field_date_and_time
+          field: field_date_and_time_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_date_and_time_value_op
+            label: 'Date - Start'
+            description: null
+            use_operator: false
+            operator: field_date_and_time_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_date_and_time_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+            min_placeholder: null
+            max_placeholder: null
+          is_grouped: true
+          group_info:
+            label: Date
+            description: ''
+            identifier: field_date_and_time_value
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'In the next week'
+                operator: '<'
+                value:
+                  type: offset
+                  value: '+7 days'
+                  min: ''
+                  max: ''
+              2:
+                title: 'In the next month'
+                operator: '<'
+                value:
+                  type: offset
+                  value: '+31 days'
+                  min: ''
+                  max: ''
+              3:
+                title: 'In the next year'
+                operator: '>'
+                value:
+                  type: date
+                  value: '+0 days'
+                  min: ''
+                  max: ''
+          plugin_id: date
+        field_location_filter_value:
+          id: field_location_filter_value
+          table: node__field_location_filter
+          field: field_location_filter_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_location_filter_value_op
+            label: Location
+            description: ''
+            use_operator: false
+            operator: field_location_filter_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: loc
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          plugin_id: list_field
+        field_program_target_id:
+          id: field_program_target_id
+          table: node__field_program
+          field: field_program_target_id
+          relationship: none
+          group_type: group
+          admin_label: Certificates
+          operator: or
+          value:
+            50: 50
+            51: 51
+            52: 52
+            53: 53
+            54: 54
+            55: 55
+            56: 56
+            57: 57
+            58: 58
+            97: 97
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_program_target_id_op
+            label: Certificates
+            description: ''
+            use_operator: false
+            operator: field_program_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: cert
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: 'Related Program'
+            description: ''
+            identifier: field_program_target_id
+            optional: true
+            widget: select
+            multiple: true
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Master''s'
+                operator: or
+                value:
+                  60: '60'
+                  61: '61'
+                  62: '62'
+                  64: '64'
+                  65: '65'
+                  66: '66'
+                  67: '67'
+                  68: '68'
+                  69: '69'
+                  70: '70'
+                  71: '71'
+                  72: '72'
+                  73: '73'
+                  74: '74'
+                  75: '75'
+                  76: '76'
+                  77: '77'
+                  78: '78'
+                  79: '79'
+                  80: '80'
+                  81: '81'
+                  82: '82'
+                  83: '83'
+                  84: '84'
+                  85: '85'
+                  86: '86'
+                  87: '87'
+                  88: '88'
+                  89: '89'
+                  90: '90'
+                  91: '91'
+                  92: '92'
+                  93: '93'
+                  94: '94'
+                  95: '95'
+                  96: '96'
+              2:
+                title: Certificates
+                operator: or
+                value:
+                  50: '50'
+                  51: '51'
+                  52: '52'
+                  53: '53'
+                  54: '54'
+                  55: '55'
+                  56: '56'
+                  57: '57'
+                  58: '58'
+                  97: '97'
+              3:
+                title: 'Executive Education'
+                operator: or
+                value:
+                  48: '48'
+                  49: '49'
+                  59: '59'
+                  63: '63'
+                  96: '96'
+                  98: '98'
+              4: {  }
+          reduce_duplicates: true
+          type: select
+          limit: true
+          vid: program
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_program_target_id_1:
+          id: field_program_target_id_1
+          table: node__field_program
+          field: field_program_target_id
+          relationship: none
+          group_type: group
+          admin_label: 'Master''s'
+          operator: or
+          value:
+            60: 60
+            61: 61
+            62: 62
+            64: 64
+            65: 65
+            66: 66
+            67: 67
+            68: 68
+            69: 69
+            70: 70
+            71: 71
+            72: 72
+            73: 73
+            74: 74
+            75: 75
+            76: 76
+            77: 77
+            78: 78
+            79: 79
+            80: 80
+            81: 81
+            82: 82
+            83: 83
+            84: 84
+            85: 85
+            86: 86
+            87: 87
+            88: 88
+            89: 89
+            90: 90
+            91: 91
+            92: 92
+            93: 93
+            94: 94
+            95: 95
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_program_target_id_1_op
+            label: 'Master''s'
+            description: ''
+            use_operator: false
+            operator: field_program_target_id_1_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: mast
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          type: select
+          limit: true
+          vid: program
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_program_target_id_2:
+          id: field_program_target_id_2
+          table: node__field_program
+          field: field_program_target_id
+          relationship: none
+          group_type: group
+          admin_label: 'Exec ed'
+          operator: or
+          value:
+            48: 48
+            49: 49
+            59: 59
+            63: 63
+            96: 96
+            98: 98
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_program_target_id_2_op
+            label: 'Executive Education'
+            description: ''
+            use_operator: false
+            operator: field_program_target_id_2_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: exec-ed
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          type: select
+          limit: true
+          vid: program
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_program_target_id_3:
+          id: field_program_target_id_3
+          table: node__field_program
+          field: field_program_target_id
+          relationship: none
+          group_type: group
+          admin_label: Personalized
+          operator: or
+          value:
+            49: 49
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_program_target_id_3_op
+            label: Personalized
+            description: ''
+            use_operator: false
+            operator: field_program_target_id_3_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: pers
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          type: select
+          limit: true
+          vid: program
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      pager:
+        type: mini
+        options:
+          items_per_page: 10
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      fields:
+        rendered_entity:
+          id: rendered_entity
+          table: node
+          field: rendered_entity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: index_page
+          entity_type: node
+          plugin_id: rendered_entity
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: type
+          plugin_id: field
+        field_location_filter:
+          id: field_location_filter
+          table: node__field_location_filter
+          field: field_location_filter
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_program:
+          id: field_program
+          table: node__field_program
+          field: field_program
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: full_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: true
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            filter:
+              field_date_and_time_value:
+                plugin_id: bef
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+                select_all_none: false
+                select_all_none_nested: false
+                display_inline: 0
+              field_location_filter_value:
+                plugin_id: bef
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+                select_all_none: false
+                select_all_none_nested: false
+                display_inline: 0
+              field_program_target_id_1:
+                plugin_id: bef
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: true
+                  is_secondary: false
+                select_all_none: false
+                select_all_none_nested: false
+                display_inline: 0
+              field_program_target_id:
+                plugin_id: bef
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: true
+                  is_secondary: false
+                select_all_none: false
+                select_all_none_nested: false
+                display_inline: 0
+              field_program_target_id_2:
+                plugin_id: bef
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: true
+                  is_secondary: false
+                select_all_none: false
+                select_all_none_nested: false
+                display_inline: 0
+              field_program_target_id_3:
+                plugin_id: bef
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: true
+                  is_secondary: false
+                select_all_none: false
+                select_all_none_nested: false
+                display_inline: 0
+      sorts:
+        field_date_and_time_value:
+          id: field_date_and_time_value
+          table: node__field_date_and_time
+          field: field_date_and_time_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          plugin_id: date
+      use_ajax: true
+      cache:
+        type: tag
+        options: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.area_of_study.addition'
+        - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
+        - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
+        - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
+        - 'config:core.entity_view_display.node.area_of_study.default'
+        - 'config:core.entity_view_display.node.area_of_study.masonry'
+        - 'config:core.entity_view_display.node.area_of_study.preview'
+        - 'config:core.entity_view_display.node.area_of_study.teaser'
+        - 'config:core.entity_view_display.node.article.default'
+        - 'config:core.entity_view_display.node.article.featured'
+        - 'config:core.entity_view_display.node.article.index_page'
+        - 'config:core.entity_view_display.node.article.masonry'
+        - 'config:core.entity_view_display.node.article.of_interest'
+        - 'config:core.entity_view_display.node.article.preview'
+        - 'config:core.entity_view_display.node.article.related_three_up'
+        - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.teaser'
+        - 'config:core.entity_view_display.node.case_study.default'
+        - 'config:core.entity_view_display.node.case_study.featured'
+        - 'config:core.entity_view_display.node.case_study.index_page'
+        - 'config:core.entity_view_display.node.case_study.masonry'
+        - 'config:core.entity_view_display.node.case_study.of_interest'
+        - 'config:core.entity_view_display.node.case_study.preview'
+        - 'config:core.entity_view_display.node.case_study.teaser'
+        - 'config:core.entity_view_display.node.course.curriculum_page_courses'
+        - 'config:core.entity_view_display.node.course.default'
+        - 'config:core.entity_view_display.node.course.instructor_courses'
+        - 'config:core.entity_view_display.node.course.preview'
+        - 'config:core.entity_view_display.node.course.teaser'
+        - 'config:core.entity_view_display.node.event.default'
+        - 'config:core.entity_view_display.node.event.featured'
+        - 'config:core.entity_view_display.node.event.index_page'
+        - 'config:core.entity_view_display.node.event.masonry'
+        - 'config:core.entity_view_display.node.event.of_interest'
+        - 'config:core.entity_view_display.node.event.preview'
+        - 'config:core.entity_view_display.node.event.related_three_up'
+        - 'config:core.entity_view_display.node.event.teaser'
+        - 'config:core.entity_view_display.node.event.upcoming_events'
+        - 'config:core.entity_view_display.node.find_your_fit.default'
+        - 'config:core.entity_view_display.node.find_your_fit.preview'
+        - 'config:core.entity_view_display.node.find_your_fit.teaser'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.default'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.of_interest'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.preview'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.related_program'
+        - 'config:core.entity_view_display.node.non_owned_program_landing_page.teaser'
+        - 'config:core.entity_view_display.node.owned_program_interior_page.default'
+        - 'config:core.entity_view_display.node.owned_program_interior_page.ptoc'
+        - 'config:core.entity_view_display.node.owned_program_interior_page.teaser'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.default'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.of_interest'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.owned_program_interior_page_header'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.preview'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.related_program'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.preview'
+        - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.person.bio_with_email'
+        - 'config:core.entity_view_display.node.person.bio_without_email'
+        - 'config:core.entity_view_display.node.person.default'
+        - 'config:core.entity_view_display.node.person.instructor_pages'
+        - 'config:core.entity_view_display.node.person.preview'
+        - 'config:core.entity_view_display.node.person.teaser'
+        - 'config:core.entity_view_display.node.ptoc_page.default'
+        - 'config:core.entity_view_display.node.ptoc_page.ptoc'
+        - 'config:core.entity_view_display.node.ptoc_page.teaser'
+        - 'config:core.entity_view_display.node.story.default'
+        - 'config:core.entity_view_display.node.story.featured'
+        - 'config:core.entity_view_display.node.story.featured_story'
+        - 'config:core.entity_view_display.node.story.index_page'
+        - 'config:core.entity_view_display.node.story.masonry'
+        - 'config:core.entity_view_display.node.story.masonry_story_index'
+        - 'config:core.entity_view_display.node.story.of_interest'
+        - 'config:core.entity_view_display.node.story.read_their_story'
+        - 'config:core.entity_view_display.node.story.related_three_up'
+        - 'config:core.entity_view_display.node.story.story_index_most_recent'
+        - 'config:core.entity_view_display.node.story.teaser'
+        - 'config:field.storage.node.field_location_filter'
+        - 'config:field.storage.node.field_program'
