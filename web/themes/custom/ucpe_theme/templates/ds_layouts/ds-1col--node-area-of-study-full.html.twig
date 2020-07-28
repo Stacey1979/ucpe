@@ -15,6 +15,8 @@
       <div class="hero_content">
         <p class="meta">{{ content['bundle_field:node']|field_value }}</p>
         <h1>{{ title|field_value }}</h1>
+        {{ title_prefix }}
+        {{ title_suffix }}
         <p class="lede">{{ ds_content.field_lede|field_value }}</p>
       </div>
       <div class="hero_cta">
