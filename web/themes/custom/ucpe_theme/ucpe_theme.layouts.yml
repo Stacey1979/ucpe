@@ -17,3 +17,17 @@ three_up_block:
       label: Top
     bottom:
       label: Bottom
+landing_page:
+  label: Landing Page
+  category: UCPE
+  type: partial
+  template: templates/ds-layouts/landing-page
+  regions:
+    homepage:
+      label: Homepage
+    about:
+      label: About
+    intro:
+      label: Intro
+    content:
+      label: Content
