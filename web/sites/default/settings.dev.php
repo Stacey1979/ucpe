@@ -154,7 +154,7 @@ $settings['skip_permissions_hardening'] = TRUE;
  */
 $settings['config_exclude_modules'] = ['devel', 'stage_file_proxy', 'config_suite', 'twig_xdebug'];
 $config['config_split.config_split.local_config']['status'] = TRUE;
-$config['config_suite.settings.automatic_export'] = TRUE;
+$config['config_suite.settings']['automatic_export'] = TRUE;
 
 // Check for custom DRUPAL_INSTALL environment variable (set in
 // drush/SITE.drush.inc) OR $is_installer_url (set in settings.pantheon.php)
