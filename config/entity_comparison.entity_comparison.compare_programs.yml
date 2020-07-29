@@ -1,0 +1,11 @@
+uuid: fdf25eeb-fa25-4f3f-b25b-92feda5c098f
+langcode: en
+status: true
+dependencies: {  }
+id: compare_programs
+label: 'Compare Programs'
+add_link_text: 'Add to compare'
+remove_link_text: 'Remove from compare'
+limit: 4
+entity_type: node
+bundle_type: owned_program_landing_page

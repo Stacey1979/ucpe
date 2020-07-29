@@ -14,10 +14,13 @@ dependencies:
     - field.field.node.owned_program_landing_page.field_deadlines
     - field.field.node.owned_program_landing_page.field_deadlines_block
     - field.field.node.owned_program_landing_page.field_designed_for
+    - field.field.node.owned_program_landing_page.field_focus_areas
+    - field.field.node.owned_program_landing_page.field_form
     - field.field.node.owned_program_landing_page.field_hero
     - field.field.node.owned_program_landing_page.field_hero_cta_button
     - field.field.node.owned_program_landing_page.field_intro_paragraph
     - field.field.node.owned_program_landing_page.field_lede
+    - field.field.node.owned_program_landing_page.field_link_to_main_page
     - field.field.node.owned_program_landing_page.field_metatags
     - field.field.node.owned_program_landing_page.field_of_interest
     - field.field.node.owned_program_landing_page.field_offered_by
@@ -175,6 +178,27 @@ content:
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
     region: ds_content
+  field_focus_areas:
+    weight: 21
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_form:
+    weight: 22
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
   field_hero:
     weight: 5
     label: hidden
@@ -212,6 +236,18 @@ content:
     third_party_settings: {  }
     type: text_default
     region: ds_content
+  field_link_to_main_page:
+    weight: 20
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   field_of_interest:
     weight: 19
     label: hidden
@@ -266,3 +302,4 @@ hidden:
   field_metatags: true
   field_program: true
   field_program_illustration: true
+  link_for_entity_comparison_compare_programs: true

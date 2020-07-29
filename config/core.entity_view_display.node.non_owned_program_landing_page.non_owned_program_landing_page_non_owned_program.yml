@@ -1,8 +1,9 @@
-uuid: d4e251ce-40ce-4fb1-be4d-b40e24cbe0c1
+uuid: 3ba74fb7-3899-4876-bfa3-67383835084b
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.non_owned_program_landing_page_non_owned_program
     - field.field.node.non_owned_program_landing_page.field_areas_of_study
     - field.field.node.non_owned_program_landing_page.field_at_a_glance
     - field.field.node.non_owned_program_landing_page.field_content
@@ -21,6 +22,7 @@ dependencies:
     - node.type.non_owned_program_landing_page
   module:
     - ds
+    - entity_comparison
     - entity_reference_revisions
     - link
     - metatag
@@ -72,10 +74,10 @@ third_party_settings:
           wrapper: h1
           class: ''
           link: false
-id: node.non_owned_program_landing_page.default
+id: node.non_owned_program_landing_page.non_owned_program_landing_page_non_owned_program
 targetEntityType: node
 bundle: non_owned_program_landing_page
-mode: default
+mode: non_owned_program_landing_page_non_owned_program
 content:
   field_areas_of_study:
     weight: 3
@@ -202,6 +204,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: ds_content
+  link_for_entity_comparison_non_owned_program:
+    type: entity_comparison_link
+    label: hidden
+    weight: 1
+    settings:
+      enitity_comparison: non_owned_program
+    region: content
+    third_party_settings: {  }
   links:
     weight: 0
     region: ds_content

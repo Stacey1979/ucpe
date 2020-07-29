@@ -20,7 +20,7 @@ field_name: field_content_sections
 entity_type: node
 bundle: owned_program_landing_page
 label: 'Content Sections'
-description: 'Add content sections to complete the markup of your page. '
+description: '<strong>Only for owned programs</strong>. Add content sections to complete the markup of your page. '
 required: false
 translatable: true
 default_value: {  }
@@ -60,6 +60,9 @@ settings:
       content_sections:
         weight: 41
         enabled: false
+      content_with_image_50_50_:
+        weight: 59
+        enabled: false
       cta:
         enabled: true
         weight: 42
@@ -69,8 +72,17 @@ settings:
       designed_for:
         weight: 44
         enabled: false
+      discover_the_uchicago_difference:
+        weight: 63
+        enabled: false
+      discover_uchicago_combo:
+        weight: 64
+        enabled: false
       duration:
         weight: 45
+        enabled: false
+      event_hero:
+        weight: 66
         enabled: false
       form_embed:
         weight: 47
@@ -108,6 +120,27 @@ settings:
       large_image_with_caption_left_or:
         weight: 56
         enabled: false
+      large_image_with_header_and_cont:
+        weight: 79
+        enabled: false
+      program_type_preview:
+        weight: 80
+        enabled: false
+      ptoc_container:
+        weight: 81
+        enabled: false
+      ptoc_image:
+        weight: 82
+        enabled: false
+      ptoc_links:
+        weight: 83
+        enabled: false
+      ptoc_text:
+        weight: 84
+        enabled: false
+      related_courses:
+        weight: 85
+        enabled: false
       related_instructors:
         weight: 58
         enabled: false
@@ -116,6 +149,12 @@ settings:
         enabled: false
       related_program_block:
         weight: 59
+        enabled: false
+      related_program_combo:
+        weight: 90
+        enabled: false
+      related_programs_for_area_of_stu:
+        weight: 88
         enabled: false
       statistics:
         enabled: true
@@ -126,11 +165,17 @@ settings:
       story_programs:
         weight: 62
         enabled: false
+      strength_in_numbers:
+        weight: 94
+        enabled: false
       text_one_two_third:
         weight: 63
         enabled: false
       text_two_one_third:
         weight: 64
+        enabled: false
+      text_with_media_1_3_2_3_:
+        weight: 97
         enabled: false
       three_up_illust_img_combo:
         enabled: true
@@ -144,4 +189,7 @@ settings:
       three_up_statistics_combo:
         enabled: true
         weight: 68
+      video:
+        weight: 102
+        enabled: false
 field_type: entity_reference_revisions

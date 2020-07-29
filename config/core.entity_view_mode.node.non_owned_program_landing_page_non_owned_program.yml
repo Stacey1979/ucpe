@@ -1,0 +1,10 @@
+uuid: 591c46d2-8dbe-49cc-a8c9-e76f568c3ee6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.non_owned_program_landing_page_non_owned_program
+label: 'Non-Owned Program'
+targetEntityType: node
+cache: true
