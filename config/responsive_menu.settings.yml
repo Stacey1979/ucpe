@@ -1,10 +1,10 @@
 horizontal_menu: main
-horizontal_depth: 9
+horizontal_depth: 2
 off_canvas_menus: 'main, utility-menu'
 horizontal_wrapping_element: nav
-horizontal_breakpoint: wide
-horizontal_media_query: '(min-width: 960px)'
-include_css: true
+horizontal_breakpoint: screen-xs-max
+horizontal_media_query: 'all and (max-width: 767px)'
+include_css: false
 off_canvas_position: left
 off_canvas_theme: theme-light
 pagedim: pagedim-black
