@@ -1,19 +1,19 @@
-uuid: 8352d35f-afad-4609-966b-8f9164aa4d24
+uuid: 9e7bd5b9-4656-48bc-b971-97d0eeed4903
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_button_
+    - field.storage.node.field_form
     - node.type.owned_program_landing_page
-    - paragraphs.paragraphs_type.button_set
+    - paragraphs.paragraphs_type.form_embed
   module:
     - entity_reference_revisions
-id: node.owned_program_landing_page.field_button_
-field_name: field_button_
+id: node.owned_program_landing_page.field_form
+field_name: field_form
 entity_type: node
 bundle: owned_program_landing_page
-label: 'Ready to take your Next Step?'
-description: '<strong>Only for owned programs</strong>. Add Buttons here. '
+label: 'Form Embed'
+description: '<strong>Only for non-owned programs</strong>. Enter your form code here. '
 required: false
 translatable: true
 default_value: {  }
@@ -23,40 +23,40 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      button_set: button_set
+      form_embed: form_embed
     target_bundles_drag_drop:
       about_person:
-        weight: 35
+        weight: 52
         enabled: false
       about_student:
-        weight: 36
+        weight: 53
         enabled: false
       at_a_glance:
-        weight: 37
+        weight: 54
         enabled: false
       blockquote:
-        weight: 38
+        weight: 55
         enabled: false
       blockquotes:
-        weight: 39
+        weight: 56
         enabled: false
       button_set:
-        enabled: true
-        weight: 40
+        weight: 57
+        enabled: false
       content_sections:
-        weight: 41
+        weight: 58
         enabled: false
       content_with_image_50_50_:
         weight: 59
         enabled: false
       cta:
-        weight: 42
+        weight: 60
         enabled: false
       deadlines:
-        weight: 43
+        weight: 61
         enabled: false
       designed_for:
-        weight: 45
+        weight: 62
         enabled: false
       discover_the_uchicago_difference:
         weight: 63
@@ -65,46 +65,46 @@ settings:
         weight: 64
         enabled: false
       duration:
-        weight: 46
+        weight: 65
         enabled: false
       event_hero:
         weight: 66
         enabled: false
       form_embed:
+        enabled: true
         weight: 67
-        enabled: false
       full_width_content:
-        weight: 47
+        weight: 68
         enabled: false
       header_s_:
-        weight: 48
+        weight: 69
         enabled: false
       heroes:
-        weight: 49
+        weight: 70
         enabled: false
       horizontal_rule:
-        weight: 50
+        weight: 71
         enabled: false
       image_carousel:
-        weight: 51
+        weight: 72
         enabled: false
       image_carousel_combo:
-        weight: 52
+        weight: 73
         enabled: false
       in_brief:
-        weight: 56
+        weight: 77
         enabled: false
       instructor_program_and_courses:
-        weight: 53
+        weight: 74
         enabled: false
       instructor_program_courses_combo:
-        weight: 54
+        weight: 75
         enabled: false
       intro_paragraph:
-        weight: 55
+        weight: 76
         enabled: false
       large_image_with_caption_left_or:
-        weight: 57
+        weight: 78
         enabled: false
       large_image_with_header_and_cont:
         weight: 79
@@ -128,13 +128,13 @@ settings:
         weight: 85
         enabled: false
       related_instructors:
-        weight: 58
+        weight: 86
         enabled: false
       related_of_interest:
         weight: 87
         enabled: false
       related_program_block:
-        weight: 59
+        weight: 89
         enabled: false
       related_program_combo:
         weight: 90
@@ -143,37 +143,37 @@ settings:
         weight: 88
         enabled: false
       statistics:
-        weight: 60
+        weight: 91
         enabled: false
       story_about_combo:
-        weight: 61
+        weight: 92
         enabled: false
       story_programs:
-        weight: 62
+        weight: 93
         enabled: false
       strength_in_numbers:
         weight: 94
         enabled: false
       text_one_two_third:
-        weight: 63
+        weight: 95
         enabled: false
       text_two_one_third:
-        weight: 64
+        weight: 96
         enabled: false
       text_with_media_1_3_2_3_:
         weight: 97
         enabled: false
       three_up_illust_img_combo:
-        weight: 65
+        weight: 98
         enabled: false
       three_up_image_and_text:
-        weight: 66
+        weight: 99
         enabled: false
       three_up_statistic:
-        weight: 67
+        weight: 100
         enabled: false
       three_up_statistics_combo:
-        weight: 68
+        weight: 101
         enabled: false
       video:
         weight: 102

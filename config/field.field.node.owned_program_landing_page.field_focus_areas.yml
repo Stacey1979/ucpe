@@ -1,0 +1,23 @@
+uuid: cd94845a-aebb-4af9-b0e3-f166e466ae14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_focus_areas
+    - node.type.owned_program_landing_page
+  module:
+    - link
+id: node.owned_program_landing_page.field_focus_areas
+field_name: field_focus_areas
+entity_type: node
+bundle: owned_program_landing_page
+label: 'Focus Areas'
+description: 'Add links to focus areas for this program.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

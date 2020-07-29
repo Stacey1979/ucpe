@@ -11,8 +11,8 @@ field_name: field_area_of_study_cta
 entity_type: node
 bundle: owned_program_landing_page
 label: 'Area of Study CTA'
-description: 'Choose which Area of Study you want to display as a CTA.'
-required: true
+description: '<strong>For owned programs only</strong>. Choose which Area of Study you want to display as a CTA.'
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

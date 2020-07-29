@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.addition
+    - core.entity_view_mode.node.area_of_study_link
     - node.type.area_of_study
   module:
     - node
@@ -51,7 +52,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 0
           offset: 0
       style:
         type: slick
@@ -270,6 +271,40 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: Block
+    position: 1
+    display_options:
+      display_extenders: {  }
+      block_description: 'Additional Areas of Study'
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      defaults:
+        style: false
+        row: false
+        arguments: false
+        title: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: area_of_study_link
+      arguments: {  }
+      title: 'Areas of Study'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

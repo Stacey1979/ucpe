@@ -1,0 +1,10 @@
+uuid: fd6da7fa-c6a9-44db-b4a2-a281a76af42e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.owned_program_landing_page_compare_programs
+label: 'Compare Programs'
+targetEntityType: node
+cache: true

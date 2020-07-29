@@ -1,0 +1,87 @@
+uuid: 3b3a2114-d40d-4ed9-9958-9f5edd604629
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.at_a_glance_compare
+    - field.field.paragraph.at_a_glance.field_confers_alumni_status
+    - field.field.paragraph.at_a_glance.field_cost
+    - field.field.paragraph.at_a_glance.field_duration
+    - field.field.paragraph.at_a_glance.field_enrollment
+    - field.field.paragraph.at_a_glance.field_format
+    - field.field.paragraph.at_a_glance.field_link_to_financial_aid
+    - field.field.paragraph.at_a_glance.field_program_type
+    - paragraphs.paragraphs_type.at_a_glance
+  module:
+    - ds
+    - entity_reference_revisions
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_enrollment
+        - field_duration
+        - field_format
+        - field_cost
+id: paragraph.at_a_glance.at_a_glance_compare
+targetEntityType: paragraph
+bundle: at_a_glance
+mode: at_a_glance_compare
+content:
+  field_cost:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_duration:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: inline
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
+  field_enrollment:
+    weight: 0
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
+    region: ds_content
+  field_format:
+    weight: 2
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
+    region: ds_content
+hidden:
+  field_confers_alumni_status: true
+  field_link_to_financial_aid: true
+  field_program_type: true

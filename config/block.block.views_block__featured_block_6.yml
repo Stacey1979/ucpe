@@ -2,11 +2,8 @@ uuid: b5dbb930-2667-496c-b3fd-902f28755a37
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.featured
   module:
     - system
-    - views
   theme:
     - ucpe_theme
 id: views_block__featured_block_6

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74e6a9a694bd9f20d9ac0340822a4e99",
+    "content-hash": "7741f3a817c372e8c306be9827889174",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3310,6 +3310,58 @@
                 "source": "https://git.drupalcode.org/project/entity_browser",
                 "issues": "https://www.drupal.org/project/issues/entity_browser",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/entity_comparison",
+            "version": "2.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_comparison.git",
+                "reference": "8.x-2.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_comparison-8.x-2.0-beta3.zip",
+                "reference": "8.x-2.0-beta3",
+                "shasum": "6da9471d832a475d9f82937635d16488cdd70f1a"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-beta3",
+                    "datestamp": "1589227773",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "david.czinege",
+                    "homepage": "https://www.drupal.org/user/2795337"
+                },
+                {
+                    "name": "lobodacyril",
+                    "homepage": "https://www.drupal.org/user/769176"
+                },
+                {
+                    "name": "tarikflz",
+                    "homepage": "https://www.drupal.org/user/3593303"
+                }
+            ],
+            "description": "Allows user to compare entities.",
+            "homepage": "https://www.drupal.org/project/entity_comparison",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_comparison"
             }
         },
         {

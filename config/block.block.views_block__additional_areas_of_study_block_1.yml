@@ -12,7 +12,7 @@ dependencies:
 id: views_block__additional_areas_of_study_block_1
 theme: ucpe_theme
 region: content
-weight: -5
+weight: -7
 provider: null
 plugin: 'views_block:additional_areas_of_study-block_1'
 settings:
