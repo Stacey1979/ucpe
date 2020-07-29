@@ -7,15 +7,14 @@ label: 'Local Config'
 description: 'Configuration for local development'
 folder: ../local_config
 module:
-  config_suite: 0
   devel: 0
   stage_file_proxy: 0
   twig_xdebug: 0
 theme: {  }
 blacklist:
-  - devel.settings
   - devel.toolbar.settings
   - system.menu.devel
+  - devel.settings
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

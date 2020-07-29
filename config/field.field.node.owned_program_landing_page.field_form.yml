@@ -1,0 +1,181 @@
+uuid: 9e7bd5b9-4656-48bc-b971-97d0eeed4903
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_form
+    - node.type.owned_program_landing_page
+    - paragraphs.paragraphs_type.form_embed
+  module:
+    - entity_reference_revisions
+id: node.owned_program_landing_page.field_form
+field_name: field_form
+entity_type: node
+bundle: owned_program_landing_page
+label: 'Form Embed'
+description: '<strong>Only for non-owned programs</strong>. Enter your form code here. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      form_embed: form_embed
+    target_bundles_drag_drop:
+      about_person:
+        weight: 52
+        enabled: false
+      about_student:
+        weight: 53
+        enabled: false
+      at_a_glance:
+        weight: 54
+        enabled: false
+      blockquote:
+        weight: 55
+        enabled: false
+      blockquotes:
+        weight: 56
+        enabled: false
+      button_set:
+        weight: 57
+        enabled: false
+      content_sections:
+        weight: 58
+        enabled: false
+      content_with_image_50_50_:
+        weight: 59
+        enabled: false
+      cta:
+        weight: 60
+        enabled: false
+      deadlines:
+        weight: 61
+        enabled: false
+      designed_for:
+        weight: 62
+        enabled: false
+      discover_the_uchicago_difference:
+        weight: 63
+        enabled: false
+      discover_uchicago_combo:
+        weight: 64
+        enabled: false
+      duration:
+        weight: 65
+        enabled: false
+      event_hero:
+        weight: 66
+        enabled: false
+      form_embed:
+        enabled: true
+        weight: 67
+      full_width_content:
+        weight: 68
+        enabled: false
+      header_s_:
+        weight: 69
+        enabled: false
+      heroes:
+        weight: 70
+        enabled: false
+      horizontal_rule:
+        weight: 71
+        enabled: false
+      image_carousel:
+        weight: 72
+        enabled: false
+      image_carousel_combo:
+        weight: 73
+        enabled: false
+      in_brief:
+        weight: 77
+        enabled: false
+      instructor_program_and_courses:
+        weight: 74
+        enabled: false
+      instructor_program_courses_combo:
+        weight: 75
+        enabled: false
+      intro_paragraph:
+        weight: 76
+        enabled: false
+      large_image_with_caption_left_or:
+        weight: 78
+        enabled: false
+      large_image_with_header_and_cont:
+        weight: 79
+        enabled: false
+      program_type_preview:
+        weight: 80
+        enabled: false
+      ptoc_container:
+        weight: 81
+        enabled: false
+      ptoc_image:
+        weight: 82
+        enabled: false
+      ptoc_links:
+        weight: 83
+        enabled: false
+      ptoc_text:
+        weight: 84
+        enabled: false
+      related_courses:
+        weight: 85
+        enabled: false
+      related_instructors:
+        weight: 86
+        enabled: false
+      related_of_interest:
+        weight: 87
+        enabled: false
+      related_program_block:
+        weight: 89
+        enabled: false
+      related_program_combo:
+        weight: 90
+        enabled: false
+      related_programs_for_area_of_stu:
+        weight: 88
+        enabled: false
+      statistics:
+        weight: 91
+        enabled: false
+      story_about_combo:
+        weight: 92
+        enabled: false
+      story_programs:
+        weight: 93
+        enabled: false
+      strength_in_numbers:
+        weight: 94
+        enabled: false
+      text_one_two_third:
+        weight: 95
+        enabled: false
+      text_two_one_third:
+        weight: 96
+        enabled: false
+      text_with_media_1_3_2_3_:
+        weight: 97
+        enabled: false
+      three_up_illust_img_combo:
+        weight: 98
+        enabled: false
+      three_up_image_and_text:
+        weight: 99
+        enabled: false
+      three_up_statistic:
+        weight: 100
+        enabled: false
+      three_up_statistics_combo:
+        weight: 101
+        enabled: false
+      video:
+        weight: 102
+        enabled: false
+field_type: entity_reference_revisions

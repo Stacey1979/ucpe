@@ -1,0 +1,23 @@
+uuid: 1a53c9bd-ec53-442e-bbad-a629b8f31f4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_to_main_page
+    - node.type.owned_program_landing_page
+  module:
+    - link
+id: node.owned_program_landing_page.field_link_to_main_page
+field_name: field_link_to_main_page
+entity_type: node
+bundle: owned_program_landing_page
+label: 'Link(s) to Main Page'
+description: '<strong>For non-owned programs only</strong>. Add a link to the programs main page off of the UCPE site. Links should be "Program Details" or "Full-time Program Details" and "Part-time Program Details." Aria label should be entered and be more specific such as "View [Program Name] Details." All links off of the UCPE site should be made to open in a new tab/window.  '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

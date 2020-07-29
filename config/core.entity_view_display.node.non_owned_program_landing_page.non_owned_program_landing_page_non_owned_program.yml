@@ -1,0 +1,222 @@
+uuid: 3ba74fb7-3899-4876-bfa3-67383835084b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.non_owned_program_landing_page_non_owned_program
+    - field.field.node.non_owned_program_landing_page.field_areas_of_study
+    - field.field.node.non_owned_program_landing_page.field_at_a_glance
+    - field.field.node.non_owned_program_landing_page.field_content
+    - field.field.node.non_owned_program_landing_page.field_designed_for
+    - field.field.node.non_owned_program_landing_page.field_focus_areas
+    - field.field.node.non_owned_program_landing_page.field_form
+    - field.field.node.non_owned_program_landing_page.field_hero
+    - field.field.node.non_owned_program_landing_page.field_lede
+    - field.field.node.non_owned_program_landing_page.field_link_to_main_page
+    - field.field.node.non_owned_program_landing_page.field_metatags
+    - field.field.node.non_owned_program_landing_page.field_of_interest
+    - field.field.node.non_owned_program_landing_page.field_offered_by
+    - field.field.node.non_owned_program_landing_page.field_program_illustration
+    - field.field.node.non_owned_program_landing_page.field_program_type
+    - field.field.node.non_owned_program_landing_page.field_video
+    - node.type.non_owned_program_landing_page
+  module:
+    - ds
+    - entity_comparison
+    - entity_reference_revisions
+    - link
+    - metatag
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - links
+        - field_hero
+        - field_program_type
+        - field_areas_of_study
+        - node_title
+        - field_lede
+        - field_at_a_glance
+        - field_link_to_main_page
+        - field_video
+        - field_designed_for
+        - field_content
+        - field_offered_by
+        - field_focus_areas
+        - field_form
+        - field_of_interest
+        - field_metatags
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 4
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h1
+          class: ''
+          link: false
+id: node.non_owned_program_landing_page.non_owned_program_landing_page_non_owned_program
+targetEntityType: node
+bundle: non_owned_program_landing_page
+mode: non_owned_program_landing_page_non_owned_program
+content:
+  field_areas_of_study:
+    weight: 3
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  field_at_a_glance:
+    weight: 6
+    label: above
+    settings:
+      view_mode: at_a_glance_non_ucpe
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_content:
+    weight: 10
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_designed_for:
+    weight: 9
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_focus_areas:
+    weight: 12
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  field_form:
+    type: entity_reference_revisions_entity_view
+    weight: 13
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
+  field_hero:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_lede:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_link_to_main_page:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  field_metatags:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: ds_content
+  field_of_interest:
+    weight: 14
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_offered_by:
+    weight: 11
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  field_program_type:
+    weight: 2
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  field_video:
+    weight: 8
+    label: visually_hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: ds_content
+  link_for_entity_comparison_non_owned_program:
+    type: entity_comparison_link
+    label: hidden
+    weight: 1
+    settings:
+      enitity_comparison: non_owned_program
+    region: content
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_program_illustration: true

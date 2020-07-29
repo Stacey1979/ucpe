@@ -61,6 +61,7 @@ third_party_settings:
         - field_focus_areas
         - field_form
         - field_of_interest
+        - field_metatags
     fields:
       node_title:
         plugin_id: node_title
@@ -166,7 +167,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
-    region: content
+    region: ds_content
   field_of_interest:
     weight: 14
     label: above

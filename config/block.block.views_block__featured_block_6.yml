@@ -1,0 +1,27 @@
+uuid: b5dbb930-2667-496c-b3fd-902f28755a37
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ucpe_theme
+id: views_block__featured_block_6
+theme: ucpe_theme
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:featured-block_6'
+settings:
+  id: 'views_block:featured-block_6'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /perspectives
+    negate: false
+    context_mapping: {  }
