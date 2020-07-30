@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+
+<div class="homepage_featured_story">
+  <p class="meta">{{ content['bundle_field:node']|field_value }}<span class="divider"></span>{{ ds_content.field_story_subject_name|field_value }}</p>
+  {{ ds_content.field_hero|field_value }}
+  {{ ds_content.field_featured_quote|field_value }}
+  <div class="links">
+    <a href="#">Read their story</a><span class="divider"></span><a href="#">View all stories</a>
+  </div>
+</div>

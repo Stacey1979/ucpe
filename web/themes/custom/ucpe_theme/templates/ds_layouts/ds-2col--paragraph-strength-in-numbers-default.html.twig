@@ -15,8 +15,12 @@
  */
 #}
 
-
-<div class="content_one_two_third">
-  <div class="col1">{{ left.field_content_column_1|field_value }}</div>
-  <div class="col2">{{ right.field_content_column_2|field_value }}</div>
+<div class="strength_in_numbers">
+  <div class="col1">
+      <h3>{{ left.field_optional_title|field_value }}</h3>
+    {{ left.field_content_column_1|field_value }}
+  </div>
+  <div class="col2">
+    {{ right }}
+  </div>
 </div>

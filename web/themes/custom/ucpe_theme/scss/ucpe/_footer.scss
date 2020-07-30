@@ -1,6 +1,7 @@
 footer.footer {
   background-color: $bg-02;
   padding: $baseline * 5 0 0;
+  margin-top: 0;
 
   .wrapper {
     @include make-container();

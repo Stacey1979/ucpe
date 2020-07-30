@@ -37,7 +37,6 @@ third_party_settings:
     regions:
       homepage:
         - field_video_home_page_hero
-        - node_title
         - field_lede
         - field_hero_cta_button
         - field_large_image_left
@@ -54,12 +53,6 @@ third_party_settings:
         - field_intro
       content:
         - field_content_sections
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 1
-        label: inline
-        formatter: default
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -69,7 +62,7 @@ mode: default
 content:
   field_content:
     type: entity_reference_revisions_entity_view
-    weight: 6
+    weight: 5
     region: homepage
     label: hidden
     settings:
@@ -77,7 +70,7 @@ content:
       link: ''
     third_party_settings: {  }
   field_content_sections:
-    weight: 14
+    weight: 13
     label: hidden
     settings:
       view_mode: default
@@ -87,7 +80,7 @@ content:
     region: content
   field_discover_the_uchicago_diff:
     type: entity_reference_revisions_entity_view
-    weight: 11
+    weight: 10
     label: hidden
     settings:
       view_mode: default
@@ -95,7 +88,7 @@ content:
     third_party_settings: {  }
     region: homepage
   field_get_in_touch_button:
-    weight: 7
+    weight: 6
     label: hidden
     settings:
       trim_length: 80
@@ -108,7 +101,7 @@ content:
     region: homepage
   field_header_h2_:
     type: smart_trim
-    weight: 5
+    weight: 4
     region: homepage
     label: hidden
     settings:
@@ -125,7 +118,7 @@ content:
     third_party_settings: {  }
   field_hero_cta_button:
     type: link
-    weight: 3
+    weight: 2
     region: homepage
     label: hidden
     settings:
@@ -136,7 +129,7 @@ content:
       target: ''
     third_party_settings: {  }
   field_intro:
-    weight: 13
+    weight: 12
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -144,7 +137,7 @@ content:
     region: intro
   field_large_image_left:
     type: entity_reference_entity_view
-    weight: 4
+    weight: 3
     region: homepage
     label: hidden
     settings:
@@ -153,23 +146,23 @@ content:
     third_party_settings: {  }
   field_large_landscape_hero:
     type: entity_reference_entity_view
-    weight: 12
+    weight: 11
     region: about
     label: hidden
     settings:
-      link: true
-      view_mode: default
+      view_mode: perspectives_case_study_hero
+      link: false
     third_party_settings: {  }
   field_lede:
     type: text_default
-    weight: 2
+    weight: 1
     region: homepage
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_program_types_preview:
     type: entity_reference_entity_view
-    weight: 8
+    weight: 7
     region: homepage
     label: hidden
     settings:
@@ -177,7 +170,7 @@ content:
       link: false
     third_party_settings: {  }
   field_related_story:
-    weight: 10
+    weight: 9
     label: hidden
     settings:
       view_mode: featured_story
@@ -195,7 +188,7 @@ content:
       view_mode: default
     third_party_settings: {  }
   field_youvisit_embed:
-    weight: 9
+    weight: 8
     label: hidden
     settings: {  }
     third_party_settings: {  }

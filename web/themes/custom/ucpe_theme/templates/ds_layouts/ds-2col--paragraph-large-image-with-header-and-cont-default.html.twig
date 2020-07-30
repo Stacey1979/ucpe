@@ -15,8 +15,14 @@
  */
 #}
 
-
-<div class="content_one_two_third">
-  <div class="col1">{{ left.field_content_column_1|field_value }}</div>
-  <div class="col2">{{ right.field_content_column_2|field_value }}</div>
-</div>
+<div class="content_lrg_img">
+  <div class="col1">
+    {{ left.field_portrait_image|field_value }}
+  </div>
+  <div class="col1">
+    {% if right.field_optional_title %}
+      <h3>{{ right.field_optional_title|field_value }}</h3>
+    {% endif %}
+    {{ right.field_content_column_2|field_value }}
+  </div>
+</div>    

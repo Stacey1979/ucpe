@@ -14,9 +14,13 @@
  * - right: content of right region
  */
 #}
-
-
-<div class="content_one_two_third">
-  <div class="col1">{{ left.field_content_column_1|field_value }}</div>
-  <div class="col2">{{ right.field_content_column_2|field_value }}</div>
+<div class="uchicago_diff_panel">
+  <div class="uchicago_diff_panel_content">
+  {{ left.field_optional_title|field_value }}
+    {{ left.field_short_description|field_value }}
+    {{ left.field_link_to_more_info|field_value }}
+  </div>
+  <div class="uchicago_diff_panel_img">
+    {{ right.field_slide_image|field_value }}
+  </div>
 </div>
