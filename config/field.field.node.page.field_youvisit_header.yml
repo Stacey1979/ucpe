@@ -1,0 +1,19 @@
+uuid: bf2fde8d-83bc-4fa5-b048-de588a57f32b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youvisit_header
+    - node.type.page
+id: node.page.field_youvisit_header
+field_name: field_youvisit_header
+entity_type: node
+bundle: page
+label: 'YouVisit Header'
+description: 'Header that will show directly under the embedded YouVisit tour.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

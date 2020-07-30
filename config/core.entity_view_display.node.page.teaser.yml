@@ -18,6 +18,8 @@ dependencies:
     - field.field.node.page.field_related_story
     - field.field.node.page.field_video_home_page_hero
     - field.field.node.page.field_youvisit_embed
+    - field.field.node.page.field_youvisit_header
+    - field.field.node.page.field_youvisit_paragraph
     - node.type.page
   module:
     - user
@@ -52,3 +54,5 @@ hidden:
   field_related_story: true
   field_video_home_page_hero: true
   field_youvisit_embed: true
+  field_youvisit_header: true
+  field_youvisit_paragraph: true

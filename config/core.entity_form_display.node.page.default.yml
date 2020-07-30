@@ -17,6 +17,8 @@ dependencies:
     - field.field.node.page.field_related_story
     - field.field.node.page.field_video_home_page_hero
     - field.field.node.page.field_youvisit_embed
+    - field.field.node.page.field_youvisit_header
+    - field.field.node.page.field_youvisit_paragraph
     - node.type.page
   module:
     - field_group
@@ -79,6 +81,8 @@ third_party_settings:
         - field_get_in_touch_button
         - field_program_types_preview
         - field_youvisit_embed
+        - field_youvisit_header
+        - field_youvisit_paragraph
         - field_related_story
         - field_discover_the_uchicago_diff
       parent_name: ''
@@ -152,7 +156,7 @@ content:
     region: content
   field_discover_the_uchicago_diff:
     type: entity_reference_paragraphs
-    weight: 38
+    weight: 40
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -233,7 +237,7 @@ content:
     type: options_buttons
     region: content
   field_related_story:
-    weight: 37
+    weight: 39
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -251,6 +255,22 @@ content:
     region: content
   field_youvisit_embed:
     weight: 36
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_youvisit_header:
+    weight: 37
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_youvisit_paragraph:
+    weight: 38
     settings:
       rows: 5
       placeholder: ''
