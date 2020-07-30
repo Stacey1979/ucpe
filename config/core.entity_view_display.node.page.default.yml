@@ -17,6 +17,8 @@ dependencies:
     - field.field.node.page.field_related_story
     - field.field.node.page.field_video_home_page_hero
     - field.field.node.page.field_youvisit_embed
+    - field.field.node.page.field_youvisit_header
+    - field.field.node.page.field_youvisit_paragraph
     - node.type.page
   module:
     - ds
@@ -58,6 +60,8 @@ third_party_settings:
         - field_get_in_touch_button
         - field_program_types_preview
         - field_youvisit_embed
+        - field_youvisit_header
+        - field_youvisit_paragraph
         - field_related_story
         - field_discover_the_uchicago_diff
         - field_content_sections
@@ -67,6 +71,10 @@ third_party_settings:
         weight: 3
         label: hidden
         formatter: default
+        settings:
+          wrapper: h1
+          class: ''
+          link: false
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -84,7 +92,7 @@ content:
       link: ''
     third_party_settings: {  }
   field_content_sections:
-    weight: 15
+    weight: 17
     label: hidden
     settings:
       view_mode: default
@@ -94,7 +102,7 @@ content:
     region: ds_content
   field_discover_the_uchicago_diff:
     type: entity_reference_revisions_entity_view
-    weight: 14
+    weight: 16
     label: hidden
     settings:
       view_mode: default
@@ -184,7 +192,7 @@ content:
       link: false
     third_party_settings: {  }
   field_related_story:
-    weight: 13
+    weight: 15
     label: hidden
     settings:
       view_mode: featured_story
@@ -203,6 +211,21 @@ content:
     third_party_settings: {  }
   field_youvisit_embed:
     weight: 12
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_youvisit_header:
+    weight: 13
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_youvisit_paragraph:
+    weight: 14
     label: hidden
     settings: {  }
     third_party_settings: {  }
