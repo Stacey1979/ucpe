@@ -1,31 +1,30 @@
-uuid: fe74388d-e25b-48a3-a2b6-4cea6804729d
+uuid: c2c9e2e9-8db3-47e1-8b03-16e406856329
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.upcoming_events
+    - views.view.additional_areas_of_study
   module:
     - system
     - views
   theme:
     - ucpe_theme
-id: views_block__upcoming_events_block_1
+id: views_block__additional_areas_of_study_block_2
 theme: ucpe_theme
 region: content
-weight: 3
+weight: -13
 provider: null
-plugin: 'views_block:upcoming_events-block_1'
+plugin: 'views_block:additional_areas_of_study-block_2'
 settings:
-  id: 'views_block:upcoming_events-block_1'
+  id: 'views_block:additional_areas_of_study-block_2'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: /node/15
+    pages: /find-your-fit/programs
     negate: false
     context_mapping: {  }

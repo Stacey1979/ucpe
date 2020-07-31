@@ -12,14 +12,14 @@ dependencies:
 id: compareprograms
 theme: ucpe_theme
 region: content
-weight: -13
+weight: -12
 provider: null
 plugin: 'entity_comparison_block:compare_programs'
 settings:
   id: 'entity_comparison_block:compare_programs'
-  label: 'Compare Programs'
+  label: 'Select two or more programs to compare information.'
   provider: entity_comparison
-  label_display: '0'
+  label_display: visible
   link_text: Compare
 visibility:
   request_path:
