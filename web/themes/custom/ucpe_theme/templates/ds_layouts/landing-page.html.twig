@@ -10,13 +10,15 @@
  */
 #}
 {% if content.homepage|render|striptags|trim is not empty %}
-  <div class="hero_wrapper hero_homepage">
+  <div class="hero_wrapper_full hero_homepage">
     {{ content.homepage.field_video_home_page_hero|field_value }}
-    <div class="hero">
-      <div class="hero_content">
-        <h1>{{ content.title|field_value }}</h1>
-        <p class="lede">{{ content.homepage.field_lede|field_value }}</p>
-        <a class="btn" href="{{ content.homepage.field_hero_cta_button[0]['#url'] }}">{{ content.homepage.field_hero_cta_button[0]['#title'] }}</a>
+    <div class="hero_wrapper">
+      <div class="hero_body">
+        <div class="hero">
+          <h1>{{ content.title|field_value }}</h1>
+          <p class="lede">{{ content.homepage.field_lede|field_value }}</p>
+          <a class="btn" href="{{ content.homepage.field_hero_cta_button[0]['#url'] }}">{{ content.homepage.field_hero_cta_button[0]['#title'] }}</a>
+        </div>
       </div>
     </div>
   </div>
@@ -48,27 +50,36 @@
     </div>
   </div>
 {% endif %}
+
+
+
 {% if content.about|render|striptags|trim is not empty %}
-  <div class="hero_wrapper hero_about">
-    <div class="hero">
-      {{ content.about.field_large_landscape_hero|field_value }}
+  <div class="hero_wrapper_full hero_about">
+    <div class="hero_wrapper">
+      <div class="hero_body">
+        <div class="hero">
+          {{ content.about.field_large_landscape_hero|field_value }}
+        </div>
+      </div>
     </div>
   </div>
   <div class="page_header_wrapper">
-    <div class="page_header">
-      <h1>{{ content.title|field_value }}</h1>
+    <div class="page_header_body">
+      <div class="page_header">
+        <h1>{{ content.title|field_value }}</h1>
+      </div>
     </div>
   </div>
 {% endif %}
+
+
+
 {% if content.intro|render|striptags|trim is not empty %}
   {{ content.intro }}
 {% endif %}
+
+
+
 {% if content.content|render|striptags|trim is not empty %}
-  <div class="content_wrapper">
-    <div class="about_content">
-      <div class="content">
-        {{ content.content.field_content_sections|field_value }}
-      </div>  
-    </div>
-  </div>
+  {{ content.content.field_content_sections|field_value }}
 {% endif %}

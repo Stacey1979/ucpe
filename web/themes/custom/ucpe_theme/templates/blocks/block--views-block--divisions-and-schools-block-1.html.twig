@@ -45,13 +45,15 @@
  * @see template_process()
  */
 #}
-<section class="about_divisions_schools_wrapper">
-  <div class="about_divisions_schools">
-    {% if label %}
-      <div class="ads_hdr"><h2>{{ label }}</h2></div>
-    {% endif %}
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-  </div>
-</section>
+<div class="aboutDivisionsSchools_wrapper_full">
+    <div class="aboutDivisionsSchools_body">
+      <div class="aboutDivisionsSchools">
+        {% if label %}
+          <div class="ads_hdr"><h2>{{ label }}</h2></div>
+        {% endif %}
+        {% block content %}
+          {{ content }}
+        {% endblock %}
+      </div>
+    </div>
+</div>

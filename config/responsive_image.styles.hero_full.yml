@@ -23,6 +23,16 @@ image_style_mappings:
     image_mapping_type: image_style
     image_mapping: large_21_9_2x_2880x1240_
   -
+    breakpoint_id: ucpe.screen-md-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_21_9_1440x620_
+  -
+    breakpoint_id: ucpe.screen-md-max
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: ''
+  -
     breakpoint_id: ucpe.screen-md-min
     multiplier: 1x
     image_mapping_type: image_style
@@ -36,7 +46,7 @@ image_style_mappings:
     breakpoint_id: ucpe.screen-sm-min
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: small_21_9_480x206_
+    image_mapping: medium_21_9_1024x440_
   -
     breakpoint_id: ucpe.screen-sm-min
     multiplier: 2x

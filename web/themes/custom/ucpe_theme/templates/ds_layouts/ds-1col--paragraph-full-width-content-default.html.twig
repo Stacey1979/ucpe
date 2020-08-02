@@ -9,4 +9,11 @@
  * - ds_content: content region
  */
 #}
-<div class="content_full">{{ ds_content.field_full_width_content|field_value }}</div>
+
+<div class="contentFull_wrapper">
+  <div class="contentFull_body">
+    <div class="contentFull">
+      {{ ds_content.field_full_width_content|field_value }}
+    </div>
+  </div>
+</div>

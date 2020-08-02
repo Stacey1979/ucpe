@@ -33,13 +33,16 @@ header {
     }
   }
 }
+
 //body
 .body {
-  @include make-container-fluid;
-  .hero_wrapper {
-    @include make-row();
+  *[class$="_wrapper_full"] {
+    @include make-container-fluid;
   }
-  .content_wrapper {
-    @include make-row();
+  *[class$="_wrapper"] {
+    @include make-container;
+  }
+  *[class$="_body"] {
+    @include make-row;
   }
 }

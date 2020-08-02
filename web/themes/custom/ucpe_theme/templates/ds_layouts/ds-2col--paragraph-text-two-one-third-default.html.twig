@@ -14,7 +14,23 @@
  * - right: content of right region
  */
 #}
-<div class="content_two_one_third">
-  <div class="col1">{{ left.field_content_column_1|field_value }}</div>
-  <div class="col2">{{ right.field_content_column_2|field_value }}</div>
+<div class="content2313_wrapper_full">
+  <div class="content2313_wrapper">
+    <div class="content2313_body">
+      <div class="content2313">
+        {% if left.field_optional_title %}
+        <div class="hdr">
+          <h3>{{ left.field_optional_title|field_value }}</h3>
+        </div>
+        {% endif %}
+        <div class="col1">
+          {{ left.field_content_column_1|field_value }}
+          {{ left.field_button_set|field_value }}
+        </div>
+        <div class="col2">
+          {{ right.field_content_column_2|field_value }}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

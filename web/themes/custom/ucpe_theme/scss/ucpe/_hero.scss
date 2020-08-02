@@ -1,10 +1,9 @@
-.hero_wrapper {
-  position: relative;
-  @include screen("tablet-wide", $type: max) {
-    overflow: hidden;
-  }
-  .hero {
-    @include make-container();
+// GENERAL HERO STYLES
+.hero_wrapper_full {
+  .hero_wrapper {
+    .hero_body {
+      @include make-row;
+    }
   }
 
   .hero_img {
@@ -35,6 +34,8 @@
       }
     }
   }
+  // END GENERAL STYLES
+
   // HERO FULL
   &.hero_full {
     background-color: $bg-03;
@@ -356,4 +357,19 @@
       }
     }
   }
-}
+
+  // ABOUT PAGE
+  &.hero_about {
+    margin: $baseline * 2 0;
+    @include screen("tablet") {
+      margin: $baseline * 3 0;
+    }
+    @include screen("desktop") {
+      margin: $baseline * 5 0;
+    }
+
+    .hero {
+      @include make-row();
+    }
+  }
+} // end .hero_wrapper

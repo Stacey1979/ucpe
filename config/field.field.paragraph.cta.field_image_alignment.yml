@@ -1,0 +1,21 @@
+uuid: 0870103a-f497-4ce8-a6b8-f2fa900c2801
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_alignment
+    - paragraphs.paragraphs_type.cta
+  module:
+    - options
+id: paragraph.cta.field_image_alignment
+field_name: field_image_alignment
+entity_type: paragraph
+bundle: cta
+label: 'Image Alignment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -14,15 +14,18 @@
  * - right: content of right region
  */
 #}
-
-<div class="content_lrg_img">
-  <div class="col1">
-    {{ left.field_portrait_image|field_value }}
-  </div>
-  <div class="col1">
-    {% if right.field_optional_title %}
-      <h3>{{ right.field_optional_title|field_value }}</h3>
-    {% endif %}
-    {{ right.field_content_column_2|field_value }}
+<div class="contentLrgImg_wrapper">
+  <div class="contentLrgImg_body">
+    <div class="contentLrgImg">
+      <div class="col1">
+        {{ left.field_portrait_image|field_value }}
+      </div>
+      <div class="col2">
+        {% if right.field_optional_title %}
+          <h3>{{ right.field_optional_title|field_value }}</h3>
+        {% endif %}
+        {{ right.field_content_column_2|field_value }}
+      </div>
+    </div>
   </div>
 </div>    

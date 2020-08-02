@@ -15,12 +15,16 @@
  */
 #}
 
-<div class="strength_in_numbers">
-  <div class="col1">
-      <h3>{{ left.field_optional_title|field_value }}</h3>
-    {{ left.field_content_column_1|field_value }}
-  </div>
-  <div class="col2">
-    {{ right }}
+<div class="strengthInNumbers_wrapper">
+  <div class="strengthInNumbers_body">
+    <div class="strengthInNumbers">
+      <div class="col1">
+        <h3>{{ left.field_optional_title|field_value }}</h3>
+        {{ left.field_content_column_1|field_value }}
+      </div>
+      <div class="col2">
+        {{ right }}
+      </div>
+    </div>
   </div>
 </div>
