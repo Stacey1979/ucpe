@@ -328,6 +328,7 @@ display:
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
         - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
+        - 'config:core.entity_view_display.node.area_of_study.area_of_study_link'
         - 'config:core.entity_view_display.node.area_of_study.default'
         - 'config:core.entity_view_display.node.area_of_study.masonry'
         - 'config:core.entity_view_display.node.area_of_study.preview'
@@ -365,17 +366,14 @@ display:
         - 'config:core.entity_view_display.node.find_your_fit.default'
         - 'config:core.entity_view_display.node.find_your_fit.preview'
         - 'config:core.entity_view_display.node.find_your_fit.teaser'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.default'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.of_interest'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.preview'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.related_program'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.teaser'
         - 'config:core.entity_view_display.node.owned_program_interior_page.default'
         - 'config:core.entity_view_display.node.owned_program_interior_page.ptoc'
         - 'config:core.entity_view_display.node.owned_program_interior_page.teaser'
         - 'config:core.entity_view_display.node.owned_program_landing_page.default'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.index_page'
         - 'config:core.entity_view_display.node.owned_program_landing_page.of_interest'
         - 'config:core.entity_view_display.node.owned_program_landing_page.owned_program_interior_page_header'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.owned_program_landing_page_compare_programs'
         - 'config:core.entity_view_display.node.owned_program_landing_page.preview'
         - 'config:core.entity_view_display.node.owned_program_landing_page.related_program'
         - 'config:core.entity_view_display.node.owned_program_landing_page.teaser'
@@ -406,10 +404,12 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Block
+    display_title: 'Upcoming Events for Program Landing Page'
     position: 1
     display_options:
       display_extenders: {  }
+      display_description: ''
+      block_description: 'Upcoming Events for Program Landing Page'
     cache_metadata:
       max-age: -1
       contexts:
@@ -423,6 +423,7 @@ display:
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
         - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
+        - 'config:core.entity_view_display.node.area_of_study.area_of_study_link'
         - 'config:core.entity_view_display.node.area_of_study.default'
         - 'config:core.entity_view_display.node.area_of_study.masonry'
         - 'config:core.entity_view_display.node.area_of_study.preview'
@@ -460,17 +461,14 @@ display:
         - 'config:core.entity_view_display.node.find_your_fit.default'
         - 'config:core.entity_view_display.node.find_your_fit.preview'
         - 'config:core.entity_view_display.node.find_your_fit.teaser'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.default'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.of_interest'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.preview'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.related_program'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.teaser'
         - 'config:core.entity_view_display.node.owned_program_interior_page.default'
         - 'config:core.entity_view_display.node.owned_program_interior_page.ptoc'
         - 'config:core.entity_view_display.node.owned_program_interior_page.teaser'
         - 'config:core.entity_view_display.node.owned_program_landing_page.default'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.index_page'
         - 'config:core.entity_view_display.node.owned_program_landing_page.of_interest'
         - 'config:core.entity_view_display.node.owned_program_landing_page.owned_program_interior_page_header'
+        - 'config:core.entity_view_display.node.owned_program_landing_page.owned_program_landing_page_compare_programs'
         - 'config:core.entity_view_display.node.owned_program_landing_page.preview'
         - 'config:core.entity_view_display.node.owned_program_landing_page.related_program'
         - 'config:core.entity_view_display.node.owned_program_landing_page.teaser'

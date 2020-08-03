@@ -69,7 +69,7 @@
         "drupal/video_embed_wistia": "^1.0@RC",
         "drupal/views_bootstrap": "^4.2",
         "drupal/views_show_more": "^1.0",
-        "drupal/viewsreference": "^1.4",
+        "drupal/viewsreference": "^2.0",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
         "pantheon-systems/drupal-integrations": "^8",
