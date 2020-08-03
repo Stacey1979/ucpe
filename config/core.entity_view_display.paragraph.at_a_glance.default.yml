@@ -69,8 +69,8 @@ third_party_settings:
         - field_enrollment
         - field_duration
         - field_format
-        - field_cost
         - group_cost
+        - field_cost
         - field_link_to_financial_aid
 id: paragraph.at_a_glance.default
 targetEntityType: paragraph
@@ -86,8 +86,8 @@ content:
     type: entity_reference_label
     region: ds_content
   field_cost:
-    weight: 3
-    label: inline
+    weight: 5
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -123,7 +123,7 @@ content:
     type: entity_reference_label
     region: ds_content
   field_link_to_financial_aid:
-    weight: 4
+    weight: 6
     label: hidden
     settings:
       trim_length: 80
