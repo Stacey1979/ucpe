@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block.block.compareprograms
     - core.entity_view_mode.node.index_page
     - node.type.owned_program_landing_page
     - system.menu.main
@@ -575,7 +576,7 @@ display:
           empty: false
           tokenize: true
           content:
-            value: '<p>Browse UChicago offerings designed to help you take the next step in your career.</p>'
+            value: "<h4>Find Your Fit</h4>\r\n<h1>Programs & Courses</h1>\r\n<p>Browse UChicago offerings designed to help you take the next step in your career.</p>\r\n<h4>Areas of Study</h4>"
             format: full_html
           plugin_id: text
         view:
@@ -589,6 +590,19 @@ display:
           view_to_insert: 'additional_areas_of_study:block_2'
           inherit_arguments: false
           plugin_id: view
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: compareprograms
+          view_mode: default
+          bypass_access: true
+          plugin_id: entity
       footer: {  }
       empty: {  }
       relationships:
@@ -614,13 +628,13 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
-        - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
         - 'config:core.entity_view_display.node.area_of_study.area_of_study_link'
         - 'config:core.entity_view_display.node.area_of_study.default'
         - 'config:core.entity_view_display.node.owned_program_landing_page.default'
         - 'config:core.entity_view_display.node.owned_program_landing_page.index_page'
         - 'config:core.entity_view_display.node.area_of_study.addition'
+        - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
+        - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
         - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
         - 'config:core.entity_view_display.node.area_of_study.masonry'
         - 'config:core.entity_view_display.node.area_of_study.preview'
@@ -658,13 +672,6 @@ display:
         - 'config:core.entity_view_display.node.find_your_fit.default'
         - 'config:core.entity_view_display.node.find_your_fit.preview'
         - 'config:core.entity_view_display.node.find_your_fit.teaser'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.default'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.index_page'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.non_owned_program_landing_page_non_owned_program'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.of_interest'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.preview'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.related_program'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.teaser'
         - 'config:core.entity_view_display.node.owned_program_interior_page.default'
         - 'config:core.entity_view_display.node.owned_program_interior_page.ptoc'
         - 'config:core.entity_view_display.node.owned_program_interior_page.teaser'
@@ -766,13 +773,6 @@ display:
         - 'config:core.entity_view_display.node.find_your_fit.default'
         - 'config:core.entity_view_display.node.find_your_fit.preview'
         - 'config:core.entity_view_display.node.find_your_fit.teaser'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.default'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.index_page'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.non_owned_program_landing_page_non_owned_program'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.of_interest'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.preview'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.related_program'
-        - 'config:core.entity_view_display.node.non_owned_program_landing_page.teaser'
         - 'config:core.entity_view_display.node.owned_program_interior_page.default'
         - 'config:core.entity_view_display.node.owned_program_interior_page.ptoc'
         - 'config:core.entity_view_display.node.owned_program_interior_page.teaser'

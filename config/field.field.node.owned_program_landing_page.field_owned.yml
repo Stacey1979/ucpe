@@ -1,0 +1,21 @@
+uuid: 8ec1cfa6-c808-4a63-8297-5d15c0ef9450
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_owned
+    - node.type.owned_program_landing_page
+  module:
+    - options
+id: node.owned_program_landing_page.field_owned
+field_name: field_owned
+entity_type: node
+bundle: owned_program_landing_page
+label: 'Owned Program'
+description: 'Does UCPE own this program.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

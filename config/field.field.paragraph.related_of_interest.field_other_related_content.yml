@@ -14,7 +14,7 @@ entity_type: paragraph
 bundle: related_of_interest
 label: 'Other Related Content'
 description: 'Choose other content show as related to this page. '
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

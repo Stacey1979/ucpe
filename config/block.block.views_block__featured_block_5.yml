@@ -12,7 +12,7 @@ dependencies:
 id: views_block__featured_block_5
 theme: ucpe_theme
 region: content
-weight: 0
+weight: 1
 provider: null
 plugin: 'views_block:featured-block_5'
 settings:

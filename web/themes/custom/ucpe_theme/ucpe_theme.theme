@@ -11,4 +11,4 @@
    $current_id = $variables['view']->id();
    $suggestions[] = 'views_view__' . $current_id;
    $suggestions[] = 'views_view__' . $current_id . '__' . $current_view;
- } 
+ }
