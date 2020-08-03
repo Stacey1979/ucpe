@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.owned_program_landing_page.field_metatags
     - field.field.node.owned_program_landing_page.field_of_interest
     - field.field.node.owned_program_landing_page.field_offered_by
+    - field.field.node.owned_program_landing_page.field_owned
     - field.field.node.owned_program_landing_page.field_program
     - field.field.node.owned_program_landing_page.field_program_illustration
     - field.field.node.owned_program_landing_page.field_program_type
@@ -102,6 +103,7 @@ third_party_settings:
       label: Content
     group_administrative:
       children:
+        - field_owned
         - field_program_illustration
         - field_area_of_study_cta
         - field_of_interest
@@ -172,7 +174,7 @@ content:
     type: link_attributes
     region: content
   field_area_of_study_cta:
-    weight: 21
+    weight: 28
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -411,7 +413,7 @@ content:
     type: metatag_firehose
     region: content
   field_of_interest:
-    weight: 22
+    weight: 29
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -434,6 +436,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_owned:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_program:
     weight: 21
     settings: {  }
@@ -442,7 +450,7 @@ content:
     region: content
   field_program_illustration:
     type: media_library_widget
-    weight: 20
+    weight: 27
     settings:
       media_types: {  }
     third_party_settings: {  }

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block.block.compareprograms
     - core.entity_view_mode.node.index_page
     - node.type.owned_program_landing_page
     - system.menu.main
@@ -11,6 +12,7 @@ dependencies:
     - taxonomy.vocabulary.enrollment_options
     - taxonomy.vocabulary.format_options
     - taxonomy.vocabulary.program_type
+    - views.view.additional_areas_of_study
   module:
     - better_exposed_filters
     - entity_comparison
@@ -574,21 +576,32 @@ display:
           empty: false
           tokenize: true
           content:
-            value: '<p>Browse UChicago offerings designed to help you take the next step in your career.</p>'
+            value: "<h4>Find Your Fit</h4>\r\n<h1>Programs & Courses</h1>\r\n<p>Browse UChicago offerings designed to help you take the next step in your career.</p>\r\n<h4>Areas of Study</h4>"
             format: full_html
           plugin_id: text
-        entity_block_content:
-          id: entity_block_content
+        view:
+          id: view
           table: views
-          field: entity_block_content
+          field: view
           relationship: none
           group_type: group
           admin_label: ''
           empty: false
-          tokenize: false
-          target: 'entity_comparison_block:compare_programs'
+          view_to_insert: 'additional_areas_of_study:block_2'
+          inherit_arguments: false
+          plugin_id: view
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: compareprograms
           view_mode: default
-          bypass_access: false
+          bypass_access: true
           plugin_id: entity
       footer: {  }
       empty: {  }

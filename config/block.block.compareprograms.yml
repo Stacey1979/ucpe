@@ -1,6 +1,6 @@
 uuid: e27ec705-8893-4c3e-a988-ac1e0bfff0fd
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - entity_comparison.entity_comparison.compare_programs
