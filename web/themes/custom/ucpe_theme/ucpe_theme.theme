@@ -13,6 +13,9 @@
    $suggestions[] = 'views_view__' . $current_id . '__' . $current_view;
  }
 
+  /**
+   * Implements hook_preprocess_html().
+   */
  function ucpe_theme_preprocess_html(array &$variables) {
    $path = \Drupal::service('path.current')->getPath();
    $alias = \Drupal::service('path.alias_manager')->getAliasByPath($path);
