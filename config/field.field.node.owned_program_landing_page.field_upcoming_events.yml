@@ -18,13 +18,8 @@ required: false
 translatable: false
 default_value:
   -
-    options:
-      title: 0
-      argument: ''
     display_id: block_1
-    argument: null
-    title: 0
-    data: null
+    data: 'a:5:{s:5:"pager";N;s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;}'
     target_uuid: 83b0a547-a355-4a1d-9847-a764a6601bdc
 default_value_callback: ''
 settings:
