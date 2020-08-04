@@ -34,10 +34,12 @@
 
 <div class="content_wrapper">
     <div class="story">
-      <div class="content">
-        <div class="intro">{{ ds_content.field_intro_paragraph }}</div>
-        {{	ds_content.field_about_block }}
-        {{ ds_content|without('field_author','field_image_attribution','field_hero','field_date_written','field_lede','field_written_by','field_related_program_tag','field_about_block','addtoany','reading_time') }}
+      <div class="content_body">
+        <div class="content">
+          <div class="intro">{{ ds_content.field_intro_paragraph }}</div>
+          {{	ds_content.field_about_block }}
+          {{ ds_content|without('field_author','field_image_attribution','field_hero','field_date_written','field_lede','field_written_by','field_related_program_tag','field_about_block','addtoany','reading_time') }}
+        </div>
       </div>
-    </div>
+  </div>
 </div>

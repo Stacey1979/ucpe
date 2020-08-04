@@ -3,75 +3,83 @@
 .casestudy {
   @include make-container();
 
-  > .content {
-    background-color: $white;
-    margin-top: -10%;
-    @include make-sm-column(12);
-    @include screen("tablet-wide") {
-      @include make-sm-column(10);
-      @include make-sm-column-push(1);
-    }
-    @include screen("desktop-wide") {
-      @include make-sm-column(8);
-      @include make-sm-column-push(2);
-    }
-  }
+  .content_body {
+    @include make-row();
 
-  .article_top,
-  .casestudy_top {
-    padding: $baseline * 2 $baseline 0;
-    @include screen("tablet-wide") {
-      padding: $baseline * 5 $baseline * 5 0;
+    > .content {
+      background-color: $white;
+      margin-top: -10%;
+      @include make-sm-column(12);
+      @include screen("tablet-wide") {
+        @include make-sm-column(10);
+        @include make-sm-column-push(1);
+      }
+      // @include screen("desktop-wide") {
+      //   @include make-sm-column(8);
+      //   @include make-sm-column-push(2);
+      // }
     }
 
-    .meta {
-      text-align: center;
-      margin-bottom: $baseline * 2;
-    }
+    .article_top,
+    .casestudy_top {
+      padding: $baseline * 2 $baseline 0;
+      @include screen("tablet-wide") {
+        padding: $baseline * 5 $baseline * 5 0;
+      }
 
-    h1 {
-      @include heading_XL($black);
-      margin-bottom: $baseline * 2;
-      text-align: center;
-    }
-    .lede {
-      p {
-        @include bodycopy_L($black);
+      .meta {
+        text-align: center;
         margin-bottom: $baseline * 2;
       }
-    }
-  }
 
-  .article_bottom,
-  .casestudy_bottom {
-    padding: 0 $baseline * 2 $baseline * 2;
-    @include screen("tablet-wide") {
-      padding: 0 $baseline * 5 $baseline * 5 $baseline * 8;
-    }
-
-    // .cta {
-    //   .wrapper {
-    //     @include make-sm-column(12);
-    //   }
-    // }
-
-    .cta_full {
-      margin-left: calc(-2rem + -16px);
-      width: calc(100% + 4rem + 31px);
-
-      @include screen("tablet-wide") {
-        margin-left: calc(-8rem + -16px);
-        width: calc(100% + 13rem + 31px);
+      h1 {
+        @include heading_XL($black);
+        margin-bottom: $baseline * 2;
+        text-align: center;
+      }
+      .lede {
+        p {
+          @include bodycopy_L($black);
+          margin-bottom: $baseline * 2;
+        }
       }
     }
-    // replace this class later  CAROUSEL
-    .paragraph--type--image-carousel-combo {
-      width: 100vw;
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
+
+    .article_bottom,
+    .casestudy_bottom {
+      padding: 0 $baseline * 2 $baseline * 2;
+      @include screen("tablet-wide") {
+        padding: 0 $baseline * 5 $baseline * 5 $baseline * 8;
+      }
+
+      .content_img {
+        &.left {
+          margin-left: -$colwidth * 2;
+        }
+        &.right {
+          margin-right: -$colwidth * 2;
+        }
+      }
+
+      .cta100_wrapper {
+        margin-left: calc(-2rem + -16px);
+        width: calc(100% + 4rem + 31px);
+
+        @include screen("tablet-wide") {
+          margin-left: calc(-8rem + -16px);
+          width: calc(100% + 13rem + 31px);
+        }
+      }
+
+      // replace this class later  CAROUSEL
+      .slick--field-image-carousel-items--default {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+      }
     }
   }
 }
@@ -133,15 +141,15 @@
       @include screen("tablet") {
         padding: $baseline $baseline * 2;
         margin-top: $baseline * 3;
-        margin-left: -$baseline * 2;
-        margin-right: -$baseline * 2;
+        //margin-left: -$baseline * 2;
+        //margin-right: -$baseline * 2;
         margin-bottom: $baseline * 3;
       }
 
       @include screen("desktop") {
         margin-top: $baseline * 5;
-        margin-left: -$baseline * 6;
-        margin-right: -$baseline * 6;
+        //margin-left: -$baseline * 6;
+        //margin-right: -$baseline * 6;
         margin-bottom: $baseline * 5;
         padding: $baseline * 2 $baseline * 4;
       }
@@ -284,31 +292,35 @@
 .story {
   @include make-container();
 
-  > .content {
-    background-color: $white;
-    @include make-sm-column(12);
-    @include screen("tablet-wide") {
-      @include make-sm-column(10);
-      @include make-sm-column-push(1);
-    }
-    @include screen("desktop-wide") {
-      @include make-sm-column(8);
-      @include make-sm-column-push(2);
-    }
+  .content_body {
+    @include make-row;
 
-    .story_profile {
-      margin: $baseline * 2.5 0;
+    .content {
+      background-color: $white;
+      @include make-sm-column(12);
       @include screen("tablet-wide") {
-        float: right;
-        margin: 0 0 $baseline * 2.5 $baseline * 2.5;
+        @include make-sm-column(10);
+        @include make-sm-column-push(1);
       }
-      @include screen("desktop") {
-        margin-right: -16.6667%;
+      @include screen("desktop-wide") {
+        @include make-sm-column(8);
+        @include make-sm-column-push(2);
       }
-    }
 
-    .intro p {
-      @include heading_S($black);
+      .story_profile {
+        margin: $baseline * 2.5 0;
+        @include screen("tablet-wide") {
+          float: right;
+          margin: 0 0 $baseline * 2.5 $baseline * 2.5;
+        }
+        @include screen("desktop") {
+          margin-right: -16.6667%;
+        }
+      }
+
+      .intro p {
+        @include heading_S($black);
+      }
     }
   }
 }
@@ -321,14 +333,16 @@
       @include make-sm-column(12);
       margin-bottom: $baseline * 5;
 
-      .intro {
-        @include make-sm-column(5);
-        p {
-          @include heading_S($black);
+      .content1323 {
+        .col1 {
+          @include make-sm-column(5);
+          p {
+            @include heading_S($black);
+          }
         }
-      }
-      .description {
-        @include make-sm-column(7);
+        .col2 {
+          @include make-sm-column(7);
+        }
       }
     }
   }

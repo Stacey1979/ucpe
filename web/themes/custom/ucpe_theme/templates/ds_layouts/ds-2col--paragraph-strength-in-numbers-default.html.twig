@@ -15,18 +15,16 @@
  */
 #}
 
-
-<div class="content1323">
-  {% if left.field_optional_title %}
-  <div class="hdr">
-    <h3>{{ left.field_optional_title|field_value }}</h3>
-  </div>
-  {% endif %}
-  <div class="col1">
-    {{ left.field_content_column_1|field_value }}
-    {{ left.field_button_set|field_value }}
-  </div>
-  <div class="col2">
-    {{ right.field_content_column_2|field_value }}
+<div class="strengthInNumbers_wrapper">
+  <div class="strengthInNumbers_body">
+    <div class="strengthInNumbers">
+      <div class="col1">
+        <h3>{{ left.field_optional_title|field_value }}</h3>
+        {{ left.field_content_column_1|field_value }}
+      </div>
+      <div class="col2">
+        {{ right }}
+      </div>
+    </div>
   </div>
 </div>

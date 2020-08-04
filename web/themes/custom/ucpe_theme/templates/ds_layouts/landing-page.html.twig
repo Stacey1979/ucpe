@@ -9,14 +9,16 @@
  * - ds_content: content region
  */
 #}
-{% if content.homepage|render %}
-  <div class="hero_wrapper hero_homepage">
+{% if content.homepage|render|striptags|trim is not empty %}
+  <div class="hero_wrapper_full hero_homepage">
     {{ content.homepage.field_video_home_page_hero|field_value }}
-    <div class="hero">
-      <div class="hero_content">
-        <h1>{{ content.title }}</h1>
-        <p class="lede">{{ content.homepage.field_lede|field_value }}</p>
-        <a class="btn" href="{{ content.homepage.field_hero_cta_button[0]['#url'] }}">{{ content.homepage.field_hero_cta_button[0]['#title'] }}</a>
+    <div class="hero_wrapper">
+      <div class="hero_body">
+        <div class="hero">
+          <h1>{{ content.title|field_value }}</h1>
+          <p class="lede">{{ content.homepage.field_lede|field_value }}</p>
+          <a class="btn" href="{{ content.homepage.field_hero_cta_button[0]['#url'] }}">{{ content.homepage.field_hero_cta_button[0]['#title'] }}</a>
+        </div>
       </div>
     </div>
   </div>
@@ -27,24 +29,57 @@
        <a class="btn secondary" href="{{ content.homepage.field_get_in_touch_button[0]['#url'] }}">{{ content.homepage.field_get_in_touch_button[0]['#title'] }}</a>
 
        <div class="preview">
-        {{ content.homepage.field_program_types_preview }}
+        {{ content.homepage.field_program_types_preview|field_value }}
        </div>
     </div>
+    {% if content.homepage.field_youvisit_embed %}
     <div class="youvisit">
       {{ content.homepage.field_youvisit_embed|field_value }}
+      <div class="youvisit_blurb">
+        [[ insert blurb here ]]
+      </div>
     </div>
-
-
-
-
+    {% endif %}
+    {% if content.homepage.field_related_story %}
+    <div class="related_story_full">
+      {{ content.homepage.field_related_story|field_value }}
+    <div>
+    {% endif %}
+    <div class="uchicago_diff">
+      {{ content.homepage.field_discover_the_uchicago_diff|field_value }}
+    </div>
   </div>
 {% endif %}
-{% if content.about|render %}
-  {{ content.about }} <h1>ABOUT</h1>
+
+
+
+{% if content.about|render|striptags|trim is not empty %}
+  <div class="hero_wrapper_full hero_about">
+    <div class="hero_wrapper">
+      <div class="hero_body">
+        <div class="hero">
+          {{ content.about.field_large_landscape_hero|field_value }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page_header_wrapper">
+    <div class="page_header_body">
+      <div class="page_header">
+        <h1>{{ content.title|field_value }}</h1>
+      </div>
+    </div>
+  </div>
 {% endif %}
-{% if content.intro|render %}
-  {{ content.intro }}<h1>INTRO</h1>
+
+
+
+{% if content.intro|render|striptags|trim is not empty %}
+  {{ content.intro }}
 {% endif %}
-{% if content.content|render %}
-  {{ content.content }}<h1>CONTENT</h1>
+
+
+
+{% if content.content|render|striptags|trim is not empty %}
+  {{ content.content.field_content_sections|field_value }}
 {% endif %}

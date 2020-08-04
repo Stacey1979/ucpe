@@ -12,3 +12,9 @@
    $suggestions[] = 'views_view__' . $current_id;
    $suggestions[] = 'views_view__' . $current_id . '__' . $current_view;
  }
+
+ function ucpe_theme_preprocess_html(array &$variables) {
+   $path = \Drupal::service('path.current')->getPath();
+   $alias = \Drupal::service('path.alias_manager')->getAliasByPath($path);
+   $variables['attributes']['class'][] = 'path-alias-' . str_replace('/', '-', $alias);
+ }
