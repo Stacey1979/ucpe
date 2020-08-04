@@ -100,12 +100,12 @@
         li {
           @include bodycopy_S($plum, $bold: true);
           display: inline;
-          padding-left: calc($baseline+2px);
+          padding-left: calc(1rem + 2px);
           padding-right: $baseline;
           margin: 0;
 
           &:before {
-            background-color: $bg-02;
+            background-color: $divider-gray;
             content: "";
             display: block;
             height: 100%;
