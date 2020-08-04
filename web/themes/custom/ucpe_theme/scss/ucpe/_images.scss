@@ -70,6 +70,10 @@ figure {
       max-width: 50%;
     }
 
+    img {
+      width: 100%;
+    }
+
     &.right {
       @include screen("tablet") {
         float: right;
@@ -102,10 +106,10 @@ figure {
         padding-right: $baseline * 2;
       }
       @include screen("desktop") {
-        margin-right: -$colwidth;
+        margin-left: -$colwidth;
       }
       @include screen("desktop-wide") {
-        margin-right: -$colwidth * 2;
+        margin-left: -$colwidth * 2;
       }
     }
   }

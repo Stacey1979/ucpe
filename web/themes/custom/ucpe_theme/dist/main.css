@@ -6558,7 +6558,8 @@ h6 {
 
 .body p,
 .body p:last-child,
-.body p:last-of-type, .content p,
+.body p:last-of-type,
+.content p,
 .content p:last-child,
 .content p:last-of-type {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -6569,11 +6570,13 @@ h6 {
   margin-bottom: 1.5rem; }
 
 .body .offered,
-.body .conferred, .content .offered,
+.body .conferred,
+.content .offered,
 .content .conferred {
   margin: 2rem 0; }
   .body .offered p,
-  .body .conferred p, .content .offered p,
+  .body .conferred p,
+  .content .offered p,
   .content .conferred p {
     font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
     font-size: 1.125rem;
@@ -6585,7 +6588,8 @@ h6 {
     letter-spacing: 1px;
     margin-bottom: 0; }
     .body .offered p a,
-    .body .conferred p a, .content .offered p a,
+    .body .conferred p a,
+    .content .offered p a,
     .content .conferred p a {
       border-bottom: solid 2px #800000;
       font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
@@ -6596,17 +6600,20 @@ h6 {
       text-decoration: none;
       transition: all 0.3s; }
       .body .offered p a:hover,
-      .body .conferred p a:hover, .content .offered p a:hover,
+      .body .conferred p a:hover,
+      .content .offered p a:hover,
       .content .conferred p a:hover {
         color: #800000; }
 
 .body ol,
-.body ul, .content ol,
+.body ul,
+.content ol,
 .content ul {
   margin: 1rem 0;
   list-style: none; }
   .body ol li,
-  .body ul li, .content ol li,
+  .body ul li,
+  .content ol li,
   .content ul li {
     padding: 0 0 0 1.5rem;
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -6616,18 +6623,21 @@ h6 {
     line-height: 1.5rem;
     position: relative; }
     .body ol li:before,
-    .body ul li:before, .content ol li:before,
+    .body ul li:before,
+    .content ol li:before,
     .content ul li:before {
       font-size: 1rem;
       left: 0;
       position: absolute; }
     .body ol li ul,
-    .body ul li ul, .content ol li ul,
+    .body ul li ul,
+    .content ol li ul,
     .content ul li ul {
       margin: 0.5rem 0;
       padding: 0; }
       .body ol li ul li:before,
-      .body ul li ul li:before, .content ol li ul li:before,
+      .body ul li ul li:before,
+      .content ol li ul li:before,
       .content ul li ul li:before {
         font-family: "ucpe_icons" !important;
         font-style: normal !important;
@@ -6641,9 +6651,11 @@ h6 {
         color: #110f0f;
         content: "f"; }
 
-.body ul li, .content ul li {
+.body ul li,
+.content ul li {
   margin: 0 0 0.5rem; }
-  .body ul li:before, .content ul li:before {
+  .body ul li:before,
+  .content ul li:before {
     font-family: "ucpe_icons" !important;
     font-style: normal !important;
     font-weight: normal !important;
@@ -6657,30 +6669,37 @@ h6 {
     content: "•";
     top: 3px; }
 
-.body ol, .content ol {
+.body ol,
+.content ol {
   counter-reset: ucpe_counter; }
-  .body ol li, .content ol li {
+  .body ol li,
+  .content ol li {
     counter-increment: ucpe_counter; }
-    .body ol li:before, .content ol li:before {
+    .body ol li:before,
+    .content ol li:before {
       content: counter(ucpe_counter) ".";
       color: #800000;
       font-weight: 500; }
 
-.body blockquote, .content blockquote {
+.body blockquote,
+.content blockquote {
   border-left: 0;
   margin: 3rem 0;
   padding: 0; }
-  .body blockquote .q, .content blockquote .q {
+  .body blockquote .q,
+  .content blockquote .q {
     border-left: 4px #e54b4b solid;
     padding-left: 3.5rem;
     font-style: italic; }
-    .body blockquote .q p, .content blockquote .q p {
+    .body blockquote .q p,
+    .content blockquote .q p {
       font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
       font-size: 1.625rem;
       color: #110f0f;
       font-weight: 300;
       line-height: 2.5rem; }
-    .body blockquote .q footer, .content blockquote .q footer {
+    .body blockquote .q footer,
+    .content blockquote .q footer {
       font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
       font-size: 1rem;
       color: #110f0f;
@@ -6688,12 +6707,15 @@ h6 {
       font-weight: 400;
       font-style: normal;
       margin-top: 1rem; }
-  .body blockquote.w_hs figure, .content blockquote.w_hs figure {
+  .body blockquote.w_hs figure,
+  .content blockquote.w_hs figure {
     margin-left: auto;
     margin-right: auto; }
-    .body blockquote.w_hs figure img, .content blockquote.w_hs figure img {
+    .body blockquote.w_hs figure img,
+    .content blockquote.w_hs figure img {
       margin: 0 auto; }
-    .body blockquote.w_hs figure figcaption, .content blockquote.w_hs figure figcaption {
+    .body blockquote.w_hs figure figcaption,
+    .content blockquote.w_hs figure figcaption {
       font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
       font-size: 0.875rem;
       color: #110f0f;
@@ -6701,29 +6723,37 @@ h6 {
       font-weight: 400;
       margin-top: 1rem;
       text-align: center; }
-      .body blockquote.w_hs figure figcaption p, .content blockquote.w_hs figure figcaption p {
+      .body blockquote.w_hs figure figcaption p,
+      .content blockquote.w_hs figure figcaption p {
         text-align: center; }
   @media only screen and (min-width: 560px) {
-    .body blockquote.w_hs, .content blockquote.w_hs {
+    .body blockquote.w_hs,
+    .content blockquote.w_hs {
       display: flex; }
-      .body blockquote.w_hs figure, .content blockquote.w_hs figure {
+      .body blockquote.w_hs figure,
+      .content blockquote.w_hs figure {
         flex: 0 0 10rem; } }
-  .body blockquote.w_hs .q, .content blockquote.w_hs .q {
+  .body blockquote.w_hs .q,
+  .content blockquote.w_hs .q {
     border-left: 0;
     padding-left: 0; }
     @media only screen and (min-width: 560px) {
-      .body blockquote.w_hs .q, .content blockquote.w_hs .q {
+      .body blockquote.w_hs .q,
+      .content blockquote.w_hs .q {
         padding-left: 3.5rem; } }
-  .body blockquote.link a, .content blockquote.link a {
+  .body blockquote.link a,
+  .content blockquote.link a {
     font-style: normal;
     display: block;
     margin-top: 1rem; }
 
-.body hr, .content hr {
+.body hr,
+.content hr {
   border-width: 0 !important;
   height: 2px;
   margin: 3rem 0; }
-  .body hr:before, .content hr:before {
+  .body hr:before,
+  .content hr:before {
     border-top: solid 3px #e54b4b;
     content: "";
     display: block;
@@ -7144,6 +7174,8 @@ nav.tabs ul.nav-tabs li {
       .contentLrgImg .col1 {
         min-width: 20rem;
         width: 50%; } }
+    .contentLrgImg .col1 img {
+      width: 100%; }
   .contentLrgImg .col2 {
     background-color: #f3f3f3; }
     @media only screen and (min-width: 640px) {
@@ -7249,64 +7281,85 @@ nav.tabs ul.nav-tabs li {
       .three-up-promo .col:nth-child(even) .top {
         background: transparent; } }
 
-.cta {
+.cta_wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f3f3f3;
   margin: 3rem 0; }
-  .cta:before, .cta:after {
+  @media only screen and (min-width: 960px) {
+    .cta_wrapper {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .cta_wrapper {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .cta_wrapper {
+      max-width: 1440px; } }
+  .cta_wrapper:before, .cta_wrapper:after {
     display: table;
     content: " "; }
-  .cta:after {
+  .cta_wrapper:after {
     clear: both; }
-  @media only screen and (max-width: 959px) {
-    .cta {
-      overflow: hidden; } }
-  @media only screen and (min-width: 768px) {
-    .cta {
+  .cta_wrapper .cta_body {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .cta_wrapper .cta_body:before, .cta_wrapper .cta_body:after {
+      display: table;
+      content: " "; }
+    .cta_wrapper .cta_body:after {
+      clear: both; }
+    .cta_wrapper .cta_body .cta {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      align-items: center;
       display: flex;
-      align-items: center; } }
-  .cta .wrapper {
-    background-color: #f3f3f3;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding: 1.5rem; }
-    @media (min-width: 768px) {
-      .cta .wrapper {
-        float: left;
-        width: 100%; } }
-  .cta .cta_content {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
-    @media (min-width: 768px) {
-      .cta .cta_content {
-        float: left;
-        width: 66.66667%; } }
-    .cta .cta_content h3 {
-      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-      font-size: 1.5rem;
-      color: #110f0f;
-      font-weight: 900;
-      line-height: 2.25rem;
-      margin: 2rem 0 0.5rem; }
-      @media only screen and (min-width: 768px) {
-        .cta .cta_content h3 {
-          margin: 0 0 1rem; } }
-  .cta figure.cta_photo {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    text-align: center;
-    margin-bottom: 1rem; }
-    @media (min-width: 768px) {
-      .cta figure.cta_photo {
-        float: left;
-        width: 33.33333%; } }
-    @media only screen and (min-width: 768px) {
-      .cta figure.cta_photo {
-        margin-bottom: 0; } }
+      padding-top: calc(1.5rem + 15px);
+      padding-bottom: calc(1.5rem + 15px);
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+      @media (min-width: 768px) {
+        .cta_wrapper .cta_body .cta {
+          float: left;
+          width: 100%; } }
+      .cta_wrapper .cta_body .cta .cta_content {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; }
+        @media (min-width: 768px) {
+          .cta_wrapper .cta_body .cta .cta_content {
+            float: left;
+            width: 66.66667%; } }
+        .cta_wrapper .cta_body .cta .cta_content h3 {
+          font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+          font-size: 1.5rem;
+          color: #110f0f;
+          font-weight: 900;
+          line-height: 2.25rem;
+          margin: 2rem 0 0.5rem; }
+          @media only screen and (min-width: 768px) {
+            .cta_wrapper .cta_body .cta .cta_content h3 {
+              margin: 0 0 1rem; } }
+      .cta_wrapper .cta_body .cta figure.cta_photo {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        text-align: center;
+        margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          .cta_wrapper .cta_body .cta figure.cta_photo {
+            float: left;
+            width: 33.33333%; } }
+        @media only screen and (min-width: 768px) {
+          .cta_wrapper .cta_body .cta figure.cta_photo {
+            margin-bottom: 0; } }
+        .cta_wrapper .cta_body .cta figure.cta_photo img {
+          width: 100%; }
 
 .cta100_wrapper {
   padding-right: 15px;
@@ -7315,8 +7368,10 @@ nav.tabs ul.nav-tabs li {
   margin-left: auto;
   clear: both;
   background-color: #f3f3f3;
-  margin: 4rem 0;
-  padding: 3rem 0;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
   position: relative; }
   @media only screen and (min-width: 960px) {
     .cta100_wrapper {
@@ -7329,7 +7384,8 @@ nav.tabs ul.nav-tabs li {
       max-width: 1440px; } }
   @media only screen and (min-width: 1200px) {
     .cta100_wrapper {
-      margin: 6rem 0; } }
+      margin-bottom: 6rem;
+      margin-top: 6rem; } }
   .cta100_wrapper:before, .cta100_wrapper:after {
     content: "";
     display: block;
@@ -8297,6 +8353,8 @@ figure.content_img {
   @media only screen and (min-width: 768px) {
     figure.content_img {
       max-width: 50%; } }
+  figure.content_img img {
+    width: 100%; }
   @media only screen and (min-width: 768px) {
     figure.content_img.right {
       float: right;
@@ -8325,10 +8383,10 @@ figure.content_img {
       padding-right: 2rem; } }
   @media only screen and (min-width: 1200px) {
     figure.content_img.left {
-      margin-right: -8.3333%; } }
+      margin-left: -8.3333%; } }
   @media only screen and (min-width: 1440px) {
     figure.content_img.left {
-      margin-right: -16.6666%; } }
+      margin-left: -16.6666%; } }
 
 img {
   max-width: 100%; }
@@ -8637,11 +8695,11 @@ header {
       line-height: 1.4rem;
       font-weight: 500;
       display: inline;
-      padding-left: calc($baseline+2px);
+      padding-left: calc(1rem + 2px);
       padding-right: 1rem;
       margin: 0; }
       .article .article_top .topics ul li:before {
-        background-color: #f3f3f3;
+        background-color: #dcdcdc;
         content: "";
         display: block;
         height: 100%;
@@ -9220,10 +9278,13 @@ header {
     .path-alias--about .cta100_wrapper_full {
       margin-bottom: 5rem; } }
   .path-alias--about .cta100_wrapper_full .cta100_wrapper {
-    padding: 4rem 0; }
+    margin-top: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
     @media only screen and (min-width: 960px) {
       .path-alias--about .cta100_wrapper_full .cta100_wrapper {
-        padding: 6rem 0; } }
+        padding-top: 6rem;
+        padding-bottom: 6rem; } }
   @media only screen and (max-width: 767px) {
     .path-alias--about .cta100_wrapper_full .cta_content {
       margin-top: 4rem; } }
@@ -9262,13 +9323,13 @@ header {
     .path-alias--about .contentLrgImg_wrapper .contentLrgImg_body:after {
       clear: both; }
   .path-alias--about .contentLrgImg_wrapper .contentLrgImg {
-    margin: 3rem 0; }
+    margin: 2rem 0; }
     @media only screen and (min-width: 960px) {
       .path-alias--about .contentLrgImg_wrapper .contentLrgImg {
-        margin: 5rem 0; } }
+        margin: 4rem 0; } }
     @media only screen and (min-width: 1200px) {
       .path-alias--about .contentLrgImg_wrapper .contentLrgImg {
-        margin: 8rem 0; } }
+        margin: 6rem 0; } }
 
 .path-alias--about .strengthInNumbers_wrapper {
   padding-right: 15px;

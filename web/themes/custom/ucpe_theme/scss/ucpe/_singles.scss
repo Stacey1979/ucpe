@@ -91,9 +91,12 @@
     }
 
     .cta100_wrapper {
-      padding: $baseline * 4 0;
+      margin-top: 0;
+      padding-top: $baseline * 4;
+      padding-bottom: $baseline * 4;
       @include screen("tablet-wide") {
-        padding: $baseline * 6 0;
+        padding-top: $baseline * 6;
+        padding-bottom: $baseline * 6;
       }
     }
     .cta_content {
@@ -123,12 +126,12 @@
       @include make-row;
     }
     .contentLrgImg {
-      margin: $baseline * 3 0;
+      margin: $baseline * 2 0;
       @include screen("tablet-wide") {
-        margin: $baseline * 5 0;
+        margin: $baseline * 4 0;
       }
       @include screen("desktop") {
-        margin: $baseline * 8 0;
+        margin: $baseline * 6 0;
       }
     }
   }
