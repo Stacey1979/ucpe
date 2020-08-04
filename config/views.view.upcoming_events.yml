@@ -408,8 +408,8 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Upcoming Events for Program Landing Page'
       display_description: ''
+      block_description: 'Upcoming Events for Program Landing Page'
     cache_metadata:
       max-age: -1
       contexts:
