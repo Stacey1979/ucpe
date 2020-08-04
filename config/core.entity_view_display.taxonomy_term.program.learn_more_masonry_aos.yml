@@ -1,0 +1,46 @@
+uuid: fec3a156-a26c-4bb9-8013-ce07f8ffcc79
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.learn_more_masonry_aos
+    - field.field.taxonomy_term.program.field_program_detail_page
+    - taxonomy.vocabulary.program
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_program_detail_page
+id: taxonomy_term.program.learn_more_masonry_aos
+targetEntityType: taxonomy_term
+bundle: program
+mode: learn_more_masonry_aos
+content:
+  field_program_detail_page:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+hidden:
+  description: true

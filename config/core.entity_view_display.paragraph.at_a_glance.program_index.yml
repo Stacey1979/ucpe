@@ -1,0 +1,83 @@
+uuid: 84c1c4b4-7a51-4353-9996-1e83224eb0a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.program_index
+    - field.field.paragraph.at_a_glance.field_confers_alumni_status
+    - field.field.paragraph.at_a_glance.field_cost
+    - field.field.paragraph.at_a_glance.field_duration
+    - field.field.paragraph.at_a_glance.field_enrollment
+    - field.field.paragraph.at_a_glance.field_format
+    - field.field.paragraph.at_a_glance.field_link_to_financial_aid
+    - field.field.paragraph.at_a_glance.field_program_type
+    - paragraphs.paragraphs_type.at_a_glance
+  module:
+    - ds
+    - field_group
+third_party_settings:
+  field_group:
+    group_cost:
+      children:
+        - field_link_to_financial_aid
+      parent_name: ''
+      weight: 7
+      format_type: fieldset
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: Cost
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_enrollment
+        - field_format
+id: paragraph.at_a_glance.program_index
+targetEntityType: paragraph
+bundle: at_a_glance
+mode: program_index
+content:
+  field_enrollment:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
+    region: ds_content
+  field_format:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
+    region: ds_content
+hidden:
+  field_confers_alumni_status: true
+  field_cost: true
+  field_duration: true
+  field_link_to_financial_aid: true
+  field_program_type: true

@@ -15,13 +15,17 @@ dependencies:
     - field.field.node.owned_program_landing_page.field_deadlines
     - field.field.node.owned_program_landing_page.field_deadlines_block
     - field.field.node.owned_program_landing_page.field_designed_for
+    - field.field.node.owned_program_landing_page.field_focus_areas
+    - field.field.node.owned_program_landing_page.field_form
     - field.field.node.owned_program_landing_page.field_hero
     - field.field.node.owned_program_landing_page.field_hero_cta_button
     - field.field.node.owned_program_landing_page.field_intro_paragraph
     - field.field.node.owned_program_landing_page.field_lede
+    - field.field.node.owned_program_landing_page.field_link_to_main_page
     - field.field.node.owned_program_landing_page.field_metatags
     - field.field.node.owned_program_landing_page.field_of_interest
     - field.field.node.owned_program_landing_page.field_offered_by
+    - field.field.node.owned_program_landing_page.field_owned
     - field.field.node.owned_program_landing_page.field_program
     - field.field.node.owned_program_landing_page.field_program_illustration
     - field.field.node.owned_program_landing_page.field_program_type
@@ -95,14 +99,19 @@ hidden:
   field_deadlines: true
   field_deadlines_block: true
   field_designed_for: true
+  field_focus_areas: true
+  field_form: true
   field_hero: true
   field_hero_cta_button: true
   field_intro_paragraph: true
   field_lede: true
+  field_link_to_main_page: true
   field_metatags: true
   field_of_interest: true
   field_offered_by: true
+  field_owned: true
   field_program: true
   field_program_type: true
   field_upcoming_events: true
   field_video: true
+  link_for_entity_comparison_compare_programs: true

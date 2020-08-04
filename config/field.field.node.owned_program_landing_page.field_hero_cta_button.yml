@@ -12,7 +12,7 @@ field_name: field_hero_cta_button
 entity_type: node
 bundle: owned_program_landing_page
 label: 'Hero CTA Button'
-description: 'Add the button in the here. Typically the "How to Apply" button. '
+description: '<strong>Owned programs only</strong>. Add the button in the here. Typically the "How to Apply" button.'
 required: false
 translatable: true
 default_value: {  }
