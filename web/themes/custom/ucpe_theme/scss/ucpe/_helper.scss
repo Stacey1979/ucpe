@@ -27,12 +27,13 @@
   background-image: url("#{$image-path}/uc_shield_outline_maroon.svg");
   background-repeat: no-repeat;
   background-size: 28px;
-  background-position: 10px bottom;
-  float: left;
-  padding: 14px 20px 6px 20px;
+  background-position: left bottom;
+  //float: left;
+  padding: 15px 20px 6px 10px;
 
   .category_name {
     background-color: white;
+    margin-right: $baseline * 1.5;
     @include utility_XS($black);
 
     a {
@@ -43,12 +44,9 @@
 
   .meta {
     @include bodycopy_XS($black, $bold: false);
-    display: block;
-    @include screen("desktop") {
-      display: inline;
-      position: relative;
-      top: -13px;
-    }
+    display: inline;
+    position: relative;
+    top: 0;
 
     a {
       @include bodycopy_S($black, $bold: true);
@@ -269,6 +267,9 @@
 
     .program_meta {
       background-color: $white;
+      background-position: 10px bottom;
+      float: left;
+      padding: 14px 20px 6px 20px;
       position: relative;
       left: -16px;
       top: -12px;

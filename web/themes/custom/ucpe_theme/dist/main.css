@@ -8015,11 +8015,11 @@ nav.tabs ul.nav-tabs li {
   background-image: url("../ucpe/i/uc_shield_outline_maroon.svg");
   background-repeat: no-repeat;
   background-size: 28px;
-  background-position: 10px bottom;
-  float: left;
-  padding: 14px 20px 6px 20px; }
+  background-position: left bottom;
+  padding: 15px 20px 6px 10px; }
   .program_meta .category_name {
     background-color: white;
+    margin-right: 1.5rem;
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 0.75rem;
     color: #110f0f;
@@ -8035,12 +8035,9 @@ nav.tabs ul.nav-tabs li {
     color: #110f0f;
     line-height: 1.4rem;
     font-weight: 400;
-    display: block; }
-    @media only screen and (min-width: 1200px) {
-      .program_meta .meta {
-        display: inline;
-        position: relative;
-        top: -13px; } }
+    display: inline;
+    position: relative;
+    top: 0; }
     .program_meta .meta a {
       font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
       font-size: 0.875rem;
@@ -8260,6 +8257,9 @@ nav.tabs ul.nav-tabs li {
   text-align: center; }
   .program_card .pc_img .program_meta {
     background-color: #ffffff;
+    background-position: 10px bottom;
+    float: left;
+    padding: 14px 20px 6px 20px;
     position: relative;
     left: -16px;
     top: -12px; }
