@@ -1,3 +1,108 @@
+// CONTENT FULL
+//Content 100% Width
+.content100_wrapper {
+  @include make-container;
+}
+.content100_body {
+  @include make-row;
+}
+
+.content100 {
+  @include make-sm-column(12);
+}
+
+// Content 1/3 - 2/3
+
+.content1323 {
+  .hdr {
+    @include make-sm-column(12);
+  }
+  .col1 {
+    @include make-sm-column(12);
+    @include screen("tablet-wide") {
+      @include make-sm-column(4);
+    }
+  }
+  .col2 {
+    @include make-sm-column(12);
+    margin-bottom: $baseline * 3;
+    @include screen("tablet-wide") {
+      padding-right: $colwidth;
+      @include make-sm-column(8);
+    }
+  }
+}
+
+//Content 2/3 - 1/3
+.content2313 {
+  .hdr {
+    @include make-sm-column(12);
+  }
+  .col1 {
+    @include make-sm-column(12);
+    margin-bottom: $baseline * 3;
+    @include screen("tablet-wide") {
+      padding-right: $colwidth;
+      @include make-sm-column(8);
+    }
+  }
+  .col2 {
+    @include make-sm-column(12);
+    @include screen("tablet-wide") {
+      @include make-sm-column(4);
+    }
+  }
+}
+
+//Content Large Image
+.contentLrgImg {
+  background-color: $bg_02;
+  margin: $baseline * 2 0;
+  padding: $baseline * 2;
+
+  @include screen("tablet-wide") {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin: $baseline * 3 0;
+  }
+  @include screen("desktop") {
+    margin: $baseline * 5 0;
+  }
+
+  .col1 {
+    width: 60%;
+    @include screen("tablet-small") {
+      width: 40%;
+      float: left;
+      margin-right: $baseline * 2;
+    }
+    @include screen("tablet-wide") {
+      margin-right: 0;
+    }
+    @include screen("desktop") {
+      min-width: $baseline * 20;
+      width: 50%;
+    }
+  }
+  .col2 {
+    background-color: $bg-02;
+    @include screen("tablet-small") {
+      padding: $baseline * 2;
+    }
+    @include screen("tablet") {
+      width: 100%;
+    }
+    @include screen("desktop-wide") {
+      padding: $baseline * 5;
+    }
+
+    h3 {
+      color: $black;
+    }
+  }
+}
+
 // STATS
 
 .stat_number {
@@ -56,13 +161,16 @@
 
 .three-up-promo {
   .col {
-    @include screen("tablet") {
-      .bottom {
-        text-align: center;
-      }
-    }
+    background-color: $bg-02;
+
+    // @include screen("tablet") {
+    //   .bottom {
+    //     text-align: center;
+    //   }
+    // }
 
     .top {
+      background: linear-gradient(180deg, $white 50%, $bg-02 50%);
       text-align: center;
 
       .stat_number {
@@ -76,6 +184,7 @@
 
     .bottom {
       padding: $baseline * 3 $baseline * 2;
+      text-align: center;
 
       h3 {
         @include heading_S($maroon);
@@ -84,11 +193,12 @@
     }
 
     // background colors
-    &:nth-child(odd) {
-      background-color: $bg-02;
-
-      .top {
-        background: linear-gradient(180deg, $white 50%, $bg-02 50%);
+    @include screen("tablet") {
+      &:nth-child(even) {
+        background-color: transparent;
+        .top {
+          background: transparent;
+        }
       }
     }
   }
@@ -109,7 +219,7 @@
   }
 
   .wrapper {
-    background-color: $bg_03;
+    background-color: $bg_02;
     @include make-sm-column(12);
     padding: $baseline * 1.5;
   }
@@ -135,51 +245,52 @@
   }
 }
 
-.cta_full {
-  @include make-sm-column(12);
-  background-color: $bg_03;
+.cta100_wrapper {
+  @include make-container;
+  clear: both;
+  background-color: $bg_02;
+  margin: $baseline * 4 0;
   padding: $baseline * 3 0;
-  margin: $baseline * 5 0 $baseline * 5 -15px;
-  width: calc(100% + 30px);
-  @include screen("tablet-wide", $type: max) {
-    overflow: hidden;
-  }
+  position: relative;
   @include screen("desktop") {
-    width: calc(100% + 30px);
+    margin: $baseline * 6 0;
   }
 
+  // we may need to explore only showing this on larger displays
   &:before,
   &:after {
     content: "";
     display: block;
     height: 100%;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     top: 0;
-    z-index: -1;
+    z-index: 0;
   }
   &:before {
-    background-color: $bg_03;
-    left: -100%;
+    background-color: $bg_02;
+    left: 0;
   }
   &:after {
-    background-color: $bg_03;
-    right: -100%;
+    background-color: $bg_02;
+    right: 0;
   }
 
-  .row {
+  .cta100_body {
+    @include make-row;
+    position: inherit;
+    z-index: 5;
+  }
+
+  .cta100 {
+    @include make-sm-column(12);
     @include screen("tablet") {
       display: flex;
       align-items: center;
     }
-  }
-
-  .wrapper {
-    //@include make-container();
 
     .cta_content {
-      @include make-sm-column(5);
-      @include make-sm-column-pull(1);
+      @include make-sm-column(8);
 
       h3 {
         @include heading_S($black);
@@ -187,8 +298,20 @@
     }
 
     figure.cta_photo {
-      @include make-sm-column(3);
-      @include make-sm-column-push(7);
+      @include make-sm-column(4);
+
+      .field--name-field-image-attribution-wysiwyg {
+        position: absolute;
+        @include bodycopy_S($black_03);
+
+        &:before {
+          @include iconfont($black_03, "\63");
+          font-size: $baseline * 1.75;
+          margin-right: $baseline * 0.25;
+          text-decoration: none;
+          vertical-align: text-bottom;
+        }
+      }
     }
   }
 }

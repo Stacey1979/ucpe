@@ -53,91 +53,59 @@
 }
 
 //content images
-
-// These styles are specifically for the stories - we might need to make a trigger for these styles
 figure {
   .img {
   }
   figcaption {
     margin-top: $baseline;
-  }
-
-  &.story_img {
-    @include make-row();
-    margin-top: $baseline * 2;
-    margin-bottom: $baseline * 2;
-
-    @include screen("tablet") {
-      // margin-left: -16.66667%; THIS NEEDS TO BE ADDED TO STORIES AND EDITORIALS - SPECIAL CLASS
-      // margin-right: -16.66667%; THIS NEEDS TO BE ADDED TO STORIES AND EDITORIALS - SPECIAL CLASS
-    }
-
-    &.full {
-      .img {
-        @include make-sm-column(12);
-      }
-      figcaption {
-        @include make-sm-column(6);
-      }
-    }
-
-    &.left,
-    &.right {
-      .img {
-        @include make-sm-column(8);
-      }
-      figcaption {
-        @include make-sm-column(4);
-      }
-    }
-
-    &.right {
-      .img {
-        @include make-sm-column-push(4);
-      }
-      figcaption {
-        @include make-sm-column-pull(8);
-      }
-    }
+    text-align: left;
   }
 
   &.content_img {
-    @include make-row();
-    @include screen("tablet-small") {
-      @include make-sm-column(8);
-    }
-    @include screen("desktop") {
-      @include make-md-column(7);
-    }
     margin-bottom: $baseline * 2;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+    @include screen("tablet") {
+      max-width: 50%;
+    }
 
     &.right {
-      float: right;
       @include screen("tablet") {
+        float: right;
         margin-left: $baseline;
         padding-left: $baseline;
       }
       @include screen("tablet-wide") {
         border-left: solid 1px $divider-gray;
-        //margin-right: -16.66667%; THIS NEEDS TO BE ADDED TO STORIES AND EDITORIALS - SPECIAL CLASS
         margin-left: $baseline * 2;
         padding-left: $baseline * 2;
+      }
+      @include screen("desktop") {
+        margin-right: -$colwidth;
+      }
+      @include screen("desktop-wide") {
+        margin-right: -$colwidth * 2;
       }
     }
 
     &.left {
-      float: left;
-
       @include screen("tablet") {
+        float: left;
         margin-right: $baseline;
         padding-right: $baseline;
       }
 
       @include screen("tablet-wide") {
         border-right: solid 1px $divider-gray;
-        //margin-left: -16.6667%; THIS NEEDS TO BE ADDED TO STORIES AND EDITORIALS - SPECIAL CLASS
         margin-right: $baseline * 2;
         padding-right: $baseline * 2;
+      }
+      @include screen("desktop") {
+        margin-right: -$colwidth;
+      }
+      @include screen("desktop-wide") {
+        margin-right: -$colwidth * 2;
       }
     }
   }

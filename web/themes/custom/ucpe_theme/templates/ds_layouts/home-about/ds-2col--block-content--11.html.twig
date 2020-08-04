@@ -14,18 +14,19 @@
  * - right: content of right region
  */
 #}
-
-<div class="cta100_wrapper">
-	<div class="cta100_body">
-		<div class="cta100">
-			<figure class="cta_photo">
-				{{ right.field_cta_image }}
-			</figure>
-			<div class="cta_content">
-				<h3>{{ left.field_cta_title|field_value  }}</h3>
-				{{ left.body }}
-			  <a class="learnmore" href="{{ left.field_cta_button[0]['#url'] }}">{{ left.field_cta_button[0]['#title'] }}</a>
-      </div>
+<div class="cta100_wrapper_full">
+	<div class="cta100_wrapper">
+		<div class="cta100_body">
+			<div class="cta100">
+				<figure class="cta_photo">
+					{{ right.field_cta_image }}
+				</figure>
+				<div class="cta_content">
+					<h3>{{ left.field_cta_title|field_value  }}</h3>
+					{{ left.body }}
+				  <a class="learnmore" href="{{ left.field_cta_button[0]['#url'] }}">{{ left.field_cta_button[0]['#title'] }}</a>
+	      </div>
+			</div>
 		</div>
 	</div>
-</div>
+</div>	

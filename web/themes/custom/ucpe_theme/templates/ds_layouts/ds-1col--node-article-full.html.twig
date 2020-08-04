@@ -16,45 +16,46 @@
 </div>
 <div class="content_wrapper">
     <div class="article">
-      <div class="content">
-        <div class="article_top">
-          <div class="meta">
-            <p><span class="type">Perspectives</span><span class="divider">|</span><span class="date">{{ ds_content.field_date_written|field_value }}</span></p>
-          </div>
-          <h1>{{ title|field_value }}</h1>
-          <div class="lede">
-            <p>{{  ds_content.field_lede|field_value }}</p>
-          </div>
-          <div class="written_by">
-            <p>Based on the work of {{ ds_content.field_based_on|field_value }}. Written by {{ ds_content.field_author[0]['#title'] }}.</br>
-            {{ reading_time }}
-            </p>
-          </div>
+      <div class="content_body">
+        <div class="content">
+          <div class="article_top">
+            <div class="meta">
+              <p><span class="type">Perspectives</span><span class="divider">|</span><span class="date">{{ ds_content.field_date_written|field_value }}</span></p>
+            </div>
+            <h1>{{ title|field_value }}</h1>
+            <div class="lede">
+              <p>{{  ds_content.field_lede|field_value }}</p>
+            </div>
+            <div class="written_by">
+              <p>Based on the work of {{ ds_content.field_based_on|field_value }}. Written by {{ ds_content.field_author[0]['#title'] }}.</br>
+              {{ reading_time }}
+              </p>
+            </div>
 
-          <div class="row">
-            <div class="topics">
-              <ul aria-describedby="conditions-label">
-                {% for key, item in ds_content.field_topics|children %}
-                  <li>{{ item }}</li>
-                {% endfor %}
-              </ul>
+            <div class="row">
+              <div class="topics">
+                <ul aria-describedby="conditions-label">
+                  {% for key, item in ds_content.field_topics|children %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="share">
+                {{ ds_content.addtoany }}
+              </div>
             </div>
-            <div class="share">
-              {{ ds_content.addtoany }}
-            </div>
-          </div>
-          {% if ds_content.field_in_brief_perspective|field_value is not empty  %}
-            <div class="in_brief">
-              <h3>In Brief</h3>
-              {{ ds_content.field_in_brief_perspective|field_value }}
-            </div>
-          {% endif %}
-          <div class="intro">{{ ds_content.field_intro_paragraph }}</div>
-  </div>
-        <div class="article_bottom">
-        {{ ds_content|without('field_hero','field_based_on','field_date_written','article','field_lede','reading_time','field_topics','addtoany','field_in_brief_perspective','field_intro_paragraph' ) }}
-
-      </div>
-      </div>
-    </div>
-</div>
+            {% if ds_content.field_in_brief_perspective|field_value is not empty  %}
+              <div class="in_brief">
+                <h3>In Brief</h3>
+                {{ ds_content.field_in_brief_perspective|field_value }}
+              </div>
+            {% endif %}
+            <div class="intro">{{ ds_content.field_intro_paragraph }}</div>
+          </div><!-- END ARTICLE TOP-->
+          <div class="article_bottom">
+            {{ ds_content|without('field_hero','field_based_on','field_date_written','article','field_lede','reading_time','field_topics','addtoany','field_in_brief_perspective','field_intro_paragraph' ) }}
+          </div><!-- END ARTICLE BOTTOM-->
+        </div><!-- END CONTENT-->
+      </div><!-- END CONTENT BODY-->
+    </div><!-- END ARTICLE-->
+</div><!-- END CONTENT WRAPPER-->
