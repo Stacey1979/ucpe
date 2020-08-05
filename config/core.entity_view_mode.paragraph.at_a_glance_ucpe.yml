@@ -5,6 +5,6 @@ dependencies:
   module:
     - paragraphs
 id: paragraph.at_a_glance_ucpe
-label: 'At a Glance UCPE'
+label: 'At a Glance'
 targetEntityType: paragraph
 cache: true

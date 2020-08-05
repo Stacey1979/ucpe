@@ -1,0 +1,10 @@
+uuid: 07ad3c9d-bf5f-48b2-8709-0cf6c1e3ea26
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.area_of_study_link
+label: 'Area of Study: Link'
+targetEntityType: node
+cache: true

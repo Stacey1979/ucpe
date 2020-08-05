@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_program_detail_page
-    - node.type.non_owned_program_landing_page
     - node.type.owned_program_landing_page
     - taxonomy.vocabulary.program
 id: taxonomy_term.program.field_program_detail_page
@@ -21,11 +20,10 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      non_owned_program_landing_page: non_owned_program_landing_page
       owned_program_landing_page: owned_program_landing_page
     sort:
       field: title
       direction: ASC
     auto_create: false
-    auto_create_bundle: non_owned_program_landing_page
+    auto_create_bundle: null
 field_type: entity_reference
