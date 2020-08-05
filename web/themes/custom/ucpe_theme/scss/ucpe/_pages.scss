@@ -53,11 +53,9 @@
       }
 
       .content_img {
-        &.left {
-          margin-left: -$colwidth * 2;
-        }
-        &.right {
-          margin-right: -$colwidth * 2;
+        @include screen("desktop") {
+          margin-left: -$colwidth;
+          margin-right: -$colwidth;
         }
       }
 

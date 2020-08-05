@@ -1,0 +1,15 @@
+uuid: ccf9e455-e5cc-497e-9e3e-1bed9506cb83
+langcode: en
+status: true
+dependencies: {  }
+name: small_flex_300px_
+label: 'Small : Flex (300px)'
+effects:
+  16ee4518-00b1-4a12-9fa9-1c109cc38634:
+    uuid: 16ee4518-00b1-4a12-9fa9-1c109cc38634
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: null
+      upscale: false

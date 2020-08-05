@@ -1,0 +1,10 @@
+uuid: 1456e340-fb61-46be-aed5-72ce5f198942
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.content_image_flexi
+label: 'Content Image - Flexible'
+targetEntityType: media
+cache: true

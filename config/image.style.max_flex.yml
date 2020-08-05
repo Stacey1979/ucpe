@@ -1,0 +1,15 @@
+uuid: c2b257f3-0902-42e0-a8db-a6112c3d812f
+langcode: en
+status: true
+dependencies: {  }
+name: max_flex
+label: 'Max : Flex'
+effects:
+  6b12ef9d-c3d2-40ea-8411-77e452a3cbb6:
+    uuid: 6b12ef9d-c3d2-40ea-8411-77e452a3cbb6
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false

@@ -292,6 +292,36 @@ h6 {
       width: 25%;
     }
   }
+
+  figure {
+    figcaption {
+      text-align: left;
+      @include bodycopy_XS($black_03);
+      p {
+        font-family: $sans-serif-font !important;
+        font-weight: $sans-serif-regular !important;
+        font-size: 0.75rem !important;
+        color: $black_03 !important;
+        line-height: 1.5rem !important;
+      }
+
+      span.attribute {
+        font-family: $sans-serif-font !important;
+        font-weight: $sans-serif-regular !important;
+        font-size: 0.75rem !important;
+        color: $black_03 !important;
+        line-height: 1.5rem !important;
+
+        &:before {
+          @include iconfont($black_03, "\63");
+          font-size: $baseline * 1.5;
+          margin-right: $baseline * 0.25;
+          text-decoration: none;
+          vertical-align: text-bottom;
+        }
+      }
+    }
+  }
 } //ALL WITHIN THE .CONTENT DIV
 
 // META Content-Type

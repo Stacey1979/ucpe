@@ -1,46 +1,46 @@
-uuid: 5ccb4c13-5427-4c54-b193-ab0a8032e8be
+uuid: 28ecf2e4-5ee7-4bae-a133-af2492765d33
 langcode: en
 status: true
 dependencies:
   config:
-    - image.style.large_21_9_1440x620_
-    - image.style.large_21_9_2x_2880x1240_
-    - image.style.medium_21_9_1024x440_
-    - image.style.small_21_9_480x206_
+    - image.style.large_flex
+    - image.style.max_flex
+    - image.style.medium_flex
+    - image.style.small_flex_300px_
   theme:
     - ucpe_theme
-id: content_image_full
-label: 'Content Image Full Width'
+id: content_image_flexible
+label: 'Content Image - Flexible'
 image_style_mappings:
   -
     breakpoint_id: ucpe.screen-lg-min
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: large_21_9_1440x620_
+    image_mapping: large_flex
   -
     breakpoint_id: ucpe.screen-lg-min
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: large_21_9_2x_2880x1240_
+    image_mapping: max_flex
   -
     breakpoint_id: ucpe.screen-md-min
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: medium_21_9_1024x440_
+    image_mapping: max_flex
   -
     breakpoint_id: ucpe.screen-md-min
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: large_21_9_1440x620_
+    image_mapping: large_flex
   -
     breakpoint_id: ucpe.screen-sm-min
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: small_21_9_480x206_
+    image_mapping: small_flex_300px_
   -
     breakpoint_id: ucpe.screen-sm-min
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: medium_21_9_1024x440_
+    image_mapping: medium_flex
 breakpoint_group: ucpe_theme
-fallback_image_style: small_21_9_480x206_
+fallback_image_style: small_flex_300px_
