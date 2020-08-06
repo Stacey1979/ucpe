@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.find_your_fit.field_lede
     - field.field.node.find_your_fit.field_metatags
     - field.field.node.find_your_fit.field_program_type
+    - field.field.node.find_your_fit.field_split_text
     - field.field.node.find_your_fit.field_text_and_media_1_3_2_3
     - node.type.find_your_fit
   module:
@@ -40,7 +41,10 @@ third_party_settings:
         - node_title
         - field_lede
         - field_text_and_media_1_3_2_3
+        - field_split_text
         - field_content_sections
+        - field_metatags
+        - field_format_tag
     fields:
       node_title:
         plugin_id: node_title
@@ -57,7 +61,7 @@ bundle: find_your_fit
 mode: default
 content:
   field_content_sections:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       view_mode: default
@@ -66,13 +70,13 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_format_tag:
-    weight: 6
+    weight: 7
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
+    region: ds_content
   field_lede:
     weight: 2
     label: hidden
@@ -81,12 +85,21 @@ content:
     type: text_default
     region: ds_content
   field_metatags:
-    weight: 5
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
-    region: content
+    region: ds_content
+  field_split_text:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
   field_text_and_media_1_3_2_3:
     type: entity_reference_revisions_entity_view
     weight: 3
