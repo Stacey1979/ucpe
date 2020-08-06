@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_upcoming_events
     - node.type.owned_program_landing_page
+    - views.view.upcoming_events
   module:
     - viewsreference
 id: node.owned_program_landing_page.field_upcoming_events
@@ -15,7 +16,11 @@ label: 'Upcoming Events'
 description: 'Choose "Upcoming Events" if you want this to show on the landing page. Do not edit the Block ID field'
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    display_id: block_1
+    data: 'a:5:{s:5:"pager";N;s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;}'
+    target_uuid: 83b0a547-a355-4a1d-9847-a764a6601bdc
 default_value_callback: ''
 settings:
   handler: 'default:view'
@@ -45,6 +50,7 @@ settings:
     masonry_views: 0
     media: 0
     media_library: 0
+    programs: 0
     ptoc: 0
     redirect: 0
     related_three_ups: 0
@@ -52,4 +58,10 @@ settings:
     user_admin_people: 0
     watchdog: 0
     who_s_new: 0
+  enabled_settings:
+    argument: argument
+    offset: 0
+    limit: 0
+    pager: 0
+    title: title
 field_type: viewsreference

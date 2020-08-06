@@ -1,17 +1,17 @@
-uuid: 71225a69-78a0-4510-b55d-f5c40a746a06
+uuid: 89b72a02-433f-4140-abd1-783da5ad20ae
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_program_type
-    - node.type.non_owned_program_landing_page
+    - node.type.owned_program_interior_page
     - taxonomy.vocabulary.program_type
-id: node.non_owned_program_landing_page.field_program_type
+id: node.owned_program_interior_page.field_program_type
 field_name: field_program_type
 entity_type: node
-bundle: non_owned_program_landing_page
+bundle: owned_program_interior_page
 label: 'Program Type'
-description: 'Choose which type of program this is. '
+description: 'Enter the type of program'
 required: true
 translatable: true
 default_value: {  }
@@ -25,5 +25,5 @@ settings:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: program
+    auto_create_bundle: ''
 field_type: entity_reference

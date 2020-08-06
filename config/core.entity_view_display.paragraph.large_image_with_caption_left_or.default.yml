@@ -6,26 +6,7 @@ dependencies:
     - field.field.paragraph.large_image_with_caption_left_or.field_image_with_caption
     - paragraphs.paragraphs_type.large_image_with_caption_left_or
   module:
-    - ds
     - entity_reference_revisions
-third_party_settings:
-  ds:
-    layout:
-      id: ds_1col
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        classes: {  }
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-    regions:
-      ds_content:
-        - field_image_with_caption
 id: paragraph.large_image_with_caption_left_or.default
 targetEntityType: paragraph
 bundle: large_image_with_caption_left_or

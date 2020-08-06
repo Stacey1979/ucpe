@@ -1,0 +1,10 @@
+uuid: cf6eb5ec-7c38-4ec0-b08c-ac3b730711ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.program_index
+label: 'Program Index'
+targetEntityType: paragraph
+cache: true

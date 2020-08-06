@@ -15,13 +15,17 @@ dependencies:
     - field.field.node.owned_program_landing_page.field_deadlines
     - field.field.node.owned_program_landing_page.field_deadlines_block
     - field.field.node.owned_program_landing_page.field_designed_for
+    - field.field.node.owned_program_landing_page.field_focus_areas
+    - field.field.node.owned_program_landing_page.field_form
     - field.field.node.owned_program_landing_page.field_hero
     - field.field.node.owned_program_landing_page.field_hero_cta_button
     - field.field.node.owned_program_landing_page.field_intro_paragraph
     - field.field.node.owned_program_landing_page.field_lede
+    - field.field.node.owned_program_landing_page.field_link_to_main_page
     - field.field.node.owned_program_landing_page.field_metatags
     - field.field.node.owned_program_landing_page.field_of_interest
     - field.field.node.owned_program_landing_page.field_offered_by
+    - field.field.node.owned_program_landing_page.field_owned
     - field.field.node.owned_program_landing_page.field_program
     - field.field.node.owned_program_landing_page.field_program_illustration
     - field.field.node.owned_program_landing_page.field_program_type
@@ -64,6 +68,7 @@ third_party_settings:
       children:
         - field_program
         - field_at_a_glance
+        - field_link_to_main_page
       parent_name: ''
       weight: 1
       format_type: fieldset
@@ -77,16 +82,17 @@ third_party_settings:
     group_content:
       children:
         - field_video
-        - field_program_illustration
         - field_intro_paragraph
         - field_content
         - field_designed_for
+        - field_focus_areas
         - field_content_sections
         - field_offered_by
         - field_conferred_by
         - field_button_
+        - field_form
       parent_name: ''
-      weight: 6
+      weight: 4
       format_type: fieldset
       region: content
       format_settings:
@@ -97,10 +103,12 @@ third_party_settings:
       label: Content
     group_administrative:
       children:
+        - field_owned
+        - field_program_illustration
         - field_area_of_study_cta
         - field_of_interest
       parent_name: ''
-      weight: 7
+      weight: 5
       format_type: fieldset
       region: content
       format_settings:
@@ -118,9 +126,9 @@ third_party_settings:
       format_type: fieldset
       region: content
       format_settings:
+        description: '<strong>Only for owned programs.</strong>'
         id: ''
         classes: ''
-        description: ''
         required_fields: false
       label: 'Deadlines Section'
     group_upcoming_:
@@ -132,9 +140,9 @@ third_party_settings:
       format_type: fieldset
       region: content
       format_settings:
+        description: '<strong>Only for owned programs.</strong>'
         id: ''
         classes: ''
-        description: ''
         required_fields: false
       label: 'Upcoming Events'
 id: node.owned_program_landing_page.default
@@ -144,7 +152,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 9
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -166,7 +174,7 @@ content:
     type: link_attributes
     region: content
   field_area_of_study_cta:
-    weight: 7
+    weight: 28
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -202,7 +210,7 @@ content:
     region: content
   field_button_:
     type: inline_entity_form_complex
-    weight: 13
+    weight: 23
     region: content
     settings:
       form_mode: default
@@ -218,14 +226,14 @@ content:
       allow_duplicate: false
     third_party_settings: {  }
   field_conferred_by:
-    weight: 12
+    weight: 22
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_content:
     type: entity_reference_paragraphs
-    weight: 8
+    weight: 16
     region: content
     settings:
       title: Paragraph
@@ -236,7 +244,7 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
   field_content_sections:
-    weight: 10
+    weight: 19
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -272,7 +280,7 @@ content:
     region: content
   field_designed_for:
     type: paragraphs
-    weight: 9
+    weight: 17
     region: content
     settings:
       title: Paragraph
@@ -287,6 +295,35 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_focus_areas:
+    weight: 18
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        aria-label: true
+        id: false
+        name: false
+        rel: false
+        class: false
+        accesskey: false
+        title: false
+    third_party_settings: {  }
+    type: link_attributes
+    region: content
+  field_form:
+    type: entity_reference_paragraphs
+    weight: 24
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: form_embed
     third_party_settings: {  }
   field_hero:
     type: inline_entity_form_complex
@@ -324,7 +361,7 @@ content:
     third_party_settings: {  }
   field_intro_paragraph:
     type: paragraphs
-    weight: 7
+    weight: 15
     region: content
     settings:
       title: Paragraph
@@ -351,15 +388,32 @@ content:
         hide_guidelines: '1'
     type: text_textfield
     region: content
+  field_link_to_main_page:
+    weight: 23
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        aria-label: true
+        id: false
+        name: false
+        rel: false
+        class: false
+        accesskey: false
+        title: false
+    third_party_settings: {  }
+    type: link_attributes
+    region: content
   field_metatags:
-    weight: 15
+    weight: 14
     settings:
       sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_of_interest:
-    weight: 9
+    weight: 29
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -378,10 +432,16 @@ content:
     region: content
   field_offered_by:
     type: options_select
-    weight: 11
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_owned:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_program:
     weight: 21
     settings: {  }
@@ -390,7 +450,7 @@ content:
     region: content
   field_program_illustration:
     type: media_library_widget
-    weight: 5
+    weight: 27
     settings:
       media_types: {  }
     third_party_settings: {  }
@@ -409,7 +469,7 @@ content:
     region: content
   field_video:
     type: entity_browser_entity_reference
-    weight: 4
+    weight: 14
     region: content
     settings:
       entity_browser: video_browser
@@ -423,7 +483,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 12
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -431,21 +491,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 9
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 13
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 10
     region: content
     third_party_settings: {  }
   title:
@@ -458,7 +518,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
@@ -467,7 +527,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 13
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }

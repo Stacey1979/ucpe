@@ -1,22 +1,22 @@
-uuid: ee9e0566-9224-4e9b-b0f1-60f389a21695
+uuid: eae7e5a7-6ed4-485f-8509-5a3eecdd0265
 langcode: en
 status: true
 dependencies:
   module:
-    - block_content
+    - node
     - options
-id: block_content.field_image_alignment2
-field_name: field_image_alignment2
-entity_type: block_content
+id: node.field_owned
+field_name: field_owned
+entity_type: node
 type: list_string
 settings:
   allowed_values:
     -
-      value: left
-      label: Left
+      value: 'yes'
+      label: 'Yes'
     -
-      value: right
-      label: Right
+      value: 'no'
+      label: 'No'
   allowed_values_function: ''
 module: options
 locked: false

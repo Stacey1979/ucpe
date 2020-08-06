@@ -86,14 +86,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
-  field_cost:
-    weight: 3
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: ds_content
   field_duration:
     type: entity_reference_revisions_entity_view
     weight: 2
@@ -143,4 +135,5 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
-hidden: {  }
+hidden:
+  field_cost: true
