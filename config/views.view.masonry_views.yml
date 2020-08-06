@@ -87,7 +87,7 @@ display:
               secondary_label: 'Advanced options'
               secondary_open: false
             filter:
-              field_areas_of_study_target_id:
+              field_case_study_type_value:
                 plugin_id: bef
                 advanced:
                   rewrite:
