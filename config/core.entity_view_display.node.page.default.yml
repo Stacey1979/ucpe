@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.page.field_discover_the_uchicago_diff
     - field.field.node.page.field_get_in_touch_button
     - field.field.node.page.field_header_h2_
+    - field.field.node.page.field_hero
     - field.field.node.page.field_hero_cta_button
     - field.field.node.page.field_intro
     - field.field.node.page.field_large_image_left
@@ -53,6 +54,7 @@ third_party_settings:
         - node_title
         - field_intro
         - field_lede
+        - field_hero
         - field_hero_cta_button
         - field_large_image_left
         - field_header_h2_
@@ -84,7 +86,7 @@ mode: default
 content:
   field_content:
     type: entity_reference_revisions_entity_view
-    weight: 9
+    weight: 10
     region: ds_content
     label: hidden
     settings:
@@ -92,7 +94,7 @@ content:
       link: ''
     third_party_settings: {  }
   field_content_sections:
-    weight: 17
+    weight: 18
     label: hidden
     settings:
       view_mode: default
@@ -102,7 +104,7 @@ content:
     region: ds_content
   field_discover_the_uchicago_diff:
     type: entity_reference_revisions_entity_view
-    weight: 16
+    weight: 17
     label: hidden
     settings:
       view_mode: default
@@ -110,7 +112,7 @@ content:
     third_party_settings: {  }
     region: ds_content
   field_get_in_touch_button:
-    weight: 10
+    weight: 11
     label: hidden
     settings:
       trim_length: 80
@@ -123,7 +125,7 @@ content:
     region: ds_content
   field_header_h2_:
     type: smart_trim
-    weight: 8
+    weight: 9
     region: ds_content
     label: hidden
     settings:
@@ -138,9 +140,18 @@ content:
       summary_handler: full
       trim_options: {  }
     third_party_settings: {  }
+  field_hero:
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: area_of_study_hero
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
   field_hero_cta_button:
     type: link
-    weight: 6
+    weight: 7
     region: ds_content
     label: hidden
     settings:
@@ -159,7 +170,7 @@ content:
     region: ds_content
   field_large_image_left:
     type: entity_reference_entity_view
-    weight: 7
+    weight: 8
     region: ds_content
     label: hidden
     settings:
@@ -184,7 +195,7 @@ content:
     third_party_settings: {  }
   field_program_types_preview:
     type: entity_reference_entity_view
-    weight: 11
+    weight: 12
     region: ds_content
     label: hidden
     settings:
@@ -192,7 +203,7 @@ content:
       link: false
     third_party_settings: {  }
   field_related_story:
-    weight: 15
+    weight: 16
     label: hidden
     settings:
       view_mode: featured_story
@@ -210,14 +221,14 @@ content:
       view_mode: default
     third_party_settings: {  }
   field_youvisit_embed:
-    weight: 12
+    weight: 13
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: ds_content
   field_youvisit_header:
-    weight: 13
+    weight: 14
     label: hidden
     settings:
       link_to_entity: false
@@ -225,7 +236,7 @@ content:
     type: string
     region: ds_content
   field_youvisit_paragraph:
-    weight: 14
+    weight: 15
     label: hidden
     settings: {  }
     third_party_settings: {  }
