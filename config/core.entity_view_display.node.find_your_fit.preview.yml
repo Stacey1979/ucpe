@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.find_your_fit.field_lede
     - field.field.node.find_your_fit.field_metatags
     - field.field.node.find_your_fit.field_program_type
+    - field.field.node.find_your_fit.field_split_text
     - field.field.node.find_your_fit.field_text_and_media_1_3_2_3
     - node.type.find_your_fit
   module:
@@ -91,3 +92,4 @@ hidden:
   addtoany: true
   field_format_tag: true
   field_metatags: true
+  field_split_text: true
