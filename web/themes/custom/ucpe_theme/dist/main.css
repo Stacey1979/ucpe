@@ -6760,6 +6760,46 @@ h6 {
     height: 2px;
     width: 25%; }
 
+.body figure figcaption,
+.content figure figcaption {
+  text-align: left;
+  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  color: #767676;
+  line-height: 1.4rem;
+  font-weight: 400; }
+  .body figure figcaption p,
+  .content figure figcaption p {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif !important;
+    font-weight: 400 !important;
+    font-size: .75rem !important;
+    color: #767676 !important;
+    line-height: 1.5rem !important; }
+  .body figure figcaption span.attribute,
+  .content figure figcaption span.attribute {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif !important;
+    font-weight: 400 !important;
+    font-size: .75rem !important;
+    color: #767676 !important;
+    line-height: 1.5rem !important; }
+    .body figure figcaption span.attribute:before,
+    .content figure figcaption span.attribute:before {
+      font-family: "ucpe_icons" !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      text-transform: none !important;
+      speak: none;
+      line-height: 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #767676;
+      content: "c";
+      font-size: 1.5rem;
+      margin-right: 0.25rem;
+      text-decoration: none;
+      vertical-align: text-bottom; }
+
 .divider {
   color: #dcdcdc;
   margin: 0 0.5rem;
@@ -7022,7 +7062,7 @@ nav.tabs ul.nav-tabs li {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
     .content100_wrapper {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
 
 .content100_body {
   margin-right: -15px;
@@ -7042,6 +7082,51 @@ nav.tabs ul.nav-tabs li {
     .content100 {
       float: left;
       width: 100%; } }
+  .content100 figure {
+    margin-bottom: 2rem;
+    max-width: 100%;
+    text-align: center;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .content100 figure {
+        max-width: 50%; } }
+    .content100 figure figcaption {
+      margin-top: 1rem;
+      text-align: left; }
+    .content100 figure img {
+      width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .content100 figure.align-right {
+        float: right;
+        margin-left: 1rem;
+        padding-left: 1rem; } }
+    @media only screen and (min-width: 960px) {
+      .content100 figure.align-right {
+        border-left: solid 1px #dcdcdc;
+        margin-left: 2rem;
+        padding-left: 2rem; } }
+    @media only screen and (min-width: 1200px) {
+      .content100 figure.align-right {
+        margin-right: -8.3333%; } }
+    @media only screen and (min-width: 1440px) {
+      .content100 figure.align-right {
+        margin-right: -16.6666%; } }
+    @media only screen and (min-width: 768px) {
+      .content100 figure.align-left {
+        float: left;
+        margin-right: 1rem;
+        padding-right: 1rem; } }
+    @media only screen and (min-width: 960px) {
+      .content100 figure.align-left {
+        border-right: solid 1px #dcdcdc;
+        margin-right: 2rem;
+        padding-right: 2rem; } }
+    @media only screen and (min-width: 1200px) {
+      .content100 figure.align-left {
+        margin-left: -8.3333%; } }
+    @media only screen and (min-width: 1440px) {
+      .content100 figure.align-left {
+        margin-left: -16.6666%; } }
 
 .content1323 .hdr {
   position: relative;
@@ -7296,7 +7381,7 @@ nav.tabs ul.nav-tabs li {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
     .cta_wrapper {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
   .cta_wrapper:before, .cta_wrapper:after {
     display: table;
     content: " "; }
@@ -7381,7 +7466,7 @@ nav.tabs ul.nav-tabs li {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
     .cta100_wrapper {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
   @media only screen and (min-width: 1200px) {
     .cta100_wrapper {
       margin-bottom: 6rem;
@@ -7489,7 +7574,7 @@ nav.tabs ul.nav-tabs li {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
     .cta_aos {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
   .cta_aos:before, .cta_aos:after {
     display: table;
     content: " "; }
@@ -7720,7 +7805,7 @@ nav.tabs ul.nav-tabs li {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
     .mixed_content_grid {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
   .mixed_content_grid .hdr {
     position: relative;
     min-height: 1px;
@@ -7864,7 +7949,7 @@ nav.tabs ul.nav-tabs li {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
     .card_grid {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
   .card_grid h2 {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
@@ -8341,52 +8426,46 @@ nav.tabs ul.nav-tabs li {
     height: 100%;
     border: 0; }
 
-figure figcaption {
-  margin-top: 1rem;
-  text-align: left; }
-
-figure.content_img {
-  margin-bottom: 2rem;
-  max-width: 100%;
-  text-align: center;
-  width: 100%; }
-  @media only screen and (min-width: 768px) {
-    figure.content_img {
-      max-width: 50%; } }
-  figure.content_img img {
-    width: 100%; }
-  @media only screen and (min-width: 768px) {
-    figure.content_img.right {
+.content_img {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 3rem 0; }
+  @media only screen and (min-width: 960px) {
+    .content_img {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .content_img {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .content_img {
+      max-width: 1300px; } }
+  .content_img figure {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .content_img figure:before, .content_img figure:after {
+      display: table;
+      content: " "; }
+    .content_img figure:after {
+      clear: both; }
+    .content_img figure figcaption {
+      margin-left: 3%;
+      margin-top: 2rem;
       float: right;
-      margin-left: 1rem;
-      padding-left: 1rem; } }
-  @media only screen and (min-width: 960px) {
-    figure.content_img.right {
-      border-left: solid 1px #dcdcdc;
-      margin-left: 2rem;
-      padding-left: 2rem; } }
-  @media only screen and (min-width: 1200px) {
-    figure.content_img.right {
-      margin-right: -8.3333%; } }
-  @media only screen and (min-width: 1440px) {
-    figure.content_img.right {
-      margin-right: -16.6666%; } }
-  @media only screen and (min-width: 768px) {
-    figure.content_img.left {
+      text-align: left;
+      width: 27%; }
+    .content_img figure .img {
       float: left;
-      margin-right: 1rem;
-      padding-right: 1rem; } }
-  @media only screen and (min-width: 960px) {
-    figure.content_img.left {
-      border-right: solid 1px #dcdcdc;
-      margin-right: 2rem;
-      padding-right: 2rem; } }
-  @media only screen and (min-width: 1200px) {
-    figure.content_img.left {
-      margin-left: -8.3333%; } }
-  @media only screen and (min-width: 1440px) {
-    figure.content_img.left {
-      margin-left: -16.6666%; } }
+      width: 70%; }
+      .content_img figure .img img {
+        width: 100%; }
+  .content_img.right figcaption {
+    float: left;
+    margin-right: 3%;
+    margin-left: 0; }
+  .content_img.right .img {
+    float: right; }
 
 img {
   max-width: 100%; }
@@ -8537,7 +8616,7 @@ header {
   @media only screen and (min-width: 1440px) {
     .article,
     .casestudy {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
   .article .content_body,
   .casestudy .content_body {
     margin-right: -15px;
@@ -8628,16 +8707,13 @@ header {
         .casestudy .content_body .article_bottom,
         .casestudy .content_body .casestudy_bottom {
           padding: 0 5rem 5rem 8rem; } }
-      .article .content_body .article_bottom .content_img.left,
-      .article .content_body .casestudy_bottom .content_img.left,
-      .casestudy .content_body .article_bottom .content_img.left,
-      .casestudy .content_body .casestudy_bottom .content_img.left {
-        margin-left: -16.6666%; }
-      .article .content_body .article_bottom .content_img.right,
-      .article .content_body .casestudy_bottom .content_img.right,
-      .casestudy .content_body .article_bottom .content_img.right,
-      .casestudy .content_body .casestudy_bottom .content_img.right {
-        margin-right: -16.6666%; }
+      @media only screen and (min-width: 1200px) {
+        .article .content_body .article_bottom .content_img,
+        .article .content_body .casestudy_bottom .content_img,
+        .casestudy .content_body .article_bottom .content_img,
+        .casestudy .content_body .casestudy_bottom .content_img {
+          margin-left: -8.3333%;
+          margin-right: -8.3333%; } }
       .article .content_body .article_bottom .cta100_wrapper,
       .article .content_body .casestudy_bottom .cta100_wrapper,
       .casestudy .content_body .article_bottom .cta100_wrapper,
@@ -8939,7 +9015,7 @@ header {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
     .story {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
   .story .content_body {
     margin-right: -15px;
     margin-left: -15px; }
@@ -9013,7 +9089,7 @@ header {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
     .page-node-type-area-of-study .area_of_study {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
   .page-node-type-area-of-study .area_of_study .content {
     position: relative;
     min-height: 1px;
@@ -9062,7 +9138,7 @@ header {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
     .program_detail {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
   .program_detail > .content {
     background-color: #ffffff;
     position: relative;
@@ -9225,7 +9301,7 @@ header {
         max-width: 1200px; } }
     @media only screen and (min-width: 1440px) {
       .path-alias--about .content2313_wrapper_full .content2313_wrapper {
-        max-width: 1440px; } }
+        max-width: 1300px; } }
   .path-alias--about .content2313_wrapper_full .content2313 {
     padding-bottom: 4rem; }
     .path-alias--about .content2313_wrapper_full .content2313:before, .path-alias--about .content2313_wrapper_full .content2313:after {
@@ -9313,7 +9389,7 @@ header {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
     .path-alias--about .contentLrgImg_wrapper {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
   .path-alias--about .contentLrgImg_wrapper .contentLrgImg_body {
     margin-right: -15px;
     margin-left: -15px; }
@@ -9344,7 +9420,7 @@ header {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
     .path-alias--about .strengthInNumbers_wrapper {
-      max-width: 1440px; } }
+      max-width: 1300px; } }
 
 .path-alias--about .strengthInNumbers_row {
   margin-right: -15px;
@@ -9571,7 +9647,7 @@ footer.footer {
         max-width: 1200px; } }
     @media only screen and (min-width: 1440px) {
       footer.footer .wrapper {
-        max-width: 1440px; } }
+        max-width: 1300px; } }
   footer.footer .top {
     margin-right: -15px;
     margin-left: -15px;
@@ -9877,7 +9953,7 @@ footer.footer {
         max-width: 1200px; } }
     @media only screen and (min-width: 1440px) {
       .hero_wrapper .hero {
-        max-width: 1440px; } }
+        max-width: 1300px; } }
   .hero_wrapper .field--name-field-image-attribution-wysiwyg {
     position: absolute;
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -9934,7 +10010,7 @@ footer.footer {
         -o-object-fit: cover;
            object-fit: cover;
         width: 100%;
-        max-width: 1800px;
+        max-width: 1600px;
         margin: 0 auto;
         text-align: center; }
     .hero_wrapper.hero_full .field--name-field-image-attribution-wysiwyg {

@@ -1,0 +1,15 @@
+uuid: f3b6f0d6-ef9c-4b8b-8b86-b8824c1ca117
+langcode: en
+status: true
+dependencies: {  }
+name: medium_flex
+label: 'Medium : Flex'
+effects:
+  f5e35232-5c3d-4a73-bfe4-69ec14d729ba:
+    uuid: f5e35232-5c3d-4a73-bfe4-69ec14d729ba
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: false

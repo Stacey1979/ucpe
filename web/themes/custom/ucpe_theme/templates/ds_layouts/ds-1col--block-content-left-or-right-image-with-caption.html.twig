@@ -14,9 +14,11 @@
  * - right: content of right region
  */
 #}
-<figure class="content_img {{ content.field_align.0 }}">
-  <div class="img">
-    {{ content.field_image_l_r_caption|field_value }}
-  </div>
-  <figcaption>{{ content.field_caption|field_value }} {% if content.field_image_attribution_2 is not empty  %}<em class="attribute">{{ content.field_image_attribution_2|field_value }}</em>{% endif %}</figcaption>
-</figure>
+<div class="content_img {{ content.field_align.0 }}">
+  <figure>
+    <div class="img">
+      {{ content.field_image_l_r_caption|field_value }}
+    </div>
+  <figcaption>{{ content.field_caption|field_value }} {% if content.field_image_attribution_2 is not empty  %}<span class="attribute">{{ content.field_image_attribution_2|field_value }}</span>{% endif %}</figcaption>
+  </figure>
+</div>

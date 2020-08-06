@@ -67,6 +67,11 @@ content:
     weight: 0
     label: visually_hidden
     settings:
+      view_mode: content_image_land
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
       link: true
       view_mode: default
     third_party_settings: {  }

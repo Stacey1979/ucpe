@@ -1,0 +1,15 @@
+uuid: e68da4ab-66e6-456e-a5b1-7c8178bdba68
+langcode: en
+status: true
+dependencies: {  }
+name: large_flex
+label: 'Large : Flex'
+effects:
+  ee9672f6-f9c8-46c8-b2ee-025eef7f507a:
+    uuid: ee9672f6-f9c8-46c8-b2ee-025eef7f507a
+    id: image_scale
+    weight: 1
+    data:
+      width: 900
+      height: null
+      upscale: false

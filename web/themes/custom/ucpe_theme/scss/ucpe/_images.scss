@@ -53,64 +53,38 @@
 }
 
 //content images
-figure {
-  .img {
+.content_img {
+  @include make-container;
+  margin: $baseline * 3 0;
+
+  figure {
+    @include make-row;
+
+    figcaption {
+      margin-left: 3%;
+      margin-top: $baseline * 2;
+      float: right;
+      text-align: left;
+      width: 27%;
+    }
+
+    .img {
+      float: left;
+      width: 70%;
+
+      img {
+        width: 100%;
+      }
+    }
   }
-  figcaption {
-    margin-top: $baseline;
-    text-align: left;
-  }
-
-  &.content_img {
-    margin-bottom: $baseline * 2;
-    max-width: 100%;
-    text-align: center;
-    width: 100%;
-    @include screen("tablet") {
-      max-width: 50%;
+  &.right {
+    figcaption {
+      float: left;
+      margin-right: 3%;
+      margin-left: 0;
     }
-
-    img {
-      width: 100%;
-    }
-
-    &.right {
-      @include screen("tablet") {
-        float: right;
-        margin-left: $baseline;
-        padding-left: $baseline;
-      }
-      @include screen("tablet-wide") {
-        border-left: solid 1px $divider-gray;
-        margin-left: $baseline * 2;
-        padding-left: $baseline * 2;
-      }
-      @include screen("desktop") {
-        margin-right: -$colwidth;
-      }
-      @include screen("desktop-wide") {
-        margin-right: -$colwidth * 2;
-      }
-    }
-
-    &.left {
-      @include screen("tablet") {
-        float: left;
-        margin-right: $baseline;
-        padding-right: $baseline;
-      }
-
-      @include screen("tablet-wide") {
-        border-right: solid 1px $divider-gray;
-        margin-right: $baseline * 2;
-        padding-right: $baseline * 2;
-      }
-      @include screen("desktop") {
-        margin-left: -$colwidth;
-      }
-      @include screen("desktop-wide") {
-        margin-left: -$colwidth * 2;
-      }
+    .img {
+      float: right;
     }
   }
 }

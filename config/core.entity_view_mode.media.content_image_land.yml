@@ -1,0 +1,10 @@
+uuid: c1e7d8a0-aacc-42f3-bf60-50f314f0bdc4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.content_image_land
+label: 'Content Image - Landscape'
+targetEntityType: media
+cache: true
