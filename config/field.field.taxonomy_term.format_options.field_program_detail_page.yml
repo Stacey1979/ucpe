@@ -1,0 +1,29 @@
+uuid: c1433e87-7d7b-477e-b084-02e17d01ce37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_program_detail_page
+    - node.type.find_your_fit
+    - taxonomy.vocabulary.format_options
+id: taxonomy_term.format_options.field_program_detail_page
+field_name: field_program_detail_page
+entity_type: taxonomy_term
+bundle: format_options
+label: 'Detail Page'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      find_your_fit: find_your_fit
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,6 +1,6 @@
 uuid: c2c9e2e9-8db3-47e1-8b03-16e406856329
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.additional_areas_of_study
@@ -12,19 +12,19 @@ dependencies:
 id: views_block__additional_areas_of_study_block_2
 theme: ucpe_theme
 region: content
-weight: -13
+weight: 4
 provider: null
 plugin: 'views_block:additional_areas_of_study-block_2'
 settings:
   id: 'views_block:additional_areas_of_study-block_2'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /find-your-fit/programs
+    pages: /partnerships
     negate: false
     context_mapping: {  }

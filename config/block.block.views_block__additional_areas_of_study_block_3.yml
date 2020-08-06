@@ -1,30 +1,30 @@
-uuid: f6aee936-5d26-42f5-ad59-1ec735148bf0
+uuid: cb560b81-d779-4eac-88c5-93f282b2a561
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.masonry_views
+    - views.view.additional_areas_of_study
   module:
     - system
     - views
   theme:
     - ucpe_theme
-id: views_block__masonry_views_block_1
+id: views_block__additional_areas_of_study_block_3
 theme: ucpe_theme
 region: content
-weight: 6
+weight: -4
 provider: null
-plugin: 'views_block:masonry_views-block_1'
+plugin: 'views_block:additional_areas_of_study-block_3'
 settings:
-  id: 'views_block:masonry_views-block_1'
+  id: 'views_block:additional_areas_of_study-block_3'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /index
+    pages: /area-of-study
     negate: false
     context_mapping: {  }

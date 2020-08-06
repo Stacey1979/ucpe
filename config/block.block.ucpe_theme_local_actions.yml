@@ -9,7 +9,7 @@ _core:
 id: ucpe_theme_local_actions
 theme: ucpe_theme
 region: content
-weight: -14
+weight: -16
 provider: null
 plugin: local_actions_block
 settings:

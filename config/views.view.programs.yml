@@ -6,7 +6,6 @@ dependencies:
     - block.block.compareprograms
     - core.entity_view_mode.node.index_page
     - node.type.owned_program_landing_page
-    - system.menu.main
     - taxonomy.vocabulary.area_of_interest
     - taxonomy.vocabulary.duration
     - taxonomy.vocabulary.enrollment_options
@@ -633,6 +632,7 @@ display:
         - 'config:core.entity_view_display.node.owned_program_landing_page.default'
         - 'config:core.entity_view_display.node.owned_program_landing_page.index_page'
         - 'config:core.entity_view_display.node.area_of_study.addition'
+        - 'config:core.entity_view_display.node.area_of_study.aos_aos_index'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
         - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
@@ -713,7 +713,7 @@ display:
       display_extenders: {  }
       path: find-your-fit/programs
       menu:
-        type: normal
+        type: none
         title: 'Explore All Programs'
         description: ''
         expanded: false
@@ -732,6 +732,7 @@ display:
         - user.permissions
       tags:
         - 'config:core.entity_view_display.node.area_of_study.addition'
+        - 'config:core.entity_view_display.node.area_of_study.aos_aos_index'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
         - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
