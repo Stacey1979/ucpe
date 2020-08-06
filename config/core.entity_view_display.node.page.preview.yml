@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.page.field_discover_the_uchicago_diff
     - field.field.node.page.field_get_in_touch_button
     - field.field.node.page.field_header_h2_
+    - field.field.node.page.field_hero
     - field.field.node.page.field_hero_cta_button
     - field.field.node.page.field_intro
     - field.field.node.page.field_large_image_left
@@ -74,6 +75,7 @@ hidden:
   field_discover_the_uchicago_diff: true
   field_get_in_touch_button: true
   field_header_h2_: true
+  field_hero: true
   field_hero_cta_button: true
   field_intro: true
   field_large_image_left: true

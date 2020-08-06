@@ -1,0 +1,10 @@
+uuid: 0face014-d924-4843-8ab3-a0be0d2aecdd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.aos_aos_index
+label: 'AOS: AOS Index'
+targetEntityType: node
+cache: true

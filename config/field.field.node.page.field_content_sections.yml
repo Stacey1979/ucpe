@@ -7,7 +7,9 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.blockquotes
     - paragraphs.paragraphs_type.button_set
+    - paragraphs.paragraphs_type.content_with_image_50_50_
     - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.discover_uchicago_combo
     - paragraphs.paragraphs_type.full_width_content
     - paragraphs.paragraphs_type.header_s_
     - paragraphs.paragraphs_type.horizontal_rule
@@ -47,9 +49,11 @@ settings:
       large_image_with_caption_left_or: large_image_with_caption_left_or
       related_instructors: related_instructors
       statistics: statistics
+      content_with_image_50_50_: content_with_image_50_50_
       text_two_one_third: text_two_one_third
       three_up_illust_img_combo: three_up_illust_img_combo
       three_up_statistics_combo: three_up_statistics_combo
+      discover_uchicago_combo: discover_uchicago_combo
       large_image_with_header_and_cont: large_image_with_header_and_cont
       strength_in_numbers: strength_in_numbers
     target_bundles_drag_drop:
@@ -75,8 +79,8 @@ settings:
         weight: 35
         enabled: false
       content_with_image_50_50_:
+        enabled: true
         weight: 54
-        enabled: false
       cta:
         enabled: true
         weight: 36
@@ -86,6 +90,12 @@ settings:
       designed_for:
         weight: 57
         enabled: false
+      discover_the_uchicago_difference:
+        weight: 63
+        enabled: false
+      discover_uchicago_combo:
+        enabled: true
+        weight: 64
       duration:
         weight: 58
         enabled: false
@@ -131,6 +141,9 @@ settings:
       large_image_with_header_and_cont:
         enabled: true
         weight: 73
+      program_type_preview:
+        weight: 80
+        enabled: false
       ptoc_container:
         weight: 72
         enabled: false

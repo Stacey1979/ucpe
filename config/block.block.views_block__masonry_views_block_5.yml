@@ -12,7 +12,7 @@ dependencies:
 id: views_block__masonry_views_block_5
 theme: ucpe_theme
 region: content
-weight: 4
+weight: 5
 provider: null
 plugin: 'views_block:masonry_views-block_5'
 settings:

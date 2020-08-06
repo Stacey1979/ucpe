@@ -1,0 +1,84 @@
+uuid: 282dd5bc-8ed9-4614-9100-ba78df68ebb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.aos_aos_index
+    - field.field.node.area_of_study.field_areas_of_study
+    - field.field.node.area_of_study.field_featured_programs
+    - field.field.node.area_of_study.field_hero
+    - field.field.node.area_of_study.field_intro_area_study_text
+    - field.field.node.area_of_study.field_lede
+    - field.field.node.area_of_study.field_metatags
+    - field.field.node.area_of_study.field_tagline
+    - field.field.node.area_of_study.field_view_programs_cta
+    - node.type.area_of_study
+  module:
+    - ds
+    - entity_reference_revisions
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: content
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_hero
+        - node_title
+        - field_lede
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.area_of_study.aos_aos_index
+targetEntityType: node
+bundle: area_of_study
+mode: aos_aos_index
+content:
+  field_hero:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: area_of_study_hero
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_lede:
+    type: text_trimmed
+    weight: 2
+    region: ds_content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_areas_of_study: true
+  field_featured_programs: true
+  field_intro_area_study_text: true
+  field_metatags: true
+  field_tagline: true
+  field_view_programs_cta: true
+  links: true
