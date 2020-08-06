@@ -228,7 +228,7 @@ $italic: italic;
     #{$baseline * 1.5},
     $color,
     (),
-    #{$baseline * 2}
+    #{$baseline * 2.4}
   );
   @if $bold {
     font-weight: $sans-serif-semibold;
