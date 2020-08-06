@@ -354,4 +354,35 @@
       }
     }
   }
+  // END HERO AOS
+
+  // START HERO FIND YOUR FIT
+  &.hero_findYourFit {
+    .hero_intro {
+      @include make-sm-column(12);
+      @include screen("tablet-wide") {
+        @include make-sm-column(9);
+      }
+      margin: $baseline * 2 0;
+      p {
+        @include bodycopy_XL($black);
+      }
+    }
+    .hero_content {
+      @include make-sm-column(12);
+      .col1 {
+        @include make-sm-column(12);
+        @include screen("tablet") {
+          @include make-sm-column(5);
+          padding: 0 $colwidth/2;
+        }
+      }
+      .col2 {
+        @include make-sm-column(12);
+        @include screen("tablet") {
+          @include make-sm-column(7);
+        }
+      }
+    }
+  }
 }

@@ -1,4 +1,4 @@
-// Perspectives & Case Studies
+// ARTICLE (PERSPECTIVES) & CASE STUDIES
 .article,
 .casestudy {
   @include make-container();
@@ -81,6 +81,8 @@
     }
   }
 }
+// END - ARTICLE (PERSPECTIVES) & CASE STUDIES
+// ARTICLE
 .article {
   .article_top {
     .written_by {
@@ -169,7 +171,9 @@
     }
   }
 }
+// END - ARTICLE
 
+// CASESTUDY
 .casestudy {
   .share {
     @include make-sm-column(12);
@@ -285,8 +289,9 @@
     @include make-sm-column(12);
   }
 }
+// END - CASESTUDY
 
-// Story
+// STORY
 .story {
   @include make-container();
 
@@ -322,8 +327,9 @@
     }
   }
 }
+// END - STORY
 
-// Area of Study
+// AREA OF STUDY
 .page-node-type-area-of-study {
   .area_of_study {
     @include make-container();
@@ -345,9 +351,9 @@
     }
   }
 }
+// END - AREA OF STUDY
 
 // PROGRAM DETAIL PAGE
-
 .program_detail {
   @include make-container();
 
@@ -430,5 +436,20 @@
   .cta_aos {
     clear: both;
     width: 100%;
+  }
+}
+// END - PROGRAM DETAIL PAGE
+
+// FIND YOU FIT
+.findYourFit {
+  @include make-container;
+  .content_body {
+    @include make-row;
+
+    .content {
+    }
+  }
+  .content2313_wrapper {
+    @include make-sm-column(12);
   }
 }

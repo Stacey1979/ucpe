@@ -22,6 +22,29 @@
   }
 }
 
+// TINY HEADER (Find your Fit, Program Comparison)
+
+.tinyHdr {
+  margin-bottom: $baseline * 2;
+  span,
+  h1 {
+    display: inline;
+    @include bodycopy_S($black_02);
+  }
+  span {
+    @include bodycopy_S($black_02);
+    &:after {
+      display: inline;
+      content: "/";
+      @include bodycopy_M($maroon);
+      margin: 0 $baseline;
+    }
+  }
+  h1 {
+    color: $plum;
+  }
+}
+
 // PROGRAM META INFORMATION (SHEILD STYLES)
 .program_meta {
   background-image: url("#{$image-path}/uc_shield_outline_maroon.svg");

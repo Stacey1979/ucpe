@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+
+<div class="hero_wrapper hero_findYourFit">
+  <div class="hero">
+    <div class="hero_intro">
+      <div class="tinyHdr">
+        <span>{{ node.type.entity.label }}</span>
+        <h1>{{ title|field_value }}</h1>
+      </div>
+      <p>{{ ds_content.field_lede|field_value}}</p>
+    </div>
+    <div class="hero_content">
+      {{ ds_content.field_text_and_media_1_3_2_3}}
+    </div>
+  </div>
+</div>
+<div class="content_wrapper">
+  <div class="findYourFit">
+    <div class="content_body">
+      <div class="content">
+      {{ ds_content|without('','title','field_lede','field_text_and_media_1_3_2_3') }}
+      </div>
+    </div>
+  </div>
+</div>
