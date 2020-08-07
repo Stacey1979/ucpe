@@ -1,6 +1,6 @@
-uuid: c2c9e2e9-8db3-47e1-8b03-16e406856329
+uuid: 031d734a-d54f-4979-8ea3-78c5581acf9d
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.additional_areas_of_study
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - ucpe_theme
-id: views_block__additional_areas_of_study_block_2
+id: views_block__additional_areas_of_study_block_4
 theme: ucpe_theme
 region: content
-weight: 4
+weight: 0
 provider: null
-plugin: 'views_block:additional_areas_of_study-block_2'
+plugin: 'views_block:additional_areas_of_study-block_4'
 settings:
-  id: 'views_block:additional_areas_of_study-block_2'
+  id: 'views_block:additional_areas_of_study-block_4'
   label: ''
   provider: views
   label_display: '0'
