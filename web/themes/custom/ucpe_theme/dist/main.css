@@ -8098,7 +8098,8 @@ nav.tabs ul.nav-tabs li {
 
 .tinyHdr {
   margin-bottom: 2rem; }
-  .tinyHdr span, .tinyHdr h1 {
+  .tinyHdr span,
+  .tinyHdr h1 {
     display: inline;
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 0.875rem;
@@ -9256,37 +9257,106 @@ header {
     clear: both;
     width: 100%; }
 
-.findYourFit {
+.findYourFit .intro_wrapper {
+  margin-right: -15px;
+  margin-left: -15px;
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 4rem 0;
+  margin-bottom: 4rem; }
+  .findYourFit .intro_wrapper:before, .findYourFit .intro_wrapper:after {
+    display: table;
+    content: " "; }
+  .findYourFit .intro_wrapper:after {
+    clear: both; }
+  @media only screen and (min-width: 960px) {
+    .findYourFit .intro_wrapper {
+      padding: 6rem;
+      margin-bottom: 6rem; } }
+  @media only screen and (min-width: 960px) {
+    .findYourFit .intro_wrapper:after {
+      background-color: #800000;
+      bottom: -3rem;
+      content: "";
+      height: 3rem;
+      position: absolute;
+      right: 0;
+      width: 40vw; } }
+  .findYourFit .intro_wrapper .intro_body {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+    @media only screen and (min-width: 960px) {
+      .findYourFit .intro_wrapper .intro_body {
+        max-width: 960px; } }
+    @media only screen and (min-width: 1200px) {
+      .findYourFit .intro_wrapper .intro_body {
+        max-width: 1200px; } }
+    @media only screen and (min-width: 1440px) {
+      .findYourFit .intro_wrapper .intro_body {
+        max-width: 1300px; } }
+    .findYourFit .intro_wrapper .intro_body .intro {
+      margin-right: -15px;
+      margin-left: -15px; }
+      .findYourFit .intro_wrapper .intro_body .intro:before, .findYourFit .intro_wrapper .intro_body .intro:after {
+        display: table;
+        content: " "; }
+      .findYourFit .intro_wrapper .intro_body .intro:after {
+        clear: both; }
+      .findYourFit .intro_wrapper .intro_body .intro h3 {
+        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 2rem;
+        color: #110f0f;
+        font-weight: 900;
+        line-height: 2.75rem; }
+      @media only screen and (min-width: 960px) {
+        .findYourFit .intro_wrapper .intro_body .intro .col1,
+        .findYourFit .intro_wrapper .intro_body .intro .hdr {
+          padding: 0 8.3333%; } }
+      .findYourFit .intro_wrapper .intro_body .intro .col2 h4 {
+        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        color: #585858;
+        font-weight: 500;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+        margin-top: 0; }
+      .findYourFit .intro_wrapper .intro_body .intro .col2 p {
+        margin-bottom: 0;
+        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-size: 1.125rem;
+        color: #350e20;
+        line-height: 1.8rem;
+        font-weight: 500; }
+        .findYourFit .intro_wrapper .intro_body .intro .col2 p a {
+          color: #350e20;
+          text-decoration: none; }
+          .findYourFit .intro_wrapper .intro_body .intro .col2 p a:hover {
+            color: #800000; }
+
+.findYourFit .content_wrapper {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media only screen and (min-width: 960px) {
-    .findYourFit {
+    .findYourFit .content_wrapper {
       max-width: 960px; } }
   @media only screen and (min-width: 1200px) {
-    .findYourFit {
+    .findYourFit .content_wrapper {
       max-width: 1200px; } }
   @media only screen and (min-width: 1440px) {
-    .findYourFit {
+    .findYourFit .content_wrapper {
       max-width: 1300px; } }
-  .findYourFit .content_body {
+  .findYourFit .content_wrapper .content_body {
     margin-right: -15px;
     margin-left: -15px; }
-    .findYourFit .content_body:before, .findYourFit .content_body:after {
+    .findYourFit .content_wrapper .content_body:before, .findYourFit .content_wrapper .content_body:after {
       display: table;
       content: " "; }
-    .findYourFit .content_body:after {
+    .findYourFit .content_wrapper .content_body:after {
       clear: both; }
-  .findYourFit .content2313_wrapper {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
-    @media (min-width: 768px) {
-      .findYourFit .content2313_wrapper {
-        float: left;
-        width: 100%; } }
 
 .path-alias--about .hero_about {
   margin: 4rem 0; }

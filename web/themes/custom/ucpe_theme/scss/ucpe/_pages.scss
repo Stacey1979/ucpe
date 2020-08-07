@@ -442,14 +442,72 @@
 
 // FIND YOU FIT
 .findYourFit {
-  @include make-container;
-  .content_body {
+  .intro_wrapper {
     @include make-row;
+    background-color: $bg-02;
+    position: relative;
+    padding: $baseline * 4 0;
+    margin-bottom: $baseline * 4;
+    @include screen("tablet-wide") {
+      padding: $baseline * 6;
+      margin-bottom: $baseline * 6;
+    }
 
-    .content {
+    &:after {
+      @include screen("tablet-wide") {
+        background-color: $maroon;
+        bottom: -$baseline * 3;
+        content: "";
+        height: $baseline * 3;
+        position: absolute;
+        right: 0;
+        width: 40vw;
+      }
+    }
+
+    .intro_body {
+      @include make-container;
+
+      .intro {
+        @include make-row;
+
+        h3 {
+          @include heading_M($black);
+        }
+
+        .col1,
+        .hdr {
+          @include screen("tablet-wide") {
+            padding: 0 $colwidth;
+          }
+        }
+        .col2 {
+          h4 {
+            @include utility_L($black_02);
+            margin-top: 0;
+          }
+          p {
+            margin-bottom: 0;
+            @include bodycopy_L($plum, $bold: true);
+            a {
+              color: $plum;
+              text-decoration: none;
+
+              &:hover {
+                color: $maroon;
+              }
+            }
+          }
+        }
+      }
     }
   }
-  .content2313_wrapper {
-    @include make-sm-column(12);
+
+  .content_wrapper {
+    @include make-container;
+
+    .content_body {
+      @include make-row;
+    }
   }
 }
