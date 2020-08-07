@@ -1,0 +1,64 @@
+uuid: 739be2ac-1e8a-45a4-90ff-1c902f2bdee5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.marketing_landing_page.field_content_sections
+    - field.field.node.marketing_landing_page.field_hero
+    - field.field.node.marketing_landing_page.field_hero_cta_button
+    - field.field.node.marketing_landing_page.field_lede
+    - node.type.marketing_landing_page
+  module:
+    - entity_reference_revisions
+    - link
+    - text
+    - user
+id: node.marketing_landing_page.default
+targetEntityType: node
+bundle: marketing_landing_page
+mode: default
+content:
+  field_content_sections:
+    weight: 104
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_hero:
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_hero_cta_button:
+    weight: 103
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_lede:
+    weight: 102
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true

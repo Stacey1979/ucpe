@@ -375,3 +375,53 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  block_4:
+    display_plugin: block
+    id: block_4
+    display_title: 'AOS for Partnerships page'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      block_description: 'Areas of Study: Partnerships Page'
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      defaults:
+        style: false
+        row: false
+        arguments: false
+        title: false
+        header: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: area_of_study_link
+      arguments: {  }
+      title: 'Areas of Study'
+      display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h3>Our custom programs are designed to help your team develop comprehensive leadership capabilities.</h3>\r\n<p>Programs cover topics such as</p>"
+            format: full_html
+          plugin_id: text
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

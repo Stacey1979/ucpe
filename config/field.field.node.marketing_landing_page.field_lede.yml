@@ -1,0 +1,28 @@
+uuid: 0980b4a1-5452-4c6d-8d47-ff0c316cc1b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lede
+    - node.type.marketing_landing_page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+    code: '0'
+id: node.marketing_landing_page.field_lede
+field_name: field_lede
+entity_type: node
+bundle: marketing_landing_page
+label: Lede
+description: 'Add the short sentence under the title. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
