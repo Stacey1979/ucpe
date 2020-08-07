@@ -24,11 +24,18 @@
     </div>
   </div>
 </div>
-<div class="content_wrapper">
-  <div class="findYourFit">
+<div class="findYourFit">
+  <div class="intro_wrapper">
+    <div class="intro_body">
+      <div class="intro">
+        {{ ds_content.field_split_text }}
+      </div>
+    </div>
+  </div>
+  <div class="content_wrapper">
     <div class="content_body">
       <div class="content">
-      {{ ds_content|without('','title','field_lede','field_text_and_media_1_3_2_3') }}
+        {{ ds_content|without('field_split_text','title','field_lede','field_text_and_media_1_3_2_3') }}
       </div>
     </div>
   </div>
