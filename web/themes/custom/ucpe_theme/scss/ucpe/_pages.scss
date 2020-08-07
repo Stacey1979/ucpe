@@ -443,18 +443,33 @@
 // FIND YOU FIT
 .findYourFit {
   .intro_wrapper {
-    background-color: $bg-02;
     @include make-row;
+    background-color: $bg-02;
+    position: relative;
     padding: $baseline * 4 0;
+    margin-bottom: $baseline * 4;
     @include screen("tablet-wide") {
       padding: $baseline * 6;
+      margin-bottom: $baseline * 6;
+    }
+
+    &:after {
+      @include screen("tablet-wide") {
+        background-color: $maroon;
+        bottom: -$baseline * 3;
+        content: "";
+        height: $baseline * 3;
+        position: absolute;
+        right: 0;
+        width: 40vw;
+      }
     }
 
     .intro_body {
       @include make-container;
 
       .intro {
-        @include make-sm-column(12);
+        @include make-row;
 
         h3 {
           @include heading_M($black);

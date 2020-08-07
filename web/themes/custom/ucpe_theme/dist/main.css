@@ -9258,10 +9258,12 @@ header {
     width: 100%; }
 
 .findYourFit .intro_wrapper {
-  background-color: #f3f3f3;
   margin-right: -15px;
   margin-left: -15px;
-  padding: 4rem 0; }
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 4rem 0;
+  margin-bottom: 4rem; }
   .findYourFit .intro_wrapper:before, .findYourFit .intro_wrapper:after {
     display: table;
     content: " "; }
@@ -9269,7 +9271,17 @@ header {
     clear: both; }
   @media only screen and (min-width: 960px) {
     .findYourFit .intro_wrapper {
-      padding: 6rem; } }
+      padding: 6rem;
+      margin-bottom: 6rem; } }
+  @media only screen and (min-width: 960px) {
+    .findYourFit .intro_wrapper:after {
+      background-color: #800000;
+      bottom: -3rem;
+      content: "";
+      height: 3rem;
+      position: absolute;
+      right: 0;
+      width: 40vw; } }
   .findYourFit .intro_wrapper .intro_body {
     padding-right: 15px;
     padding-left: 15px;
@@ -9285,14 +9297,13 @@ header {
       .findYourFit .intro_wrapper .intro_body {
         max-width: 1300px; } }
     .findYourFit .intro_wrapper .intro_body .intro {
-      position: relative;
-      min-height: 1px;
-      padding-right: 15px;
-      padding-left: 15px; }
-      @media (min-width: 768px) {
-        .findYourFit .intro_wrapper .intro_body .intro {
-          float: left;
-          width: 100%; } }
+      margin-right: -15px;
+      margin-left: -15px; }
+      .findYourFit .intro_wrapper .intro_body .intro:before, .findYourFit .intro_wrapper .intro_body .intro:after {
+        display: table;
+        content: " "; }
+      .findYourFit .intro_wrapper .intro_body .intro:after {
+        clear: both; }
       .findYourFit .intro_wrapper .intro_body .intro h3 {
         font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
         font-size: 2rem;
@@ -9300,7 +9311,8 @@ header {
         font-weight: 900;
         line-height: 2.75rem; }
       @media only screen and (min-width: 960px) {
-        .findYourFit .intro_wrapper .intro_body .intro .col1, .findYourFit .intro_wrapper .intro_body .intro .hdr {
+        .findYourFit .intro_wrapper .intro_body .intro .col1,
+        .findYourFit .intro_wrapper .intro_body .intro .hdr {
           padding: 0 8.3333%; } }
       .findYourFit .intro_wrapper .intro_body .intro .col2 h4 {
         font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
