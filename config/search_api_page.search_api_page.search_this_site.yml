@@ -1,0 +1,34 @@
+uuid: 7f0f1292-2be1-4307-8ae9-2a75a2444b75
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.search
+id: search_this_site
+label: 'Search this site'
+path: search
+clean_url: true
+show_all_when_no_keys: false
+index: search
+limit: 10
+searched_fields:
+  field_areas_of_study: field_areas_of_study
+  field_bio: field_bio
+  field_content_sections: field_content_sections
+  field_course_code: field_course_code
+  field_course_s_: field_course_s_
+  field_course_summary: field_course_summary
+  field_related_program_tag: field_related_program_tag
+  field_title: field_title
+  field_topics: field_topics
+  title: title
+style: view_modes
+view_mode_configuration:
+  'entity:node':
+    default: search_result
+    overrides:
+      course: ''
+      person: ''
+      ptoc_page: ''
+show_search_form: true
+parse_mode: terms
