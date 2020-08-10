@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.owned_program_interior_page.field_deadlines_block
     - field.field.node.owned_program_interior_page.field_metatags
     - field.field.node.owned_program_interior_page.field_program
-    - field.field.node.owned_program_interior_page.field_program_type
     - field.field.node.owned_program_interior_page.field_tab
     - node.type.owned_program_interior_page
   module:
@@ -107,4 +106,3 @@ content:
 hidden:
   addtoany: true
   field_metatags: true
-  field_program_type: true

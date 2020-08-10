@@ -12,7 +12,7 @@ entity_type: node
 bundle: owned_program_interior_page
 label: Program
 description: 'Enter the program this page belongs to.'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
