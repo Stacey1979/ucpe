@@ -1,6 +1,6 @@
 uuid: 3a56587f-beb4-4b6b-bc52-18f5d996a59f
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.media.story_hero
