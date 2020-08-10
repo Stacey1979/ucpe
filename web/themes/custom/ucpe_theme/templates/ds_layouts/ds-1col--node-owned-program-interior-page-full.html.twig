@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+<div class="hero_wrapper hero_program_interior">
+  <div class="hero">
+    <div class="hero_content">
+      {{ ds_content.field_program }}
+      <h1>{{ title|field_value }}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="content_wrapper">
+  <div class="program_interior">
+    <div class="content">
+    {{ ds_content|without('field_program','title') }}
+  </div>  <!-- /.program_detail -->
+</div>

@@ -439,7 +439,104 @@
   }
 }
 // END - PROGRAM DETAIL PAGE
+// PROGRAM INTERIOR PAGE(S)
 
+.program_interior {
+  @include make-container();
+
+  > .content {
+    background-color: $white;
+
+    @include make-sm-column(12);
+    @include screen("tablet-wide") {
+      @include make-sm-column(10);
+    }
+    @include screen("desktop-wide") {
+      @include make-sm-column(8);
+    }
+
+    .content100_wrapper {
+      margin-bottom: $baseline * 6;
+    }
+  }
+
+  .profile_preview_wrapper {
+    @include make-container();
+    margin-bottom: $baseline * 6;
+    .profile_preview_body {
+      @include make-row;
+    }
+    .profile_preview {
+      @include make-lg-column(12);
+      display: flex;
+
+      .profile_preview_headshot {
+        margin-right: $colwidth;
+        width: $baseline * 7;
+      }
+      .profile_preview_content {
+        flex: 1;
+
+        h3 {
+          @include bodycopy_L($black, $bold: true);
+          margin-bottom: 0;
+        }
+        .job_title p {
+          @include bodycopy_L($black);
+        }
+
+        .relatedCourse_wrapper {
+          background-color: $bg-02;
+          padding: $baseline * 2;
+
+          h4 {
+            @include bodycopy_L($black_02);
+          }
+          ul.relatedCourse {
+            padding: 0;
+
+            li {
+              a {
+                @include bodycopy_M($black, $bold: true);
+                border-bottom: solid 2px $maroon;
+                text-decoration: none;
+                transition: all 0.2s ease-out;
+
+                &:hover {
+                  color: $maroon;
+                  transition: all 0.2s ease-in;
+                }
+              }
+              .course_code {
+                @include utility_M($black);
+              }
+            }
+          }
+        }
+        .bio {
+          &.collapse:not(.show) {
+            height: 72px !important;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          &.collapsing {
+            min-height: 72px !important;
+          }
+        }
+        a.collapsed:after {
+          content: "+ Read More";
+        }
+        a:not(.collapsed):after {
+          content: "- Read Less";
+        }
+      }
+    }
+  }
+}
+
+// END - PROGRAM INTERIOR PAGE(S)
 // FIND YOU FIT
 .findYourFit {
   .intro_wrapper {
