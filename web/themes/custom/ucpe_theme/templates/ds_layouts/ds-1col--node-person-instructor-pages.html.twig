@@ -19,12 +19,13 @@
       <div class="profile_preview_content">
         <h3>{{ title|field_value }}</h3>
         <div class="job_title">{{ ds_content.field_job_title|field_value }}</div>
-        <div class="bio" id="">
+        <div class="bio collapse" id="toggle_{{ node.nid.value }}">
           {{ ds_content.field_bio|field_value }}
           <div class="profile_preview_courses">
             {{ ds_content.field_course_s_|field_value }}
           </div>
         </div>
+        <a role="button" class="showmore collapsed" data-toggle="collapse" href="#toggle_{{ node.nid.value }}" aria-expanded="false" aria-controls="toggle_{{ node.nid.value }}"></a>
       </div>
     </div>
   </div>

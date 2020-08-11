@@ -8082,6 +8082,61 @@ nav.tabs ul.nav-tabs li {
     .card_story .card_story_content .top .headshot {
       float: right; }
 
+.collapse:not(.in) {
+  height: 72px !important;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
+
+.collapsing {
+  min-height: 72px !important; }
+
+a.showmore {
+  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  color: #350e20;
+  line-height: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .2s ease-in; }
+  a.showmore:hover {
+    color: #800000;
+    transition: all .2s ease-out; }
+  a.showmore:after {
+    font-family: "ucpe_icons" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #800000;
+    content: "g";
+    font-size: 1.4rem;
+    vertical-align: sub;
+    padding-left: 0.33333rem; }
+  a.showmore.collapsed:before {
+    content: "View More"; }
+  a.showmore:not(.collapsed):before {
+    content: "View Less"; }
+  a.showmore:not(.collapsed):after {
+    font-family: "ucpe_icons" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #800000;
+    content: "i";
+    font-size: 1rem;
+    vertical-align: middle; }
+
 .three-up {
   display: block; }
   @media only screen and (min-width: 768px) {
@@ -8651,8 +8706,21 @@ header {
   @media only screen and (min-width: 960px) and (min-width: 768px) {
     .program_nav {
       float: left;
-      width: 25%; } }
+      width: 33.33333%; } }
   @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .program_nav {
+      left: 66.66667%; } }
+  @media only screen and (min-width: 1200px) {
+    .program_nav {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .program_nav {
+      float: left;
+      width: 25%; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
     .program_nav {
       left: 75%; } }
   .program_nav nav.navbar {
@@ -8732,29 +8800,28 @@ header {
           width: 100%; }
           .program_nav nav.navbar .navbar-collapse ul.nav li a {
             font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-            font-size: 1.25rem;
+            font-size: 1.125rem;
             color: #110f0f;
             font-weight: 300;
             line-height: 1.65rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
             text-decoration: none;
-            transform: all .2s ease-in; }
+            transition: all .25s ease-in; }
             .program_nav nav.navbar .navbar-collapse ul.nav li a:hover {
               color: #800000;
-              transform: all .2s ease-out; }
+              transition: all .25s ease-out; }
           .program_nav nav.navbar .navbar-collapse ul.nav li.active a {
             background-color: transparent;
             font-weight: 900; }
           .program_nav nav.navbar .navbar-collapse ul.nav li.active:before {
             background-color: #800000;
-            content: '';
+            content: "";
             display: block;
             height: 20px;
             left: 0;
-            top: 10px;
+            top: 9px;
             width: 4px; }
-            @media only screen and (min-width: 768px) {
-              .program_nav nav.navbar .navbar-collapse ul.nav li.active:before {
-                top: 15px; } }
       .program_nav nav.navbar .navbar-collapse .btnGroup {
         position: relative;
         min-height: 1px;
@@ -9453,22 +9520,27 @@ header {
   @media only screen and (min-width: 960px) and (min-width: 768px) {
     .program_interior .content {
       float: left;
-      width: 75%; } }
+      width: 66.66667%; } }
   @media only screen and (min-width: 960px) and (min-width: 768px) {
     .program_interior .content {
-      right: 25%; } }
-    @media only screen and (min-width: 1440px) {
+      right: 33.33333%; } }
+    @media only screen and (min-width: 1200px) {
       .program_interior .content {
         position: relative;
         min-height: 1px;
         padding-right: 15px;
         padding-left: 15px; } }
-  @media only screen and (min-width: 1440px) and (min-width: 768px) {
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
     .program_interior .content {
       float: left;
-      width: 66.66667%; } }
+      width: 75%; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .program_interior .content {
+      right: 25%; } }
     .program_interior .content .content100_wrapper {
-      margin-bottom: 6rem; }
+      border-bottom: solid 1px #dcdcdc;
+      margin-bottom: 4rem;
+      padding-bottom: 4rem; }
   .program_interior .profile_preview_wrapper {
     padding-right: 15px;
     padding-left: 15px;
@@ -9519,7 +9591,7 @@ header {
         color: #110f0f;
         line-height: 1.8rem;
         font-weight: 500;
-        margin-bottom: 0; }
+        margin: 0; }
       .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .job_title p {
         font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
         font-size: 1.125rem;
@@ -9528,6 +9600,7 @@ header {
         font-weight: 400; }
       .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .relatedCourse_wrapper {
         background-color: #f3f3f3;
+        margin-bottom: 1rem;
         padding: 2rem; }
         .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .relatedCourse_wrapper h4 {
           font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -9556,18 +9629,6 @@ header {
             font-weight: 400;
             line-height: 1.8rem;
             text-transform: uppercase; }
-      .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .bio.collapse:not(.show) {
-        height: 72px !important;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical; }
-      .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .bio.collapsing {
-        min-height: 72px !important; }
-      .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content a.collapsed:after {
-        content: "+ Read More"; }
-      .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content a:not(.collapsed):after {
-        content: "- Read Less"; }
 
 .findYourFit .intro_wrapper {
   margin-right: -15px;

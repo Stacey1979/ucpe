@@ -449,15 +449,18 @@
 
     @include make-sm-column(12);
     @include screen("tablet-wide") {
+      @include make-sm-column(8);
+      @include make-sm-column-pull(4);
+    }
+    @include screen("desktop") {
       @include make-sm-column(9);
       @include make-sm-column-pull(3);
     }
-    @include screen("desktop-wide") {
-      @include make-sm-column(8);
-    }
 
     .content100_wrapper {
-      margin-bottom: $baseline * 6;
+      border-bottom: solid 1px $divider-gray;
+      margin-bottom: $baseline * 4;
+      padding-bottom: $baseline * 4;
     }
   }
 
@@ -486,7 +489,7 @@
 
         h3 {
           @include bodycopy_L($black, $bold: true);
-          margin-bottom: 0;
+          margin: 0;
         }
         .job_title p {
           @include bodycopy_L($black);
@@ -494,6 +497,7 @@
 
         .relatedCourse_wrapper {
           background-color: $bg-02;
+          margin-bottom: $baseline;
           padding: $baseline * 2;
 
           h4 {
@@ -519,24 +523,6 @@
               }
             }
           }
-        }
-        .bio {
-          &.collapse:not(.show) {
-            height: 72px !important;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-          }
-          &.collapsing {
-            min-height: 72px !important;
-          }
-        }
-        a.collapsed:after {
-          content: "+ Read More";
-        }
-        a:not(.collapsed):after {
-          content: "- Read Less";
         }
       }
     }
