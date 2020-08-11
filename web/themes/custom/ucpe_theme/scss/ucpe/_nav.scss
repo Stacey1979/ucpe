@@ -97,3 +97,117 @@
     }
   }
 }
+
+// SUBNAV (PROGRAM PAGES)
+
+.program_nav {
+  @include make-container();
+  @include screen("tablet-wide") {
+    @include make-sm-column(3);
+    @include make-sm-column-push(9);
+    margin-top: -$baseline * 20;
+  }
+
+  nav.navbar {
+    background-color: $white;
+    border: solid 1px $divider-gray;
+    border-radius: 4px;
+    padding: $baseline;
+    @include screen("tablet-wide") {
+      padding: $baseline * 2.5 0;
+    }
+
+    .navbar-header {
+      @include make-sm-column(12);
+
+      h3 {
+        @include bodycopy_M($black_02);
+        margin: 0 0 $baseline;
+        @include screen("tablet-wide", $type: max) {
+          display: inline-block;
+          line-height: normal;
+          padding-top: 10px;
+          margin: 0;
+        }
+      }
+      button.navbar-toggle {
+        margin: 0;
+      }
+    }
+    .navbar-collapse {
+      border-top: 0;
+      &.in {
+      }
+
+      ul.nav {
+        @include listreset();
+        padding-top: $baseline * 2;
+        @include make-sm-column(12);
+        @include screen("tablet") {
+          @include make-sm-column(6);
+        }
+        @include screen("tablet-wide") {
+          @include make-sm-column(12);
+          padding: 0;
+        }
+
+        li {
+          width: 100%;
+          a {
+            @include font(
+              $serif-font,
+              $baseline * 1.25,
+              $black,
+              $serif-regular,
+              $baseline * 1.65
+            );
+            text-decoration: none;
+            transform: all 0.2s ease-in;
+
+            &:hover {
+              color: $maroon;
+              transform: all 0.2s ease-out;
+            }
+          }
+
+          &.active {
+            a {
+              background-color: transparent;
+              font-weight: $serif-bold;
+            }
+            &:before {
+              background-color: #800000;
+              content: "";
+              display: block;
+              height: 20px;
+              left: 0;
+              top: 10px;
+              width: 4px;
+
+              @include screen("tablet") {
+                top: 15px;
+              }
+            }
+          }
+        }
+      }
+
+      .btnGroup {
+        @include make-sm-column(12);
+        @include screen("tablet") {
+          @include make-sm-column(6);
+          margin-top: $baseline * 3;
+        }
+        @include screen("tablet-wide") {
+          @include make-sm-column(12);
+          margin-top: $baseline;
+        }
+
+        a {
+          margin: $baseline/2 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
