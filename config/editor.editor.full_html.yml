@@ -55,7 +55,7 @@ settings:
             - A11ychecker
   plugins:
     stylescombo:
-      styles: Noe|Noe
+      styles: ''
     language:
       language_list: un
 image_upload:

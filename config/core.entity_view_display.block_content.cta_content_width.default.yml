@@ -75,6 +75,8 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
+      link: true
+      view_mode: default
     type: entity_reference_entity_view
     region: left
   field_cta_title:
