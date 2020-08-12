@@ -8195,11 +8195,11 @@ nav.tabs ul.nav-tabs li {
     line-height: 1.8rem;
     font-weight: 500;
     border-bottom: solid 2px #800000;
-    transition: all .25s ease-in;
+    transition: all 0.25s ease-in;
     text-decoration: none; }
     .relatedCourse .relatedCourse_content a:hover {
       color: #800000;
-      transition: all .25s ease-out; }
+      transition: all 0.25s ease-out; }
 
 .collapse:not(.in) {
   height: 72px !important;
