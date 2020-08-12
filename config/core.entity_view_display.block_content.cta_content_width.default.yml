@@ -8,9 +8,11 @@ dependencies:
     - field.field.block_content.cta_content_width.field_cta_button
     - field.field.block_content.cta_content_width.field_cta_image
     - field.field.block_content.cta_content_width.field_cta_title
+    - field.field.block_content.cta_content_width.field_image_alignment2
   module:
     - ds
     - link
+    - options
     - text
 third_party_settings:
   ds:
@@ -35,6 +37,7 @@ third_party_settings:
     regions:
       left:
         - field_cta_image
+        - field_image_alignment2
       right:
         - field_cta_title
         - body
@@ -67,14 +70,13 @@ content:
     weight: 0
     label: visually_hidden
     settings:
-      view_mode: content_image_land
+      view_mode: content_image_left_or_right
       link: false
     third_party_settings:
       ds:
         ds_limit: ''
       link: true
       view_mode: default
-    third_party_settings: {  }
     type: entity_reference_entity_view
     region: left
   field_cta_title:
@@ -85,4 +87,11 @@ content:
     third_party_settings: {  }
     type: string
     region: right
+  field_image_alignment2:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: left
 hidden: {  }

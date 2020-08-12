@@ -9,6 +9,7 @@ dependencies:
     - field.field.block_content.cta_full_width.field_cta_button
     - field.field.block_content.cta_full_width.field_cta_image
     - field.field.block_content.cta_full_width.field_cta_title
+    - field.field.block_content.cta_full_width.field_image_alignment
     - image.style.extra_small_1_1_180x180_
   module:
     - ds
@@ -95,4 +96,5 @@ content:
     third_party_settings: {  }
     type: string
     region: left
-hidden: {  }
+hidden:
+  field_image_alignment: true

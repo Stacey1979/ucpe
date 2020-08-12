@@ -67,14 +67,16 @@ module:
   path: 0
   path_alias: 0
   ptoc: 0
-  quickedit: 0
   rdf: 0
   redirect: 0
   redis: 0
   responsive_image: 0
   responsive_menu: 0
   responsive_tables_filter: 0
-  search: 0
+  search_api: 0
+  search_api_page: 0
+  search_api_pantheon: 0
+  search_api_solr: 0
   simple_sitemap: 0
   slick: 0
   slick_paragraphs: 0

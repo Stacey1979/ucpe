@@ -1,0 +1,281 @@
+uuid: b759c78c-7188-436e-9f2b-fc3eb791878f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - field.storage.node.field_about_partnership
+    - field.storage.node.field_areas_of_study
+    - field.storage.node.field_author
+    - field.storage.node.field_based_on
+    - field.storage.node.field_challenge
+    - field.storage.node.field_content_sections
+    - field.storage.node.field_designed_for
+    - field.storage.node.field_email
+    - field.storage.node.field_featured_quote
+    - field.storage.node.field_focus_areas
+    - field.storage.node.field_format_tag
+    - field.storage.node.field_header_h2_
+    - field.storage.node.field_in_brief_perspective
+    - field.storage.node.field_intro
+    - field.storage.node.field_intro_paragraph
+    - field.storage.node.field_intro_area_study_text
+    - field.storage.node.field_job_title
+    - field.storage.node.field_lede
+    - field.storage.node.field_related_program_tag
+    - field.storage.node.field_results
+    - field.storage.node.field_solution
+    - field.storage.node.field_split_text
+    - field.storage.node.field_text_and_media_1_3_2_3
+    - field.storage.node.field_topics
+    - search_api.server.pantheon
+  module:
+    - node
+    - search_api
+id: search
+name: Search
+description: ''
+read_only: false
+field_settings:
+  field_about_partnership:
+    label: 'About this Partnership'
+    datasource_id: 'entity:node'
+    property_path: field_about_partnership
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_about_partnership
+  field_areas_of_study:
+    label: 'Area of Study'
+    datasource_id: 'entity:node'
+    property_path: field_areas_of_study
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_areas_of_study
+  field_author:
+    label: Author
+    datasource_id: 'entity:node'
+    property_path: field_author
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_author
+  field_based_on:
+    label: 'Based on the work of'
+    datasource_id: 'entity:node'
+    property_path: field_based_on
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_based_on
+  field_challenge:
+    label: Challenge
+    datasource_id: 'entity:node'
+    property_path: field_challenge
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_challenge
+  field_content:
+    label: 'About the Event'
+    datasource_id: 'entity:node'
+    property_path: field_content
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_content
+  field_content_sections:
+    label: 'Content Sections'
+    datasource_id: 'entity:node'
+    property_path: field_content_sections
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_content_sections
+  field_designed_for:
+    label: 'Designed For'
+    datasource_id: 'entity:node'
+    property_path: field_designed_for
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_designed_for
+  field_email:
+    label: Email
+    datasource_id: 'entity:node'
+    property_path: field_email
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_email
+  field_featured_quote:
+    label: 'Featured Quote'
+    datasource_id: 'entity:node'
+    property_path: field_featured_quote
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_featured_quote
+  field_focus_areas:
+    label: 'Focus Areas'
+    datasource_id: 'entity:node'
+    property_path: field_focus_areas
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_focus_areas
+  field_format_tag:
+    label: Format
+    datasource_id: 'entity:node'
+    property_path: field_format_tag
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_format_tag
+  field_header_h2_:
+    label: 'Header (h2)'
+    datasource_id: 'entity:node'
+    property_path: field_header_h2_
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_header_h2_
+  field_in_brief_perspective:
+    label: 'In Brief'
+    datasource_id: 'entity:node'
+    property_path: field_in_brief_perspective
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_in_brief_perspective
+  field_intro:
+    label: Intro
+    datasource_id: 'entity:node'
+    property_path: field_intro
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_intro
+  field_intro_area_study_text:
+    label: 'Intro ⅓ + ⅔ Text'
+    datasource_id: 'entity:node'
+    property_path: field_intro_area_study_text
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_intro_area_study_text
+  field_intro_paragraph:
+    label: 'Intro Paragraph'
+    datasource_id: 'entity:node'
+    property_path: field_intro_paragraph
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_intro_paragraph
+  field_job_title:
+    label: 'Job Title'
+    datasource_id: 'entity:node'
+    property_path: field_job_title
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_job_title
+  field_lede:
+    label: Lede
+    datasource_id: 'entity:node'
+    property_path: field_lede
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_lede
+  field_related_program_tag:
+    label: Program
+    datasource_id: 'entity:node'
+    property_path: field_related_program_tag
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_related_program_tag
+  field_results:
+    label: Results
+    datasource_id: 'entity:node'
+    property_path: field_results
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_results
+  field_solution:
+    label: Solution
+    datasource_id: 'entity:node'
+    property_path: field_solution
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_solution
+  field_split_text:
+    label: 'Split Text (⅔ + ⅓)'
+    datasource_id: 'entity:node'
+    property_path: field_split_text
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_split_text
+  field_text_and_media_1_3_2_3:
+    label: 'Text and Media (⅓ + ⅔)'
+    datasource_id: 'entity:node'
+    property_path: field_text_and_media_1_3_2_3
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_text_and_media_1_3_2_3
+  field_topics:
+    label: Topics
+    datasource_id: 'entity:node'
+    property_path: field_topics
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_topics
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 2
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - area_of_study
+        - article
+        - case_study
+        - course
+        - event
+        - find_your_fit
+        - marketing_landing_page
+        - owned_program_interior_page
+        - owned_program_landing_page
+        - page
+        - person
+        - story
+    languages:
+      default: false
+      selected:
+        - en
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: pantheon

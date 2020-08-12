@@ -14,7 +14,7 @@ bundle: cta
 mode: default
 content:
   field_add_cta:
-    weight: 0
+    weight: 1
     settings:
       form_mode: default
       label_singular: ''

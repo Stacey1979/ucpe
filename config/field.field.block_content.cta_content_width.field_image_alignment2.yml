@@ -1,0 +1,21 @@
+uuid: fe1b0ea8-22c8-49f4-a703-1e57d7aa8111
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_content_width
+    - field.storage.block_content.field_image_alignment2
+  module:
+    - options
+id: block_content.cta_content_width.field_image_alignment2
+field_name: field_image_alignment2
+entity_type: block_content
+bundle: cta_content_width
+label: 'Image Alignment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
