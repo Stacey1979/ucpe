@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap);
 @charset "UTF-8";
 /**
  * Default Variables.
@@ -6506,6 +6507,38 @@ a {
   a .btn {
     text-decoration: none; }
 
+.hdr_wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .hdr_wrapper {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .hdr_wrapper {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .hdr_wrapper {
+      max-width: 1300px; } }
+  .hdr_wrapper .hdr_body {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .hdr_wrapper .hdr_body:before, .hdr_wrapper .hdr_body:after {
+      display: table;
+      content: " "; }
+    .hdr_wrapper .hdr_body:after {
+      clear: both; }
+    .hdr_wrapper .hdr_body .hdr {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .hdr_wrapper .hdr_body .hdr {
+          float: left;
+          width: 100%; } }
+
 h1 {
   font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif; }
 
@@ -7053,7 +7086,8 @@ nav.tabs ul.nav-tabs li {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  margin-bottom: 1.5rem; }
   @media only screen and (min-width: 960px) {
     .content100_wrapper {
       max-width: 960px; } }
@@ -8082,6 +8116,91 @@ nav.tabs ul.nav-tabs li {
     .card_story .card_story_content .top .headshot {
       float: right; }
 
+.relatedCourse_wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .relatedCourse_wrapper {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .relatedCourse_wrapper {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .relatedCourse_wrapper {
+      max-width: 1300px; } }
+
+.relatedCourse_body {
+  margin-right: -15px;
+  margin-left: -15px; }
+  .relatedCourse_body:before, .relatedCourse_body:after {
+    display: table;
+    content: " "; }
+  .relatedCourse_body:after {
+    clear: both; }
+
+.relatedCourse {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-left: 4.16665%;
+  margin-bottom: 2rem; }
+  @media (min-width: 768px) {
+    .relatedCourse {
+      float: left;
+      width: 100%; } }
+  @media only screen and (min-width: 1200px) {
+    .relatedCourse {
+      margin-bottom: 4rem; } }
+  .relatedCourse .relatedCourse_hdr {
+    position: relative;
+    margin-bottom: 0.5rem; }
+    .relatedCourse .relatedCourse_hdr h4 {
+      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-size: 1.125rem;
+      color: #110f0f;
+      line-height: 1.8rem;
+      font-weight: 500;
+      display: inline; }
+      .relatedCourse .relatedCourse_hdr h4:before {
+        font-family: "ucpe_icons" !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        speak: none;
+        line-height: 1rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #800000;
+        content: "•";
+        position: absolute;
+        left: -25px;
+        top: 5px; }
+    .relatedCourse .relatedCourse_hdr .divider {
+      vertical-align: text-bottom; }
+    .relatedCourse .relatedCourse_hdr .course_code {
+      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-size: 0.875rem;
+      color: #110f0f;
+      font-weight: 400;
+      line-height: 1.8rem;
+      text-transform: uppercase; }
+  .relatedCourse .relatedCourse_content a {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: #350e20;
+    line-height: 1.8rem;
+    font-weight: 500;
+    border-bottom: solid 2px #800000;
+    transition: all .25s ease-in;
+    text-decoration: none; }
+    .relatedCourse .relatedCourse_content a:hover {
+      color: #800000;
+      transition: all .25s ease-out; }
+
 .collapse:not(.in) {
   height: 72px !important;
   overflow: hidden;
@@ -8099,10 +8218,10 @@ a.showmore {
   line-height: 1.8rem;
   font-weight: 500;
   text-decoration: none;
-  transition: all .2s ease-in; }
+  transition: all 0.2s ease-in; }
   a.showmore:hover {
     color: #800000;
-    transition: all .2s ease-out; }
+    transition: all 0.2s ease-out; }
   a.showmore:after {
     font-family: "ucpe_icons" !important;
     font-style: normal !important;
@@ -8550,6 +8669,9 @@ a.showmore {
   .content_img.right .img {
     float: right; }
 
+* {
+  scroll-behavior: smooth; }
+
 img {
   max-width: 100%; }
 
@@ -8807,10 +8929,10 @@ header {
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
             text-decoration: none;
-            transition: all .25s ease-in; }
+            transition: all 0.25s ease-in; }
             .program_nav nav.navbar .navbar-collapse ul.nav li a:hover {
               color: #800000;
-              transition: all .25s ease-out; }
+              transition: all 0.25s ease-out; }
           .program_nav nav.navbar .navbar-collapse ul.nav li.active a {
             background-color: transparent;
             font-weight: 900; }
@@ -8856,6 +8978,28 @@ header {
         .program_nav nav.navbar .navbar-collapse .btnGroup a {
           margin: 0.5rem 0;
           width: 100%; }
+
+.on_this_page {
+  margin-bottom: 4rem; }
+  @media only screen and (min-width: 1200px) {
+    .on_this_page {
+      margin-bottom: 6rem; } }
+  .on_this_page h3 {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    color: #585858;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.65rem; }
+  .on_this_page .views-row a {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: #350e20;
+    line-height: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 2.25rem; }
 
 .article,
 .casestudy {
@@ -9537,10 +9681,6 @@ header {
   @media only screen and (min-width: 1200px) and (min-width: 768px) {
     .program_interior .content {
       right: 25%; } }
-    .program_interior .content .content100_wrapper {
-      border-bottom: solid 1px #dcdcdc;
-      margin-bottom: 4rem;
-      padding-bottom: 4rem; }
   .program_interior .profile_preview_wrapper {
     padding-right: 15px;
     padding-left: 15px;

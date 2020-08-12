@@ -456,12 +456,6 @@
       @include make-sm-column(9);
       @include make-sm-column-pull(3);
     }
-
-    .content100_wrapper {
-      border-bottom: solid 1px $divider-gray;
-      margin-bottom: $baseline * 4;
-      padding-bottom: $baseline * 4;
-    }
   }
 
   .profile_preview_wrapper {

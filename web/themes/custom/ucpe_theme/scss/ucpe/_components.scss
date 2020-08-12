@@ -2,6 +2,7 @@
 //Content 100% Width
 .content100_wrapper {
   @include make-container;
+  margin-bottom: $baseline * 1.5;
 }
 .content100_body {
   @include make-row;
@@ -881,6 +882,49 @@
       }
     }
     .bottom {
+    }
+  }
+}
+
+// RELATED COURSES BLOCK
+.relatedCourse_wrapper {
+  @include make-container;
+}
+.relatedCourse_body {
+  @include make-row;
+}
+.relatedCourse {
+  @include make-sm-column(12);
+  padding-left: $colwidth/2;
+  margin-bottom: $baseline * 2;
+  @include screen("desktop") {
+    margin-bottom: $baseline * 4;
+  }
+
+  .relatedCourse_hdr {
+    position: relative;
+    h4 {
+      @include bodycopy_L($black, $bold: true);
+      display: inline;
+
+      &:before {
+        @include iconfont($maroon, "\2022");
+        position: absolute;
+        left: -25px;
+        top: 5px;
+      }
+    }
+    .divider {
+      vertical-align: text-bottom;
+    }
+    .course_code {
+      @include utility_M($black);
+    }
+    margin-bottom: $baseline/2;
+  }
+  .relatedCourse_content {
+    a {
+      @include featurelink();
     }
   }
 }
