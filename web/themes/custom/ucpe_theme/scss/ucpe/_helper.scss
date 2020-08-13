@@ -1,3 +1,42 @@
+// COLLAPSE content
+.collapse:not(.in) {
+  height: 72px !important;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.collapsing {
+  min-height: 72px !important;
+}
+
+a.showmore {
+  @include bodycopy_M($plum, $bold: true);
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  &:hover {
+    color: $maroon;
+    transition: all 0.2s ease-out;
+  }
+  &:after {
+    @include iconfont($maroon, "\67");
+    font-size: 1.4rem;
+    vertical-align: sub;
+    padding-left: $baseline/3;
+  }
+  &.collapsed:before {
+    content: "View More";
+  }
+  &:not(.collapsed):before {
+    content: "View Less";
+  }
+  &:not(.collapsed):after {
+    @include iconfont($maroon, "\69");
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+}
+
 //THREE UP CONTENT
 
 .three-up {

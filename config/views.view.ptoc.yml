@@ -60,7 +60,7 @@ display:
       row:
         type: fields
         options:
-          default_field_elements: true
+          default_field_elements: false
           inline: {  }
           separator: ''
           hide_empty: false
@@ -238,7 +238,6 @@ display:
         - 'config:core.entity_view_display.paragraph.blockquotes.blockquotes'
         - 'config:core.entity_view_display.paragraph.blockquotes.default'
         - 'config:core.entity_view_display.paragraph.blockquotes.preview'
-        - 'config:core.entity_view_display.paragraph.button_set.default'
         - 'config:core.entity_view_display.paragraph.button_set.preview'
         - 'config:core.entity_view_display.paragraph.content_sections.default'
         - 'config:core.entity_view_display.paragraph.content_with_image_50_50_.default'
@@ -302,7 +301,6 @@ display:
         - 'config:core.entity_view_display.paragraph.ptoc_text.preview'
         - 'config:core.entity_view_display.paragraph.ptoc_text.ptoc'
         - 'config:core.entity_view_display.paragraph.related_courses.default'
-        - 'config:core.entity_view_display.paragraph.related_instructors.default'
         - 'config:core.entity_view_display.paragraph.related_instructors.preview'
         - 'config:core.entity_view_display.paragraph.related_of_interest.default'
         - 'config:core.entity_view_display.paragraph.related_program_block.default'

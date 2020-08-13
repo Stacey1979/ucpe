@@ -1,0 +1,59 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+<div class="hero_wrapper hero_program_interior">
+  <div class="hero">
+    <div class="hero_content">
+      {{ ds_content.field_program }}
+      <h1>{{ title|field_value }}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="content_wrapper">
+  <div class="program_interior">
+    <div class="program_nav">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <h3>About the program</h3>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Curriculum</a></li>
+              <li class="active"><a href="#">Instructors <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Tuitions, Fees, &amp; Aid</a></li>
+              <li><a href="#">Concentrations</a></li>
+              <li><a href="#">Capstone Project</a></li>
+            </ul>
+            <div class="btnGroup">
+              <a class="btn secondary">How to Apply</a>
+              <a class="btn tertiary">Contact Us</a>
+            </div>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+    <div class="content">
+      {{ ds_content|without('field_program','title') }}
+    </div>  <!-- /.program_detail -->
+  </div>
+</div>  
