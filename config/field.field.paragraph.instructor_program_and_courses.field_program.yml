@@ -12,7 +12,7 @@ entity_type: paragraph
 bundle: instructor_program_and_courses
 label: Program
 description: 'Add program the course(s) fall under. '
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
