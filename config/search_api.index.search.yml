@@ -3,12 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content
     - field.storage.node.field_about_partnership
     - field.storage.node.field_areas_of_study
     - field.storage.node.field_author
     - field.storage.node.field_based_on
     - field.storage.node.field_challenge
+    - field.storage.node.field_content
     - field.storage.node.field_content_sections
     - field.storage.node.field_designed_for
     - field.storage.node.field_email
@@ -18,8 +18,8 @@ dependencies:
     - field.storage.node.field_header_h2_
     - field.storage.node.field_in_brief_perspective
     - field.storage.node.field_intro
-    - field.storage.node.field_intro_paragraph
     - field.storage.node.field_intro_area_study_text
+    - field.storage.node.field_intro_paragraph
     - field.storage.node.field_job_title
     - field.storage.node.field_lede
     - field.storage.node.field_related_program_tag
