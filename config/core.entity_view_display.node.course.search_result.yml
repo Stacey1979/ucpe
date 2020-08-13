@@ -1,8 +1,9 @@
-uuid: 59b9643f-8367-4930-91e3-b91642939bb4
+uuid: 815eb3db-62c1-4680-a9d6-ecc01f2be9fe
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.course.field_areas_of_study
     - field.field.node.course.field_content_sections
     - field.field.node.course.field_course_code
@@ -14,9 +15,6 @@ dependencies:
     - node.type.course
   module:
     - ds
-    - entity_reference_revisions
-    - link
-    - metatag
     - user
 third_party_settings:
   ds:
@@ -39,35 +37,32 @@ third_party_settings:
     regions:
       ds_content:
         - links
+        - 'bundle_field:node'
         - node_title
         - field_course_code
-        - field_related_program_tag
-        - field_content_sections
-        - field_metatags
-        - field_view_upcoming_courses
         - field_course_summary
     fields:
-      node_title:
-        plugin_id: node_title
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
         weight: 1
         label: hidden
         formatter: default
-id: node.course.default
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.course.search_result
 targetEntityType: node
 bundle: course
-mode: default
+mode: search_result
 content:
-  field_content_sections:
-    weight: 4
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
   field_course_code:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
@@ -75,40 +70,11 @@ content:
     type: string
     region: ds_content
   field_course_summary:
-    weight: 7
-    label: above
+    weight: 4
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: ds_content
-  field_metatags:
-    weight: 5
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_empty_formatter
-    region: ds_content
-  field_related_program_tag:
-    weight: 3
-    label: hidden
-    settings:
-      link: false
-    third_party_settings:
-      ds:
-        ds_limit: ''
-    type: entity_reference_label
-    region: ds_content
-  field_view_upcoming_courses:
-    weight: 6
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
     region: ds_content
   links:
     weight: 0
@@ -118,5 +84,9 @@ content:
 hidden:
   addtoany: true
   field_areas_of_study: true
+  field_content_sections: true
+  field_metatags: true
+  field_related_program_tag: true
   field_topics: true
+  field_view_upcoming_courses: true
   search_api_excerpt: true

@@ -1,8 +1,9 @@
-uuid: 68733e32-e134-4ba8-9b33-8fe8505143e0
+uuid: 7eb1e93b-5f47-47b3-876e-5b6be9138571
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.event.field_areas_of_study
     - field.field.node.event.field_author
     - field.field.node.event.field_content
@@ -20,10 +21,9 @@ dependencies:
     - address
     - address_map_link
     - ds
-    - entity_reference_revisions
     - options
     - smart_date
-    - text
+    - smart_trim
     - user
 third_party_settings:
   ds:
@@ -46,58 +46,35 @@ third_party_settings:
     regions:
       ds_content:
         - links
-        - field_event_hero
-        - field_lede
+        - 'bundle_field:node'
+        - node_title
         - field_date_and_time
-        - field_form
-        - field_location
         - field_format
-        - field_content
-        - field_program
-        - field_areas_of_study
-        - addtoany
-        - field_author
-id: node.event.default
+        - field_location
+        - field_lede
+    fields:
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 1
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.event.search_result
 targetEntityType: node
 bundle: event
-mode: default
+mode: search_result
 content:
-  addtoany:
-    weight: 10
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
-  field_areas_of_study:
-    weight: 9
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: ds_content
-  field_author:
-    weight: 11
-    label: above
-    settings:
-      view_mode: bio_without_email
-      link: false
-    third_party_settings:
-      ds:
-        ds_limit: ''
-    type: entity_reference_entity_view
-    region: ds_content
-  field_content:
-    weight: 7
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
   field_date_and_time:
     weight: 3
-    label: above
+    label: visually_hidden
     settings:
       timezone_override: ''
       format: event_date
@@ -106,41 +83,35 @@ content:
     third_party_settings: {  }
     type: smartdate_default
     region: ds_content
-  field_event_hero:
-    type: entity_reference_revisions_entity_view
-    weight: 1
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
-  field_form:
-    weight: 4
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
   field_format:
-    weight: 6
-    label: hidden
+    weight: 4
+    label: visually_hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: ds_content
   field_lede:
-    weight: 2
+    weight: 6
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
     third_party_settings: {  }
-    type: text_default
+    type: smart_trim
     region: ds_content
   field_location:
     weight: 5
-    label: above
+    label: visually_hidden
     settings: {  }
     third_party_settings:
       address_map_link:
@@ -151,20 +122,19 @@ content:
         map_link_new_window: '1'
     type: address_default
     region: ds_content
-  field_program:
-    weight: 8
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: ds_content
   links:
     weight: 0
     region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  addtoany: true
+  field_areas_of_study: true
+  field_author: true
+  field_content: true
+  field_event_hero: true
   field_featured: true
+  field_form: true
   field_location_filter: true
+  field_program: true
   search_api_excerpt: true

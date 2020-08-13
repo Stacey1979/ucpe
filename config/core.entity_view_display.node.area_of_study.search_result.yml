@@ -1,8 +1,9 @@
-uuid: f0493c58-92ef-414e-9aa7-da0c0ecdbbfa
+uuid: 718aa4e6-daed-40f0-8b17-96406f2f26d0
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.area_of_study.field_areas_of_study
     - field.field.node.area_of_study.field_featured_programs
     - field.field.node.area_of_study.field_hero
@@ -14,9 +15,7 @@ dependencies:
     - node.type.area_of_study
   module:
     - ds
-    - entity_reference_revisions
-    - link
-    - text
+    - smart_trim
     - user
 third_party_settings:
   ds:
@@ -39,78 +38,60 @@ third_party_settings:
     regions:
       ds_content:
         - 'bundle_field:node'
+        - node_title
         - field_lede
-        - field_hero
-        - field_view_programs_cta
-        - field_intro_area_study_text
-        - field_featured_programs
-        - node_links
+        - links
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
         weight: 0
         label: hidden
         formatter: default
-      node_links:
-        plugin_id: node_links
-        weight: 6
+      node_title:
+        plugin_id: node_title
+        weight: 1
         label: hidden
         formatter: default
-id: node.area_of_study.default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.area_of_study.search_result
 targetEntityType: node
 bundle: area_of_study
-mode: default
+mode: search_result
 content:
-  field_featured_programs:
-    type: entity_reference_revisions_entity_view
-    weight: 5
-    region: ds_content
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-  field_hero:
-    type: entity_reference_revisions_entity_view
-    weight: 2
-    region: ds_content
-    label: hidden
-    settings:
-      view_mode: area_of_study_hero
-      link: ''
-    third_party_settings: {  }
-  field_intro_area_study_text:
-    type: entity_reference_revisions_entity_view
-    weight: 4
-    region: ds_content
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
   field_lede:
-    weight: 1
+    weight: 2
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
     third_party_settings: {  }
-    type: text_default
+    type: smart_trim
     region: ds_content
-  field_view_programs_cta:
-    type: link
+  links:
     weight: 3
     region: ds_content
-    label: above
-    settings:
-      trim_length: 80
-      rel: ''
-      target: ''
-      url_only: false
-      url_plain: false
+    settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
   field_areas_of_study: true
+  field_featured_programs: true
+  field_hero: true
+  field_intro_area_study_text: true
   field_metatags: true
   field_tagline: true
-  links: true
+  field_view_programs_cta: true
   search_api_excerpt: true

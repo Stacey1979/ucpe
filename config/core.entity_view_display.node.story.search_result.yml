@@ -1,9 +1,9 @@
-uuid: 0dff0282-cf0c-49b8-a9c8-73fe04b236ea
+uuid: 746e21d2-1b39-4f69-8229-b2e9a2189831
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.featured_story
+    - core.entity_view_mode.node.search_result
     - field.field.node.story.body
     - field.field.node.story.field_areas_of_study
     - field.field.node.story.field_author
@@ -19,8 +19,9 @@ dependencies:
     - field.field.node.story.field_story_subject_name
     - node.type.story
   module:
+    - datetime
     - ds
-    - entity_reference_revisions
+    - smart_trim
     - user
 third_party_settings:
   ds:
@@ -42,26 +43,31 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - field_hero
         - 'bundle_field:node'
-        - field_story_subject_name
-        - field_featured_quote
-        - node_link
+        - node_title
+        - field_date_written
+        - reading_time
+        - field_lede
+        - links
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
+        weight: 0
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
         weight: 1
         label: hidden
         formatter: default
-      node_link:
-        plugin_id: node_link
-        weight: 4
-        label: hidden
-        formatter: default
-id: node.story.featured_story
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.story.search_result
 targetEntityType: node
 bundle: story
-mode: featured_story
+mode: search_result
 content:
   field_about_block:
     type: entity_reference_revisions_entity_view
@@ -71,30 +77,34 @@ content:
       link: '1'
     third_party_settings: {  }
     region: ds_content
-  field_featured_quote:
-    type: basic_string
-    weight: 3
-    region: ds_content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-  field_hero:
-    type: entity_reference_revisions_entity_view
-    weight: 0
-    label: hidden
-    settings:
-      view_mode: story_hero
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
-  field_story_subject_name:
-    type: string
+  field_date_written:
     weight: 2
-    region: ds_content
     label: hidden
     settings:
-      link_to_entity: false
+      timezone_override: ''
+      format_type: full_date
     third_party_settings: {  }
+    type: datetime_default
+    region: ds_content
+  field_lede:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
+    third_party_settings: {  }
+    type: smart_trim
+    region: ds_content
   field_written_by:
     weight: 4
     label: inline
@@ -103,6 +113,16 @@ content:
     third_party_settings: {  }
     type: string
     region: ds_content
+  links:
+    weight: 5
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  reading_time:
+    weight: 3
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   addtoany: true
   body: true
@@ -110,12 +130,11 @@ hidden:
   field_author: true
   field_content_sections: true
   field_date_and_lede: true
-  field_date_written: true
   field_featured: true
+  field_featured_quote: true
+  field_hero: true
   field_intro_paragraph: true
-  field_lede: true
   field_metatags: true
   field_related_program_tag: true
-  links: true
-  reading_time: true
+  field_story_subject_name: true
   search_api_excerpt: true

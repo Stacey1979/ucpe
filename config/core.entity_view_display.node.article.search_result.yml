@@ -1,8 +1,9 @@
-uuid: 817a9b98-21ee-4f64-9040-ca310b3faa12
+uuid: ae8ac233-7a2d-48f5-b3db-d11097e94919
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.article.body
     - field.field.node.article.field_areas_of_study
     - field.field.node.article.field_author
@@ -22,9 +23,7 @@ dependencies:
   module:
     - datetime
     - ds
-    - entity_reference_revisions
-    - metatag
-    - text
+    - smart_trim
     - user
 third_party_settings:
   ds:
@@ -46,135 +45,91 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - field_hero
+        - 'bundle_field:node'
+        - node_title
         - field_date_written
-        - field_lede
-        - field_based_on
         - reading_time
-        - field_topics
-        - addtoany
-        - field_in_brief_perspective
-        - field_intro_paragraph
-        - field_content_sections
+        - field_lede
         - links
-        - field_author
-        - field_metatags
+    fields:
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 0
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
-id: node.article.default
+id: node.article.search_result
 targetEntityType: node
 bundle: article
-mode: default
+mode: search_result
 content:
-  addtoany:
-    weight: 6
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
-  field_author:
-    weight: 11
-    label: hidden
-    settings:
-      view_mode: bio_with_email
-      link: false
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: ds_content
-  field_based_on:
-    weight: 3
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: ds_content
-  field_content_sections:
-    type: entity_reference_revisions_entity_view
-    weight: 9
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
   field_date_written:
     type: datetime_default
-    weight: 1
+    weight: 2
     region: ds_content
-    label: hidden
+    label: visually_hidden
     settings:
       timezone_override: ''
       format_type: full_date
     third_party_settings: {  }
-  field_hero:
-    weight: 0
-    label: hidden
-    settings:
-      view_mode: perspectives_case_study_hero_para
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
-  field_in_brief_perspective:
-    type: entity_reference_revisions_entity_view
-    weight: 7
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
-  field_intro_paragraph:
-    type: entity_reference_revisions_entity_view
-    weight: 8
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
   field_lede:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: ds_content
-  field_metatags:
-    weight: 12
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_empty_formatter
-    region: ds_content
-  field_topics:
-    weight: 5
+    weight: 4
     label: hidden
     settings:
-      link: false
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
     third_party_settings: {  }
-    type: entity_reference_label
+    type: smart_trim
     region: ds_content
   links:
-    weight: 10
+    weight: 5
     region: ds_content
     settings: {  }
     third_party_settings: {  }
   reading_time:
-    weight: 4
+    weight: 3
     region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  addtoany: true
   body: true
   field_areas_of_study: true
+  field_author: true
+  field_based_on: true
   field_blockquote: true
   field_blockquote_perspectives: true
+  field_content_sections: true
   field_date_and_lede: true
   field_featured: true
+  field_hero: true
   field_image: true
+  field_in_brief_perspective: true
+  field_intro_paragraph: true
+  field_metatags: true
   field_perspectives_hero: true
   field_perspectives_label: true
   field_read_time: true
   field_related_programs: true
+  field_topics: true
   search_api_excerpt: true

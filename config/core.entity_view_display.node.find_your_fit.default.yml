@@ -44,16 +44,6 @@ third_party_settings:
         - field_content_sections
         - field_metatags
         - field_format_tag
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 1
-        label: hidden
-        formatter: default
-        settings:
-          wrapper: h1
-          class: ''
-          link: false
 id: node.find_your_fit.default
 targetEntityType: node
 bundle: find_your_fit
@@ -116,3 +106,4 @@ content:
 hidden:
   addtoany: true
   field_program_type: true
+  search_api_excerpt: true

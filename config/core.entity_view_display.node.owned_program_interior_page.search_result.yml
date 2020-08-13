@@ -1,8 +1,9 @@
-uuid: 03fedf43-f672-4f1f-91a3-15bedcd75702
+uuid: 93018c24-2a13-47ef-8299-92fb333e3958
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.owned_program_interior_page.field_content_sections
     - field.field.node.owned_program_interior_page.field_deadlines_block
     - field.field.node.owned_program_interior_page.field_metatags
@@ -12,9 +13,7 @@ dependencies:
     - node.type.owned_program_interior_page
   module:
     - ds
-    - entity_reference_revisions
     - user
-    - viewsreference
 third_party_settings:
   ds:
     layout:
@@ -36,76 +35,38 @@ third_party_settings:
     regions:
       ds_content:
         - links
-        - field_program
         - node_title
-        - field_tab
-        - field_deadlines_block
-        - field_content_sections
+        - search_api_excerpt
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 1
         label: hidden
         formatter: default
         settings:
-          wrapper: h1
+          link: true
+          wrapper: h3
           class: ''
-          link: false
-id: node.owned_program_interior_page.default
+id: node.owned_program_interior_page.search_result
 targetEntityType: node
 bundle: owned_program_interior_page
-mode: default
+mode: search_result
 content:
-  field_content_sections:
-    weight: 5
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings:
-      ds:
-        ds_limit: ''
-    type: entity_reference_revisions_entity_view
-    region: ds_content
-  field_deadlines_block:
-    weight: 4
-    label: hidden
-    settings:
-      plugin_types:
-        block: block
-        default: 0
-        page: 0
-        entity_reference: 0
-        feed: 0
-        entity_browser: 0
-    third_party_settings: {  }
-    type: viewsreference_formatter
-    region: ds_content
-  field_program:
-    weight: 1
-    label: hidden
-    settings:
-      view_mode: owned_program_interior_page_header
-      link: false
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: ds_content
-  field_tab:
-    weight: 3
-    label: above
-    settings:
-      plugin_types:
-        - block
-    third_party_settings: {  }
-    type: viewsreference_formatter
-    region: ds_content
   links:
     weight: 0
     region: ds_content
     settings: {  }
     third_party_settings: {  }
+  search_api_excerpt:
+    weight: 2
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   addtoany: true
+  field_content_sections: true
+  field_deadlines_block: true
   field_metatags: true
+  field_program: true
   field_program_type: true
-  search_api_excerpt: true
+  field_tab: true

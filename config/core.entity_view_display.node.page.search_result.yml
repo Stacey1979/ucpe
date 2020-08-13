@@ -1,0 +1,112 @@
+uuid: d14089af-0e15-4488-a3bf-6788f4c37659
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.page.field_content
+    - field.field.node.page.field_content_sections
+    - field.field.node.page.field_discover_the_uchicago_diff
+    - field.field.node.page.field_get_in_touch_button
+    - field.field.node.page.field_header_h2_
+    - field.field.node.page.field_hero
+    - field.field.node.page.field_hero_cta_button
+    - field.field.node.page.field_intro
+    - field.field.node.page.field_large_image_left
+    - field.field.node.page.field_large_landscape_hero
+    - field.field.node.page.field_lede
+    - field.field.node.page.field_program_types_preview
+    - field.field.node.page.field_related_story
+    - field.field.node.page.field_video_home_page_hero
+    - field.field.node.page.field_youvisit_embed
+    - field.field.node.page.field_youvisit_header
+    - field.field.node.page.field_youvisit_paragraph
+    - node.type.page
+  module:
+    - ds
+    - smart_trim
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - node_title
+        - field_lede
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.search_result
+targetEntityType: node
+bundle: page
+mode: search_result
+content:
+  field_lede:
+    type: smart_trim
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_content: true
+  field_content_sections: true
+  field_discover_the_uchicago_diff: true
+  field_get_in_touch_button: true
+  field_header_h2_: true
+  field_hero: true
+  field_hero_cta_button: true
+  field_intro: true
+  field_large_image_left: true
+  field_large_landscape_hero: true
+  field_program_types_preview: true
+  field_related_story: true
+  field_video_home_page_hero: true
+  field_youvisit_embed: true
+  field_youvisit_header: true
+  field_youvisit_paragraph: true
+  search_api_excerpt: true

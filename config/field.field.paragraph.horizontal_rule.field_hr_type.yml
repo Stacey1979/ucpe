@@ -1,0 +1,21 @@
+uuid: 70cc9510-5b97-4166-9096-51efc7184ca2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hr_type
+    - paragraphs.paragraphs_type.horizontal_rule
+  module:
+    - options
+id: paragraph.horizontal_rule.field_hr_type
+field_name: field_hr_type
+entity_type: paragraph
+bundle: horizontal_rule
+label: 'HR Type'
+description: 'Choose which style of hr you would like. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

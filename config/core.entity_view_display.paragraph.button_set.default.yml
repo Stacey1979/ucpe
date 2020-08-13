@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.button_set.field_optional_title
     - field.field.paragraph.button_set.field_primary_button
     - field.field.paragraph.button_set.field_secondary_button
     - field.field.paragraph.button_set.field_tertiary_button
@@ -18,15 +19,19 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes: {  }
+        label: ''
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
     regions:
       ds_content:
+        - field_optional_title
         - field_primary_button
         - field_secondary_button
         - field_tertiary_button
@@ -35,8 +40,16 @@ targetEntityType: paragraph
 bundle: button_set
 mode: default
 content:
-  field_primary_button:
+  field_optional_title:
     weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_primary_button:
+    weight: 1
     label: hidden
     settings:
       trim_length: 80
@@ -46,20 +59,8 @@ content:
       target: '0'
     third_party_settings: {  }
     type: link
-    region: content
+    region: ds_content
   field_secondary_button:
-    weight: 1
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_tertiary_button:
     weight: 2
     label: hidden
     settings:
@@ -70,5 +71,18 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
-hidden: {  }
+    region: ds_content
+  field_tertiary_button:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+hidden:
+  search_api_excerpt: true

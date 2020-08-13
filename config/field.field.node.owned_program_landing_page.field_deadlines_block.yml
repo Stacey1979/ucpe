@@ -13,18 +13,16 @@ field_name: field_deadlines_block
 entity_type: node
 bundle: owned_program_landing_page
 label: 'Deadlines Block'
-description: 'If this program has deadlines, choose "Deadlines" from the dropdown. DO NOT edit the Display ID field. '
+description: 'If this program has deadlines, choose "Deadlines" from the first dropdown, then choose "Landing Page Deadlines" from the Display dropdown.'
 required: false
 translatable: false
 default_value:
   -
     options:
-      title: 0
       argument: ''
+      title: 0
     display_id: block_1
-    argument: null
-    title: 0
-    data: null
+    data: 'a:5:{s:5:"pager";N;s:8:"argument";s:0:"";s:5:"limit";N;s:6:"offset";N;s:5:"title";i:0;}'
     target_uuid: 048d8129-b9ef-4794-b8ce-0a9fde707e79
 default_value_callback: ''
 settings:
@@ -50,6 +48,7 @@ settings:
     event_date: 0
     featured: 0
     files: 0
+    find_your_fit: 0
     frontpage: 0
     masonry_views: 0
     media: 0
@@ -65,8 +64,8 @@ settings:
     who_s_new: 0
   enabled_settings:
     argument: argument
-    offset: 0
-    limit: 0
-    pager: 0
     title: title
+    pager: 0
+    limit: 0
+    offset: 0
 field_type: viewsreference

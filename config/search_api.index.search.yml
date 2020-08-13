@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.block_content.body
     - field.storage.node.field_content
     - field.storage.node.field_about_partnership
     - field.storage.node.field_areas_of_study
@@ -28,15 +29,31 @@ dependencies:
     - field.storage.node.field_split_text
     - field.storage.node.field_text_and_media_1_3_2_3
     - field.storage.node.field_topics
+    - field.storage.paragraph.field_blockquote
+    - field.storage.paragraph.field_image_carousel_items
+    - field.storage.paragraph.field_short_description
+    - field.storage.paragraph.field_three_up_short_description
+    - field.storage.paragraph.field_statistic_sentence
+    - field.storage.paragraph.field_optional_title
     - search_api.server.pantheon
   module:
     - node
     - search_api
+    - block_content
+    - paragraphs
 id: search
 name: Search
 description: ''
 read_only: false
 field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:block_content'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.block_content.body
   field_about_partnership:
     label: 'About this Partnership'
     datasource_id: 'entity:node'
@@ -69,6 +86,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_based_on
+  field_blockquote:
+    label: Blockquote
+    datasource_id: 'entity:paragraph'
+    property_path: field_blockquote
+    type: text
+    dependencies:
+      config:
+        - field.storage.paragraph.field_blockquote
   field_challenge:
     label: Challenge
     datasource_id: 'entity:node'
@@ -141,6 +166,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_header_h2_
+  field_image_carousel_items:
+    label: 'Image Carousel Items'
+    datasource_id: 'entity:paragraph'
+    property_path: field_image_carousel_items
+    type: text
+    dependencies:
+      config:
+        - field.storage.paragraph.field_image_carousel_items
   field_in_brief_perspective:
     label: 'In Brief'
     datasource_id: 'entity:node'
@@ -189,6 +222,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_lede
+  field_optional_title:
+    label: Title
+    datasource_id: 'entity:paragraph'
+    property_path: field_optional_title
+    type: text
+    dependencies:
+      config:
+        - field.storage.paragraph.field_optional_title
   field_related_program_tag:
     label: Program
     datasource_id: 'entity:node'
@@ -205,6 +246,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_results
+  field_short_description:
+    label: 'Short Description'
+    datasource_id: 'entity:paragraph'
+    property_path: field_short_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.paragraph.field_short_description
   field_solution:
     label: Solution
     datasource_id: 'entity:node'
@@ -221,6 +270,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_split_text
+  field_statistic_sentence:
+    label: 'Statistic Sentence'
+    datasource_id: 'entity:paragraph'
+    property_path: field_statistic_sentence
+    type: text
+    dependencies:
+      config:
+        - field.storage.paragraph.field_statistic_sentence
   field_text_and_media_1_3_2_3:
     label: 'Text and Media (⅓ + ⅔)'
     datasource_id: 'entity:node'
@@ -229,6 +286,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_text_and_media_1_3_2_3
+  field_three_up_short_description:
+    label: 'Short Description'
+    datasource_id: 'entity:paragraph'
+    property_path: field_three_up_short_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.paragraph.field_three_up_short_description
   field_topics:
     label: Topics
     datasource_id: 'entity:node'
@@ -247,6 +312,14 @@ field_settings:
       module:
         - node
 datasource_settings:
+  'entity:block_content':
+    bundles:
+      default: true
+      selected:
+        - statistic
+    languages:
+      default: true
+      selected: {  }
   'entity:node':
     bundles:
       default: false
@@ -267,6 +340,36 @@ datasource_settings:
       default: false
       selected:
         - en
+  'entity:paragraph':
+    bundles:
+      default: true
+      selected:
+        - about_person
+        - about_student
+        - at_a_glance
+        - blockquotes
+        - content_sections
+        - content_with_image_50_50_
+        - cta
+        - designed_for
+        - discover_uchicago_combo
+        - duration
+        - full_width_content
+        - header_s_
+        - in_brief
+        - instructor_program_courses_combo
+        - intro_paragraph
+        - large_image_with_caption_left_or
+        - large_image_with_header_and_cont
+        - strength_in_numbers
+        - text_one_two_third
+        - text_two_one_third
+        - text_with_media_1_3_2_3_
+        - three_up_illust_img_combo
+        - three_up_statistics_combo
+    languages:
+      default: true
+      selected: {  }
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
