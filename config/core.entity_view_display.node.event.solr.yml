@@ -1,20 +1,25 @@
-uuid: 718aa4e6-daed-40f0-8b17-96406f2f26d0
+uuid: 6d5f92a5-e263-464b-ad78-339c9a9bc495
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
-    - field.field.node.area_of_study.field_areas_of_study
-    - field.field.node.area_of_study.field_featured_programs
-    - field.field.node.area_of_study.field_hero
-    - field.field.node.area_of_study.field_intro_area_study_text
-    - field.field.node.area_of_study.field_lede
-    - field.field.node.area_of_study.field_metatags
-    - field.field.node.area_of_study.field_tagline
-    - field.field.node.area_of_study.field_view_programs_cta
-    - node.type.area_of_study
+    - core.entity_view_mode.node.solr
+    - field.field.node.event.field_areas_of_study
+    - field.field.node.event.field_author
+    - field.field.node.event.field_content
+    - field.field.node.event.field_date_and_time
+    - field.field.node.event.field_event_hero
+    - field.field.node.event.field_featured
+    - field.field.node.event.field_form
+    - field.field.node.event.field_format
+    - field.field.node.event.field_lede
+    - field.field.node.event.field_location
+    - field.field.node.event.field_location_filter
+    - field.field.node.event.field_program
+    - node.type.event
   module:
     - ds
+    - smart_date
     - smart_trim
     - user
 third_party_settings:
@@ -37,30 +42,36 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - 'bundle_field:node'
         - node_title
+        - field_date_and_time
         - field_lede
-        - links
+        - search_api_excerpt
     fields:
-      'bundle_field:node':
-        plugin_id: 'bundle_field:node'
-        weight: 0
-        label: hidden
-        formatter: default
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 0
         label: hidden
         formatter: default
         settings:
           link: true
           wrapper: h3
           class: ''
-id: node.area_of_study.search_result
+id: node.event.solr
 targetEntityType: node
-bundle: area_of_study
-mode: search_result
+bundle: event
+mode: solr
 content:
+  field_date_and_time:
+    weight: 1
+    label: visually_hidden
+    settings:
+      timezone_override: ''
+      format: event_date
+      force_chronological: false
+      format_type: medium
+    third_party_settings: {  }
+    type: smartdate_default
+    region: ds_content
   field_lede:
     weight: 2
     label: hidden
@@ -80,7 +91,7 @@ content:
     third_party_settings: {  }
     type: smart_trim
     region: ds_content
-  links:
+  search_api_excerpt:
     weight: 3
     region: ds_content
     settings: {  }
@@ -88,10 +99,13 @@ content:
 hidden:
   addtoany: true
   field_areas_of_study: true
-  field_featured_programs: true
-  field_hero: true
-  field_intro_area_study_text: true
-  field_metatags: true
-  field_tagline: true
-  field_view_programs_cta: true
-  search_api_excerpt: true
+  field_author: true
+  field_content: true
+  field_event_hero: true
+  field_featured: true
+  field_form: true
+  field_format: true
+  field_location: true
+  field_location_filter: true
+  field_program: true
+  links: true

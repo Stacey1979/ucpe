@@ -1,9 +1,9 @@
-uuid: d14089af-0e15-4488-a3bf-6788f4c37659
+uuid: 6558fb74-ef12-4076-840f-797763b072f8
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
+    - core.entity_view_mode.node.solr
     - field.field.node.page.field_content
     - field.field.node.page.field_content_sections
     - field.field.node.page.field_discover_the_uchicago_diff
@@ -47,8 +47,9 @@ third_party_settings:
     regions:
       ds_content:
         - node_title
+        - field_intro
         - field_lede
-        - links
+        - search_api_excerpt
     fields:
       node_title:
         plugin_id: node_title
@@ -61,18 +62,18 @@ third_party_settings:
           class: ''
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
-id: node.page.search_result
+id: node.page.solr
 targetEntityType: node
 bundle: page
-mode: search_result
+mode: solr
 content:
-  field_lede:
+  field_intro:
     type: smart_trim
     weight: 1
     region: ds_content
     label: hidden
     settings:
-      trim_length: 600
+      trim_length: 200
       trim_type: chars
       trim_suffix: ''
       wrap_class: trimmed
@@ -85,8 +86,27 @@ content:
       more_link: false
       summary_handler: full
     third_party_settings: {  }
-  links:
+  field_lede:
+    type: smart_trim
     weight: 2
+    region: ds_content
+    label: hidden
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
+    third_party_settings: {  }
+  search_api_excerpt:
+    weight: 3
     region: ds_content
     settings: {  }
     third_party_settings: {  }
@@ -100,7 +120,6 @@ hidden:
   field_header_h2_: true
   field_hero: true
   field_hero_cta_button: true
-  field_intro: true
   field_large_image_left: true
   field_large_landscape_hero: true
   field_program_types_preview: true
@@ -109,4 +128,4 @@ hidden:
   field_youvisit_embed: true
   field_youvisit_header: true
   field_youvisit_paragraph: true
-  search_api_excerpt: true
+  links: true

@@ -1,9 +1,9 @@
-uuid: ae8ac233-7a2d-48f5-b3db-d11097e94919
+uuid: 3c4f67d2-b7d7-405d-ad36-eb3b57a7f12f
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
+    - core.entity_view_mode.node.solr
     - field.field.node.article.body
     - field.field.node.article.field_areas_of_study
     - field.field.node.article.field_author
@@ -45,21 +45,14 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - 'bundle_field:node'
         - node_title
         - field_date_written
-        - reading_time
         - field_lede
-        - links
+        - search_api_excerpt
     fields:
-      'bundle_field:node':
-        plugin_id: 'bundle_field:node'
-        weight: 0
-        label: hidden
-        formatter: default
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 0
         label: hidden
         formatter: default
         settings:
@@ -68,22 +61,22 @@ third_party_settings:
           class: ''
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
-id: node.article.search_result
+id: node.article.solr
 targetEntityType: node
 bundle: article
-mode: search_result
+mode: solr
 content:
   field_date_written:
     type: datetime_default
-    weight: 2
+    weight: 1
     region: ds_content
-    label: visually_hidden
+    label: hidden
     settings:
       timezone_override: ''
       format_type: full_date
     third_party_settings: {  }
   field_lede:
-    weight: 4
+    weight: 2
     label: hidden
     settings:
       trim_length: 600
@@ -101,12 +94,7 @@ content:
     third_party_settings: {  }
     type: smart_trim
     region: ds_content
-  links:
-    weight: 5
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
-  reading_time:
+  search_api_excerpt:
     weight: 3
     region: ds_content
     settings: {  }
@@ -132,4 +120,5 @@ hidden:
   field_read_time: true
   field_related_programs: true
   field_topics: true
-  search_api_excerpt: true
+  links: true
+  reading_time: true

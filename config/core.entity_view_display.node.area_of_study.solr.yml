@@ -1,9 +1,9 @@
-uuid: 718aa4e6-daed-40f0-8b17-96406f2f26d0
+uuid: c1f4ec49-9046-40ee-928e-1714e71edc95
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
+    - core.entity_view_mode.node.solr
     - field.field.node.area_of_study.field_areas_of_study
     - field.field.node.area_of_study.field_featured_programs
     - field.field.node.area_of_study.field_hero
@@ -40,7 +40,7 @@ third_party_settings:
         - 'bundle_field:node'
         - node_title
         - field_lede
-        - links
+        - search_api_excerpt
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
@@ -56,10 +56,10 @@ third_party_settings:
           link: true
           wrapper: h3
           class: ''
-id: node.area_of_study.search_result
+id: node.area_of_study.solr
 targetEntityType: node
 bundle: area_of_study
-mode: search_result
+mode: solr
 content:
   field_lede:
     weight: 2
@@ -80,7 +80,7 @@ content:
     third_party_settings: {  }
     type: smart_trim
     region: ds_content
-  links:
+  search_api_excerpt:
     weight: 3
     region: ds_content
     settings: {  }
@@ -94,4 +94,4 @@ hidden:
   field_metatags: true
   field_tagline: true
   field_view_programs_cta: true
-  search_api_excerpt: true
+  links: true

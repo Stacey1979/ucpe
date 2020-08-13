@@ -1,9 +1,9 @@
-uuid: 93018c24-2a13-47ef-8299-92fb333e3958
+uuid: de5668ad-1a50-4886-b715-bbb783185a40
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
+    - core.entity_view_mode.node.solr
     - field.field.node.owned_program_interior_page.field_content_sections
     - field.field.node.owned_program_interior_page.field_deadlines_block
     - field.field.node.owned_program_interior_page.field_metatags
@@ -47,10 +47,10 @@ third_party_settings:
           link: true
           wrapper: h3
           class: ''
-id: node.owned_program_interior_page.search_result
+id: node.owned_program_interior_page.solr
 targetEntityType: node
 bundle: owned_program_interior_page
-mode: search_result
+mode: solr
 content:
   links:
     weight: 0

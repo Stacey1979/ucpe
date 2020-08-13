@@ -1,18 +1,17 @@
-uuid: 718aa4e6-daed-40f0-8b17-96406f2f26d0
+uuid: 8a4a62bb-6eac-484d-9605-a40a1e4658e7
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
-    - field.field.node.area_of_study.field_areas_of_study
-    - field.field.node.area_of_study.field_featured_programs
-    - field.field.node.area_of_study.field_hero
-    - field.field.node.area_of_study.field_intro_area_study_text
-    - field.field.node.area_of_study.field_lede
-    - field.field.node.area_of_study.field_metatags
-    - field.field.node.area_of_study.field_tagline
-    - field.field.node.area_of_study.field_view_programs_cta
-    - node.type.area_of_study
+    - core.entity_view_mode.node.solr
+    - field.field.node.find_your_fit.field_content_sections
+    - field.field.node.find_your_fit.field_format_tag
+    - field.field.node.find_your_fit.field_lede
+    - field.field.node.find_your_fit.field_metatags
+    - field.field.node.find_your_fit.field_program_type
+    - field.field.node.find_your_fit.field_split_text
+    - field.field.node.find_your_fit.field_text_and_media_1_3_2_3
+    - node.type.find_your_fit
   module:
     - ds
     - smart_trim
@@ -40,7 +39,7 @@ third_party_settings:
         - 'bundle_field:node'
         - node_title
         - field_lede
-        - links
+        - search_api_excerpt
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
@@ -56,10 +55,10 @@ third_party_settings:
           link: true
           wrapper: h3
           class: ''
-id: node.area_of_study.search_result
+id: node.find_your_fit.solr
 targetEntityType: node
-bundle: area_of_study
-mode: search_result
+bundle: find_your_fit
+mode: solr
 content:
   field_lede:
     weight: 2
@@ -80,18 +79,17 @@ content:
     third_party_settings: {  }
     type: smart_trim
     region: ds_content
-  links:
+  search_api_excerpt:
     weight: 3
     region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
-  field_areas_of_study: true
-  field_featured_programs: true
-  field_hero: true
-  field_intro_area_study_text: true
+  field_content_sections: true
+  field_format_tag: true
   field_metatags: true
-  field_tagline: true
-  field_view_programs_cta: true
-  search_api_excerpt: true
+  field_program_type: true
+  field_split_text: true
+  field_text_and_media_1_3_2_3: true
+  links: true

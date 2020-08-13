@@ -40,20 +40,50 @@ searched_fields:
   title: title
 style: view_modes
 view_mode_configuration:
-  'entity:node':
-    default: search_result
+  'entity:block_content':
+    default: default
     overrides:
-      area_of_study: ''
-      article: ''
-      case_study: ''
-      course: ''
-      event: ''
-      find_your_fit: ''
-      marketing_landing_page: ''
-      owned_program_interior_page: ''
-      owned_program_landing_page: ''
-      page: ''
-      person: ''
-      story: ''
+      statistic: ''
+  'entity:node':
+    default: solr
+    overrides:
+      area_of_study: solr
+      article: solr
+      case_study: solr
+      course: solr
+      event: solr
+      find_your_fit: solr
+      marketing_landing_page: solr
+      owned_program_interior_page: solr
+      owned_program_landing_page: solr
+      page: solr
+      person: solr
+      story: solr
+  'entity:paragraph':
+    default: default
+    overrides:
+      about_person: ''
+      about_student: ''
+      at_a_glance: ''
+      blockquotes: ''
+      content_sections: ''
+      content_with_image_50_50_: ''
+      cta: ''
+      designed_for: ''
+      discover_uchicago_combo: ''
+      duration: ''
+      full_width_content: ''
+      header_s_: ''
+      instructor_program_courses_combo: ''
+      intro_paragraph: ''
+      in_brief: ''
+      large_image_with_caption_left_or: ''
+      large_image_with_header_and_cont: ''
+      strength_in_numbers: ''
+      text_one_two_third: ''
+      text_two_one_third: ''
+      text_with_media_1_3_2_3_: ''
+      three_up_illust_img_combo: ''
+      three_up_statistics_combo: ''
 show_search_form: true
-parse_mode: terms
+parse_mode: direct

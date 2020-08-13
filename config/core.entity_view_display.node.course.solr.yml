@@ -1,18 +1,18 @@
-uuid: 718aa4e6-daed-40f0-8b17-96406f2f26d0
+uuid: 89ab80ea-035f-4f58-8067-a8b98283f63b
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
-    - field.field.node.area_of_study.field_areas_of_study
-    - field.field.node.area_of_study.field_featured_programs
-    - field.field.node.area_of_study.field_hero
-    - field.field.node.area_of_study.field_intro_area_study_text
-    - field.field.node.area_of_study.field_lede
-    - field.field.node.area_of_study.field_metatags
-    - field.field.node.area_of_study.field_tagline
-    - field.field.node.area_of_study.field_view_programs_cta
-    - node.type.area_of_study
+    - core.entity_view_mode.node.solr
+    - field.field.node.course.field_areas_of_study
+    - field.field.node.course.field_content_sections
+    - field.field.node.course.field_course_code
+    - field.field.node.course.field_course_summary
+    - field.field.node.course.field_metatags
+    - field.field.node.course.field_related_program_tag
+    - field.field.node.course.field_topics
+    - field.field.node.course.field_view_upcoming_courses
+    - node.type.course
   module:
     - ds
     - smart_trim
@@ -39,8 +39,9 @@ third_party_settings:
       ds_content:
         - 'bundle_field:node'
         - node_title
-        - field_lede
-        - links
+        - field_course_code
+        - field_course_summary
+        - search_api_excerpt
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
@@ -56,16 +57,26 @@ third_party_settings:
           link: true
           wrapper: h3
           class: ''
-id: node.area_of_study.search_result
+id: node.course.solr
 targetEntityType: node
-bundle: area_of_study
-mode: search_result
+bundle: course
+mode: solr
 content:
-  field_lede:
+  field_course_code:
     weight: 2
     label: hidden
     settings:
-      trim_length: 600
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_course_summary:
+    type: smart_trim
+    weight: 3
+    region: ds_content
+    label: hidden
+    settings:
+      trim_length: 200
       trim_type: chars
       trim_suffix: ''
       wrap_class: trimmed
@@ -78,20 +89,17 @@ content:
       more_link: false
       summary_handler: full
     third_party_settings: {  }
-    type: smart_trim
-    region: ds_content
-  links:
-    weight: 3
+  search_api_excerpt:
+    weight: 4
     region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
   field_areas_of_study: true
-  field_featured_programs: true
-  field_hero: true
-  field_intro_area_study_text: true
+  field_content_sections: true
   field_metatags: true
-  field_tagline: true
-  field_view_programs_cta: true
-  search_api_excerpt: true
+  field_related_program_tag: true
+  field_topics: true
+  field_view_upcoming_courses: true
+  links: true

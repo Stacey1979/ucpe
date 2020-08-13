@@ -1,13 +1,14 @@
-uuid: 15ba493d-d5fe-4023-a724-3959e9c30a30
+uuid: be03f330-1b63-4942-9419-fcdd532a5787
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.solr_search_page
     - field.field.paragraph.full_width_content.field_full_width_content
     - paragraphs.paragraphs_type.full_width_content
   module:
     - ds
-    - text
+    - smart_trim
 third_party_settings:
   ds:
     layout:
@@ -29,17 +30,29 @@ third_party_settings:
     regions:
       ds_content:
         - field_full_width_content
-id: paragraph.full_width_content.default
+id: paragraph.full_width_content.solr_search_page
 targetEntityType: paragraph
 bundle: full_width_content
-mode: default
+mode: solr_search_page
 content:
   field_full_width_content:
     weight: 0
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
     third_party_settings: {  }
-    type: text_default
+    type: smart_trim
     region: ds_content
 hidden:
   search_api_excerpt: true

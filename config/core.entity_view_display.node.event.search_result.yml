@@ -1,6 +1,6 @@
 uuid: 7eb1e93b-5f47-47b3-876e-5b6be9138571
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.search_result

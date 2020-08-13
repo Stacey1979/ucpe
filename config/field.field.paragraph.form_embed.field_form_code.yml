@@ -19,7 +19,7 @@ field_name: field_form_code
 entity_type: paragraph
 bundle: form_embed
 label: 'Form Code'
-description: 'Enter the embed code for the form.'
+description: 'Enter the full embed code for the form.'
 required: false
 translatable: false
 default_value: {  }

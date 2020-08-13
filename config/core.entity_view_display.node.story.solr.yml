@@ -1,18 +1,23 @@
-uuid: 718aa4e6-daed-40f0-8b17-96406f2f26d0
+uuid: 28f6aa3b-25da-4c92-b0e7-d5065c3fd4c2
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
-    - field.field.node.area_of_study.field_areas_of_study
-    - field.field.node.area_of_study.field_featured_programs
-    - field.field.node.area_of_study.field_hero
-    - field.field.node.area_of_study.field_intro_area_study_text
-    - field.field.node.area_of_study.field_lede
-    - field.field.node.area_of_study.field_metatags
-    - field.field.node.area_of_study.field_tagline
-    - field.field.node.area_of_study.field_view_programs_cta
-    - node.type.area_of_study
+    - core.entity_view_mode.node.solr
+    - field.field.node.story.body
+    - field.field.node.story.field_areas_of_study
+    - field.field.node.story.field_author
+    - field.field.node.story.field_content_sections
+    - field.field.node.story.field_date_written
+    - field.field.node.story.field_featured
+    - field.field.node.story.field_featured_quote
+    - field.field.node.story.field_hero
+    - field.field.node.story.field_intro_paragraph
+    - field.field.node.story.field_lede
+    - field.field.node.story.field_metatags
+    - field.field.node.story.field_related_program_tag
+    - field.field.node.story.field_story_subject_name
+    - node.type.story
   module:
     - ds
     - smart_trim
@@ -40,7 +45,7 @@ third_party_settings:
         - 'bundle_field:node'
         - node_title
         - field_lede
-        - links
+        - search_api_excerpt
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
@@ -56,11 +61,19 @@ third_party_settings:
           link: true
           wrapper: h3
           class: ''
-id: node.area_of_study.search_result
+id: node.story.solr
 targetEntityType: node
-bundle: area_of_study
-mode: search_result
+bundle: story
+mode: solr
 content:
+  field_about_block:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: hidden
+    settings:
+      link: '1'
+    third_party_settings: {  }
+    region: ds_content
   field_lede:
     weight: 2
     label: hidden
@@ -80,18 +93,33 @@ content:
     third_party_settings: {  }
     type: smart_trim
     region: ds_content
-  links:
+  field_written_by:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  search_api_excerpt:
     weight: 3
     region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
+  body: true
   field_areas_of_study: true
-  field_featured_programs: true
+  field_author: true
+  field_content_sections: true
+  field_date_and_lede: true
+  field_date_written: true
+  field_featured: true
+  field_featured_quote: true
   field_hero: true
-  field_intro_area_study_text: true
+  field_intro_paragraph: true
   field_metatags: true
-  field_tagline: true
-  field_view_programs_cta: true
-  search_api_excerpt: true
+  field_related_program_tag: true
+  field_story_subject_name: true
+  links: true
+  reading_time: true

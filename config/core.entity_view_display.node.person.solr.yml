@@ -1,18 +1,19 @@
-uuid: 718aa4e6-daed-40f0-8b17-96406f2f26d0
+uuid: b7fea50a-6a59-4887-9455-57fc85dcaa5b
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
-    - field.field.node.area_of_study.field_areas_of_study
-    - field.field.node.area_of_study.field_featured_programs
-    - field.field.node.area_of_study.field_hero
-    - field.field.node.area_of_study.field_intro_area_study_text
-    - field.field.node.area_of_study.field_lede
-    - field.field.node.area_of_study.field_metatags
-    - field.field.node.area_of_study.field_tagline
-    - field.field.node.area_of_study.field_view_programs_cta
-    - node.type.area_of_study
+    - core.entity_view_mode.node.solr
+    - field.field.node.person.field_bio
+    - field.field.node.person.field_course_s_
+    - field.field.node.person.field_email
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_headshot
+    - field.field.node.person.field_job_title
+    - field.field.node.person.field_last_name
+    - field.field.node.person.field_metatags
+    - field.field.node.person.field_title
+    - node.type.person
   module:
     - ds
     - smart_trim
@@ -39,8 +40,8 @@ third_party_settings:
       ds_content:
         - 'bundle_field:node'
         - node_title
-        - field_lede
-        - links
+        - field_bio
+        - search_api_excerpt
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
@@ -56,16 +57,16 @@ third_party_settings:
           link: true
           wrapper: h3
           class: ''
-id: node.area_of_study.search_result
+id: node.person.solr
 targetEntityType: node
-bundle: area_of_study
-mode: search_result
+bundle: person
+mode: solr
 content:
-  field_lede:
+  field_bio:
     weight: 2
     label: hidden
     settings:
-      trim_length: 600
+      trim_length: 200
       trim_type: chars
       trim_suffix: ''
       wrap_class: trimmed
@@ -80,18 +81,25 @@ content:
     third_party_settings: {  }
     type: smart_trim
     region: ds_content
-  links:
+  search_api_excerpt:
     weight: 3
     region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
-  field_areas_of_study: true
-  field_featured_programs: true
-  field_hero: true
-  field_intro_area_study_text: true
+  body: true
+  field_conta: true
+  field_contact_email: true
+  field_contact_first_name_link: true
+  field_contact_x: true
+  field_course_s_: true
+  field_email: true
+  field_first_name: true
+  field_headshot: true
+  field_job_title: true
+  field_last_name: true
   field_metatags: true
-  field_tagline: true
-  field_view_programs_cta: true
-  search_api_excerpt: true
+  field_name: true
+  field_title: true
+  links: true

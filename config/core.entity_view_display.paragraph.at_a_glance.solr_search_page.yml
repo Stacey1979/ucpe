@@ -1,8 +1,9 @@
-uuid: f4832685-480f-4143-8d3d-2cd77cc2ec81
+uuid: b5a21220-58d3-4258-a39e-46e11d26cb35
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.solr_search_page
     - field.field.paragraph.at_a_glance.field_confers_alumni_status
     - field.field.paragraph.at_a_glance.field_cost
     - field.field.paragraph.at_a_glance.field_duration
@@ -72,10 +73,10 @@ third_party_settings:
         - group_cost
         - field_cost
         - field_link_to_financial_aid
-id: paragraph.at_a_glance.default
+id: paragraph.at_a_glance.solr_search_page
 targetEntityType: paragraph
 bundle: at_a_glance
-mode: default
+mode: solr_search_page
 content:
   field_confers_alumni_status:
     weight: 1

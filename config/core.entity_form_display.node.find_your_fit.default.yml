@@ -28,13 +28,14 @@ third_party_settings:
         - field_content_sections
       parent_name: ''
       weight: 1
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add content to the page. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Content
     group_hero_section:
       children:
@@ -43,13 +44,14 @@ third_party_settings:
         - field_text_and_media_1_3_2_3
       parent_name: ''
       weight: 0
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add your hero section. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: 'Hero Section'
     group_administrative:
       children:
@@ -57,13 +59,14 @@ third_party_settings:
         - field_program_type
       parent_name: ''
       weight: 2
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add administrative items like tags. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Administrative
 id: node.find_your_fit.default
 targetEntityType: node
@@ -90,13 +93,9 @@ content:
     region: content
   field_format_tag:
     weight: 5
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_lede:
     weight: 2

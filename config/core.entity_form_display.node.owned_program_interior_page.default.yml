@@ -25,13 +25,14 @@ third_party_settings:
         - field_program_type
       parent_name: ''
       weight: 0
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Build your hero section here. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: 'Hero Section'
     group_content:
       children:
@@ -52,13 +53,14 @@ third_party_settings:
         - field_deadlines_block
       parent_name: ''
       weight: 1
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'This section is typically only used on the How to Apply page. <em>On This Page</em> may be used on other long pages as needed. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: 'How to Apply Page Only'
 id: node.owned_program_interior_page.default
 targetEntityType: node

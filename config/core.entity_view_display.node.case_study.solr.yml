@@ -1,9 +1,9 @@
-uuid: fff09ee0-c703-46f2-808d-eb4263273016
+uuid: de2e126b-7d12-4569-945d-1b1fb757e489
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
+    - core.entity_view_mode.node.solr
     - field.field.node.case_study.field_about_partnership
     - field.field.node.case_study.field_areas_of_study
     - field.field.node.case_study.field_case_study_type
@@ -50,7 +50,7 @@ third_party_settings:
         - field_case_study_type
         - node_title
         - field_lede
-        - links
+        - search_api_excerpt
     fields:
       node_title:
         plugin_id: node_title
@@ -61,10 +61,10 @@ third_party_settings:
           link: true
           wrapper: h3
           class: ''
-id: node.case_study.search_result
+id: node.case_study.solr
 targetEntityType: node
 bundle: case_study
-mode: search_result
+mode: solr
 content:
   field_case_study_type:
     type: list_default
@@ -92,7 +92,7 @@ content:
     third_party_settings: {  }
     type: smart_trim
     region: ds_content
-  links:
+  search_api_excerpt:
     weight: 3
     region: ds_content
     settings: {  }
@@ -114,4 +114,4 @@ hidden:
   field_related_program_tag: true
   field_results: true
   field_solution: true
-  search_api_excerpt: true
+  links: true
