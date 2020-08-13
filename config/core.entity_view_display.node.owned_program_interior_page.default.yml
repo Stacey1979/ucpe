@@ -37,27 +37,16 @@ third_party_settings:
       ds_content:
         - links
         - field_program
-        - node_title
         - field_tab
         - field_deadlines_block
         - field_content_sections
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 2
-        label: hidden
-        formatter: default
-        settings:
-          wrapper: h1
-          class: ''
-          link: false
 id: node.owned_program_interior_page.default
 targetEntityType: node
 bundle: owned_program_interior_page
 mode: default
 content:
   field_content_sections:
-    weight: 5
+    weight: 4
     label: hidden
     settings:
       view_mode: default
@@ -68,7 +57,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_deadlines_block:
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       plugin_types:
@@ -91,7 +80,7 @@ content:
     type: entity_reference_entity_view
     region: ds_content
   field_tab:
-    weight: 3
+    weight: 2
     label: above
     settings:
       plugin_types:
@@ -108,3 +97,4 @@ hidden:
   addtoany: true
   field_metatags: true
   field_program_type: true
+  search_api_excerpt: true

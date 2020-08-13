@@ -122,6 +122,51 @@
     }
   }
   // END -- HERO PROGRAM DETAIL
+  // HERO PROGRAM INTERIOR PAGES
+  &.hero_program_interior {
+    padding: $baseline * 4 0;
+    margin-bottom: $baseline * 5;
+
+    .hero {
+      &:before {
+        background-color: $bg_02;
+        content: "";
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 0;
+        height: 100%;
+        z-index: -1;
+        @include screen("tablet-wide") {
+          right: calc(50% + -30rem);
+        }
+      }
+
+      .hero_content {
+        @include make-sm-column(7);
+        @include screen("desktop") {
+          padding: $baseline * 3 0;
+        }
+        opacity: 0;
+        animation: opacity_animation 1.5s 1 0.5s ease;
+        animation-fill-mode: forwards;
+
+        h2 {
+          @include heading_L($black);
+          margin: $baseline * 3 0;
+        }
+        h1 {
+          @include bodycopy_XL($black_02);
+          margin: 0;
+        }
+
+        .program_meta .category .category_name {
+          background-color: $bg_02;
+        }
+      }
+    }
+  }
+  // END -- HERO PROGRAM INTERIOR PAGES
   // HERO STORY
   &.hero_story {
     margin-bottom: $baseline * 3;

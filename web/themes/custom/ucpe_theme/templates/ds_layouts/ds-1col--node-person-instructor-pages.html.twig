@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+
+<div class="profile_preview_wrapper">
+  <div class="profile_preview_body">
+    <div class="profile_preview">
+      <div class="profile_preview_headshot headshot">
+        {{ ds_content.field_headshot|field_value }}
+      </div>
+      <div class="profile_preview_content">
+        <h3>{{ title|field_value }}</h3>
+        <div class="job_title">{{ ds_content.field_job_title|field_value }}</div>
+        <div class="bio collapse" id="toggle_{{ node.nid.value }}">
+          {{ ds_content.field_bio|field_value }}
+          <div class="profile_preview_courses">
+            {{ ds_content.field_course_s_|field_value }}
+          </div>
+        </div>
+        <a role="button" class="showmore collapsed" data-toggle="collapse" href="#toggle_{{ node.nid.value }}" aria-expanded="false" aria-controls="toggle_{{ node.nid.value }}"></a>
+      </div>
+    </div>
+  </div>
+</div>

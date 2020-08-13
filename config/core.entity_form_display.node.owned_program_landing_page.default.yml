@@ -35,6 +35,7 @@ dependencies:
   module:
     - allowed_formats
     - entity_browser
+    - entity_browser_entity_form
     - field_group
     - inline_entity_form
     - link_attributes
@@ -56,13 +57,14 @@ third_party_settings:
         - field_hero
       parent_name: ''
       weight: 0
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add your hero section.'
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: 'Hero Section'
     group_program_details:
       children:
@@ -71,13 +73,14 @@ third_party_settings:
         - field_link_to_main_page
       parent_name: ''
       weight: 1
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add program details'
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: true
+        open: false
       label: 'Program Details'
     group_content:
       children:
@@ -86,21 +89,21 @@ third_party_settings:
         - field_content
         - field_designed_for
         - field_focus_areas
-        - field_content_sections
         - field_offered_by
         - field_conferred_by
         - field_button_
         - field_form
       parent_name: ''
       weight: 4
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add content to your page. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: true
-      label: Content
+        open: false
+      label: 'Content Fields'
     group_administrative:
       children:
         - field_owned
@@ -108,14 +111,15 @@ third_party_settings:
         - field_area_of_study_cta
         - field_of_interest
       parent_name: ''
-      weight: 5
-      format_type: fieldset
+      weight: 6
+      format_type: details
       region: content
       format_settings:
+        description: 'Add administrative items like tags, illustration, etc. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Administrative
     group_deadlines_section:
       children:
@@ -123,13 +127,14 @@ third_party_settings:
         - field_deadlines
       parent_name: ''
       weight: 2
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
         description: '<strong>Only for owned programs.</strong>'
+        required_fields: true
         id: ''
         classes: ''
-        required_fields: false
+        open: false
       label: 'Deadlines Section'
     group_upcoming_:
       children:
@@ -137,14 +142,29 @@ third_party_settings:
         - field_all_related_events
       parent_name: ''
       weight: 3
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
         description: '<strong>Only for owned programs.</strong>'
+        required_fields: true
         id: ''
         classes: ''
-        required_fields: false
+        open: false
       label: 'Upcoming Events'
+    group_content_sections:
+      children:
+        - field_content_sections
+      parent_name: ''
+      weight: 5
+      format_type: details
+      region: content
+      format_settings:
+        description: 'Add more customizable content sections to your page. '
+        required_fields: true
+        id: ''
+        classes: ''
+        open: false
+      label: 'More Content for Owned Programs'
 id: node.owned_program_landing_page.default
 targetEntityType: node
 bundle: owned_program_landing_page
@@ -214,17 +234,19 @@ content:
     region: content
     settings:
       form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
-      collapsible: false
-      collapsed: false
+      override_labels: true
+      label_singular: 'Button Set'
+      label_plural: Buttons
+      collapsible: true
       allow_new: true
-      allow_existing: false
       match_operator: CONTAINS
+      revision: false
+      collapsed: false
+      allow_existing: false
       allow_duplicate: false
-    third_party_settings: {  }
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
   field_conferred_by:
     weight: 22
     settings: {  }
@@ -246,12 +268,12 @@ content:
   field_content_sections:
     weight: 19
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Sections
+      title_plural: Sections
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: _none
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
@@ -260,17 +282,19 @@ content:
     weight: 25
     settings:
       form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
-      collapsible: false
-      collapsed: false
+      override_labels: true
+      label_singular: Deadline
+      label_plural: Deadlines
+      collapsible: true
       allow_new: true
-      allow_existing: false
       match_operator: CONTAINS
+      revision: false
+      collapsed: false
+      allow_existing: false
       allow_duplicate: false
-    third_party_settings: {  }
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
     region: content
   field_deadlines_block:
     weight: 24
@@ -318,12 +342,12 @@ content:
     weight: 24
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
+      title: Form
+      title_plural: Forms
+      edit_mode: closed
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: form_embed
+      default_paragraph_type: _none
     third_party_settings: {  }
   field_hero:
     type: inline_entity_form_complex
@@ -331,17 +355,19 @@ content:
     region: content
     settings:
       form_mode: default
+      override_labels: true
+      label_singular: 'Hero Image'
+      label_plural: Heroes
+      allow_new: true
+      match_operator: CONTAINS
       revision: false
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
       collapsible: false
       collapsed: false
-      allow_new: true
       allow_existing: false
-      match_operator: CONTAINS
       allow_duplicate: false
-    third_party_settings: {  }
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
   field_hero_cta_button:
     type: link_attributes
     weight: 5
@@ -518,7 +544,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60

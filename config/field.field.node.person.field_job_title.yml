@@ -13,6 +13,7 @@ third_party_settings:
     plain_text: plain_text
     full_html: '0'
     basic_html: '0'
+    code: '0'
 id: node.person.field_job_title
 field_name: field_job_title
 entity_type: node

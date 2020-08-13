@@ -1,0 +1,117 @@
+uuid: fff09ee0-c703-46f2-808d-eb4263273016
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.case_study.field_about_partnership
+    - field.field.node.case_study.field_areas_of_study
+    - field.field.node.case_study.field_case_study_type
+    - field.field.node.case_study.field_challenge
+    - field.field.node.case_study.field_content_sections
+    - field.field.node.case_study.field_cta
+    - field.field.node.case_study.field_date_written
+    - field.field.node.case_study.field_featured
+    - field.field.node.case_study.field_hero
+    - field.field.node.case_study.field_intro_paragraph
+    - field.field.node.case_study.field_lede
+    - field.field.node.case_study.field_metatags
+    - field.field.node.case_study.field_of_interest
+    - field.field.node.case_study.field_partnership_logos
+    - field.field.node.case_study.field_related_program_tag
+    - field.field.node.case_study.field_results
+    - field.field.node.case_study.field_solution
+    - node.type.case_study
+  module:
+    - ds
+    - options
+    - smart_trim
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_case_study_type
+        - node_title
+        - field_lede
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.case_study.search_result
+targetEntityType: node
+bundle: case_study
+mode: search_result
+content:
+  field_case_study_type:
+    type: list_default
+    weight: 0
+    region: ds_content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_lede:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
+    third_party_settings: {  }
+    type: smart_trim
+    region: ds_content
+  links:
+    weight: 3
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_about_partnership: true
+  field_areas_of_study: true
+  field_challenge: true
+  field_content_sections: true
+  field_cta: true
+  field_date_written: true
+  field_featured: true
+  field_hero: true
+  field_intro_paragraph: true
+  field_metatags: true
+  field_of_interest: true
+  field_partnership_logos: true
+  field_related_program_tag: true
+  field_results: true
+  field_solution: true
+  search_api_excerpt: true

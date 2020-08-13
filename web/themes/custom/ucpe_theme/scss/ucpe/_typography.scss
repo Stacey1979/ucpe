@@ -26,6 +26,16 @@ a {
   }
 }
 
+.hdr_wrapper {
+  @include make-container;
+  .hdr_body {
+    @include make-row;
+    .hdr {
+      @include make-sm-column(12);
+    }
+  }
+}
+
 h1 {
   font-family: $serif-font;
 }

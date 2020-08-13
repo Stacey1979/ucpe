@@ -237,12 +237,39 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_topics
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  status:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
   title:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
     type: text
     boost: !!float 2
+    dependencies:
+      module:
+        - node
+  uid:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
     dependencies:
       module:
         - node
@@ -270,8 +297,163 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  html_filter:
+    all_fields: true
+    fields:
+      - field_about_partnership
+      - field_areas_of_study
+      - field_author
+      - field_based_on
+      - field_challenge
+      - field_content
+      - field_content_sections
+      - field_designed_for
+      - field_email
+      - field_featured_quote
+      - field_focus_areas
+      - field_format_tag
+      - field_header_h2_
+      - field_in_brief_perspective
+      - field_intro
+      - field_intro_area_study_text
+      - field_intro_paragraph
+      - field_job_title
+      - field_lede
+      - field_related_program_tag
+      - field_results
+      - field_solution
+      - field_split_text
+      - field_text_and_media_1_3_2_3
+      - field_topics
+      - title
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: true
+    fields:
+      - field_about_partnership
+      - field_areas_of_study
+      - field_author
+      - field_based_on
+      - field_challenge
+      - field_content
+      - field_content_sections
+      - field_designed_for
+      - field_email
+      - field_featured_quote
+      - field_focus_areas
+      - field_format_tag
+      - field_header_h2_
+      - field_in_brief_perspective
+      - field_intro
+      - field_intro_area_study_text
+      - field_intro_paragraph
+      - field_job_title
+      - field_lede
+      - field_related_program_tag
+      - field_results
+      - field_solution
+      - field_split_text
+      - field_text_and_media_1_3_2_3
+      - field_topics
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
   language_with_fallback: {  }
   rendered_item: {  }
+  stemmer:
+    all_fields: true
+    fields:
+      - field_about_partnership
+      - field_areas_of_study
+      - field_author
+      - field_based_on
+      - field_challenge
+      - field_content
+      - field_content_sections
+      - field_designed_for
+      - field_email
+      - field_featured_quote
+      - field_focus_areas
+      - field_format_tag
+      - field_header_h2_
+      - field_in_brief_perspective
+      - field_intro
+      - field_intro_area_study_text
+      - field_intro_paragraph
+      - field_job_title
+      - field_lede
+      - field_related_program_tag
+      - field_results
+      - field_solution
+      - field_split_text
+      - field_text_and_media_1_3_2_3
+      - field_topics
+      - title
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  tokenizer:
+    all_fields: true
+    fields:
+      - field_about_partnership
+      - field_areas_of_study
+      - field_author
+      - field_based_on
+      - field_challenge
+      - field_content
+      - field_content_sections
+      - field_designed_for
+      - field_email
+      - field_featured_quote
+      - field_focus_areas
+      - field_format_tag
+      - field_header_h2_
+      - field_in_brief_perspective
+      - field_intro
+      - field_intro_area_study_text
+      - field_intro_paragraph
+      - field_job_title
+      - field_lede
+      - field_related_program_tag
+      - field_results
+      - field_solution
+      - field_split_text
+      - field_text_and_media_1_3_2_3
+      - field_topics
+      - title
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
 tracker_settings:
   default:
     indexing_order: fifo

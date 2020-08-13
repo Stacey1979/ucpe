@@ -38,17 +38,17 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - links
         - node_title
         - field_course_code
         - field_related_program_tag
         - field_content_sections
         - field_metatags
         - field_view_upcoming_courses
+        - field_course_summary
     fields:
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 0
         label: hidden
         formatter: default
 id: node.course.default
@@ -57,7 +57,7 @@ bundle: course
 mode: default
 content:
   field_content_sections:
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       view_mode: default
@@ -66,7 +66,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_course_code:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
@@ -74,21 +74,21 @@ content:
     type: string
     region: ds_content
   field_course_summary:
-    weight: 7
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: content
+    region: ds_content
   field_metatags:
-    weight: 5
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
     region: ds_content
   field_related_program_tag:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       link: false
@@ -98,7 +98,7 @@ content:
     type: entity_reference_label
     region: ds_content
   field_view_upcoming_courses:
-    weight: 6
+    weight: 5
     label: hidden
     settings:
       trim_length: 80
@@ -109,12 +109,8 @@ content:
     third_party_settings: {  }
     type: link
     region: ds_content
-  links:
-    weight: 0
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   addtoany: true
   field_areas_of_study: true
   field_topics: true
+  search_api_excerpt: true

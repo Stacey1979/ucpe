@@ -17,6 +17,18 @@ html {
   }
 }
 
+@mixin featurelink() {
+  @include bodycopy_M($plum, $bold: true);
+  border-bottom: solid 2px $maroon;
+  transition: all 0.25s ease-in;
+  text-decoration: none;
+
+  &:hover {
+    color: $maroon;
+    transition: all 0.25s ease-out;
+  }
+}
+
 // one column width percentage - used for padding on some content areas
 $colwidth: 8.3333%;
 

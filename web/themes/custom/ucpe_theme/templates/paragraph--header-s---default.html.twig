@@ -38,7 +38,12 @@
  * @ingroup themeable
  */
 #}
-
-<{{ content.field_header_type|field_value }} id="paragraph-{{ paragraph.id.value }}">
-  {{ content.field_content_section_header|field_value }}
-</{{ content.field_header_type|field_value }}>
+<div class="hdr_wrapper">
+  <div class="hdr_body">
+    <div class="hdr">
+      <{{ content.field_header_type|field_value }} id="paragraph-{{ paragraph.id.value }}">
+        {{ content.field_content_section_header|field_value }}
+      </{{ content.field_header_type|field_value }}>
+    </div>
+  </div>
+</div>

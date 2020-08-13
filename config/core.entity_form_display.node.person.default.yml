@@ -14,7 +14,7 @@ dependencies:
     - field.field.node.person.field_title
     - node.type.person
   module:
-    - entity_browser_entity_form
+    - allowed_formats
     - field_group
     - media_library
     - metatag
@@ -62,24 +62,16 @@ content:
     type: text_textarea
     region: content
   field_course_s_:
-    type: paragraphs
+    type: entity_reference_paragraphs
     weight: 8
     settings:
       title: Paragraph
       title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
+      edit_mode: closed
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
-    third_party_settings:
-      entity_browser_entity_form:
-        entity_browser_id: _none
+      default_paragraph_type: _none
+    third_party_settings: {  }
     region: content
   field_email:
     weight: 6
@@ -94,7 +86,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   field_headshot:
@@ -111,7 +106,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   field_last_name:
@@ -119,7 +117,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   field_metatags:

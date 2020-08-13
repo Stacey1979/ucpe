@@ -22,6 +22,7 @@ dependencies:
     - field.field.node.page.field_youvisit_paragraph
     - node.type.page
   module:
+    - allowed_formats
     - field_group
     - link
     - link_attributes
@@ -41,10 +42,10 @@ third_party_settings:
       format_type: details
       region: content
       format_settings:
-        description: 'These fields are required on the About Page. '
+        description: 'These fields are required on the HomePage. '
+        required_fields: true
         id: ''
         classes: ''
-        required_fields: false
         open: false
       label: 'Home Page'
     group_about_page:
@@ -55,10 +56,10 @@ third_party_settings:
       format_type: details
       region: content
       format_settings:
-        description: ''
+        description: 'The Large full width Hero for the About page. '
+        required_fields: true
         id: ''
         classes: ''
-        required_fields: false
         open: false
       label: 'About Page Hero'
     group_content:
@@ -69,10 +70,10 @@ third_party_settings:
       format_type: fieldset
       region: content
       format_settings:
+        description: 'May be used on any page. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
       label: Content
     group_intro_to_ucpe:
       children:
@@ -91,10 +92,10 @@ third_party_settings:
       format_type: details
       region: content
       format_settings:
-        description: ''
+        description: 'Content sections for the Home page. '
+        required_fields: true
         id: ''
         classes: ''
-        required_fields: false
         open: false
       label: 'Intro to UCPE (Home Page only)'
     group_case_study_event_perspecti:
@@ -106,11 +107,11 @@ third_party_settings:
       format_type: details
       region: content
       format_settings:
-        description: ''
+        description: 'This section is for one-off pages like indexes, etc. and not to be used for the Home or About pages. '
+        required_fields: true
         id: ''
         classes: ''
         open: false
-        required_fields: false
       label: 'Single pages'
 _core:
   default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
@@ -140,8 +141,8 @@ content:
   field_content_sections:
     weight: 38
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Sections
+      title_plural: Sections
       edit_mode: open
       closed_mode: summary
       autocollapse: none
@@ -160,12 +161,12 @@ content:
     type: entity_reference_paragraphs
     weight: 40
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Slide
+      title_plural: Slides
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: discover_uchicago_combo
     third_party_settings: {  }
     region: content
   field_get_in_touch_button:
@@ -194,12 +195,12 @@ content:
   field_hero:
     weight: 40
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: 'Hero Image'
+      title_plural: Heroes
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: heroes
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
@@ -241,7 +242,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   field_program_types_preview:

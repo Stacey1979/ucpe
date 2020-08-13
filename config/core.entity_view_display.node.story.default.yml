@@ -142,10 +142,10 @@ content:
 hidden:
   body: true
   field_areas_of_study: true
-  field_author: true
   field_date_and_lede: true
   field_featured: true
   field_featured_quote: true
   field_metatags: true
   field_related_program_tag: true
   field_story_subject_name: true
+  search_api_excerpt: true
