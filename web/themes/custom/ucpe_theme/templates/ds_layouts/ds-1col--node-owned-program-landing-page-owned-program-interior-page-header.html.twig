@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+<div class="program_meta">
+  <span class="category">
+    <span class="category_name">{{ ds_content.field_program_type|field_value }}</span>
+    <span class="meta">{{ ds_content.field_areas_of_study|field_value|safe_join('<span class="divider"> | </span>') }}</span>
+  </span>
+</div>
+<h2>{{ title|field_value }}</h2>
