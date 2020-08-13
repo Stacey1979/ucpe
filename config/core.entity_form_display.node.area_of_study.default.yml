@@ -32,13 +32,14 @@ third_party_settings:
         - field_view_programs_cta
       parent_name: ''
       weight: 0
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add your her section.'
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: 'Hero Section'
     group_content:
       children:
@@ -46,13 +47,14 @@ third_party_settings:
         - field_featured_programs
       parent_name: ''
       weight: 1
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add content to the page. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Content
     group_administrative:
       children:
@@ -60,13 +62,14 @@ third_party_settings:
         - field_tagline
       parent_name: ''
       weight: 3
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add administrative items like tags. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Administrative
 id: node.area_of_study.default
 targetEntityType: node

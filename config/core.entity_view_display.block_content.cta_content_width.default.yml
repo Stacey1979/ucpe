@@ -94,4 +94,5 @@ content:
     third_party_settings: {  }
     type: list_default
     region: left
-hidden: {  }
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+uuid: 982dbfe8-501d-4349-9bc3-d188479b7e42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_optional_title
+    - paragraphs.paragraphs_type.button_set
+id: paragraph.button_set.field_optional_title
+field_name: field_optional_title
+entity_type: paragraph
+bundle: button_set
+label: Title
+description: 'Add a title if needed.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -44,11 +44,16 @@ third_party_settings:
         - field_view_programs_cta
         - field_intro_area_study_text
         - field_featured_programs
-        - links
+        - node_links
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
         weight: 0
+        label: hidden
+        formatter: default
+      node_links:
+        plugin_id: node_links
+        weight: 6
         label: hidden
         formatter: default
 id: node.area_of_study.default
@@ -59,30 +64,30 @@ content:
   field_featured_programs:
     type: entity_reference_revisions_entity_view
     weight: 5
+    region: ds_content
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: ds_content
   field_hero:
+    type: entity_reference_revisions_entity_view
     weight: 2
+    region: ds_content
     label: hidden
     settings:
       view_mode: area_of_study_hero
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: ds_content
   field_intro_area_study_text:
     type: entity_reference_revisions_entity_view
     weight: 4
+    region: ds_content
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: ds_content
   field_lede:
     weight: 1
     label: hidden
@@ -91,24 +96,21 @@ content:
     type: text_default
     region: ds_content
   field_view_programs_cta:
+    type: link
     weight: 3
+    region: ds_content
     label: above
     settings:
       trim_length: 80
-      url_only: false
-      url_plain: false
       rel: ''
       target: ''
-    third_party_settings: {  }
-    type: link
-    region: ds_content
-  links:
-    weight: 6
-    region: ds_content
-    settings: {  }
+      url_only: false
+      url_plain: false
     third_party_settings: {  }
 hidden:
   addtoany: true
   field_areas_of_study: true
   field_metatags: true
   field_tagline: true
+  links: true
+  search_api_excerpt: true

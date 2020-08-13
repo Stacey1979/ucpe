@@ -1,0 +1,10 @@
+uuid: c3ab2910-02fe-4298-be56-96764ba7ef2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.solr_search_page
+label: 'SOLR Search Page'
+targetEntityType: paragraph
+cache: true

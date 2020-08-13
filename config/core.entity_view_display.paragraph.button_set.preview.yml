@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.button_set.field_optional_title
     - field.field.paragraph.button_set.field_primary_button
     - field.field.paragraph.button_set.field_secondary_button
     - field.field.paragraph.button_set.field_tertiary_button
@@ -51,4 +52,6 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-hidden: {  }
+hidden:
+  field_optional_title: true
+  search_api_excerpt: true

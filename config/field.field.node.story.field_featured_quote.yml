@@ -9,8 +9,8 @@ id: node.story.field_featured_quote
 field_name: field_featured_quote
 entity_type: node
 bundle: story
-label: 'Featured Quote'
-description: 'Choose a quote to feature from the story.'
+label: 'Home Page Quote'
+description: 'If this Story is featured on the Home Page, enter a quote to feature from the story.'
 required: true
 translatable: false
 default_value: {  }

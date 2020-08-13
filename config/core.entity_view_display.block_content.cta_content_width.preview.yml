@@ -98,3 +98,4 @@ content:
     region: right
 hidden:
   field_image_alignment2: true
+  search_api_excerpt: true

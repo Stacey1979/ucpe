@@ -12,23 +12,78 @@ show_all_when_no_keys: false
 index: search
 limit: 10
 searched_fields:
+  field_about_partnership: field_about_partnership
   field_areas_of_study: field_areas_of_study
-  field_bio: field_bio
+  field_author: field_author
+  field_based_on: field_based_on
+  field_challenge: field_challenge
+  field_content: field_content
   field_content_sections: field_content_sections
-  field_course_code: field_course_code
-  field_course_s_: field_course_s_
-  field_course_summary: field_course_summary
+  field_designed_for: field_designed_for
+  field_email: field_email
+  field_featured_quote: field_featured_quote
+  field_focus_areas: field_focus_areas
+  field_format_tag: field_format_tag
+  field_header_h2_: field_header_h2_
+  field_in_brief_perspective: field_in_brief_perspective
+  field_intro: field_intro
+  field_intro_area_study_text: field_intro_area_study_text
+  field_intro_paragraph: field_intro_paragraph
+  field_job_title: field_job_title
+  field_lede: field_lede
   field_related_program_tag: field_related_program_tag
-  field_title: field_title
+  field_results: field_results
+  field_solution: field_solution
+  field_split_text: field_split_text
+  field_text_and_media_1_3_2_3: field_text_and_media_1_3_2_3
   field_topics: field_topics
   title: title
 style: view_modes
 view_mode_configuration:
-  'entity:node':
-    default: search_result
+  'entity:block_content':
+    default: default
     overrides:
-      course: ''
-      person: ''
-      ptoc_page: ''
+      statistic: ''
+  'entity:node':
+    default: solr
+    overrides:
+      area_of_study: solr
+      article: solr
+      case_study: solr
+      course: solr
+      event: solr
+      find_your_fit: solr
+      marketing_landing_page: solr
+      owned_program_interior_page: solr
+      owned_program_landing_page: solr
+      page: solr
+      person: solr
+      story: solr
+  'entity:paragraph':
+    default: default
+    overrides:
+      about_person: ''
+      about_student: ''
+      at_a_glance: ''
+      blockquotes: ''
+      content_sections: ''
+      content_with_image_50_50_: ''
+      cta: ''
+      designed_for: ''
+      discover_uchicago_combo: ''
+      duration: ''
+      full_width_content: ''
+      header_s_: ''
+      instructor_program_courses_combo: ''
+      intro_paragraph: ''
+      in_brief: ''
+      large_image_with_caption_left_or: ''
+      large_image_with_header_and_cont: ''
+      strength_in_numbers: ''
+      text_one_two_third: ''
+      text_two_one_third: ''
+      text_with_media_1_3_2_3_: ''
+      three_up_illust_img_combo: ''
+      three_up_statistics_combo: ''
 show_search_form: true
-parse_mode: terms
+parse_mode: direct

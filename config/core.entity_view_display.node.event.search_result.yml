@@ -1,0 +1,140 @@
+uuid: 7eb1e93b-5f47-47b3-876e-5b6be9138571
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.event.field_areas_of_study
+    - field.field.node.event.field_author
+    - field.field.node.event.field_content
+    - field.field.node.event.field_date_and_time
+    - field.field.node.event.field_event_hero
+    - field.field.node.event.field_featured
+    - field.field.node.event.field_form
+    - field.field.node.event.field_format
+    - field.field.node.event.field_lede
+    - field.field.node.event.field_location
+    - field.field.node.event.field_location_filter
+    - field.field.node.event.field_program
+    - node.type.event
+  module:
+    - address
+    - address_map_link
+    - ds
+    - options
+    - smart_date
+    - smart_trim
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - links
+        - 'bundle_field:node'
+        - node_title
+        - field_date_and_time
+        - field_format
+        - field_location
+        - field_lede
+    fields:
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 1
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.event.search_result
+targetEntityType: node
+bundle: event
+mode: search_result
+content:
+  field_date_and_time:
+    weight: 3
+    label: visually_hidden
+    settings:
+      timezone_override: ''
+      format: event_date
+      force_chronological: false
+      format_type: medium
+    third_party_settings: {  }
+    type: smartdate_default
+    region: ds_content
+  field_format:
+    weight: 4
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: ds_content
+  field_lede:
+    weight: 6
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
+    third_party_settings: {  }
+    type: smart_trim
+    region: ds_content
+  field_location:
+    weight: 5
+    label: visually_hidden
+    settings: {  }
+    third_party_settings:
+      address_map_link:
+        link_address: '1'
+        map_link_type: google_maps
+        map_link_position: address
+        map_link_text: 'View Map'
+        map_link_new_window: '1'
+    type: address_default
+    region: ds_content
+  links:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_areas_of_study: true
+  field_author: true
+  field_content: true
+  field_event_hero: true
+  field_featured: true
+  field_form: true
+  field_location_filter: true
+  field_program: true
+  search_api_excerpt: true
