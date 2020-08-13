@@ -1,0 +1,70 @@
+.embedForm_wrapper {
+  @include make-container;
+  .embedForm_body {
+    @include make-row;
+  }
+}
+.embedForm {
+  @include make-sm-column(9);
+  background-color: $bg-02;
+  margin-bottom: $baseline * 4;
+  padding: $baseline * 3;
+
+  form {
+    .form_question {
+      width: 100%;
+
+      label {
+        @include bodycopy_S($black_02);
+      }
+      input,
+      select {
+        border: 0;
+        border-bottom: solid 3px $black_02;
+        border-radius: 0;
+        color: $black;
+        font-size: $baseline;
+        margin-bottom: $baseline;
+        padding: $baseline * 0.75;
+        width: 100%;
+
+        &:focus {
+          border-bottom-color: $cerulean;
+          outline: 0;
+        }
+
+        &[type="checkbox"] {
+          display: inline;
+          width: auto;
+          vertical-align: top;
+        }
+      }
+
+      &.required {
+        background-color: transparent;
+        input {
+          border-bottom-color: $salmon;
+        }
+      }
+    }
+    button {
+      background-color: $maroon;
+      border: solid 2px $maroon;
+      border-radius: 0;
+      color: $white;
+      @include font($sans-serif-font, 1rem, $white, $sans-serif-semibold, 1rem);
+      margin-top: $baseline;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      transition-timing-function: linear;
+      transition-duration: 0.3s;
+      transition-property: color, transform, background-color;
+      //transition-delay: 0s, 0s, 0.3s;
+
+      &:hover {
+        background-color: $white;
+        color: $plum;
+      }
+    }
+  }
+}
