@@ -51,6 +51,7 @@
         "drupal/paragraphs": "^1.11",
         "drupal/pathauto": "^1.6",
         "drupal/ptoc": "1.x-dev",
+        "drupal/quick_node_clone": "^1.12",
         "drupal/redirect": "^1.5",
         "drupal/redis": "^1.4",
         "drupal/responsive_menu": "^4.0",

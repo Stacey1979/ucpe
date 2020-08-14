@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.event.field_lede
     - field.field.node.event.field_location
     - field.field.node.event.field_location_filter
+    - field.field.node.event.field_metatags
     - field.field.node.event.field_program
     - node.type.event
   module:
@@ -22,6 +23,7 @@ dependencies:
     - entity_browser_entity_form
     - field_group
     - inline_entity_form
+    - metatag
     - paragraphs
     - path
     - smart_date
@@ -206,6 +208,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_program:
     weight: 7

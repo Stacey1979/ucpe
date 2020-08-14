@@ -1,0 +1,7 @@
+uuid: 388dcef4-66f6-424d-977f-8ae77829b129
+langcode: en
+status: true
+dependencies: {  }
+id: node__person
+label: 'Content: Person'
+tags: {  }

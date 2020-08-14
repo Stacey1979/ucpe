@@ -1,0 +1,7 @@
+uuid: 7859978d-1b15-498c-8ae5-b7d10355cf2c
+langcode: en
+status: true
+dependencies: {  }
+id: node__case_study
+label: 'Content: Case Study'
+tags: {  }

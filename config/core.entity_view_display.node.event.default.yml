@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.event.field_lede
     - field.field.node.event.field_location
     - field.field.node.event.field_location_filter
+    - field.field.node.event.field_metatags
     - field.field.node.event.field_program
     - node.type.event
   module:
@@ -21,6 +22,7 @@ dependencies:
     - address_map_link
     - ds
     - entity_reference_revisions
+    - metatag
     - options
     - smart_date
     - text
@@ -151,6 +153,13 @@ content:
         map_link_new_window: '1'
     type: address_default
     region: ds_content
+  field_metatags:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_program:
     weight: 8
     label: above
