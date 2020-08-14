@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.person.field_job_title
     - field.field.node.person.field_last_name
     - field.field.node.person.field_metatags
+    - field.field.node.person.field_person_type
     - field.field.node.person.field_title
     - node.type.person
   module:
@@ -101,5 +102,6 @@ hidden:
   field_last_name: true
   field_metatags: true
   field_name: true
+  field_person_type: true
   field_title: true
   links: true
