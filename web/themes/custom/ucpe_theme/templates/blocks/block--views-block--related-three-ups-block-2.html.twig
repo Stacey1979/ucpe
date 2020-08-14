@@ -52,9 +52,11 @@
     <h2>{{ label }}</h2>
   {% endif %}
   <div class="cg_wrapper">
-    {{ title_suffix }}
-    {% block content %}
-      {{ content }}
-    {% endblock %}
+    <div class="cg_content">
+      {{ title_suffix }}
+      {% block content %}
+        {{ content }}
+      {% endblock %}
+    </div>
   </div>
 </section>

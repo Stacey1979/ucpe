@@ -10,6 +10,7 @@
 
 .content100 {
   @include make-sm-column(12);
+  float: inherit !important;
 
   //WYSIWYG IMAGES
   figure {
@@ -545,89 +546,37 @@
   }
 }
 
-// Related Content Block
+// RELATED PROGRAM - STORIES pages
 
-// .related_program {
-//   @include make-row();
-//   @include make-sm-column(6);
-//   @include screen("tablet-wide") {
-//     @include make-md-column(5);
-//   }
-//   margin-bottom: $baseline * 2;
-//
-//   &.right {
-//     float: right;
-//     @include screen("tablet") {
-//       border-left: solid 1px $divider-gray;
-//       margin-left: $baseline * 1.5;
-//       padding-left: $baseline * 1.5;
-//     }
-//     @include screen("tablet-wide") {
-//       margin-left: $baseline * 3;
-//       padding-left: $baseline * 3;
-//     }
-//     @include screen("desktop") {
-//       margin-right: -8.3%;
-//     }
-//     @include screen("desktop-wide") {
-//       margin-right: -16.6666667%;
-//     }
-//   }
-//
-//   &.left {
-//     float: left;
-//
-//     @include screen("tablet") {
-//       border-right: solid 1px $divider-gray;
-//       margin-right: $baseline * 1.5;
-//       padding-right: $baseline * 1.5;
-//     }
-//
-//     @include screen("tablet-wide") {
-//       margin-right: $baseline * 3;
-//       padding-right: $baseline * 3;
-//     }
-//     @include screen("desktop") {
-//       margin-left: -8.3%;
-//     }
-//     @include screen("desktop-wide") {
-//       margin-left: -16.6666667%;
-//     }
-//   }
-//   .img {
-//     background-color: $bg-02;
-//     margin-bottom: $baseline * 2;
-//     padding: $baseline;
-//     position: relative;
-//     text-align: center;
-//
-//     .program_meta {
-//       background-color: $white;
-//       bottom: -5px;
-//       left: 0;
-//       padding: $baseline/2 $baseline/2 0;
-//       position: absolute;
-//     }
-//   }
-//   .content {
-//     h4 {
-//       @include heading_XS($black);
-//       margin-bottom: $baseline;
-//
-//       a {
-//         @include heading_XS($black);
-//         text-decoration: none;
-//         transition: all 0.3s;
-//
-//         &:hover {
-//           color: $maroon;
-//           border-bottom: solid 3px $maroon;
-//           transition: all 0.3s;
-//         }
-//       }
-//     }
-//   }
-// }
+.relatedProgram_wrapper {
+  @include make-sm-column(12);
+  @include screen("tablet") {
+    @include make-sm-column(6);
+  }
+  @include screen("desktop") {
+    @include make-sm-column(5);
+    margin-left: -$colwidth;
+  }
+  @include screen("desktop-wide") {
+    @include make-sm-column(6);
+  }
+
+  h3 {
+    @include bodycopy_XL($maroon, $bold: true);
+    margin-bottom: $baseline;
+    margin-top: 0;
+  }
+
+  .relatedProgram {
+    border-right: solid 1px $divider-gray;
+    margin-right: $baseline !important;
+    padding-right: $baseline * 2 !important;
+    .relatedProgram_img {
+    }
+    .relatedProgram_content {
+    }
+  }
+}
 
 // RELATED PROGRAMS - AREA OF STUDY PAGE
 .featured_programs {
@@ -734,12 +683,32 @@
 
   h2 {
     @include bodycopy_XL($maroon, $bold: true);
-    margin-bottom: $baseline * 2;
+    margin-bottom: 0;
   }
   .cg_wrapper {
     @include make-row();
     .cg_content {
       @include make-sm-column(12);
+    }
+  }
+
+  // related stories
+  .related-three-up {
+    .view-content {
+      @include screen("tablet") {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .views-row {
+        margin: $baseline 0;
+        @include screen("tablet") {
+          flex: 1;
+          margin: 0;
+          &:nth-child(2) {
+            margin: 0 $baseline;
+          }
+        }
+      }
     }
   }
 

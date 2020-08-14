@@ -321,8 +321,15 @@
         }
       }
 
-      .intro p {
-        @include heading_S($black);
+      .intro_wrapper {
+        .intro_body {
+          .intro {
+            @include make-sm-column(12);
+            p {
+              @include heading_S($black);
+            }
+          }
+        }
       }
     }
   }
