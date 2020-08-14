@@ -171,9 +171,6 @@
 
 .stat_number {
   text-align: center;
-  span {
-    vertical-align: top;
-  }
   .num {
     @include font(
       $sans-serif-font,
@@ -182,6 +179,7 @@
       $sans-serif-semibold,
       $baseline * 4
     );
+    vertical-align: bottom;
   }
   .pre,
   .post {
@@ -192,6 +190,13 @@
       $sans-serif-semibold,
       $baseline * 3
     );
+  }
+
+  .pre {
+    vertical-align: top;
+  }
+  .post {
+    vertical-align: text-bottom;
   }
 }
 

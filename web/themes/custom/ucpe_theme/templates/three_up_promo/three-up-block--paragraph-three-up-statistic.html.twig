@@ -18,7 +18,9 @@
       <div class="col">
         <div class="top">
           <div class="stat_number">
-            {% if content.top.field_before_number|field_value is not empty  %}<span class="pre">{{ content.top.field_before_number|field_value }}</span>{% endif %}<span class="num">{{ content.top.field_number|field_value }}</span><span class="post">{{ content.top.field_after_number|field_value }}</span>
+            {% if content.top.field_before_number|field_value is not empty  %}<span class="pre">{{ content.top.field_before_number|render|striptags|trim }}</span>{% endif %}
+            <span class="num">{{ content.top.field_number|render|striptags|trim }}</span>
+            {% if content.top.field_after_number|field_value is not empty  %}<span class="post">{{ content.top.field_after_number|render|striptags|trim }}</span>{% endif %}
           </div>
 				</div>
 				<div class="bottom">

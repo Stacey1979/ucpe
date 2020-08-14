@@ -7357,14 +7357,13 @@ nav.tabs ul.nav-tabs li {
 
 .stat_number {
   text-align: center; }
-  .stat_number span {
-    vertical-align: top; }
   .stat_number .num {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 4rem;
     color: #110f0f;
     font-weight: 500;
-    line-height: 4rem; }
+    line-height: 4rem;
+    vertical-align: bottom; }
   .stat_number .pre,
   .stat_number .post {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -7372,6 +7371,10 @@ nav.tabs ul.nav-tabs li {
     color: #110f0f;
     font-weight: 500;
     line-height: 3rem; }
+  .stat_number .pre {
+    vertical-align: top; }
+  .stat_number .post {
+    vertical-align: text-bottom; }
 
 .stat {
   align-items: center;
