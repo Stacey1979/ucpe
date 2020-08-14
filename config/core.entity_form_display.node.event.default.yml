@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.event.field_lede
     - field.field.node.event.field_location
     - field.field.node.event.field_location_filter
+    - field.field.node.event.field_metatags
     - field.field.node.event.field_program
     - node.type.event
   module:
@@ -22,6 +23,7 @@ dependencies:
     - entity_browser_entity_form
     - field_group
     - inline_entity_form
+    - metatag
     - paragraphs
     - path
     - smart_date
@@ -35,13 +37,14 @@ third_party_settings:
         - field_lede
       parent_name: ''
       weight: 0
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
-        description: 'Choose which size hero to add to the event. '
+        description: 'Choose which size hero to add to the event. <strong>Only add one</strong>.'
+        required_fields: true
         id: ''
         classes: ''
-        required_fields: false
+        open: false
       label: 'Hero Section'
     group_content:
       children:
@@ -55,13 +58,14 @@ third_party_settings:
         - field_author
       parent_name: ''
       weight: 1
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add content to the page. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Content
     group_administrative:
       children:
@@ -69,13 +73,14 @@ third_party_settings:
         - field_location_filter
       parent_name: ''
       weight: 2
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add administrative items like tags. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Administrative
 id: node.event.default
 targetEntityType: node
@@ -120,12 +125,12 @@ content:
   field_content:
     weight: 6
     settings:
-      title: Paragraph
+      title: 'About the Event'
       title_plural: Paragraphs
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: full_width_content
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
@@ -133,6 +138,8 @@ content:
     weight: 2
     settings:
       modal: true
+      default_duration: 60
+      default_duration_increments: "30\n60|1 hour\n90\n120|2 hours\ncustom"
     third_party_settings: {  }
     type: smartdate_default
     region: content
@@ -140,16 +147,17 @@ content:
     type: paragraphs
     weight: 1
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: 'Hero Image'
+      title_plural: Heroes
       edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
       closed_mode: summary
       autocollapse: none
       closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: event_hero
       features:
+        add_above: '0'
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
@@ -163,12 +171,12 @@ content:
   field_form:
     weight: 3
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Form
+      title_plural: 'Form Embed'
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: form_embed
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
@@ -200,6 +208,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_program:
     weight: 7

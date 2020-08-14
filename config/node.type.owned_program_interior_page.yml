@@ -8,10 +8,10 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:menu_link_content:12a51918-680e-46b7-af09-af549de88c04'
-name: 'Owned Program Interior Page'
+    parent: 'main:'
+name: 'Program Interior Page'
 type: owned_program_interior_page
-description: 'Interior pages (curriculum, how to apply, etc.) for owned UCPE programs .'
+description: 'Program interior pages (curriculum, how to apply, etc.) that are child pages of a <em>Program Landing Page</em> for <strong>owned UCPE programs only</strong>.'
 help: ''
 new_revision: true
 preview_mode: 1

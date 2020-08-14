@@ -1,9 +1,7 @@
 uuid: b68b84b2-2059-4bf8-b1e1-a95f3eaa0c52
 langcode: en
-status: true
+status: false
 dependencies:
-  module:
-    - search
   theme:
     - ucpe_theme
 _core:

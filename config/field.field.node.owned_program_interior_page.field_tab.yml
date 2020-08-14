@@ -12,7 +12,7 @@ field_name: field_tab
 entity_type: node
 bundle: owned_program_interior_page
 label: 'On This Page'
-description: '<strong>Used on the "How to Apply" pages only</strong>. This block adds the "On This Page" table of contents feature to the top of the page. Choose "Table of Contents" in the dropdown and do not edit the Block ID field. This automatically creates anchored links to any "header(s)" you add in the content section. '
+description: 'This block adds the "On This Page" table of contents feature to the top of the page. It turns any <em>Header(s)</em> you add through <em>Content Sections</em> into anchors at the top of the page. Choose "Table of Contents" in the dropdown for both <em>On This Page</em> and <em>Display</em>.'
 required: false
 translatable: false
 default_value: {  }
@@ -36,21 +36,28 @@ settings:
     content: 0
     content_recent: 0
     deadlines: 0
+    divisions_and_schools: 0
     email_output_text: 0
+    event_date: 0
+    featured: 0
     files: 0
+    find_your_fit: 0
     frontpage: 0
+    masonry_views: 0
     media: 0
     media_library: 0
+    programs: 0
     redirect: 0
     related_three_ups: 0
     taxonomy_term: 0
+    upcoming_events: 0
     user_admin_people: 0
     watchdog: 0
     who_s_new: 0
   enabled_settings:
     argument: argument
-    offset: 0
-    limit: 0
-    pager: 0
     title: title
+    pager: 0
+    limit: 0
+    offset: 0
 field_type: viewsreference

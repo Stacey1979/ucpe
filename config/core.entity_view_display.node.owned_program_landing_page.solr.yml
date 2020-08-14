@@ -1,0 +1,138 @@
+uuid: fcbc4bf5-f6f6-4894-aed5-7b93f1bb96ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.solr
+    - field.field.node.owned_program_landing_page.field_all_related_events
+    - field.field.node.owned_program_landing_page.field_area_of_study_cta
+    - field.field.node.owned_program_landing_page.field_areas_of_study
+    - field.field.node.owned_program_landing_page.field_at_a_glance
+    - field.field.node.owned_program_landing_page.field_button_
+    - field.field.node.owned_program_landing_page.field_conferred_by
+    - field.field.node.owned_program_landing_page.field_content
+    - field.field.node.owned_program_landing_page.field_content_sections
+    - field.field.node.owned_program_landing_page.field_deadlines
+    - field.field.node.owned_program_landing_page.field_deadlines_block
+    - field.field.node.owned_program_landing_page.field_designed_for
+    - field.field.node.owned_program_landing_page.field_focus_areas
+    - field.field.node.owned_program_landing_page.field_form
+    - field.field.node.owned_program_landing_page.field_hero
+    - field.field.node.owned_program_landing_page.field_hero_cta_button
+    - field.field.node.owned_program_landing_page.field_intro_paragraph
+    - field.field.node.owned_program_landing_page.field_lede
+    - field.field.node.owned_program_landing_page.field_link_to_main_page
+    - field.field.node.owned_program_landing_page.field_metatags
+    - field.field.node.owned_program_landing_page.field_of_interest
+    - field.field.node.owned_program_landing_page.field_offered_by
+    - field.field.node.owned_program_landing_page.field_owned
+    - field.field.node.owned_program_landing_page.field_program
+    - field.field.node.owned_program_landing_page.field_program_illustration
+    - field.field.node.owned_program_landing_page.field_program_type
+    - field.field.node.owned_program_landing_page.field_upcoming_events
+    - field.field.node.owned_program_landing_page.field_video
+    - node.type.owned_program_landing_page
+  module:
+    - ds
+    - smart_trim
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_program_type
+        - node_title
+        - field_lede
+        - search_api_excerpt
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.owned_program_landing_page.solr
+targetEntityType: node
+bundle: owned_program_landing_page
+mode: solr
+content:
+  field_lede:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
+    third_party_settings: {  }
+    type: smart_trim
+    region: ds_content
+  field_program_type:
+    type: entity_reference_label
+    weight: 0
+    region: ds_content
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  search_api_excerpt:
+    weight: 3
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_all_related_events: true
+  field_area_of_study_cta: true
+  field_areas_of_study: true
+  field_at_a_glance: true
+  field_button_: true
+  field_conferred_by: true
+  field_content: true
+  field_content_sections: true
+  field_deadlines: true
+  field_deadlines_block: true
+  field_designed_for: true
+  field_focus_areas: true
+  field_form: true
+  field_hero: true
+  field_hero_cta_button: true
+  field_intro_paragraph: true
+  field_link_to_main_page: true
+  field_metatags: true
+  field_of_interest: true
+  field_offered_by: true
+  field_owned: true
+  field_program: true
+  field_program_illustration: true
+  field_upcoming_events: true
+  field_video: true
+  link_for_entity_comparison_compare_programs: true
+  links: true

@@ -190,3 +190,4 @@ hidden:
   field_date_written: true
   field_featured: true
   field_related_program_tag: true
+  search_api_excerpt: true

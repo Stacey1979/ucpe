@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.horizontal_rule.field_horizontal_rule
+    - field.field.paragraph.horizontal_rule.field_hr_type
     - paragraphs.paragraphs_type.horizontal_rule
   module:
     - text
@@ -20,4 +21,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-hidden: {  }
+hidden:
+  field_hr_type: true
+  search_api_excerpt: true

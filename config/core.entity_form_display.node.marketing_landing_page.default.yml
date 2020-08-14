@@ -25,26 +25,28 @@ third_party_settings:
         - field_hero
       parent_name: ''
       weight: 0
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add your hero'
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: 'Hero Section'
     group_content:
       children:
         - field_content_sections
       parent_name: ''
       weight: 1
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add content to your page. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Content
 id: node.marketing_landing_page.default
 targetEntityType: node

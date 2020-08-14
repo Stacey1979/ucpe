@@ -1,0 +1,14 @@
+uuid: c7f73203-a5e8-4955-9d99-097589c1896a
+langcode: en
+status: true
+dependencies: {  }
+id: url_pattern
+label: 'URL Pattern'
+date_format: m-d-y
+time_format: ''
+time_hour_format: ''
+allday_label: ''
+separator: ''
+join: ''
+ampm_reduce: '1'
+date_first: '1'

@@ -1,0 +1,8 @@
+compact: 1
+style: dark
+support: 'https://voices.uchicago.edu/ucpeintranet/service-catalog/general-requests-landing-page/general-request/'
+_core:
+  default_config_hash: hwqM-KXJTqAY8C3P676lt1sg_yVR-KMm9mUpXjppsLQ
+custom_style: ''
+light_logo: sites/default/files/styles/large/public/images/2020-08/shield.rgb_.maroon.png
+dark_logo: sites/default/files/styles/large/public/images/2020-08/shield.rgb_.reversed.png

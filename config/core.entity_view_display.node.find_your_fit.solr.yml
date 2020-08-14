@@ -1,0 +1,95 @@
+uuid: 8a4a62bb-6eac-484d-9605-a40a1e4658e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.solr
+    - field.field.node.find_your_fit.field_content_sections
+    - field.field.node.find_your_fit.field_format_tag
+    - field.field.node.find_your_fit.field_lede
+    - field.field.node.find_your_fit.field_metatags
+    - field.field.node.find_your_fit.field_program_type
+    - field.field.node.find_your_fit.field_split_text
+    - field.field.node.find_your_fit.field_text_and_media_1_3_2_3
+    - node.type.find_your_fit
+  module:
+    - ds
+    - smart_trim
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - 'bundle_field:node'
+        - node_title
+        - field_lede
+        - search_api_excerpt
+    fields:
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 0
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.find_your_fit.solr
+targetEntityType: node
+bundle: find_your_fit
+mode: solr
+content:
+  field_lede:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
+    third_party_settings: {  }
+    type: smart_trim
+    region: ds_content
+  search_api_excerpt:
+    weight: 3
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_content_sections: true
+  field_format_tag: true
+  field_metatags: true
+  field_program_type: true
+  field_split_text: true
+  field_text_and_media_1_3_2_3: true
+  links: true
