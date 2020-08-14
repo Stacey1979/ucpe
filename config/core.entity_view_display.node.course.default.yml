@@ -109,6 +109,11 @@ content:
     third_party_settings: {  }
     type: link
     region: ds_content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   addtoany: true
   field_areas_of_study: true
