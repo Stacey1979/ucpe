@@ -20,7 +20,7 @@ field_name: field_content_sections
 entity_type: node
 bundle: owned_program_landing_page
 label: 'Content Sections'
-description: '<strong>Only for owned programs</strong>. Add content sections to complete the markup of your page. '
+description: ''
 required: false
 translatable: true
 default_value: {  }

@@ -1,0 +1,7 @@
+uuid: 9a731715-f226-4f06-a030-a78cde07a4cd
+langcode: en
+status: true
+dependencies: {  }
+id: node__article
+label: 'Content: Perspectives'
+tags: {  }

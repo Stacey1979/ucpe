@@ -6,8 +6,6 @@ dependencies:
     - field.field.paragraph.header_s_.field_content_section_header
     - field.field.paragraph.header_s_.field_header_type
     - paragraphs.paragraphs_type.header_s_
-  module:
-    - options
 id: paragraph.header_s_.default
 targetEntityType: paragraph
 bundle: header_s_
@@ -21,11 +19,6 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_header_type:
-    type: list_default
-    weight: 1
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_header_type: true
+  search_api_excerpt: true

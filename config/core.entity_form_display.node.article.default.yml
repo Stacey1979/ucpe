@@ -41,13 +41,14 @@ third_party_settings:
         - field_topics
       parent_name: ''
       weight: 0
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Build your hero section.'
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: 'Hero Section'
     group_content:
       children:
@@ -56,13 +57,14 @@ third_party_settings:
         - field_content_sections
       parent_name: ''
       weight: 2
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'The bulk of the page content is built here. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Content
     group_administrative:
       children:
@@ -72,13 +74,14 @@ third_party_settings:
         - field_featured
       parent_name: ''
       weight: 3
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Administrative items like tags and related programs. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Administrative
 _core:
   default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU

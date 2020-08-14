@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.event.field_lede
     - field.field.node.event.field_location
     - field.field.node.event.field_location_filter
+    - field.field.node.event.field_metatags
     - field.field.node.event.field_program
     - node.type.event
   module:
@@ -95,4 +96,6 @@ hidden:
   field_format: true
   field_lede: true
   field_location: true
+  field_metatags: true
   field_program: true
+  search_api_excerpt: true

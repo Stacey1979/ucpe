@@ -13,7 +13,7 @@ field_name: field_form
 entity_type: node
 bundle: owned_program_landing_page
 label: 'Form Embed'
-description: '<strong>Only for non-owned programs</strong>. Enter your form code here. '
+description: '<strong>Use for non-owned programs ONLY</strong>. Enter your form code here. '
 required: false
 translatable: true
 default_value: {  }

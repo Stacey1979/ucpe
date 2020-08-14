@@ -1,0 +1,49 @@
+uuid: 59fb2555-c920-4ed5-ac8e-d1adc6eb09af
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.solr_search_page
+    - field.field.paragraph.text_with_media_1_3_2_3_.field_content_column_1
+    - field.field.paragraph.text_with_media_1_3_2_3_.field_media
+    - paragraphs.paragraphs_type.text_with_media_1_3_2_3_
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_content_column_1
+id: paragraph.text_with_media_1_3_2_3_.solr_search_page
+targetEntityType: paragraph
+bundle: text_with_media_1_3_2_3_
+mode: solr_search_page
+content:
+  field_content_column_1:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+    region: ds_content
+hidden:
+  field_media: true
+  search_api_excerpt: true

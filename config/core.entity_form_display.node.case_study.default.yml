@@ -38,20 +38,14 @@ third_party_settings:
         - field_partnership_logos
       parent_name: ''
       weight: 3
-      format_type: html_element
+      format_type: details
       region: content
       format_settings:
+        description: 'Add information about the partnership with the entity. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        effect: none
-        speed: fast
-        attributes: ''
+        open: false
       label: 'About the Partnership'
     group_summary:
       children:
@@ -60,20 +54,14 @@ third_party_settings:
         - field_results
       parent_name: ''
       weight: 1
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
-        element: div
-        show_label: '0'
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
+        description: 'Add the summary of the case study. '
+        required_fields: true
         id: ''
         classes: ''
-        required_fields: false
-        description: ''
+        open: false
       label: Summary
     group_hero_section:
       children:
@@ -83,13 +71,14 @@ third_party_settings:
         - field_lede
       parent_name: ''
       weight: 0
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add your hero content.'
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: 'Hero Section'
     group_content:
       children:
@@ -97,13 +86,14 @@ third_party_settings:
         - field_content_sections
       parent_name: ''
       weight: 2
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add content to the page. '
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Content
     group_administrative:
       children:
@@ -115,13 +105,14 @@ third_party_settings:
         - field_featured
       parent_name: ''
       weight: 4
-      format_type: fieldset
+      format_type: details
       region: content
       format_settings:
+        description: 'Add administrative items like tags and CTAs'
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: false
+        open: false
       label: Administrative
 id: node.case_study.default
 targetEntityType: node
@@ -204,12 +195,12 @@ content:
   field_hero:
     weight: 2
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: 'Hero Image'
+      title_plural: Heroes
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: heroes
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content

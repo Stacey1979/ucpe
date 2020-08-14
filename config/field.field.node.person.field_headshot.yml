@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_headshot
     - media.type.image
     - node.type.person
+  content:
+    - 'media:image:43d0a94b-2b8b-4f9e-ada5-2d1b0ab5fc5d'
 id: node.person.field_headshot
 field_name: field_headshot
 entity_type: node
@@ -14,7 +16,10 @@ label: Headshot
 description: 'Image needs to be a square ratio.'
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    weight: '0'
+    target_uuid: 43d0a94b-2b8b-4f9e-ada5-2d1b0ab5fc5d
 default_value_callback: ''
 settings:
   handler: 'default:media'

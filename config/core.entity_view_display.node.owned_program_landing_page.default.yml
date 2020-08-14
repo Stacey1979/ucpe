@@ -308,3 +308,4 @@ hidden:
   field_program: true
   field_program_illustration: true
   link_for_entity_comparison_compare_programs: true
+  search_api_excerpt: true

@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Program Landing Page'
 type: owned_program_landing_page
-description: 'Any program landing page. Fields are labeled for use with owned or non-owned programs.'
+description: 'Any program landing page. Fields are labeled for use with <strong>owned and non-owned programs</strong>.'
 help: ''
 new_revision: true
 preview_mode: 1

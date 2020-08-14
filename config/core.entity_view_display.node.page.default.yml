@@ -41,18 +41,18 @@ third_party_settings:
       homepage:
         - field_video_home_page_hero
         - field_lede
-        - field_hero
         - field_hero_cta_button
         - field_large_image_left
         - field_header_h2_
         - field_content
+        - field_hero
         - field_get_in_touch_button
         - field_program_types_preview
         - field_youvisit_embed
-        - field_youvisit_header
-        - field_youvisit_paragraph
         - field_related_story
         - field_discover_the_uchicago_diff
+        - field_youvisit_header
+        - field_youvisit_paragraph
       about:
         - field_large_landscape_hero
       intro:
@@ -130,7 +130,7 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
-    region: ds_content
+    region: homepage
   field_hero_cta_button:
     type: link
     weight: 2

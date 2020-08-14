@@ -4,12 +4,19 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.horizontal_rule.field_horizontal_rule
+    - field.field.paragraph.horizontal_rule.field_hr_type
     - paragraphs.paragraphs_type.horizontal_rule
 id: paragraph.horizontal_rule.default
 targetEntityType: paragraph
 bundle: horizontal_rule
 mode: default
-content: {  }
+content:
+  field_hr_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
 hidden:
   created: true
   field_horizontal_rule: true
