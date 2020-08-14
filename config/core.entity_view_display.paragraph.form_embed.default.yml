@@ -7,7 +7,30 @@ dependencies:
     - field.field.paragraph.form_embed.field_form_title
     - paragraphs.paragraphs_type.form_embed
   module:
+    - ds
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_form_title
+        - field_form_code
 id: paragraph.form_embed.default
 targetEntityType: paragraph
 bundle: form_embed
@@ -19,7 +42,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: ds_content
   field_form_title:
     weight: 0
     label: hidden
@@ -27,5 +50,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-hidden: {  }
+    region: ds_content
+hidden:
+  search_api_excerpt: true

@@ -10,9 +10,10 @@
  */
 #}
 
-  <div class="related_program left">
-    <h3>Related</h3>
-    <div class="img">
+<div class="relatedProgram_wrapper">
+  <h3>Related</h3>
+  <div class="relatedProgram">
+    <div class="relatedProgram_img">
       {{ ds_content.field_program_illustration|field_value }}
       <div class="program_meta">
         <span class="category">
@@ -20,8 +21,9 @@
         </span>
       </div>
     </div>
-    <div class="content">
+    <div class="relatedProgram_content">
       <h4>{{ title|field_value }}</h4>
       <p>{{ ds_content.field_lede|field_value }}</p>
     </div>
   </div>
+</div>

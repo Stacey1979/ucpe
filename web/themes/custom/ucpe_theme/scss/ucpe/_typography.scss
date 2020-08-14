@@ -288,7 +288,9 @@ h6 {
   }
 
   // HR
-
+  .hr {
+    @include make-sm-column(12);
+  }
   hr {
     border-width: 0 !important;
     height: 2px;
@@ -369,6 +371,49 @@ h6 {
       margin-right: $baseline;
       @include utility_M($black_03);
     }
+  }
+}
+
+// TABLE STYLES
+
+table {
+  border: 1px solid $divider-gray !important;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+
+  > thead > tr > th,
+  > thead > tr > td {
+    background-color: $divider-gray;
+    padding: 12px 8px !important;
+    line-height: $baseline;
+    vertical-align: top;
+    border-top: 1px solid $divider-gray;
+  }
+
+  > tbody > tr > th,
+  > tfoot > tr > th,
+  > tbody > tr > td,
+  > tfoot > tr > td {
+    padding: 8px;
+    line-height: $baseline;
+    vertical-align: top;
+    border-top: 1px solid $divider-gray;
+  }
+  > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid $divider-gray;
+  }
+  > caption + thead > tr:first-child > th,
+  > colgroup + thead > tr:first-child > th,
+  > thead:first-child > tr:first-child > th,
+  > caption + thead > tr:first-child > td,
+  > colgroup + thead > tr:first-child > td,
+  > thead:first-child > tr:first-child > td {
+    border-top: 0;
+  }
+  > tbody > tr:nth-of-type(odd) {
+    background-color: $bg-02;
   }
 }
 

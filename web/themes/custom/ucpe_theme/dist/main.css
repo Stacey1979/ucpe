@@ -6780,6 +6780,18 @@ h6 {
     display: block;
     margin-top: 1rem; }
 
+.body .hr,
+.content .hr {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 768px) {
+    .body .hr,
+    .content .hr {
+      float: left;
+      width: 100%; } }
+
 .body hr,
 .content hr {
   border-width: 0 !important;
@@ -6877,6 +6889,39 @@ h6 {
   font-weight: 400;
   line-height: 1.8rem;
   text-transform: uppercase; }
+
+table {
+  border: 1px solid #dcdcdc !important;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px; }
+  table > thead > tr > th,
+  table > thead > tr > td {
+    background-color: #dcdcdc;
+    padding: 12px 8px !important;
+    line-height: 1rem;
+    vertical-align: top;
+    border-top: 1px solid #dcdcdc; }
+  table > tbody > tr > th,
+  table > tfoot > tr > th,
+  table > tbody > tr > td,
+  table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1rem;
+    vertical-align: top;
+    border-top: 1px solid #dcdcdc; }
+  table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dcdcdc; }
+  table > caption + thead > tr:first-child > th,
+  table > colgroup + thead > tr:first-child > th,
+  table > thead:first-child > tr:first-child > th,
+  table > caption + thead > tr:first-child > td,
+  table > colgroup + thead > tr:first-child > td,
+  table > thead:first-child > tr:first-child > td {
+    border-top: 0; }
+  table > tbody > tr:nth-of-type(odd) {
+    background-color: #f3f3f3; }
 
 #toolbar-administration {
   font-size: 12px !important; }
@@ -7111,7 +7156,8 @@ nav.tabs ul.nav-tabs li {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  float: inherit !important; }
   @media (min-width: 768px) {
     .content100 {
       float: left;
@@ -7311,14 +7357,13 @@ nav.tabs ul.nav-tabs li {
 
 .stat_number {
   text-align: center; }
-  .stat_number span {
-    vertical-align: top; }
   .stat_number .num {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 4rem;
     color: #110f0f;
     font-weight: 500;
-    line-height: 4rem; }
+    line-height: 4rem;
+    vertical-align: bottom; }
   .stat_number .pre,
   .stat_number .post {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -7326,6 +7371,10 @@ nav.tabs ul.nav-tabs li {
     color: #110f0f;
     font-weight: 500;
     line-height: 3rem; }
+  .stat_number .pre {
+    vertical-align: top; }
+  .stat_number .post {
+    vertical-align: text-bottom; }
 
 .stat {
   align-items: center;
@@ -7811,6 +7860,59 @@ nav.tabs ul.nav-tabs li {
     line-height: 2.25rem;
     margin: 0 0 2rem; }
 
+.relatedProgram_wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 768px) {
+    .relatedProgram_wrapper {
+      float: left;
+      width: 100%; } }
+  @media only screen and (min-width: 768px) {
+    .relatedProgram_wrapper {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    .relatedProgram_wrapper {
+      float: left;
+      width: 50%; } }
+  @media only screen and (min-width: 1200px) {
+    .relatedProgram_wrapper {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-left: -8.3333%; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .relatedProgram_wrapper {
+      float: left;
+      width: 41.66667%; } }
+  @media only screen and (min-width: 1440px) {
+    .relatedProgram_wrapper {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media only screen and (min-width: 1440px) and (min-width: 768px) {
+    .relatedProgram_wrapper {
+      float: left;
+      width: 50%; } }
+  .relatedProgram_wrapper h3 {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #800000;
+    line-height: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 0; }
+  .relatedProgram_wrapper .relatedProgram {
+    border-right: solid 1px #dcdcdc;
+    margin-right: 1rem !important;
+    padding-right: 2rem !important; }
+
 .featured_programs .fp_wrap {
   margin-right: -15px;
   margin-left: -15px; }
@@ -7990,7 +8092,7 @@ nav.tabs ul.nav-tabs li {
     color: #800000;
     line-height: 2.4rem;
     font-weight: 500;
-    margin-bottom: 2rem; }
+    margin-bottom: 0; }
   .card_grid .cg_wrapper {
     margin-right: -15px;
     margin-left: -15px; }
@@ -8008,6 +8110,18 @@ nav.tabs ul.nav-tabs li {
         .card_grid .cg_wrapper .cg_content {
           float: left;
           width: 100%; } }
+  @media only screen and (min-width: 768px) {
+    .card_grid .related-three-up .view-content {
+      display: flex;
+      flex-wrap: wrap; } }
+  .card_grid .related-three-up .view-content .views-row {
+    margin: 1rem 0; }
+    @media only screen and (min-width: 768px) {
+      .card_grid .related-three-up .view-content .views-row {
+        flex: 1;
+        margin: 0; }
+        .card_grid .related-three-up .view-content .views-row:nth-child(2) {
+          margin: 0 1rem; } }
   @media only screen and (min-width: 768px) {
     .card_grid .slick-track {
       display: flex;
@@ -9471,12 +9585,21 @@ header {
         @media only screen and (min-width: 1200px) {
           .story .content_body .content .story_profile {
             margin-right: -16.6667%; } }
-      .story .content_body .content .intro p {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 1.5rem;
-        color: #110f0f;
-        font-weight: 900;
-        line-height: 2.25rem; }
+      .story .content_body .content .intro_wrapper .intro_body .intro {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; }
+        @media (min-width: 768px) {
+          .story .content_body .content .intro_wrapper .intro_body .intro {
+            float: left;
+            width: 100%; } }
+        .story .content_body .content .intro_wrapper .intro_body .intro p {
+          font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+          font-size: 1.5rem;
+          color: #110f0f;
+          font-weight: 900;
+          line-height: 2.25rem; }
 
 .page-node-type-area-of-study .area_of_study {
   padding-right: 15px;
@@ -11132,6 +11255,92 @@ footer.footer {
     .hero_wrapper.hero_findYourFit .hero_content .col2 {
       float: left;
       width: 58.33333%; } }
+
+.embedForm_wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .embedForm_wrapper {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .embedForm_wrapper {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .embedForm_wrapper {
+      max-width: 1300px; } }
+  .embedForm_wrapper .embedForm_body {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .embedForm_wrapper .embedForm_body:before, .embedForm_wrapper .embedForm_body:after {
+      display: table;
+      content: " "; }
+    .embedForm_wrapper .embedForm_body:after {
+      clear: both; }
+
+.embedForm {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #f3f3f3;
+  margin-bottom: 4rem;
+  padding: 3rem; }
+  @media (min-width: 768px) {
+    .embedForm {
+      float: left;
+      width: 75%; } }
+  .embedForm form .form_question {
+    width: 100%; }
+    .embedForm form .form_question label {
+      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-size: 0.875rem;
+      color: #585858;
+      line-height: 1.4rem;
+      font-weight: 400; }
+    .embedForm form .form_question input,
+    .embedForm form .form_question select {
+      border: 0;
+      border-bottom: solid 3px #585858;
+      border-radius: 0;
+      color: #110f0f;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      width: 100%; }
+      .embedForm form .form_question input:focus,
+      .embedForm form .form_question select:focus {
+        border-bottom-color: #006ba6;
+        outline: 0; }
+      .embedForm form .form_question input[type="checkbox"],
+      .embedForm form .form_question select[type="checkbox"] {
+        display: inline;
+        width: auto;
+        vertical-align: top; }
+    .embedForm form .form_question.required {
+      background-color: transparent; }
+      .embedForm form .form_question.required input {
+        border-bottom-color: #e54b4b; }
+  .embedForm form button {
+    background-color: #800000;
+    border: solid 2px #800000;
+    border-radius: 0;
+    color: #ffffff;
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+    transition-property: color, transform, background-color; }
+    .embedForm form button:hover {
+      background-color: #ffffff;
+      color: #350e20; }
 
 /**
  * jQuery UI autocomplete widget style overrides.
