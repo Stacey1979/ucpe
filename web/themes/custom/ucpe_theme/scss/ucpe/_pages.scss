@@ -170,6 +170,34 @@
       @include heading_S($black);
     }
   }
+
+  .profileFaculty_wrapper {
+    background-color: $bg-02;
+    position: relative;
+    padding-bottom: $baseline * 4;
+    padding-top: $baseline * 4;
+    @include screen("tablet-wide") {
+      padding-bottom: $baseline * 6;
+      padding-top: $baseline * 6;
+    }
+
+    &:before,
+    &:after {
+      background-color: $bg_02;
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 100vw;
+      top: 0;
+      z-index: 0;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+  }
 }
 // END - ARTICLE
 
@@ -498,13 +526,17 @@
 
         .relatedCourse_wrapper {
           background-color: $bg-02;
+          float: left;
           margin-bottom: $baseline;
           padding: $baseline * 2;
+          width: 100%;
 
           h4 {
             @include bodycopy_L($black_02);
+            margin-top: 0;
           }
           ul.relatedCourse {
+            margin: 0;
             padding: 0;
 
             li {

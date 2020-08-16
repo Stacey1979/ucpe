@@ -38,8 +38,14 @@ a.showmore {
 }
 
 //THREE UP CONTENT
-
+.three-up-wrapper {
+  @include make-container();
+}
+.three-up-body {
+  @include make-row();
+}
 .three-up {
+  @include make-sm-column(12);
   display: block;
   @include screen("tablet") {
     display: flex;

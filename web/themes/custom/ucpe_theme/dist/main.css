@@ -7355,6 +7355,132 @@ nav.tabs ul.nav-tabs li {
     .contentLrgImg .col2 h3 {
       color: #110f0f; }
 
+.profileFaculty_wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .profileFaculty_wrapper {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .profileFaculty_wrapper {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .profileFaculty_wrapper {
+      max-width: 1300px; } }
+
+.profileFaculty_body {
+  margin-right: -15px;
+  margin-left: -15px; }
+  .profileFaculty_body:before, .profileFaculty_body:after {
+    display: table;
+    content: " "; }
+  .profileFaculty_body:after {
+    clear: both; }
+
+.profileFaculty .profileFaculty_top {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 2rem;
+  z-index: 5; }
+  @media (min-width: 768px) {
+    .profileFaculty .profileFaculty_top {
+      float: left;
+      width: 100%; } }
+  @media only screen and (min-width: 768px) {
+    .profileFaculty .profileFaculty_top {
+      display: flex;
+      align-items: center; } }
+  .profileFaculty .profileFaculty_top .headshot {
+    margin: 0 3rem 0 0;
+    width: 7rem; }
+  .profileFaculty .profileFaculty_top .name {
+    flex: 1; }
+    .profileFaculty .profileFaculty_top .name h3 {
+      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-size: 1.125rem;
+      color: #110f0f;
+      line-height: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 0; }
+    .profileFaculty .profileFaculty_top .name .job_title {
+      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-size: 1.125rem;
+      color: #110f0f;
+      line-height: 1.8rem;
+      font-weight: 400; }
+
+.profileFaculty .profileFaculty_bottom {
+  z-index: 5;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 768px) {
+    .profileFaculty .profileFaculty_bottom {
+      float: left;
+      width: 100%; } }
+  .profileFaculty .profileFaculty_bottom a.email {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: #350e20;
+    line-height: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .25s ease-out; }
+    .profileFaculty .profileFaculty_bottom a.email span {
+      border-bottom: solid 2px #800000; }
+    .profileFaculty .profileFaculty_bottom a.email:after {
+      font-family: "ucpe_icons" !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      text-transform: none !important;
+      speak: none;
+      line-height: 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #800000;
+      content: "A";
+      border-bottom: 0;
+      font-size: 1.5rem;
+      padding-left: 8px;
+      vertical-align: middle;
+      transition: all .25s ease-out; }
+    .profileFaculty .profileFaculty_bottom a.email:hover {
+      color: #800000;
+      transition: all .25s ease-in; }
+      .profileFaculty .profileFaculty_bottom a.email:hover:after {
+        padding-left: 12px;
+        transition: all .25s ease-in; }
+
+.stat_wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .stat_wrapper {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .stat_wrapper {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .stat_wrapper {
+      max-width: 1300px; } }
+
+.stat_body {
+  margin-right: -15px;
+  margin-left: -15px; }
+  .stat_body:before, .stat_body:after {
+    display: table;
+    content: " "; }
+  .stat_body:after {
+    clear: both; }
+
 .stat_number {
   text-align: center; }
   .stat_number .num {
@@ -7377,16 +7503,20 @@ nav.tabs ul.nav-tabs li {
     vertical-align: text-bottom; }
 
 .stat {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
   align-items: center;
   border-bottom: solid 1px #dcdcdc;
   border-top: solid 1px #dcdcdc;
   display: flex;
-  padding: 3rem 0; }
-  .stat:before, .stat:after {
-    display: table;
-    content: " "; }
-  .stat:after {
-    clear: both; }
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  @media (min-width: 768px) {
+    .stat {
+      float: left;
+      width: 100%; } }
   .stat .stat_number {
     position: relative;
     min-height: 1px;
@@ -7605,7 +7735,8 @@ nav.tabs ul.nav-tabs li {
         font-size: 1.5rem;
         color: #110f0f;
         font-weight: 900;
-        line-height: 2.25rem; }
+        line-height: 2.25rem;
+        margin-top: 0; }
     .cta100_wrapper .cta100 figure.cta_photo {
       position: relative;
       min-height: 1px;
@@ -8370,8 +8501,40 @@ a.showmore {
     font-size: 1rem;
     vertical-align: middle; }
 
+.three-up-wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .three-up-wrapper {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .three-up-wrapper {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .three-up-wrapper {
+      max-width: 1300px; } }
+
+.three-up-body {
+  margin-right: -15px;
+  margin-left: -15px; }
+  .three-up-body:before, .three-up-body:after {
+    display: table;
+    content: " "; }
+  .three-up-body:after {
+    clear: both; }
+
 .three-up {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
   display: block; }
+  @media (min-width: 768px) {
+    .three-up {
+      float: left;
+      width: 100%; } }
   @media only screen and (min-width: 768px) {
     .three-up {
       display: flex; } }
@@ -9357,6 +9520,28 @@ header {
   font-weight: 900;
   line-height: 2.25rem; }
 
+.article .profileFaculty_wrapper {
+  background-color: #f3f3f3;
+  position: relative;
+  padding-bottom: 4rem;
+  padding-top: 4rem; }
+  @media only screen and (min-width: 960px) {
+    .article .profileFaculty_wrapper {
+      padding-bottom: 6rem;
+      padding-top: 6rem; } }
+  .article .profileFaculty_wrapper:before, .article .profileFaculty_wrapper:after {
+    background-color: #f3f3f3;
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    z-index: 0; }
+  .article .profileFaculty_wrapper:before {
+    left: 0; }
+  .article .profileFaculty_wrapper:after {
+    right: 0; }
+
 .casestudy .share {
   position: relative;
   min-height: 1px;
@@ -9863,15 +10048,19 @@ header {
         font-weight: 400; }
       .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .relatedCourse_wrapper {
         background-color: #f3f3f3;
+        float: left;
         margin-bottom: 1rem;
-        padding: 2rem; }
+        padding: 2rem;
+        width: 100%; }
         .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .relatedCourse_wrapper h4 {
           font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
           font-size: 1.125rem;
           color: #585858;
           line-height: 1.8rem;
-          font-weight: 400; }
+          font-weight: 400;
+          margin-top: 0; }
         .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .relatedCourse_wrapper ul.relatedCourse {
+          margin: 0;
           padding: 0; }
           .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .relatedCourse_wrapper ul.relatedCourse li a {
             font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
