@@ -1,10 +1,9 @@
 uuid: ae8ac233-7a2d-48f5-b3db-d11097e94919
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
-    - field.field.node.article.body
     - field.field.node.article.field_areas_of_study
     - field.field.node.article.field_author
     - field.field.node.article.field_based_on
@@ -22,50 +21,8 @@ dependencies:
     - node.type.article
   module:
     - datetime
-    - ds
     - smart_trim
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: ds_1col
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        label: ''
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-          ds_content: {  }
-    regions:
-      ds_content:
-        - 'bundle_field:node'
-        - node_title
-        - field_date_written
-        - reading_time
-        - field_lede
-        - links
-    fields:
-      'bundle_field:node':
-        plugin_id: 'bundle_field:node'
-        weight: 0
-        label: hidden
-        formatter: default
-      node_title:
-        plugin_id: node_title
-        weight: 1
-        label: hidden
-        formatter: default
-        settings:
-          link: true
-          wrapper: h3
-          class: ''
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.search_result
@@ -76,14 +33,14 @@ content:
   field_date_written:
     type: datetime_default
     weight: 2
-    region: ds_content
+    region: content
     label: visually_hidden
     settings:
       timezone_override: ''
       format_type: full_date
     third_party_settings: {  }
   field_lede:
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       trim_length: 600
@@ -100,20 +57,14 @@ content:
       summary_handler: full
     third_party_settings: {  }
     type: smart_trim
-    region: ds_content
-  links:
-    weight: 5
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
-  reading_time:
-    weight: 3
-    region: ds_content
+    region: content
+  search_api_excerpt:
+    weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
-  body: true
   field_areas_of_study: true
   field_author: true
   field_based_on: true
@@ -132,4 +83,5 @@ hidden:
   field_read_time: true
   field_related_programs: true
   field_topics: true
-  search_api_excerpt: true
+  links: true
+  reading_time: true

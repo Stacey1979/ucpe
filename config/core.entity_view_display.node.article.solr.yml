@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.solr
-    - field.field.node.article.body
     - field.field.node.article.field_areas_of_study
     - field.field.node.article.field_author
     - field.field.node.article.field_based_on
@@ -101,7 +100,6 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
-  body: true
   field_areas_of_study: true
   field_author: true
   field_based_on: true

@@ -112,7 +112,6 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
-  body: true
   field_content: true
   field_content_sections: true
   field_discover_the_uchicago_diff: true

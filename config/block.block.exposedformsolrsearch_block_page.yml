@@ -1,0 +1,23 @@
+uuid: 3367fca4-d457-4cdb-a4bb-63a8fca85300
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.solr
+  module:
+    - views
+  theme:
+    - ucpe_theme
+id: exposedformsolrsearch_block_page
+theme: ucpe_theme
+region: header
+weight: -17
+provider: null
+plugin: 'views_exposed_filter_block:solr-search_block_page'
+settings:
+  id: 'views_exposed_filter_block:solr-search_block_page'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

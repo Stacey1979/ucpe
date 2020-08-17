@@ -1,6 +1,6 @@
 uuid: 815eb3db-62c1-4680-a9d6-ecc01f2be9fe
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
@@ -14,71 +14,35 @@ dependencies:
     - field.field.node.course.field_view_upcoming_courses
     - node.type.course
   module:
-    - ds
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: ds_1col
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        label: ''
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-          ds_content: {  }
-    regions:
-      ds_content:
-        - links
-        - 'bundle_field:node'
-        - node_title
-        - field_course_code
-        - field_course_summary
-    fields:
-      'bundle_field:node':
-        plugin_id: 'bundle_field:node'
-        weight: 1
-        label: hidden
-        formatter: default
-      node_title:
-        plugin_id: node_title
-        weight: 2
-        label: hidden
-        formatter: default
-        settings:
-          link: true
-          wrapper: h3
-          class: ''
 id: node.course.search_result
 targetEntityType: node
 bundle: course
 mode: search_result
 content:
   field_course_code:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: ds_content
+    region: content
   field_course_summary:
-    weight: 4
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: ds_content
+    region: content
   links:
     weight: 0
-    region: ds_content
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  search_api_excerpt:
+    weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
@@ -89,4 +53,3 @@ hidden:
   field_related_program_tag: true
   field_topics: true
   field_view_upcoming_courses: true
-  search_api_excerpt: true

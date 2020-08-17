@@ -1,6 +1,6 @@
 uuid: 746e21d2-1b39-4f69-8229-b2e9a2189831
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
@@ -20,50 +20,8 @@ dependencies:
     - node.type.story
   module:
     - datetime
-    - ds
     - smart_trim
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: ds_1col
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        label: ''
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-          ds_content: {  }
-    regions:
-      ds_content:
-        - 'bundle_field:node'
-        - node_title
-        - field_date_written
-        - reading_time
-        - field_lede
-        - links
-    fields:
-      'bundle_field:node':
-        plugin_id: 'bundle_field:node'
-        weight: 0
-        label: hidden
-        formatter: default
-      node_title:
-        plugin_id: node_title
-        weight: 1
-        label: hidden
-        formatter: default
-        settings:
-          link: true
-          wrapper: h3
-          class: ''
 id: node.story.search_result
 targetEntityType: node
 bundle: story
@@ -85,7 +43,7 @@ content:
       format_type: full_date
     third_party_settings: {  }
     type: datetime_default
-    region: ds_content
+    region: content
   field_lede:
     weight: 4
     label: hidden
@@ -104,7 +62,7 @@ content:
       summary_handler: full
     third_party_settings: {  }
     type: smart_trim
-    region: ds_content
+    region: content
   field_written_by:
     weight: 4
     label: inline
@@ -113,14 +71,14 @@ content:
     third_party_settings: {  }
     type: string
     region: ds_content
-  links:
-    weight: 5
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
   reading_time:
     weight: 3
-    region: ds_content
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  search_api_excerpt:
+    weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
@@ -137,4 +95,4 @@ hidden:
   field_metatags: true
   field_related_program_tag: true
   field_story_subject_name: true
-  search_api_excerpt: true
+  links: true

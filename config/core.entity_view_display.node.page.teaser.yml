@@ -40,7 +40,6 @@ content:
     weight: 101
     region: content
 hidden:
-  body: true
   field_content: true
   field_content_sections: true
   field_discover_the_uchicago_diff: true
@@ -58,3 +57,4 @@ hidden:
   field_youvisit_embed: true
   field_youvisit_header: true
   field_youvisit_paragraph: true
+  search_api_excerpt: true

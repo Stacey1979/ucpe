@@ -1,6 +1,6 @@
 uuid: 89ab80ea-035f-4f58-8067-a8b98283f63b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.solr

@@ -45,6 +45,7 @@ third_party_settings:
         - field_metatags
         - field_view_upcoming_courses
         - field_course_summary
+        - links
     fields:
       node_title:
         plugin_id: node_title
@@ -111,9 +112,9 @@ content:
     region: ds_content
   links:
     weight: 100
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   addtoany: true
   field_areas_of_study: true

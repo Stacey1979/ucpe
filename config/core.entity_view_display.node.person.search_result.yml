@@ -1,6 +1,6 @@
 uuid: cfa68049-3037-4d5f-a033-4a2d5a55224c
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
@@ -16,50 +16,9 @@ dependencies:
     - field.field.node.person.field_title
     - node.type.person
   module:
-    - ds
     - smart_trim
     - text
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: ds_1col
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        label: ''
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-          ds_content: {  }
-    regions:
-      ds_content:
-        - 'bundle_field:node'
-        - node_title
-        - field_job_title
-        - field_bio
-        - links
-    fields:
-      'bundle_field:node':
-        plugin_id: 'bundle_field:node'
-        weight: 0
-        label: hidden
-        formatter: default
-      node_title:
-        plugin_id: node_title
-        weight: 1
-        label: hidden
-        formatter: default
-        settings:
-          link: true
-          wrapper: h3
-          class: ''
 id: node.person.search_result
 targetEntityType: node
 bundle: person
@@ -83,17 +42,17 @@ content:
       summary_handler: full
     third_party_settings: {  }
     type: smart_trim
-    region: ds_content
+    region: content
   field_job_title:
     weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: ds_content
-  links:
+    region: content
+  search_api_excerpt:
     weight: 4
-    region: ds_content
+    region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
@@ -112,4 +71,4 @@ hidden:
   field_name: true
   field_person_type: true
   field_title: true
-  search_api_excerpt: true
+  links: true

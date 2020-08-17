@@ -1,0 +1,23 @@
+uuid: 8e758488-43fc-464e-9718-74c808acd5f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_cta_button
+    - node.type.owned_program_interior_page
+  module:
+    - link
+id: node.owned_program_interior_page.field_hero_cta_button
+field_name: field_hero_cta_button
+entity_type: node
+bundle: owned_program_interior_page
+label: 'Hero CTA Button'
+description: 'Optional button to add to the hero area on interior pages. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
