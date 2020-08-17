@@ -151,7 +151,7 @@
             "rm -f /app/database.sql.gz",
             "terminus backup:get ucpe.live --element=db --to=/app/database.sql.gz",
             "drush sql:drop -y",
-            "zcat database.sql.gz | drush sqlc",
+            "zcat /app/database.sql.gz | drush sqlc",
             "drush updb -y",
             "drush cim -y",
             "git checkout local_config"
