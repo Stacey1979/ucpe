@@ -19,6 +19,9 @@
     <div class="img">
       {{ content.field_image_l_r_caption|field_value }}
     </div>
-  <figcaption>{{ content.field_caption|field_value }} {% if content.field_image_attribution_2 is not empty  %}<span class="attribute">{{ content.field_image_attribution_2|render|striptags|trim }}</span>{% endif %}</figcaption>
+    <figcaption>
+      {% if content.field_caption is not empty  %}{{ content.field_caption|field_value }} {% endif %}
+      {% if content.field_image_attribution_2 is not empty  %}<span class="attribute">{{ content.field_image_attribution_2|render|striptags|trim }}</span>{% endif %}
+    </figcaption>
   </figure>
 </div>

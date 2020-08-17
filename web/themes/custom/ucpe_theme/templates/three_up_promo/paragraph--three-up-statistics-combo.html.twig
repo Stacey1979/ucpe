@@ -39,7 +39,11 @@
  */
 #}
 {% block paragraph %}
-  <div class="three-up three-up-promo">
-      {{ content.field_add_stats_3_|field_value }}
+<div class="three-up-wrapper">
+  <div class="three-up-body">
+    <div class="three-up three-up-promo">
+        {{ content.field_add_stats_3_|field_value }}
+    </div>
   </div>
+</div>
 {% endblock paragraph %}

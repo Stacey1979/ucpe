@@ -166,8 +166,80 @@
     }
   }
 }
+// PROFILE
+
+.profileFaculty_wrapper {
+  @include make-container;
+}
+.profileFaculty_body {
+  @include make-row;
+}
+.profileFaculty {
+  .profileFaculty_top {
+    @include make-sm-column(12);
+    @include screen("tablet") {
+      display: flex;
+      align-items: center;
+    }
+    margin-bottom: $baseline * 2;
+    z-index: 5;
+
+    .headshot {
+      margin: 0 $baseline * 3 0 0;
+      width: $baseline * 7;
+    }
+    .name {
+      flex: 1;
+      h3 {
+        @include bodycopy_L($black, $bold: true);
+        margin-bottom: 0;
+      }
+      .job_title {
+        @include bodycopy_L($black);
+      }
+    }
+  }
+  .profileFaculty_bottom {
+    z-index: 5;
+    @include make-sm-column(12);
+
+    a.email {
+      @include bodycopy_M($plum, $bold: true);
+      text-decoration: none;
+      transition: all 0.25s ease-out;
+
+      span {
+        border-bottom: solid 2px $maroon;
+      }
+
+      &:after {
+        @include iconfont($maroon, "\41");
+        border-bottom: 0;
+        font-size: 1.5rem;
+        padding-left: 8px;
+        vertical-align: middle;
+        transition: all 0.25s ease-out;
+      }
+
+      &:hover {
+        color: $maroon;
+        transition: all 0.25s ease-in;
+        &:after {
+          padding-left: 12px;
+          transition: all 0.25s ease-in;
+        }
+      }
+    }
+  }
+}
 
 // STATS
+.stat_wrapper {
+  @include make-container();
+}
+.stat_body {
+  @include make-row();
+}
 
 .stat_number {
   text-align: center;
@@ -201,12 +273,13 @@
 }
 
 .stat {
+  @include make-sm-column(12);
   align-items: center;
   border-bottom: solid 1px $divider-gray;
   border-top: solid 1px $divider-gray;
   display: flex;
-  padding: $baseline * 3 0;
-  @include clearfix();
+  padding-top: $baseline * 3;
+  padding-bottom: $baseline * 3;
 
   .stat_number {
     @include make-md-column(3);
@@ -371,6 +444,7 @@
 
       h3 {
         @include heading_S($black);
+        margin-top: 0;
       }
     }
 
