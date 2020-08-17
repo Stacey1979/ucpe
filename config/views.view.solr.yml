@@ -297,7 +297,7 @@ display:
           expose:
             label: ''
           plugin_id: search_api
-      title: 'SOLR Search'
+      title: Search
       header: {  }
       footer: {  }
       empty: {  }
@@ -429,6 +429,7 @@ display:
         filters: false
         filter_groups: false
         sorts: false
+        title: false
       filter_groups:
         operator: AND
         groups:
@@ -437,6 +438,7 @@ display:
       exposed_block: true
       path: search
       sorts: {  }
+      title: Search
     cache_metadata:
       max-age: -1
       contexts:
