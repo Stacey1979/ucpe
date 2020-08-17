@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.featured
-    - field.field.node.article.body
     - field.field.node.article.field_areas_of_study
     - field.field.node.article.field_author
     - field.field.node.article.field_based_on
@@ -119,7 +118,6 @@ content:
     region: ds_content
 hidden:
   addtoany: true
-  body: true
   field_areas_of_study: true
   field_blockquote: true
   field_blockquote_perspectives: true
@@ -136,3 +134,4 @@ hidden:
   field_related_programs: true
   links: true
   reading_time: true
+  search_api_excerpt: true

@@ -12,6 +12,9 @@ type: list_string
 settings:
   allowed_values:
     -
+      value: advisory_board
+      label: 'Advisory Board'
+    -
       value: instructor
       label: Instructor
     -

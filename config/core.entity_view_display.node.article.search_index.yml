@@ -1,9 +1,9 @@
-uuid: eda76529-8c9a-4ee7-8d51-3a17e69b7a3d
+uuid: 423c3041-ba24-4218-8d19-25e7b29a8103
 langcode: en
-status: true
+status: false
 dependencies:
   config:
-    - core.entity_view_mode.node.preview
+    - core.entity_view_mode.node.search_index
     - field.field.node.article.field_areas_of_study
     - field.field.node.article.field_author
     - field.field.node.article.field_based_on
@@ -21,30 +21,65 @@ dependencies:
     - node.type.article
   module:
     - datetime
+    - ds
     - entity_reference_revisions
+    - metatag
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_hero
+        - field_date_written
+        - field_lede
+        - field_based_on
+        - reading_time
+        - field_topics
+        - addtoany
+        - field_in_brief_perspective
+        - field_intro_paragraph
+        - field_content_sections
+        - links
+        - field_author
+        - field_metatags
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
-id: node.article.preview
+id: node.article.search_index
 targetEntityType: node
 bundle: article
-mode: preview
+mode: search_index
 content:
   addtoany:
-    weight: 7
-    region: content
+    weight: 6
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
   field_author:
     weight: 11
     label: hidden
     settings:
-      view_mode: teaser
+      view_mode: bio_with_email
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
-    region: content
+    region: ds_content
   field_based_on:
     weight: 3
     label: hidden
@@ -52,35 +87,8 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
+    region: ds_content
   field_content_sections:
-    type: entity_reference_revisions_entity_view
-    weight: 10
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
-  field_date_written:
-    type: datetime_default
-    weight: 1
-    region: content
-    label: hidden
-    settings:
-      timezone_override: ''
-      format_type: full_date
-    third_party_settings: {  }
-  field_in_brief_perspective:
-    type: entity_reference_revisions_entity_view
-    weight: 8
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
-  field_intro_paragraph:
     type: entity_reference_revisions_entity_view
     weight: 9
     label: hidden
@@ -88,14 +96,57 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
+    region: ds_content
+  field_date_written:
+    type: datetime_default
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: full_date
+    third_party_settings: {  }
+  field_hero:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: perspectives_case_study_hero_para
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_in_brief_perspective:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
+  field_intro_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 8
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
   field_lede:
     weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: ds_content
+  field_metatags:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: ds_content
   field_topics:
     weight: 5
     label: hidden
@@ -103,15 +154,15 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
+    region: ds_content
   links:
-    weight: 6
-    region: content
+    weight: 10
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
   reading_time:
     weight: 4
-    region: content
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
@@ -120,9 +171,7 @@ hidden:
   field_blockquote_perspectives: true
   field_date_and_lede: true
   field_featured: true
-  field_hero: true
   field_image: true
-  field_metatags: true
   field_perspectives_hero: true
   field_perspectives_label: true
   field_read_time: true
