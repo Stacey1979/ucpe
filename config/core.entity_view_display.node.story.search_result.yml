@@ -19,9 +19,48 @@ dependencies:
     - field.field.node.story.field_story_subject_name
     - node.type.story
   module:
-    - datetime
+    - ds
     - smart_trim
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - 'bundle_field:node'
+        - node_title
+        - field_lede
+        - search_api_excerpt
+    fields:
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 0
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
 id: node.story.search_result
 targetEntityType: node
 bundle: story
@@ -35,17 +74,8 @@ content:
       link: '1'
     third_party_settings: {  }
     region: ds_content
-  field_date_written:
-    weight: 2
-    label: hidden
-    settings:
-      timezone_override: ''
-      format_type: full_date
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
   field_lede:
-    weight: 4
+    weight: 2
     label: hidden
     settings:
       trim_length: 600
@@ -62,7 +92,7 @@ content:
       summary_handler: full
     third_party_settings: {  }
     type: smart_trim
-    region: content
+    region: ds_content
   field_written_by:
     weight: 4
     label: inline
@@ -71,14 +101,9 @@ content:
     third_party_settings: {  }
     type: string
     region: ds_content
-  reading_time:
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   search_api_excerpt:
-    weight: 5
-    region: content
+    weight: 3
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
@@ -88,6 +113,7 @@ hidden:
   field_author: true
   field_content_sections: true
   field_date_and_lede: true
+  field_date_written: true
   field_featured: true
   field_featured_quote: true
   field_hero: true
@@ -96,3 +122,4 @@ hidden:
   field_related_program_tag: true
   field_story_subject_name: true
   links: true
+  reading_time: true

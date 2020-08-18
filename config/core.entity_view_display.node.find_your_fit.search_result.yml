@@ -1,6 +1,6 @@
 uuid: bb878308-7f61-4aae-acdd-98afa83afa85
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
@@ -36,19 +36,19 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - links
         - 'bundle_field:node'
         - node_title
         - field_lede
+        - search_api_excerpt
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
-        weight: 1
+        weight: 0
         label: hidden
         formatter: default
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 1
         label: hidden
         formatter: default
         settings:
@@ -61,7 +61,7 @@ bundle: find_your_fit
 mode: search_result
 content:
   field_lede:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       trim_length: 600
@@ -79,8 +79,8 @@ content:
     third_party_settings: {  }
     type: smart_trim
     region: ds_content
-  links:
-    weight: 0
+  search_api_excerpt:
+    weight: 3
     region: ds_content
     settings: {  }
     third_party_settings: {  }
@@ -92,4 +92,4 @@ hidden:
   field_program_type: true
   field_split_text: true
   field_text_and_media_1_3_2_3: true
-  search_api_excerpt: true
+  links: true

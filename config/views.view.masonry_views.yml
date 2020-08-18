@@ -87,7 +87,7 @@ display:
               secondary_label: 'Advanced options'
               secondary_open: false
             filter:
-              field_case_study_type_value:
+              field_areas_of_study_target_id:
                 plugin_id: bef
                 advanced:
                   rewrite:
@@ -96,7 +96,7 @@ display:
                   is_secondary: false
                 select_all_none: false
                 select_all_none_nested: false
-                display_inline: 0
+                display_inline: 1
       pager:
         type: some
         options:
@@ -2139,17 +2139,16 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.area_of_study.addition'
-        - 'config:core.entity_view_display.node.area_of_study.aos_aos_index'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry'
         - 'config:core.entity_view_display.node.area_of_study.aos_masonry_learn_more'
+        - 'config:core.entity_view_display.node.area_of_study.default'
+        - 'config:core.entity_view_display.node.area_of_study.addition'
+        - 'config:core.entity_view_display.node.area_of_study.aos_aos_index'
         - 'config:core.entity_view_display.node.area_of_study.area_of_study_cta'
         - 'config:core.entity_view_display.node.area_of_study.area_of_study_link'
-        - 'config:core.entity_view_display.node.area_of_study.default'
         - 'config:core.entity_view_display.node.area_of_study.masonry'
         - 'config:core.entity_view_display.node.area_of_study.preview'
         - 'config:core.entity_view_display.node.area_of_study.search_result'
-        - 'config:core.entity_view_display.node.area_of_study.solr'
         - 'config:core.entity_view_display.node.area_of_study.teaser'
         - 'config:core.entity_view_display.node.article.default'
         - 'config:core.entity_view_display.node.article.featured'
@@ -2159,8 +2158,8 @@ display:
         - 'config:core.entity_view_display.node.article.preview'
         - 'config:core.entity_view_display.node.article.related_three_up'
         - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.search_index'
         - 'config:core.entity_view_display.node.article.search_result'
-        - 'config:core.entity_view_display.node.article.solr'
         - 'config:core.entity_view_display.node.article.teaser'
         - 'config:core.entity_view_display.node.case_study.default'
         - 'config:core.entity_view_display.node.case_study.featured'
@@ -2169,14 +2168,12 @@ display:
         - 'config:core.entity_view_display.node.case_study.of_interest'
         - 'config:core.entity_view_display.node.case_study.preview'
         - 'config:core.entity_view_display.node.case_study.search_result'
-        - 'config:core.entity_view_display.node.case_study.solr'
         - 'config:core.entity_view_display.node.case_study.teaser'
         - 'config:core.entity_view_display.node.course.curriculum_page_courses'
         - 'config:core.entity_view_display.node.course.default'
         - 'config:core.entity_view_display.node.course.instructor_courses'
         - 'config:core.entity_view_display.node.course.preview'
         - 'config:core.entity_view_display.node.course.search_result'
-        - 'config:core.entity_view_display.node.course.solr'
         - 'config:core.entity_view_display.node.course.teaser'
         - 'config:core.entity_view_display.node.event.default'
         - 'config:core.entity_view_display.node.event.featured'
@@ -2192,14 +2189,12 @@ display:
         - 'config:core.entity_view_display.node.find_your_fit.default'
         - 'config:core.entity_view_display.node.find_your_fit.preview'
         - 'config:core.entity_view_display.node.find_your_fit.search_result'
-        - 'config:core.entity_view_display.node.find_your_fit.solr'
         - 'config:core.entity_view_display.node.find_your_fit.teaser'
         - 'config:core.entity_view_display.node.marketing_landing_page.default'
         - 'config:core.entity_view_display.node.marketing_landing_page.teaser'
         - 'config:core.entity_view_display.node.owned_program_interior_page.default'
         - 'config:core.entity_view_display.node.owned_program_interior_page.ptoc'
         - 'config:core.entity_view_display.node.owned_program_interior_page.search_result'
-        - 'config:core.entity_view_display.node.owned_program_interior_page.solr'
         - 'config:core.entity_view_display.node.owned_program_interior_page.teaser'
         - 'config:core.entity_view_display.node.owned_program_landing_page.default'
         - 'config:core.entity_view_display.node.owned_program_landing_page.index_page'
@@ -2209,12 +2204,10 @@ display:
         - 'config:core.entity_view_display.node.owned_program_landing_page.preview'
         - 'config:core.entity_view_display.node.owned_program_landing_page.related_program'
         - 'config:core.entity_view_display.node.owned_program_landing_page.search_result'
-        - 'config:core.entity_view_display.node.owned_program_landing_page.solr'
         - 'config:core.entity_view_display.node.owned_program_landing_page.teaser'
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.preview'
         - 'config:core.entity_view_display.node.page.search_result'
-        - 'config:core.entity_view_display.node.page.solr'
         - 'config:core.entity_view_display.node.page.teaser'
         - 'config:core.entity_view_display.node.person.bio_with_email'
         - 'config:core.entity_view_display.node.person.bio_without_email'
@@ -2237,7 +2230,6 @@ display:
         - 'config:core.entity_view_display.node.story.read_their_story'
         - 'config:core.entity_view_display.node.story.related_three_up'
         - 'config:core.entity_view_display.node.story.search_result'
-        - 'config:core.entity_view_display.node.story.solr'
         - 'config:core.entity_view_display.node.story.story_index_most_recent'
         - 'config:core.entity_view_display.node.story.teaser'
   block_4:

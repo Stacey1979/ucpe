@@ -14,42 +14,81 @@ dependencies:
     - field.field.node.course.field_view_upcoming_courses
     - node.type.course
   module:
+    - ds
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - 'bundle_field:node'
+        - field_related_program_tag
+        - node_title
+        - field_course_summary
+        - search_api_excerpt
+    fields:
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 0
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
 id: node.course.search_result
 targetEntityType: node
 bundle: course
 mode: search_result
 content:
-  field_course_code:
-    weight: 4
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_course_summary:
-    weight: 5
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: content
-  links:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
+    region: ds_content
+  field_related_program_tag:
+    type: entity_reference_label
+    weight: 1
+    region: ds_content
+    label: above
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
   search_api_excerpt:
-    weight: 2
-    region: content
+    weight: 4
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
   field_areas_of_study: true
   field_content_sections: true
+  field_course_code: true
   field_metatags: true
-  field_related_program_tag: true
   field_topics: true
   field_view_upcoming_courses: true
+  links: true

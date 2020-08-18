@@ -1,6 +1,6 @@
 uuid: fff09ee0-c703-46f2-808d-eb4263273016
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
@@ -50,7 +50,7 @@ third_party_settings:
         - field_case_study_type
         - node_title
         - field_lede
-        - links
+        - search_api_excerpt
     fields:
       node_title:
         plugin_id: node_title
@@ -70,7 +70,7 @@ content:
     type: list_default
     weight: 0
     region: ds_content
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
   field_lede:
@@ -92,7 +92,7 @@ content:
     third_party_settings: {  }
     type: smart_trim
     region: ds_content
-  links:
+  search_api_excerpt:
     weight: 3
     region: ds_content
     settings: {  }
@@ -114,4 +114,4 @@ hidden:
   field_related_program_tag: true
   field_results: true
   field_solution: true
-  search_api_excerpt: true
+  links: true

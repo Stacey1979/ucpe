@@ -14,8 +14,48 @@ dependencies:
     - field.field.node.area_of_study.field_view_programs_cta
     - node.type.area_of_study
   module:
+    - ds
     - smart_trim
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - 'bundle_field:node'
+        - node_title
+        - field_lede
+        - search_api_excerpt
+    fields:
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 0
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
 id: node.area_of_study.search_result
 targetEntityType: node
 bundle: area_of_study
@@ -39,10 +79,10 @@ content:
       summary_handler: full
     third_party_settings: {  }
     type: smart_trim
-    region: content
+    region: ds_content
   search_api_excerpt:
     weight: 3
-    region: content
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:

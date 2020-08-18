@@ -43,7 +43,6 @@ content:
     type: text_default
     region: content
 hidden:
-    region: ds_content
-hidden:
   field_hr_type: true
+  region: true
   search_api_excerpt: true
