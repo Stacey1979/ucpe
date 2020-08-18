@@ -16,16 +16,51 @@ dependencies:
     - field.field.node.person.field_title
     - node.type.person
   module:
+    - ds
+    - options
     - smart_trim
-    - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_person_type
+        - node_title
+        - field_bio
+        - search_api_excerpt
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
 id: node.person.search_result
 targetEntityType: node
 bundle: person
 mode: search_result
 content:
   field_bio:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       trim_length: 300
@@ -42,17 +77,17 @@ content:
       summary_handler: full
     third_party_settings: {  }
     type: smart_trim
-    region: content
-  field_job_title:
-    weight: 2
+    region: ds_content
+  field_person_type:
+    type: list_default
+    weight: 0
+    region: ds_content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   search_api_excerpt:
-    weight: 4
-    region: content
+    weight: 3
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
@@ -66,9 +101,9 @@ hidden:
   field_email: true
   field_first_name: true
   field_headshot: true
+  field_job_title: true
   field_last_name: true
   field_metatags: true
   field_name: true
-  field_person_type: true
   field_title: true
   links: true
