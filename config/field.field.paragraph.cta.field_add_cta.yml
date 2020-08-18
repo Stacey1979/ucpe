@@ -26,6 +26,6 @@ settings:
     sort:
       field: info
       direction: ASC
-    auto_create: false
+    auto_create: true
     auto_create_bundle: cta_content_width
 field_type: entity_reference

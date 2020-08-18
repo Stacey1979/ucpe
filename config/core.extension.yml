@@ -67,6 +67,7 @@ module:
   path: 0
   path_alias: 0
   ptoc: 0
+  quick_node_clone: 0
   rdf: 0
   redirect: 0
   redis: 0
@@ -108,6 +109,7 @@ module:
   pathauto: 1
   views: 10
   paragraphs: 11
+  seeds_toolbar: 100
   standard: 1000
 theme:
   stable: 0
@@ -115,6 +117,7 @@ theme:
   seven: 0
   bootstrap: 0
   ucpe_theme: 0
+  claro: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
