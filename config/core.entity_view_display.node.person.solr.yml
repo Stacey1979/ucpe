@@ -1,9 +1,9 @@
-uuid: 0d3a4119-674d-4176-92cc-b52efc424b8f
+uuid: b7fea50a-6a59-4887-9455-57fc85dcaa5b
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.instructor_pages
+    - core.entity_view_mode.node.solr
     - field.field.node.person.field_bio
     - field.field.node.person.field_course_s_
     - field.field.node.person.field_email
@@ -17,9 +17,7 @@ dependencies:
     - node.type.person
   module:
     - ds
-    - entity_reference_revisions
     - smart_trim
-    - text
     - user
 third_party_settings:
   ds:
@@ -41,81 +39,69 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - links
-        - field_headshot
-        - field_title
-        - field_job_title
+        - 'bundle_field:node'
+        - node_title
         - field_bio
-        - field_course_s_
-id: node.person.instructor_pages
+        - search_api_excerpt
+    fields:
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 0
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.person.solr
 targetEntityType: node
 bundle: person
-mode: instructor_pages
+mode: solr
 content:
   field_bio:
-    type: text_default
-    weight: 4
-    region: ds_content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-  field_course_s_:
-    type: entity_reference_revisions_entity_view
-    weight: 5
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
-  field_headshot:
-    type: entity_reference_entity_view
-    weight: 1
-    label: hidden
-    settings:
-      view_mode: headshot
-      link: false
-    third_party_settings: {  }
-    region: ds_content
-  field_job_title:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: ds_content
-  field_title:
-    type: smart_trim
     weight: 2
-    region: ds_content
     label: hidden
     settings:
-      trim_length: 600
+      trim_length: 200
       trim_type: chars
       trim_suffix: ''
-      wrap_output: false
       wrap_class: trimmed
-      more_link: false
-      more_class: more-link
       more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
       summary_handler: full
-      trim_options: {  }
     third_party_settings: {  }
-  links:
-    weight: 0
+    type: smart_trim
+    region: ds_content
+  search_api_excerpt:
+    weight: 3
     region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
+  body: true
   field_conta: true
   field_contact_email: true
   field_contact_first_name_link: true
   field_contact_x: true
+  field_course_s_: true
   field_email: true
   field_first_name: true
+  field_headshot: true
+  field_job_title: true
   field_last_name: true
   field_metatags: true
   field_name: true
   field_person_type: true
-  search_api_excerpt: true
+  field_title: true
+  links: true

@@ -82,8 +82,17 @@ settings:
       designed_for:
         weight: 48
         enabled: false
+      discover_the_uchicago_difference:
+        weight: 63
+        enabled: false
+      discover_uchicago_combo:
+        weight: 64
+        enabled: false
       duration:
         weight: 49
+        enabled: false
+      event_hero:
+        weight: 66
         enabled: false
       form_embed:
         enabled: true
@@ -121,6 +130,24 @@ settings:
       large_image_with_caption_left_or:
         weight: 61
         enabled: false
+      large_image_with_header_and_cont:
+        weight: 79
+        enabled: false
+      program_type_preview:
+        weight: 80
+        enabled: false
+      ptoc_container:
+        weight: 81
+        enabled: false
+      ptoc_image:
+        weight: 82
+        enabled: false
+      ptoc_links:
+        weight: 83
+        enabled: false
+      ptoc_text:
+        weight: 84
+        enabled: false
       related_courses:
         enabled: true
         weight: 63
@@ -133,6 +160,12 @@ settings:
       related_program_block:
         weight: 64
         enabled: false
+      related_program_combo:
+        weight: 90
+        enabled: false
+      related_programs_for_area_of_stu:
+        weight: 88
+        enabled: false
       statistics:
         enabled: true
         weight: 65
@@ -141,6 +174,9 @@ settings:
         enabled: false
       story_programs:
         weight: 67
+        enabled: false
+      strength_in_numbers:
+        weight: 94
         enabled: false
       text_one_two_third:
         weight: 68
