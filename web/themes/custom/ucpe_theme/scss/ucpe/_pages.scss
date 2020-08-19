@@ -561,8 +561,8 @@
     }
   }
 }
-
 // END - PROGRAM INTERIOR PAGE(S)
+
 // FIND YOU FIT
 .findYourFit {
   .intro_wrapper {
@@ -631,6 +631,103 @@
 
     .content_body {
       @include make-row;
+    }
+  }
+}
+// END - FIND YOU FIT
+
+// EVENT PAGES
+// END - EVENT PAGES
+.event {
+  @include make-container();
+
+  .content_body {
+    @include make-row;
+  }
+
+  .content {
+    @include make-sm-column(12);
+
+    .eventContent {
+      @include make-sm-column(12);
+      @include screen("tablet") {
+        @include make-sm-column(6);
+      }
+
+      h3 {
+        @include utility_M($black_02);
+        margin-bottom: $baseline;
+      }
+
+      .eventDate,
+      .eventLocation,
+      .eventInfo,
+      .eventRelatedPrograms,
+      .eventAOS,
+      .eventShare,
+      .content100_wrapper,
+      hr {
+        @include make-row;
+      }
+
+      .eventDate {
+        p {
+          @include bodycopy_L($black);
+        }
+      }
+
+      .eventLocation {
+        a {
+          text-decoration: none;
+
+          p {
+            @include bodycopy_L($black);
+          }
+
+          .organization {
+            @include featurelink();
+            font-size: inherit;
+            margin-bottom: $baseline/2;
+            display: inline-block;
+          }
+        }
+      }
+
+      .eventInfo {
+        border-bottom: solid 1px $divider-gray;
+        padding-bottom: $baseline * 1.5;
+        margin-bottom: $baseline * 1.5;
+        @include screen("desktop") {
+          padding-bottom: $baseline * 3;
+          margin-bottom: $baseline * 3;
+        }
+      }
+
+      .eventRelatedPrograms,
+      .eventAOS {
+        margin-bottom: $baseline;
+        @include screen("desktop") {
+          margin-bottom: $baseline * 2;
+        }
+        a {
+          @include featurelink();
+          display: inline-block;
+        }
+      }
+
+      .eventShare .share_title {
+        display: none;
+      }
+    }
+    .eventRFI {
+      @include make-sm-column(12);
+      @include screen("tablet") {
+        @include make-sm-column(6);
+      }
+      @include screen("desktop") {
+        @include make-sm-column(4);
+        @include make-sm-column-push(2);
+      }
     }
   }
 }
