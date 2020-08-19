@@ -12,7 +12,7 @@ dependencies:
 id: compareprograms
 theme: ucpe_theme
 region: content
-weight: 9
+weight: 10
 provider: null
 plugin: 'entity_comparison_block:compare_programs'
 settings:

@@ -54,7 +54,7 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
+        type: none
         options: {  }
       query:
         type: views_query
@@ -997,10 +997,16 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Home page masonry'
+    display_title: 'DESKTOP Home page masonry'
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        mobile_device_detection:
+          device_detection:
+            devices:
+              mobile: 0
+              tablet: 0
+              desktop: 0
       display_description: ''
       header:
         area:
@@ -1032,6 +1038,7 @@ display:
       defaults:
         header: false
         footer: false
+        exposed_form: false
       footer:
         area:
           id: area
@@ -1046,6 +1053,39 @@ display:
             value: '<p>Learn more about {{ field_areas_of_study_1 }}</p>'
             format: full_html
           plugin_id: text
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: full_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: true
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            filter:
+              field_areas_of_study_target_id:
+                plugin_id: bef
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+                select_all_none: false
+                select_all_none_nested: false
+                display_inline: 1
     cache_metadata:
       max-age: -1
       contexts:
@@ -1067,7 +1107,7 @@ display:
     display_plugin: block
     id: block_2
     display_title: 'Area of Study page masonry'
-    position: 1
+    position: 3
     display_options:
       display_extenders: {  }
       display_description: ''
@@ -1926,7 +1966,7 @@ display:
     display_plugin: block
     id: block_3
     display_title: 'Stories index page masonry'
-    position: 1
+    position: 4
     display_options:
       display_extenders: {  }
       display_description: ''
@@ -2235,10 +2275,16 @@ display:
   block_4:
     display_plugin: block
     id: block_4
-    display_title: 'Area of Study Index page masonry'
-    position: 1
+    display_title: 'DESKTOP Area of Study Index page masonry'
+    position: 5
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        mobile_device_detection:
+          device_detection:
+            devices:
+              mobile: 0
+              tablet: 0
+              desktop: 0
       display_description: ''
       header: {  }
       defaults:
@@ -2403,7 +2449,7 @@ display:
         operator: AND
         groups:
           1: AND
-      block_description: 'AOS Index page masonry'
+      block_description: 'DESKTOP AOS Index page masonry'
     cache_metadata:
       max-age: -1
       contexts:
@@ -2425,7 +2471,7 @@ display:
     display_plugin: block
     id: block_5
     display_title: 'Case Study page masonry'
-    position: 1
+    position: 6
     display_options:
       display_extenders: {  }
       display_description: ''
@@ -2784,3 +2830,304 @@ display:
       tags:
         - 'config:field.storage.node.field_case_study_type'
         - 'config:field.storage.paragraph.field_hero'
+  block_6:
+    display_plugin: block
+    id: block_6
+    display_title: 'MOBILE Home page masonry'
+    position: 1
+    display_options:
+      display_extenders:
+        mobile_device_detection:
+          device_detection:
+            devices:
+              mobile: 0
+              tablet: 0
+              desktop: 0
+      display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: true
+          content:
+            value: '<p>We’ve designed our Areas of Study around the University of Chicago''s specialities. Whichever path you choose, you can be confident of world-class instruction focused on fundamentals.</p>'
+            format: full_html
+          plugin_id: text
+        area_1:
+          id: area_1
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          content:
+            value: '{{ field_areas_of_study }}'
+            format: full_html
+          plugin_id: text
+      defaults:
+        header: false
+        footer: false
+        exposed_form: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          content:
+            value: '<p>Learn more about {{ field_areas_of_study_1 }}</p>'
+            format: full_html
+          plugin_id: text
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: full_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: true
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            filter:
+              field_areas_of_study_target_id:
+                plugin_id: default
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_areas_of_study'
+        - 'config:field.storage.node.field_date_and_time'
+        - 'config:field.storage.node.field_date_written'
+        - 'config:field.storage.node.field_tagline'
+        - 'config:field.storage.paragraph.field_hero'
+        - 'config:field.storage.paragraph.field_large_hero'
+        - 'config:field.storage.paragraph.field_small_hero'
+  block_7:
+    display_plugin: block
+    id: block_7
+    display_title: 'MOBILE Area of Study Index page masonry'
+    position: 5
+    display_options:
+      display_extenders:
+        mobile_device_detection:
+          device_detection:
+            devices:
+              mobile: 0
+              tablet: 0
+              desktop: 0
+      display_description: ''
+      header: {  }
+      defaults:
+        header: false
+        footer: false
+        title: false
+        filters: false
+        filter_groups: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          content:
+            value: '<p>Learn more about {{ field_areas_of_study_1 }}</p>'
+            format: full_html
+          plugin_id: text
+      title: ''
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            case_study: case_study
+            event: event
+            article: article
+            story: story
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_areas_of_study_target_id:
+          id: field_areas_of_study_target_id
+          table: node__field_areas_of_study
+          field: field_areas_of_study_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            3: 3
+            4: 4
+            5: 5
+            6: 6
+            7: 7
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_areas_of_study_target_id_op
+            label: 'Explore our Areas of Study'
+            description: ''
+            use_operator: false
+            operator: field_areas_of_study_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_areas_of_study_target_id
+            required: true
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: field_areas_of_study_target_id
+            optional: false
+            widget: select
+            multiple: false
+            remember: false
+            default_group: '1'
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Applied Science'
+                operator: or
+                value:
+                  3: '3'
+              2:
+                title: 'Business and Leadership'
+                operator: or
+                value:
+                  4: '4'
+              3:
+                title: Healthcare
+                operator: or
+                value:
+                  5: '5'
+              4:
+                title: 'Liberal Arts'
+                operator: or
+                value:
+                  6: '6'
+              5:
+                title: 'Social Good'
+                operator: or
+                value:
+                  7: '7'
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: area_of_interest
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      block_description: 'MOBILE AOS Index page masonry'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_areas_of_study'
+        - 'config:field.storage.node.field_date_and_time'
+        - 'config:field.storage.node.field_date_written'
+        - 'config:field.storage.node.field_tagline'
+        - 'config:field.storage.paragraph.field_hero'
+        - 'config:field.storage.paragraph.field_large_hero'
+        - 'config:field.storage.paragraph.field_small_hero'
