@@ -430,4 +430,13 @@
       }
     }
   }
+  // END HERO FIND YOUR FIT
+
+  // START EVENT HERO
+  &.hero_event {
+    margin-bottom: $baseline * 10;
+    .hero_content_wrapper {
+      background-color: $bg-02;
+    }
+  }
 }
