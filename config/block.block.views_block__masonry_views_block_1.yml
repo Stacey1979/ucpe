@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.masonry_views
   module:
+    - mobile_device_detection
     - system
     - views
   theme:
@@ -27,4 +28,11 @@ visibility:
     id: request_path
     pages: /index
     negate: false
+    context_mapping: {  }
+  mobile_device_detection_condition_plugin:
+    id: mobile_device_detection_condition_plugin
+    devices:
+      tablet: tablet
+      desktop: desktop
+    negate: null
     context_mapping: {  }

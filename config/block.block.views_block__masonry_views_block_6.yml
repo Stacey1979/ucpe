@@ -1,4 +1,4 @@
-uuid: 51420929-96c9-4432-96b6-893033de9e6f
+uuid: 3401f91a-c7f0-48d2-8464-cb05f43b2771
 langcode: en
 status: true
 dependencies:
@@ -10,29 +10,28 @@ dependencies:
     - views
   theme:
     - ucpe_theme
-id: views_block__masonry_views_block_4
+id: views_block__masonry_views_block_6
 theme: ucpe_theme
 region: content
-weight: -4
+weight: 7
 provider: null
-plugin: 'views_block:masonry_views-block_4'
+plugin: 'views_block:masonry_views-block_6'
 settings:
-  id: 'views_block:masonry_views-block_4'
+  id: 'views_block:masonry_views-block_6'
   label: ''
   provider: views
   label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
-  request_path:
-    id: request_path
-    pages: /area-of-study
-    negate: false
-    context_mapping: {  }
   mobile_device_detection_condition_plugin:
     id: mobile_device_detection_condition_plugin
     devices:
-      tablet: tablet
-      desktop: desktop
+      mobile: mobile
     negate: null
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
     context_mapping: {  }
