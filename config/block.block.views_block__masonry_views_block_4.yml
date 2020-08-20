@@ -1,4 +1,4 @@
-uuid: d8f8414d-7b1f-4bc0-8933-59549286fc1f
+uuid: 2f290c81-e9ba-43d7-ac32-bf61ee36f9e1
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - views.view.masonry_views
   module:
     - system
-    - ucpe_mobile_device_detection
     - views
   theme:
     - ucpe_theme
@@ -28,11 +27,4 @@ visibility:
     id: request_path
     pages: /area-of-study
     negate: false
-    context_mapping: {  }
-  mobile_device_detection_condition_plugin:
-    id: mobile_device_detection_condition_plugin
-    devices:
-      tablet: tablet
-      desktop: desktop
-    negate: null
     context_mapping: {  }

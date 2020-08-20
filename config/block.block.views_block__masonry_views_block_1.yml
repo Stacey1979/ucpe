@@ -1,4 +1,4 @@
-uuid: 195856d0-91e6-461f-8386-30777d14bebb
+uuid: 7b1284b7-c678-4681-8a06-46e1c2bfe270
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - views.view.masonry_views
   module:
     - system
-    - ucpe_mobile_device_detection
     - views
   theme:
     - ucpe_theme
@@ -28,10 +27,4 @@ visibility:
     id: request_path
     pages: '<front>'
     negate: false
-    context_mapping: {  }
-  mobile_device_detection_condition_plugin:
-    id: mobile_device_detection_condition_plugin
-    devices:
-      desktop: desktop
-    negate: null
     context_mapping: {  }
