@@ -1,18 +1,19 @@
-uuid: 1e843401-dd6e-48f8-b546-7dcd150228ef
+uuid: 53ee5720-fed3-451a-ac08-fe45f1203168
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.masonry_views
   module:
-    - mobile_device_detection
+    - system
+    - ucpe_mobile_device_detection
     - views
   theme:
     - ucpe_theme
 id: views_block__masonry_views_block_7
 theme: ucpe_theme
 region: content
-weight: -3
+weight: 0
 provider: null
 plugin: 'views_block:masonry_views-block_7'
 settings:
@@ -23,6 +24,11 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
+  request_path:
+    id: request_path
+    pages: /area-of-study
+    negate: false
+    context_mapping: {  }
   mobile_device_detection_condition_plugin:
     id: mobile_device_detection_condition_plugin
     devices:

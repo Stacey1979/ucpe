@@ -1,19 +1,19 @@
-uuid: 51420929-96c9-4432-96b6-893033de9e6f
+uuid: d8f8414d-7b1f-4bc0-8933-59549286fc1f
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.masonry_views
   module:
-    - mobile_device_detection
     - system
+    - ucpe_mobile_device_detection
     - views
   theme:
     - ucpe_theme
 id: views_block__masonry_views_block_4
 theme: ucpe_theme
 region: content
-weight: -4
+weight: 0
 provider: null
 plugin: 'views_block:masonry_views-block_4'
 settings:
