@@ -201,7 +201,7 @@ class MobileDeviceDetection {
 
     switch ($type) {
       case 'mobile':
-        $options = array_merge($this->getAttributes()->get('phone_devices'));
+      //  $options = array_merge($this->getAttributes()->get('phone_devices'));
         $headers = array_intersect_key($this->getAttributes()->get('mobile_headers'), $this->getMobileHeaders());
 
         foreach ($headers as $key => $value) {
@@ -229,7 +229,7 @@ class MobileDeviceDetection {
           }
         }
 
-        /**if ($device) {
+        if ($device) {
           foreach ($this->getAttributes()->get('browsers') as $value) {
             if (!empty($value)) {
               if ($this->match($value)) {
@@ -237,7 +237,7 @@ class MobileDeviceDetection {
               }
             }
           }
-        }**/
+        }
         break;
     }
 
