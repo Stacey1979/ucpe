@@ -434,9 +434,181 @@
 
   // START EVENT HERO
   &.hero_event {
-    margin-bottom: $baseline * 10;
+    margin-bottom: $baseline * 6;
+
     .hero_content_wrapper {
       background-color: $bg-02;
+      @include make-sm-column(12);
+      @include screen("tablet") {
+        @include make-sm-column(6);
+      }
+      @include screen("desktop") {
+        @include make-sm-column(8);
+      }
+    }
+    .hero_img {
+      @include make-sm-column(12);
+      @include screen("tablet") {
+        @include make-sm-column(6);
+      }
+      @include screen("desktop") {
+        @include make-sm-column(4);
+        margin-top: $colwidth * 1.5;
+        margin-right: -$colwidth;
+      }
+      @include screen("desktop-wide") {
+        margin-top: $colwidth;
+      }
+
+      .field--name-field-image-caption {
+        display: none;
+      }
+      .field--name-field-image-attribution-wysiwyg {
+        position: absolute;
+        right: 0;
+        p {
+          @include bodycopy_XS($black_02);
+          display: inline;
+        }
+      }
+    }
+    .hero_img_full {
+      img {
+        object-fit: cover;
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    .hero {
+      .hero_content_wrapper {
+        .hero_content {
+          padding: $baseline * 3;
+          @include screen("desktop") {
+            padding: $baseline * 5;
+          }
+          &:before {
+            background-color: $bg-02;
+            content: "";
+            display: block;
+            height: 100%;
+            right: 0;
+            position: absolute;
+            width: 100vw;
+            top: 0;
+            z-index: 0;
+          }
+          &:after {
+            background-color: $bg-02;
+            content: "";
+            display: block;
+            height: 100%;
+            left: 100%;
+            position: absolute;
+            top: 0;
+            width: 100vw;
+            z-index: 0;
+            @include screen("desktop") {
+              width: $colwidth * 3;
+            }
+          }
+          .content {
+            position: relative;
+            z-index: 5;
+
+            .meta {
+              @include utility_L($maroon);
+              margin-bottom: 0;
+            }
+            h1 {
+              @include heading_M($black);
+              @include screen("tablet-wide") {
+                @include heading_L($black);
+                font-size: $baseline * 2.5;
+              }
+              margin: $baseline * 1.5 0 $baseline;
+            }
+            .lede p {
+              @include bodycopy_L($black);
+            }
+          }
+        }
+        .hero_eventDate {
+          background-color: $maroon;
+          position: absolute;
+          text-align: center;
+          bottom: auto;
+          right: 0;
+          top: 0;
+          padding: $baseline;
+          z-index: 6;
+          @include screen("tablet") {
+            right: -15px;
+          }
+          @include screen("desktop") {
+            align-items: center;
+            display: flex;
+            width: 140px;
+
+            height: 140px;
+            padding: 0;
+            top: auto;
+            bottom: -70px;
+            right: -85px;
+          }
+
+          .eventDate_wrap {
+            width: 100%;
+            span {
+              @include bodycopy_L($white);
+              @include screen("desktop") {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      &.full {
+        .hero_content_wrapper {
+          margin-top: -2vh;
+          @include make-sm-column(12);
+          @include screen(tablet) {
+            margin-top: -10vh;
+          }
+          @include screen(desktop) {
+            margin-top: -20vh;
+            @include make-sm-column(8);
+          }
+          @include screen(desktop-wide) {
+            margin-top: -25vh;
+          }
+
+          .hero_content {
+            &:after {
+              display: none;
+            }
+          }
+
+          .hero_eventDate {
+            top: 0;
+            right: 0;
+
+            @include screen("tablet") {
+            }
+            @include screen("tablet-wide") {
+              top: 0;
+            }
+            @include screen("desktop") {
+              top: 25%;
+              right: -140px;
+            }
+            @include screen("desktop-wide") {
+              top: 35%;
+            }
+          }
+        }
+      }
     }
   }
 }

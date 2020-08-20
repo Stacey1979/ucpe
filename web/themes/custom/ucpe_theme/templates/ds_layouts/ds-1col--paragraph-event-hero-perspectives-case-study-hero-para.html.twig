@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+
+{% if field_large_hero|field_value is not empty  %}
+  <div class="hero_img_full">
+    {{ ds_content.field_large_hero|field_value }}
+  </div>
+{% endif %}
+{% if field_small_hero|field_value is not empty  %}
+  <div class="hero_img">
+    {{ ds_content.field_small_hero|field_value }}
+  </div>
+{% endif %}

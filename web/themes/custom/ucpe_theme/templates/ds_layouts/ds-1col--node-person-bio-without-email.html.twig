@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+
+<div class="profileFaculty_wrapper">
+  <div class="profileFaculty_body">
+    <div class="profileFaculty">
+      <div class="profileFaculty_top">
+        <div class="profileFaculty_headshot headshot">
+          {{ ds_content.field_headshot|field_value }}
+        </div>
+        <div class="name">
+          <h3>{{ title|field_value }}</h3>
+          <div class="job_title">{{ ds_content.field_job_title|field_value }}</div>
+        </div>
+      </div>
+      <div class="profileFaculty_bottom">
+        {{ ds_content.field_bio|field_value }}
+      </div>
+    </div>
+  </div>
+</div>

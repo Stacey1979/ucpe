@@ -7170,11 +7170,36 @@ nav.tabs ul.nav-tabs li {
     @media only screen and (min-width: 768px) {
       .content100 figure {
         max-width: 50%; } }
+    .content100 figure p {
+      margin-bottom: 5px !important; }
     .content100 figure figcaption {
       margin-top: 1rem;
       text-align: left; }
     .content100 figure img {
       width: 100%; }
+    .content100 figure .field--name-field-image-attribution-wysiwyg p {
+      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #767676;
+      line-height: 1.4rem;
+      font-weight: 400;
+      text-align: left; }
+      .content100 figure .field--name-field-image-attribution-wysiwyg p:before {
+        font-family: "ucpe_icons" !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        speak: none;
+        line-height: 1rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #767676;
+        content: "c";
+        font-size: 1.5rem;
+        margin-right: 0.25rem;
+        text-decoration: none;
+        vertical-align: text-bottom; }
     @media only screen and (min-width: 768px) {
       .content100 figure.align-right {
         float: right;
@@ -7749,7 +7774,7 @@ nav.tabs ul.nav-tabs li {
       .cta100_wrapper .cta100 figure.cta_photo .field--name-field-image-attribution-wysiwyg {
         position: absolute;
         font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         color: #767676;
         line-height: 1.4rem;
         font-weight: 400; }
@@ -10241,13 +10266,41 @@ header {
         line-height: 1.8rem;
         text-transform: uppercase;
         margin-bottom: 1rem; }
-      .event .content .eventContent .eventDate, .event .content .eventContent .eventLocation, .event .content .eventContent .eventInfo, .event .content .eventContent .eventRelatedPrograms, .event .content .eventContent .eventAOS, .event .content .eventContent .eventShare, .event .content .eventContent .content100_wrapper, .event .content .eventContent hr {
+      .event .content .eventContent .eventDate,
+      .event .content .eventContent .eventLocation,
+      .event .content .eventContent .eventInfo,
+      .event .content .eventContent .eventRelatedPrograms,
+      .event .content .eventContent .eventAOS,
+      .event .content .eventContent .eventShare,
+      .event .content .eventContent .content100_wrapper,
+      .event .content .eventContent hr {
         margin-right: -15px;
         margin-left: -15px; }
-        .event .content .eventContent .eventDate:before, .event .content .eventContent .eventDate:after, .event .content .eventContent .eventLocation:before, .event .content .eventContent .eventLocation:after, .event .content .eventContent .eventInfo:before, .event .content .eventContent .eventInfo:after, .event .content .eventContent .eventRelatedPrograms:before, .event .content .eventContent .eventRelatedPrograms:after, .event .content .eventContent .eventAOS:before, .event .content .eventContent .eventAOS:after, .event .content .eventContent .eventShare:before, .event .content .eventContent .eventShare:after, .event .content .eventContent .content100_wrapper:before, .event .content .eventContent .content100_wrapper:after, .event .content .eventContent hr:before, .event .content .eventContent hr:after {
+        .event .content .eventContent .eventDate:before, .event .content .eventContent .eventDate:after,
+        .event .content .eventContent .eventLocation:before,
+        .event .content .eventContent .eventLocation:after,
+        .event .content .eventContent .eventInfo:before,
+        .event .content .eventContent .eventInfo:after,
+        .event .content .eventContent .eventRelatedPrograms:before,
+        .event .content .eventContent .eventRelatedPrograms:after,
+        .event .content .eventContent .eventAOS:before,
+        .event .content .eventContent .eventAOS:after,
+        .event .content .eventContent .eventShare:before,
+        .event .content .eventContent .eventShare:after,
+        .event .content .eventContent .content100_wrapper:before,
+        .event .content .eventContent .content100_wrapper:after,
+        .event .content .eventContent hr:before,
+        .event .content .eventContent hr:after {
           display: table;
           content: " "; }
-        .event .content .eventContent .eventDate:after, .event .content .eventContent .eventLocation:after, .event .content .eventContent .eventInfo:after, .event .content .eventContent .eventRelatedPrograms:after, .event .content .eventContent .eventAOS:after, .event .content .eventContent .eventShare:after, .event .content .eventContent .content100_wrapper:after, .event .content .eventContent hr:after {
+        .event .content .eventContent .eventDate:after,
+        .event .content .eventContent .eventLocation:after,
+        .event .content .eventContent .eventInfo:after,
+        .event .content .eventContent .eventRelatedPrograms:after,
+        .event .content .eventContent .eventAOS:after,
+        .event .content .eventContent .eventShare:after,
+        .event .content .eventContent .content100_wrapper:after,
+        .event .content .eventContent hr:after {
           clear: both; }
       .event .content .eventContent .eventDate p {
         font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -10286,12 +10339,15 @@ header {
           .event .content .eventContent .eventInfo {
             padding-bottom: 3rem;
             margin-bottom: 3rem; } }
-      .event .content .eventContent .eventRelatedPrograms, .event .content .eventContent .eventAOS {
+      .event .content .eventContent .eventRelatedPrograms,
+      .event .content .eventContent .eventAOS {
         margin-bottom: 1rem; }
         @media only screen and (min-width: 1200px) {
-          .event .content .eventContent .eventRelatedPrograms, .event .content .eventContent .eventAOS {
+          .event .content .eventContent .eventRelatedPrograms,
+          .event .content .eventContent .eventAOS {
             margin-bottom: 2rem; } }
-        .event .content .eventContent .eventRelatedPrograms a, .event .content .eventContent .eventAOS a {
+        .event .content .eventContent .eventRelatedPrograms a,
+        .event .content .eventContent .eventAOS a {
           font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
           font-size: 1rem;
           color: #350e20;
@@ -10301,7 +10357,8 @@ header {
           transition: all 0.25s ease-in;
           text-decoration: none;
           display: inline-block; }
-          .event .content .eventContent .eventRelatedPrograms a:hover, .event .content .eventContent .eventAOS a:hover {
+          .event .content .eventContent .eventRelatedPrograms a:hover,
+          .event .content .eventContent .eventAOS a:hover {
             color: #800000;
             transition: all 0.25s ease-out; }
       .event .content .eventContent .eventShare .share_title {
@@ -10338,6 +10395,86 @@ header {
   @media only screen and (min-width: 1200px) and (min-width: 768px) {
     .event .content .eventRFI {
       left: 16.66667%; } }
+  .event .eventSpeaker_wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f3f3f3;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    position: relative; }
+    @media only screen and (min-width: 960px) {
+      .event .eventSpeaker_wrapper {
+        max-width: 960px; } }
+    @media only screen and (min-width: 1200px) {
+      .event .eventSpeaker_wrapper {
+        max-width: 1200px; } }
+    @media only screen and (min-width: 1440px) {
+      .event .eventSpeaker_wrapper {
+        max-width: 1300px; } }
+    .event .eventSpeaker_wrapper:before, .event .eventSpeaker_wrapper:after {
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      width: 100vw;
+      top: 0;
+      z-index: 0; }
+    .event .eventSpeaker_wrapper:before {
+      background-color: #f3f3f3;
+      left: 0; }
+    .event .eventSpeaker_wrapper:after {
+      background-color: #f3f3f3;
+      right: 0; }
+    .event .eventSpeaker_wrapper .eventSpeaker_body {
+      margin-right: -15px;
+      margin-left: -15px; }
+      .event .eventSpeaker_wrapper .eventSpeaker_body:before, .event .eventSpeaker_wrapper .eventSpeaker_body:after {
+        display: table;
+        content: " "; }
+      .event .eventSpeaker_wrapper .eventSpeaker_body:after {
+        clear: both; }
+      .event .eventSpeaker_wrapper .eventSpeaker_body .eventSpeaker {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        position: relative;
+        z-index: 5; }
+        @media (min-width: 768px) {
+          .event .eventSpeaker_wrapper .eventSpeaker_body .eventSpeaker {
+            float: left;
+            width: 100%; } }
+        .event .eventSpeaker_wrapper .eventSpeaker_body .eventSpeaker > h3 {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin: 2rem 0 3rem; }
+          @media (min-width: 768px) {
+            .event .eventSpeaker_wrapper .eventSpeaker_body .eventSpeaker > h3 {
+              float: left;
+              width: 100%; } }
+    .event .eventSpeaker_wrapper .profileFaculty_wrapper {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .event .eventSpeaker_wrapper .profileFaculty_wrapper {
+          float: left;
+          width: 100%; } }
+      @media only screen and (min-width: 960px) {
+        .event .eventSpeaker_wrapper .profileFaculty_wrapper {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; } }
+  @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .event .eventSpeaker_wrapper .profileFaculty_wrapper {
+      float: left;
+      width: 50%; } }
 
 .path-alias--about .hero_about {
   margin: 4rem 0; }
@@ -11601,9 +11738,225 @@ footer.footer {
       float: left;
       width: 58.33333%; } }
   .hero_wrapper.hero_event {
-    margin-bottom: 10rem; }
+    margin-bottom: 6rem; }
     .hero_wrapper.hero_event .hero_content_wrapper {
-      background-color: #f3f3f3; }
+      background-color: #f3f3f3;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .hero_wrapper.hero_event .hero_content_wrapper {
+          float: left;
+          width: 100%; } }
+      @media only screen and (min-width: 768px) {
+        .hero_wrapper.hero_event .hero_content_wrapper {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    .hero_wrapper.hero_event .hero_content_wrapper {
+      float: left;
+      width: 50%; } }
+      @media only screen and (min-width: 1200px) {
+        .hero_wrapper.hero_event .hero_content_wrapper {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .hero_wrapper.hero_event .hero_content_wrapper {
+      float: left;
+      width: 66.66667%; } }
+    .hero_wrapper.hero_event .hero_img {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .hero_wrapper.hero_event .hero_img {
+          float: left;
+          width: 100%; } }
+      @media only screen and (min-width: 768px) {
+        .hero_wrapper.hero_event .hero_img {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    .hero_wrapper.hero_event .hero_img {
+      float: left;
+      width: 50%; } }
+      @media only screen and (min-width: 1200px) {
+        .hero_wrapper.hero_event .hero_img {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-top: 12.49995%;
+          margin-right: -8.3333%; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .hero_wrapper.hero_event .hero_img {
+      float: left;
+      width: 33.33333%; } }
+      @media only screen and (min-width: 1440px) {
+        .hero_wrapper.hero_event .hero_img {
+          margin-top: 8.3333%; } }
+      .hero_wrapper.hero_event .hero_img .field--name-field-image-caption {
+        display: none; }
+      .hero_wrapper.hero_event .hero_img .field--name-field-image-attribution-wysiwyg {
+        position: absolute;
+        right: 0; }
+        .hero_wrapper.hero_event .hero_img .field--name-field-image-attribution-wysiwyg p {
+          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-size: 0.75rem;
+          color: #585858;
+          line-height: 1.4rem;
+          font-weight: 400;
+          display: inline; }
+    .hero_wrapper.hero_event .hero_img_full img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+      text-align: center; }
+    .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content {
+      padding: 3rem; }
+      @media only screen and (min-width: 1200px) {
+        .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content {
+          padding: 5rem; } }
+      .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content:before {
+        background-color: #f3f3f3;
+        content: "";
+        display: block;
+        height: 100%;
+        right: 0;
+        position: absolute;
+        width: 100vw;
+        top: 0;
+        z-index: 0; }
+      .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content:after {
+        background-color: #f3f3f3;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 100%;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: 0; }
+        @media only screen and (min-width: 1200px) {
+          .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content:after {
+            width: 24.9999%; } }
+      .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content {
+        position: relative;
+        z-index: 5; }
+        .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content .meta {
+          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-size: 1rem;
+          color: #800000;
+          font-weight: 500;
+          line-height: 1.8rem;
+          text-transform: uppercase;
+          margin-bottom: 0; }
+        .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content h1 {
+          font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+          font-size: 2rem;
+          color: #110f0f;
+          font-weight: 900;
+          line-height: 2.75rem;
+          margin: 1.5rem 0 1rem; }
+          @media only screen and (min-width: 960px) {
+            .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content h1 {
+              font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+              font-size: 3rem;
+              color: #110f0f;
+              font-weight: 900;
+              line-height: 3.5rem;
+              font-size: 2.5rem; } }
+        .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content .lede p {
+          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-size: 1.125rem;
+          color: #110f0f;
+          line-height: 1.8rem;
+          font-weight: 400; }
+    .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_eventDate {
+      background-color: #800000;
+      position: absolute;
+      text-align: center;
+      bottom: auto;
+      right: 0;
+      top: 0;
+      padding: 1rem;
+      z-index: 6; }
+      @media only screen and (min-width: 768px) {
+        .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_eventDate {
+          right: -15px; } }
+      @media only screen and (min-width: 1200px) {
+        .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_eventDate {
+          align-items: center;
+          display: flex;
+          width: 140px;
+          height: 140px;
+          padding: 0;
+          top: auto;
+          bottom: -70px;
+          right: -85px; } }
+      .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_eventDate .eventDate_wrap {
+        width: 100%; }
+        .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_eventDate .eventDate_wrap span {
+          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-size: 1.125rem;
+          color: #ffffff;
+          line-height: 1.8rem;
+          font-weight: 400; }
+          @media only screen and (min-width: 1200px) {
+            .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_eventDate .eventDate_wrap span {
+              display: block; } }
+    .hero_wrapper.hero_event .hero.full .hero_content_wrapper {
+      margin-top: -2vh;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .hero_wrapper.hero_event .hero.full .hero_content_wrapper {
+          float: left;
+          width: 100%; } }
+      @media only screen and (min-width: 768px) {
+        .hero_wrapper.hero_event .hero.full .hero_content_wrapper {
+          margin-top: -10vh; } }
+      @media only screen and (min-width: 1200px) {
+        .hero_wrapper.hero_event .hero.full .hero_content_wrapper {
+          margin-top: -20vh;
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .hero_wrapper.hero_event .hero.full .hero_content_wrapper {
+      float: left;
+      width: 66.66667%; } }
+      @media only screen and (min-width: 1440px) {
+        .hero_wrapper.hero_event .hero.full .hero_content_wrapper {
+          margin-top: -25vh; } }
+      .hero_wrapper.hero_event .hero.full .hero_content_wrapper .hero_content:after {
+        display: none; }
+      .hero_wrapper.hero_event .hero.full .hero_content_wrapper .hero_eventDate {
+        top: 0;
+        right: 0; }
+        @media only screen and (min-width: 960px) {
+          .hero_wrapper.hero_event .hero.full .hero_content_wrapper .hero_eventDate {
+            top: 0; } }
+        @media only screen and (min-width: 1200px) {
+          .hero_wrapper.hero_event .hero.full .hero_content_wrapper .hero_eventDate {
+            top: 25%;
+            right: -140px; } }
+        @media only screen and (min-width: 1440px) {
+          .hero_wrapper.hero_event .hero.full .hero_content_wrapper .hero_eventDate {
+            top: 35%; } }
 
 .embedForm_wrapper {
   padding-right: 15px;
@@ -11664,7 +12017,8 @@ footer.footer {
       background-color: transparent; }
       .embedForm form .form_question.required input {
         border-bottom-color: #e54b4b; }
-  .embedForm form fieldset legend, .embedForm form fieldset .form_label {
+  .embedForm form fieldset legend,
+  .embedForm form fieldset .form_label {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 0.875rem;
     color: #585858;

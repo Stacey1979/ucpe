@@ -194,6 +194,11 @@
             "file-mapping": {
                 "[project-root]/.editorconfig": false
             }
+        },
+        "patches": {
+          "drupal/entity_embed": {
+            "Array to string conversion for Media Image": "https://www.drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch"
+          }
         }
     },
     "config": {

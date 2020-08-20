@@ -22,12 +22,29 @@
       max-width: 50%;
     }
 
+    p {
+      margin-bottom: 5px !important;
+    }
+
     figcaption {
       margin-top: $baseline;
       text-align: left;
     }
     img {
       width: 100%;
+    }
+
+    .field--name-field-image-attribution-wysiwyg p {
+      @include bodycopy_XS($black_03);
+      text-align: left;
+
+      &:before {
+        @include iconfont($black_03, "\63");
+        font-size: $baseline * 1.5;
+        margin-right: $baseline * 0.25;
+        text-decoration: none;
+        vertical-align: text-bottom;
+      }
     }
 
     &.align-right {
@@ -305,12 +322,6 @@
   .col {
     background-color: $bg-02;
 
-    // @include screen("tablet") {
-    //   .bottom {
-    //     text-align: center;
-    //   }
-    // }
-
     .top {
       background: linear-gradient(180deg, $white 50%, $bg-02 50%);
       text-align: center;
@@ -453,7 +464,7 @@
 
       .field--name-field-image-attribution-wysiwyg {
         position: absolute;
-        @include bodycopy_S($black_03);
+        @include bodycopy_XS($black_03);
 
         &:before {
           @include iconfont($black_03, "\63");
