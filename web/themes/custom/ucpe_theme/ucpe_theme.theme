@@ -21,3 +21,23 @@
    $alias = \Drupal::service('path.alias_manager')->getAliasByPath($path);
    $variables['attributes']['class'][] = 'path-alias-' . str_replace('/', '-', $alias);
  }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function ucpe_theme_theme_suggestions_bef_radios_alter(array &$suggestions, array $variables) {
+   $hook = 'bef_radios';
+  $plugin_type = $variables['element']['#context']['#plugin_type'] ?? FALSE;
+    if ($plugin_type && $plugin_type === 'bef') {
+
+      $view_id = $variables['element']['#context']['#view_id'];
+      $display_id = $variables['element']['#context']['#display_id'];
+
+      if ($view_id) {
+        $suggestions[] = $hook . '__' . $view_id;
+        if ($display_id) {
+          $suggestions[] = $hook . '__' . $view_id . '__' . $display_id;
+        }
+      }
+    }
+}
