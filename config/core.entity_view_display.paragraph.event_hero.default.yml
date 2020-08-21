@@ -6,6 +6,27 @@ dependencies:
     - field.field.paragraph.event_hero.field_large_hero
     - field.field.paragraph.event_hero.field_small_hero
     - paragraphs.paragraphs_type.event_hero
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - field_large_hero
+        - field_small_hero
 id: paragraph.event_hero.default
 targetEntityType: paragraph
 bundle: event_hero
@@ -16,7 +37,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: hero_landsca
+      view_mode: hero_full
       link: false
     third_party_settings: {  }
     region: content
@@ -29,4 +50,5 @@ content:
       link: false
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true

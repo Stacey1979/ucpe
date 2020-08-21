@@ -730,4 +730,51 @@
       }
     }
   }
+  .eventSpeaker_wrapper {
+    @include make-container();
+    background-color: $bg-02;
+    margin: $baseline * 3 0;
+    padding: $baseline * 3 0;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      width: 100vw;
+      top: 0;
+      z-index: 0;
+    }
+    &:before {
+      background-color: $bg_02;
+      left: 0;
+    }
+    &:after {
+      background-color: $bg_02;
+      right: 0;
+    }
+
+    .eventSpeaker_body {
+      @include make-row();
+      .eventSpeaker {
+        @include make-sm-column(12);
+        position: relative;
+        z-index: 5;
+
+        > h3 {
+          @include make-sm-column(12);
+          margin: $baseline * 2 0 $baseline * 3;
+        }
+      }
+    }
+
+    .profileFaculty_wrapper {
+      @include make-sm-column(12);
+      @include screen("tablet-wide") {
+        @include make-sm-column(6);
+      }
+    }
+  }
 }
