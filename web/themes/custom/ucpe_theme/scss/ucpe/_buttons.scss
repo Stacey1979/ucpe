@@ -200,3 +200,38 @@
     }
   }
 }
+
+nav.slick__arrow {
+  float: right;
+  button {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 0px;
+
+    &:before,
+    &:after {
+      font-size: 3.5rem;
+      vertical-align: middle;
+      transition: all 0.25s ease-in;
+    }
+    &.slick-prev {
+      &:before {
+        @include iconfont($divider-gray, "\3c");
+      }
+      &:hover:before {
+        color: $maroon;
+        transition: all 0.25s ease-out;
+      }
+    }
+    &.slick-next {
+      &:after {
+        @include iconfont($divider-gray, "\3e");
+      }
+      &:hover:after {
+        color: $maroon;
+        transition: all 0.25s ease-out;
+      }
+    }
+  }
+}

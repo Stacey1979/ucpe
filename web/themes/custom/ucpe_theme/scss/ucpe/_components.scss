@@ -811,7 +811,7 @@
 
     .slick-slide {
       width: auto;
-      @include screen("tablet") {
+      @include screen("tablet-small") {
         width: 50% !important;
       }
       @include screen("desktop") {

@@ -7127,6 +7127,48 @@ nav.tabs ul.nav-tabs li {
     .link-list li:before {
       display: none; }
 
+nav.slick__arrow {
+  float: right; }
+  nav.slick__arrow button {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 0px; }
+    nav.slick__arrow button:before, nav.slick__arrow button:after {
+      font-size: 3.5rem;
+      vertical-align: middle;
+      transition: all .25s ease-in; }
+    nav.slick__arrow button.slick-prev:before {
+      font-family: "ucpe_icons" !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      text-transform: none !important;
+      speak: none;
+      line-height: 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #dcdcdc;
+      content: "<"; }
+    nav.slick__arrow button.slick-prev:hover:before {
+      color: #800000;
+      transition: all .25s ease-out; }
+    nav.slick__arrow button.slick-next:after {
+      font-family: "ucpe_icons" !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      text-transform: none !important;
+      speak: none;
+      line-height: 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #dcdcdc;
+      content: ">"; }
+    nav.slick__arrow button.slick-next:hover:after {
+      color: #800000;
+      transition: all .25s ease-out; }
+
 .content100_wrapper {
   padding-right: 15px;
   padding-left: 15px;
@@ -8284,7 +8326,7 @@ nav.tabs ul.nav-tabs li {
       flex-wrap: wrap; } }
   .card_grid .slick-track .slick-slide {
     width: auto; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 640px) {
       .card_grid .slick-track .slick-slide {
         width: 50% !important; } }
     @media only screen and (min-width: 1200px) {
@@ -8855,18 +8897,18 @@ a.showmore {
 
 .program_card .pc_content h3 {
   font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #350e20;
   font-weight: 900;
-  line-height: 2.25rem;
+  line-height: 1.65rem;
   padding-left: 10px; }
 
 .program_card .pc_content h3 a {
   font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #350e20;
   font-weight: 900;
-  line-height: 2.25rem;
+  line-height: 1.65rem;
   margin-bottom: 0;
   text-decoration: none;
   transition: all 0.3s; }
@@ -8978,6 +9020,7 @@ img {
   max-width: 100%; }
 
 header {
+  display: none;
   width: 100%;
   margin: 0 auto; }
   @media only screen and (min-width: 1440px) {
