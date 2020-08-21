@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.owned_program_interior_page.field_content_sections
     - field.field.node.owned_program_interior_page.field_deadlines_block
+    - field.field.node.owned_program_interior_page.field_hero_cta_button
     - field.field.node.owned_program_interior_page.field_metatags
     - field.field.node.owned_program_interior_page.field_program
     - field.field.node.owned_program_interior_page.field_program_type
@@ -13,6 +14,7 @@ dependencies:
   module:
     - ds
     - entity_reference_revisions
+    - link
     - user
     - viewsreference
 third_party_settings:
@@ -37,6 +39,7 @@ third_party_settings:
       ds_content:
         - links
         - field_program
+        - field_hero_cta_button
         - field_tab
         - field_deadlines_block
         - field_content_sections
@@ -46,7 +49,7 @@ bundle: owned_program_interior_page
 mode: default
 content:
   field_content_sections:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       view_mode: default
@@ -57,7 +60,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: ds_content
   field_deadlines_block:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       plugin_types:
@@ -70,6 +73,18 @@ content:
     third_party_settings: {  }
     type: viewsreference_formatter
     region: ds_content
+  field_hero_cta_button:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
   field_program:
     weight: 1
     label: hidden
@@ -80,7 +95,7 @@ content:
     type: entity_reference_entity_view
     region: ds_content
   field_tab:
-    weight: 2
+    weight: 3
     label: above
     settings:
       plugin_types:

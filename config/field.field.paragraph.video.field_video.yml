@@ -1,28 +1,28 @@
-uuid: d12db49d-ed35-46e6-b9cd-3f52d3d8fb52
+uuid: b333b053-b830-4d69-8a34-5eeef31d349d
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.video
     - field.storage.paragraph.field_video
+    - media.type.embedded_video
     - paragraphs.paragraphs_type.video
 id: paragraph.video.field_video
 field_name: field_video
 entity_type: paragraph
 bundle: video
 label: Video
-description: 'Add a video to your page. '
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:block_content'
+  handler: 'default:media'
   handler_settings:
     target_bundles:
-      video: video
+      embedded_video: embedded_video
     sort:
-      field: field_cta_title
+      field: name
       direction: ASC
     auto_create: true
     auto_create_bundle: ''

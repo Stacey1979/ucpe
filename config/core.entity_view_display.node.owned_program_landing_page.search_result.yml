@@ -1,6 +1,6 @@
 uuid: 04fbdd53-c0f9-4ea3-8799-6eac11d3333d
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
@@ -34,7 +34,7 @@ dependencies:
     - node.type.owned_program_landing_page
   module:
     - ds
-    - text
+    - smart_trim
     - user
 third_party_settings:
   ds:
@@ -56,14 +56,13 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - links
-        - field_program_type
         - node_title
         - field_lede
+        - search_api_excerpt
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 0
         label: hidden
         formatter: default
         settings:
@@ -76,22 +75,24 @@ bundle: owned_program_landing_page
 mode: search_result
 content:
   field_lede:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: ds_content
-  field_program_type:
-    type: entity_reference_label
     weight: 1
-    region: ds_content
-    label: visually_hidden
+    label: hidden
     settings:
-      link: false
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options: {  }
     third_party_settings: {  }
-  links:
-    weight: 0
+    type: smart_trim
+    region: ds_content
+  search_api_excerpt:
+    weight: 2
     region: ds_content
     settings: {  }
     third_party_settings: {  }
@@ -120,7 +121,8 @@ hidden:
   field_owned: true
   field_program: true
   field_program_illustration: true
+  field_program_type: true
   field_upcoming_events: true
   field_video: true
   link_for_entity_comparison_compare_programs: true
-  search_api_excerpt: true
+  links: true

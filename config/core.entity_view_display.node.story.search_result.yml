@@ -1,6 +1,6 @@
 uuid: 746e21d2-1b39-4f69-8229-b2e9a2189831
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
@@ -19,7 +19,6 @@ dependencies:
     - field.field.node.story.field_story_subject_name
     - node.type.story
   module:
-    - datetime
     - ds
     - smart_trim
     - user
@@ -45,10 +44,8 @@ third_party_settings:
       ds_content:
         - 'bundle_field:node'
         - node_title
-        - field_date_written
-        - reading_time
         - field_lede
-        - links
+        - search_api_excerpt
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
@@ -77,17 +74,8 @@ content:
       link: '1'
     third_party_settings: {  }
     region: ds_content
-  field_date_written:
-    weight: 2
-    label: hidden
-    settings:
-      timezone_override: ''
-      format_type: full_date
-    third_party_settings: {  }
-    type: datetime_default
-    region: ds_content
   field_lede:
-    weight: 4
+    weight: 2
     label: hidden
     settings:
       trim_length: 600
@@ -113,12 +101,7 @@ content:
     third_party_settings: {  }
     type: string
     region: ds_content
-  links:
-    weight: 5
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
-  reading_time:
+  search_api_excerpt:
     weight: 3
     region: ds_content
     settings: {  }
@@ -130,6 +113,7 @@ hidden:
   field_author: true
   field_content_sections: true
   field_date_and_lede: true
+  field_date_written: true
   field_featured: true
   field_featured_quote: true
   field_hero: true
@@ -137,4 +121,5 @@ hidden:
   field_metatags: true
   field_related_program_tag: true
   field_story_subject_name: true
-  search_api_excerpt: true
+  links: true
+  reading_time: true

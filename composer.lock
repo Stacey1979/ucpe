@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0543f6d5117b449f01faa90f4c1eae03",
+    "content-hash": "623f67e2c3469ad6c3df55c3f1635e9c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2101,32 +2101,29 @@
         },
         {
             "name": "drupal/config_filter",
-            "version": "1.5.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_filter.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "81210684c378dab856b3c2bce5eeaa58992d2efc"
+                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "8e601370cb5ffb2fc3c1616e1762faebec07db4c"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8.8 || ^9"
             },
             "suggest": {
                 "drupal/config_split": "Split site configuration for different environments."
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1572542288",
+                    "version": "8.x-2.0",
+                    "datestamp": "1597845921",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2135,7 +2132,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2163,9 +2160,9 @@
                 "configuration management"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/config_filter",
+                "source": "https://git.drupalcode.org/project/config_filter",
                 "issues": "https://www.drupal.org/project/issues/config_filter",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
+                "slack": "https://drupal.slack.com/archives/C45342CDD"
             }
         },
         {
@@ -4261,6 +4258,50 @@
             }
         },
         {
+            "name": "drupal/mobile_device_detection",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/mobile_device_detection.git",
+                "reference": "8.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/mobile_device_detection-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "9ae6c5b044cd72aa6b01d962ac93fdb20e819c5e"
+            },
+            "require": {
+                "drupal/core": "^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.2",
+                    "datestamp": "1557809885",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "depthinteractive",
+                    "homepage": "https://www.drupal.org/user/3610350"
+                }
+            ],
+            "description": "This module can detect any mobile devices.",
+            "homepage": "https://www.drupal.org/project/mobile_device_detection",
+            "support": {
+                "source": "https://git.drupalcode.org/project/mobile_device_detection"
+            }
+        },
+        {
             "name": "drupal/node_read_time",
             "version": "1.2.0",
             "source": {
@@ -5809,26 +5850,26 @@
         },
         {
             "name": "drupal/views_bootstrap",
-            "version": "4.3.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_bootstrap.git",
-                "reference": "8.x-4.3"
+                "reference": "8.x-3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bootstrap-8.x-4.3.zip",
-                "reference": "8.x-4.3",
-                "shasum": "8eebf7b7e95e9a56cce96c4ae11944c5d5852b46"
+                "url": "https://ftp.drupal.org/files/projects/views_bootstrap-8.x-3.1.zip",
+                "reference": "8.x-3.1",
+                "shasum": "7fd556457f028fa736d1422a9b5a763566fd7d2e"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.3",
-                    "datestamp": "1590086605",
+                    "version": "8.x-3.1",
+                    "datestamp": "1537360681",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5837,7 +5878,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -5857,8 +5898,11 @@
                     "homepage": "https://www.drupal.org/user/556088"
                 }
             ],
-            "description": "Allows for different styles to be used in views to work with Bootstrap 4 components.",
+            "description": "Integrate the Bootstrap framework with Views.",
             "homepage": "https://www.drupal.org/project/views_bootstrap",
+            "keywords": [
+                "Drupal"
+            ],
             "support": {
                 "source": "https://git.drupalcode.org/project/views_bootstrap"
             }
@@ -6898,16 +6942,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.8.0",
+            "version": "v4.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "8c58eb4cd4f3883f82611abeac2efbc3dbed787e"
+                "reference": "aaee038b912e567780949787d5fe1977be11a778"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8c58eb4cd4f3883f82611abeac2efbc3dbed787e",
-                "reference": "8c58eb4cd4f3883f82611abeac2efbc3dbed787e",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/aaee038b912e567780949787d5fe1977be11a778",
+                "reference": "aaee038b912e567780949787d5fe1977be11a778",
                 "shasum": ""
             },
             "require": {
@@ -6915,7 +6959,7 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "ircmaxell/php-yacc": "^0.0.6",
+                "ircmaxell/php-yacc": "^0.0.7",
                 "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
             "bin": [
@@ -6924,7 +6968,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.8-dev"
+                    "dev-master": "4.9-dev"
                 }
             },
             "autoload": {
@@ -6946,7 +6990,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-08-09T10:23:20+00:00"
+            "time": "2020-08-18T19:48:01+00:00"
         },
         {
             "name": "pantheon-systems/drupal-integrations",
@@ -11184,6 +11228,18 @@
                 {
                     "name": "See contributors",
                     "homepage": "https://www.drupal.org/node/3236/committers"
+                },
+                {
+                    "name": "pcambra",
+                    "homepage": "https://www.drupal.org/user/122101"
+                },
+                {
+                    "name": "salvis",
+                    "homepage": "https://www.drupal.org/user/82964"
+                },
+                {
+                    "name": "willzyx",
+                    "homepage": "https://www.drupal.org/user/1043862"
                 }
             ],
             "description": "Various blocks, pages, and functions for developers.",
@@ -11283,6 +11339,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1580492032",
@@ -12833,20 +12892,6 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-05-22T17:28:00+00:00"
         },
         {

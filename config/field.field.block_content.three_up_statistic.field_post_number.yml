@@ -13,6 +13,7 @@ third_party_settings:
     basic_html: basic_html
     full_html: '0'
     plain_text: '0'
+    code: '0'
 id: block_content.three_up_statistic.field_post_number
 field_name: field_post_number
 entity_type: block_content

@@ -1,6 +1,6 @@
 uuid: 815eb3db-62c1-4680-a9d6-ecc01f2be9fe
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
@@ -36,15 +36,15 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - links
         - 'bundle_field:node'
+        - field_related_program_tag
         - node_title
-        - field_course_code
         - field_course_summary
+        - search_api_excerpt
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
-        weight: 1
+        weight: 0
         label: hidden
         formatter: default
       node_title:
@@ -61,23 +61,25 @@ targetEntityType: node
 bundle: course
 mode: search_result
 content:
-  field_course_code:
-    weight: 3
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: ds_content
   field_course_summary:
-    weight: 4
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: ds_content
-  links:
-    weight: 0
+  field_related_program_tag:
+    type: entity_reference_label
+    weight: 1
+    region: ds_content
+    label: above
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  search_api_excerpt:
+    weight: 4
     region: ds_content
     settings: {  }
     third_party_settings: {  }
@@ -85,8 +87,8 @@ hidden:
   addtoany: true
   field_areas_of_study: true
   field_content_sections: true
+  field_course_code: true
   field_metatags: true
-  field_related_program_tag: true
   field_topics: true
   field_view_upcoming_courses: true
-  search_api_excerpt: true
+  links: true

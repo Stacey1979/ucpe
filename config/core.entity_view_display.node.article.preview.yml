@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.preview
-    - field.field.node.article.body
     - field.field.node.article.field_areas_of_study
     - field.field.node.article.field_author
     - field.field.node.article.field_based_on
@@ -116,7 +115,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  body: true
   field_areas_of_study: true
   field_blockquote: true
   field_blockquote_perspectives: true
@@ -129,3 +127,4 @@ hidden:
   field_perspectives_label: true
   field_read_time: true
   field_related_programs: true
+  search_api_excerpt: true

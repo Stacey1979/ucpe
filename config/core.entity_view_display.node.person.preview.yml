@@ -40,7 +40,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      view_mode: blockquote_image
+      view_mode: headshot
       link: false
     third_party_settings: {  }
     region: content

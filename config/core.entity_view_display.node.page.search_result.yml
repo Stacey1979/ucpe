@@ -1,6 +1,6 @@
 uuid: d14089af-0e15-4488-a3bf-6788f4c37659
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
@@ -48,7 +48,7 @@ third_party_settings:
       ds_content:
         - node_title
         - field_lede
-        - links
+        - search_api_excerpt
     fields:
       node_title:
         plugin_id: node_title
@@ -85,14 +85,13 @@ content:
       more_link: false
       summary_handler: full
     third_party_settings: {  }
-  links:
+  search_api_excerpt:
     weight: 2
     region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
-  body: true
   field_content: true
   field_content_sections: true
   field_discover_the_uchicago_diff: true
@@ -109,4 +108,4 @@ hidden:
   field_youvisit_embed: true
   field_youvisit_header: true
   field_youvisit_paragraph: true
-  search_api_excerpt: true
+  links: true

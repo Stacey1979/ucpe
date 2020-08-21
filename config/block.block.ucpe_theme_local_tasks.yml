@@ -9,7 +9,7 @@ _core:
 id: ucpe_theme_local_tasks
 theme: ucpe_theme
 region: content
-weight: -18
+weight: -20
 provider: null
 plugin: local_tasks_block
 settings:

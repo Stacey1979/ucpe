@@ -1,4 +1,4 @@
-origin: 'https://live-ucpe.pantheonsite.io'
+origin: 'http://live-ucpe.pantheonsite.io'
 origin_dir: sites/default/files
 use_imagecache_root: false
 hotlink: false

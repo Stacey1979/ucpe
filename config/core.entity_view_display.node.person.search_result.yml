@@ -1,6 +1,6 @@
 uuid: cfa68049-3037-4d5f-a033-4a2d5a55224c
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_result
@@ -17,8 +17,8 @@ dependencies:
     - node.type.person
   module:
     - ds
+    - options
     - smart_trim
-    - text
     - user
 third_party_settings:
   ds:
@@ -40,17 +40,11 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - 'bundle_field:node'
+        - field_person_type
         - node_title
-        - field_job_title
         - field_bio
-        - links
+        - search_api_excerpt
     fields:
-      'bundle_field:node':
-        plugin_id: 'bundle_field:node'
-        weight: 0
-        label: hidden
-        formatter: default
       node_title:
         plugin_id: node_title
         weight: 1
@@ -66,7 +60,7 @@ bundle: person
 mode: search_result
 content:
   field_bio:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       trim_length: 300
@@ -84,15 +78,15 @@ content:
     third_party_settings: {  }
     type: smart_trim
     region: ds_content
-  field_job_title:
-    weight: 2
+  field_person_type:
+    type: list_default
+    weight: 0
+    region: ds_content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: ds_content
-  links:
-    weight: 4
+  search_api_excerpt:
+    weight: 3
     region: ds_content
     settings: {  }
     third_party_settings: {  }
@@ -107,9 +101,9 @@ hidden:
   field_email: true
   field_first_name: true
   field_headshot: true
+  field_job_title: true
   field_last_name: true
   field_metatags: true
   field_name: true
-  field_person_type: true
   field_title: true
-  search_api_excerpt: true
+  links: true
