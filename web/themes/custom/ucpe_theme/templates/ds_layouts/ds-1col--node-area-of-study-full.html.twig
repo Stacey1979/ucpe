@@ -9,6 +9,7 @@
  * - ds_content: content region
  */
 #}
+
 <div class="hero_wrapper hero_aos">
   <div class="hero">
     <div class="hero_content_wrapper">
@@ -17,7 +18,7 @@
         <h1>{{ title|field_value }}</h1>
         {{ title_prefix }}
         {{ title_suffix }}
-        <p class="lede">{{ ds_content.field_lede|field_value }}</p>
+        <div class="lede">{{ ds_content.field_lede|field_value }}</div>
       </div>
       <div class="hero_cta">
         <p>Learn more about the UChicago difference</p>

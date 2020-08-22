@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.image_carousel_combo.field_image_carousel_items
     - image.style.image_carousel
     - paragraphs.paragraphs_type.image_carousel_combo
+    - responsive_image.styles.image_carousel
   module:
     - ds
     - slick_paragraphs
@@ -25,7 +26,7 @@ content:
       skin: ''
       skin_thumbnail: ''
       image_style: image_carousel
-      responsive_image_style: ''
+      responsive_image_style: image_carousel
       thumbnail_effect: ''
       thumbnail_position: ''
       media_switch: ''
@@ -45,7 +46,6 @@ content:
       class: ''
       caption:
         field_image_caption: field_image_caption
-        field_carousel_media_image: 0
         field_image_ref_image: 0
       cache: '0'
       override: '1'
@@ -80,4 +80,5 @@ content:
       ds:
         ds_limit: ''
     region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true

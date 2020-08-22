@@ -208,30 +208,22 @@ nav.slick__arrow {
     outline: 0;
     background-color: transparent;
     font-size: 0px;
+    height: 30px;
+    width: 60px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    transition: transform 0.5s;
 
-    &:before,
-    &:after {
-      font-size: 3.5rem;
-      vertical-align: middle;
-      transition: all 0.25s ease-in;
+    &:hover {
+      transform: scale(1.25);
     }
     &.slick-prev {
-      &:before {
-        @include iconfont($divider-gray, "\3c");
-      }
-      &:hover:before {
-        color: $maroon;
-        transition: all 0.25s ease-out;
-      }
+      background-image: url(#{$image-path}/arrow_left.svg);
     }
     &.slick-next {
-      &:after {
-        @include iconfont($divider-gray, "\3e");
-      }
-      &:hover:after {
-        color: $maroon;
-        transition: all 0.25s ease-out;
-      }
+      background-image: url(#{$image-path}/arrow_right.svg);
     }
   }
 }

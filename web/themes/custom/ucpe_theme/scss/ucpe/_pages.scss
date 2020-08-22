@@ -71,12 +71,33 @@
 
       // replace this class later  CAROUSEL
       .slick--field-image-carousel-items--default {
-        width: 100vw;
+        width: 98vw;
         position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
+        left: 49%;
+        right: 49%;
+        margin-left: -49vw;
+        margin-right: -49vw;
+
+        .slick__slide {
+          opacity: 0.65;
+          transition: opacity 0.5s ease-in;
+
+          &.slick-current {
+            opacity: 1;
+            transition: opacity 0.5s ease-out;
+          }
+          .slide__media {
+            padding: 0 1%;
+          }
+          .slide__caption {
+            margin: $baseline auto;
+            width: 80%;
+
+            .slide__description {
+              @include bodycopy_XS($black_02);
+            }
+          }
+        }
       }
     }
   }
