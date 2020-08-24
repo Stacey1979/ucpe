@@ -17,3 +17,5 @@ framework:
     #    bootstrap/assets/javascripts/bootstrap/tab.js: {}
     #    bootstrap/assets/javascripts/bootstrap/transition.js: {}
     dist/main.min.js: {}
+  dependencies:
+    - core/drupal.debounce

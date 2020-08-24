@@ -1,0 +1,40 @@
+{#
+  Themes a single-select exposed form element as radio buttons.
+
+  Available variables:
+    - wrapper_attributes: attributes for the wrapper element.
+    - element: The collection of checkboxes.
+    - children: An array of keys for the children of element.
+    - is_nested: TRUE if this is to be rendered as a nested list.
+    - depth: If is_nested is TRUE, this holds an array in the form of
+      child_id => nesting_level which defines the depth a given element should
+      appear in the nested list.
+
+  Turns this into a nav.
+#}
+{%
+  set classes = [
+    'form-radios',
+    is_nested ? 'bef-nested',
+    display_inline ? 'form--inline',
+  'dropdown'
+  ]
+%}
+<div{{ wrapper_attributes.addClass(classes) }}>
+  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{ element['#options'][element['#value']] }}
+  </button>
+  <ul class="nav navbar-nav dropdown-menu">
+  {% set current_nesting_level = 0 %}
+  {% for child in children %}
+    {% set item = attribute(element, child) %}
+    {% if is_nested %}
+      {% set new_nesting_level = attribute(depth, child) %}
+      {% include '@better_exposed_filters/bef-nested-elements.html.twig' %}
+      {% set current_nesting_level = new_nesting_level %}
+    {% else %}
+      <li class="nav-item dropdown-item">{{ item }}</li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
