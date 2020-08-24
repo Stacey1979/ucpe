@@ -16,21 +16,33 @@
       <div class="hero_body">
         <div class="hero">
           <h1>{{ content.title|field_value }}</h1>
-          <p class="lede">{{ content.homepage.field_lede|field_value }}</p>
+          <div class="lede">{{ content.homepage.field_lede|field_value }}</div>
           <a class="btn" href="{{ content.homepage.field_hero_cta_button[0]['#url'] }}">{{ content.homepage.field_hero_cta_button[0]['#title'] }}</a>
         </div>
       </div>
     </div>
   </div>
   <div class="content_wrapper">
-    <div class="intro">
-       {{ content.homepage.field_header_h2_|field_value }}
-       {{ content.homepage.field_content|field_value }}
-       <a class="btn secondary" href="{{ content.homepage.field_get_in_touch_button[0]['#url'] }}">{{ content.homepage.field_get_in_touch_button[0]['#title'] }}</a>
-
-       <div class="preview">
-        {{ content.homepage.field_program_types_preview|field_value }}
-       </div>
+    <div class="intro_wrapper">
+      <div class="intro_body">
+        <div class="intro">
+          <div class="intro_content">
+            <h2>{{ content.homepage.field_header_h2_|render|striptags|trim  }}</h2>
+            {{ content.homepage.field_content|field_value }}
+            <a class="btn secondary" href="{{ content.homepage.field_get_in_touch_button[0]['#url'] }}">{{ content.homepage.field_get_in_touch_button[0]['#title'] }}</a>
+          </div>
+          <div class="intro_img">
+            {{ content.homepage.field_large_image_left|field_value }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="preview_wrapper">
+      <div class="preview_body">
+        <div class="preview">
+          {{ content.homepage.field_program_types_preview|field_value }}
+        </div>
+      </div>  
     </div>
     {% if content.homepage.field_youvisit_embed %}
     <div class="youvisit">

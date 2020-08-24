@@ -3,14 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
+    - image.style.large_3_4_2x_1200x1600_
     - image.style.large_3_4_675x900_
     - image.style.medium_3_4_480x640_
     - image.style.small_3_4_375x500_
   theme:
     - ucpe_theme
 id: content_image_3_4_left_or_right
-label: 'Content Image (3:4) - Left or Right'
+label: 'Content Image - Portrait'
 image_style_mappings:
+  -
+    breakpoint_id: ucpe.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_3_4_675x900_
+  -
+    breakpoint_id: ucpe.screen-lg-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: large_3_4_2x_1200x1600_
   -
     breakpoint_id: ucpe.screen-md-min
     multiplier: 1x

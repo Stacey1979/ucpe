@@ -10,7 +10,9 @@
  */
 #}
 <div class="card">
-  {{ ds_content.field_taxonomy_image|field_value }}
-  {{ ds_content.field_program_detail_page|field_value }}
-  {{ ds_content.description }}
+  <div class="card_img">{{ ds_content.field_taxonomy_image|field_value }}</div>
+  <div class="card_content">
+    <h3>{{ ds_content.field_program_detail_page|field_value }}</h3>
+    {{ ds_content.description|field_value }}
+  </div>
 </div>

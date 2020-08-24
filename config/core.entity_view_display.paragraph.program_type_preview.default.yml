@@ -4,9 +4,28 @@ status: true
 dependencies:
   config:
     - paragraphs.paragraphs_type.program_type_preview
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions: {  }
 id: paragraph.program_type_preview.default
 targetEntityType: paragraph
 bundle: program_type_preview
 mode: default
 content: {  }
-hidden: {  }
+hidden:
+  search_api_excerpt: true

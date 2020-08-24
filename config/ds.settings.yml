@@ -8,6 +8,7 @@ classes:
     - 'blockquote_second_column|Blockquote Second Column'
     - 'statistic_first_column|Statistic First Column'
     - 'statistic_second_column|Statistic Second Column'
+    - 'content_carousel_slider| Content Carousel Slider'
   field: {  }
 use_field_names: true
 _core:

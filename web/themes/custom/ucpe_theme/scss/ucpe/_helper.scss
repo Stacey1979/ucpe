@@ -288,18 +288,23 @@ a.showmore {
 
   h3 {
     @include heading_XS($plum);
-    margin: $baseline 0;
+    margin: $baseline 0 $baseline/2;
   }
   h3 a {
     @include heading_XS($plum);
     margin-bottom: 0;
+    padding: 5px 0;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: background-size 0.25s ease;
+    background: linear-gradient(to bottom, transparent 90%, #800000 0) center
+      center/0% 75% no-repeat;
 
     &:hover {
       color: $maroon;
-      border-bottom: solid 3px $maroon;
-      transition: all 0.3s;
+      background-size: 100% 100%;
+    }
+    &:active {
+      background-size: 80% 100%;
     }
   }
 

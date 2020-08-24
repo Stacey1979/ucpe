@@ -7140,7 +7140,7 @@ nav.slick__arrow {
     background-repeat: no-repeat;
     background-position: center center;
     display: inline-block;
-    transition: transform .5s; }
+    transition: transform 0.5s; }
     nav.slick__arrow button:hover {
       transform: scale(1.25); }
     nav.slick__arrow button.slick-prev {
@@ -7400,6 +7400,35 @@ nav.slick__arrow {
         padding: 5rem; } }
     .contentLrgImg .col2 h3 {
       color: #110f0f; }
+
+.content_carousel_slider nav.slick__arrow {
+  position: relative;
+  right: 10%; }
+
+.content_carousel_slider .slick {
+  width: 98vw;
+  position: relative;
+  left: 49%;
+  right: 49%;
+  margin-left: -49vw;
+  margin-right: -49vw; }
+  .content_carousel_slider .slick .slick__slide {
+    opacity: 0.65;
+    transition: opacity 0.5s ease-in; }
+    .content_carousel_slider .slick .slick__slide.slick-current {
+      opacity: 1;
+      transition: opacity 0.5s ease-out; }
+    .content_carousel_slider .slick .slick__slide .slide__media {
+      padding: 0 1%; }
+    .content_carousel_slider .slick .slick__slide .slide__caption {
+      margin: 1rem auto;
+      width: 80%; }
+      .content_carousel_slider .slick .slick__slide .slide__caption .slide__description {
+        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-size: 0.75rem;
+        color: #585858;
+        line-height: 1.4rem;
+        font-weight: 400; }
 
 .profileFaculty_wrapper {
   padding-right: 15px;
@@ -8823,7 +8852,7 @@ a.showmore {
     color: #350e20;
     font-weight: 900;
     line-height: 1.65rem;
-    margin: 1rem 0; }
+    margin: 1rem 0 0.5rem; }
   .card h3 a {
     font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
     font-size: 1.25rem;
@@ -8831,12 +8860,15 @@ a.showmore {
     font-weight: 900;
     line-height: 1.65rem;
     margin-bottom: 0;
+    padding: 5px 0;
     text-decoration: none;
-    transition: all 0.3s; }
+    transition: background-size .25s ease;
+    background: linear-gradient(to bottom, transparent 90%, #800000 0) center center/0% 75% no-repeat; }
     .card h3 a:hover {
       color: #800000;
-      border-bottom: solid 3px #800000;
-      transition: all 0.3s; }
+      background-size: 100% 100%; }
+    .card h3 a:active {
+      background-size: 80% 100%; }
   .card .meta {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 0.875rem;
@@ -9453,48 +9485,6 @@ header {
           .casestudy .content_body .casestudy_bottom .cta100_wrapper {
             margin-left: calc(-8rem + -16px);
             width: calc(100% + 13rem + 31px); } }
-      .article .content_body .article_bottom .slick--field-image-carousel-items--default,
-      .article .content_body .casestudy_bottom .slick--field-image-carousel-items--default,
-      .casestudy .content_body .article_bottom .slick--field-image-carousel-items--default,
-      .casestudy .content_body .casestudy_bottom .slick--field-image-carousel-items--default {
-        width: 98vw;
-        position: relative;
-        left: 49%;
-        right: 49%;
-        margin-left: -49vw;
-        margin-right: -49vw; }
-        .article .content_body .article_bottom .slick--field-image-carousel-items--default .slick__slide,
-        .article .content_body .casestudy_bottom .slick--field-image-carousel-items--default .slick__slide,
-        .casestudy .content_body .article_bottom .slick--field-image-carousel-items--default .slick__slide,
-        .casestudy .content_body .casestudy_bottom .slick--field-image-carousel-items--default .slick__slide {
-          opacity: .65;
-          transition: opacity .5s ease-in; }
-          .article .content_body .article_bottom .slick--field-image-carousel-items--default .slick__slide.slick-current,
-          .article .content_body .casestudy_bottom .slick--field-image-carousel-items--default .slick__slide.slick-current,
-          .casestudy .content_body .article_bottom .slick--field-image-carousel-items--default .slick__slide.slick-current,
-          .casestudy .content_body .casestudy_bottom .slick--field-image-carousel-items--default .slick__slide.slick-current {
-            opacity: 1;
-            transition: opacity .5s ease-out; }
-          .article .content_body .article_bottom .slick--field-image-carousel-items--default .slick__slide .slide__media,
-          .article .content_body .casestudy_bottom .slick--field-image-carousel-items--default .slick__slide .slide__media,
-          .casestudy .content_body .article_bottom .slick--field-image-carousel-items--default .slick__slide .slide__media,
-          .casestudy .content_body .casestudy_bottom .slick--field-image-carousel-items--default .slick__slide .slide__media {
-            padding: 0 1%; }
-          .article .content_body .article_bottom .slick--field-image-carousel-items--default .slick__slide .slide__caption,
-          .article .content_body .casestudy_bottom .slick--field-image-carousel-items--default .slick__slide .slide__caption,
-          .casestudy .content_body .article_bottom .slick--field-image-carousel-items--default .slick__slide .slide__caption,
-          .casestudy .content_body .casestudy_bottom .slick--field-image-carousel-items--default .slick__slide .slide__caption {
-            margin: 1rem auto;
-            width: 80%; }
-            .article .content_body .article_bottom .slick--field-image-carousel-items--default .slick__slide .slide__caption .slide__description,
-            .article .content_body .casestudy_bottom .slick--field-image-carousel-items--default .slick__slide .slide__caption .slide__description,
-            .casestudy .content_body .article_bottom .slick--field-image-carousel-items--default .slick__slide .slide__caption .slide__description,
-            .casestudy .content_body .casestudy_bottom .slick--field-image-carousel-items--default .slick__slide .slide__caption .slide__description {
-              font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-              font-size: 0.75rem;
-              color: #585858;
-              line-height: 1.4rem;
-              font-weight: 400; }
 
 .article .article_top .written_by p {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -10529,6 +10519,248 @@ header {
     .event .eventSpeaker_wrapper .profileFaculty_wrapper {
       float: left;
       width: 50%; } }
+
+.path-alias--index .content_wrapper .intro_wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .path-alias--index .content_wrapper .intro_wrapper {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .path-alias--index .content_wrapper .intro_wrapper {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .path-alias--index .content_wrapper .intro_wrapper {
+      max-width: 1300px; } }
+  .path-alias--index .content_wrapper .intro_wrapper .intro_body {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .path-alias--index .content_wrapper .intro_wrapper .intro_body:before, .path-alias--index .content_wrapper .intro_wrapper .intro_body:after {
+      display: table;
+      content: " "; }
+    .path-alias--index .content_wrapper .intro_wrapper .intro_body:after {
+      clear: both; }
+  .path-alias--index .content_wrapper .intro_wrapper .intro {
+    float: left;
+    padding: 3rem 0;
+    position: relative; }
+    @media only screen and (min-width: 1200px) {
+      .path-alias--index .content_wrapper .intro_wrapper .intro {
+        padding: 6rem 0; } }
+    .path-alias--index .content_wrapper .intro_wrapper .intro:before {
+      background-color: #f3f3f3;
+      content: '';
+      position: absolute;
+      height: 100%;
+      right: 5%;
+      top: 0;
+      width: 100vw; }
+      @media only screen and (min-width: 1200px) {
+        .path-alias--index .content_wrapper .intro_wrapper .intro:before {
+          right: 0; } }
+    .path-alias--index .content_wrapper .intro_wrapper .intro:after {
+      background-color: #800000;
+      content: '';
+      position: absolute;
+      height: 75%;
+      left: 50%;
+      top: -3rem;
+      width: 50vw;
+      z-index: -1; }
+    .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-right: 8.3333%;
+      margin-bottom: 2rem; }
+      @media only screen and (min-width: 560px) {
+        .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content {
+          position: relative;
+          float: left;
+          width: 58.33333%;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px;
+          left: 33.33333%; } }
+      @media only screen and (min-width: 1200px) {
+        .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content {
+      float: left;
+      width: 41.66667%; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content {
+      left: 50%; } }
+      .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content h2 {
+        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 2rem;
+        color: #110f0f;
+        font-weight: 900;
+        line-height: 2.75rem; }
+      .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content .content100_wrapper {
+        padding: 0; }
+    .path-alias--index .content_wrapper .intro_wrapper .intro .intro_img {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media only screen and (min-width: 560px) {
+        .path-alias--index .content_wrapper .intro_wrapper .intro .intro_img {
+          position: relative;
+          float: left;
+          width: 33.33333%;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px;
+          right: 58.33333%; } }
+      @media only screen and (min-width: 1200px) {
+        .path-alias--index .content_wrapper .intro_wrapper .intro .intro_img {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .path-alias--index .content_wrapper .intro_wrapper .intro .intro_img {
+      float: left;
+      width: 50%; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .path-alias--index .content_wrapper .intro_wrapper .intro .intro_img {
+      right: 50%; } }
+
+.path-alias--index .content_wrapper .preview_wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 960px) {
+    .path-alias--index .content_wrapper .preview_wrapper {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .path-alias--index .content_wrapper .preview_wrapper {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .path-alias--index .content_wrapper .preview_wrapper {
+      max-width: 1300px; } }
+  .path-alias--index .content_wrapper .preview_wrapper .preview_body {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .path-alias--index .content_wrapper .preview_wrapper .preview_body:before, .path-alias--index .content_wrapper .preview_wrapper .preview_body:after {
+      display: table;
+      content: " "; }
+    .path-alias--index .content_wrapper .preview_wrapper .preview_body:after {
+      clear: both; }
+  .path-alias--index .content_wrapper .preview_wrapper .preview {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    padding-bottom: 3rem; }
+    @media (min-width: 768px) {
+      .path-alias--index .content_wrapper .preview_wrapper .preview {
+        float: left;
+        width: 100%; } }
+    @media only screen and (min-width: 768px) {
+      .path-alias--index .content_wrapper .preview_wrapper .preview {
+        float: none;
+        display: flex;
+        padding: 0 8.3333%;
+        margin-bottom: 3rem; } }
+    @media only screen and (min-width: 1200px) {
+      .path-alias--index .content_wrapper .preview_wrapper .preview {
+        padding: 0 4.16665%;
+        margin-bottom: 5rem; } }
+    .path-alias--index .content_wrapper .preview_wrapper .preview:before {
+      background-color: #f3f3f3;
+      content: '';
+      position: absolute;
+      height: 100%;
+      right: 5%;
+      top: 0;
+      width: 100vw; }
+      @media only screen and (min-width: 768px) {
+        .path-alias--index .content_wrapper .preview_wrapper .preview:before {
+          height: 35%; } }
+      @media only screen and (min-width: 1200px) {
+        .path-alias--index .content_wrapper .preview_wrapper .preview:before {
+          right: 0;
+          height: 50%; } }
+    .path-alias--index .content_wrapper .preview_wrapper .preview .card {
+      border: 0;
+      clear: both;
+      float: left;
+      padding: 1rem 0;
+      width: 100%; }
+      @media only screen and (min-width: 768px) {
+        .path-alias--index .content_wrapper .preview_wrapper .preview .card {
+          float: none;
+          flex: 1;
+          padding: 0 1%;
+          width: 25%; } }
+      .path-alias--index .content_wrapper .preview_wrapper .preview .card .card_img {
+        float: left;
+        width: 25%; }
+        @media only screen and (min-width: 768px) {
+          .path-alias--index .content_wrapper .preview_wrapper .preview .card .card_img {
+            float: none;
+            width: 100%; } }
+        .path-alias--index .content_wrapper .preview_wrapper .preview .card .card_img .field--name-field-image-attribution-wysiwyg,
+        .path-alias--index .content_wrapper .preview_wrapper .preview .card .card_img .field--name-field-image-caption {
+          display: none; }
+      .path-alias--index .content_wrapper .preview_wrapper .preview .card .card_content {
+        float: left;
+        width: 65%;
+        margin-left: 5%; }
+        @media only screen and (min-width: 768px) {
+          .path-alias--index .content_wrapper .preview_wrapper .preview .card .card_content {
+            float: none;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            padding: 0 1rem; } }
+        .path-alias--index .content_wrapper .preview_wrapper .preview .card .card_content h3 a {
+          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-size: 1rem;
+          color: #110f0f;
+          line-height: 1.8rem;
+          font-weight: 500;
+          margin-bottom: 1rem; }
+        .path-alias--index .content_wrapper .preview_wrapper .preview .card .card_content p {
+          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-size: 0.875rem;
+          color: #110f0f;
+          line-height: 1.4rem;
+          font-weight: 400; }
+
+.path-alias--index .content_wrapper .youvisit {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden; }
+  .path-alias--index .content_wrapper .youvisit:before {
+    padding-top: 35%;
+    content: '';
+    display: block; }
+  .path-alias--index .content_wrapper .youvisit iframe {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0; }
 
 .path-alias--about .hero_about {
   margin: 4rem 0; }
