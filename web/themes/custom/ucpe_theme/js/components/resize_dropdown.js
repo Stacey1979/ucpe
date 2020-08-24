@@ -11,7 +11,7 @@ export default function (context) {
 
   function resizeScreen() {
     var viewport = $(window).width();
-    const medium = 700; // TODO: where should this actually happen?
+    const medium = 768;
 
     if( viewport < medium) {
       $('.form-radios.dropdown .navbar-nav').addClass('dropdown-menu');
