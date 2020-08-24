@@ -13,7 +13,7 @@ export default function (context) {
     var viewport = $(window).width();
     const medium = 700;
 
-    if( viewport >  medium) {
+    if( viewport < medium) {
       $('.form-radios.dropdown .navbar-nav').addClass('dropdown-menu');
     }
     else {
