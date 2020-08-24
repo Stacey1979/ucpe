@@ -17,12 +17,14 @@
     'form-radios',
     is_nested ? 'bef-nested',
     display_inline ? 'form--inline',
-    'navbar-collapse',
-    'collapse'
+  'dropdown'
   ]
 %}
 <div{{ wrapper_attributes.addClass(classes) }}>
-  <ul class="nav navbar-nav">
+  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{ element['#options'][element['#value']] }}
+  </button>
+  <ul class="nav navbar-nav dropdown-menu">
   {% set current_nesting_level = 0 %}
   {% for child in children %}
     {% set item = attribute(element, child) %}
@@ -31,7 +33,7 @@
       {% include '@better_exposed_filters/bef-nested-elements.html.twig' %}
       {% set current_nesting_level = new_nesting_level %}
     {% else %}
-      <li class="nav-item">{{ item }}</li>
+      <li class="nav-item dropdown-item">{{ item }}</li>
     {% endif %}
   {% endfor %}
   </ul>
