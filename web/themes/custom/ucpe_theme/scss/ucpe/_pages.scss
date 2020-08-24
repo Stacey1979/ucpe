@@ -68,16 +68,6 @@
           width: calc(100% + 13rem + 31px);
         }
       }
-
-      // replace this class later  CAROUSEL
-      .slick--field-image-carousel-items--default {
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-      }
     }
   }
 }

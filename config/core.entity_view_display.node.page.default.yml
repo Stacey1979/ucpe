@@ -156,8 +156,8 @@ content:
     region: homepage
     label: hidden
     settings:
-      link: true
-      view_mode: default
+      view_mode: content_image_left_or_right
+      link: false
     third_party_settings: {  }
   field_large_landscape_hero:
     type: entity_reference_entity_view
@@ -226,5 +226,6 @@ content:
     region: homepage
 hidden:
   addtoany: true
+  body: true
   links: true
   search_api_excerpt: true

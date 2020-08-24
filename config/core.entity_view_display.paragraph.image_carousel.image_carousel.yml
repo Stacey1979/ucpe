@@ -1,18 +1,19 @@
-uuid: e31dbd5b-73bd-4db3-9d90-70a38464f5c5
+uuid: 5c572c6a-87d0-44b3-85f4-172ff5147b55
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.image_carousel
     - field.field.paragraph.image_carousel.field_image_caption
     - field.field.paragraph.image_carousel.field_image_ref_image
     - paragraphs.paragraphs_type.image_carousel
     - responsive_image.styles.image_carousel
   module:
     - svg_image_responsive
-id: paragraph.image_carousel.default
+id: paragraph.image_carousel.image_carousel
 targetEntityType: paragraph
 bundle: image_carousel
-mode: default
+mode: image_carousel
 content:
   field_image_caption:
     weight: 0

@@ -200,3 +200,30 @@
     }
   }
 }
+
+nav.slick__arrow {
+  float: right;
+  button {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 0px;
+    height: 30px;
+    width: 60px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+    &.slick-prev {
+      background-image: url(#{$image-path}/arrow_left.svg);
+    }
+    &.slick-next {
+      background-image: url(#{$image-path}/arrow_right.svg);
+    }
+  }
+}

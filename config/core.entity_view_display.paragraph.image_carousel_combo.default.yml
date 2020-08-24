@@ -6,9 +6,32 @@ dependencies:
     - field.field.paragraph.image_carousel_combo.field_image_carousel_items
     - image.style.image_carousel
     - paragraphs.paragraphs_type.image_carousel_combo
+    - responsive_image.styles.image_carousel
   module:
     - ds
     - slick_paragraphs
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class:
+            content_carousel_slider: content_carousel_slider
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_image_carousel_items
 id: paragraph.image_carousel_combo.default
 targetEntityType: paragraph
 bundle: image_carousel_combo
@@ -25,7 +48,7 @@ content:
       skin: ''
       skin_thumbnail: ''
       image_style: image_carousel
-      responsive_image_style: ''
+      responsive_image_style: image_carousel
       thumbnail_effect: ''
       thumbnail_position: ''
       media_switch: ''
@@ -45,7 +68,6 @@ content:
       class: ''
       caption:
         field_image_caption: field_image_caption
-        field_carousel_media_image: 0
         field_image_ref_image: 0
       cache: '0'
       override: '1'
@@ -79,5 +101,6 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
-    region: content
-hidden: {  }
+    region: ds_content
+hidden:
+  search_api_excerpt: true

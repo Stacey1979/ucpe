@@ -122,6 +122,7 @@
     }
   }
   // END -- HERO PROGRAM DETAIL
+
   // HERO PROGRAM INTERIOR PAGES
   &.hero_program_interior {
     padding: $baseline * 4 0;
@@ -167,6 +168,7 @@
     }
   }
   // END -- HERO PROGRAM INTERIOR PAGES
+
   // HERO STORY
   &.hero_story {
     margin-bottom: $baseline * 3;
@@ -328,12 +330,7 @@
         }
       }
       .hero_content_wrapper {
-        @include make-sm-column(8);
-        @include screen("tablet-wide") {
-        }
-        @include screen("desktop") {
-          @include make-sm-column(7);
-        }
+        @include make-sm-column(7);
       }
       .hero_content {
         @include make-sm-column(12);
@@ -363,7 +360,7 @@
           color: $white;
           margin: $baseline * 2 0;
         }
-        .lede {
+        .lede p {
           @include bodycopy_L($white);
           margin-bottom: $baseline * 4;
         }
@@ -380,9 +377,9 @@
         }
       }
       .hero_img {
-        @include make-sm-column(4);
+        @include make-sm-column(5);
         @include screen("desktop") {
-          @include make-sm-column-push(1);
+          //@include make-sm-column-push(1);
         }
 
         .field--name-field-image-attribution-wysiwyg,

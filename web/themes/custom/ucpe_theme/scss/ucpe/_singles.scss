@@ -1,3 +1,188 @@
+.path-alias--index {
+  .content_wrapper {
+    .intro_wrapper {
+      @include make-container;
+      .intro_body {
+        @include make-row;
+      }
+      .intro {
+        float: left;
+        padding: $baseline * 3 0;
+        position: relative;
+        @include screen("desktop") {
+          padding: $baseline * 6 0;
+        }
+
+        &:before {
+          background-color: $bg-02;
+          content: "";
+          position: absolute;
+          height: 100%;
+          right: 5%;
+          top: 0;
+          width: 100vw;
+          @include screen("desktop") {
+            right: 0;
+          }
+        }
+        &:after {
+          background-color: $maroon;
+          content: "";
+          position: absolute;
+          height: 75%;
+          left: 50%;
+          top: -$baseline * 3;
+          width: 50vw;
+          z-index: -1;
+        }
+
+        .intro_content {
+          @include make-xs-column(12);
+          padding-right: $colwidth;
+          margin-bottom: $baseline * 2;
+
+          @include screen("phablet") {
+            @include make-xs-column(7);
+            @include make-xs-column-push(4);
+          }
+
+          @include screen("desktop") {
+            @include make-sm-column(5);
+            @include make-sm-column-push(6);
+          }
+          h2 {
+            @include heading_M($black);
+          }
+          .content100_wrapper {
+            padding: 0;
+          }
+        }
+        .intro_img {
+          @include make-xs-column(12);
+          @include screen("phablet") {
+            @include make-xs-column(4);
+            @include make-xs-column-pull(7);
+          }
+
+          @include screen("desktop") {
+            @include make-sm-column(6);
+            @include make-sm-column-pull(6);
+          }
+        }
+      }
+    }
+    .preview_wrapper {
+      @include make-container;
+      .preview_body {
+        @include make-row;
+      }
+      .preview {
+        @include make-sm-column(12);
+        float: left;
+        padding-bottom: $baseline * 3;
+
+        @include screen("tablet") {
+          float: none;
+          display: flex;
+          padding: 0 $colwidth;
+          margin-bottom: $baseline * 3;
+        }
+        @include screen("desktop") {
+          padding: 0 $colwidth/2;
+          margin-bottom: $baseline * 5;
+        }
+
+        &:before {
+          background-color: $bg-02;
+          content: "";
+          position: absolute;
+          height: 100%;
+          right: 5%;
+          top: 0;
+          width: 100vw;
+          @include screen("tablet") {
+            height: 35%;
+          }
+          @include screen("desktop") {
+            right: 0;
+            height: 50%;
+          }
+        }
+        .card {
+          border: 0;
+          clear: both;
+          float: left;
+          padding: $baseline 0;
+          width: 100%;
+
+          @include screen("tablet") {
+            float: none;
+            flex: 1;
+            padding: 0 1%;
+            width: 25%;
+          }
+          .card_img {
+            float: left;
+            width: 25%;
+            @include screen("tablet") {
+              float: none;
+              width: 100%;
+            }
+
+            .field--name-field-image-attribution-wysiwyg,
+            .field--name-field-image-caption {
+              display: none;
+            }
+          }
+          .card_content {
+            float: left;
+            width: 65%;
+            margin-left: 5%;
+
+            @include screen("tablet") {
+              float: none;
+              width: 100%;
+              margin: 0;
+              text-align: center;
+              padding: 0 $baseline;
+            }
+
+            h3 a {
+              @include bodycopy_M($black, $bold: true);
+              margin-bottom: $baseline;
+            }
+            p {
+              @include bodycopy_S($black);
+            }
+          }
+        }
+      }
+    }
+    .youvisit {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 0;
+      overflow: hidden;
+      &:before {
+        padding-top: 35%;
+        content: "";
+        display: block;
+      }
+      iframe {
+        position: absolute !important;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        border: 0;
+      }
+    }
+  }
+}
+// END - HOMEPAGE
+
 // ABOUT PAGE
 .path-alias--about {
   .hero_about {
@@ -289,3 +474,4 @@
     }
   }
 }
+// END - ABOUT US
