@@ -6314,38 +6314,6 @@ body {
   margin: 0 auto; }
 
 @font-face {
-  font-family: "Noe Text";
-  src: url("../ucpe/assets/fonts//NoeText-Bold.eot");
-  src: url("../ucpe/assets/fonts//NoeText-Bold.eot?#iefix") format("embedded-opentype"), url("../ucpe/assets/fonts//NoeText-Bold.woff2") format("woff2"), url("../ucpe/assets/fonts//NoeText-Bold.woff") format("woff"), url("../ucpe/assets/fonts//NoeText-Bold.ttf") format("truetype"), url("../ucpe/assets/fonts//NoeText-Bold.svg#NoeText-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: fallback; }
-
-@font-face {
-  font-family: "Noe Text";
-  src: url("../ucpe/assets/fonts//NoeText-Semibold.eot");
-  src: url("../ucpe/assets/fonts//NoeText-Semibold.eot?#iefix") format("embedded-opentype"), url("../ucpe/assets/fonts//NoeText-Semibold.woff2") format("woff2"), url("../ucpe/assets/fonts//NoeText-Semibold.woff") format("woff"), url("../ucpe/assets/fonts//NoeText-Semibold.ttf") format("truetype"), url("../ucpe/assets/fonts//NoeText-Semibold.svg#NoeText-Semibold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: fallback; }
-
-@font-face {
-  font-family: "Noe Text";
-  src: url("../ucpe/assets/fonts//NoeText-RegularItalic.eot");
-  src: url("../ucpe/assets/fonts//NoeText-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../ucpe/assets/fonts//NoeText-RegularItalic.woff2") format("woff2"), url("../ucpe/assets/fonts//NoeText-RegularItalic.woff") format("woff"), url("../ucpe/assets/fonts//NoeText-RegularItalic.ttf") format("truetype"), url("../ucpe/assets/fonts//NoeText-RegularItalic.svg#NoeText-RegularItalic") format("svg");
-  font-weight: 300;
-  font-style: italic;
-  font-display: fallback; }
-
-@font-face {
-  font-family: "Noe Text";
-  src: url("../ucpe/assets/fonts//NoeText-Regular.eot");
-  src: url("../ucpe/assets/fonts//NoeText-Regular.eot?#iefix") format("embedded-opentype"), url("../ucpe/assets/fonts//NoeText-Regular.woff2") format("woff2"), url("../ucpe/assets/fonts//NoeText-Regular.woff") format("woff"), url("../ucpe/assets/fonts//NoeText-Regular.ttf") format("truetype"), url("../ucpe/assets/fonts//NoeText-Regular.svg#NoeText-Regular") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-display: fallback; }
-
-@font-face {
   font-family: "ucpe_icons";
   src: url("../ucpe/assets/fonts//ucpe_icons.eot");
   src: url("../ucpe/assets/fonts//ucpe_icons.eot?#iefix") format("embedded-opentype"), url("../ucpe/assets/fonts//ucpe_icons.woff") format("woff"), url("../ucpe/assets/fonts//ucpe_icons.ttf") format("truetype"), url("../ucpe/assets/fonts//ucpe_icons.svg#ucpe_icons") format("svg");
@@ -6540,7 +6508,7 @@ a {
           width: 100%; } }
 
 h1 {
-  font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif; }
+  font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif; }
 
 h2,
 h3,
@@ -6550,11 +6518,11 @@ h6 {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif; }
 
 h1 {
-  font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-  font-size: 3.5rem;
+  font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+  font-size: 4rem;
   color: #110f0f;
-  font-weight: 900;
-  line-height: 3.75rem; }
+  font-weight: 800;
+  line-height: 4.25rem; }
 
 h2 {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -6611,7 +6579,7 @@ h6 {
   .body .conferred p,
   .content .offered p,
   .content .conferred p {
-    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
     font-size: 1.125rem;
     color: #350e20;
     font-weight: 600;
@@ -6625,7 +6593,7 @@ h6 {
     .content .offered p a,
     .content .conferred p a {
       border-bottom: solid 2px #800000;
-      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
       font-size: 1.25rem;
       color: #350e20;
       font-weight: 600;
@@ -6726,10 +6694,10 @@ h6 {
     font-style: italic; }
     .body blockquote .q p,
     .content blockquote .q p {
-      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
       font-size: 1.625rem;
       color: #110f0f;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 2.5rem; }
     .body blockquote .q footer,
     .content blockquote .q footer {
@@ -7113,10 +7081,10 @@ nav.tabs ul.nav-tabs li {
     .link-list li a {
       border-bottom: solid 2px #800000;
       display: inline-block;
-      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
       font-size: 1rem;
       color: #110f0f;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1rem;
       padding-bottom: 2px;
       text-decoration: none;
@@ -7642,11 +7610,11 @@ nav.slick__arrow {
     padding: 3rem 2rem;
     text-align: center; }
     .three-up-promo .col .bottom h3 {
-      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-      font-size: 1.5rem;
+      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-size: 2rem;
       color: #800000;
-      font-weight: 900;
-      line-height: 2.25rem;
+      font-weight: 600;
+      line-height: 2.5rem;
       margin-top: 0; }
   @media only screen and (min-width: 768px) {
     .three-up-promo .col:nth-child(even) {
@@ -7708,11 +7676,11 @@ nav.slick__arrow {
             float: left;
             width: 66.66667%; } }
         .cta_wrapper .cta_body .cta .cta_content h3 {
-          font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-          font-size: 1.5rem;
+          font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+          font-size: 2rem;
           color: #110f0f;
-          font-weight: 900;
-          line-height: 2.25rem;
+          font-weight: 600;
+          line-height: 2.5rem;
           margin: 2rem 0 0.5rem; }
           @media only screen and (min-width: 768px) {
             .cta_wrapper .cta_body .cta .cta_content h3 {
@@ -7806,11 +7774,11 @@ nav.slick__arrow {
           float: left;
           width: 66.66667%; } }
       .cta100_wrapper .cta100 .cta_content h3 {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 1.5rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 2rem;
         color: #110f0f;
-        font-weight: 900;
-        line-height: 2.25rem;
+        font-weight: 600;
+        line-height: 2.5rem;
         margin-top: 0; }
     .cta100_wrapper .cta100 figure.cta_photo {
       position: relative;
@@ -8059,11 +8027,11 @@ nav.slick__arrow {
       margin-left: -16.66667%;
       margin-right: 3rem; } }
   .story_profile h4 {
-    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-    font-size: 1.5rem;
+    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-size: 2rem;
     color: #110f0f;
-    font-weight: 900;
-    line-height: 2.25rem;
+    font-weight: 600;
+    line-height: 2.5rem;
     margin: 0 0 2rem; }
 
 .relatedProgram_wrapper {
@@ -8252,18 +8220,18 @@ nav.slick__arrow {
         padding-right: 15px;
         padding-left: 15px; }
       .mixed_content_grid .secondary_content .secondary_editorial h4 {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 1.25rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 1.5rem;
         color: #350e20;
-        font-weight: 900;
-        line-height: 1.65rem;
+        font-weight: 500;
+        line-height: 2rem;
         margin: 1rem 0; }
       .mixed_content_grid .secondary_content .secondary_editorial h4 a {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 1.25rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 1.5rem;
         color: #350e20;
-        font-weight: 900;
-        line-height: 1.65rem;
+        font-weight: 500;
+        line-height: 2rem;
         text-decoration: none;
         transition: all 0.3s; }
         .mixed_content_grid .secondary_content .secondary_editorial h4 a:hover {
@@ -8800,8 +8768,8 @@ a.showmore {
         flex: 1 0 0%;
         border-left: solid 1px #dcdcdc; } }
     .designed_for .df_description p {
-      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-      font-weight: 300;
+      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-weight: 400;
       font-size: 1.1rem;
       font-style: italic;
       margin: 0;
@@ -8816,11 +8784,11 @@ a.showmore {
   margin: 2rem 0 3rem;
   padding: 3rem 0; }
   .next_steps h4 {
-    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-    font-size: 1.25rem;
+    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-size: 1.5rem;
     color: #110f0f;
-    font-weight: 900;
-    line-height: 1.65rem; }
+    font-weight: 500;
+    line-height: 2rem; }
 
 .card {
   border: solid 2px #dcdcdc;
@@ -8847,22 +8815,22 @@ a.showmore {
         float: left;
         width: 100%; } }
   .card h3 {
-    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-    font-size: 1.25rem;
+    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-size: 1.5rem;
     color: #350e20;
-    font-weight: 900;
-    line-height: 1.65rem;
+    font-weight: 500;
+    line-height: 2rem;
     margin: 1rem 0 0.5rem; }
   .card h3 a {
-    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-    font-size: 1.25rem;
+    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-size: 1.5rem;
     color: #350e20;
-    font-weight: 900;
-    line-height: 1.65rem;
+    font-weight: 500;
+    line-height: 2rem;
     margin-bottom: 0;
     padding: 5px 0;
     text-decoration: none;
-    transition: background-size .25s ease;
+    transition: background-size 0.25s ease;
     background: linear-gradient(to bottom, transparent 90%, #800000 0) center center/0% 75% no-repeat; }
     .card h3 a:hover {
       color: #800000;
@@ -8907,26 +8875,29 @@ a.showmore {
     top: -12px; }
 
 .program_card .pc_content h3 {
-  font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-  font-size: 1.25rem;
+  font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+  font-size: 1.5rem;
   color: #350e20;
-  font-weight: 900;
-  line-height: 1.65rem;
+  font-weight: 500;
+  line-height: 2rem;
   padding-left: 10px; }
 
 .program_card .pc_content h3 a {
-  font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-  font-size: 1.25rem;
+  font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+  font-size: 1.5rem;
   color: #350e20;
-  font-weight: 900;
-  line-height: 1.65rem;
+  font-weight: 500;
+  line-height: 2rem;
   margin-bottom: 0;
+  padding: 5px 0;
   text-decoration: none;
-  transition: all 0.3s; }
+  transition: background-size 0.25s ease;
+  background: linear-gradient(to bottom, transparent 90%, #800000 0) center center/0% 75% no-repeat; }
   .program_card .pc_content h3 a:hover {
     color: #800000;
-    border-bottom: solid 3px #800000;
-    transition: all 0.3s; }
+    background-size: 100% 100%; }
+  .program_card .pc_content h3 a:active {
+    background-size: 80% 100%; }
 
 .headshot {
   display: block;
@@ -9277,10 +9248,10 @@ header {
         .program_nav nav.navbar .navbar-collapse ul.nav li {
           width: 100%; }
           .program_nav nav.navbar .navbar-collapse ul.nav li a {
-            font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+            font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
             font-size: 1.125rem;
             color: #110f0f;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.65rem;
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
@@ -9291,7 +9262,7 @@ header {
               transition: all 0.25s ease-out; }
           .program_nav nav.navbar .navbar-collapse ul.nav li.active a {
             background-color: transparent;
-            font-weight: 900; }
+            font-weight: 700; }
           .program_nav nav.navbar .navbar-collapse ul.nav li.active:before {
             background-color: #800000;
             content: "";
@@ -9437,11 +9408,11 @@ header {
       .article .content_body .casestudy_top h1,
       .casestudy .content_body .article_top h1,
       .casestudy .content_body .casestudy_top h1 {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 3.5rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 4rem;
         color: #110f0f;
-        font-weight: 900;
-        line-height: 3.75rem;
+        font-weight: 800;
+        line-height: 4.25rem;
         margin-bottom: 2rem;
         text-align: center; }
       .article .content_body .article_top .lede p,
@@ -9583,11 +9554,11 @@ header {
       font-size: 0.875rem; }
 
 .article .article_top .intro p {
-  font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-  font-size: 1.5rem;
+  font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+  font-size: 2rem;
   color: #110f0f;
-  font-weight: 900;
-  line-height: 2.25rem; }
+  font-weight: 600;
+  line-height: 2.5rem; }
 
 .article .profileFaculty_wrapper {
   background-color: #f3f3f3;
@@ -9680,11 +9651,11 @@ header {
 .casestudy .intro {
   margin-bottom: 3rem; }
   .casestudy .intro p {
-    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-    font-size: 1.5rem;
+    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-size: 2rem;
     color: #110f0f;
-    font-weight: 900;
-    line-height: 2.25rem;
+    font-weight: 600;
+    line-height: 2.5rem;
     margin-bottom: 0; }
 
 .casestudy .partnership {
@@ -9849,11 +9820,11 @@ header {
             float: left;
             width: 100%; } }
         .story .content_body .content .intro_wrapper .intro_body .intro p {
-          font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-          font-size: 1.5rem;
+          font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+          font-size: 2rem;
           color: #110f0f;
-          font-weight: 900;
-          line-height: 2.25rem; }
+          font-weight: 600;
+          line-height: 2.5rem; }
 
 .page-node-type-area-of-study .area_of_study {
   padding-right: 15px;
@@ -9889,11 +9860,11 @@ header {
           float: left;
           width: 41.66667%; } }
       .page-node-type-area-of-study .area_of_study .content .content1323 .col1 p {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 1.5rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 2rem;
         color: #110f0f;
-        font-weight: 900;
-        line-height: 2.25rem; }
+        font-weight: 600;
+        line-height: 2.5rem; }
     .page-node-type-area-of-study .area_of_study .content .content1323 .col2 {
       position: relative;
       min-height: 1px;
@@ -9998,11 +9969,11 @@ header {
               color: #800000;
               transition: all 0.2s ease-in; }
   .program_detail .intro p {
-    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-    font-size: 1.5rem;
+    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-size: 2rem;
     color: #800000;
-    font-weight: 900;
-    line-height: 2.25rem;
+    font-weight: 600;
+    line-height: 2.5rem;
     margin-bottom: 4rem; }
   .program_detail .cta_aos {
     clear: both;
@@ -10199,11 +10170,11 @@ header {
       .findYourFit .intro_wrapper .intro_body .intro:after {
         clear: both; }
       .findYourFit .intro_wrapper .intro_body .intro h3 {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 2rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 2.5rem;
         color: #110f0f;
-        font-weight: 900;
-        line-height: 2.75rem; }
+        font-weight: 700;
+        line-height: 3.75rem; }
       @media only screen and (min-width: 960px) {
         .findYourFit .intro_wrapper .intro_body .intro .col1,
         .findYourFit .intro_wrapper .intro_body .intro .hdr {
@@ -10551,7 +10522,7 @@ header {
         padding: 6rem 0; } }
     .path-alias--index .content_wrapper .intro_wrapper .intro:before {
       background-color: #f3f3f3;
-      content: '';
+      content: "";
       position: absolute;
       height: 100%;
       right: 5%;
@@ -10562,7 +10533,7 @@ header {
           right: 0; } }
     .path-alias--index .content_wrapper .intro_wrapper .intro:after {
       background-color: #800000;
-      content: '';
+      content: "";
       position: absolute;
       height: 75%;
       left: 50%;
@@ -10601,11 +10572,11 @@ header {
     .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content {
       left: 50%; } }
       .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content h2 {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 2rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 2.5rem;
         color: #110f0f;
-        font-weight: 900;
-        line-height: 2.75rem; }
+        font-weight: 700;
+        line-height: 3.75rem; }
       .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content .content100_wrapper {
         padding: 0; }
     .path-alias--index .content_wrapper .intro_wrapper .intro .intro_img {
@@ -10683,7 +10654,7 @@ header {
         margin-bottom: 5rem; } }
     .path-alias--index .content_wrapper .preview_wrapper .preview:before {
       background-color: #f3f3f3;
-      content: '';
+      content: "";
       position: absolute;
       height: 100%;
       right: 5%;
@@ -10751,7 +10722,7 @@ header {
   overflow: hidden; }
   .path-alias--index .content_wrapper .youvisit:before {
     padding-top: 35%;
-    content: '';
+    content: "";
     display: block; }
   .path-alias--index .content_wrapper .youvisit iframe {
     position: absolute !important;
@@ -10761,6 +10732,150 @@ header {
     width: 100% !important;
     height: 100% !important;
     border: 0; }
+
+.path-alias--index .content_wrapper .relatedStory_wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative; }
+  @media only screen and (min-width: 960px) {
+    .path-alias--index .content_wrapper .relatedStory_wrapper {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .path-alias--index .content_wrapper .relatedStory_wrapper {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1440px) {
+    .path-alias--index .content_wrapper .relatedStory_wrapper {
+      max-width: 1300px; } }
+  .path-alias--index .content_wrapper .relatedStory_wrapper:before, .path-alias--index .content_wrapper .relatedStory_wrapper:after {
+    background-color: #f3f3f3;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    z-index: -1; }
+  .path-alias--index .content_wrapper .relatedStory_wrapper:after {
+    left: 0; }
+  .path-alias--index .content_wrapper .relatedStory_wrapper:before {
+    right: 0; }
+  .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory_body {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory_body:before, .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory_body:after {
+      display: table;
+      content: " "; }
+    .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory_body:after {
+      clear: both; }
+  .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 2rem 0;
+    padding: 2rem 0; }
+    @media (min-width: 768px) {
+      .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory {
+        float: left;
+        width: 100%; } }
+    @media only screen and (min-width: 1200px) {
+      .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory {
+        display: flex;
+        align-items: center;
+        margin: 4rem 0;
+        padding: 4rem 0; } }
+    .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_img {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 2rem; }
+      @media only screen and (min-width: 768px) {
+        .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_img {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-bottom: 0; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_img {
+      float: left;
+      width: 33.33333%; } }
+      @media only screen and (min-width: 1200px) {
+        .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_img {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px;
+          padding: 0 8.3333%;
+          flex: 1; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_img {
+      float: left;
+      width: 50%; } }
+    .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media only screen and (min-width: 768px) {
+        .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content {
+      float: left;
+      width: 66.66667%; } }
+      @media only screen and (min-width: 1200px) {
+        .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px;
+          flex: 1; } }
+  @media only screen and (min-width: 1200px) and (min-width: 768px) {
+    .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content {
+      float: left;
+      width: 50%; } }
+      .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content .meta {
+        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-size: 0.8125rem;
+        color: #585858;
+        font-weight: 400;
+        line-height: 1.4rem;
+        text-transform: uppercase;
+        margin: 0; }
+      .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content blockquote {
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 1.3rem;
+        color: #110f0f;
+        font-weight: 400;
+        line-height: 2rem;
+        margin: 2rem 0; }
+      .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content .readmore {
+        margin-bottom: 0; }
+        .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content .readmore a {
+          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-size: 1rem;
+          color: #350e20;
+          line-height: 1.8rem;
+          font-weight: 500;
+          padding: 5px 0;
+          text-decoration: none;
+          transition: background-size 0.25s ease;
+          background: linear-gradient(to bottom, transparent 90%, #800000 0) center center/0% 75% no-repeat; }
+          .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content .readmore a:hover {
+            color: #800000;
+            background-size: 100% 100%; }
+          .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content .readmore a:active {
+            background-size: 80% 100%; }
 
 .path-alias--about .hero_about {
   margin: 4rem 0; }
@@ -10781,21 +10896,21 @@ header {
       float: left;
       width: 100%; } }
   .path-alias--about .page_header h1 {
-    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-    font-size: 2rem;
+    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-size: 2.5rem;
     color: #110f0f;
-    font-weight: 900;
-    line-height: 2.75rem;
+    font-weight: 700;
+    line-height: 3.75rem;
     margin-bottom: 2rem;
     text-align: center; }
     @media only screen and (min-width: 960px) {
       .path-alias--about .page_header h1 {
         padding: 0 8.3333%;
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 3rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 3.5rem;
         color: #110f0f;
-        font-weight: 900;
-        line-height: 3.5rem; } }
+        font-weight: 700;
+        line-height: 4rem; } }
     @media only screen and (min-width: 1440px) {
       .path-alias--about .page_header h1 {
         padding: 0 16.6666%; } }
@@ -10858,11 +10973,11 @@ header {
         .path-alias--about .content2313_wrapper_full .content2313 .col2 p a:hover {
           color: #800000; }
     .path-alias--about .content2313_wrapper_full .content2313 h3 {
-      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-      font-size: 2rem;
+      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-size: 2.5rem;
       color: #110f0f;
-      font-weight: 900;
-      line-height: 2.75rem; }
+      font-weight: 700;
+      line-height: 3.75rem; }
     .path-alias--about .content2313_wrapper_full .content2313 h4 {
       font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
       font-size: 1rem;
@@ -10999,11 +11114,11 @@ header {
       float: left;
       width: 33.33333%; } }
     .path-alias--about .strengthInNumbers .col1 h3 {
-      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-      font-size: 3.5rem;
+      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-size: 4rem;
       color: #110f0f;
-      font-weight: 900;
-      line-height: 3.75rem;
+      font-weight: 800;
+      line-height: 4.25rem;
       width: 50%; }
       @media only screen and (min-width: 1200px) {
         .path-alias--about .strengthInNumbers .col1 h3 {
@@ -11071,11 +11186,11 @@ header {
       .path-alias--about .aboutDivisionsSchools .view-header {
         padding: 0 35%; } }
   .path-alias--about .aboutDivisionsSchools .ads_hdr h2 {
-    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-    font-size: 2rem;
+    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-size: 2.5rem;
     color: #110f0f;
-    font-weight: 900;
-    line-height: 2.75rem;
+    font-weight: 700;
+    line-height: 3.75rem;
     margin-bottom: 2rem; }
   .path-alias--about .aboutDivisionsSchools .view-header p {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -11123,11 +11238,11 @@ header {
         .path-alias--about .aboutDivisionsSchools .school-grid li > div {
           min-height: 300px; } }
     .path-alias--about .aboutDivisionsSchools .school-grid li a {
-      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-      font-size: 1.5rem;
+      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-size: 2rem;
       color: #110f0f;
-      font-weight: 900;
-      line-height: 2.25rem;
+      font-weight: 600;
+      line-height: 2.5rem;
       align-items: center;
       background-color: #ffffff;
       display: flex;
@@ -11287,11 +11402,11 @@ footer.footer {
       footer.footer .lm .fyf_item a:active,
       footer.footer .lm .fyf_item a:visited,
       footer.footer .lm .fyf_item a:focus {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 1.25rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 1.5rem;
         color: #110f0f;
-        font-weight: 900;
-        line-height: 1.65rem;
+        font-weight: 500;
+        line-height: 2rem;
         border-bottom: solid 2px #800000;
         display: inline-block;
         line-height: 1.5rem;
@@ -11511,27 +11626,27 @@ footer.footer {
       text-decoration: none;
       vertical-align: text-bottom; }
   .hero_wrapper .hero_content h1 {
-    font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-    font-size: 2rem;
+    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-size: 2.5rem;
     color: #110f0f;
-    font-weight: 900;
-    line-height: 2.75rem;
+    font-weight: 700;
+    line-height: 3.75rem;
     margin: 2rem 0; }
     @media only screen and (min-width: 1200px) {
       .hero_wrapper .hero_content h1 {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 3rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 3.5rem;
         color: #110f0f;
-        font-weight: 900;
-        line-height: 3.5rem;
+        font-weight: 700;
+        line-height: 4rem;
         margin: 3rem 0; } }
     @media only screen and (min-width: 1440px) {
       .hero_wrapper .hero_content h1 {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 3.5rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 4rem;
         color: #110f0f;
-        font-weight: 900;
-        line-height: 3.75rem; } }
+        font-weight: 800;
+        line-height: 4.25rem; } }
   .hero_wrapper.hero_full {
     background-color: #eaeaea;
     background-image: url("../ucpe/i/pattern_01.svg");
@@ -11655,11 +11770,11 @@ footer.footer {
         .hero_wrapper.hero_program_interior .hero .hero_content {
           padding: 3rem 0; } }
       .hero_wrapper.hero_program_interior .hero .hero_content h2 {
-        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 3rem;
+        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 3.5rem;
         color: #110f0f;
-        font-weight: 900;
-        line-height: 3.5rem;
+        font-weight: 700;
+        line-height: 4rem;
         margin: 3rem 0; }
       .hero_wrapper.hero_program_interior .hero .hero_content h1 {
         font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -12134,19 +12249,19 @@ footer.footer {
           text-transform: uppercase;
           margin-bottom: 0; }
         .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content h1 {
-          font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-          font-size: 2rem;
+          font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+          font-size: 2.5rem;
           color: #110f0f;
-          font-weight: 900;
-          line-height: 2.75rem;
+          font-weight: 700;
+          line-height: 3.75rem;
           margin: 1.5rem 0 1rem; }
           @media only screen and (min-width: 960px) {
             .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content h1 {
-              font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-              font-size: 3rem;
+              font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+              font-size: 3.5rem;
               color: #110f0f;
-              font-weight: 900;
-              line-height: 3.5rem;
+              font-weight: 700;
+              line-height: 4rem;
               font-size: 2.5rem; } }
         .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content .lede p {
           font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
