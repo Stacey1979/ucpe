@@ -35,3 +35,56 @@ Javascript is transpiled from ES6 ES5 using Babel, and then minified and
 tree-shook by Webpack.
 
 For more information on ES6, see https://dev.to/srebalaji/es6-for-beginners-with-example-c7
+
+You can add additional javascript changes to your `web/themes/custom/ucpe_theme/js/main.js` file following this pattern:
+
+1. Create a new javascript file in your `web/themes/custom/ucpe_theme/js/components` folder with the following boilerplate code:
+
+```
+
+export default function (context) {
+  // Alias global jQuery object.
+  const $ = jQuery;
+
+  if (context == document) {
+  // Put your custom code here.
+  }
+}
+
+```
+
+If you don't need to use jQuery, you can take out this line:
+`const $ = jQuery;`
+
+If this code should only run once, when the entire page first loads, leave in the `if (context == document) {` line (and closing `}` line). However, if this javascript should apply to items that get refreshed with ajax (like if you page through a view that uses ajax, for example), that line can cause your elements to load without the attached javascript after page load. Usually you'll want these lines, but that's a good reason to leave them out.
+
+2. Name the file you created with snake_case, like "my_example_js".
+
+3. In the `web/themes/custom/ucpe_theme/js/main.js` file, add a line importing your new javascript file. It's nice to use lowerCamelCase for the import name:
+
+```
+import myExampleJs from "./components/my_example_js.js";
+```
+
+4. Inside the `web/themes/custom/ucpe_theme/js/main.js` file, between these two lines:
+
+```
+(($, Drupal) => {
+...
+})(jQuery, Drupal);
+```
+
+add an attach declaration that connects your imported code:
+
+```
+(($, Drupal) => {
+
+...
+    Drupal.behaviors.myExampleJs = {
+      attach: myExampleJs
+    };
+...
+})(jQuery, Drupal);
+```
+
+There should already be at least one of these in this file.
