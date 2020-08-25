@@ -1,63 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap");
 
 // NOE FONT
-@font-face {
-  font-family: "Noe Text";
-  src: url("#{$ucpe-font-path}/NoeText-Bold.eot");
-  src: url("#{$ucpe-font-path}/NoeText-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("#{$ucpe-font-path}/NoeText-Bold.woff2") format("woff2"),
-    url("#{$ucpe-font-path}/NoeText-Bold.woff") format("woff"),
-    url("#{$ucpe-font-path}/NoeText-Bold.ttf") format("truetype"),
-    url("#{$ucpe-font-path}/NoeText-Bold.svg#NoeText-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "Noe Text";
-  src: url("#{$ucpe-font-path}/NoeText-Semibold.eot");
-  src: url("#{$ucpe-font-path}/NoeText-Semibold.eot?#iefix")
-      format("embedded-opentype"),
-    url("#{$ucpe-font-path}/NoeText-Semibold.woff2") format("woff2"),
-    url("#{$ucpe-font-path}/NoeText-Semibold.woff") format("woff"),
-    url("#{$ucpe-font-path}/NoeText-Semibold.ttf") format("truetype"),
-    url("#{$ucpe-font-path}/NoeText-Semibold.svg#NoeText-Semibold")
-      format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "Noe Text";
-  src: url("#{$ucpe-font-path}/NoeText-RegularItalic.eot");
-  src: url("#{$ucpe-font-path}/NoeText-RegularItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("#{$ucpe-font-path}/NoeText-RegularItalic.woff2") format("woff2"),
-    url("#{$ucpe-font-path}/NoeText-RegularItalic.woff") format("woff"),
-    url("#{$ucpe-font-path}/NoeText-RegularItalic.ttf") format("truetype"),
-    url("#{$ucpe-font-path}/NoeText-RegularItalic.svg#NoeText-RegularItalic")
-      format("svg");
-  font-weight: 300;
-  font-style: italic;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "Noe Text";
-  src: url("#{$ucpe-font-path}/NoeText-Regular.eot");
-  src: url("#{$ucpe-font-path}/NoeText-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("#{$ucpe-font-path}/NoeText-Regular.woff2") format("woff2"),
-    url("#{$ucpe-font-path}/NoeText-Regular.woff") format("woff"),
-    url("#{$ucpe-font-path}/NoeText-Regular.ttf") format("truetype"),
-    url("#{$ucpe-font-path}/NoeText-Regular.svg#NoeText-Regular") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-display: fallback;
-}
+// @font-face {
+//   font-family: "Noe Text";
+//   src: url("#{$ucpe-font-path}/NoeText-Bold.eot");
+//   src: url("#{$ucpe-font-path}/NoeText-Bold.eot?#iefix")
+//       format("embedded-opentype"),
+//     url("#{$ucpe-font-path}/NoeText-Bold.woff2") format("woff2"),
+//     url("#{$ucpe-font-path}/NoeText-Bold.woff") format("woff"),
+//     url("#{$ucpe-font-path}/NoeText-Bold.ttf") format("truetype"),
+//     url("#{$ucpe-font-path}/NoeText-Bold.svg#NoeText-Bold") format("svg");
+//   font-weight: bold;
+//   font-style: normal;
+//   font-display: fallback;
+// }
+//
+// @font-face {
+//   font-family: "Noe Text";
+//   src: url("#{$ucpe-font-path}/NoeText-Semibold.eot");
+//   src: url("#{$ucpe-font-path}/NoeText-Semibold.eot?#iefix")
+//       format("embedded-opentype"),
+//     url("#{$ucpe-font-path}/NoeText-Semibold.woff2") format("woff2"),
+//     url("#{$ucpe-font-path}/NoeText-Semibold.woff") format("woff"),
+//     url("#{$ucpe-font-path}/NoeText-Semibold.ttf") format("truetype"),
+//     url("#{$ucpe-font-path}/NoeText-Semibold.svg#NoeText-Semibold")
+//       format("svg");
+//   font-weight: 600;
+//   font-style: normal;
+//   font-display: fallback;
+// }
+//
+// @font-face {
+//   font-family: "Noe Text";
+//   src: url("#{$ucpe-font-path}/NoeText-RegularItalic.eot");
+//   src: url("#{$ucpe-font-path}/NoeText-RegularItalic.eot?#iefix")
+//       format("embedded-opentype"),
+//     url("#{$ucpe-font-path}/NoeText-RegularItalic.woff2") format("woff2"),
+//     url("#{$ucpe-font-path}/NoeText-RegularItalic.woff") format("woff"),
+//     url("#{$ucpe-font-path}/NoeText-RegularItalic.ttf") format("truetype"),
+//     url("#{$ucpe-font-path}/NoeText-RegularItalic.svg#NoeText-RegularItalic")
+//       format("svg");
+//   font-weight: 300;
+//   font-style: italic;
+//   font-display: fallback;
+// }
+//
+// @font-face {
+//   font-family: "Noe Text";
+//   src: url("#{$ucpe-font-path}/NoeText-Regular.eot");
+//   src: url("#{$ucpe-font-path}/NoeText-Regular.eot?#iefix")
+//       format("embedded-opentype"),
+//     url("#{$ucpe-font-path}/NoeText-Regular.woff2") format("woff2"),
+//     url("#{$ucpe-font-path}/NoeText-Regular.woff") format("woff"),
+//     url("#{$ucpe-font-path}/NoeText-Regular.ttf") format("truetype"),
+//     url("#{$ucpe-font-path}/NoeText-Regular.svg#NoeText-Regular") format("svg");
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: fallback;
+// }
 
 //UCPE ICON FONTS VIA http://fontastic.me/
 

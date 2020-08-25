@@ -19,13 +19,34 @@ html {
 
 @mixin featurelink() {
   @include bodycopy_M($plum, $bold: true);
-  border-bottom: solid 2px $maroon;
   transition: all 0.25s ease-in;
   text-decoration: none;
+  background-image: linear-gradient(
+    transparent calc(50% - 3px),
+    $maroon calc(50% - 3px)
+  );
+  background-size: auto 200%;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
 
   &:hover {
-    color: $maroon;
-    transition: all 0.25s ease-out;
+    color: $white;
+    background-position: 0 100%;
+  }
+}
+
+@mixin anchorlink($color) {
+  padding: 5px 0;
+  text-decoration: none;
+  transition: background-size 0.25s ease;
+  background: linear-gradient(to bottom, transparent 90%, $color 0) center
+    center/0% 75% no-repeat;
+
+  &:hover {
+    color: $color;
+    background-size: 100% 100%;
+  }
+  &:active {
+    background-size: 80% 100%;
   }
 }
 
@@ -151,15 +172,16 @@ $breakpoints: (
 // }
 
 // FONTS
-$serif-font: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-$sans-serif-font: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+$serif-font: "EB Garamond", serif;
+$sans-serif-font: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
-$serif-regular: 300;
+$serif-regular: 400;
+$serif-medium: 500;
 $serif-semibold: 600;
-$serif-bold: 900;
+$serif-bold: 700;
+$serif-extrabold: 800;
 $sans-serif-regular: 400;
 $sans-serif-semibold: 500;
-
 $italic: italic;
 
 @mixin font(
@@ -190,46 +212,46 @@ $italic: italic;
 @mixin heading_XL($color) {
   @include font(
     $serif-font,
-    #{$baseline * 3.5},
+    #{$baseline * 4},
     $color,
-    $serif-bold,
-    #{$baseline * 3.75}
+    $serif-extrabold,
+    #{$baseline * 4.25}
   );
 }
 @mixin heading_L($color) {
   @include font(
     $serif-font,
-    #{$baseline * 3},
+    #{$baseline * 3.5},
     $color,
     $serif-bold,
-    #{$baseline * 3.5}
+    #{$baseline * 4}
   );
 }
 @mixin heading_M($color) {
   @include font(
     $serif-font,
-    #{$baseline * 2},
+    #{$baseline * 2.5},
     $color,
     $serif-bold,
-    #{$baseline * 2.75}
+    #{$baseline * 3.75}
   );
 }
 @mixin heading_S($color) {
   @include font(
     $serif-font,
-    #{$baseline * 1.5},
+    #{$baseline * 2},
     $color,
-    $serif-bold,
-    #{$baseline * 2.25}
+    $serif-semibold,
+    #{$baseline * 2.5}
   );
 }
 @mixin heading_XS($color) {
   @include font(
     $serif-font,
-    #{$baseline * 1.25},
+    #{$baseline * 1.5},
     $color,
-    $serif-bold,
-    #{$baseline * 1.65}
+    $serif-medium,
+    #{$baseline * 2}
   );
 }
 

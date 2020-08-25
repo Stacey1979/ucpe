@@ -179,6 +179,211 @@
         border: 0;
       }
     }
+
+    .relatedStory_wrapper {
+      @include make-container;
+      position: relative;
+      padding: $baseline * 3 $baseline;
+
+      &:before,
+      &:after {
+        background-color: $bg_02;
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 100vw;
+        top: 0;
+        z-index: -1;
+      }
+      &:after {
+        left: 0;
+      }
+      &:before {
+        right: 0;
+      }
+
+      .relatedStory_body {
+        @include make-row;
+      }
+      .relatedStory {
+        @include make-sm-column(12);
+        margin: $baseline * 2 0;
+        padding: $baseline * 2 0;
+        @include screen("desktop") {
+          display: flex;
+          align-items: center;
+          margin: $baseline * 4 0;
+          padding: $baseline * 4 0;
+        }
+
+        .relatedStory_img {
+          @include make-xs-column(12);
+          margin-bottom: $baseline * 2;
+          @include screen("tablet") {
+            @include make-sm-column(4);
+            margin-bottom: 0;
+          }
+          @include screen("desktop") {
+            @include make-sm-column(6);
+            padding: 0 $colwidth;
+            flex: 1;
+          }
+        }
+        .relatedStory_content {
+          @include make-xs-column(12);
+          @include screen("tablet") {
+            @include make-sm-column(8);
+          }
+          @include screen("desktop") {
+            @include make-sm-column(6);
+            flex: 1;
+          }
+          .meta {
+            @include utility_S($black_02);
+            margin: 0;
+          }
+          blockquote {
+            @include font(
+              $serif-font,
+              $baseline * 1.3,
+              $black,
+              $serif-regular,
+              $baseline * 2
+            );
+            margin: $baseline * 2 0;
+          }
+          .readmore {
+            margin-bottom: 0;
+            a {
+              @include bodycopy_M($plum, $bold: true);
+              @include anchorlink($maroon);
+            }
+          }
+        }
+      } // relatedStory_wrapper
+    }
+    .uchicagoDiff_slider {
+      .slick--optionset--home-page-carousel {
+        position: relative;
+
+        .slick__slide {
+          opacity: 0;
+          transition: opacity 0.5s ease-out;
+
+          &.slick-current {
+            opacity: 1;
+            transition: opacity 0.5s ease-in 1s;
+          }
+        }
+
+        .uchicagoDiff_wrapper {
+          @include make-container;
+
+          .uchicagoDiff_body {
+            @include make-row;
+
+            .uchicagoDiff {
+              padding: $baseline * 3;
+              @include screen("tablet-small") {
+                display: flex;
+                align-items: center;
+              }
+              @include screen("tablet") {
+                padding: 0;
+              }
+
+              .uchicagoDiff_content {
+                text-align: center;
+                padding: $baseline;
+                @include make-xs-column(12);
+
+                @include screen("tablet-small") {
+                  @include make-xs-column(8);
+                }
+                @include screen("tablet-wide") {
+                  @include make-sm-column(6);
+                  padding: 0 $colwidth/2;
+                  @include screen("desktop") {
+                    padding: 0 $colwidth;
+                  }
+                }
+
+                h3 {
+                  @include heading_S($black);
+                }
+                a.featurelink {
+                  padding: 3px;
+                  @include featurelink();
+                }
+              }
+              .uchicagoDiff_img {
+                z-index: 10;
+                @include make-xs-column(12);
+                @include screen("tablet-small") {
+                  @include make-xs-column(4);
+                }
+                @include screen("tablet-wide") {
+                  @include make-sm-column(6);
+                  //@include make-sm-column-push(6);
+                }
+              }
+            }
+          }
+        }
+        .slick-dots {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          bottom: 0;
+          left: calc(50% - 80px);
+          @include screen("tablet-small") {
+            bottom: 10%;
+          }
+          @include screen("tablet-wide") {
+            left: 16%;
+          }
+          @include screen("desktop") {
+            left: 20%;
+          }
+          @include screen("desktop-wide") {
+            left: 25%;
+          }
+
+          li {
+            display: inline-block;
+            font-size: 0;
+            line-height: normal;
+            padding: 0 5px;
+            margin: 0;
+
+            &:before {
+              display: none;
+            }
+
+            button {
+              border-radius: 10px;
+              border: 0;
+              outline: 0;
+              font-size: 0;
+              width: $baseline * 2;
+              height: $baseline/2;
+              background-color: $bg-06;
+              background: linear-gradient(to right, $maroon 50%, $bg-06 50%);
+              background-size: 200% 100%;
+              background-position: right bottom;
+            }
+            &.slick-active button {
+              background-position: left bottom;
+              transition: all 5s ease-out 2.5s;
+            }
+          }
+        }
+      }
+    } // .uchicagoDiff_slider
+  }
+  section#block-views-block-masonry-views-block-1 {
+    background-color: $bg_02;
   }
 }
 // END - HOMEPAGE

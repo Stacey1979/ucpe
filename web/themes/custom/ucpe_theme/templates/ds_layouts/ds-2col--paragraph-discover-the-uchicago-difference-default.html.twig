@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Display Suite 2 column template.
+ *
+ * Available variables:
+ * - outer_wrapper: outer wrapper element
+ * - left_wrapper: wrapper element around left region
+ * - right_wrapper: wrapper element around right region
+ * - attributes: layout attributes
+ * - left_attributes: attributes for left region
+ * - right_attributes: attributes for right region
+ * - left: content of left region
+ * - right: content of right region
+ */
+#}
+<div class="uchicagoDiff_wrapper">
+  <div class="uchicagoDiff_body">
+    <div class="uchicagoDiff">
+      <div class="uchicagoDiff_content">
+        <h3>{{ left.field_optional_title|field_value }}</h3>
+        <p>{{ left.field_short_description|field_value }}</p>
+        <a class="featurelink" href="{{ left.field_link_to_more_info[0]['#url'] }}">{{ left.field_link_to_more_info[0]['#title'] }}</a>
+      </div>
+      <div class="uchicagoDiff_img">
+        {{ right.field_slide_image|field_value }}
+      </div>
+    </div>
+  </div>
+</div>

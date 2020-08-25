@@ -42,7 +42,7 @@
         <div class="preview">
           {{ content.homepage.field_program_types_preview|field_value }}
         </div>
-      </div>  
+      </div>
     </div>
     {% if content.homepage.field_youvisit_embed %}
     <div class="youvisit">
@@ -53,11 +53,15 @@
     </div>
     {% endif %}
     {% if content.homepage.field_related_story %}
-    <div class="related_story_full">
-      {{ content.homepage.field_related_story|field_value }}
-    <div>
+    <div class="relatedStory_wrapper">
+      <div class="relatedStory_body">
+        <div class="relatedStory">
+          {{ content.homepage.field_related_story|field_value }}
+        </div>
+      </div>
+    </div>
     {% endif %}
-    <div class="uchicago_diff">
+    <div class="uchicagoDiff_slider">
       {{ content.homepage.field_discover_the_uchicago_diff|field_value }}
     </div>
   </div>
