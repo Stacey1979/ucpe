@@ -19,13 +19,18 @@ html {
 
 @mixin featurelink() {
   @include bodycopy_M($plum, $bold: true);
-  border-bottom: solid 2px $maroon;
   transition: all 0.25s ease-in;
   text-decoration: none;
+  background-image: linear-gradient(
+    transparent calc(50% - 3px),
+    $maroon calc(50% - 3px)
+  );
+  background-size: auto 200%;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
 
   &:hover {
-    color: $maroon;
-    transition: all 0.25s ease-out;
+    color: $white;
+    background-position: 0 100%;
   }
 }
 
@@ -167,8 +172,8 @@ $breakpoints: (
 // }
 
 // FONTS
-$serif-font: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
-$sans-serif-font: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+$serif-font: "EB Garamond", serif;
+$sans-serif-font: "Gotham SSm A", "Gotham SSm B", sans-serif;
 
 $serif-regular: 400;
 $serif-medium: 500;

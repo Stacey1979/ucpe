@@ -13,8 +13,10 @@ optimized: true
 options:
   options__active_tab: edit-options-settings
   settings:
+    mobileFirst: true
     autoplay: true
     autoplaySpeed: 5000
+    pauseOnHover: false
     arrows: false
     dots: true
     initialSlide: 1

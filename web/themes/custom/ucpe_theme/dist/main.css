@@ -6465,7 +6465,7 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 * {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif; }
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; }
 
 a {
   color: #800000;
@@ -6508,24 +6508,24 @@ a {
           width: 100%; } }
 
 h1 {
-  font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif; }
+  font-family: "EB Garamond", serif; }
 
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif; }
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; }
 
 h1 {
-  font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+  font-family: "EB Garamond", serif;
   font-size: 4rem;
   color: #110f0f;
   font-weight: 800;
   line-height: 4.25rem; }
 
 h2 {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 1.75rem;
   color: #800000;
   font-weight: 500;
@@ -6533,7 +6533,7 @@ h2 {
   margin-bottom: 2rem; }
 
 h3 {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 1.625rem;
   color: #800000;
   font-weight: 500;
@@ -6541,7 +6541,7 @@ h3 {
   margin-bottom: 1.875rem; }
 
 h4 {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 1.5rem;
   color: #110f0f;
   font-weight: 500;
@@ -6550,7 +6550,7 @@ h4 {
 
 h5,
 h6 {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 1.375rem;
   color: #110f0f;
   font-weight: 400;
@@ -6563,7 +6563,7 @@ h6 {
 .content p,
 .content p:last-child,
 .content p:last-of-type {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 1rem;
   color: #110f0f;
   font-weight: 400;
@@ -6579,7 +6579,7 @@ h6 {
   .body .conferred p,
   .content .offered p,
   .content .conferred p {
-    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-family: "EB Garamond", serif;
     font-size: 1.125rem;
     color: #350e20;
     font-weight: 600;
@@ -6593,7 +6593,7 @@ h6 {
     .content .offered p a,
     .content .conferred p a {
       border-bottom: solid 2px #800000;
-      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-family: "EB Garamond", serif;
       font-size: 1.25rem;
       color: #350e20;
       font-weight: 600;
@@ -6617,7 +6617,7 @@ h6 {
   .content ol li,
   .content ul li {
     padding: 0 0 0 1.5rem;
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
     color: #110f0f;
     font-weight: 400;
@@ -6694,14 +6694,14 @@ h6 {
     font-style: italic; }
     .body blockquote .q p,
     .content blockquote .q p {
-      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-family: "EB Garamond", serif;
       font-size: 1.625rem;
       color: #110f0f;
       font-weight: 400;
       line-height: 2.5rem; }
     .body blockquote .q footer,
     .content blockquote .q footer {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1rem;
       color: #110f0f;
       line-height: 1.8rem;
@@ -6717,7 +6717,7 @@ h6 {
       margin: 0 auto; }
     .body blockquote.w_hs figure figcaption,
     .content blockquote.w_hs figure figcaption {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.875rem;
       color: #110f0f;
       line-height: 1.4rem;
@@ -6776,21 +6776,21 @@ h6 {
 .body figure figcaption,
 .content figure figcaption {
   text-align: left;
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 0.75rem;
   color: #767676;
   line-height: 1.4rem;
   font-weight: 400; }
   .body figure figcaption p,
   .content figure figcaption p {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif !important;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif !important;
     font-weight: 400 !important;
     font-size: 0.75rem !important;
     color: #767676 !important;
     line-height: 1.5rem !important; }
   .body figure figcaption span.attribute,
   .content figure figcaption span.attribute {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif !important;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif !important;
     font-weight: 400 !important;
     font-size: 0.75rem !important;
     color: #767676 !important;
@@ -6820,7 +6820,7 @@ h6 {
   font-size: 1.2rem; }
 
 .meta .type {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 0.875rem;
   color: #800000;
   font-weight: 400;
@@ -6835,14 +6835,14 @@ h6 {
   font-size: 1.2rem; }
 
 .meta .date {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 0.875rem;
   color: #350e20;
   line-height: 1.4rem;
   font-weight: 400; }
 
 .meta .cs_title {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 0.8125rem;
   color: #350e20;
   font-weight: 400;
@@ -6851,7 +6851,7 @@ h6 {
 
 .share .addtoany_list .share_title {
   margin-right: 1rem;
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 0.875rem;
   color: #767676;
   font-weight: 400;
@@ -6909,7 +6909,7 @@ nav.tabs ul.nav-tabs li {
     font-size: 14px !important; }
 
 .learnmore {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 1rem;
   color: #350e20;
   line-height: 1.8rem;
@@ -6947,7 +6947,7 @@ nav.tabs ul.nav-tabs li {
   border: solid 2px #800000;
   border-radius: 0;
   color: #ffffff;
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 1rem;
   color: #ffffff;
   font-weight: 500;
@@ -7081,7 +7081,7 @@ nav.tabs ul.nav-tabs li {
     .link-list li a {
       border-bottom: solid 2px #800000;
       display: inline-block;
-      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-family: "EB Garamond", serif;
       font-size: 1rem;
       color: #110f0f;
       font-weight: 400;
@@ -7167,7 +7167,7 @@ nav.slick__arrow {
     .content100 figure img {
       width: 100%; }
     .content100 figure .field--name-field-image-attribution-wysiwyg p {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.75rem;
       color: #767676;
       line-height: 1.4rem;
@@ -7392,7 +7392,7 @@ nav.slick__arrow {
       margin: 1rem auto;
       width: 80%; }
       .content_carousel_slider .slick .slick__slide .slide__caption .slide__description {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 0.75rem;
         color: #585858;
         line-height: 1.4rem;
@@ -7443,14 +7443,14 @@ nav.slick__arrow {
   .profileFaculty .profileFaculty_top .name {
     flex: 1; }
     .profileFaculty .profileFaculty_top .name h3 {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1.125rem;
       color: #110f0f;
       line-height: 1.8rem;
       font-weight: 500;
       margin-bottom: 0; }
     .profileFaculty .profileFaculty_top .name .job_title {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1.125rem;
       color: #110f0f;
       line-height: 1.8rem;
@@ -7467,7 +7467,7 @@ nav.slick__arrow {
       float: left;
       width: 100%; } }
   .profileFaculty .profileFaculty_bottom a.email {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
     color: #350e20;
     line-height: 1.8rem;
@@ -7527,7 +7527,7 @@ nav.slick__arrow {
 .stat_number {
   text-align: center; }
   .stat_number .num {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 4rem;
     color: #110f0f;
     font-weight: 500;
@@ -7535,7 +7535,7 @@ nav.slick__arrow {
     vertical-align: bottom; }
   .stat_number .pre,
   .stat_number .post {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 2rem;
     color: #110f0f;
     font-weight: 500;
@@ -7576,7 +7576,7 @@ nav.slick__arrow {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
     color: #110f0f;
     line-height: 1.8rem;
@@ -7610,7 +7610,7 @@ nav.slick__arrow {
     padding: 3rem 2rem;
     text-align: center; }
     .three-up-promo .col .bottom h3 {
-      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-family: "EB Garamond", serif;
       font-size: 2rem;
       color: #800000;
       font-weight: 600;
@@ -7676,7 +7676,7 @@ nav.slick__arrow {
             float: left;
             width: 66.66667%; } }
         .cta_wrapper .cta_body .cta .cta_content h3 {
-          font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+          font-family: "EB Garamond", serif;
           font-size: 2rem;
           color: #110f0f;
           font-weight: 600;
@@ -7774,7 +7774,7 @@ nav.slick__arrow {
           float: left;
           width: 66.66667%; } }
       .cta100_wrapper .cta100 .cta_content h3 {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 2rem;
         color: #110f0f;
         font-weight: 600;
@@ -7791,7 +7791,7 @@ nav.slick__arrow {
           width: 33.33333%; } }
       .cta100_wrapper .cta100 figure.cta_photo .field--name-field-image-attribution-wysiwyg {
         position: absolute;
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 0.75rem;
         color: #767676;
         line-height: 1.4rem;
@@ -7949,7 +7949,7 @@ nav.slick__arrow {
     .cta_aos .cta_content p {
       color: #ffffff; }
     .cta_aos .cta_content h3 {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1.5rem;
       color: #ffffff;
       line-height: 2.4rem;
@@ -7982,13 +7982,13 @@ nav.slick__arrow {
   .bio .bio_content .bio_name {
     margin: 0.5rem 0 1.5rem; }
     .bio .bio_content .bio_name .name {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1.125rem;
       color: #110f0f;
       line-height: 1.8rem;
       font-weight: 500; }
     .bio .bio_content .bio_name .title {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1.125rem;
       color: #110f0f;
       line-height: 1.8rem;
@@ -8027,7 +8027,7 @@ nav.slick__arrow {
       margin-left: -16.66667%;
       margin-right: 3rem; } }
   .story_profile h4 {
-    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-family: "EB Garamond", serif;
     font-size: 2rem;
     color: #110f0f;
     font-weight: 600;
@@ -8075,7 +8075,7 @@ nav.slick__arrow {
       float: left;
       width: 50%; } }
   .relatedProgram_wrapper h3 {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1.5rem;
     color: #800000;
     line-height: 2.4rem;
@@ -8126,7 +8126,7 @@ nav.slick__arrow {
         float: left;
         width: 100%; } }
     .mixed_content_grid .hdr h2 {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1.5rem;
       color: #800000;
       line-height: 2.4rem;
@@ -8220,14 +8220,14 @@ nav.slick__arrow {
         padding-right: 15px;
         padding-left: 15px; }
       .mixed_content_grid .secondary_content .secondary_editorial h4 {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 1.5rem;
         color: #350e20;
         font-weight: 500;
         line-height: 2rem;
         margin: 1rem 0; }
       .mixed_content_grid .secondary_content .secondary_editorial h4 a {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 1.5rem;
         color: #350e20;
         font-weight: 500;
@@ -8239,7 +8239,7 @@ nav.slick__arrow {
           border-bottom: solid 3px #800000;
           transition: all 0.3s; }
       .mixed_content_grid .secondary_content .secondary_editorial .program_name {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 0.875rem;
         color: #110f0f;
         line-height: 1.4rem;
@@ -8261,7 +8261,7 @@ nav.slick__arrow {
     .card_grid {
       max-width: 1300px; } }
   .card_grid h2 {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1.5rem;
     color: #800000;
     line-height: 2.4rem;
@@ -8315,7 +8315,7 @@ nav.slick__arrow {
   .card_grid .form-group {
     min-width: 100%; }
   .card_grid .view-header a {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
     color: #350e20;
     line-height: 1.8rem;
@@ -8446,7 +8446,7 @@ nav.slick__arrow {
     position: relative;
     margin-bottom: 0.5rem; }
     .relatedCourse .relatedCourse_hdr h4 {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1.125rem;
       color: #110f0f;
       line-height: 1.8rem;
@@ -8470,24 +8470,26 @@ nav.slick__arrow {
     .relatedCourse .relatedCourse_hdr .divider {
       vertical-align: text-bottom; }
     .relatedCourse .relatedCourse_hdr .course_code {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.875rem;
       color: #110f0f;
       font-weight: 400;
       line-height: 1.8rem;
       text-transform: uppercase; }
   .relatedCourse .relatedCourse_content a {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
     color: #350e20;
     line-height: 1.8rem;
     font-weight: 500;
-    border-bottom: solid 2px #800000;
     transition: all 0.25s ease-in;
-    text-decoration: none; }
+    text-decoration: none;
+    background-image: linear-gradient(transparent calc(50% - 3px), #800000 calc(50% - 3px));
+    background-size: auto 200%;
+    transition: background .2s ease-in-out, color .2s ease-in-out; }
     .relatedCourse .relatedCourse_content a:hover {
-      color: #800000;
-      transition: all 0.25s ease-out; }
+      color: #ffffff;
+      background-position: 0 100%; }
 
 .collapse:not(.in) {
   height: 72px !important;
@@ -8500,7 +8502,7 @@ nav.slick__arrow {
   min-height: 72px !important; }
 
 a.showmore {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 1rem;
   color: #350e20;
   line-height: 1.8rem;
@@ -8595,13 +8597,13 @@ a.showmore {
   .tinyHdr span,
   .tinyHdr h1 {
     display: inline;
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.875rem;
     color: #585858;
     line-height: 1.4rem;
     font-weight: 400; }
   .tinyHdr span {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.875rem;
     color: #585858;
     line-height: 1.4rem;
@@ -8609,7 +8611,7 @@ a.showmore {
     .tinyHdr span:after {
       display: inline;
       content: "/";
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1rem;
       color: #800000;
       line-height: 1.8rem;
@@ -8627,7 +8629,7 @@ a.showmore {
   .program_meta .category_name {
     background-color: white;
     margin-right: 1.5rem;
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.75rem;
     color: #110f0f;
     font-weight: 500;
@@ -8637,7 +8639,7 @@ a.showmore {
       color: #110f0f;
       text-decoration: none; }
   .program_meta .meta {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.75rem;
     color: #110f0f;
     line-height: 1.4rem;
@@ -8646,7 +8648,7 @@ a.showmore {
     position: relative;
     top: 0; }
     .program_meta .meta a {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.875rem;
       color: #110f0f;
       line-height: 1.4rem;
@@ -8669,7 +8671,7 @@ a.showmore {
       float: left; } }
   .program_preview dl dt,
   .story_profile dl dt {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
     color: #110f0f;
     line-height: 1.8rem;
@@ -8685,7 +8687,7 @@ a.showmore {
         clear: left; } }
   .program_preview dl dd,
   .story_profile dl dd {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
     color: #110f0f;
     line-height: 1.8rem;
@@ -8697,7 +8699,7 @@ a.showmore {
         width: 70%; } }
     .program_preview dl dd .classof p,
     .story_profile dl dd .classof p {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.875rem;
       color: #585858;
       line-height: 1.4rem;
@@ -8746,7 +8748,7 @@ a.showmore {
       padding: 2.5rem;
       width: 150px; }
     .designed_for .df_graphic h4 {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.75rem;
       color: #110f0f;
       font-weight: 500;
@@ -8768,7 +8770,7 @@ a.showmore {
         flex: 1 0 0%;
         border-left: solid 1px #dcdcdc; } }
     .designed_for .df_description p {
-      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-family: "EB Garamond", serif;
       font-weight: 400;
       font-size: 1.1rem;
       font-style: italic;
@@ -8784,7 +8786,7 @@ a.showmore {
   margin: 2rem 0 3rem;
   padding: 3rem 0; }
   .next_steps h4 {
-    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-family: "EB Garamond", serif;
     font-size: 1.5rem;
     color: #110f0f;
     font-weight: 500;
@@ -8815,14 +8817,14 @@ a.showmore {
         float: left;
         width: 100%; } }
   .card h3 {
-    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-family: "EB Garamond", serif;
     font-size: 1.5rem;
     color: #350e20;
     font-weight: 500;
     line-height: 2rem;
     margin: 1rem 0 0.5rem; }
   .card h3 a {
-    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-family: "EB Garamond", serif;
     font-size: 1.5rem;
     color: #350e20;
     font-weight: 500;
@@ -8838,14 +8840,14 @@ a.showmore {
     .card h3 a:active {
       background-size: 80% 100%; }
   .card .meta {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.875rem;
     color: #585858;
     font-weight: 400;
     line-height: 1.8rem;
     text-transform: uppercase; }
   .card .date {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.875rem;
     color: #585858;
     line-height: 1.4rem;
@@ -8875,7 +8877,7 @@ a.showmore {
     top: -12px; }
 
 .program_card .pc_content h3 {
-  font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+  font-family: "EB Garamond", serif;
   font-size: 1.5rem;
   color: #350e20;
   font-weight: 500;
@@ -8883,7 +8885,7 @@ a.showmore {
   padding-left: 10px; }
 
 .program_card .pc_content h3 a {
-  font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+  font-family: "EB Garamond", serif;
   font-size: 1.5rem;
   color: #350e20;
   font-weight: 500;
@@ -9053,7 +9055,7 @@ header {
     .top_bar .navbar nav ul.menu--utility-menu li:before {
       display: none; }
     .top_bar .navbar nav ul.menu--utility-menu li a {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.75rem;
       color: #585858;
       line-height: 1.4rem;
@@ -9080,7 +9082,7 @@ header {
     margin: 0;
     display: flex; }
     #block-horizontalmenu ul.horizontal-menu li a {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.875rem;
       color: #110f0f;
       line-height: 1.4rem;
@@ -9096,7 +9098,7 @@ header {
       padding: 0.3em 1em 0.35em 1em; }
       #block-horizontalmenu ul.horizontal-menu li#get_in_touch a {
         border-bottom: solid 2px #800000;
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 0.875rem;
         color: #350e20;
         line-height: 1.4rem;
@@ -9190,7 +9192,7 @@ header {
           float: left;
           width: 100%; } }
       .program_nav nav.navbar .navbar-header h3 {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1rem;
         color: #585858;
         line-height: 1.8rem;
@@ -9248,7 +9250,7 @@ header {
         .program_nav nav.navbar .navbar-collapse ul.nav li {
           width: 100%; }
           .program_nav nav.navbar .navbar-collapse ul.nav li a {
-            font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+            font-family: "EB Garamond", serif;
             font-size: 1.125rem;
             color: #110f0f;
             font-weight: 400;
@@ -9312,7 +9314,7 @@ header {
     .on_this_page {
       margin-bottom: 6rem; } }
   .on_this_page h3 {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.875rem;
     color: #585858;
     font-weight: 400;
@@ -9320,7 +9322,7 @@ header {
     text-transform: uppercase;
     margin-bottom: 0.65rem; }
   .on_this_page .views-row a {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
     color: #350e20;
     line-height: 1.8rem;
@@ -9408,7 +9410,7 @@ header {
       .article .content_body .casestudy_top h1,
       .casestudy .content_body .article_top h1,
       .casestudy .content_body .casestudy_top h1 {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 4rem;
         color: #110f0f;
         font-weight: 800;
@@ -9419,7 +9421,7 @@ header {
       .article .content_body .casestudy_top .lede p,
       .casestudy .content_body .article_top .lede p,
       .casestudy .content_body .casestudy_top .lede p {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1.125rem;
         color: #110f0f;
         line-height: 1.8rem;
@@ -9458,7 +9460,7 @@ header {
             width: calc(100% + 13rem + 31px); } }
 
 .article .article_top .written_by p {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 0.875rem;
   color: #110f0f;
   line-height: 1.4rem;
@@ -9484,7 +9486,7 @@ header {
       .article .article_top .topics ul li:before {
         display: none; }
     .article .article_top .topics ul li {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.875rem;
       color: #350e20;
       line-height: 1.4rem;
@@ -9537,7 +9539,7 @@ header {
       margin-bottom: 5rem;
       padding: 2rem 4rem; } }
   .article .article_top .in_brief h3 {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.875rem;
     color: #585858;
     font-weight: 400;
@@ -9545,7 +9547,7 @@ header {
     text-transform: uppercase; }
   .article .article_top .in_brief ol li {
     margin-bottom: 2rem;
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.875rem;
     color: #110f0f;
     line-height: 1.4rem;
@@ -9554,7 +9556,7 @@ header {
       font-size: 0.875rem; }
 
 .article .article_top .intro p {
-  font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+  font-family: "EB Garamond", serif;
   font-size: 2rem;
   color: #110f0f;
   font-weight: 600;
@@ -9632,7 +9634,7 @@ header {
         float: left;
         width: 33.33333%; } }
     .casestudy .summary .col h3 {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.875rem;
       color: #585858;
       font-weight: 400;
@@ -9642,7 +9644,7 @@ header {
       margin-bottom: 0.75rem;
       line-height: 2.75rem; }
     .casestudy .summary .col p {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.875rem;
       color: #585858;
       line-height: 1.4rem;
@@ -9651,7 +9653,7 @@ header {
 .casestudy .intro {
   margin-bottom: 3rem; }
   .casestudy .intro p {
-    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-family: "EB Garamond", serif;
     font-size: 2rem;
     color: #110f0f;
     font-weight: 600;
@@ -9713,7 +9715,7 @@ header {
         .casestudy .partnership > .content .partnership_content {
           padding: 2rem 5rem 1rem 8rem; } }
       .casestudy .partnership > .content .partnership_content h3 {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 0.8125rem;
         color: #585858;
         font-weight: 400;
@@ -9820,7 +9822,7 @@ header {
             float: left;
             width: 100%; } }
         .story .content_body .content .intro_wrapper .intro_body .intro p {
-          font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+          font-family: "EB Garamond", serif;
           font-size: 2rem;
           color: #110f0f;
           font-weight: 600;
@@ -9860,7 +9862,7 @@ header {
           float: left;
           width: 41.66667%; } }
       .page-node-type-area-of-study .area_of_study .content .content1323 .col1 p {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 2rem;
         color: #110f0f;
         font-weight: 600;
@@ -9932,20 +9934,20 @@ header {
         .program_detail .program_preview .col {
           flex: 1; } }
       .program_detail .program_preview .col h3 {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 0.875rem;
         color: #585858;
         font-weight: 400;
         line-height: 1.8rem;
         text-transform: uppercase; }
       .program_detail .program_preview .col dl dt {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1rem;
         color: #110f0f;
         line-height: 1.8rem;
         font-weight: 400; }
       .program_detail .program_preview .col dl dd {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1rem;
         color: #110f0f;
         line-height: 1.8rem;
@@ -9969,7 +9971,7 @@ header {
               color: #800000;
               transition: all 0.2s ease-in; }
   .program_detail .intro p {
-    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-family: "EB Garamond", serif;
     font-size: 2rem;
     color: #800000;
     font-weight: 600;
@@ -10074,14 +10076,14 @@ header {
         .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content {
           flex: 1; } }
       .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content h3 {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1.125rem;
         color: #110f0f;
         line-height: 1.8rem;
         font-weight: 500;
         margin: 0; }
       .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .job_title p {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1.125rem;
         color: #110f0f;
         line-height: 1.8rem;
@@ -10093,7 +10095,7 @@ header {
         padding: 2rem;
         width: 100%; }
         .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .relatedCourse_wrapper h4 {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 1.125rem;
           color: #585858;
           line-height: 1.8rem;
@@ -10103,7 +10105,7 @@ header {
           margin: 0;
           padding: 0; }
           .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .relatedCourse_wrapper ul.relatedCourse li a {
-            font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+            font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
             font-size: 1rem;
             color: #110f0f;
             line-height: 1.8rem;
@@ -10115,7 +10117,7 @@ header {
               color: #800000;
               transition: all 0.2s ease-in; }
           .program_interior .profile_preview_wrapper .profile_preview .profile_preview_content .relatedCourse_wrapper ul.relatedCourse li .course_code {
-            font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+            font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
             font-size: 0.875rem;
             color: #110f0f;
             font-weight: 400;
@@ -10170,7 +10172,7 @@ header {
       .findYourFit .intro_wrapper .intro_body .intro:after {
         clear: both; }
       .findYourFit .intro_wrapper .intro_body .intro h3 {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 2.5rem;
         color: #110f0f;
         font-weight: 700;
@@ -10180,7 +10182,7 @@ header {
         .findYourFit .intro_wrapper .intro_body .intro .hdr {
           padding: 0 8.3333%; } }
       .findYourFit .intro_wrapper .intro_body .intro .col2 h4 {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1rem;
         color: #585858;
         font-weight: 500;
@@ -10189,7 +10191,7 @@ header {
         margin-top: 0; }
       .findYourFit .intro_wrapper .intro_body .intro .col2 p {
         margin-bottom: 0;
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1.125rem;
         color: #350e20;
         line-height: 1.8rem;
@@ -10274,7 +10276,7 @@ header {
       float: left;
       width: 50%; } }
       .event .content .eventContent h3 {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 0.875rem;
         color: #585858;
         font-weight: 400;
@@ -10318,7 +10320,7 @@ header {
         .event .content .eventContent hr:after {
           clear: both; }
       .event .content .eventContent .eventDate p {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1.125rem;
         color: #110f0f;
         line-height: 1.8rem;
@@ -10326,26 +10328,28 @@ header {
       .event .content .eventContent .eventLocation a {
         text-decoration: none; }
         .event .content .eventContent .eventLocation a p {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 1.125rem;
           color: #110f0f;
           line-height: 1.8rem;
           font-weight: 400; }
         .event .content .eventContent .eventLocation a .organization {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 1rem;
           color: #350e20;
           line-height: 1.8rem;
           font-weight: 500;
-          border-bottom: solid 2px #800000;
           transition: all 0.25s ease-in;
           text-decoration: none;
+          background-image: linear-gradient(transparent calc(50% - 3px), #800000 calc(50% - 3px));
+          background-size: auto 200%;
+          transition: background .2s ease-in-out, color .2s ease-in-out;
           font-size: inherit;
           margin-bottom: 0.5rem;
           display: inline-block; }
           .event .content .eventContent .eventLocation a .organization:hover {
-            color: #800000;
-            transition: all 0.25s ease-out; }
+            color: #ffffff;
+            background-position: 0 100%; }
       .event .content .eventContent .eventInfo {
         border-bottom: solid 1px #dcdcdc;
         padding-bottom: 1.5rem;
@@ -10363,19 +10367,21 @@ header {
             margin-bottom: 2rem; } }
         .event .content .eventContent .eventRelatedPrograms a,
         .event .content .eventContent .eventAOS a {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 1rem;
           color: #350e20;
           line-height: 1.8rem;
           font-weight: 500;
-          border-bottom: solid 2px #800000;
           transition: all 0.25s ease-in;
           text-decoration: none;
+          background-image: linear-gradient(transparent calc(50% - 3px), #800000 calc(50% - 3px));
+          background-size: auto 200%;
+          transition: background .2s ease-in-out, color .2s ease-in-out;
           display: inline-block; }
           .event .content .eventContent .eventRelatedPrograms a:hover,
           .event .content .eventContent .eventAOS a:hover {
-            color: #800000;
-            transition: all 0.25s ease-out; }
+            color: #ffffff;
+            background-position: 0 100%; }
       .event .content .eventContent .eventShare .share_title {
         display: none; }
     .event .content .eventRFI {
@@ -10572,7 +10578,7 @@ header {
     .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content {
       left: 50%; } }
       .path-alias--index .content_wrapper .intro_wrapper .intro .intro_content h2 {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 2.5rem;
         color: #110f0f;
         font-weight: 700;
@@ -10701,14 +10707,14 @@ header {
             text-align: center;
             padding: 0 1rem; } }
         .path-alias--index .content_wrapper .preview_wrapper .preview .card .card_content h3 a {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 1rem;
           color: #110f0f;
           line-height: 1.8rem;
           font-weight: 500;
           margin-bottom: 1rem; }
         .path-alias--index .content_wrapper .preview_wrapper .preview .card .card_content p {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 0.875rem;
           color: #110f0f;
           line-height: 1.4rem;
@@ -10738,7 +10744,8 @@ header {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  position: relative; }
+  position: relative;
+  padding: 3rem 1rem; }
   @media only screen and (min-width: 960px) {
     .path-alias--index .content_wrapper .relatedStory_wrapper {
       max-width: 960px; } }
@@ -10750,7 +10757,7 @@ header {
       max-width: 1300px; } }
   .path-alias--index .content_wrapper .relatedStory_wrapper:before, .path-alias--index .content_wrapper .relatedStory_wrapper:after {
     background-color: #f3f3f3;
-    content: '';
+    content: "";
     height: 100%;
     position: absolute;
     width: 100vw;
@@ -10845,7 +10852,7 @@ header {
       float: left;
       width: 50%; } }
       .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content .meta {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 0.8125rem;
         color: #585858;
         font-weight: 400;
@@ -10853,7 +10860,7 @@ header {
         text-transform: uppercase;
         margin: 0; }
       .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content blockquote {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 1.3rem;
         color: #110f0f;
         font-weight: 400;
@@ -10862,7 +10869,7 @@ header {
       .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content .readmore {
         margin-bottom: 0; }
         .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content .readmore a {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 1rem;
           color: #350e20;
           line-height: 1.8rem;
@@ -10876,6 +10883,168 @@ header {
             background-size: 100% 100%; }
           .path-alias--index .content_wrapper .relatedStory_wrapper .relatedStory .relatedStory_content .readmore a:active {
             background-size: 80% 100%; }
+
+.path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel {
+  position: relative; }
+  .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick__slide {
+    opacity: 0;
+    transition: opacity .5s ease-out; }
+    .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick__slide.slick-current {
+      opacity: 1;
+      transition: opacity .5s ease-in 1s; }
+  .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+    @media only screen and (min-width: 960px) {
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper {
+        max-width: 960px; } }
+    @media only screen and (min-width: 1200px) {
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper {
+        max-width: 1200px; } }
+    @media only screen and (min-width: 1440px) {
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper {
+        max-width: 1300px; } }
+    .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body {
+      margin-right: -15px;
+      margin-left: -15px; }
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body:before, .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body:after {
+        display: table;
+        content: " "; }
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body:after {
+        clear: both; }
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff {
+        padding: 3rem; }
+        @media only screen and (min-width: 640px) {
+          .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff {
+            display: flex;
+            align-items: center; } }
+        @media only screen and (min-width: 768px) {
+          .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff {
+            padding: 0; } }
+        .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_content {
+          text-align: center;
+          padding: 1rem;
+          position: relative;
+          float: left;
+          width: 100%;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; }
+          @media only screen and (min-width: 640px) {
+            .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_content {
+              position: relative;
+              float: left;
+              width: 66.66667%;
+              min-height: 1px;
+              padding-right: 15px;
+              padding-left: 15px; } }
+          @media only screen and (min-width: 960px) {
+            .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_content {
+              position: relative;
+              min-height: 1px;
+              padding-right: 15px;
+              padding-left: 15px;
+              padding: 0 4.16665%; } }
+  @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_content {
+      float: left;
+      width: 50%; } }
+  @media only screen and (min-width: 960px) and (min-width: 1200px) {
+    .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_content {
+      padding: 0 8.3333%; } }
+          .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_content h3 {
+            font-family: "EB Garamond", serif;
+            font-size: 2rem;
+            color: #110f0f;
+            font-weight: 600;
+            line-height: 2.5rem; }
+          .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_content a.featurelink {
+            padding: 3px;
+            font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+            font-size: 1rem;
+            color: #350e20;
+            line-height: 1.8rem;
+            font-weight: 500;
+            transition: all 0.25s ease-in;
+            text-decoration: none;
+            background-image: linear-gradient(transparent calc(50% - 3px), #800000 calc(50% - 3px));
+            background-size: auto 200%;
+            transition: background .2s ease-in-out, color .2s ease-in-out; }
+            .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_content a.featurelink:hover {
+              color: #ffffff;
+              background-position: 0 100%; }
+        .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_img {
+          z-index: 10;
+          position: relative;
+          float: left;
+          width: 100%;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px; }
+          @media only screen and (min-width: 640px) {
+            .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_img {
+              position: relative;
+              float: left;
+              width: 33.33333%;
+              min-height: 1px;
+              padding-right: 15px;
+              padding-left: 15px; } }
+          @media only screen and (min-width: 960px) {
+            .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_img {
+              position: relative;
+              min-height: 1px;
+              padding-right: 15px;
+              padding-left: 15px; } }
+  @media only screen and (min-width: 960px) and (min-width: 768px) {
+    .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_img {
+      float: left;
+      width: 50%; } }
+  .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick-dots {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 80px); }
+    @media only screen and (min-width: 640px) {
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick-dots {
+        bottom: 10%; } }
+    @media only screen and (min-width: 960px) {
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick-dots {
+        left: 16%; } }
+    @media only screen and (min-width: 1200px) {
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick-dots {
+        left: 20%; } }
+    @media only screen and (min-width: 1440px) {
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick-dots {
+        left: 25%; } }
+    .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick-dots li {
+      display: inline-block;
+      font-size: 0;
+      line-height: normal;
+      padding: 0 5px;
+      margin: 0; }
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick-dots li:before {
+        display: none; }
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick-dots li button {
+        border-radius: 10px;
+        border: 0;
+        outline: 0;
+        font-size: 0;
+        width: 2rem;
+        height: 0.5rem;
+        background-color: #c9c9c9;
+        background: linear-gradient(to right, #800000 50%, #c9c9c9 50%);
+        background-size: 200% 100%;
+        background-position: right bottom; }
+      .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick-dots li.slick-active button {
+        background-position: left bottom;
+        transition: all 5s ease-out 2.5s; }
+
+.path-alias--index section#block-views-block-masonry-views-block-1 {
+  background-color: #f3f3f3; }
 
 .path-alias--about .hero_about {
   margin: 4rem 0; }
@@ -10896,7 +11065,7 @@ header {
       float: left;
       width: 100%; } }
   .path-alias--about .page_header h1 {
-    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-family: "EB Garamond", serif;
     font-size: 2.5rem;
     color: #110f0f;
     font-weight: 700;
@@ -10906,7 +11075,7 @@ header {
     @media only screen and (min-width: 960px) {
       .path-alias--about .page_header h1 {
         padding: 0 8.3333%;
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 3.5rem;
         color: #110f0f;
         font-weight: 700;
@@ -10962,7 +11131,7 @@ header {
         padding-top: 6rem; } }
     .path-alias--about .content2313_wrapper_full .content2313 .col2 p {
       margin-bottom: 0;
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1.125rem;
       color: #350e20;
       line-height: 1.8rem;
@@ -10973,13 +11142,13 @@ header {
         .path-alias--about .content2313_wrapper_full .content2313 .col2 p a:hover {
           color: #800000; }
     .path-alias--about .content2313_wrapper_full .content2313 h3 {
-      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-family: "EB Garamond", serif;
       font-size: 2.5rem;
       color: #110f0f;
       font-weight: 700;
       line-height: 3.75rem; }
     .path-alias--about .content2313_wrapper_full .content2313 h4 {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1rem;
       color: #585858;
       font-weight: 500;
@@ -11114,7 +11283,7 @@ header {
       float: left;
       width: 33.33333%; } }
     .path-alias--about .strengthInNumbers .col1 h3 {
-      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-family: "EB Garamond", serif;
       font-size: 4rem;
       color: #110f0f;
       font-weight: 800;
@@ -11186,14 +11355,14 @@ header {
       .path-alias--about .aboutDivisionsSchools .view-header {
         padding: 0 35%; } }
   .path-alias--about .aboutDivisionsSchools .ads_hdr h2 {
-    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-family: "EB Garamond", serif;
     font-size: 2.5rem;
     color: #110f0f;
     font-weight: 700;
     line-height: 3.75rem;
     margin-bottom: 2rem; }
   .path-alias--about .aboutDivisionsSchools .view-header p {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1.125rem;
     color: #110f0f;
     line-height: 1.8rem;
@@ -11238,7 +11407,7 @@ header {
         .path-alias--about .aboutDivisionsSchools .school-grid li > div {
           min-height: 300px; } }
     .path-alias--about .aboutDivisionsSchools .school-grid li a {
-      font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-family: "EB Garamond", serif;
       font-size: 2rem;
       color: #110f0f;
       font-weight: 600;
@@ -11313,7 +11482,7 @@ footer.footer {
     background-color: #800000;
     padding: 1rem 0; }
     footer.footer .bottom p {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.875rem;
       color: #ffffff;
       line-height: 1.4rem;
@@ -11345,14 +11514,14 @@ footer.footer {
         footer.footer .brand svg {
           margin-bottom: 4rem; } }
     footer.footer .brand address {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1rem;
       color: #110f0f;
       line-height: 1.8rem;
       font-weight: 400;
       margin-bottom: 2rem; }
   footer.footer h3 {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.8125rem;
     color: #585858;
     font-weight: 400;
@@ -11402,7 +11571,7 @@ footer.footer {
       footer.footer .lm .fyf_item a:active,
       footer.footer .lm .fyf_item a:visited,
       footer.footer .lm .fyf_item a:focus {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 1.5rem;
         color: #110f0f;
         font-weight: 500;
@@ -11424,7 +11593,7 @@ footer.footer {
           color: #800000; }
       footer.footer .fyf .fyf_item p,
       footer.footer .lm .fyf_item p {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 0.875rem;
         color: #110f0f;
         line-height: 1.4rem;
@@ -11468,7 +11637,7 @@ footer.footer {
         footer.footer .lm_social .lm li a:visited,
         footer.footer .lm_social .lm li a:focus {
           border-bottom: solid 2px #767676;
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 0.875rem;
           color: #110f0f;
           line-height: 1.4rem;
@@ -11604,7 +11773,7 @@ footer.footer {
         max-width: 1300px; } }
   .hero_wrapper .field--name-field-image-attribution-wysiwyg {
     position: absolute;
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.875rem;
     color: #767676;
     line-height: 1.4rem;
@@ -11626,7 +11795,7 @@ footer.footer {
       text-decoration: none;
       vertical-align: text-bottom; }
   .hero_wrapper .hero_content h1 {
-    font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+    font-family: "EB Garamond", serif;
     font-size: 2.5rem;
     color: #110f0f;
     font-weight: 700;
@@ -11634,7 +11803,7 @@ footer.footer {
     margin: 2rem 0; }
     @media only screen and (min-width: 1200px) {
       .hero_wrapper .hero_content h1 {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 3.5rem;
         color: #110f0f;
         font-weight: 700;
@@ -11642,7 +11811,7 @@ footer.footer {
         margin: 3rem 0; } }
     @media only screen and (min-width: 1440px) {
       .hero_wrapper .hero_content h1 {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 4rem;
         color: #110f0f;
         font-weight: 800;
@@ -11702,7 +11871,7 @@ footer.footer {
       .hero_wrapper.hero_program_detail .hero .hero_content .program_meta .category .category_name {
         background-color: #f3f3f3; }
       .hero_wrapper.hero_program_detail .hero .hero_content p {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1.125rem;
         color: #110f0f;
         line-height: 1.8rem;
@@ -11770,14 +11939,14 @@ footer.footer {
         .hero_wrapper.hero_program_interior .hero .hero_content {
           padding: 3rem 0; } }
       .hero_wrapper.hero_program_interior .hero .hero_content h2 {
-        font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-family: "EB Garamond", serif;
         font-size: 3.5rem;
         color: #110f0f;
         font-weight: 700;
         line-height: 4rem;
         margin: 3rem 0; }
       .hero_wrapper.hero_program_interior .hero .hero_content h1 {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1.5rem;
         color: #585858;
         line-height: 2.4rem;
@@ -11900,14 +12069,14 @@ footer.footer {
         .hero_wrapper.hero_story .hero .hero_content {
           padding: 6rem 3rem 3rem 3rem; } }
       .hero_wrapper.hero_story .hero .hero_content .meta .type {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1rem;
         color: #800000;
         font-weight: 500;
         line-height: 1.8rem;
         text-transform: uppercase; }
       .hero_wrapper.hero_story .hero .hero_content .meta .date {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 0.875rem;
         color: #350e20;
         line-height: 1.4rem;
@@ -11918,7 +12087,7 @@ footer.footer {
           .hero_wrapper.hero_story .hero .hero_content h1 {
             margin: 2rem 0; } }
       .hero_wrapper.hero_story .hero .hero_content .hero_intro {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1rem;
         color: #110f0f;
         line-height: 1.8rem;
@@ -11926,7 +12095,7 @@ footer.footer {
         margin-bottom: 0; }
         @media only screen and (min-width: 1200px) {
           .hero_wrapper.hero_story .hero .hero_content .hero_intro {
-            font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+            font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
             font-size: 1.125rem;
             color: #110f0f;
             line-height: 1.8rem;
@@ -11937,7 +12106,7 @@ footer.footer {
           .hero_wrapper.hero_story .hero .hero_content .hero_author_share {
             margin: 3rem 0; } }
         .hero_wrapper.hero_story .hero .hero_content .hero_author_share .author {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 0.875rem;
           color: #585858;
           line-height: 1.4rem;
@@ -11996,7 +12165,7 @@ footer.footer {
         width: 100vw;
         z-index: -1; }
       .hero_wrapper.hero_aos .hero .hero_content .meta {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1rem;
         color: #ffe264;
         font-weight: 500;
@@ -12006,7 +12175,7 @@ footer.footer {
         color: #ffffff;
         margin: 2rem 0; }
       .hero_wrapper.hero_aos .hero .hero_content .lede p {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1.125rem;
         color: #ffffff;
         line-height: 1.8rem;
@@ -12026,7 +12195,7 @@ footer.footer {
         .hero_wrapper.hero_aos .hero .hero_cta {
           padding: 2.5rem 5rem; } }
       .hero_wrapper.hero_aos .hero .hero_cta p {
-        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
         font-size: 1rem;
         color: #110f0f;
         line-height: 1.8rem;
@@ -12071,7 +12240,7 @@ footer.footer {
       float: left;
       width: 75%; } }
     .hero_wrapper.hero_findYourFit .hero_intro p {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 1.5rem;
       color: #110f0f;
       line-height: 2.4rem;
@@ -12196,7 +12365,7 @@ footer.footer {
         position: absolute;
         right: 0; }
         .hero_wrapper.hero_event .hero_img .field--name-field-image-attribution-wysiwyg p {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 0.75rem;
           color: #585858;
           line-height: 1.4rem;
@@ -12241,7 +12410,7 @@ footer.footer {
         position: relative;
         z-index: 5; }
         .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content .meta {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 1rem;
           color: #800000;
           font-weight: 500;
@@ -12249,7 +12418,7 @@ footer.footer {
           text-transform: uppercase;
           margin-bottom: 0; }
         .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content h1 {
-          font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+          font-family: "EB Garamond", serif;
           font-size: 2.5rem;
           color: #110f0f;
           font-weight: 700;
@@ -12257,14 +12426,14 @@ footer.footer {
           margin: 1.5rem 0 1rem; }
           @media only screen and (min-width: 960px) {
             .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content h1 {
-              font-family: "EB Garamond", Garamond, Georgia, " Times New Roman", Times, serif;
+              font-family: "EB Garamond", serif;
               font-size: 3.5rem;
               color: #110f0f;
               font-weight: 700;
               line-height: 4rem;
               font-size: 2.5rem; } }
         .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_content .content .lede p {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 1.125rem;
           color: #110f0f;
           line-height: 1.8rem;
@@ -12294,7 +12463,7 @@ footer.footer {
       .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_eventDate .eventDate_wrap {
         width: 100%; }
         .hero_wrapper.hero_event .hero .hero_content_wrapper .hero_eventDate .eventDate_wrap span {
-          font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+          font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
           font-size: 1.125rem;
           color: #ffffff;
           line-height: 1.8rem;
@@ -12375,7 +12544,7 @@ footer.footer {
   .embedForm form .form_question {
     width: 100%; }
     .embedForm form .form_question label {
-      font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
       font-size: 0.875rem;
       color: #585858;
       line-height: 1.4rem;
@@ -12406,7 +12575,7 @@ footer.footer {
         border-bottom-color: #e54b4b; }
   .embedForm form fieldset legend,
   .embedForm form fieldset .form_label {
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 0.875rem;
     color: #585858;
     font-weight: 400;
@@ -12418,7 +12587,7 @@ footer.footer {
     border: solid 2px #800000;
     border-radius: 0;
     color: #ffffff;
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
     color: #ffffff;
     font-weight: 500;
