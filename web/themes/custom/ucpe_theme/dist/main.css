@@ -8486,7 +8486,7 @@ nav.slick__arrow {
     text-decoration: none;
     background-image: linear-gradient(transparent calc(50% - 3px), #800000 calc(50% - 3px));
     background-size: auto 200%;
-    transition: background .2s ease-in-out, color .2s ease-in-out; }
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out; }
     .relatedCourse .relatedCourse_content a:hover {
       color: #ffffff;
       background-position: 0 100%; }
@@ -10343,7 +10343,7 @@ header {
           text-decoration: none;
           background-image: linear-gradient(transparent calc(50% - 3px), #800000 calc(50% - 3px));
           background-size: auto 200%;
-          transition: background .2s ease-in-out, color .2s ease-in-out;
+          transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
           font-size: inherit;
           margin-bottom: 0.5rem;
           display: inline-block; }
@@ -10376,7 +10376,7 @@ header {
           text-decoration: none;
           background-image: linear-gradient(transparent calc(50% - 3px), #800000 calc(50% - 3px));
           background-size: auto 200%;
-          transition: background .2s ease-in-out, color .2s ease-in-out;
+          transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
           display: inline-block; }
           .event .content .eventContent .eventRelatedPrograms a:hover,
           .event .content .eventContent .eventAOS a:hover {
@@ -10888,10 +10888,10 @@ header {
   position: relative; }
   .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick__slide {
     opacity: 0;
-    transition: opacity .5s ease-out; }
+    transition: opacity 0.5s ease-out; }
     .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .slick__slide.slick-current {
       opacity: 1;
-      transition: opacity .5s ease-in 1s; }
+      transition: opacity 0.5s ease-in 1s; }
   .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper {
     padding-right: 15px;
     padding-left: 15px;
@@ -10971,7 +10971,7 @@ header {
             text-decoration: none;
             background-image: linear-gradient(transparent calc(50% - 3px), #800000 calc(50% - 3px));
             background-size: auto 200%;
-            transition: background .2s ease-in-out, color .2s ease-in-out; }
+            transition: background 0.2s ease-in-out, color 0.2s ease-in-out; }
             .path-alias--index .content_wrapper .uchicagoDiff_slider .slick--optionset--home-page-carousel .uchicagoDiff_wrapper .uchicagoDiff_body .uchicagoDiff .uchicagoDiff_content a.featurelink:hover {
               color: #ffffff;
               background-position: 0 100%; }
