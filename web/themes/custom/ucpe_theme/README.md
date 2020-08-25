@@ -88,3 +88,5 @@ add an attach declaration that connects your imported code:
 ```
 
 There should already be at least one of these in this file.
+
+5. Run the `npm run build` or `npm run start` command each time you update the js files to make sure the changes make it to your compiled js file.
