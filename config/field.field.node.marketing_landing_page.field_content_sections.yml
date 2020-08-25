@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.about_student
     - paragraphs.paragraphs_type.blockquotes
     - paragraphs.paragraphs_type.button_set
+    - paragraphs.paragraphs_type.content_50_50
     - paragraphs.paragraphs_type.content_with_image_50_50_
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.designed_for
@@ -49,6 +50,7 @@ settings:
       blockquotes: blockquotes
       button_set: button_set
       intro_paragraph: intro_paragraph
+      content_50_50: content_50_50
       full_width_content: full_width_content
       text_two_one_third: text_two_one_third
       text_with_media_1_3_2_3_: text_with_media_1_3_2_3_
@@ -89,6 +91,9 @@ settings:
       button_set:
         enabled: true
         weight: 56
+      content_50_50:
+        enabled: true
+        weight: 59
       content_sections:
         weight: 57
         enabled: false

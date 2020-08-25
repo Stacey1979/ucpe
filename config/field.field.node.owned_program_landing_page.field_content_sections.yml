@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_content_sections
     - node.type.owned_program_landing_page
     - paragraphs.paragraphs_type.blockquotes
+    - paragraphs.paragraphs_type.content_50_50
+    - paragraphs.paragraphs_type.content_with_image_50_50_
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.full_width_content
     - paragraphs.paragraphs_type.header_s_
@@ -33,6 +35,8 @@ settings:
       blockquotes: blockquotes
       cta: cta
       full_width_content: full_width_content
+      content_50_50: content_50_50
+      content_with_image_50_50_: content_with_image_50_50_
       header_s_: header_s_
       horizontal_rule: horizontal_rule
       statistics: statistics
@@ -57,12 +61,15 @@ settings:
       button_set:
         weight: 40
         enabled: false
+      content_50_50:
+        enabled: true
+        weight: 47
       content_sections:
         weight: 41
         enabled: false
       content_with_image_50_50_:
-        weight: 59
-        enabled: false
+        enabled: true
+        weight: 48
       cta:
         enabled: true
         weight: 42
@@ -73,123 +80,123 @@ settings:
         weight: 44
         enabled: false
       discover_the_uchicago_difference:
-        weight: 63
+        weight: 67
         enabled: false
       discover_uchicago_combo:
-        weight: 64
+        weight: 69
         enabled: false
       duration:
         weight: 45
         enabled: false
       event_hero:
-        weight: 66
+        weight: 72
         enabled: false
       form_embed:
-        weight: 47
+        weight: 50
         enabled: false
       full_width_content:
         enabled: true
         weight: 46
       header_s_:
         enabled: true
-        weight: 47
+        weight: 49
       heroes:
-        weight: 48
+        weight: 51
         enabled: false
       horizontal_rule:
         enabled: true
-        weight: 49
-      image_carousel:
-        weight: 50
-        enabled: false
-      image_carousel_combo:
-        weight: 51
-        enabled: false
-      in_brief:
         weight: 52
-        enabled: false
-      instructor_program_and_courses:
+      image_carousel:
         weight: 53
         enabled: false
-      instructor_program_courses_combo:
+      image_carousel_combo:
         weight: 54
         enabled: false
-      intro_paragraph:
+      in_brief:
         weight: 55
         enabled: false
-      large_image_with_caption_left_or:
+      instructor_program_and_courses:
         weight: 56
         enabled: false
-      large_image_with_header_and_cont:
-        weight: 79
+      instructor_program_courses_combo:
+        weight: 57
         enabled: false
-      program_type_preview:
-        weight: 80
-        enabled: false
-      ptoc_container:
-        weight: 81
-        enabled: false
-      ptoc_image:
-        weight: 82
-        enabled: false
-      ptoc_links:
-        weight: 83
-        enabled: false
-      ptoc_text:
-        weight: 84
-        enabled: false
-      related_courses:
-        weight: 85
-        enabled: false
-      related_instructors:
+      intro_paragraph:
         weight: 58
         enabled: false
-      related_of_interest:
-        weight: 60
-        enabled: false
-      related_program_block:
+      large_image_with_caption_left_or:
         weight: 59
         enabled: false
+      large_image_with_header_and_cont:
+        weight: 75
+        enabled: false
+      program_type_preview:
+        weight: 76
+        enabled: false
+      ptoc_container:
+        weight: 77
+        enabled: false
+      ptoc_image:
+        weight: 78
+        enabled: false
+      ptoc_links:
+        weight: 79
+        enabled: false
+      ptoc_text:
+        weight: 80
+        enabled: false
+      related_courses:
+        weight: 81
+        enabled: false
+      related_instructors:
+        weight: 60
+        enabled: false
+      related_of_interest:
+        weight: 63
+        enabled: false
+      related_program_block:
+        weight: 61
+        enabled: false
       related_program_combo:
-        weight: 90
+        weight: 83
         enabled: false
       related_programs_for_area_of_stu:
-        weight: 88
+        weight: 82
         enabled: false
       statistics:
         enabled: true
-        weight: 60
-      story_about_combo:
-        weight: 61
-        enabled: false
-      story_programs:
         weight: 62
-        enabled: false
-      strength_in_numbers:
-        weight: 94
-        enabled: false
-      text_one_two_third:
-        weight: 63
-        enabled: false
-      text_two_one_third:
+      story_about_combo:
         weight: 64
         enabled: false
+      story_programs:
+        weight: 65
+        enabled: false
+      strength_in_numbers:
+        weight: 84
+        enabled: false
+      text_one_two_third:
+        weight: 66
+        enabled: false
+      text_two_one_third:
+        weight: 68
+        enabled: false
       text_with_media_1_3_2_3_:
-        weight: 97
+        weight: 85
         enabled: false
       three_up_illust_img_combo:
         enabled: true
-        weight: 65
+        weight: 70
       three_up_image_and_text:
-        weight: 66
+        weight: 71
         enabled: false
       three_up_statistic:
-        weight: 67
+        weight: 73
         enabled: false
       three_up_statistics_combo:
         enabled: true
-        weight: 68
+        weight: 74
       video:
-        weight: 102
+        weight: 86
         enabled: false
 field_type: entity_reference_revisions

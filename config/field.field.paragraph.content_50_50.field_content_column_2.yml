@@ -1,0 +1,28 @@
+uuid: 175ea2af-b5f5-423e-a9e9-21d024203bb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_column_2
+    - paragraphs.paragraphs_type.content_50_50
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+    code: '0'
+id: paragraph.content_50_50.field_content_column_2
+field_name: field_content_column_2
+entity_type: paragraph
+bundle: content_50_50
+label: 'Content Column 2'
+description: 'Enter the right side content column.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

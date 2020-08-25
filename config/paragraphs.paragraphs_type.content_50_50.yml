@@ -1,0 +1,10 @@
+uuid: 66b276f3-2a4f-4ac9-bbfc-2b9f6110cd9b
+langcode: en
+status: true
+dependencies: {  }
+id: content_50_50
+label: 'Content (50/50)'
+icon_uuid: null
+icon_default: null
+description: '2 column content side-by-side.'
+behavior_plugins: {  }

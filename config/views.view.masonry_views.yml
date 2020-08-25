@@ -1182,7 +1182,7 @@ display:
             operator: field_areas_of_study_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_areas_of_study_desktop
+            identifier: field_areas_of_study_filter
             required: true
             remember: false
             multiple: false
@@ -2545,7 +2545,7 @@ display:
             operator: field_areas_of_study_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_areas_of_study_desktop
+            identifier: field_areas_of_study_filter
             required: true
             remember: false
             multiple: false
@@ -2592,59 +2592,6 @@ display:
                 operator: or
                 value:
                   7: '7'
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: area_of_interest
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
-        field_areas_of_study_target_id_1:
-          id: field_areas_of_study_target_id_1
-          table: node__field_areas_of_study
-          field: field_areas_of_study_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            3: 3
-            4: 4
-            5: 5
-            6: 6
-            7: 7
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_areas_of_study_target_id_1_op
-            label: 'Explore our Areas of Study'
-            description: ''
-            use_operator: false
-            operator: field_areas_of_study_target_id_1_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_areas_of_study_mobile
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
-            reduce: true
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
           reduce_duplicates: false
           type: select
           limit: true

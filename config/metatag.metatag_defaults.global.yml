@@ -7,5 +7,14 @@ _core:
 id: global
 label: Global
 tags:
+  title: '[current-page:title] | UChicago'
   canonical_url: '[current-page:url]'
-  title: '[current-page:title] | [site:name]'
+  fb_pages: 'https://www.facebook.com/UChicagoProEd'
+  og_locality: Chicago
+  og_postal_code: '60611'
+  og_site_name: 'University of Chicago Professional Education'
+  og_region: IL
+  og_locale: en_US
+  og_street_address: '455 North Cityfront'
+  og_country_name: USA
+  twitter_cards_type: summary_large_image

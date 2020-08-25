@@ -50,6 +50,8 @@
         "drupal/mobile_device_detection": "^3.2",
         "drupal/node_read_time": "^1.0",
         "drupal/paragraphs": "^1.11",
+        "drupal/paragraphs_ee": "1.x-dev",
+        "drupal/paragraphs_features": "^1.9",
         "drupal/pathauto": "^1.6",
         "drupal/ptoc": "1.x-dev",
         "drupal/quick_node_clone": "^1.12",
