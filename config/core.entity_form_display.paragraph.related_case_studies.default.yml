@@ -1,0 +1,25 @@
+uuid: 60a3b3e8-b84e-43fc-9207-72dd1ce0c1d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_case_studies.field_case_study
+    - paragraphs.paragraphs_type.related_case_studies
+id: paragraph.related_case_studies.default
+targetEntityType: paragraph
+bundle: related_case_studies
+mode: default
+content:
+  field_case_study:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

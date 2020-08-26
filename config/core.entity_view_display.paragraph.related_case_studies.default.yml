@@ -1,0 +1,45 @@
+uuid: 1592e633-4e86-43d5-9380-42d29e39d770
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_case_studies.field_case_study
+    - paragraphs.paragraphs_type.related_case_studies
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - field_case_study
+id: paragraph.related_case_studies.default
+targetEntityType: paragraph
+bundle: related_case_studies
+mode: default
+content:
+  field_case_study:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: index_page
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  search_api_excerpt: true

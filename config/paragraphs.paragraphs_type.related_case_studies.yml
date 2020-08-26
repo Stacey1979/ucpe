@@ -1,0 +1,10 @@
+uuid: e604b1e4-c40c-468e-861d-3795c4aa4555
+langcode: en
+status: true
+dependencies: {  }
+id: related_case_studies
+label: 'Related Case Studies'
+icon_uuid: null
+icon_default: null
+description: 'Add a case study or capstone to a page. '
+behavior_plugins: {  }

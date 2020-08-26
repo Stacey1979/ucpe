@@ -1,0 +1,29 @@
+uuid: 7ce2a2b9-cd3a-4bf7-af6a-06ab9eace219
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_case_study
+    - node.type.case_study
+    - paragraphs.paragraphs_type.related_case_studies
+id: paragraph.related_case_studies.field_case_study
+field_name: field_case_study
+entity_type: paragraph
+bundle: related_case_studies
+label: 'Case Study'
+description: 'Choose the case study you want to show on this page. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      case_study: case_study
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

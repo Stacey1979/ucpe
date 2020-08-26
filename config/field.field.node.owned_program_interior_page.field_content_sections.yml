@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_content_sections
     - node.type.owned_program_interior_page
+    - paragraphs.paragraphs_type.blockquotes
     - paragraphs.paragraphs_type.button_set
     - paragraphs.paragraphs_type.content_50_50
     - paragraphs.paragraphs_type.content_with_image_50_50_
@@ -13,6 +14,7 @@ dependencies:
     - paragraphs.paragraphs_type.full_width_content
     - paragraphs.paragraphs_type.header_s_
     - paragraphs.paragraphs_type.horizontal_rule
+    - paragraphs.paragraphs_type.related_case_studies
     - paragraphs.paragraphs_type.related_courses
     - paragraphs.paragraphs_type.related_instructors
     - paragraphs.paragraphs_type.statistics
@@ -36,6 +38,7 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
+      blockquotes: blockquotes
       button_set: button_set
       full_width_content: full_width_content
       content_50_50: content_50_50
@@ -44,8 +47,9 @@ settings:
       form_embed: form_embed
       header_s_: header_s_
       horizontal_rule: horizontal_rule
-      related_instructors: related_instructors
+      related_case_studies: related_case_studies
       related_courses: related_courses
+      related_instructors: related_instructors
       statistics: statistics
       three_up_illust_img_combo: three_up_illust_img_combo
       three_up_statistics_combo: three_up_statistics_combo
@@ -64,8 +68,8 @@ settings:
         weight: 41
         enabled: false
       blockquotes:
+        enabled: true
         weight: 42
-        enabled: false
       button_set:
         enabled: true
         weight: 43
@@ -88,16 +92,16 @@ settings:
         weight: 50
         enabled: false
       discover_the_uchicago_difference:
-        weight: 65
+        weight: 66
         enabled: false
       discover_uchicago_combo:
-        weight: 68
+        weight: 69
         enabled: false
       duration:
         weight: 51
         enabled: false
       event_hero:
-        weight: 71
+        weight: 72
         enabled: false
       form_embed:
         enabled: true
@@ -136,75 +140,78 @@ settings:
         weight: 62
         enabled: false
       large_image_with_header_and_cont:
-        weight: 81
-        enabled: false
-      program_type_preview:
         weight: 82
         enabled: false
-      ptoc_container:
+      program_type_preview:
         weight: 83
         enabled: false
-      ptoc_image:
+      ptoc_container:
         weight: 84
         enabled: false
-      ptoc_links:
+      ptoc_image:
         weight: 85
         enabled: false
-      ptoc_text:
+      ptoc_links:
         weight: 86
         enabled: false
+      ptoc_text:
+        weight: 87
+        enabled: false
+      related_case_studies:
+        enabled: true
+        weight: 63
       related_courses:
         enabled: true
         weight: 64
       related_instructors:
         enabled: true
-        weight: 63
+        weight: 65
       related_of_interest:
-        weight: 66
-        enabled: false
-      related_program_block:
         weight: 67
         enabled: false
+      related_program_block:
+        weight: 68
+        enabled: false
       related_program_combo:
-        weight: 88
+        weight: 89
         enabled: false
       related_programs_for_area_of_stu:
-        weight: 87
+        weight: 88
         enabled: false
       statistics:
         enabled: true
-        weight: 69
-      story_about_combo:
         weight: 70
+      story_about_combo:
+        weight: 71
         enabled: false
       story_programs:
-        weight: 72
-        enabled: false
-      strength_in_numbers:
-        weight: 89
-        enabled: false
-      text_one_two_third:
         weight: 73
         enabled: false
-      text_two_one_third:
+      strength_in_numbers:
+        weight: 90
+        enabled: false
+      text_one_two_third:
         weight: 74
         enabled: false
-      text_with_media_1_3_2_3_:
+      text_two_one_third:
         weight: 75
+        enabled: false
+      text_with_media_1_3_2_3_:
+        weight: 76
         enabled: false
       three_up_illust_img_combo:
         enabled: true
-        weight: 76
-      three_up_image_and_text:
         weight: 77
+      three_up_image_and_text:
+        weight: 78
         enabled: false
       three_up_statistic:
-        weight: 78
+        weight: 79
         enabled: false
       three_up_statistics_combo:
         enabled: true
-        weight: 79
+        weight: 80
       video:
         enabled: true
-        weight: 80
+        weight: 81
 field_type: entity_reference_revisions

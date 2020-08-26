@@ -16,7 +16,7 @@
         "drupal/address": "^1.8",
         "drupal/address_map_link": "^1.0",
         "drupal/addtoany": "^1.14",
-        "drupal/addtocal": "^1.0",
+        "drupal/addtocal": "1.x-dev",
         "drupal/admin_toolbar": "^2.2",
         "drupal/allowed_formats": "^1.2",
         "drupal/better_exposed_filters": "^5.0@beta",

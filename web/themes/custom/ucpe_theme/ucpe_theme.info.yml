@@ -21,3 +21,6 @@ regions:
 libraries-extend:
   bootstrap/framework:
     - ucpe_theme/framework
+
+ckeditor_stylesheets:
+  - dist/main.css
