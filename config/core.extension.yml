@@ -66,7 +66,6 @@ module:
   page_cache: 0
   paragraphs_ee: 0
   paragraphs_features: 0
-  paragraphs_features_test: 0
   path: 0
   path_alias: 0
   ptoc: 0

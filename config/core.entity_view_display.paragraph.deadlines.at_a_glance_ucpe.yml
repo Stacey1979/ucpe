@@ -49,7 +49,7 @@ content:
         tokenized: ''
       description:
         value: '0'
-        tokenized: 'UChicago application deadline'
+        tokenized: ''
       past_events: 0
       separator: '-'
     third_party_settings: {  }
@@ -65,3 +65,4 @@ content:
     region: ds_content
 hidden:
   field_decision: true
+  search_api_excerpt: true

@@ -1,0 +1,60 @@
+uuid: e8b3c8c9-53ff-4ffd-bdc1-d798bb9573a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.content_50_50.field_content_column_1
+    - field.field.paragraph.content_50_50.field_content_column_2
+    - paragraphs.paragraphs_type.content_50_50
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_fluid
+      library: ds/ds_2col_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          left: {  }
+          right: {  }
+    regions:
+      left:
+        - field_content_column_1
+      right:
+        - field_content_column_2
+id: paragraph.content_50_50.preview
+targetEntityType: paragraph
+bundle: content_50_50
+mode: preview
+content:
+  field_content_column_1:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+    region: left
+  field_content_column_2:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+    region: right
+hidden:
+  search_api_excerpt: true

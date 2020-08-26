@@ -9,6 +9,28 @@ dependencies:
   module:
     - ds
     - slick_paragraphs
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class:
+            slide_count: slide_count
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_image_carousel_items
 id: paragraph.image_carousel_combo.default
 targetEntityType: paragraph
 bundle: image_carousel_combo
@@ -79,5 +101,6 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
-    region: content
-hidden: {  }
+    region: ds_content
+hidden:
+  search_api_excerpt: true

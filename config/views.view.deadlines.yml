@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.at_a_glance_ucpe
     - core.entity_view_mode.paragraph.how_to_apply
+    - field.storage.paragraph.field_deadline
+    - field.storage.paragraph.field_decision
+    - field.storage.paragraph.field_round
     - node.type.owned_program_landing_page
   module:
     - datetime
@@ -262,12 +265,11 @@ display:
         - 'config:core.entity_view_display.paragraph.about_student.default'
         - 'config:core.entity_view_display.paragraph.about_student.featured_story'
         - 'config:core.entity_view_display.paragraph.at_a_glance.at_a_glance_compare'
-        - 'config:core.entity_view_display.paragraph.at_a_glance.at_a_glance_ucpe'
-        - 'config:core.entity_view_display.paragraph.at_a_glance.default'
         - 'config:core.entity_view_display.paragraph.at_a_glance.of_in'
         - 'config:core.entity_view_display.paragraph.at_a_glance.program_index'
         - 'config:core.entity_view_display.paragraph.at_a_glance.ptoc'
         - 'config:core.entity_view_display.paragraph.at_a_glance.related_program'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.solr_search_page'
         - 'config:core.entity_view_display.paragraph.blockquote.default'
         - 'config:core.entity_view_display.paragraph.blockquotes.blockquotes'
         - 'config:core.entity_view_display.paragraph.blockquotes.default'
@@ -277,47 +279,29 @@ display:
         - 'config:core.entity_view_display.paragraph.content_sections.default'
         - 'config:core.entity_view_display.paragraph.content_with_image_50_50_.default'
         - 'config:core.entity_view_display.paragraph.content_with_image_50_50_.preview'
-        - 'config:core.entity_view_display.paragraph.cta.default'
         - 'config:core.entity_view_display.paragraph.cta.preview'
-        - 'config:core.entity_view_display.paragraph.deadlines.at_a_glance_ucpe'
-        - 'config:core.entity_view_display.paragraph.deadlines.default'
-        - 'config:core.entity_view_display.paragraph.deadlines.how_to_apply'
-        - 'config:core.entity_view_display.paragraph.designed_for.default'
-        - 'config:core.entity_view_display.paragraph.discover_the_uchicago_difference.default'
         - 'config:core.entity_view_display.paragraph.discover_the_uchicago_difference.preview'
-        - 'config:core.entity_view_display.paragraph.discover_uchicago_combo.default'
-        - 'config:core.entity_view_display.paragraph.duration.default'
         - 'config:core.entity_view_display.paragraph.event_hero.default'
         - 'config:core.entity_view_display.paragraph.event_hero.of_in'
         - 'config:core.entity_view_display.paragraph.event_hero.preview'
         - 'config:core.entity_view_display.paragraph.event_hero.related_three_up'
-        - 'config:core.entity_view_display.paragraph.form_embed.default'
-        - 'config:core.entity_view_display.paragraph.full_width_content.default'
         - 'config:core.entity_view_display.paragraph.full_width_content.person_trimmed_bio'
         - 'config:core.entity_view_display.paragraph.full_width_content.preview'
-        - 'config:core.entity_view_display.paragraph.header_s_.default'
+        - 'config:core.entity_view_display.paragraph.full_width_content.solr_search_page'
         - 'config:core.entity_view_display.paragraph.header_s_.preview'
-        - 'config:core.entity_view_display.paragraph.header_s_.ptoc'
-        - 'config:core.entity_view_display.paragraph.heroes.area_of_study_hero'
-        - 'config:core.entity_view_display.paragraph.heroes.default'
         - 'config:core.entity_view_display.paragraph.heroes.of_in'
         - 'config:core.entity_view_display.paragraph.heroes.perspectives_case_study_hero_para'
         - 'config:core.entity_view_display.paragraph.heroes.preview'
-        - 'config:core.entity_view_display.paragraph.heroes.program_hero'
         - 'config:core.entity_view_display.paragraph.heroes.related_story_hero'
         - 'config:core.entity_view_display.paragraph.heroes.related_three_up'
-        - 'config:core.entity_view_display.paragraph.heroes.story_hero'
         - 'config:core.entity_view_display.paragraph.horizontal_rule.default'
         - 'config:core.entity_view_display.paragraph.horizontal_rule.preview'
         - 'config:core.entity_view_display.paragraph.image_carousel.default'
         - 'config:core.entity_view_display.paragraph.image_carousel.preview'
-        - 'config:core.entity_view_display.paragraph.image_carousel_combo.default'
-        - 'config:core.entity_view_display.paragraph.image_carousel_combo.preview'
-        - 'config:core.entity_view_display.paragraph.in_brief.default'
         - 'config:core.entity_view_display.paragraph.instructor_program_and_courses.default'
         - 'config:core.entity_view_display.paragraph.instructor_program_courses_combo.default'
         - 'config:core.entity_view_display.paragraph.instructor_program_courses_combo.preview'
-        - 'config:core.entity_view_display.paragraph.intro_paragraph.default'
+        - 'config:core.entity_view_display.paragraph.in_brief.default'
         - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.default'
         - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.preview'
         - 'config:core.entity_view_display.paragraph.large_image_with_header_and_cont.default'
@@ -336,12 +320,10 @@ display:
         - 'config:core.entity_view_display.paragraph.ptoc_text.preview'
         - 'config:core.entity_view_display.paragraph.ptoc_text.ptoc'
         - 'config:core.entity_view_display.paragraph.related_courses.default'
-        - 'config:core.entity_view_display.paragraph.related_instructors.default'
         - 'config:core.entity_view_display.paragraph.related_instructors.preview'
-        - 'config:core.entity_view_display.paragraph.related_of_interest.default'
+        - 'config:core.entity_view_display.paragraph.related_programs_for_area_of_stu.default'
         - 'config:core.entity_view_display.paragraph.related_program_block.default'
         - 'config:core.entity_view_display.paragraph.related_program_combo.default'
-        - 'config:core.entity_view_display.paragraph.related_programs_for_area_of_stu.default'
         - 'config:core.entity_view_display.paragraph.statistics.default'
         - 'config:core.entity_view_display.paragraph.statistics.preview'
         - 'config:core.entity_view_display.paragraph.story_about_combo.default'
@@ -354,6 +336,7 @@ display:
         - 'config:core.entity_view_display.paragraph.text_two_one_third.preview'
         - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.default'
         - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.preview'
+        - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.solr_search_page'
         - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.default'
         - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.preview'
         - 'config:core.entity_view_display.paragraph.three_up_image_and_text.default'
@@ -363,6 +346,31 @@ display:
         - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.default'
         - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.preview'
         - 'config:core.entity_view_display.paragraph.video.default'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.at_a_glance_ucpe'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.default'
+        - 'config:core.entity_view_display.paragraph.content_50_50.default'
+        - 'config:core.entity_view_display.paragraph.content_50_50.preview'
+        - 'config:core.entity_view_display.paragraph.cta.default'
+        - 'config:core.entity_view_display.paragraph.deadlines.at_a_glance_ucpe'
+        - 'config:core.entity_view_display.paragraph.deadlines.default'
+        - 'config:core.entity_view_display.paragraph.deadlines.how_to_apply'
+        - 'config:core.entity_view_display.paragraph.designed_for.default'
+        - 'config:core.entity_view_display.paragraph.discover_the_uchicago_difference.default'
+        - 'config:core.entity_view_display.paragraph.discover_uchicago_combo.default'
+        - 'config:core.entity_view_display.paragraph.duration.default'
+        - 'config:core.entity_view_display.paragraph.form_embed.default'
+        - 'config:core.entity_view_display.paragraph.full_width_content.default'
+        - 'config:core.entity_view_display.paragraph.header_s_.default'
+        - 'config:core.entity_view_display.paragraph.header_s_.ptoc'
+        - 'config:core.entity_view_display.paragraph.heroes.area_of_study_hero'
+        - 'config:core.entity_view_display.paragraph.heroes.default'
+        - 'config:core.entity_view_display.paragraph.heroes.program_hero'
+        - 'config:core.entity_view_display.paragraph.heroes.story_hero'
+        - 'config:core.entity_view_display.paragraph.image_carousel_combo.default'
+        - 'config:core.entity_view_display.paragraph.image_carousel_combo.preview'
+        - 'config:core.entity_view_display.paragraph.intro_paragraph.default'
+        - 'config:core.entity_view_display.paragraph.related_instructors.default'
+        - 'config:core.entity_view_display.paragraph.related_of_interest.default'
   block_1:
     display_plugin: block
     id: block_1
@@ -390,12 +398,15 @@ display:
         - 'config:core.entity_view_display.paragraph.at_a_glance.program_index'
         - 'config:core.entity_view_display.paragraph.at_a_glance.ptoc'
         - 'config:core.entity_view_display.paragraph.at_a_glance.related_program'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.solr_search_page'
         - 'config:core.entity_view_display.paragraph.blockquote.default'
         - 'config:core.entity_view_display.paragraph.blockquotes.blockquotes'
         - 'config:core.entity_view_display.paragraph.blockquotes.default'
         - 'config:core.entity_view_display.paragraph.blockquotes.preview'
         - 'config:core.entity_view_display.paragraph.button_set.default'
         - 'config:core.entity_view_display.paragraph.button_set.preview'
+        - 'config:core.entity_view_display.paragraph.content_50_50.default'
+        - 'config:core.entity_view_display.paragraph.content_50_50.preview'
         - 'config:core.entity_view_display.paragraph.content_sections.default'
         - 'config:core.entity_view_display.paragraph.content_with_image_50_50_.default'
         - 'config:core.entity_view_display.paragraph.content_with_image_50_50_.preview'
@@ -417,6 +428,7 @@ display:
         - 'config:core.entity_view_display.paragraph.full_width_content.default'
         - 'config:core.entity_view_display.paragraph.full_width_content.person_trimmed_bio'
         - 'config:core.entity_view_display.paragraph.full_width_content.preview'
+        - 'config:core.entity_view_display.paragraph.full_width_content.solr_search_page'
         - 'config:core.entity_view_display.paragraph.header_s_.default'
         - 'config:core.entity_view_display.paragraph.header_s_.preview'
         - 'config:core.entity_view_display.paragraph.header_s_.ptoc'
@@ -476,6 +488,7 @@ display:
         - 'config:core.entity_view_display.paragraph.text_two_one_third.preview'
         - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.default'
         - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.preview'
+        - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.solr_search_page'
         - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.default'
         - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.preview'
         - 'config:core.entity_view_display.paragraph.three_up_image_and_text.default'
@@ -546,11 +559,255 @@ display:
           view_mode: how_to_apply
           entity_type: paragraph
           plugin_id: rendered_entity
+        field_round:
+          id: field_round
+          table: paragraph__field_round
+          field: field_round
+          relationship: field_deadlines
+          group_type: group
+          admin_label: ''
+          label: Round
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_deadline:
+          id: field_deadline
+          table: paragraph__field_deadline
+          field: field_deadline
+          relationship: field_deadlines
+          group_type: group
+          admin_label: ''
+          label: Deadline
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: America/Chicago
+            format_type: abbreviated_date
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_decision:
+          id: field_decision
+          table: paragraph__field_decision
+          field: field_decision
+          relationship: field_deadlines
+          group_type: group
+          admin_label: ''
+          label: Decision
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: month_year
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       defaults:
         fields: false
+        style: false
+        row: false
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            rendered_entity: rendered_entity
+            field_round: field_round
+            field_deadline: field_deadline
+            field_decision: field_decision
+          info:
+            rendered_entity:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_round:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_deadline:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_decision:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
+      row:
+        type: fields
+        options: {  }
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
@@ -566,12 +823,15 @@ display:
         - 'config:core.entity_view_display.paragraph.at_a_glance.program_index'
         - 'config:core.entity_view_display.paragraph.at_a_glance.ptoc'
         - 'config:core.entity_view_display.paragraph.at_a_glance.related_program'
+        - 'config:core.entity_view_display.paragraph.at_a_glance.solr_search_page'
         - 'config:core.entity_view_display.paragraph.blockquote.default'
         - 'config:core.entity_view_display.paragraph.blockquotes.blockquotes'
         - 'config:core.entity_view_display.paragraph.blockquotes.default'
         - 'config:core.entity_view_display.paragraph.blockquotes.preview'
         - 'config:core.entity_view_display.paragraph.button_set.default'
         - 'config:core.entity_view_display.paragraph.button_set.preview'
+        - 'config:core.entity_view_display.paragraph.content_50_50.default'
+        - 'config:core.entity_view_display.paragraph.content_50_50.preview'
         - 'config:core.entity_view_display.paragraph.content_sections.default'
         - 'config:core.entity_view_display.paragraph.content_with_image_50_50_.default'
         - 'config:core.entity_view_display.paragraph.content_with_image_50_50_.preview'
@@ -593,6 +853,7 @@ display:
         - 'config:core.entity_view_display.paragraph.full_width_content.default'
         - 'config:core.entity_view_display.paragraph.full_width_content.person_trimmed_bio'
         - 'config:core.entity_view_display.paragraph.full_width_content.preview'
+        - 'config:core.entity_view_display.paragraph.full_width_content.solr_search_page'
         - 'config:core.entity_view_display.paragraph.header_s_.default'
         - 'config:core.entity_view_display.paragraph.header_s_.preview'
         - 'config:core.entity_view_display.paragraph.header_s_.ptoc'
@@ -611,11 +872,11 @@ display:
         - 'config:core.entity_view_display.paragraph.image_carousel.preview'
         - 'config:core.entity_view_display.paragraph.image_carousel_combo.default'
         - 'config:core.entity_view_display.paragraph.image_carousel_combo.preview'
+        - 'config:core.entity_view_display.paragraph.in_brief.default'
         - 'config:core.entity_view_display.paragraph.instructor_program_and_courses.default'
         - 'config:core.entity_view_display.paragraph.instructor_program_courses_combo.default'
         - 'config:core.entity_view_display.paragraph.instructor_program_courses_combo.preview'
         - 'config:core.entity_view_display.paragraph.intro_paragraph.default'
-        - 'config:core.entity_view_display.paragraph.in_brief.default'
         - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.default'
         - 'config:core.entity_view_display.paragraph.large_image_with_caption_left_or.preview'
         - 'config:core.entity_view_display.paragraph.large_image_with_header_and_cont.default'
@@ -637,9 +898,9 @@ display:
         - 'config:core.entity_view_display.paragraph.related_instructors.default'
         - 'config:core.entity_view_display.paragraph.related_instructors.preview'
         - 'config:core.entity_view_display.paragraph.related_of_interest.default'
-        - 'config:core.entity_view_display.paragraph.related_programs_for_area_of_stu.default'
         - 'config:core.entity_view_display.paragraph.related_program_block.default'
         - 'config:core.entity_view_display.paragraph.related_program_combo.default'
+        - 'config:core.entity_view_display.paragraph.related_programs_for_area_of_stu.default'
         - 'config:core.entity_view_display.paragraph.statistics.default'
         - 'config:core.entity_view_display.paragraph.statistics.preview'
         - 'config:core.entity_view_display.paragraph.story_about_combo.default'
@@ -652,6 +913,7 @@ display:
         - 'config:core.entity_view_display.paragraph.text_two_one_third.preview'
         - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.default'
         - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.preview'
+        - 'config:core.entity_view_display.paragraph.text_with_media_1_3_2_3_.solr_search_page'
         - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.default'
         - 'config:core.entity_view_display.paragraph.three_up_illust_img_combo.preview'
         - 'config:core.entity_view_display.paragraph.three_up_image_and_text.default'
@@ -661,3 +923,6 @@ display:
         - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.default'
         - 'config:core.entity_view_display.paragraph.three_up_statistics_combo.preview'
         - 'config:core.entity_view_display.paragraph.video.default'
+        - 'config:field.storage.paragraph.field_deadline'
+        - 'config:field.storage.paragraph.field_decision'
+        - 'config:field.storage.paragraph.field_round'

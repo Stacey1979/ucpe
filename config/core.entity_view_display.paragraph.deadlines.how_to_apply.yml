@@ -45,15 +45,15 @@ content:
     label: above
     settings:
       timezone_override: ''
+      date_format: 'M. d, Y'
       location:
-        value: false
+        value: '0'
         tokenized: ''
       description:
-        value: false
+        value: field_round
         tokenized: ''
-      past_events: false
+      past_events: 0
       separator: '-'
-      date_format: 'Y-m-d\TH:i:s'
     third_party_settings: {  }
     type: addtocal_view
     region: ds_content
@@ -74,4 +74,5 @@ content:
     third_party_settings: {  }
     type: string
     region: ds_content
-hidden: {  }
+hidden:
+  search_api_excerpt: true

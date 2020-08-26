@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.page.field_lede
     - field.field.node.page.field_program_types_preview
     - field.field.node.page.field_related_story
+    - field.field.node.page.field_tab
     - field.field.node.page.field_video_home_page_hero
     - field.field.node.page.field_youvisit_embed
     - field.field.node.page.field_youvisit_header
@@ -28,6 +29,7 @@ dependencies:
     - smart_trim
     - text
     - user
+    - viewsreference
 third_party_settings:
   ds:
     layout:
@@ -193,6 +195,15 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: homepage
+  field_tab:
+    weight: 16
+    label: above
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
   field_video_home_page_hero:
     type: entity_reference_entity_view
     weight: 0
